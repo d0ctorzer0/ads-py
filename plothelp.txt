@@ -1,0 +1,59 @@
+PLOT 
+
+You are a personality core developer and manufacturer for Aperture Science in an alternate timeline where GLaDOS never came to power.
+Though your normal day-to-day work involves the creation of personality cores, an employee disappearance causes a lack of resources
+in a neighboring department, forcing you to work on supervising and maintenance instead. Guided by the level-headed, work-focused Miss
+Esther, you'll meet 7 new characters, from the egotistical Kris to the suspiciously-shaped Gregory.
+
+CUE TO CUE
+
+Day 1 - A normal day. MC takes the rounds through Section C8. They first meet Kris, followed by Heath, running into an unnamed core on
+their way to meet Aspen. Afterwards, they meet CC, are crashed into by Gregory, and finish off their day at the gym with Rob.
+
+Night 1 - MC has the option to go through their emails. They can also view how many points they have with each character.
+
+Day 2 - Another normal day through Section C8. Today, MC has the option to bring up their "prized possession" they chose on day 1, and
+gain points depending on which one they picked. The day starts off with the unknown core coming into their office and inviting them out
+after work. Things then proceed as normal once Miss Esther arrives. Gregory does not appear today.
+
+Night 2 - same deal as night 1. MC gets an email from gregory apologising for day 1.
+
+Day 3 - Miss Esther greets you and informs you that every week the maintenance lead must spend one full shift with one of the cores in
+their section, as simply checking in on them isn't enough to guarantee they're actually doing their job. MC chooses who to spend the day with.
+    if KRIS:
+        Kris talks about his rise in the business industry and how stressful being finance staff. He speaks about how, when Cave was still alive,
+        his reckless spending caused mass panic in the finance department, and so they put him in charge of watching the stock 24/7. He speaks about
+        Aperture's recovery from their financial crisis.
+    if HEATH:
+        Heath talks about her love for magic and how it feels like Aperture does too much science. She admits that a lot of her "tricks" are really
+        just mechanics and wishes to learn "real" magic one day, like the men she sees on TV. She talks about how the scientists really just ignore
+        her the majority of the time and how she feels they keep her here just so they don't have to put her in a more "important" position.
+    if ???:
+        Miss Esther scoffs at MC and says that "thing" isn't on her pathway and she'll have to do that on her own free time. Choose again.
+    if ASPEN:
+        Aspen talks about the greenhouse supervisior, Dr. Olive, and how strict she can be. He laments that sometimes he wishes he could see REAL
+        plants, growing and thriving all on their own without the need for constant supervision. He talks about how plants have feelings and how the
+        other scientists don't seem to see that.
+    if CC:
+        CC talks about how the scientists invented him as a sick joke (literally) and how he'd give anything to be "healthy" again. He laments, however,
+        that there's no such thing as "healthy" for him, because his sickness is literally programmed into him, and without extensive changes to his
+        personality, he'll always be sick. (This foreshadows CC's two endings.)
+    if GREGORY:
+        Miss Esther says that technically, Gregory is a section C7 core, and that he already has a different maintenance employee looking after him. Choose again.
+    if ROB:
+        Rob talks about his two kids and his ex-wife. MC is incredulous about how a core can have those two things, at which Rob scoffs. Rob talks about
+        his love of all things sports, and that the gym is rarely ever used because scientists are "too busy" to "sport around". He also goes off on A
+        schizophrenic rant.
+    
+Once MC returns to their office, Miss Esther warns them not to get attached to any of the cores, and that they're the boss, not a "friend".
+
+Night 3 - same deal as previous nights, MC gets an email from whoever they spent the day with.
+
+Day 4 - back to the normal routine. Whoever MC spent the previous day with will have a different, more personal interaction. ??? is not seen today, but
+Gregory is seen with Rob, who apparently thinks that Gregory is three cores in a trench coat. Greg says that's ridiculous.
+
+Night 4 - same as previous nights. Email from greg that basically says he's NOT three cores in a trench coat.
+
+Day 5 - Casual Friday!! Miss Esther says she's off for a weekend vacation, and tells MC to just "do their job" (in actuality, Miss Esther will be spying on MC today.)
+        MC can do literally whatever the hell they want today. It's a free-roam and they can visit any location. ??? and greg can be encountered here as well, the first
+        "true" interaction with them alone. Depending on Mc's relationship with a core they may invite them out over the weekend.
