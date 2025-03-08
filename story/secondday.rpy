@@ -366,4 +366,160 @@ label heathday2cont:
     scene temphall
     with pixellate
 
-    n "testend"
+    n "You and Miss Esther make your way over to the greenhouse."
+    show e annoy with easeinright
+    n "She looks annoyed."
+
+    menu:
+        extend ""
+
+        "(Ask her what's wrong.)":
+            $ esther_affection += 1
+            jump whatswrong
+
+        "(Stay quiet.)":
+            n "You decide to stay quiet. Eventually, you reach the greenhouse."
+            show e
+            e "Go on, now."
+            n "You enter the greenhouse."
+            jump aspenday2
+
+label whatswrong:
+    mc "What's up, Miss Esther? Is something wrong?"
+
+    show e
+    e "Hmm? Oh, nothing, nothing. Just thinking about work."
+
+    show e annoy
+    mc "Do you not like your job?"
+
+    e "No, don't get me wrong, I do. It's just tedious."
+    e "I used to work in Testing, you know."
+    
+    mc "Testing?? That's, like, top-level work. Why'd they move you down here?"
+
+    e "Budget cuts, basically. Testing isn't half the program it used to be."
+    
+    show e laugh
+    e "Wayyy back in the early days of Aperture, from what I've heard, we used to test on olympians and astronauts and..."
+
+    show e annoy
+    e "...y'know, the best of the best."
+    e "Then the 70s hit. And the funds started running low."
+    e "And..."
+
+    show e
+    e "Oh look, we're here. Go on in, now. I'm sure Aspen needs a check-up."
+
+    n "You decide not to question her further. You enter the greenhouse."
+
+label aspenday2:
+
+    scene aspentemproom with pixellate
+    n "Once again, you are taken aback by the sheer number of plants in the greenhouse."
+
+    n "Aspen greets you with a smile."
+
+    a "Welcome back, welcome back."
+
+    mc "Everything's still alright in here?"
+
+    a "Yep! Pretty as a picture. No issues with my sprinkler, either."
+
+    mc "How come I haven't seen any other humans in here? Yesterday, you said there were a few in the greenhouse staff."
+
+    a "Yes, very true, I did say that. I forgot to mention, I guess, that they really only come in the evening to do their experiments."
+    a "Sometimes when I come in the next morning, plants are missing or mutated or..."
+    a "...and then there was that one time with the potato battery..."
+
+    menu:
+        extend ""
+
+        "Sounds like they keep you pretty busy.":
+            $ romance_points["Aspen"] += 2
+            jump impressaspen2
+
+        "Don't they have more important things to do than playing with children's toys?":
+            $ romance_points["Aspen"] -= 4
+            jump offendaspen2
+
+        "You know, I have my own plant that I take care of, too." if plant == True:
+            $ romance_points ["Aspen"] += 4
+            jump bertha
+
+label impressaspen2:
+    a "Yes, very busy. Thankfully, I love botany. And I love my job."
+
+    mc "Well, you know what they say. If you love what you do, you'll never work a day in your life."
+
+    a "Haha! No, I didn't know that. But now I do! And I love that!"
+
+    if romance_points["Aspen"] >= 4:
+        jump aspenfunny
+    else:
+        mc "I should probably get going, now. Miss Esther's waiting."
+        a "Alrighty. Have a good day."
+        jump aspenday2cont
+
+label offendaspen2:
+    a "Children's toys?! Potato batteries are incredibly important to science, you know."
+    a "First of all... well, yes, they're good for teaching children. But on top of that!"
+    a "It's a beautiful fusion of electronics and botany. Just like me."
+
+    mc "Uh-huh."
+
+    a "Pfft. You just don't get it. You're just like the last guy."
+
+    mc "I should be going."
+
+    a "Yes. You should."
+    jump aspenday2cont
+
+label bertha:
+    a "WHAT? No way! What type is she?"
+
+    mc "She's a peace lily named Bertha."
+
+    a "Peace lilies... I think we had those a while back."
+    a "Oh my goodness, that's wonderful. How does she survive this far down? There's no sunlight down in the offices, is there?"
+
+    mc "I think they pump it in from the surface, like how they do in here."
+    a "That's amazing."
+
+    if romance_points["Aspen"] >= 4:
+        jump aspenfunny
+    else:
+        mc "I should probably get going, now. Miss Esther's waiting."
+        a "Alrighty. Have a good day! Say hi to Bertha for me."
+        mc "I will."
+        jump aspenday2cont
+
+label aspenfunny:
+    a "Haha. You're great. Better than the last guy."
+
+    mc "What was wrong with the last guy?"
+
+    a "He just... didn't really {i}get it{/i}, y'know? Thought plants were stupid."
+    a "And me. He thought I was stupid, too."
+
+    mc "That's horrible."
+
+    a "Tell me about it!"
+    a "But now you're here, and you're so much better."
+
+    mc "That's sweet of you."
+
+    a "Well... uh, ahem. You should get going. Miss Esther is waiting. Probably."
+
+    mc "Yes. You're right."
+
+    jump aspenday2cont
+
+label aspenday2cont:
+    n "You check Aspen off your list and exit the greenhouse."
+
+    scene temphall with pixellate
+    show e with easeinright
+    e "I hope everything went well in there. We should get back on track towards CC, now."
+
+    mc "endtest"

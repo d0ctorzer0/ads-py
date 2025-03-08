@@ -668,7 +668,7 @@ label ccchoice:
             $ romance_points["CC"] += 2
             $ esther_affection += 1
             hide e
-            with easeoutright*
+            with easeoutright
             show c
             with easeinright
             c "Don't ask me. Humans can be cruel. Especially... Aperture ones."
