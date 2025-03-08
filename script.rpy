@@ -2,6 +2,7 @@
 default plant = False
 default ball = False
 default flowers = False
+default spades = True
 
 #GOODBYES
 default krisgoodbye = False

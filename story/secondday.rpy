@@ -154,3 +154,216 @@ label estherday2:
     mc "Yes, I believe so."
 
     e "Perfect. Come along, now."
+
+    jump krisday2
+
+label krisday2:
+    scene temphall
+    with pixellate
+    show e
+    with easeinright
+    n "You and Miss Esther approach the conference room, just as yesterday."
+
+    e "I know maintenance can be a tedious job, but don't get discouraged."
+    e "A lot of other employees in this department would kill to have a route like yours."
+    show e annoy
+    e "Epecially considering the majority of personality cores aren't... great."
+
+    scene kristemproom
+    with pixellate
+    show k
+    with easeinright
+    k "Why hello, and welcome back. I'm assuming your route went well yesterday if you're still here now."
+
+    mc "I'd say so. Any changes in the stock today?"
+
+    show k flirt
+    k "Not that I've seen, no. Ever since the new CEO took over, things have mostly been quiet."
+
+    mc "She maintains the finance department well, then?"
+
+    show k
+    k "Yes, I'd say so. Smart one, that."
+
+    menu:
+        extend ""
+        
+        "You know, I manage my funds pretty nicely myself.":
+            $ romance_points["Kris"] += 3
+            jump impresskris2
+
+        "It's pretty easy to not spend recklessly.":
+            $ romance_points["Kris"] -= 3
+            jump offendkris2
+        
+        "I agree. She's doing well for the company.":
+            $ romance_points["Kris"] += 1
+            k "Better than the last one, for sure."
+            jump krisday2cont
+    
+label impresskris2:
+    show k flirt
+    k "Is that so?"
+
+    mc "Why yes. I watch my spending carefully, especially after the turmoil the company recently went through."
+
+    show k angry
+    k "Do you have any investments?"
+
+    mc "Of course. I'm not an idiot."
+
+    show k
+    k "That's not what I was implying."
+    show k flirt
+    k "It's important to invest. I'm glad you see that."
+
+    jump krisday2cont
+
+label offendkris2:
+    show k angry
+    k "What do you mean by that?"
+
+    mc "The former CEO. His reckless spending put the company deep in the gutter."
+
+    k "I'm aware, but I don't like your tone."
+    k "Finances are not easy to manage."
+    show k
+    k "The fact you think they are speaks measures about how well you truly manage your own."
+
+    jump krisday2cont
+
+label krisday2cont:
+    hide k
+    with easeoutright
+    show e annoy
+    with easeinright
+
+    e "We've really ought to be going, now."
+
+    if romance_points["Kris"] >= 5:
+        hide e with easeoutright
+        show k flirt with easeinright
+
+        k "I hope I'll see you tomorrow."
+        n "Miss Esther rolls her optic."
+
+        hide k flirt with easeoutright
+
+    elif romance_points["Kris"] <= 4:
+        hide e with easeoutright
+        show k with easeinright
+
+        k "Yes, you have more to attend to."
+
+        hide k with easeoutright
+
+    n "You check Kris off your list and head out."
+    jump heathday2
+
+label heathday2:
+    scene temphall
+    with pixellate
+
+    show e annoy with easeinright
+    e "Heath likes to show a new \"trick\" every day, so don't be suprised if she tries to do one again."
+
+    mc "Does she actually think what she does is \"magic\"?"
+
+    e "I have no clue. I'm not particularly interested in... uh..."
+    e "...getting to know any of them."
+
+    mc "Why not?"
+
+    e "\"Connection\"... it's just not my thing. I don't understand how you humans can do it."
+
+    scene heathtemproom
+    with pixellate
+
+    n "You enter the stage room to find Heath already waiting for you."
+
+    show h with easeinright
+    h "Welcome, welcome! Apologies for the delay yesterday, it won't happen again! I'm ready this time!"
+
+    n "You wait with baited breath."
+
+    show h sad
+    h "Now... choose a card... any card..."
+
+    show h
+    h "Well, any card that I have on me, preferably, but..."
+
+    jump heathmenuday2
+
+label heathmenuday2:
+    menu:
+        extend ""
+
+        "Heath, I don't really have time for this.":
+            $ romance_points["Heath"] -= 3
+            jump offendheath2
+
+        "Uhh... the three of clubs?":
+            $ romance_points["Heath"] += 3
+            jump impressheath2
+        
+        "Ace of Spades." if spades == True:
+            $ romance_points["Heath"] += 1
+            jump neutralheath
+
+label offendheath2:
+
+    show h sad
+    h "Oh. Yeah. You've got important science stuff to get to, huh?"
+
+    mc "Sorry. I just don't really like magic all too much."
+
+    h "That's alright."
+
+    mc "You're doing everything to need to, yes? Keeping morale high and all that?"
+
+    h "I think so."
+
+    mc "Great."
+
+    jump heathday2cont
+
+label impressheath2:
+
+    show h laugh
+    h "HAHA! Is {b}THIS{/b} your card?"
+
+    n "She pulls out exactly what you thought of - the three of clubs."
+
+    show h
+    mc "Wow! Yes, that's exactly it! Amazing."
+
+    h "Hahaha, thank you, thank you very much."
+    n "Miss Esther groans."
+
+    h "Is your morale improved? Your spirits lifted?"
+
+    mc "Definitely. And on top of that, I'm impressed, too."
+
+    show h sad
+    h "O-Oh, really? It's nothing, honestly, haha."
+
+    jump heathday2cont
+
+label neutralheath:
+    $ spades = False
+    show h sad
+    h "Oh, um, actually, I don't have that card with me. Can you... choose again?"
+
+    jump heathmenuday2
+
+label heathday2cont:
+    hide h with easeoutright
+    n "You check Heath off your list. Aspen is next."
+
+    show e annoy with easeinright
+    e "I hope that disgusting core we saw yesterday doesn't make another appearance..."
+
+    scene temphall
+    with pixellate
+
+    n "testend"
