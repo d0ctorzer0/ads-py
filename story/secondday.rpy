@@ -70,7 +70,7 @@ label lockout:
     jump estherday2
 
 label letin:
-    n "You unlcok the door using the keypad, and a familiar face comes \"stumbling\" in."
+    n "You unlock the door using the keypad, and a familiar face comes \"stumbling\" in."
 
     show u
     with easeinright

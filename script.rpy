@@ -33,7 +33,7 @@ default esther_affection_minimum = 5
 # GAME
 label start:
 
-    play music intro fadein 0.5
+    play music cma fadein 0.5 fadeout 0.5
 
     scene office
     with pixellate

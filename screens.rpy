@@ -122,6 +122,8 @@ init -2:
         line_spacing -10
     style say_dialogue:
         line_spacing -10
+    style choice_button_text:
+        line_spacing -10
 
 ## Make the namebox available for styling through the Character object.
 init python:
@@ -224,9 +226,9 @@ style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xalign 0.5
+    xpos 80
     ypos 405
-    yanchor 0.5
+    yanchor 300
 
     spacing gui.choice_spacing
 

@@ -1,5 +1,6 @@
 label krisday1:
 
+    play music sa fadein 0.5
     scene kristemproom
     with pixellate
 
@@ -461,6 +462,7 @@ label aspenday1:
 
     n "The core stops spraying, turns around in shock, and quickly zooms back over to the entrance."
 
+    show a with easeinright
     a "Sorry, sorry, didn't see you there!"
 
     mc "That's alright."
@@ -534,10 +536,12 @@ label aspenday1cont:
     if aspengoodbye == False:
 
         a "Hmm. I'm sure."
-    
+
+    hide a with easeoutright
     n "You check \"ASPEN (BOTANICAL CORE)\" off your list. Despite the rather unusual subsection he oversees, he seems content enough with it."
     n "As you exit the greenhouse, Miss Esther greets you."
 
+    show e
     show e
     with easeinright
     e "Glad to see you're back. We should move along - that... {i}encounter{/i} earlier put us behind schedule."
