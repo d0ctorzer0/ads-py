@@ -20,8 +20,9 @@ label krisday1:
     with easeinright
     k "Ahh, Miss Esther. I assume you're here for my checkup?"
 
+    show e b sad at bounce 
     e "{i}I'm{/i} here for no such thing. {i}They,{/i} however..."
-
+    hide e b sad
     show k flirt
     n "Kris turns down to face you."
 
@@ -39,7 +40,9 @@ label krisday1:
 
     mc "Is he always this rude?"
 
+    show e b sad at bounce
     n "Esther sighs. You glance down at your clipboard."
+    hide e b sad
 
     mc "I see here your job is to make sure Aperture stock doesn't get too low. Is that correct?"
 
@@ -71,8 +74,9 @@ label offendkris:
     k "Excuse me?! I don't appreciate your... implications."
     k "Does this look easy to you? All these lines and colors and numbers??"
 
-    # show e annoy
+    show e b at bounce
     e "Now, Kris. I'm sure they meant nothing by their comment."
+    hide e b
 
     k "Hmmph. Regardless, check me off your list. I'm doing everything I need to here."
     
@@ -86,8 +90,9 @@ label impresskris:
     k "Why... yes. It is quite hard."
     k "Glad {i}someone{/i} here has some common sense."
 
+    show e b sad at bounce
     n "Esther scoffs. Kris pauses."
-
+    hide e b sad
     show k
     k "I apologise... for calling you... \"boring\"."
     k "Don't get me wrong, though. You could be doing a lot more."
@@ -222,7 +227,9 @@ label impressheath:
 
     h "Mmhmm. Thank you, thank you. Not everyone appreciates my great talents."
 
+    show e b sad at bounce
     n "Miss Esther groans."
+    hide e b sad
 
     mc "You do this all day?"
 
@@ -336,6 +343,7 @@ label unknownday1:
     with easeinright
     u "Uhh, sorry, miss... ma'am. I don't rightly know how I... *hic* ...got here."
 
+    show e b annoy at bounce
     e "What is this... disgrace to my position!?"
 
     menu:
@@ -360,6 +368,7 @@ label impressunknown:
 
     $ unknownhumor = True
 
+    hide e b annoy
     show u upset
     u "Yeah, calm down, lady. Issalright."
 
@@ -374,7 +383,9 @@ label impressunknown:
 
     n "The core winks at you. Or... something adjacent to that, having only one eye."
 
+    show e b annoy at bounce
     e "Eugh. Disgusting. Vile."
+    hide e b annoy
 
     u "Why don't you come drink some... *hic* lighter fluid with me, honey?"
 
@@ -386,6 +397,7 @@ label impressunknown:
 
 label offendunknown:
 
+    hide e b annoy
     show u upset
     u "Pfft. No. I'm... fit as a fiddle."
 
@@ -393,7 +405,9 @@ label offendunknown:
 
     u "And what do you know?! You're just a lousy human!"
 
+    show e b annoy at bounce
     e "EXCUSE ME, sir? This \"human\" has very important business to attend to and does not need the likes of YOU interrupting them."
+    hide e b annoy
 
     show u
     u "Fine. Jesus, y'think people would have some manners..."
@@ -401,6 +415,8 @@ label offendunknown:
     jump unknownday1cont
 
 label unknownday1cont:
+
+    hide e b annoy
 
     hide u
     with easeoutright
@@ -462,19 +478,23 @@ label aspenday1:
 
     n "The core stops spraying, turns around in shock, and quickly zooms back over to the entrance."
 
-    show a with easeinright
+    show a look with easeinright
     a "Sorry, sorry, didn't see you there!"
 
     mc "That's alright."
 
+    show a
     a "I'm assuming you're the temp for the maintenance position, yeah?"
     a "Miss Esther can't come in here, but she briefed me on your arrival this morning."
 
     mc "Yes, that's me. I've just come to check up on you."
 
     a "Well, no need for concern. My sprinkler system's working great as always."
+
+    show a look
     a "The day it fails will be a horrible day for Aperture!"
 
+    show a
     n "He laughs nervously."
 
     menu:
@@ -500,10 +520,12 @@ label impressaspen:
 
     $ aspengoodbye = True
 
+    show a look
     a "Aha, yes, it is. I'm glad you can, uh, see that."
 
     mc "Are you the only one maintaining these specimens?"
     
+    show a
     a "Oh, not at all. Well, kind of. I'm the only personality core working in here. We've got a few nanobots on the greenhouse staff."
     a "And of course, the scientists. But I would say I definitely work the {i}most{/i}."
 
@@ -535,6 +557,7 @@ label aspenday1cont:
 
     if aspengoodbye == False:
 
+        show a look
         a "Hmm. I'm sure."
 
     hide a with easeoutright
@@ -590,8 +613,9 @@ label ccday1:
     with easeinright
     cu "Oh, what's the use? The diagnosis will be the same, regardless."
 
+    show e b sad at bounce
     e "Yes, I know."
-
+    hide e b sad
     show c
     n "The core slowly opens its optic and turns to face you. It looks... tired, somehow."
 
@@ -699,7 +723,9 @@ label impresscc:
     c "Well. Maybe not all of you."
 
     show c
+    show e b sad at bounce
     e "CC, get some rest. Doctor, we should be going, now."
+    hide e b
 
     mc "I hope you feel better."
 
@@ -760,30 +786,37 @@ label gregday1:
 
     show e annoy
     e "Yes. Rarely used, but yes, we have one."
+    hide e with easeoutright
 
-    show e
     n "Suddenly, a strangely-shaped figure comes barreling around the corner on a cart. It's headed straight towards you."
-
+# help he looks SO FUNNY IN GAME OMG
+    show g aaa with easeinright
     gu "Aah!! I'm so so sorry! Watch out watch out!!"
 
-    show e shock
     n "You try to move in time, but it's too late. The cart crashes into you."
+    show g aaa at bounce
     n "Thankfully it's extremely lightweight, and you don't fall over."
+    show g
     n "You look down at the cart to see what is very clearly three cores in a trench coat."
 
-    hide e shock
+    show g look
     gu "Sorry, sorry. It's hard to control this thing."
 
     mc "Are you - are you alright?"
 
+    show g
     gu "Me? Why, y-yes, of course, why do you ask?"
 
     mc "It just looks like there's three -"
 
-    gu "Whoops! Got to go!! Late for a, um, very important meeting! Yes, that's it!"
+    show g aaa
+    gu "Whoops! Got to go!!"
+    show g look
+    gu "Late for a, um, very important meeting! Yes, that's it!"
 
     n "With a few clicks of what's probably some sort of control panel, the cart turns and speeds off past you."
 
+    hide g with easeoutright
     show e shock
     with easeinright
 
