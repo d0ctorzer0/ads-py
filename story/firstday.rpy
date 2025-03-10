@@ -416,7 +416,7 @@ label offendunknown:
 
 label unknownday1cont:
 
-    hide e b annoy
+    hide e b annoy with None
 
     hide u
     with easeoutright
@@ -834,22 +834,26 @@ label robday1:
     show e
     n "Still left with more questions than answers, you follow Miss Esther."
 
-    scene robtemproom
-    with pixellate
-    show e
-    with easeinright
+    scene robtemproom with pixellate
     n "Eventually, you approach a door with \"GYM\" written on it. Not a sign of any other human employees, though."
     n "You open the door to see a core behind a desk, red pupil twitching as it watches a TV screen above it."
 
+    show r with easeinright
     r "GO! GO!! What are you DOING?! THROW IT!!"
 
-    n "The screen seems to be playing back a game of some kind, but you don't know enough about sports to tell which one."
+    if ball == True:
+        n "The screen seems to be playing back an old recording of an American football game."
+    else:
+        n "The screen seems to be playing back a game of some kind, but you don't know enough about sports to tell which one."
     r "Sorry, with you in a sec."
     r "THROW THE GODDAMN BALL, WHAT ARE YOU WAITING FOR?!"
 
-    show e annoy
+    hide r with easeoutright
+    show e annoy with easeinright
     e "Rob, it's 3 minutes of your day. That's all we ask for every time we come by."
 
+    hide e with easeoutright
+    show r with easeinright
     r "Yes, yes, Essie. One sec."
     r "AHH, DAMN IT!! CAN'T YOU DO ONE GODDAMN THING RIGHT?"
 
@@ -857,7 +861,9 @@ label robday1:
 
     r "Sorry, sorry, yeah, I'm here, I'm present."
 
+    show e b annoy at bounce
     e "We're here for your check-in."
+    hide e b
 
     r "Yea, that's what I figured. This the new temp?"
 
@@ -912,7 +918,8 @@ label offendrob:
     r "It CAN! Trust me, I've seen it happen. Like those humans in the stasis pods right now."
     r "They're gettin' no exercise while they're sleepin'. And when they wake up? They'll wither away."
 
-    show e shock
+    hide r with easeoutright
+    show e shock with easeinright
     e "You really shouldn't get him started. He likes to rant."
     e "Just... slowly back away."
 

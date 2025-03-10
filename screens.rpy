@@ -298,14 +298,14 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xalign 0.5
-        yalign 0.65
+        xalign 0.9
+        yalign 0.1
 
         spacing gui.navigation_spacing
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("New Game") action Start()
 
         else:
 
@@ -315,7 +315,7 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Options") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -325,12 +325,12 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        #textbutton _("About") action ShowMenu("about")
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+        #if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+        #    textbutton _("Help") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
@@ -348,7 +348,7 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
-    xalign 0.5
+    xalign 0.9
 
 
 ## Main Menu screen ############################################################
@@ -1637,6 +1637,8 @@ screen email3pt2():
     vbox:
         style_prefix "emlback"
         textbutton "<<< back" action Jump("fde")
+
+
 
 screen affectionprogress():
     bar:

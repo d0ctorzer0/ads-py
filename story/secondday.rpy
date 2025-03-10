@@ -72,6 +72,7 @@ label lockout:
 label letin:
     n "You unlock the door using the keypad, and a familiar face comes \"stumbling\" in."
 
+    $ emailfromrobday2 == True
     show u
     with easeinright
     u "Why hello there, pretty little thing."
@@ -420,6 +421,7 @@ label aspenday2:
 
     n "Aspen greets you with a smile."
 
+    show a with easeinright
     a "Welcome back, welcome back."
 
     mc "Everything's still alright in here?"
@@ -428,6 +430,7 @@ label aspenday2:
 
     mc "How come I haven't seen any other humans in here? Yesterday, you said there were a few in the greenhouse staff."
 
+    show a look
     a "Yes, very true, I did say that. I forgot to mention, I guess, that they really only come in the evening to do their experiments."
     a "Sometimes when I come in the next morning, plants are missing or mutated or..."
     a "...and then there was that one time with the potato battery..."
@@ -448,6 +451,7 @@ label aspenday2:
             jump bertha
 
 label impressaspen2:
+    show a
     a "Yes, very busy. Thankfully, I love botany. And I love my job."
 
     mc "Well, you know what they say. If you love what you do, you'll never work a day in your life."
@@ -462,6 +466,7 @@ label impressaspen2:
         jump aspenday2cont
 
 label offendaspen2:
+    show a
     a "Children's toys?! Potato batteries are incredibly important to science, you know."
     a "First of all... well, yes, they're good for teaching children. But on top of that!"
     a "It's a beautiful fusion of electronics and botany. Just like me."
@@ -476,11 +481,14 @@ label offendaspen2:
     jump aspenday2cont
 
 label bertha:
+    show a
     a "WHAT? No way! What type is she?"
 
     mc "She's a peace lily named Bertha."
 
+    show a look
     a "Peace lilies... I think we had those a while back."
+    show a
     a "Oh my goodness, that's wonderful. How does she survive this far down? There's no sunlight down in the offices, is there?"
 
     mc "I think they pump it in from the surface, like how they do in here."
@@ -499,16 +507,19 @@ label aspenfunny:
 
     mc "What was wrong with the last guy?"
 
+    show a look
     a "He just... didn't really {i}get it{/i}, y'know? Thought plants were stupid."
     a "And me. He thought I was stupid, too."
 
     mc "That's horrible."
 
+    show a
     a "Tell me about it!"
     a "But now you're here, and you're so much better."
 
     mc "That's sweet of you."
 
+    show a look
     a "Well... uh, ahem. You should get going. Miss Esther is waiting. Probably."
 
     mc "Yes. You're right."
@@ -522,4 +533,179 @@ label aspenday2cont:
     show e with easeinright
     e "I hope everything went well in there. We should get back on track towards CC, now."
 
-    mc "endtest"
+    mc "Why is CC even alive?"
+
+    show e annoy
+    e "What do you mean?"
+
+    mc "Sorry. Why did they make him? Or even... how?"
+    show e
+    e "I couldn't say. I'm not an expert on the way you humans think, but I have seen Aperture do many things over the years."
+    e "I'm still fairly sure we've got about 10,000 test subjects on ice in the basement, still."
+
+    mc "Really? I thought that was just a myth."
+
+    n "You continue down the hallway towards CC. No interruptions so far..."
+    jump ccday2
+
+label ccday2:
+    scene cctemproom with pixellate
+    show c close with easeinright
+
+    c "Welcome back, Doctor. How have your rounds been?"
+
+    mc "They've been alright. Nothing crazy."
+
+    c "I'm glad. An easy day is a good day."
+
+    mc "Are you still feeling... sick?"
+
+    show c
+    c "Haha. Yes."
+
+    menu:
+        extend ""
+        "Is there anything I can do to help?":
+            $ romance_points["CC"] += 3
+            jump impresscc2
+        "Alright. That's all I needed to know.":
+            $ romance_points["CC"] -= 3
+            jump offendcc2
+
+label impresscc2:
+    show c look
+    c "I appreciate the offer, Doctor, but there's really nothing for me."
+
+    show c
+    c "You could unplug me. That would kill me faster."
+
+    show e b sad at bounce
+    e "I'm afraid not, CC. Goes against our contract."
+    hide e b
+
+    show c close
+    n "CC coughs harshly."
+    
+    show c
+    c "It's alright, I understand. Thank you, regardless."
+
+    mc "Please let me know if there's anything I can do."
+    
+    hide c with easeoutright
+    n "You check CC off your list and solemnly leave the room."
+
+    jump ccday2cont
+
+label offendcc2:
+    hide c with easeoutright
+    show e annoy with easeinright
+    e "Let's go."
+
+    jump ccday2cont
+
+label ccday2cont:
+    n "As you close the door to CC's room behind you, you glance around."
+    n "No sign of that strange figure from yesterday, thankfully."
+
+    show e with easeinright
+    e "Time for our last stop of the day."
+
+    mc "It feels like this route's gone a lot quicker than yesterday's."
+
+    show e annoy
+    e "Yes, most likely because we haven't had any unnecessary interruptions."
+
+    n "The two of you head off towards the gym."
+
+    jump robday2
+
+label robday2:
+    scene robtemproom with pixellate
+    show r with easeinright
+    r "Welcome back, welcome back, doctor. Interested in a run on the treadmill today?"
+
+    mc "Maybe another time. Any visitors today?"
+
+    r "Well, yes, actually - Dr. Pierce came in earlier today, said he had a dream he needed to exercise more? Or somethin'..."
+    r "He's kind of crazy, not gonna lie."
+
+    show e b at bounce
+    e "Working in neurology will do that do a person."
+    hide e b
+
+    r "I am having some trouble with my equipment, though. Rowing machine's busted."
+    r "Come to think of it, it was prolly busted yesterday and I just forgot to mention it."
+
+    menu:
+        extend ""
+        "That's definitely an issue. I'll get that fixed right away.":
+            $ romance_points["Rob"] += 3
+            jump impressrob2
+        "If no one's using it, why bother fixing it?":
+            $ romance_points["Rob"] -= 3
+            jump offendrob2
+        "I'll put in a work order tonight.":
+            r "Thanks. I'd do it myself, but, uh... I don't think I know how."
+            mc "No issues."
+            jump robday2cont
+
+label impressrob2:
+    r "Ahh, thank you. Sometimes it feels like half the machines in here are broke due to, uh, lack of use."
+
+    n "Rob suddenly looked at the screen above him."
+
+    r "AH, DAMN YOU! LOST THE BALL AGAIN?"
+
+    mc "You really like sports, don't you?"
+
+    r "Uh, ahem, yeah. They keep me occupied."
+    r "Kinda need it with how lonely it gets in here."
+
+    show e b annoy at bounce
+    e "Doctor, we really ought to be going."
+    hide e b
+
+    r "Go on - I'll catch you later."
+
+    jump robday2cont
+
+label offendrob2:
+    r "That's not very kind. Machines have feelings, too, y'know."
+    r "And I think I'd know! I AM one, after all."
+    r "I wasn't always a machine, though, I had limbs, once..."
+
+    hide r with easeoutright
+    show e annoy with easeinright
+    e "No he didn't. That's just a straight-up lie."
+    e "Rob, you were manufactured using melted-down turret panels and a lack of hope."
+    hide e with easeoutright
+    show r with easeinright
+    r "Whatever, Essie."
+
+    n "Rob turns to face you."
+
+    r "She's crazy."
+
+    hide r with easeoutright
+    show e annoy with easeinright
+    e "Ugh. Let's go, Doctor."
+
+    jump robday2cont
+
+label robday2cont:
+    n "You check Rob off your list once more to finish the day off."
+    scene temphall with pixellate
+    show e with easeinright
+    n "As you leave the gym, Miss Esther turns to you as you begin walking back to your office."
+
+    e "Tomorrow's agenda will be slightly different, so just be prepared for a switch in the routine."
+
+    mc "A switch in the routine? It's only the second day."
+
+    e "Yes, but even temps have to follow the maintenance schedule."
+
+    mc "How will it be \"different\"?"
+
+    e "I'll let you know tomorrow. For now, get some rest."
+
+    jump sdefirst

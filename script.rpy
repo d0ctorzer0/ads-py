@@ -3,6 +3,7 @@ default plant = False
 default ball = False
 default flowers = False
 default spades = True
+default emailfromrobday2 = False
 
 #GOODBYES
 default krisgoodbye = False
