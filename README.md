@@ -7,7 +7,7 @@ New commit every day (maybe) (depends on whether my wifi works or not)
 checklist:
 ☑ day 1
 ☑ night 1
-☐ day 2
+☑ day 2
 ☐ night 2
 ☐ day 3
 ☐ night 3
