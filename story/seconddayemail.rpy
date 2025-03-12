@@ -6,7 +6,7 @@ screen emailday2():
         textbutton "    from: HR\n        MEMO TO ALL EMPLOYEES                                                           " action Jump("emailsix")
     vbox:
         style_prefix "nextday"
-        #textbutton "NEXT DAY >>" action Jump("day2")
+        textbutton "NEXT DAY >>" action Jump("day3")
     use affectionprogress
 
 screen email4():
@@ -45,13 +45,29 @@ screen email5():
 screen email6():
     vbox:
         style_prefix "emltitle"
-        text "CAVE JOHNSON ALIVE??? Click for pictures >>"
+        text "MEMO TO ALL EMPLOYEES"
     vbox:
         style_prefix "emlfrom"
-        text "from: Aperture News Now"
+        text "from: HR"
     vbox:
         style_prefix "eml"
-        text "New evidence has come to light that CAVE JOHNSON, FORMER CEO\nOF APERTURE, IS ALIVE! Many think that the scientific genius has long\nsince passed away, but some Aperture Employees think otherwise.\n\n\"I heard there was a team of scientists who stuffed his brain into a\nmassive metal head,\" reports one. \"They say he now lies at the bottom\nof the facility...\"\n\nThe current CEO has declined to comment, stating, \"These claims are\nbaseless and unscientific. If Mr. Johnson were truly alive, we would do\neverything in our power to bring him back.\"\n\nRead more on this story {a=https://en.wikipedia.org/wiki/Lemon}here.{/a}"
+        text "REFERRAL BONUSES ARE NOW AVAILABLE!\n\nDue to the recent decrease of healthy employees here at Aperture, we\nhave decided to enact our very own employee referral program.\n\nHere at Aperture, we are always looking for top scientists and\nresearchers to join our team. Any employee may submit a referral form\nto HR, excluding:\n\n> Any and all HR employees\n> Any and all employees engaged in the hiring process\n> Upper-level management\n\nThis is to ensure our referral process remains unbiased and scientific."
+    use affectionprogress
+    vbox:
+        style_prefix "emlback"
+        textbutton "next >>>" action Jump("emailsixpt2")
+
+screen email6pt2():
+    vbox:
+        style_prefix "emltitle"
+        text "MEMO TO ALL EMPLOYEES"
+    vbox:
+        style_prefix "emlfrom"
+        text "from: HR"
+    vbox:
+        style_prefix "eml"
+        text "Employees whose referral is selected will be eligible to recieve up\nto $200. We will NOT, under ANY CIRCUMSTANCES, accept any former\nBlack Mesa employees.\n\nPlease send an email to PEB regarding any questions or referral\nsubmissions.\n\nThank you,\nHR"
+# hi if ur reading my code heres a bit of lore... PEB here is supposed to be the party escort bot, the core that dragged chell back in the portal\portal 2 universe
     use affectionprogress
     vbox:
         style_prefix "emlback"
@@ -82,3 +98,8 @@ label emailsix:
     
     scene blankemail
     call screen email6
+
+label emailsixpt2:
+
+    scene blankemail
+    call screen email6pt2

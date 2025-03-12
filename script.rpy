@@ -4,6 +4,8 @@ default ball = False
 default flowers = False
 default spades = True
 default emailfromrobday2 = False
+default askforu = False
+default askforg = False
 
 #GOODBYES
 default krisgoodbye = False
@@ -11,6 +13,9 @@ default heathgoodbye = False
 default unknownhumor = False
 default aspengoodbye = False
 default haveaheart = False
+
+#DAY 3 SETUPS
+default kday3good = False
 
 #define shorter_easein = MoveTransition(0.3, enter=offscreenright, enter_time_warp=_warper.easein)
 #define shorter_easeout = MoveTransition(0.3, exit=offscreenright, enter_time_warp=_warper.easein)
@@ -27,9 +32,10 @@ default romance_points = {
 }
 default romance_minimum_for_good_ending = 10
 default romance_minimum_for_perfect_ending = 15
+
 #ESTHER EVIL SETUP
 default esther_affection = 0
-default esther_affection_minimum = 5
+default esther_affection_minimum = 10
 
 # GAME
 label start:

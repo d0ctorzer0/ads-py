@@ -5,6 +5,9 @@ Though your normal day-to-day work involves the creation of personality cores, a
 in a neighboring department, forcing you to work on supervising and maintenance instead. Guided by the level-headed, work-focused Miss
 Esther, you'll meet 7 new characters, from the egotistical Kris to the suspiciously-shaped Gregory.
 
+BACKGROUND INFORMATION
+ADS takes place in an alternate universe from Portal and Portal 2, in a world where Cave has died and Caroline has taken his place.
+The game takes place around 1989, about a year after Cave's death.
 CUE TO CUE
 
 Day 1 - A normal day. MC takes the rounds through Section C8. They first meet Kris, followed by Heath, running into an unnamed core on
@@ -57,3 +60,24 @@ Night 4 - same as previous nights. Email from greg that basically says he's NOT 
 Day 5 - Casual Friday!! Miss Esther says she's off for a weekend vacation, and tells MC to just "do their job" (in actuality, Miss Esther will be spying on MC today.)
         MC can do literally whatever the hell they want today. It's a free-roam and they can visit any location. ??? and greg can be encountered here as well, the first
         "true" interaction with them alone. Depending on Mc's relationship with a core they may invite them out over the weekend.
+
+
+
+EMOTIONS AVAILABLE RIGHT NOW:
+
+ESTHER
+e, e laugh, e annoy, e shock
+KRIS
+k, k flirt, k angry
+HEATH
+h, h laugh, h sad
+UNKNOWN
+u, u upset
+ASPEN
+a, a look
+CC
+c, c look, c close
+GREGORY
+g, g aaa, g look, g nocoat
+ROB
+r
