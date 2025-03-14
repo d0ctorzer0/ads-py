@@ -1,8 +1,8 @@
 screen emailday2():
     vbox:
         style_prefix "emailbtns"
-        textbutton "    {color=#725e42}from: UNKNOWN{/color}\n        A little message...                                                                        " action Jump("emailfour")
-        textbutton "    {color=#c9ae16}from: Gregory{/color}\n        sorry about yesterday!                                                                 " action Jump("emailfive")
+        textbutton "    from: {color=#725e42}UNKNOWN{/color}\n        A little message...                                                                        " action Jump("emailfour")
+        textbutton "    from: {color=#c9ae16}Gregory{/color}\n        sorry about yesterday!                                                                 " action Jump("emailfive")
         textbutton "    from: HR\n        MEMO TO ALL EMPLOYEES                                                           " action Jump("emailsix")
     vbox:
         style_prefix "nextday"

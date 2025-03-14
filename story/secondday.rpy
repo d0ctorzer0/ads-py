@@ -348,6 +348,13 @@ label impressheath2:
     show h sad
     h "O-Oh, really? It's nothing, honestly, haha."
 
+    mc "Everything's alright here? Everything working fine?"
+
+    show h
+    h "Yes! Job's proceeding as normal. No complaints!"
+
+    show h laugh
+    h "From me, or your coworkers! Haha!"
     jump heathday2cont
 
 label neutralheath:
@@ -627,6 +634,7 @@ label robday2:
     mc "Maybe another time. Any visitors today?"
 
     r "Well, yes, actually - Dr. Pierce came in earlier today, said he had a dream he needed to exercise more? Or somethin'..."
+    show r angry
     r "He's kind of crazy, not gonna lie."
 
     show e b at bounce
@@ -650,14 +658,18 @@ label robday2:
             jump robday2cont
 
 label impressrob2:
+    show r
     r "Ahh, thank you. Sometimes it feels like half the machines in here are broke due to, uh, lack of use."
 
     n "Rob suddenly looked at the screen above him."
 
+    show r yell
     r "AH, DAMN YOU! LOST THE BALL AGAIN?"
 
+    show r angry
     mc "You really like sports, don't you?"
 
+    show r
     r "Uh, ahem, yeah. They keep me occupied."
     r "Kinda need it with how lonely it gets in here."
 
@@ -670,8 +682,11 @@ label impressrob2:
     jump robday2cont
 
 label offendrob2:
+    show r angry
     r "That's not very kind. Machines have feelings, too, y'know."
     r "And I think I'd know! I AM one, after all."
+
+    show r yell
     r "I wasn't always a machine, though, I had limbs, once..."
 
     hide r with easeoutright
@@ -680,10 +695,12 @@ label offendrob2:
     e "Rob, you were manufactured using melted-down turret panels and a lack of hope."
     hide e with easeoutright
     show r with easeinright
+    show r angry
     r "Whatever, Essie."
 
     n "Rob turns to face you."
 
+    show r
     r "She's crazy."
 
     hide r with easeoutright

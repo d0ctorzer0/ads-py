@@ -937,9 +937,10 @@ label offendrob:
 
 label robday1cont:
 
-    show e
+    hide r with easeoutright
+
     n "You check off \"ROB (SPORTS CORE)\" from your list. That's the whole route done!"
-    hide e
+
     with easeoutright
     show temphall
     with pixellate

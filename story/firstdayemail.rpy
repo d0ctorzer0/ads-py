@@ -1,7 +1,7 @@
 screen emailday1():
     vbox:
         style_prefix "emailbtns"
-        textbutton "    from: Miss Esther\n        Welcome to Maintenance                                                                " action Jump("emailone")
+        textbutton "    from: {color=#db35a9}Miss Esther{/color}\n        Welcome to Maintenance                                                                " action Jump("emailone")
         textbutton "    from: Aperture News Now\n        CAVE JOHNSON ALIVE??? Click for pictures >>                               " action Jump("emailtwo")
         textbutton "    from: Management\n        About the Incident.                                                                       " action Jump("emailthree")
     vbox:

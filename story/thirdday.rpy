@@ -104,6 +104,8 @@ label gchooseagain:
 
     jump day3choice
 
+# KRIS
+# ======================================
 label krisday3:
 
     show e annoy
@@ -252,6 +254,49 @@ label krisday3bad:
 
     jump day3end
 
+# HEATH
+# ======================================
+label heathday3:
+    e "Well, if anything, at least you'll be entertained."
+    e "Truly, it doesn't matter who you pick, as long as they're in my systems."
+
+    e "I'll put it in my database that you'll be supervising Heath today. Do you remember the way to the break room?"
+
+    mc "Yes, I do."
+
+    e "Perfect. On your way, then."
+
+    scene heathtemproom
+    with pixellate
+
+    n "You enter the empty break room cautiously. Heath is nowhere to be seen."
+
+    mc "Heath? I'm here."
+
+    n "You hear her voice from behind the curtain."
+
+    h "Uh... yes, yes!! One minute, please. You got here faster than I thought..."
+
+    n "The crashing and rattling taking place doesn't ease your conscience."
+    n "Suddenly, Heath whirls out with a puff of smoke, coughing."
+
+    show h sad with easeinright
+    h "Ahem. Uh. Sorry, I've been trying to get my next big performance ready."
+    h "It's not going so great."
+
+    show h
+    h "But anyways! Welcome back! Good to see you."
+    h "Miss Esther told me you chose ME, of all cores, to oversee today."
+
+    mc "Yes, that's right."
+
+    show h laugh
+    h "Well, you're in for a treat. My whole job is entertainment, so I'll be sure to keep you on your toes!"
+
+
+
+# DAY END
+# ==================
 label day3end:
     scene office
     with pixellate

@@ -80,4 +80,4 @@ c, c look, c close
 GREGORY
 g, g aaa, g look, g nocoat
 ROB
-r
+r, r angry, r yell
