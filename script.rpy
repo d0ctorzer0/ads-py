@@ -1,3 +1,5 @@
+define cutscenetextbox = False
+
 #SPECIAL DEFAULTS
 default plant = False
 default ball = False
@@ -16,6 +18,9 @@ default haveaheart = False
 
 #DAY 3 SETUPS
 default kday3good = False
+
+#CUSTCENE T/F
+default kc1 = False
 
 #define shorter_easein = MoveTransition(0.3, enter=offscreenright, enter_time_warp=_warper.easein)
 #define shorter_easeout = MoveTransition(0.3, exit=offscreenright, enter_time_warp=_warper.easein)

@@ -102,6 +102,12 @@ screen say(who, what):
     window:
         id "window"
 
+        if cutscenetextbox == True:
+            ypos 1200   
+            xpos 850
+            xanchor 0.0
+            background None
+
         if who is not None:
 
             window:

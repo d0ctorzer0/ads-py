@@ -838,14 +838,16 @@ label robday1:
     n "Eventually, you approach a door with \"GYM\" written on it. Not a sign of any other human employees, though."
     n "You open the door to see a core behind a desk, red pupil twitching as it watches a TV screen above it."
 
-    show r with easeinright
+    show r yell with easeinright
     r "GO! GO!! What are you DOING?! THROW IT!!"
 
     if ball == True:
         n "The screen seems to be playing back an old recording of an American football game."
     else:
         n "The screen seems to be playing back a game of some kind, but you don't know enough about sports to tell which one."
+    show r angry
     r "Sorry, with you in a sec."
+    show r yell
     r "THROW THE GODDAMN BALL, WHAT ARE YOU WAITING FOR?!"
 
     hide r with easeoutright
@@ -853,10 +855,12 @@ label robday1:
     e "Rob, it's 3 minutes of your day. That's all we ask for every time we come by."
 
     hide e with easeoutright
-    show r with easeinright
+    show r angry with easeinright
     r "Yes, yes, Essie. One sec."
+    show r yell
     r "AHH, DAMN IT!! CAN'T YOU DO ONE GODDAMN THING RIGHT?"
 
+    show r angry
     n "The core shakes his chassis."
 
     r "Sorry, sorry, yeah, I'm here, I'm present."
@@ -865,6 +869,7 @@ label robday1:
     e "We're here for your check-in."
     hide e b
 
+    show r
     r "Yea, that's what I figured. This the new temp?"
 
     mc "Yes, that would be me. I'm assuming you're Rob?"
@@ -873,6 +878,7 @@ label robday1:
 
     mc "Do you not get a lot of people in here?"
 
+    show r angry
     r "Not really. Too busy with their fancy science to get some exercise in."
 
     menu:
@@ -897,6 +903,7 @@ label robday1:
 
 label impressrob:
 
+    show r
     r "Why, thank you. I try to keep in nice just in case someone needs it."
     r "I do get the occasional customer, but it's only about once a week."
     r "So I spend my shifts watching the game instead."
@@ -911,11 +918,14 @@ label impressrob:
 
 label offendrob:
 
+
     r "It's still important. Not much time for saving the world when you're DEAD."
 
     mc "I don't think a lack of exercise will {i}kill{/i} you-"
 
+    show r yell
     r "It CAN! Trust me, I've seen it happen. Like those humans in the stasis pods right now."
+    show r angry
     r "They're gettin' no exercise while they're sleepin'. And when they wake up? They'll wither away."
 
     hide r with easeoutright

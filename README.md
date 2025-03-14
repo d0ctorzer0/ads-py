@@ -34,3 +34,10 @@ checklist:
 ☐ day 14
 ☐ night 14
 ☐ epilogues
+
+
+current roadmap:
+- finish main menu setup (add imgbtns to screen)
+- day 3 (obviously)
+- gallery add
+- new textbox for cutscene

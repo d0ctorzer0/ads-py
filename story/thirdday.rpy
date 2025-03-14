@@ -148,7 +148,7 @@ label krisday3:
             jump krisday3bad
 
 label krisday3good:
-    $ kdaygood == True
+    $ kday3good = True
     show k
     k "Me? Exciting? Well now. I try not to be {i}too{/i} exciting."
     show k angry
@@ -184,17 +184,22 @@ label krisday3good:
 
     # FIRST KRIS CUTSCENE HERE!! YAY!!
     if romance_points["Kris"] >= 7:
-        k "I'm stubborn for that reason."
-        k "My job is... simple. Perhaps not every personality core can read a stock market graph, but... it's a useless job."
-        k "Thankless, too."
+        $ cutscenetextbox = True
+        scene kris cutscene 1 with fade
+        $ kc1 = True
+        k "{color=#fff}I'm stubborn for that reason."
+        k "{color=#fff}My job is... simple. Perhaps not every personality core can read a stock market graph, but... it's a useless job."
+        k "{color=#fff}Thankless, too."
 
-        mc "I think what you do is very important."
+        mc "{color=#fff}I think what you do is very important."
 
-        k "Not as important as it should be. Miss Caroline, she..."
-        k "She doesn't trust us. And I'm not sure why."
-        k "She is excellent at what she does. She's dragged Aperture out of the ditch it was in, but..."
-        k "The company now... it's different. Mr. Johnson was fascinated with us. Miss Caroline is not."
-
+        k "{color=#fff}Not as important as it should be. Miss Caroline, she..."
+        k "{color=#fff}She doesn't trust us. And I'm not sure why."
+        k "{color=#fff}She is excellent at what she does. She's dragged Aperture out of the ditch it was in, but..."
+        k "{color=#fff}The company now... it's different. Mr. Johnson was fascinated with us. Miss Caroline is not."
+        scene kristemproom with fade
+        show k
+        $ cutscenetextbox = False
         jump krisday3goodpt2
     else:
         jump krisday3goodpt2
@@ -231,7 +236,7 @@ label krisday3goodpt2:
     jump day3end
 
 label krisday3bad:
-    $ kday3good == False
+    $ kday3good = False
     show k angry
     k "I see. Well then, I hope you brought some entertainment."
     hide k with easeoutright
@@ -246,11 +251,6 @@ label krisday3bad:
     n "You finish your checklist and leave the conference room without a word."
 
     jump day3end
-
-
-# ISSUE: DAY3END CANNOT DETECT IF KRISDAY3 == TRUE OR FALSE. FIX TOMORROW PLEASE <3
-
-
 
 label day3end:
     scene office
