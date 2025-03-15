@@ -17,10 +17,12 @@ default aspengoodbye = False
 default haveaheart = False
 
 #DAY 3 SETUPS
-default kday3good = False
+default goodday3 = False
 
 #CUSTCENE T/F
 default kc1 = False
+default hc1 = False
+default ac1 = False
 
 #define shorter_easein = MoveTransition(0.3, enter=offscreenright, enter_time_warp=_warper.easein)
 #define shorter_easeout = MoveTransition(0.3, exit=offscreenright, enter_time_warp=_warper.easein)
@@ -61,7 +63,7 @@ label start:
     n "You reach your new \"headquarters.\" On the edge of the desk, there's a nametag."
 
     default name = "Polly"
-    $ name = renpy.input("What does it read?")
+    $ name = renpy.input("What does it read?", length=14)
     $ name = name.strip()
     n "The tag has \"[name]\" drawn on it in very hasty handwriting."
     

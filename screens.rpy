@@ -311,25 +311,34 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("New Game") action Start()
+            imagebutton idle "gui/mmbtn.png" action Start() at tilted:
+                ypos 65
+                xpos 50
+            imagebutton idle "gui/mmbtn.png" action ShowMenu("load") at tilted:
+                ypos -135
+                xpos 0
 
+            imagebutton idle "gui/mmbtn.png" action ShowMenu("preferences") at tilted:
+                ypos -350
+                xpos -60
         else:
+            style_prefix "pausemenu"
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton ("Main Menu") action MainMenu()
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton ("History") action ShowMenu("history")
 
-        textbutton _("Load") action ShowMenu("load")
+            textbutton ("Save") action ShowMenu("save")
 
-        textbutton _("Options") action ShowMenu("preferences")
 
-        if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+        #if _in_replay:
 
-        elif not main_menu:
+            #textbutton _("End Replay") action EndReplay(confirm=True)
 
-            textbutton _("Main Menu") action MainMenu()
+        #elif not main_menu:
+
+            #textbutton ("Main Menu") action MainMenu()
 
         #textbutton _("About") action ShowMenu("about")
 
@@ -338,11 +347,11 @@ screen navigation():
             ## Help isn't necessary or relevant to mobile devices.
         #    textbutton _("Help") action ShowMenu("help")
 
-        if renpy.variant("pc"):
+        #if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            #textbutton _("Quit") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -353,6 +362,14 @@ style navigation_button:
     properties gui.button_properties("navigation_button")
 
 style navigation_button_text:
+    properties gui.text_properties("navigation_button")
+    xalign 0.9
+
+style pausemenu_button:
+    size_group "navigation"
+    properties gui.button_properties("navigation_button")
+
+style pausemenu_button_text:
     properties gui.text_properties("navigation_button")
     xalign 0.9
 

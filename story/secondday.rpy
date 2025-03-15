@@ -491,10 +491,10 @@ label bertha:
     show a
     a "WHAT? No way! What type is she?"
 
-    mc "She's a peace lily named Bertha."
+    mc "She's a snake plant named Bertha."
 
     show a look
-    a "Peace lilies... I think we had those a while back."
+    a "Snake plants... I think we had those a while back."
     show a
     a "Oh my goodness, that's wonderful. How does she survive this far down? There's no sunlight down in the offices, is there?"
 

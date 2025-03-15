@@ -52,21 +52,6 @@ define config.has_voice = True
 
 define config.main_menu_music = "audio/music/officeambience.ogg"
 
-
-## To allow the user to play a test sound on the sound or voice channel,
-## uncomment a line below and use it to set a sample sound to play.
-
-# define config.sample_sound = "sample-sound.ogg"
-# define config.sample_voice = "sample-voice.ogg"
-
-
-## Uncomment the following line to set an audio file that will be played while
-## the player is at the main menu. This file will continue playing into the
-## game, until it is stopped or another file is played.
-
-# define config.main_menu_music = "main-menu-theme.ogg"
-
-
 ## Transitions #################################################################
 ##
 ## These variables set transitions that are used when certain events occur.
