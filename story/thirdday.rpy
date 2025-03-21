@@ -152,6 +152,7 @@ label krisday3:
 
 label krisday3good:
     $ goodday3 = True
+    $ ekd3 = True
     show k
     k "Me? Exciting? Well now. I try not to be {i}too{/i} exciting."
     show k angry
@@ -307,6 +308,7 @@ label heathday3:
 
 label heathday3good:
     $ goodday3 = True
+    $ ehd3 = True
     show h sad
     h "Oh, haha, that's not what I... {i}expected{/i} you to say..."
 
@@ -450,6 +452,7 @@ label aspenday3:
 
 label aspenday3good:
     $ goodday3 = True
+    $ ead3 = True
     show a
     a "Oh! Well then, I'm happy to oblige. What are you interested in?"
 
@@ -592,6 +595,7 @@ label ccday3:
 
 label ccday3good:
     $ goodday3 = True
+    $ ecd3 = True
     show c look
     c "I... interest you?"
 
@@ -724,6 +728,7 @@ label robday3:
 
 label rday3good:
     $ goodday3 = True
+    $ erd3 = True
     show r angry
     r "I'm surprised you even know the name of one of the machines."
     r "Most of the doctors here don't care."
@@ -833,7 +838,7 @@ label day3end:
 
         n "You hand your clipboard over Miss Esther. What an interesting day..."
 
-        jump tde
+        jump tdefirst
     
     else:
         mc "It was okay. Nothing happened, really."
@@ -843,4 +848,4 @@ label day3end:
 
         n "You hand your clipboard over to Miss Esther."
 
-        jump tde
+        jump tdefirst

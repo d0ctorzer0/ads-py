@@ -26,6 +26,13 @@ default ac1 = False
 default cc1 = False
 default rc1 = False
 
+#DAY 3 EMAILS
+default ekd3 = False
+default ehd3 = False
+default ead3 = False
+default ecd3 = False
+default erd3 = False
+
 #define shorter_easein = MoveTransition(0.3, enter=offscreenright, enter_time_warp=_warper.easein)
 #define shorter_easeout = MoveTransition(0.3, exit=offscreenright, enter_time_warp=_warper.easein)
 
