@@ -9,7 +9,7 @@ checklist:
 ☑ night 1
 ☑ day 2
 ☑ night 2
-☐ day 3
+☑ day 3
 ☐ night 3
 ☐ day 4
 ☐ night 4
