@@ -4,3 +4,5 @@ transform bounce:
 
 transform tilted:
     rotate 25 #change this to rotate more
+
+define gentleswitch = { "master" : Dissolve(0.2) }

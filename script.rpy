@@ -23,6 +23,8 @@ default goodday3 = False
 default kc1 = False
 default hc1 = False
 default ac1 = False
+default cc1 = False
+default rc1 = False
 
 #define shorter_easein = MoveTransition(0.3, enter=offscreenright, enter_time_warp=_warper.easein)
 #define shorter_easeout = MoveTransition(0.3, exit=offscreenright, enter_time_warp=_warper.easein)

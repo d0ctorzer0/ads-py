@@ -435,7 +435,7 @@ label aspenday3:
 
     a "So wait, why'd you choose to supervise me? All I do is water plants all day."
 
-    show a look
+    show a laugh
     a "I don't think the last guy {i}ever{/i} chose me on his Wednesdays..."
 
     menu:
@@ -463,8 +463,10 @@ label aspenday3good:
 
     mc "That's not a lot."
 
+    show a laugh
     a "Haha, you're right - it's really not!"
-    a "I kind of like it though. It keep us accountable. If even one of us falters, the whole team will suffer."
+    show a
+    a "I kind of like it though. It keeps us accountable. If even one of us falters, the whole team will suffer."
 
     mc "That's a lot of pressure."
 
@@ -473,8 +475,11 @@ label aspenday3good:
     mc "So, uh... do you have a favorite plant? Out of all of these?"
 
     if romance_points["Aspen"] >= 7:
+
+        show a laugh
         a "Oh yes! Absolutely! Come over here, and I'll show you."
 
+        hide a with easeoutright
         n "You follow Aspen on his management rail as he leads you to a back corner."
 
         $ cutscenetextbox = True
@@ -500,23 +505,29 @@ label aspenday3good:
         jump aspenday3goodpt2
     else:
         a "Oh, not really. I like all my plants equally."
+
+        show a laugh
         a "Can't be picking favorites - what if it dies? Haha."
         jump aspenday3goodpt2
 
 label aspenday3goodpt2:
     show a
     n "The rest of your shift is very informative."
+    show a laugh
     n "Aspen spends his time watering the plants and rattling off botanical facts."
     n "You learn more about botany than you ever thought you'd care to."
 
+    show a look
     n "He seems to love his job."
     n "You're happy for him."
 
+    show a
     n "Before you know it, it's 16:00 and time to go home."
     n "You finish off your checklist and head out."
     jump day3end
 
 label aspenday3bad:
+    show a look
     a "Oh... yeah. I suppose. All I do is water plants, after all."
 
     n "The rest of your shift is easy, yes, but boring."
@@ -526,6 +537,283 @@ label aspenday3bad:
 
     n "The time ticks by incredibly slowly. Eventually, it's 16:00, and it's time for you to go."
     n "You finish your checklist and leave."
+
+    jump day3end
+
+label ccday3:
+    e "Yes. As long as they're along our usual route, yes."
+    e "I'm sure he'll appreciate the company."
+
+    e "I'll put it in my database that you'll be supervising CC today. Do you remember the way to his room?"
+
+    mc "Yes, I do."
+
+    e "Perfect. On your way, then!"
+    
+
+    scene cctemproom
+    with pixellate
+
+    n "You make your way into CC's \"hospital\" room. He is hanging in the same spot."
+
+    show c close with easeinright
+
+    n "You believe he may be sleeping. Or something similar."
+    n "You gently poke his chassis."
+
+    mc "CC?"
+
+    show c with gentleswitch
+    c "Ahh, Doctor. Apologies, I was... trying to conserve my energy."
+
+    mc "You need to conserve energy?"
+    mc "What're all these tubes and pumps for, then?"
+
+    c "A multitude of things. A lot of them I'm not even sure of."
+
+    c "Oh, sorry - I just got a message from Miss Esther..."
+    c "Oh."
+
+    show c close
+    c "Haha... you chose to supervise me today?"
+
+    show c
+    c "Well then..."
+    c "You're going to be very bored."
+
+    menu:
+        extend ""
+        "Not at all. You interest me.":
+            $ romance_points["CC"] += 3
+            jump ccday3good
+        "Yeah. I planned on just sleeping through my shift.":
+            $ romance_points["CC"] += 3
+            jump ccday3bad
+
+label ccday3good:
+    $ goodday3 = True
+    show c look
+    c "I... interest you?"
+
+    show c
+    c "Haha. That's silly."
+    c "But it's..."
+    c "...more than the last doctor said."
+    c "You know, you woke me up from my dream."
+
+    mc "You can dream?"
+
+    c "In a way, I suppose. Cores don't quite... \"dream\" the same way humans do, but... yes. We can visualize things."
+
+    mc "What were you... visualizing... about?"
+
+    if romance_points["CC"] >= 7:
+        $ cutscenetextbox = True
+        scene aspen cutscene 1 with fade
+        $ cc1 = True
+        c "Well... it's a little embarrassing."
+        c "See, I have so many bio-simulators and pain receptors stuffed into my chassis, it's like I'm practically organic."
+        c "And I've heard the scientists talk about these {i}wondrous{/i} things called \"waterfalls\"..."
+        c "They must be beautiful. Water falling so freely, no... tubes to tether it down, management rails to confine it..."
+
+        c "I think about it a lot."
+        c "I would give anything to see one."
+
+        scene cctemproom with fade
+        show c close with easeinright
+        $ cutscenetextbox = False
+
+        c "But I know I never will. So I look at pictures. And it's almost the same."
+        jump ccday3goodpt2
+    else:
+        show c close
+        c "Nothing, really. Just wishing I was healthy."
+        show c
+        c "I always dream about that."
+        jump ccday3goodpt2
+
+label ccday3goodpt2:
+    show c
+    n "The rest of the day is quiet, slow, but nice."
+    n "CC is more full of life than ever."
+    show c look
+    n "He talks about his daily routine. Asks you plenty of questions about your own life."
+    n "Your shift goes by quickly, and when it ends, you find you don't want to leave."
+    n "But 16:00 comes as always."
+
+    show c
+    mc "I need to get going, CC. But... this was nice. Relaxing."
+    mc "Especially after the weirdly chaotic week I've had."
+
+    c "Yes. I understand. I'm glad I could give you a... break, sort of."
+
+    n "You finish your checklist and head out for the day."
+
+    jump day3end
+
+label ccday3bad:
+    show c close
+    c "Well, I guess we can both preserve our energy, then."
+
+    n "The rest of your shift is boring."
+    n "CC won't wake up no matter what you do, and it's nearly impossible to fall asleep in the hard chair you're in."
+    n "You end up trying to read the manual next to him, but it's full of outdated information, probably from the early 70s."
+    n "CC must have been awake for an extremely long time."
+
+    n "Eventually, just as you're about to drift off, the clock hits 16:00, and it's time to go home."
+    n "You finish your checklist and quietly leave the room."
+
+    jump day3end
+
+label robday3:
+    show e annoy
+    e "You want to supervise {i}him?{/i} Well, don't let me stop you."
+
+    e "I'll put it in my database that you'll be supervising Robert today. Do you remember the way to the gym?"
+
+    mc "Yes, but - sorry, Robert?"
+
+    show e annoy
+    e "His full name. He prefers to go by Rob, though, so... don't tell him I told you."
+
+    scene robtemproom with pixellate
+    show r yell with easeinright
+
+    r "GO! GO! GO!!! COME ON, PUT YOUR BACK INTO IT!"
+
+    n "You enter the gym and immediately spot Rob yelling at the screen in front of him."
+
+    r "CAN'T RUN TO SAVE YOUR GODDAMN LIFE! COME ON!!"
+
+    mc "Um... Rob?"
+
+    show r angry
+    r "Sorry, Doc. One second. The game's on."
+
+    n "He turns back to the screen just in time for -"
+
+    show r yell
+    r "TOUCHDOWN!! HELL YEAH!"
+
+    show r
+
+    if ball == True:
+        n "The crowd on the screen goes wild, yelling and shouting. You forgot how big American football used to be."
+    else:
+        n "The crowd on the screen goes wild, yelling and shouting. You assume this is a good thing, because Rob looks pleased."
+
+    r "Sorry, sorry, Doc. The game gets me excited. You should know this by now."
+
+    mc "No worries."
+
+    r "I saw the message from Essie. You chose to supervise me today, huh?"
+
+    mc "Yes, that's right."
+
+    r "Well, that's perfect. Great time to get those muscles to work, now!"
+    
+    menu:
+        extend ""
+
+        "Mind if I use the elliptical?":
+            $ romance_points["Rob"] += 3
+            jump rday3good
+        "Uh... I actually don't work out. At all.":
+            $ romance_points["Rob"] -= 3
+            jump rday3bad
+
+label rday3good:
+    $ goodday3 = True
+    show r angry
+    r "I'm surprised you even know the name of one of the machines."
+    r "Most of the doctors here don't care."
+
+    mc "I do try to keep in shape a little bit, when I can. Usually on the weekends."
+
+    show r
+    r "Well alright then! Elliptical's right over there. Feel free to use any of the machines."
+
+    if romance_points["Rob"] >= 7:
+        show r angry
+        r "Need a coach?"
+
+        mc "Sure. Why not?"
+
+        show r
+        n "Rob moves on his management rail over to the elliptical machine."
+
+        $ cutscenetextbox = True
+        scene aspen cutscene 1 with fade
+        $ rc1 = True
+        r "Alright, hop on, let's get started."
+
+        n "You begin your workout, and Rob coaches you on your form."
+
+        r "You're too tight. Loosen up."
+        mc "How do you know so much about fitness without... well... having limbs?"
+        r "Well, it's partially 'cuz it's programmed into me."
+        r "I'm also just real passionate about humans in general. Fitness is just the one aspect I really enjoy."
+
+        mc "Interesting."
+        r "You're going too slow, now. You need to pick up the pace."
+        mc "I'm... trying."
+
+        r "Don't overwork yourself."
+        scene robtemproom with pixellate
+        $ cutscenetextbox = False
+        show r with easeinright
+        jump rday3goodpt2
+    else:
+        mc "Thanks, Rob. I will."
+        jump rday3goodpt2
+
+label rday3goodpt2:
+    show r
+    n "The rest of your shift is hard work!"
+    n "You spend most of your time trying out the different machines. Though you try to keep fit, it's hard with a job like this."
+    n "It's nice to actually focus on a workout for once."
+
+    show r yell
+    n "In between yelling at the screen, Rob talks about his day-to-day."
+    show r angry
+    n "He talks about his ex-wife and two kids - you don't bother to ask how that's even possible."
+    show r
+    n "At the end of the day, you're sweating and tired, but satisfied."
+    n "No doubt you'll be sore tomorrow, though."
+    n "Rob looks pleased with you."
+
+    r "Great job. Great workout. Hope you got something out of it."
+
+    mc "Oh, I definitely did. Haha."
+
+    n "You tiredly finish your checklist and head out."
+
+    jump day3end
+
+label rday3bad:
+    show r angry
+    r "You don't work out?! Why the hell are you here then?"
+
+    mc "I figured I could just watch the game you're always looking at."
+
+    r "Nuh-uh. That won't do."
+    show r yell
+    r "You are a DISGRACE to the nature of the game!"
+    r "Get your head in it!"
+    
+    mc "Uh... what?"
+
+    show r angry
+    r "Nevermind. Just sit down."
+
+    n "The rest of your shift is pretty entertaining, at least."
+    show r yell
+    n "Rob refuses to acknowledge you, but his outbursts at the screen keep you awake."
+    show r angry
+    n "The time goes by quickly enough, even though you feel judged the entire time."
+    n "16:00 comes around, and it's time to head out."
+
+    n "You finish your checklist and go back to the office."
 
     jump day3end
 

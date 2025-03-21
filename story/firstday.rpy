@@ -494,7 +494,7 @@ label aspenday1:
     show a look
     a "The day it fails will be a horrible day for Aperture!"
 
-    show a
+    show a laugh
     n "He laughs nervously."
 
     menu:
@@ -503,6 +503,7 @@ label aspenday1:
         "Good to hear. Keep up the great work.":
 
             $ romance_points["Aspen"] += 2
+            show a
             a "I certainly will."
             jump aspenday1cont
 
@@ -537,10 +538,12 @@ label impressaspen:
 
 label offendaspen:
 
+    show a look
     a "What? What do you mean?"
 
     mc "I just don't see what use Aperture could have for botany."
 
+    show a laugh
     a "Lots of things! They test on other organics before they ever test on themselves, you know. And there's some kinds of science that can only be done on plants."
 
     mc "Mmm. I guess so."
@@ -548,7 +551,7 @@ label offendaspen:
     jump aspenday1cont
 
 label aspenday1cont:
-
+    show a
     mc "I'll be leaving now. I'm sure Miss Esther is waiting for me."
 
     if aspengoodbye == True:

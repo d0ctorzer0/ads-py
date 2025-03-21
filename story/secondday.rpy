@@ -433,6 +433,7 @@ label aspenday2:
 
     mc "Everything's still alright in here?"
 
+    show a laugh
     a "Yep! Pretty as a picture. No issues with my sprinkler, either."
 
     mc "How come I haven't seen any other humans in here? Yesterday, you said there were a few in the greenhouse staff."
@@ -463,23 +464,28 @@ label impressaspen2:
 
     mc "Well, you know what they say. If you love what you do, you'll never work a day in your life."
 
+    show a laugh
     a "Haha! No, I didn't know that. But now I do! And I love that!"
 
     if romance_points["Aspen"] >= 4:
         jump aspenfunny
     else:
         mc "I should probably get going, now. Miss Esther's waiting."
+        show a
         a "Alrighty. Have a good day."
         jump aspenday2cont
 
 label offendaspen2:
-    show a
+    show a look
     a "Children's toys?! Potato batteries are incredibly important to science, you know."
     a "First of all... well, yes, they're good for teaching children. But on top of that!"
+
+    show a
     a "It's a beautiful fusion of electronics and botany. Just like me."
 
     mc "Uh-huh."
 
+    show a look
     a "Pfft. You just don't get it. You're just like the last guy."
 
     mc "I should be going."
@@ -488,7 +494,7 @@ label offendaspen2:
     jump aspenday2cont
 
 label bertha:
-    show a
+    show a laugh
     a "WHAT? No way! What type is she?"
 
     mc "She's a snake plant named Bertha."
@@ -520,7 +526,7 @@ label aspenfunny:
 
     mc "That's horrible."
 
-    show a
+    show a laugh
     a "Tell me about it!"
     a "But now you're here, and you're so much better."
 
