@@ -266,7 +266,7 @@ label heathday2:
     with pixellate
 
     show e annoy with easeinright
-    e "Heath likes to show a new \"trick\" every day, so don't be suprised if she tries to do one again."
+    e "Heath likes to show a new \"trick\" every day, so don't be surprised if she tries to do one again."
 
     mc "Does she actually think what she does is \"magic\"?"
 
@@ -339,7 +339,10 @@ label impressheath2:
     mc "Wow! Yes, that's exactly it! Amazing."
 
     h "Hahaha, thank you, thank you very much."
+
+    show e b annoy at bounce
     n "Miss Esther groans."
+    hide e b annoy
 
     h "Is your morale improved? Your spirits lifted?"
 

@@ -1592,7 +1592,7 @@ style nextday_button_text:
 screen affectionprogress():
     bar:
         value romance_points["Kris"]
-        range 15
+        range 30
         left_bar "bars/kbar.png"
         right_bar "bars/bbar.png"
         xpos 1573
@@ -1600,7 +1600,7 @@ screen affectionprogress():
         xysize (347,51)
     bar:
         value romance_points["Heath"]
-        range 15
+        range 30
         left_bar "bars/hbar.png"
         right_bar "bars/bbar.png"
         xpos 1573
@@ -1608,7 +1608,7 @@ screen affectionprogress():
         xysize (347,51)
     bar:
         value romance_points["???"]
-        range 15
+        range 30
         left_bar "bars/ubar.png"
         right_bar "bars/bbar.png"
         xpos 1573
@@ -1616,7 +1616,7 @@ screen affectionprogress():
         xysize (347,51)
     bar:
         value romance_points["Aspen"]
-        range 15
+        range 30
         left_bar "bars/abar.png"
         right_bar "bars/bbar.png"
         xpos 1573
@@ -1624,7 +1624,7 @@ screen affectionprogress():
         xysize (347,51)
     bar:
         value romance_points["CC"]
-        range 15
+        range 30
         left_bar "bars/cbar.png"
         right_bar "bars/bbar.png"
         xpos 1573
@@ -1632,7 +1632,7 @@ screen affectionprogress():
         xysize (347,51)
     bar:
         value romance_points["Greg"]
-        range 15
+        range 30
         left_bar "bars/gbar.png"
         right_bar "bars/bbar.png"
         xpos 1573
@@ -1640,7 +1640,7 @@ screen affectionprogress():
         xysize (347,51)
     bar:
         value romance_points["Rob"]
-        range 15
+        range 30
         left_bar "bars/rbar.png"
         right_bar "bars/bbar.png"
         xpos 1573
@@ -1648,7 +1648,7 @@ screen affectionprogress():
         xysize (347,51)
     bar:
         value esther_affection
-        range 10
+        range 20
         left_bar "bars/ebar.png"
         right_bar "bars/bbar.png"
         xpos 1573

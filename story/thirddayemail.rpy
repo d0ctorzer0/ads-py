@@ -14,13 +14,11 @@ screen emailday3():
             textbutton "    from: {color=#1140a4}CC{/color}\n        Thank you for your visit.                                                                        " action Jump("emailsevencc")
         if erd3 == True:
             textbutton "    from: {color=#8a0d0d}Rob{/color}\n        What's up, Doc                                                                        " action Jump("emailsevenrob")
-        else:
-            textbutton "    from: {color=#db35a9}Miss Esther{/color}\n        Great work as usual!                                                                        " action Jump("emailsevenesther")
 
     # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        textbutton "    from: {color=#c9ae16}Gregory{/color}\n        sorry about yesterday!                                                                 " action Jump("emaileight")
-        textbutton "    from: HR\n        MEMO TO ALL EMPLOYEES                                                           " action Jump("emailnine")
+        textbutton "    from: {color=#c9ae16}Gregory{/color}\n        an invite?                                                                                   " action Jump("emaileight")
+        textbutton "    from: [[ BLOCKED ]\n        [[ HIGH SCAM LIKELIHOOD ]                                                           " action Jump("tde")
     vbox:
         style_prefix "nextday"
         textbutton "NEXT DAY >>" action Jump("day4")
@@ -37,7 +35,7 @@ screen email7kris():
         text "from: Kris"
     vbox:
         style_prefix "eml"
-        text "I told you I'd send ya a little message. Listen, I keep seein' ya 'round these\nparts, and I'm gonna take a chance while I have it, yeah? Not a lot of\nopportunities for a core such as myself. Y'know...\n\nSo hey, maybe over the weekend, you wanna stop by my place? It's\npretty humble, just a closet with a charging port. Big closet though. Lots\nof room for a human. Whaddaya say?\n\nY'know what, don't respond - I already know the answer is yes. So I'll\nsee ya soon."
+        text "Doctor,\n\nI'd like to thank you for your visit today. It was very informative. I may,\nin fact, have misjudged you upon our first meeting. I will not make such a\nmistake again.\n\nI believe I may have been a little... informal with you today. Please ignore\nthis in our future briefings. It was not intentional and I am not sure what\npossessed me to divulge such sensitive information to you. Thank you,\ndespite that, for your listening ear today. Have a good night.\n\nRegards,\n\nKris, Business Core"
     use affectionprogress
     vbox:
         style_prefix "emlback"
@@ -52,7 +50,7 @@ screen email7heath():
         text "from: Heath"
     vbox:
         style_prefix "eml"
-        text "Heyyy there. You keep blowin' me off now and it's not very kind of ya!\nI'm just tryna make a move on a pretty human, here. Can't fault a core\nfor that. So hey, next time I catch ya 'round, be little nicer, yeah?\n\nAnyway. You should slide on over to my place this weekend. I've got\nenough drinks for the two of us. I might even have some \"human alcohol\"\nin here somewhere."
+        text "Heyyy Doctor!\n\nGlad you came to see my show today, haha. I haven't had someone give\nme that much attention since I was activated, like, 6 years ago!\n\nIt's unfortunate we had to cut it short to accomodate your busy, busy\nschedule. I'll be sure to make it up to you in the future with even more\nsurprises! Don't be shocked if I'm on fire the next time ya catch me!\n\nCheers,\nHeath, MAGIC CORE!!"
     use affectionprogress
     vbox:
         style_prefix "emlback"
@@ -67,7 +65,7 @@ screen email7aspen():
         text "from: Aspen"
     vbox:
         style_prefix "eml"
-        text "Heyyy there. You keep blowin' me off now and it's not very kind of ya!\nI'm just tryna make a move on a pretty human, here. Can't fault a core\nfor that. So hey, next time I catch ya 'round, be little nicer, yeah?\n\nAnyway. You should slide on over to my place this weekend. I've got\nenough drinks for the two of us. I might even have some \"human alcohol\"\nin here somewhere."
+        text "Hi Doctor!\n\nI was looking through my contacts and saw you were recently added to\nmy email database, so I figured I'd send you a message. Nothing special!!\nJust wanted to thank you for today.\n\nNot a lot of other scientists show that much interest in botany! They're\ntoo excited about the robots and the teleportation and all the fancy sci-fi\nstuff, they forget where they came from, haha. So yeah. Thanks for\nletting me talk about it! Sorry to keep you, and have a good night. I should\nsee you tomorrow on your route!!\n\nThanks again,\nAspen, Botanical Core"
     use affectionprogress
     vbox:
         style_prefix "emlback"
@@ -82,7 +80,7 @@ screen email7cc():
         text "from: CC"
     vbox:
         style_prefix "eml"
-        text "Heyyy there. You keep blowin' me off now and it's not very kind of ya!\nI'm just tryna make a move on a pretty human, here. Can't fault a core\nfor that. So hey, next time I catch ya 'round, be little nicer, yeah?\n\nAnyway. You should slide on over to my place this weekend. I've got\nenough drinks for the two of us. I might even have some \"human alcohol\"\nin here somewhere."
+        text "Hello Doctor.\n\nI wanted to thank you for visiting me today. Though you could have\nchosen any other core in your section, you chose me, and I'm flattered,\nespecially considering how boring I must have been for you.\n\nI hope you do not consider me a fool - I do realize the reason for your\npick is most likely the easy-going shift you recieved in turn. Regardless,\nI am very glad you chose to stop in.\n\nThank you.\n\nRest well,\nCC"
     use affectionprogress
     vbox:
         style_prefix "emlback"
@@ -97,22 +95,7 @@ screen email7rob():
         text "from: Rob"
     vbox:
         style_prefix "eml"
-        text "Heyyy there. You keep blowin' me off now and it's not very kind of ya!\nI'm just tryna make a move on a pretty human, here. Can't fault a core\nfor that. So hey, next time I catch ya 'round, be little nicer, yeah?\n\nAnyway. You should slide on over to my place this weekend. I've got\nenough drinks for the two of us. I might even have some \"human alcohol\"\nin here somewhere."
-    use affectionprogress
-    vbox:
-        style_prefix "emlback"
-        textbutton "<<< back" action Jump("tde")
-
-screen email7esther():
-    vbox:
-        style_prefix "emltitle"
-        text "Great work as usual!"
-    vbox:
-        style_prefix "emlfrom"
-        text "from: Miss Esther"
-    vbox:
-        style_prefix "eml"
-        text "Heyyy there. You keep blowin' me off now and it's not very kind of ya!\nI'm just tryna make a move on a pretty human, here. Can't fault a core\nfor that. So hey, next time I catch ya 'round, be little nicer, yeah?\n\nAnyway. You should slide on over to my place this weekend. I've got\nenough drinks for the two of us. I might even have some \"human alcohol\"\nin here somewhere."
+        text "What's up, Sport? Great job on that elliptical today! Really working out\nthose SCIENCE MUSCLES, hahaha! Don't forget to rest up - you're gonna\nbe sore tomorrow, that's for certain. Hell, I wouldn't be surprised if\nyou're sore the day after that too!\n\nThanks for stoppin' in today. Don't get a lot of company here n' all, so I'll\ntake whatever I can get! Haha, just kiddin'. I appreciate it, in complete \nseriousness.\n\nAnyway! Stock up on that protein, cuz I ain't done with you yet!\n\nKeep it real,\nRob ( GO HAWKS!! )"
     use affectionprogress
     vbox:
         style_prefix "emlback"
@@ -123,44 +106,13 @@ screen email7esther():
 screen email8():
     vbox:
         style_prefix "emltitle"
-        text "sorry about yesterday!"
+        text "an invite??"
     vbox:
         style_prefix "emlfrom"
         text "from: Gregory"
     vbox:
         style_prefix "eml"
-        text "hey there! cc told me this is how i could contact you. im not really\nsupposed to, seeing as youre not a part of my section, but its whatever.\n\ni just really wanted to say sorry for bumping into you yesterday! i was in\na hurry and didnt see you. and also its just really hard to control myself.\nlike... my rail... and stuff. cuz its on the ground as opposed to above me\nlike usual.\n\nso... yeah. im really sorry. you dont have to respond to this email!!\nits okay, i just wanted to apologize.\n\nokay bye!\n\n- gregory"
-    use affectionprogress
-    vbox:
-        style_prefix "emlback"
-        textbutton "<<< back" action Jump("tde")
-
-screen email9():
-    vbox:
-        style_prefix "emltitle"
-        text "MEMO TO ALL EMPLOYEES"
-    vbox:
-        style_prefix "emlfrom"
-        text "from: HR"
-    vbox:
-        style_prefix "eml"
-        text "REFERRAL BONUSES ARE NOW AVAILABLE!\n\nDue to the recent decrease of healthy employees here at Aperture, we\nhave decided to enact our very own employee referral program.\n\nHere at Aperture, we are always looking for top scientists and\nresearchers to join our team. Any employee may submit a referral form\nto HR, excluding:\n\n> Any and all HR employees\n> Any and all employees engaged in the hiring process\n> Upper-level management\n\nThis is to ensure our referral process remains unbiased and scientific."
-    use affectionprogress
-    vbox:
-        style_prefix "emlback"
-        textbutton "next >>>" action Jump("emailninept2")
-
-screen email9pt2():
-    vbox:
-        style_prefix "emltitle"
-        text "MEMO TO ALL EMPLOYEES"
-    vbox:
-        style_prefix "emlfrom"
-        text "from: HR"
-    vbox:
-        style_prefix "eml"
-        text "Employees whose referral is selected will be eligible to recieve up\nto $200. We will NOT, under ANY CIRCUMSTANCES, accept any former\nBlack Mesa employees.\n\nPlease send an email to PEB regarding any questions or referral\nsubmissions.\n\nThank you,\nHR"
-
+        text "hey doc!!\n\nglad you opened this email up, didn't know if you would! haha.\n\nlisten, i've been thinking about two days ago, when we bumped into each\nother? you might've gotten some ideas about me that aren't\nparticularly true, so i just wanna clear things up. if you're interested, i'm \ngonna be at the gym this saturday!\n\ni don't know if you'll be on-campus, but i figured it's worth a shot,\nright? so yeah, maybe we grab a coffee, i can clear up any question\nyou might have, yeah?? anyway. think about it!!\n\n- gregory"
     use affectionprogress
     vbox:
         style_prefix "emlback"
@@ -202,22 +154,7 @@ label emailsevenrob:
     scene blankemail
     call screen email7rob
 
-label emailsevenesther:
-
-    scene blankemail
-    call screen email7esther
-
 label emaileight:
     
     scene blankemail
     call screen email8
-
-label emailnine:
-    
-    scene blankemail
-    call screen email9
-
-label emailninept2:
-
-    scene blankemail
-    call screen email9pt2

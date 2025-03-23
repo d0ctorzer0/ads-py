@@ -10,7 +10,7 @@ checklist:
 ☑ day 2
 ☑ night 2
 ☑ day 3
-☐ night 3
+☑ night 3
 ☐ day 4
 ☐ night 4
 ☐ day 5
@@ -37,5 +37,5 @@ checklist:
 
 
 current roadmap:
-- day 3 (obviously)
+- day 4
 - gallery add

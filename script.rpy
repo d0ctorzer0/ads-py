@@ -46,12 +46,12 @@ default romance_points = {
     "Greg" : 0 ,
     "Rob" : 0 ,
 }
-default romance_minimum_for_good_ending = 10
-default romance_minimum_for_perfect_ending = 15
+default romance_minimum_for_good_ending = 20
+default romance_minimum_for_perfect_ending = 30
 
 #ESTHER EVIL SETUP
 default esther_affection = 0
-default esther_affection_minimum = 10
+default esther_affection_minimum = 15
 
 # GAME
 label start:
