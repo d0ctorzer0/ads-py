@@ -309,18 +309,109 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
+    #vbox:
+
+        #xalign 0.9
+        #yalign 0.1
+
+        #style_prefix "pausemenu"
+
+        #textbutton ("Main Menu") action MainMenu()
+
+        #textbutton ("History") action ShowMenu("history")
+
+        #textbutton ("Save") action ShowMenu("save")
+
+
+
+        #if _in_replay:
+
+            #textbutton _("End Replay") action EndReplay(confirm=True)
+
+        #elif not main_menu:
+
+            #textbutton ("Main Menu") action MainMenu()
+
+        #textbutton _("About") action ShowMenu("about")
+
+        #if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+            ## Help isn't necessary or relevant to mobile devices.
+        #    textbutton _("Help") action ShowMenu("help")
+
+        #if renpy.variant("pc"):
+
+            ## The quit button is banned on iOS and unnecessary on Android and
+            ## Web.
+            #textbutton _("Quit") action Quit(confirm=not main_menu)
+
+
+style navigation_button is gui_button
+style navigation_button_text is gui_button_text
+
+style navigation_button:
+    size_group "navigation"
+    properties gui.button_properties("navigation_button")
+
+style navigation_button_text:
+    properties gui.text_properties("navigation_button")
+    xalign 0.9
+
+style pausemenu_button:
+    size_group "navigation"
+    properties gui.button_properties("navigation_button")
+
+style pausemenu_button_text:
+    properties gui.text_properties("navigation_button")
+    xalign 0.9
+
+
+## Main Menu screen ############################################################
+##
+## Used to display the main menu when Ren'Py starts.
+##
+## https://www.renpy.org/doc/html/screen_special.html#main-menu
+
+default mm2 = False
+
+screen main_menu():
+
+    ## This ensures that any other menu screen is replaced.
+    tag menu
+
+    if mm2 == False:
+        add gui.main_menu_background
+    else:
+        add gui.main_menu_background2
+
+    ## This empty frame darkens the main menu.
+    frame:
+        style "main_menu_frame"
+
+    ## The use statement includes another screen inside this one. The actual
+    ## contents of the main menu are in the navigation screen.
+    # use navigation
+
+    vbox:
+        style_prefix "navigation"
+
+        xalign 0.9
+        yalign 0.1
+
+        spacing gui.navigation_spacing
+
         if main_menu and mm2 == False:
 
             imagebutton idle "gui/mmbtn.png" action Start() at tilted:
-                ypos 65
-                xpos 50
+                ypos 140
+                xpos 180
             imagebutton idle "gui/mmbtn.png" action ShowMenu("load") at tilted:
-                ypos -135
-                xpos 0
+                ypos -80
+                xpos 130
 
             imagebutton idle "gui/mmbtn.png" action ShowMenu("preferences") at tilted:
-                ypos -350
-                xpos -60
+                ypos -300
+                xpos 80
 
             imagebutton idle "gui/stickybutton.png" action SetVariable("mm2", True):
                 ypos -575
@@ -378,53 +469,6 @@ screen navigation():
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
             #textbutton _("Quit") action Quit(confirm=not main_menu)
-
-
-style navigation_button is gui_button
-style navigation_button_text is gui_button_text
-
-style navigation_button:
-    size_group "navigation"
-    properties gui.button_properties("navigation_button")
-
-style navigation_button_text:
-    properties gui.text_properties("navigation_button")
-    xalign 0.9
-
-style pausemenu_button:
-    size_group "navigation"
-    properties gui.button_properties("navigation_button")
-
-style pausemenu_button_text:
-    properties gui.text_properties("navigation_button")
-    xalign 0.9
-
-
-## Main Menu screen ############################################################
-##
-## Used to display the main menu when Ren'Py starts.
-##
-## https://www.renpy.org/doc/html/screen_special.html#main-menu
-
-default mm2 = True
-
-screen main_menu():
-
-    ## This ensures that any other menu screen is replaced.
-    tag menu
-
-    if mm2 == False:
-        add gui.main_menu_background
-    else:
-        add gui.main_menu_background2
-
-    ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
-
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use navigation
 
     add "logo.png" xpos 200 ypos 600
 
