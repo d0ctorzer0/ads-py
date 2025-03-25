@@ -3,7 +3,7 @@ define cutscenetextbox = False
 #SPECIAL DEFAULTS
 default plant = False
 default ball = False
-default flowers = False
+default picture = False
 default spades = True
 default emailfromrobday2 = False
 default askforu = False
@@ -149,11 +149,11 @@ label introcont:
 
             n "You place the ball carefully on a round stand so that the autograph is facing toward you."
         
-        "A vase full of fake lilies.":
+        "A picture of Multnomah Falls, Oregon.":
 
-            $ flowers = True
+            $ picture = True
 
-            n "You place the vase down gently and fluff up the plastic petals slightly."
+            n "You place the picture down gently and turn it slightly towards you."
     
     voice "e/e01-008.ogg"
     e "Alright. Your job is simple. We will tour Section C8 of the facility - that's the section you're overseeing - and ensure that all Aperture Science Personality constructs are functioning properly."
