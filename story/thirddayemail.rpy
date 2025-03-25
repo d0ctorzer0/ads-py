@@ -4,15 +4,15 @@ screen emailday3():
 
     # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        if ekd3 == True:
+        if wkd3 == True:
             textbutton "    from: {color=#25a68c}Kris{/color}\n        Hello, Doctor                                                                        " action Jump("emailsevenkris")
-        if ehd3 == True:
+        if whd3 == True:
             textbutton "    from: {color=#7f30e0}Heath{/color}\n        A little more magic from me...                                                                         " action Jump("emailsevenheath")
-        if ead3 == True:
+        if wad3 == True:
             textbutton "    from: {color=#1c710b}Aspen{/color}\n        Thanks for today                                                                        " action Jump("emailsevenaspen")
-        if ecd3 == True:
+        if wcd3 == True:
             textbutton "    from: {color=#1140a4}CC{/color}\n        Thank you for your visit.                                                                        " action Jump("emailsevencc")
-        if erd3 == True:
+        if wrd3 == True:
             textbutton "    from: {color=#8a0d0d}Rob{/color}\n        What's up, Doc                                                                        " action Jump("emailsevenrob")
 
     # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

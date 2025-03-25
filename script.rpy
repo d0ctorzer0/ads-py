@@ -19,19 +19,19 @@ default haveaheart = False
 #DAY 3 SETUPS
 default goodday3 = False
 
-#CUSTCENE T/F
+#CUSTCENE T/F - "[blank] cutscene [number]"
 default kc1 = False
 default hc1 = False
 default ac1 = False
 default cc1 = False
 default rc1 = False
 
-#DAY 3 EMAILS
-default ekd3 = False
-default ehd3 = False
-default ead3 = False
-default ecd3 = False
-default erd3 = False
+#DAY 3 - "with [blank] day 3"
+default wkd3 = False
+default whd3 = False
+default wad3 = False
+default wcd3 = False
+default wrd3 = False
 
 #define shorter_easein = MoveTransition(0.3, enter=offscreenright, enter_time_warp=_warper.easein)
 #define shorter_easeout = MoveTransition(0.3, exit=offscreenright, enter_time_warp=_warper.easein)
@@ -58,8 +58,11 @@ label start:
 
     play music cma fadein 0.5 fadeout 0.5
 
+    show screen daytransition
+    $ renpy.pause(2.0, hard=True)
+
     scene office
-    with pixellate
+    with fade
 
     n "You sigh. Another day, another dollar. But today's gonna be different."
     n "An issue in another department has forced you to take over another employee's position for a few days."

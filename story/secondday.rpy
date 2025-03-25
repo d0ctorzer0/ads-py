@@ -14,14 +14,17 @@ label day2:
 
     scene black
     with fade
+    $ daynum = "2"
+    $ dayday = "Tuesday"
 
-    n "You don't dream. But then again, no one does in stasis."
+    show screen daytransition
+    $ renpy.pause(2.0, hard=True)
 
-    scene mctemproom
-    with fade
+    scene mctemproom with fade
 
     n "You gently wake up and look at the clock. It's 08:00 on the dot."
     n "Groaning, you get up and head towards your office."
+
 
     scene office
     with pixellate

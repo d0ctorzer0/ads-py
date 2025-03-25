@@ -7,13 +7,15 @@ label day3:
 
     scene black
     with fade
+    $ daynum = "3"
+    $ dayday = "Wednesday"
 
-    n "No dream, once more."
+    show screen daytransition
+    $ renpy.pause(2.0, hard=True)
 
-    scene mctemproom
-    with fade
+    scene mctemproom with fade
 
-    n "You wake up, slowly but surely, and turn to the clock. 08:00, again."
+    n "You wake up, slowly but surely, and turn to the clock. 08:00, again." 
     n "Work in manufacturing doesn't begin until 11, and it's going to take a bit to get used to this new schedule."
     n "You get up and go towards your office."
 
@@ -152,7 +154,7 @@ label krisday3:
 
 label krisday3good:
     $ goodday3 = True
-    $ ekd3 = True
+    $ wkd3 = True
     show k
     k "Me? Exciting? Well now. I try not to be {i}too{/i} exciting."
     show k angry
@@ -308,7 +310,7 @@ label heathday3:
 
 label heathday3good:
     $ goodday3 = True
-    $ ehd3 = True
+    $ whd3 = True
     show h sad
     h "Oh, haha, that's not what I... {i}expected{/i} you to say..."
 
@@ -452,7 +454,7 @@ label aspenday3:
 
 label aspenday3good:
     $ goodday3 = True
-    $ ead3 = True
+    $ wad3 = True
     show a
     a "Oh! Well then, I'm happy to oblige. What are you interested in?"
 
@@ -488,16 +490,16 @@ label aspenday3good:
         $ cutscenetextbox = True
         scene aspen cutscene 1 with fade
         $ ac1 = True
-        a "This is Penelope. She's an \"Adiantum\" - a maidenhair fern."
-        a "She's extremely tempermental. Doesn't listen to anyone but me."
-        a "I swear, if any other greenhouse employee tries to water her or test on her, she throws a fit."
-        a "Haha, not literally, of course. She'll just wilt. But she's my favourite."
+        a "{color=#fff}This is Penelope. She's an \"Adiantum\" - a maidenhair fern."
+        a "{color=#fff}She's extremely tempermental. Doesn't listen to anyone but me."
+        a "{color=#fff}I swear, if any other greenhouse employee tries to water her or test on her, she throws a fit."
+        a "{color=#fff}Haha, not literally, of course. She'll just wilt. But she's my favourite."
 
-        mc "She's beautiful."
+        mc "{color=#fff}She's beautiful."
 
-        a "Thank you. I know."
+        a "{color=#fff}Thank you. I know."
 
-        n "You suddenly realize how close you are to Aspen. He realizes, too."
+        n "{color=#fff}You suddenly realize how close you are to Aspen. He realizes, too."
 
         scene aspentemproom with fade
         show a look with easeinright
@@ -595,7 +597,7 @@ label ccday3:
 
 label ccday3good:
     $ goodday3 = True
-    $ ecd3 = True
+    $ wcd3 = True
     show c look
     c "I... interest you?"
 
@@ -613,15 +615,15 @@ label ccday3good:
 
     if romance_points["CC"] >= 7:
         $ cutscenetextbox = True
-        scene aspen cutscene 1 with fade
+        scene cc cutscene 1 with fade
         $ cc1 = True
-        c "Well... it's a little embarrassing."
-        c "See, I have so many bio-simulators and pain receptors stuffed into my chassis, it's like I'm practically organic."
-        c "And I've heard the scientists talk about these {i}wondrous{/i} things called \"waterfalls\"..."
-        c "They must be beautiful. Water falling so freely, no... tubes to tether it down, management rails to confine it..."
+        c "{color=#fff}Well... it's a little embarrassing."
+        c "{color=#fff}See, I have so many bio-simulators and pain receptors stuffed into my chassis, it's like I'm practically organic."
+        c "{color=#fff}And I've heard the scientists talk about these {i}wondrous{/i} things called \"waterfalls\"..."
+        c "{color=#fff}They must be beautiful. Water falling so freely, no... tubes to tether it down, management rails to confine it..."
 
-        c "I think about it a lot."
-        c "I would give anything to see one."
+        c "{color=#fff}I think about it a lot."
+        c "{color=#fff}I would give anything to see one."
 
         scene cctemproom with fade
         show c close with easeinright
@@ -728,7 +730,7 @@ label robday3:
 
 label rday3good:
     $ goodday3 = True
-    $ erd3 = True
+    $ wrd3 = True
     show r angry
     r "I'm surprised you even know the name of one of the machines."
     r "Most of the doctors here don't care."

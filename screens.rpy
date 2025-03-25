@@ -309,7 +309,7 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
-        if main_menu:
+        if main_menu and mm2 == False:
 
             imagebutton idle "gui/mmbtn.png" action Start() at tilted:
                 ypos 65
@@ -321,6 +321,32 @@ screen navigation():
             imagebutton idle "gui/mmbtn.png" action ShowMenu("preferences") at tilted:
                 ypos -350
                 xpos -60
+
+            imagebutton idle "gui/stickybutton.png" action SetVariable("mm2", True):
+                ypos -575
+                xpos -52
+                focus_mask True
+
+        elif main_menu and mm2 == True:
+
+            imagebutton idle "gui/mmbtn.png" action ShowMenu("about") at tilted2:
+                ypos 250
+                xpos -60
+            
+            imagebutton idle "gui/mmbtn.png" action ShowMenu("about") at tilted2:
+                ypos 50
+                xpos -30
+            
+            imagebutton idle "gui/mmbtn.png" action Quit() at tilted2:
+                ypos -150
+                xpos 0
+            
+            imagebutton idle "gui/stickybutton2.png" action SetVariable("mm2", False):
+                ypos -755
+                xpos 80
+                focus_mask True
+
+
         else:
             style_prefix "pausemenu"
 
@@ -380,12 +406,17 @@ style pausemenu_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
+default mm2 = True
+
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
+    if mm2 == False:
+        add gui.main_menu_background
+    else:
+        add gui.main_menu_background2
 
     ## This empty frame darkens the main menu.
     frame:
@@ -394,6 +425,8 @@ screen main_menu():
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
     use navigation
+
+    add "logo.png" xpos 200 ypos 600
 
     if gui.show_name:
 
@@ -1654,6 +1687,17 @@ screen affectionprogress():
         xpos 1573
         ypos 931
         xysize (347,51)
+
+## DAY TRANSITION
+style dttitle_text:
+    font "terminal-grotesque.ttf"
+    color "#fff"
+    size 100
+style dtsubtitle_text:
+    font "terminal-grotesque.ttf"
+    color "#616161"
+    size 60
+
 
 ################################################################################
 ## Mobile Variants
