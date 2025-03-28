@@ -549,7 +549,7 @@ label robday4:
     n "The gym isn't too far from CC's room, thankfully, and you make it there in no time."
     n "Miss Esther is strangely quiet. And she was so chipper this morning..."
 
-    scene robtemproom with pixellate\
+    scene robtemproom with pixellate
 
     show r with easeinright
     r "Doc! Essie! Welcome back. I'd like ya to meet my friend here, Greg."
