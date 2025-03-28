@@ -737,4 +737,4 @@ label robday2cont:
 
     e "I'll let you know tomorrow. For now, get some rest."
 
-    jump sdefirst
+    jump e2first

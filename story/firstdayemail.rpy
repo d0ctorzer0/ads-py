@@ -22,7 +22,7 @@ screen email1():
     use affectionprogress
     vbox:
         style_prefix "emlback"
-        textbutton "<<< back" action Jump("fde")
+        textbutton "<<< back" action Jump("e1")
 
 screen email2():
     vbox:
@@ -37,7 +37,7 @@ screen email2():
     use affectionprogress
     vbox:
         style_prefix "emlback"
-        textbutton "<<< back" action Jump("fde")
+        textbutton "<<< back" action Jump("e1")
 
 screen email3():
     vbox:
@@ -67,15 +67,15 @@ screen email3pt2():
     use affectionprogress
     vbox:
         style_prefix "emlback"
-        textbutton "<<< back" action Jump("fde")
+        textbutton "<<< back" action Jump("e1")
 
-label fdefirst:
+label e1first:
 
     scene blankemail
     with fade
     call screen emailday1
 
-label fde:
+label e1:
 
     scene blankemail
     call screen emailday1

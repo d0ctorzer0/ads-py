@@ -18,7 +18,7 @@ screen emailday3():
     # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         #textbutton "    from: {color=#c9ae16}Gregory{/color}\n        an invite?                                                                                   " action Jump("emaileight")
-        textbutton "    from: [[ BLOCKED ]\n        [[ HIGH SCAM LIKELIHOOD ]                                                           " action Jump("tde")
+        textbutton "    from: [[ BLOCKED ]\n        [[ HIGH SCAM LIKELIHOOD ]                                                           " action Jump("e3")
     vbox:
         style_prefix "nextday"
         textbutton "NEXT DAY >>" action Jump("day4")
@@ -39,7 +39,7 @@ screen email7kris():
     use affectionprogress
     vbox:
         style_prefix "emlback"
-        textbutton "<<< back" action Jump("tde")
+        textbutton "<<< back" action Jump("e3")
 
 screen email7heath():
     vbox:
@@ -54,7 +54,7 @@ screen email7heath():
     use affectionprogress
     vbox:
         style_prefix "emlback"
-        textbutton "<<< back" action Jump("tde")
+        textbutton "<<< back" action Jump("e3")
 
 screen email7aspen():
     vbox:
@@ -69,7 +69,7 @@ screen email7aspen():
     use affectionprogress
     vbox:
         style_prefix "emlback"
-        textbutton "<<< back" action Jump("tde")
+        textbutton "<<< back" action Jump("e3")
 
 screen email7cc():
     vbox:
@@ -84,7 +84,7 @@ screen email7cc():
     use affectionprogress
     vbox:
         style_prefix "emlback"
-        textbutton "<<< back" action Jump("tde")
+        textbutton "<<< back" action Jump("e3")
 
 screen email7rob():
     vbox:
@@ -99,7 +99,7 @@ screen email7rob():
     use affectionprogress
     vbox:
         style_prefix "emlback"
-        textbutton "<<< back" action Jump("tde")
+        textbutton "<<< back" action Jump("e3")
 
     # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -116,15 +116,15 @@ screen email7rob():
     #use affectionprogress
     #vbox:
         #style_prefix "emlback"
-        #textbutton "<<< back" action Jump("tde")
+        #textbutton "<<< back" action Jump("e3")
     
-label tdefirst:
+label e3first:
 
     scene blankemail
     with fade
     call screen emailday3
 
-label tde:
+label e3:
 
     scene blankemail
     call screen emailday3

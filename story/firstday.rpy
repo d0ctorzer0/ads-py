@@ -971,6 +971,6 @@ label robday1cont:
     e "Remember to check your e-mail for any important information. I'll send you your room number and code now."
     e "Have a good night. Rest well."
 
-    jump fdefirst
+    jump e1first
 
     return

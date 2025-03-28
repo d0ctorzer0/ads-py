@@ -663,8 +663,8 @@ label ccday3bad:
 
     n "The rest of your shift is boring."
     n "CC won't wake up no matter what you do, and it's nearly impossible to fall asleep in the hard chair you're in."
-    n "You end up trying to read the manual next to him, but it's full of outdated information, probably from the early 70s."
-    n "CC must have been awake for an extremely long time."
+    n "You end up trying to read the manual next to him, but it's full of technical jargon."
+    n "Even with all your experience in manufacturing, some of these terms still don't ring any bells."
 
     n "Eventually, just as you're about to drift off, the clock hits 16:00, and it's time to go home."
     n "You finish your checklist and quietly leave the room."
@@ -840,7 +840,7 @@ label day3end:
 
         n "You hand your clipboard over Miss Esther. What an interesting day..."
 
-        jump tdefirst
+        jump e3first
     
     else:
         mc "It was okay. Nothing happened, really."
@@ -850,4 +850,4 @@ label day3end:
 
         n "You hand your clipboard over to Miss Esther."
 
-        jump tdefirst
+        jump e3first

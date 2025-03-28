@@ -53,7 +53,7 @@ Once MC returns to their office, Miss Esther warns them not to get attached to a
 Night 3 - same deal as previous nights, MC gets an email from whoever they spent the day with.
 
 Day 4 - back to the normal routine. Whoever MC spent the previous day with will have a different, more personal interaction. ??? is not seen today, but
-Gregory is seen with ???, who apparently thinks that Gregory is three cores in a trench coat. Greg says that's ridiculous.
+Gregory is seen with Rob, who apparently thinks that Gregory is three cores in a trench coat. Greg says that's ridiculous.
 
 Night 4 - same as previous nights. Email from greg that basically says he's NOT three cores in a trench coat.
 
@@ -74,7 +74,7 @@ h, h laugh, h sad
 UNKNOWN
 u, u upset
 ASPEN
-a, a look
+a, a look, a laugh
 CC
 c, c look, c close
 GREGORY

@@ -8,6 +8,7 @@ default spades = True
 default emailfromrobday2 = False
 default askforu = False
 default askforg = False
+default giveccpicture = False
 
 #GOODBYES
 default krisgoodbye = False
