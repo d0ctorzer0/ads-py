@@ -301,6 +301,8 @@ label heathday4cont:
     jump estherday4
 
 label estherday4:
+    scene temphall with pixellate
+
     n "You and Miss Esther exit the break room and begin heading toward the greenhouse."
     n "You've been around the section enough now that Miss Esther doesn't have to lead you anymore."
 
@@ -526,11 +528,12 @@ label offendcc4:
 label ccday4cont:
     show e b sad at bounce
     e "CC, I'm afraid the Doctor and I are behind schedule. We should leave."
+    hide e b
 
     show c
     c "Yes, I understand."
 
-    if romance_points <= 9:
+    if romance_points["CC"] <= 9:
         show c look
         c "I'll see you tomorrow, Doctor, yes?"
 
@@ -539,6 +542,8 @@ label ccday4cont:
         show c
         c "Good."
         hide c with easeoutright
+    else:
+        pass
     
     n "You both leave CC behind and exit the room."
 
