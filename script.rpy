@@ -34,6 +34,12 @@ default wad3 = False
 default wcd3 = False
 default wrd3 = False
 
+#FRIDAY SETUP
+default tshirt = False
+default formal = False
+default uniform = False
+default vaca = False
+
 #define shorter_easein = MoveTransition(0.3, enter=offscreenright, enter_time_warp=_warper.easein)
 #define shorter_easeout = MoveTransition(0.3, exit=offscreenright, enter_time_warp=_warper.easein)
 
