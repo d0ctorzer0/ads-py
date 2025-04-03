@@ -19,6 +19,7 @@ label krisday1:
     show k
     with easeinright
     k "Ahh, Miss Esther. I assume you're here for my checkup?"
+    $ kgunlock = True
 
     show e b sad at bounce 
     e "{i}I'm{/i} here for no such thing. {i}They,{/i} however..."
@@ -130,6 +131,7 @@ label krisday1cont:
 
 label heathday1:
 
+    play music dsg fadein 0.5
     scene heathtemproom
     with fade
 
@@ -181,6 +183,7 @@ label heathday1:
     n "The curtains part as a core with a purple optic and ribbon-wrapped handlebars comes barreling out. A flurry of confetti comes up from the floor and lands around it."
 
     h "Mystery... intrigue... the unknown... what do all these things have in common?"
+    $ hgunlock = True
 
     show h laugh
     h "{i}{b}ME, OF COURSE!{/i}{/b}"
@@ -329,6 +332,7 @@ label unknownday1:
     show u
     with easeinright
     u "Uhh... huh?"
+    $ ugunlock = True
 
     hide u
     with easeoutright
@@ -480,6 +484,7 @@ label aspenday1:
 
     show a look with easeinright
     a "Sorry, sorry, didn't see you there!"
+    $ agunlock = True
 
     mc "That's alright."
 
@@ -643,6 +648,7 @@ label ccday1:
 
     show c look
     c "I have cancer."
+    $ cgunlock = True
 
     n "You look at the core, then at Miss Esther, then back at the core again."
 
@@ -826,6 +832,7 @@ label gregday1:
     mc "What... what was that?"
     
     e "That... was Gregory. He's - or, they're... or, uh..."
+    $ ggunlock = True
 
     show e
     e "You know what? We have more important business. Come along!"
@@ -852,6 +859,7 @@ label robday1:
     r "Sorry, with you in a sec."
     show r yell
     r "THROW THE GODDAMN BALL, WHAT ARE YOU WAITING FOR?!"
+    $ rgunlock = True
 
     hide r with easeoutright
     show e annoy with easeinright

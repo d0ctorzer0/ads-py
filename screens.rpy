@@ -420,23 +420,22 @@ screen main_menu():
 
         elif main_menu and mm2 == True:
 
-            imagebutton idle "gui/mmbtn.png" action ShowMenu("about") at tilted2:
+            imagebutton idle "gui/mmbtn.png" action ShowMenu("about") at tilted2: #about
                 ypos 250
                 xpos -60
             
-            imagebutton idle "gui/mmbtn.png" action ShowMenu("about") at tilted2:
+            imagebutton idle "gui/mmbtn.png" action Show("gallery", transition=easeinbottom) at tilted2: #gallery
                 ypos 50
                 xpos -30
             
-            imagebutton idle "gui/mmbtn.png" action Quit() at tilted2:
+            imagebutton idle "gui/mmbtn.png" action Quit() at tilted2: #quit
                 ypos -150
                 xpos 0
             
-            imagebutton idle "gui/stickybutton2.png" action SetVariable("mm2", False):
+            imagebutton idle "gui/stickybutton2.png" action SetVariable("mm2", False): #sticky note
                 ypos -755
                 xpos 80
                 focus_mask True
-
 
         else:
             style_prefix "pausemenu"
@@ -446,6 +445,7 @@ screen main_menu():
             textbutton ("History") action ShowMenu("history")
 
             textbutton ("Save") action ShowMenu("save")
+
 
 
 

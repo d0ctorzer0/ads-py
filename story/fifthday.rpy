@@ -51,5 +51,26 @@ label day5:
         e "Ahh, Doctor! Planning on going on a cruise? Whatever that is..."
     if uniform == True:
         e "Ahh, Doctor. Went the simple route I see? No worries. It's not for everyone."
-    else:
-        "ERROR. If you are seeing this message you either skipped the beginning of Day 5 or there is something wrong. If you are seeing this message, please report it as an issue."
+
+    show e
+    e "Today's the last day of the week! Any exciting plans for the weekend?"
+
+    menu:
+        extend ""
+        "I was thinking I'd just stay in my room and do some reading.":
+            show e shock
+            e "There's plenty more to do around here than sit and read!"
+            show e
+            e "But it's your time off, so feel free to do whatever you wish."
+        "Gregory invited me to go meet him at the gym. I might do that.":
+            e "Interesting. Well, it's your time off. You're free to do whatever you please."
+        "Honestly, I was just planning on wandering. Maybe finding a bar?":
+            show e laugh
+            e "A bar? Haha, that's hilarious, Doctor."
+        "I have absolutely no clue.":
+            show e laugh
+            e "Fair enough. I suppose you aren't used to being on-campus on your days off."
+    
+    show e
+    e "Well, we should be on our way, then. Grab your clipboard, and let's get going."
+    n "You get your paperwork and follow Miss Esther out the door."
