@@ -74,3 +74,5 @@ label day5:
     show e
     e "Well, we should be on our way, then. Grab your clipboard, and let's get going."
     n "You get your paperwork and follow Miss Esther out the door."
+
+    jump krisday5

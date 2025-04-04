@@ -41,13 +41,13 @@ default uniform = False
 default vaca = False
 
 #GALLERY SETUP
-default kgunlock = False
-default hgunlock = False
-default agunlock = False
-default cgunlock = False
-default rgunlock = False
-default ggunlock = False
-default ugunlock = False
+default persistent.kgunlock = False
+default persistent.hgunlock = False
+default persistent.agunlock = False
+default persistent.cgunlock = False
+default persistent.rgunlock = False
+default persistent.ggunlock = False
+default persistent.ugunlock = False
 
 #define shorter_easein = MoveTransition(0.3, enter=offscreenright, enter_time_warp=_warper.easein)
 #define shorter_easeout = MoveTransition(0.3, exit=offscreenright, enter_time_warp=_warper.easein)
@@ -102,7 +102,7 @@ label start:
     show e
     with easeinright
 
-    voice "e/e01-001.ogg"
+    #voice "e/e01-001.ogg"
     e "Why, hello there. I'm Miss Esther. I'm assuming you're the temp replacement for our missing employee, correct?"
 
     menu:
@@ -118,34 +118,34 @@ label start:
 
 label missing:
 
-    voice "e/e01-002.ogg"
+    #voice "e/e01-002.ogg"
     e "No, Miss Esther."
 
     mc "Oh no, I meant -"
 
     show e laugh
-    voice "e/e01-003.ogg"
+    #voice "e/e01-003.ogg"
     e "Oh! Yes, yes, my mistake. You were asking me what I meant by \"missing employee\"."
 
     show e
-    voice "e/e01-004.ogg"
+    #voice "e/e01-004.ogg"
     e "You must have not heard, then. The employee who held this position hasn't shown up for a week."
 
     mc "No, I didn't hear anything about that. They just told me they needed a position filled until they could find a replacement."
 
     show e laugh
-    voice "e/e01-005.ogg"
+    #voice "e/e01-005.ogg"
     e "Well it's of no real concern, darling. People disappear from here all the time, after all."
 
     show e
-    voice "e/e01-006.ogg"
+    #voice "e/e01-006.ogg"
     e "You're here now, so..."
 
     jump introcont
 
 label introcont:
 
-    voice "e/e01-007.ogg"
+    #voice "e/e01-007.ogg"
     e "That's perfect. Go ahead and get your new desk set up while I go through our itinerary for today."
 
     n "You begin unloading your box. You leave a space on the corner for your most prized possession..."
@@ -171,31 +171,31 @@ label introcont:
 
             n "You place the picture down gently and turn it slightly towards you."
     
-    voice "e/e01-008.ogg"
+    #voice "e/e01-008.ogg"
     e "Alright. Your job is simple. We will tour Section C8 of the facility - that's the section you're overseeing - and ensure that all Aperture Science Personality constructs are functioning properly."
-    voice "e/e01-009.ogg"
+    #voice "e/e01-009.ogg"
     e "\"Please ensure that the employee does not-\""
 
     show e shock
-    voice "e/e01-010.ogg"
+    #voice "e/e01-010.ogg"
     e "Oh, sorry! That's for my eyes only. Whoops, haha."
 
     show e
-    voice "e/e01-011.ogg"
+    #voice "e/e01-011.ogg"
     e "We have five stops for today. And for... everyday, actually. It's the same route almost every morning."
 
     mc "Great, routine."
 
-    voice "e/e01-012.ogg"
+    #voice "e/e01-012.ogg"
     e "Check-up number 1..."
 
     show e annoy
-    voice "e/e01-013.ogg"
+    #voice "e/e01-013.ogg"
     e "Ugh. It's Kris."
 
     mc "What's wrong with Kris?"
 
-    voice "e/e01-014.ogg"
+    #voice "e/e01-014.ogg"
     e "Nothing. He's just... you'll see. Come along."
 
     jump krisday1

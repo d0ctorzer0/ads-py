@@ -424,7 +424,7 @@ screen main_menu():
                 ypos 250
                 xpos -60
             
-            imagebutton idle "gui/mmbtn.png" action Show("gallery", transition=easeinbottom) at tilted2: #gallery
+            imagebutton idle "gui/mmbtn.png" action Show("galleryk", transition=easeinbottom) at tilted2: #gallery
                 ypos 50
                 xpos -30
             
@@ -586,6 +586,10 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
         style "return_button"
 
         action Return()
+    textbutton _("Main Menu"):
+        style "return_button"
+
+        action MainMenu()
 
     label title
 
