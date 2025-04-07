@@ -1,3 +1,12 @@
+init python:
+    def reset_data():
+        for attr in dir(persistent):
+            if not callable(attr) and not attr.startswitch("_"):
+                setattr(persistent, attr, None)
+        for slot in renpy.list_saved_games(fast=True):
+            renpy.unlink_save(slot)
+        renpy.quit(relaunch=True)
+
 define cutscenetextbox = False
 
 #SPECIAL DEFAULTS
