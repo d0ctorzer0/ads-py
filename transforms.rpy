@@ -8,6 +8,9 @@ transform tilted:
 transform tilted2:
     rotate -17 #change this to rotate more
 
+transform ab_tilt:
+    rotate -5 
+
 transform daydiss:
     on hide:
         linear 0.5 alpha 0.0

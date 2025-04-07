@@ -409,7 +409,7 @@ screen main_menu():
                 ypos -80
                 xpos 130
 
-            imagebutton idle "gui/mmbtn.png" action ShowMenu("preferences") at tilted:
+            imagebutton idle "gui/mmbtn.png" action Show("pref_audio", transition=easeinbottom) at tilted:
                 ypos -300
                 xpos 80
 

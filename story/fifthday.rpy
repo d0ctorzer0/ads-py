@@ -76,3 +76,35 @@ label day5:
     n "You get your paperwork and follow Miss Esther out the door."
 
     jump krisday5
+
+label krisday5:
+    scene kristemproom with pixellate
+
+    n "You enter the conference room to find things much calmer than yesterday."
+    n "In fact, the screen that is usually moving so vibrantly and quickly is turned off."
+
+    mc "Kris? Is something wrong?"
+
+    show k with easeinright
+    k "Oh... Doctor."
+    k "No. Not at all. Everything is alright."
+
+    show e b sad at bounce
+    e "Kris, your screen. It's off."
+    hide e b
+
+    k "Yes, I'm aware. Financial thinks I... need to take a day away from it."
+
+    mc "Why?"
+
+    show k flirt
+    k "I'm not sure. Perhaps it has something to do with my... panicking yesterday."
+
+    menu:
+        extend ""
+        "But you calmed down from that.":
+            $ romance_points["Kris"] += 3
+            jump impresskris5
+        "I suppose that makes some sense.":
+            $ romance_points["Kris"] -= 3
+            jump offendkris5
