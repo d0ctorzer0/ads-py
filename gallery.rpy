@@ -20,7 +20,7 @@ style tabs_button_text:
 
 screen galleryk:
     style_prefix "file"
-    textbutton "<<< back" action Hide("galleryk", transition=easeoutbottom) ypos 30 xpos 20
+    textbutton "<<< back" action Hide("galleryk", transition=easeoutbottom) ypos 20 xpos 20
 
     if persistent.kgunlock == False:
         add "gui/gallery/krislocked.png"
@@ -39,7 +39,7 @@ screen galleryk:
 
 screen galleryh:
     style_prefix "file"
-    textbutton "<<< back" action Hide("galleryh", transition=easeoutbottom) ypos 30 xpos 20
+    textbutton "<<< back" action Hide("galleryh", transition=easeoutbottom) ypos 20 xpos 20
 
     if persistent.hgunlock == False:
         add "gui/gallery/heathlocked.png"
@@ -58,7 +58,7 @@ screen galleryh:
 
 screen gallerya:
     style_prefix "file"
-    textbutton "<<< back" action Hide("gallerya", transition=easeoutbottom) ypos 30 xpos 20
+    textbutton "<<< back" action Hide("gallerya", transition=easeoutbottom) ypos 20 xpos 20
 
     if persistent.agunlock == False:
         add "gui/gallery/aspenlocked.png"
@@ -77,7 +77,7 @@ screen gallerya:
 
 screen galleryc:
     style_prefix "file"
-    textbutton "<<< back" action Hide("galleryc", transition=easeoutbottom) ypos 30 xpos 20
+    textbutton "<<< back" action Hide("galleryc", transition=easeoutbottom) ypos 20 xpos 20
 
     if persistent.cgunlock == False:
         add "gui/gallery/cclocked.png"
@@ -96,7 +96,7 @@ screen galleryc:
 
 screen galleryr:
     style_prefix "file"
-    textbutton "<<< back" action Hide("galleryr", transition=easeoutbottom) ypos 30 xpos 20
+    textbutton "<<< back" action Hide("galleryr", transition=easeoutbottom) ypos 20 xpos 20
 
     if persistent.rgunlock == False:
         add "gui/gallery/roblocked.png"
@@ -115,7 +115,7 @@ screen galleryr:
 
 screen galleryg:
     style_prefix "file"
-    textbutton "<<< back" action Hide("galleryg", transition=easeoutbottom) ypos 30 xpos 20
+    textbutton "<<< back" action Hide("galleryg", transition=easeoutbottom) ypos 20 xpos 20
 
     if persistent.ggunlock == False:
         add "gui/gallery/gregorylocked.png"
@@ -134,7 +134,7 @@ screen galleryg:
 
 screen galleryu:
     style_prefix "file"
-    textbutton "<<< back" action Hide("galleryu", transition=easeoutbottom) ypos 30 xpos 20
+    textbutton "<<< back" action Hide("galleryu", transition=easeoutbottom) ypos 20 xpos 20
 
     if persistent.ugunlock == False:
         add "gui/gallery/unknownlocked.png"

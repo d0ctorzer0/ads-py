@@ -9,7 +9,7 @@ transform tilted2:
     rotate -17 #change this to rotate more
 
 transform ab_tilt:
-    rotate -5 
+    rotate -4.5
 
 transform daydiss:
     on hide:

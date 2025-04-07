@@ -103,7 +103,7 @@ screen say(who, what):
         id "window"
 
         if cutscenetextbox == True:
-            ypos 1200   
+            ypos 1200
             xpos 850
             xanchor 0.0
             background None
@@ -423,15 +423,15 @@ screen main_menu():
             imagebutton idle "gui/mmbtn.png" action ShowMenu("about") at tilted2: #about
                 ypos 250
                 xpos -60
-            
+
             imagebutton idle "gui/mmbtn.png" action Show("galleryk", transition=easeinbottom) at tilted2: #gallery
                 ypos 50
                 xpos -30
-            
+
             imagebutton idle "gui/mmbtn.png" action Quit() at tilted2: #quit
                 ypos -150
                 xpos 0
-            
+
             imagebutton idle "gui/stickybutton2.png" action SetVariable("mm2", False): #sticky note
                 ypos -755
                 xpos 80
@@ -978,7 +978,7 @@ style check_button_text:
     properties gui.text_properties("check_button")
 
 style slider_slider:
-    xsize 525
+    xsize 400
 
 style slider_button:
     properties gui.button_properties("slider_button")
@@ -989,7 +989,7 @@ style slider_button_text:
     properties gui.text_properties("slider_button")
 
 style slider_vbox:
-    xsize 675
+    xsize 200
 
 
 ## History screen ##############################################################
@@ -1837,9 +1837,8 @@ style vscrollbar:
     thumb Frame("gui/phone/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
 
 style slider:
-    variant "small"
-    ysize gui.slider_size
-    base_bar Frame("gui/phone/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
+    #variant "small"
+    base_bar Frame("gui/phone/slider/horizontal_[prefix_]bar.png") ysize 52
     thumb "gui/phone/slider/horizontal_[prefix_]thumb.png"
 
 style vslider:
@@ -1849,9 +1848,9 @@ style vslider:
     thumb "gui/phone/slider/vertical_[prefix_]thumb.png"
 
 style slider_vbox:
-    variant "small"
+    #variant "small"
     xsize None
 
 style slider_slider:
-    variant "small"
-    xsize 900
+    #ariant "small"
+    xsize 650
