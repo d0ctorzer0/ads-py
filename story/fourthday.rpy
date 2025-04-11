@@ -107,7 +107,7 @@ label krisday4:
             k "Sorry, Doctor. I am... calmer now."
             jump krisday4cont
         "(Criticize him.)":
-            $ romance_points["Kris"] -= 3
+            $ romance_points["Kris"] += 3
             jump offendkris4
 
 label impresskris4:
@@ -158,7 +158,7 @@ label offendkris4:
 
     if wkd3:
         show k angry
-        k "Whatever happened to the Doctor I had yesterday?"
+        k "I didn't know that... uh, side of you existed, haha..."
     
     jump krisday4cont
 

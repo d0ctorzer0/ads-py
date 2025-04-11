@@ -399,6 +399,7 @@ label heathday2cont:
             jump aspenday2
 
 label whatswrong:
+    $ askestherday2 = True
     mc "What's up, Miss Esther? Is something wrong?"
 
     show e

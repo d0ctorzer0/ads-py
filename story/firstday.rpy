@@ -1,3 +1,5 @@
+define config.layers = ['master', 'transient', 'screens', 'overlay', 'ontop']
+
 # GAME
 label start:
 
@@ -101,7 +103,8 @@ label introcont:
             n "You place the picture down gently and turn it slightly towards you."
     
     #voice "e/e01-008.ogg"
-    e "Alright. Your job is simple. We will tour Section C8 of the facility - that's the section you're overseeing - and ensure that all Aperture Science Personality constructs are functioning properly."
+    e "Alright. Your job is simple."
+    e "We will tour Section C8 of the facility - that's the section you're overseeing - and ensure that all Aperture Science Personality constructs are functioning properly."
     #voice "e/e01-009.ogg"
     e "\"Please ensure that the employee does not-\""
 
@@ -1110,4 +1113,5 @@ label robday1cont:
     e "Remember to check your e-mail for any important information. I'll send you your room number and code now."
     e "Have a good night. Rest well."
 
+    hide screen optionsopen onlayer ontop
     jump e1first

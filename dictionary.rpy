@@ -48,7 +48,7 @@ default tshirt = False
 default formal = False
 default uniform = False
 default vaca = False
-
+default askestherday2 = False
 #GALLERY SETUP
 default persistent.kgunlock = False
 default persistent.hgunlock = False
@@ -71,6 +71,16 @@ default romance_points = {
     "Greg" : 0 ,
     "Rob" : 0 ,
 }
+default positive = { # 1 = positive, -1 = negative
+    "Kris" : 0 ,
+    "Heath" : 0 ,
+    "???" : 0 ,
+    "Aspen" : 0 ,
+    "CC" : 0 ,
+    "Greg" : 0 ,
+    "Rob" : 0 ,
+}
+
 default romance_minimum_for_good_ending = 20
 default romance_minimum_for_perfect_ending = 30
 

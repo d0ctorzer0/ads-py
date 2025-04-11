@@ -97,8 +97,9 @@ style frame:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
-screen say(who, what):
 
+screen say(who, what):
+    
     window:
         id "window"
 
@@ -116,6 +117,8 @@ screen say(who, what):
                 text who id "who"
 
         text what id "what"
+    
+    use pref_open
 
 
     ## If there's a side image, display it above the text. Do not display on the

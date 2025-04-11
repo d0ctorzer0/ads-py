@@ -22,8 +22,10 @@ style fileblu_button_text:
     hover_color "#94bbe3"
 
 screen pref_audio:
+    tag pref
+    modal True
     style_prefix "fileblu"
-    textbutton "<<< back" action Hide("pref_audio", transition=easeoutbottom) ypos 20 xpos 20
+    textbutton "<<< back" action Hide("pref_audio", transition=easeoutbottom), SetVariable("options_visible", True) ypos 20 xpos 20
     add "gui/options/audio.png"
 
     vbox:
@@ -46,9 +48,10 @@ screen pref_audio:
 
 
 screen pref_video:
-
+    modal True
+    tag pref
     style_prefix "fileblu"
-    textbutton "<<< back" action Hide("pref_video", transition=easeoutbottom) ypos 20 xpos 20
+    textbutton "<<< back" action Hide("pref_video", transition=easeoutbottom), SetVariable("options_visible", True) ypos 20 xpos 20
     add "gui/options/video.png"
 
     hbox:
@@ -105,8 +108,10 @@ screen pref_video:
     
 
 screen pref_other:
+    modal True
+    tag pref
     style_prefix "fileblu"
-    textbutton "<<< back" action Hide("pref_other", transition=easeoutbottom) ypos 20 xpos 20
+    textbutton "<<< back" action Hide("pref_other", transition=easeoutbottom), SetVariable("options_visible", True) ypos 20 xpos 20
     add "gui/options/other.png"
 
     hbox:
@@ -115,3 +120,8 @@ screen pref_other:
     
     #vbox:
         #imagebutton idle "gui/options/delete.png" xpos 500 ypos 500
+
+
+# imagebutton for options on mm
+screen pref_open():
+    imagebutton idle "gui/optionsopen.png" action Show("pref_audio", transition=easeinbottom), SetVariable("options_visible", False) xpos 1010 ypos 980

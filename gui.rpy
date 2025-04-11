@@ -35,7 +35,7 @@ define gui.idle_color = '#707070'
 define gui.idle_small_color = '#606060'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#003366'
+define gui.hover_color = '#000000'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -66,10 +66,10 @@ define gui.name_text_font = "SairaCondensed-Bold.ttf"
 define gui.interface_text_font = "SairaCondensed-Bold.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 40
+define gui.text_size = 45
 
 ## The size of character names.
-define gui.name_text_size = 50
+define gui.name_text_size = 55
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 40
@@ -108,8 +108,8 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 105
-define gui.name_ypos = -15
+define gui.name_xpos = 45
+define gui.name_ypos = 5
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -132,11 +132,11 @@ define gui.namebox_tile = False
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
-define gui.dialogue_xpos = 110
-define gui.dialogue_ypos = 76
+define gui.dialogue_xpos = 50
+define gui.dialogue_ypos = 110
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 925
+define gui.dialogue_width = 1000
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -213,7 +213,7 @@ define gui.choice_button_borders = Borders(0, 8, 40, 10)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xpos = 30
-define gui.choice_button_text_idle_color = '#707070'
+define gui.choice_button_text_idle_color = '#000000'
 define gui.choice_button_text_hover_color = "#ffffff"
 define gui.choice_button_text_insensitive_color = '#7070707f'
 
@@ -442,9 +442,9 @@ init python:
         gui.label_text_size = 51
 
         ## Adjust the location of the textbox.
-        gui.textbox_height = 360
+        gui.textbox_height = 200
         gui.name_xpos = 120
-        gui.dialogue_xpos = 135
+        gui.dialogue_xpos = 100
         gui.dialogue_width = 1650
         gui.slider_size = 30
 
