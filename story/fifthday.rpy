@@ -518,3 +518,245 @@ label ccday5:
         e "Yes, but they did give me a supervisor title, so..."
         show e
         e "I suppose I can't complain too much."
+    
+    n "You reach CC's room. Standing outside the door, you can hear muffled talking."
+
+    show e shock
+    e "Is someone in there with him?"
+    e "There shouldn't be anyone in there at this time -"
+
+    show e annoy
+    e "Doctor, open the door. Carefully."
+
+    n "You do exactly that."
+
+    scene cctemproom with pixellate
+
+    show u upset with easeinright
+    u "I ain't doin' anything wrong, here, am I?"
+    hide u with easeoutright
+
+    show c close with easeinright
+    c "Technically, you are. This is a private room. You're invading my space."
+    hide c with easeoutright
+
+    show u with easeinright
+    u "But the Doc's in here. And her little friend."
+
+    show e b annoy at bounce
+    e "Who are you calling \"little\"?!"
+    hide e b
+    hide u with easeoutright
+
+    show c with easeinright
+    c "Doctor, can you please remove this core from my room?"
+    c "I have nothing against him, but he is trespassing."
+
+    menu:
+        extend ""
+        "Alright, sir, you're going to have to leave.":
+            $ esther_affection += 1
+            jump ccanduleave
+        "I'm sure there's a way to resolve this. Why are you here?":
+            $ romance_points["???"] += 3
+            $ romance_points["CC"] += 1
+            $ esther_affection -= 1
+            jump ccanduresolve
+
+    # 8 points for pos on ???
+
+label ccanduleave:
+    hide c with easeoutright
+    show u upset with easeinright
+
+    u "Fine, fine, I'm leavin'."
+    show u
+    u "None of you even give a rat's ass about me..."
+
+    show e b annoy at bounce
+    e "Obviously."
+    hide e b 
+
+    if romance_points["???"] >= 8:
+        $ positive["???"] = 1
+        show u upset
+        u "You're usually pretty... soft to me, Doc. I'm sure this is a one-off."
+        show u
+        u "I'll see ya... this weekend, right?"
+        hide u with easeoutright
+        n "And with that, he leaves."
+
+    elif romance_points["???"] <= 0:
+        $ positive["???"] = -1
+        show u upset
+        u "Seems no matter how hard I try, you simply ain't interested, Doc."
+        show u
+        u "S'fine. But I take back my invite for this weekend..."
+        hide u with easeoutright
+        n "And with that, he leaves."
+
+    elif 1 <= romance_points["???"] <= 7:
+        hide u with easeoutright
+        n "And with that, he leaves."
+    
+    jump ccday5cont
+
+label ccanduresolve:
+    hide c with easeoutright
+    show u with easeinright
+    u "S'pretty simple, honest. I thought this was my own room..."
+
+    mc "The \"place\" you keep inviting me back to?"
+
+    u "Yeah, exactly that. And I don't quite remember {i}why{/i} I thought this was my room, but..."
+
+    hide u with easeoutright
+    show c close with easeinright
+    c "I sympathize, sir, I really do, but this is technically a research area."
+    show c
+    c "You can't just go rolling into every room you see."
+    c "Aspen told me you've rammed into his greenhouse door before as well."
+
+    show e b annoy at bounce
+    e "Oh, so this is a {i}recurring{/i} problem?"
+    hide e b annoy
+    hide c with easeoutright
+
+    show e annoy with easeinright
+    e "Doctor, I suggest we escalate this to Encoding. There seems to be something horribly wrong with this... {i}\"core.\"{/i}"
+
+    mc "Now wait a moment, Miss Esther. I don't think that's necessary."
+    hide e with easeoutright
+    show u with easeinright
+
+    mc "I don't know your name, or your job, or your designation..."
+    mc "But you need to watch where you're going."
+    mc "My first day here, you nearly ran into Miss Esther."
+    mc "And she's right - if this continues to be a problem, I'll have to report it."
+    mc "I don't want to do that."
+
+    show u upset
+    u "Yeah..."
+    u "Yeah, I understand, Doc."
+    u "I apologize, uh... CC, right?"
+    hide u with easeoutright
+
+    show c look with easeinright
+    c "Haha. Yes, that's my name."
+    c "You're forgiven."
+    hide c with easeoutright
+
+    show u with easeinright
+    
+    if romance_points["???"] >= 8:
+        $ positive["???"] = 1
+        u "I'll get goin' now, Doc."
+        show u upset
+        u "You've been unusually, uh, patient with me this week."
+        show u
+        u "I do reckon you'll visit me tomorrow. Hopefully."
+        hide u with easeoutright
+        n "And with that, he leaves."
+
+    elif romance_points["???"] <= 0:
+        $ positive["???"] = -1
+        u "Uhh... Doc, I wanna apologize to you too, for uh..."
+        show u upset
+        u "Tryin' so hard. Pushin' you too much."
+        u "I take back my invite for t'morrow. You don't gotta come."
+        hide u with easeoutright
+        n "And with that, he leaves."
+
+    elif 1 <= romance_points["???"] <= 7:
+        u "I reckon I oughta be goin', then."
+        u "See y'all."
+        hide u with easeoutright
+        n "And with that, he leaves."
+    
+    jump ccday5cont
+
+label ccday5cont:
+    show c with easeinright
+    c "Ahh. Thank you, Doctor."
+    
+    show e b at bounce
+    e "Are you alright, CC?"
+    hide e b 
+    c "Yes, Miss Esther."
+    c "He was not a bother. Simply breaking the rules - that was all."
+    show c close
+    c "I honestly regret he could not stay. I enjoy any company, regardless of the type."
+
+    mc "How are you feeling today?"
+
+    show c
+    c "The same as usual, I would say."
+    c "Maybe a little better?"
+
+    n "You turn to Miss Esther."
+
+    mc "Is that a good thing?"
+
+    show c close
+    show e b annoy at bounce
+    e "For him, yes. For us, no. A \"positive\" report on CC is either one where his condition has not changed or has worsened."
+
+    menu:
+        extend ""
+        "What heartless bastard wrote this goddamn report, anyway?":
+            $ romance_points["CC"] += 3
+            jump impresscc5
+        "They're not going to be happy about this one, then?":
+            jump neutralcc5
+
+label impresscc5:
+    hide e B
+    show c
+    c "Haha... excuse my language, but..."
+    show c look # cc gets agitated here
+    c "Aperture bastards, that's who."
+    show c
+    c "Can't leave well enough alone..."
+    c "Test, test, test, that's all they do..."
+
+    show e b sad at bounce
+    e "Now, CC, calm down. Don't get too stressed. It's bad for you."
+    hide e b
+
+    show c look
+    c "Well then. If it's bad for me, I should keep it up, yes?"
+    show c
+    c "Give those idiot scientists what they want..."
+
+    show c close
+    c "Ahem. Apologies, Doctor, I believe I may have gotten... out of hand, there."
+
+    if romance_points["CC"] >= 10:
+        $ positive["CC"] = 1
+        show c look
+        c "Before you go..."
+        c "You have been incredibly kind to me, despite that not being necessary."
+        c "I will not forget that."
+        
+        mc "Thank you, CC."
+
+    elif romance_points["CC"] <= 0:
+        $ positive["CC"] = -1
+        show c look
+        c "Before you go..."
+        c "I'm not sure what the issue is, but..."
+        c "It seems you don't like me very much, Doctor."
+        show c
+        c "That's alright though. That's a common occurence."
+
+        mc "CC -"
+
+    show c
+    c "You should be going, now. You've been here far longer than your scheduled time."
+
+    mc "Yes."
+
+    hide c with easeoutright
+    n "You finish your report and quietly leave the room."
+
+    jump robday5
