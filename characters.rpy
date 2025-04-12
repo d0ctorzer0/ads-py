@@ -1,5 +1,7 @@
 define begmc = Character(_("You"), color="#000000")
 
+define d = Character(_("Developer"), color="#000000")
+
 define n = Character("")
 define e = Character(_("Miss Esther"), color="#db35a9")
 
