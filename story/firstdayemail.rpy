@@ -73,7 +73,7 @@ label e1first:
 
     scene blankemail
     with fade
-    call screen emailday1
+    call screen emailday1 with dissolve
 
 label e1:
 

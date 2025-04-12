@@ -16,3 +16,8 @@ transform daydiss:
         linear 0.5 alpha 0.0
 
 define gentleswitch = { "master" : Dissolve(0.2) }
+
+transform emaildiss:
+    on show:
+        alpha 0.0
+        linear 1.0 alpha 1.0

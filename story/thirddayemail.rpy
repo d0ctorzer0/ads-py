@@ -122,7 +122,7 @@ label e3first:
 
     scene blankemail
     with fade
-    call screen emailday3
+    call screen emailday3 with dissolve
 
 label e3:
 

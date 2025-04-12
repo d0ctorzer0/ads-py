@@ -81,6 +81,8 @@ default positive = { # 1 = positive, -1 = negative
     "Rob" : 0 ,
 }
 
+$ romance_highest_name = max(romance_points, key=romance_points.get)
+
 default romance_minimum_for_good_ending = 20
 default romance_minimum_for_perfect_ending = 30
 

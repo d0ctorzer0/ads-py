@@ -12,9 +12,9 @@ checklist:
 ☑ day 3
 ☑ night 3
 ☑ day 4
-☐ night 4
-☐ day 5
-☐ night 5
+☑ night 4
+☑ day 5
+☑ night 5
 ☐ day 6
 ☐ night 6
 ☐ day 7
@@ -37,5 +37,5 @@ checklist:
 
 
 current roadmap:
-- day 4
-- gallery add
+- DAY 6 (SATURDAY!!!)
+- section c8 map

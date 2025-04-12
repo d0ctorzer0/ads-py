@@ -12,9 +12,11 @@ label day5:
     $ daynum = "5"
     $ dayday = "Friday!"
 
-    show screen daytransition
-    $ renpy.pause(2.0, hard=True)
-
+    if renpy.is_skipping() == False:
+        show screen daytransition
+        $ renpy.pause(2.0, hard=True)
+    if renpy.is_skipping() == True:
+        pass
     scene mctemproom with fade
 
     n "You wake with a start." 
@@ -24,24 +26,28 @@ label day5:
     menu:
         extend ""
         "A t-shirt and jeans.":
-            $ tshirt = True
-            $ romance_points["Aspen"] += 1
-            $ romance_points["Greg"] += 1
+            python:
+                tshirt = True
+                romance_points["Aspen"] += 1
+                romance_points["Greg"] += 1
             n "You put on a regular old t-shirt and blue jeans, and head out the door to work."
         "Your best formalwear.":
-            $ formal = True
-            $ romance_points["Kris"] += 1
-            $ romance_points["Heath"] += 1
+            python:
+                formal = True
+                romance_points["Kris"] += 1
+                romance_points["Heath"] += 1
             n "You put on your best date-night attire, and head out the door to work."
         "A Hawaiian shirt and khakis.":
-            $ vaca = True
-            $ romance_points["Rob"] += 1
-            $ romance_points["???"] += 1
+            python:
+                vaca = True
+                romance_points["Rob"] += 1
+                romance_points["???"] += 1
             n "You put on your vacation clothes, and head out the door to work."
         "Just your regular uniform.":
-            $ uniform = True
-            $ romance_points["CC"] += 1
-            $ esther_affection += 1
+            python:
+                uniform = True
+                romance_points["CC"] += 1
+                esther_affection += 1
             n "You decide to just wear your uniform as regular, sling the lab coat over your shoulders, and head out the door to work."
 
     scene office
@@ -70,7 +76,7 @@ label day5:
             e "There's plenty more to do around here than sit and read!"
             show e
             e "But it's your time off, so feel free to do whatever you wish."
-        "Gregory invited me to go meet him at the gym. I might do that.":
+        "Gregory invited me to go meet him. I might do that.":
             e "Interesting. Well, it's your time off. You're free to do whatever you please."
         "Honestly, I was just planning on wandering. Maybe finding a bar?":
             show e laugh
@@ -558,9 +564,10 @@ label ccday5:
             $ esther_affection += 1
             jump ccanduleave
         "I'm sure there's a way to resolve this. Why are you here?":
-            $ romance_points["???"] += 3
-            $ romance_points["CC"] += 1
-            $ esther_affection -= 1
+            python:
+                romance_points["???"] += 3
+                romance_points["CC"] += 1
+                esther_affection -= 1
             jump ccanduresolve
 
     # 8 points for pos on ???
@@ -760,3 +767,198 @@ label impresscc5:
     n "You finish your report and quietly leave the room."
 
     jump robday5
+
+label robday5:
+    scene temphall with pixellate
+    n "As you approach the door to the gym, you notice a surprising lack of yelling from inside it."
+
+    show e annoy with easeinright
+    e "Rob's surprisingly quiet today. I don't hear the television active, either."
+
+    mc "Hmm..."
+
+    n "You open the door carefully."
+
+    scene robtemproom with pixellate
+    show r close with easeinright
+    n "Rob is sound asleep at his desk."
+
+    show e b annoy at bounce
+    e "You've got to be kidding me."
+    hide e b
+
+    n "The TV above him is turned off, as well."
+    n "There's no one else in here, though by now that seems to be the default state of things."
+
+    hide r with easeoutright
+    show e shock with easeinright
+    e "ROB! WAKE YOUR SORRY ASS UP!"
+    hide e with easeoutright
+
+    show r close with easeinright
+    show r at bounce
+    r "Oh! Shit! Essie!"
+    show r angry
+    r "Sorry, I... uh."
+
+    hide r with easeoutright
+    show e shock with easeinright
+    e "You were SLEEPING? Do you realize we have to report this now?"
+    show e annoy
+    e "Why I {i}never...{/i}"
+    hide e with easeoutright
+
+    show r yell with easeinright
+    r "Look! Look, I'm sorry, Essie. It gets boring as hell in here sometimes..."
+    show r angry
+    r "And I got no games to watch on Fridays 'cuz they redirect my electricity to hold meetings upstairs!"
+    r "So I fell asleep. What's the big deal?"
+
+    menu:
+        extend ""
+        "We have to report that you weren't doing your job.":
+            $ romance_points["Rob"] -= 3
+            $ esther_affection += 1
+            jump offendrob5
+        "Nothing too much. I just need you to stay awake from now on.":
+            $ romance_points["Rob"] += 3
+            jump impressrob5
+        "Miss Esther?":
+            $ esther_affection += 1
+            jump neutralrob5
+
+label offendrob5:
+    show r yell
+    r "Not doing my job?!"
+    r "All I do is sit here and watch the TV all day!"
+    show r angry
+    r "What \"job\" do I even do?! Hahaha..."
+    show r yell
+    r "I swear!! I'm alone in here all day, no one comes into this goddamn gym, and -"
+    hide r with easeoutright
+
+    show e shock with easeinright
+    e "I DO NOT CARE! Your JOB is to watch and maintain the company gym. SLEEPING prevents you from doing that!"
+    show e annoy
+    e "Do NOT talk back to the Doctor. She is your supervisor."
+    e "This is ridiculous, Rob."
+    hide e with easeoutright
+
+    show r close with easeinright
+    r "Yeah, yeah. Whatever."
+    show r angry
+    show e b annoy at bounce
+    e "Now. If you're awake, the Doctor and I need to get going."
+    hide e b
+    show r close
+    r "Sure."
+
+    if romance_points["Rob"] >= 10:
+        $ positive["Rob"] = 1
+        show r angry
+        r "Doc, listen..."
+        r "You've been takin' me seriously. Not a lot of other doctors do that."
+        r "Sorry I fell asleep today. Won't happen again."
+        
+        mc "No problem, Rob."
+    elif romance_points["Rob"] <= 0:
+        $ positive["Rob"] = -1
+        r "I don't know what your problem is, Doc, but..."
+        r "The way you talked to me this past week, I..."
+        r "I dunno."
+
+        show r close
+        r "See ya."
+    
+    jump day5end
+
+label impressrob5:
+    r "Ahh, yeah. I suppose I shouldn't have dozed off like that."
+    r "It just gets real boring, y'know? Hardly anyone comes in here."
+    r "And they've recently started shutting off my electricity on Fridays for meetings, so I don't got any TV at the moment."
+
+    mc "Yeah, I understand."
+    mc "But I have to report this if it happens again."
+
+    r "I get it, Doc. Thanks."
+
+    show e b annoy at bounce
+    e "Now. If you're awake, the Doctor and I need to get going."
+    hide e b
+    show r close
+    r "Sure."
+
+    if romance_points["Rob"] >= 10:
+        $ positive["Rob"] = 1
+        show r
+        r "Doc, listen..."
+        r "You've been takin' me seriously. Not a lot of other doctors do that."
+        r "And you've been nice. On top of that. So... thanks, yeah?"
+        
+        mc "No prob, Rob." # LMAO
+    elif romance_points["Rob"] <= 0:
+        $ positive["Rob"] = -1
+        show r angry
+        r "But... I really don't know how to feel about you yet."
+        r "Seems you're flip-floppin'. Gotta make up your mind."
+
+        show r close
+        r "See ya."
+    
+    jump day5end
+
+label neutralrob5:
+    hide r with easeoutright
+    show e annoy with easeinright
+    e "Well, we have to report this. You sleeping is you not doing your job..."
+    e "Regardless of the reasons behind it."
+    show e
+    e "And frankly, maybe you'll take it in stride. Do your work, Rob."
+    hide e with easeoutright
+    
+    show r with easeinright
+    r "Hmm. Yes'm."
+
+    show e b annoy at bounce
+    e "Now. If you're awake, the Doctor and I need to get going."
+    hide e b
+    show r close
+    r "Sure."
+
+    if romance_points["Rob"] >= 10:
+        $ positive["Rob"] = 1
+        show r
+        r "Doc, listen..."
+        r "You've been takin' me seriously. Not a lot of other doctors do that."
+        r "So... thanks, yeah?"
+        
+        mc "No problem, Rob." 
+    elif romance_points["Rob"] <= 0:
+        $ positive["Rob"] = -1
+        show r
+        r "Doc, listen."
+        r "It seems you don't really care for me, or the gym, or any of that shit."
+        r "That's alright, but... don't think I don't know that, yeah?"
+
+        mc "Yeah. Got it."
+    
+    jump day5end
+
+label day5end:
+    if positive["Rob"] == 1:
+        n "You end the day with your final checkmark of the week and head back towards your office."
+    elif positive["Rob"] == 0 or -1:
+        n "You end your day with a note by Rob's name - \"(sleeping)\". You head back towards your office."
+    
+    scene office with pixellate
+    show e with easeinright
+    e "Alright, Doctor, I believe that's all!"
+    e "You may have some end-of-week emails to go through, though. Other than that..."
+    e "I'll see you on Monday!"
+
+    mc "Thank you for all your help, Miss Esther."
+
+    show e laugh
+    e "You're welcome. It's my job, after all."
+
+    jump e5first

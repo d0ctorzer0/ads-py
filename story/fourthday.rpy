@@ -24,8 +24,11 @@ label day4:
     $ daynum = "4"
     $ dayday = "Thursday"
 
-    show screen daytransition
-    $ renpy.pause(2.0, hard=True)
+    if renpy.is_skipping() == False:
+        show screen daytransition
+        $ renpy.pause(2.0, hard=True)
+    if renpy.is_skipping() == True:
+        pass
 
     scene mctemproom with fade
 
