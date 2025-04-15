@@ -19,7 +19,7 @@ screen email8():
         text "from: Gregory"
     vbox:
         style_prefix "eml"
-        text "hey doc!!\n\nglad you opened this email up, didn't know if you would! haha.\n\nlisten, i've been thinking about two days ago, when we bumped into each\nother? you might've gotten some ideas about me that aren't\nparticularly true, so i just wanna clear things up. if you're interested, i'm \ngonna be at the lounge this saturday!\n\ni don't know if you'll be on-campus, but i figured it's worth a shot,\nright? so yeah, maybe we grab a coffee, i can clear up any question\nyou might have, yeah?? anyway. think about it!!\n\n- gregory"
+        text "hey doc!!\n\nglad you opened this email up, didn't know if you would! haha.\n\nlisten, i've been thinking about today, when we bumped into each\nother? you might've gotten some ideas about me that aren't\nparticularly true, so i just wanna clear things up. if you're interested, i'm \ngonna be at the lounge this saturday!\n\ni don't know if you'll be on-campus, but i figured it's worth a shot,\nright? so yeah, maybe we grab a coffee, i can clear up any question\nyou might have, yeah?? anyway. think about it!!\n\n- gregory"
     use affectionprogress
     vbox:
         style_prefix "emlback"
@@ -34,7 +34,7 @@ screen email9():
         text "from: Miss Esther"
     vbox:
         style_prefix "eml"
-        text "Hello Doctor,\n\nI figured you might be confused about \"Casual Friday\" here in maintenance,\nas I'm fairly sure manufacturing doesn't engage in the practice.\n\nEssentially, tomorrow, there is no need to wear your uniform. You can\nwear whatever \"surface clothes\" your heart desires, as long as they follow\nthese guidelines:\n\n> No cropped or low-cut tops. Stomach and chest covered.\n> No ripped or torn pants.\n> No lingerie showing underneath clothes.\n> No Black Mesa paraphenalia.\n\n"
+        text "Hello Doctor,\n\nI figured you might be confused about \"Casual Friday\" here in maintenance,\nas I'm fairly sure manufacturing doesn't engage in the practice.\n\nEssentially, tomorrow, there is no need to wear your uniform. You can\nwear whatever \"surface clothes\" your heart desires, as long as they follow\nthese guidelines:\n\n> No cropped or low-cut tops. Stomach and chest covered.\n> No ripped or torn pants.\n> No Black Mesa paraphenalia.\n> No logos/companies that promote drug/alcohol consumption.\n"
     use affectionprogress
     vbox:
         style_prefix "emlback"

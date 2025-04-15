@@ -22,3 +22,9 @@ define gu = Character(_("???"), color="#c9ae16")
 define g = Character(_("Gregory"), color="#c9ae16")
 
 define r = Character(_("Rob"), color="#8a0d0d")
+
+define wu = Character(_("???"), color="#009aab")
+define w = Character(_("Wheatley"), color="#009aab")
+
+define cw = Character(_("Coworker"), color="#323232")
+define bar = Character(_("Bartender"), color="#323232")

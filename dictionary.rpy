@@ -36,6 +36,9 @@ default ac1 = False
 default cc1 = False
 default rc1 = False
 
+default gc1 = False
+default uc1 = False
+
 #DAY 3 - "with [blank] day 3"
 default wkd3 = False
 default whd3 = False

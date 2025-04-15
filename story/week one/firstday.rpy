@@ -16,7 +16,7 @@ label start:
 
     n "You sigh. Another day, another dollar. But today's gonna be different."
     n "An issue in another department has forced you to take over another employee's position for a few days."
-
+    
     begmc "What a downgrade... from manufacturing to maintenance..."
 
     n "As you carry your box to your new temporary desk, you check out your surroundings."
@@ -433,15 +433,18 @@ label unknownday1:
     e "Section C8 is mostly a recreational area."
     e "Deep down in manufacturing and encoding, where you were, you might not have all the amenities afforded to more... surface-level scientists."
 
-    n "As she speaks, you look at your surroundings. Boring, dull offices are instead replaced with vibrant conference rooms."
+    n "As she speaks, you look at your surroundings. You pass by a section labeled \"RESIDENTIAL.\""
+
+    mc "We have a residential section? Like, housing?"
     
-    e "As I'm sure you're well aware, many of our staff resides on-campus in case of an emergency. On their days off, they'll often come here."
-    e "You'll be assigned a room tonight. Maintenance staff is always on-call."
+    e "As I'm sure you're well aware, many of our staff resides on-campus in case of an emergency."
+    e "We'll pass through that area on our route, so you'll see it in a bit."
+    e "You'll also be assigned a room tonight. Maintenance staff is always on-call."
 
     n "You groan."
 
     show e laugh
-    e "Oh, hush. It's not all bad. Your sustenance is provided for you. No hunting required."
+    e "Oh, hush. It's not all bad. Your sustenance is provided for you. We have a cafeteria, so there's no hunting required."
 
     mc "Sorry, hunting?"
 

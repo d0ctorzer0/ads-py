@@ -753,7 +753,7 @@ label rday3good:
         n "Rob moves on his management rail over to the elliptical machine."
 
         $ cutscenetextbox = True
-        scene aspen cutscene 1 with fade
+        scene rob cutscene 1 with fade
         $ rc1 = True
         r "Alright, hop on, let's get started."
 
