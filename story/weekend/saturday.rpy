@@ -1008,7 +1008,7 @@ label satunknownpos:
     u "Thanks for stoppin' in. Long time since I had company."
 
     if informed_about_canister == True:
-        n "You look around the room again. The figure in the corner catches your eye."
+        n "You look around the room again. The thing in the corner catches your eye."
         mc "Hey... what's that?"
         show u upset
         u "Oh, that thing? It was stuffed in here when I broke into the place. Weird canister on the back."
