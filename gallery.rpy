@@ -27,6 +27,10 @@ screen galleryk:
     elif persistent.kgunlock == True:
         add "gui/gallery/krisunlocked.png"
 
+    fixed:
+        if persistent.kc1 == True:
+            add "characters/kris/kris cutscene 1.png" at gallery_size xpos 300 ypos 216
+    
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action NullAction()
@@ -46,6 +50,11 @@ screen galleryh:
     elif persistent.hgunlock == True:
         add "gui/gallery/heathunlocked.png"
 
+    fixed:
+        if persistent.hc1 == True:
+            add "characters/heath/heath cutscene 1.png" at gallery_size xpos 300 ypos 216
+        if persistent.hc2 == True:
+            add "characters/heath/heath cutscene 2.png" at gallery_size xpos 760 ypos 216
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryh"), Show("galleryk")
@@ -64,6 +73,10 @@ screen gallerya:
         add "gui/gallery/aspenlocked.png"
     elif persistent.agunlock == True:
         add "gui/gallery/aspenunlocked.png"
+    
+    fixed:
+        if persistent.ac1 == True:
+            add "characters/aspen/aspen cutscene 1.png" at gallery_size xpos 300 ypos 216
 
     vbox:
         style_prefix "tabs"
@@ -84,6 +97,10 @@ screen galleryc:
     elif persistent.cgunlock == True:
         add "gui/gallery/ccunlocked.png"
 
+    fixed:
+        if persistent.cc1 == True:
+            add "characters/cc/cc cutscene 1.png" at gallery_size xpos 300 ypos 216
+    
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryc"), Show("galleryk")
@@ -102,6 +119,10 @@ screen galleryr:
         add "gui/gallery/roblocked.png"
     elif persistent.rgunlock == True:
         add "gui/gallery/robunlocked.png"
+    
+    fixed:
+        if persistent.rc1 == True:
+            add "characters/rob/rob cutscene 1.png" at gallery_size xpos 300 ypos 216
 
     vbox:
         style_prefix "tabs"

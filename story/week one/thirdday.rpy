@@ -195,7 +195,7 @@ label krisday3good:
     if romance_points["Kris"] >= 7:
         $ cutscenetextbox = True
         scene kris cutscene 1 with fade
-        $ kc1 = True
+        $ persistent.kc1 = True
         k "{color=#fff}I'm stubborn for that reason."
         k "{color=#fff}My job is... simple. Perhaps not every personality core can read a stock market graph, but... it's a useless job."
         k "{color=#fff}Thankless, too."
@@ -338,7 +338,7 @@ label heathday3good:
         n "Heath parts the curtains."
         $ cutscenetextbox = True
         scene heath cutscene 1 with fade
-        $ hc1 = True
+        $ persistent.hc1 = True
         n "{color=#fff}You're stunned by what you see - a hidden-away, wooden room, lined with fairy lights, shelves stocked with magic paraphenalia."
         h "{color=#fff}Tada!! This is my magic room. It's where I keep all the stuff I use to perform my tricks."
 
@@ -492,7 +492,7 @@ label aspenday3good:
 
         $ cutscenetextbox = True
         scene aspen cutscene 1 with fade
-        $ ac1 = True
+        $ persistent.ac1 = True
         a "{color=#fff}This is Penelope. She's an \"Adiantum\" - a maidenhair fern."
         a "{color=#fff}She's extremely tempermental. Doesn't listen to anyone but me."
         a "{color=#fff}I swear, if any other greenhouse employee tries to water her or test on her, she throws a fit."
@@ -619,7 +619,7 @@ label ccday3good:
     if romance_points["CC"] >= 7:
         $ cutscenetextbox = True
         scene cc cutscene 1 with fade
-        $ cc1 = True
+        $ persistent.cc1 = True
         c "{color=#fff}Well... it's a little embarrassing."
         c "{color=#fff}See, I have so many bio-simulators and pain receptors stuffed into my chassis, it's like I'm practically organic."
         c "{color=#fff}And I've heard the scientists talk about these {i}wondrous{/i} things called \"waterfalls\"..."
@@ -754,7 +754,7 @@ label rday3good:
 
         $ cutscenetextbox = True
         scene rob cutscene 1 with fade
-        $ rc1 = True
+        $ persistent.rc1 = True
         r "Alright, hop on, let's get started."
 
         n "You begin your workout, and Rob coaches you on your form."

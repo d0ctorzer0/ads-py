@@ -30,14 +30,16 @@ default haveaheart = False
 default goodday3 = False
 
 #CUSTCENE T/F - "[blank] cutscene [number]"
-default kc1 = False
-default hc1 = False
-default ac1 = False
-default cc1 = False
-default rc1 = False
+default persistent.kc1 = False
+default persistent.kc2 = False
+default persistent.hc1 = False
+default persistent.hc2 = False
+default persistent.ac1 = False
+default persistent.cc1 = False
+default persistent.rc1 = False
 
-default gc1 = False
-default uc1 = False
+default persistent.gc1 = False
+default persistent.uc1 = False
 
 #DAY 3 - "with [blank] day 3"
 default wkd3 = False

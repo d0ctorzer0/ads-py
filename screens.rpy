@@ -97,6 +97,10 @@ style frame:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
+style cutscene:
+    outlines [(1, "#000000", 0, 0)]
+    ypos 1200
+    xpos 500
 
 screen say(who, what):
     
@@ -104,9 +108,10 @@ screen say(who, what):
         id "window"
 
         if cutscenetextbox == True:
-            ypos 1200
-            xpos 850
+            style_prefix "cutscene"
             xanchor 0.0
+            ypos 1200
+            xpos 500
             background None
 
         if who is not None:

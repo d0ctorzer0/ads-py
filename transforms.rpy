@@ -15,6 +15,9 @@ transform daydiss:
     on hide:
         linear 0.5 alpha 0.0
 
+transform gallery_size:
+    zoom 0.21
+
 define gentleswitch = { "master" : Dissolve(0.2) }
 
 transform emaildiss:
