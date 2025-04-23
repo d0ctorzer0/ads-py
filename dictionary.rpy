@@ -32,11 +32,18 @@ default goodday3 = False
 #CUSTCENE T/F - "[blank] cutscene [number]"
 default persistent.kc1 = False
 default persistent.kc2 = False
+
 default persistent.hc1 = False
 default persistent.hc2 = False
+
 default persistent.ac1 = False
+default persistent.ac2 = False
+
 default persistent.cc1 = False
+default persistent.cc2 = False
+
 default persistent.rc1 = False
+default persistent.rc2 = False
 
 default persistent.gc1 = False
 default persistent.uc1 = False

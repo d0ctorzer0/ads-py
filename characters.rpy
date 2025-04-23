@@ -28,3 +28,4 @@ define w = Character(_("Wheatley"), color="#009aab")
 
 define cw = Character(_("Coworker"), color="#323232")
 define bar = Character(_("Bartender"), color="#323232")
+define ann = Character(_("Announcer"), color="#323232")
