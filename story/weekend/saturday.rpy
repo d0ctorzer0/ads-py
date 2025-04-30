@@ -680,8 +680,8 @@ label satgreg_pos:
     g "Oh - wait a minute -"
     if romance_points["Greg"] >= 8:
         $ cutscenetextbox = True
-        scene black with fade
-        $ gc1 = True
+        scene gregory cutscene 1 with fade
+        $ persistent.gc1 = True
         n "{color=#fff}Gregory looks down and begins speaking softly."
         g "{color=#fff}No, I need to you go closer!!"
         g "{color=#fff}Less left, more right! Come on!"
@@ -1045,8 +1045,8 @@ label satunknownpos:
 
     if romance_points["???"] >= 7:
         $ cutscenetextbox = True
-        scene black with fade
-        $ uc1 = True
+        scene unknown cutscene 1 with fade
+        $ persistent.uc1 = True
         u "Well... yeah. Back when I was... cleaner, and I... remembered my name..."
         u "I didn't use it at all..."
         u "I... miss those days sometimes."        

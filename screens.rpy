@@ -412,7 +412,8 @@ screen main_menu():
             imagebutton idle "gui/mmbtn.png" action Start() at tilted:
                 ypos 140
                 xpos 180
-            imagebutton idle "gui/mmbtn.png" action ShowMenu("load") at tilted:
+
+            imagebutton idle "gui/mmbtn.png" action Show("file_slots", transition=easeinbottom) at tilted:
                 ypos -80
                 xpos 130
 
@@ -703,109 +704,112 @@ style about_label_text:
 ## https://www.renpy.org/doc/html/screen_special.html#save https://
 ## www.renpy.org/doc/html/screen_special.html#load
 
-screen save():
+# screen save():
 
-    tag menu
+#     tag menu
 
-    use file_slots(_("Save"))
-
-
-screen load():
-
-    tag menu
-
-    use file_slots(_("Load"))
+#     use file_slots(_("Save"))
 
 
-screen file_slots(title):
+# screen load():
 
-    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
+#     tag menu
 
-    use game_menu(title):
+#     use file_slots(_("Load"))
 
-        fixed:
+# screen file_slots(title):
+#     use game_menu(title):
+#         text "hello"
 
-            ## This ensures the input will get the enter event before any of the
-            ## buttons do.
-            order_reverse True
+# screen file_slots(title):
 
-            ## The page name, which can be edited by clicking on a button.
-            button:
-                style "page_label"
+#     default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
 
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
+#     use game_menu(title):
 
-                input:
-                    style "page_label_text"
-                    value page_name_value
+#         fixed:
 
-            ## The grid of file slots.
-            grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
+#             ## This ensures the input will get the enter event before any of the
+#             ## buttons do.
+#             order_reverse True
 
-                xalign 0.5
-                yalign 0.5
+#             ## The page name, which can be edited by clicking on a button.
+#             button:
+#                 style "page_label"
 
-                spacing gui.slot_spacing
+#                 key_events True
+#                 xalign 0.5
+#                 action page_name_value.Toggle()
 
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
+#                 input:
+#                     style "page_label_text"
+#                     value page_name_value
 
-                    $ slot = i + 1
+#             ## The grid of file slots.
+#             grid gui.file_slot_cols gui.file_slot_rows:
+#                 style_prefix "slot"
 
-                    button:
-                        action FileAction(slot)
+#                 xalign 0.5
+#                 yalign 0.5
 
-                        has vbox
+#                 spacing gui.slot_spacing
 
-                        add FileScreenshot(slot) xalign 0.5
+#                 for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
-                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                            style "slot_time_text"
+#                     $ slot = i + 1
 
-                        text FileSaveName(slot):
-                            style "slot_name_text"
+#                     button:
+#                         action FileAction(slot)
 
-                        key "save_delete" action FileDelete(slot)
+#                         has vbox
 
-            ## Buttons to access other pages.
-            vbox:
-                style_prefix "page"
+#                         add FileScreenshot(slot) xalign 0.5
 
-                xalign 0.5
-                yalign 1.0
+#                         text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+#                             style "slot_time_text"
 
-                hbox:
-                    xalign 0.5
+#                         text FileSaveName(slot):
+#                             style "slot_name_text"
 
-                    spacing gui.page_spacing
+#                         key "save_delete" action FileDelete(slot)
 
-                    textbutton _("<") action FilePagePrevious()
-                    key "save_page_prev" action FilePagePrevious()
+#             ## Buttons to access other pages.
+#             vbox:
+#                 style_prefix "page"
 
-                    if config.has_autosave:
-                        textbutton _("{#auto_page}A") action FilePage("auto")
+#                 xalign 0.5
+#                 yalign 1.0
 
-                    if config.has_quicksave:
-                        textbutton _("{#quick_page}Q") action FilePage("quick")
+#                 hbox:
+#                     xalign 0.5
 
-                    ## range(1, 10) gives the numbers from 1 to 9.
-                    for page in range(1, 10):
-                        textbutton "[page]" action FilePage(page)
+#                     spacing gui.page_spacing
 
-                    textbutton _(">") action FilePageNext()
-                    key "save_page_next" action FilePageNext()
+#                     textbutton _("<") action FilePagePrevious()
+#                     key "save_page_prev" action FilePagePrevious()
 
-                if config.has_sync:
-                    if CurrentScreenName() == "save":
-                        textbutton _("Upload Sync"):
-                            action UploadSync()
-                            xalign 0.5
-                    else:
-                        textbutton _("Download Sync"):
-                            action DownloadSync()
-                            xalign 0.5
+#                     if config.has_autosave:
+#                         textbutton _("{#auto_page}A") action FilePage("auto")
+
+#                     if config.has_quicksave:
+#                         textbutton _("{#quick_page}Q") action FilePage("quick")
+
+#                     ## range(1, 10) gives the numbers from 1 to 9.
+#                     for page in range(1, 10):
+#                         textbutton "[page]" action FilePage(page)
+
+#                     textbutton _(">") action FilePageNext()
+#                     key "save_page_next" action FilePageNext()
+
+#                 if config.has_sync:
+#                     if CurrentScreenName() == "save":
+#                         textbutton _("Upload Sync"):
+#                             action UploadSync()
+#                             xalign 0.5
+#                     else:
+#                         textbutton _("Download Sync"):
+#                             action DownloadSync()
+#                             xalign 0.5
 
 
 style page_label is gui_label
@@ -1272,41 +1276,39 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    add "gui/overlay/popup.png" xalign .5 yalign .5 zoom 1.2
 
-    frame:
+    vbox:
+        xalign .5
+        ypos 370
+        spacing 45
 
-        vbox:
-            xalign .5
-            yalign .5
-            spacing 45
+        label _(message):
+            style "confirm_prompt"
+            xalign 0.5
 
-            label _(message):
-                style "confirm_prompt"
-                xalign 0.5
+    hbox:
+        xalign 0.5
+        spacing 150
 
-            hbox:
-                xalign 0.5
-                spacing 150
-
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+        textbutton _("Yes, I'm sure") action yes_action
+        textbutton _("No, go back") action no_action
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action
 
 
-style confirm_frame is gui_frame
+#style confirm_frame is gui_frame
 style confirm_prompt is gui_prompt
 style confirm_prompt_text is gui_prompt_text
 style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
-style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
-    padding gui.confirm_frame_borders.padding
-    xalign .5
-    yalign .5
+#style confirm_frame:
+#    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+#    padding gui.confirm_frame_borders.padding
+#    xalign .5
+#    yalign .5
 
 style confirm_prompt_text:
     textalign 0.5

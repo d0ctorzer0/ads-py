@@ -62,7 +62,7 @@ label day4:
     e "Anyways, we'd better be on our way to Kris. Saturday will come quicker than you expect! Let's go!"
     hide e with easeoutright
 
-    if cc1 == True and picture == True:
+    if persistent.cc1 == True and picture == True:
         n "You glance at the picture of Multnomah Falls on your desk and remember what CC said yesterday."
         menu:
             extend " You decide to..."
