@@ -120,6 +120,7 @@ screen email7rob():
     
 label e3first:
 
+    play music endofday
     scene blankemail
     with fade
     call screen emailday3 with dissolve

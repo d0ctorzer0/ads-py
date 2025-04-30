@@ -1,3 +1,5 @@
+define config.auto_voice = "voice/{id}.ogg"
+
 define begmc = Character(_("You"), color="#000000")
 
 define d = Character(_("Developer"), color="#000000")
@@ -29,3 +31,4 @@ define w = Character(_("Wheatley"), color="#009aab")
 define cw = Character(_("Coworker"), color="#323232")
 define bar = Character(_("Bartender"), color="#323232")
 define ann = Character(_("Announcer"), color="#323232")
+define stc = Character(_("Stasis Chamber"), color="#323232")

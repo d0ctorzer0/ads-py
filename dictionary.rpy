@@ -26,8 +26,9 @@ default unknownhumor = False
 default aspengoodbye = False
 default haveaheart = False
 
-#DAY 3 SETUPS
+#DAY SETUPS
 default goodday3 = False
+default day6stay = False
 
 #CUSTCENE T/F - "[blank] cutscene [number]"
 default persistent.kc1 = False

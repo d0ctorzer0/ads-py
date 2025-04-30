@@ -70,7 +70,7 @@ screen email14():
         textbutton "<<< back" action Jump("e5")
     
 label e5first:
-
+    play music endofday
     scene blankemail
     with fade
     call screen emailday5 with dissolve

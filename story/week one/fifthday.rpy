@@ -1,4 +1,5 @@
 label day5:
+    play music trak1
     scene mctemproom
     with fade
 
@@ -175,7 +176,7 @@ label neutralkris5:
     show k angry
     k "Again, I'm not sure. Perhaps that's the reasoning behind it."
     if wkd3 == True:
-        k "Frankly, as I've told you before, I believe this just another way to get us out of the picture..."
+        k "Frankly, as I've told you before, I believe this is just another way to get us out of the picture..."
     k "Regardless. I won't complain about having a day off."
     show k
     k "I just hope this doesn't become a theme."
@@ -225,7 +226,7 @@ label heathday5:
     h "Doctor! Apologies for yesterday. Are you ready for yet another trick?"
 
     n "You hear what sounds like mechanics whirring, a puff of air, and then -"
-    n "A cloth starts coming out of Heath's chassis. A load of differently-colored scarves -"
+    n "A cloth starts coming out of Heath's chassis. A load of differently-colored scarves."
 
     show h laugh
     h "Tada!"
@@ -321,7 +322,8 @@ label neutralheath5:
     h "Ah, yes. It should be fine - I've done this trick many times over."
 
     show h laugh
-    h "Concerned about me, are you? Why Doctor, if you're not careful..."
+    h "Concerned about me, are you?"
+    h "Why Doctor, if you're not careful..."
 
     show e b annoy at bounce
     e "Ugh. Heath..."
@@ -346,7 +348,7 @@ label heathday5cont:
     n "...Heath has disappeared."
 
     show e annoy with easeinright
-    e "I swear, that girl gets on my nerves sometimes..."
+    e "I swear, as much as I like her, that girl gets on my nerves sometimes..."
 
     mc "You check Heath off your checklist once more and head out of the break room."
 
@@ -738,6 +740,9 @@ label impresscc5:
     show c close
     c "Ahem. Apologies, Doctor, I believe I may have gotten... out of hand, there."
 
+    jump ccend5
+
+label ccend5:
     if romance_points["CC"] >= 10:
         $ positive["CC"] = 1
         show c look
@@ -767,6 +772,13 @@ label impresscc5:
     n "You finish your report and quietly leave the room."
 
     jump robday5
+
+label neutralcc5:
+    e "Most likely not."
+    hide e b 
+
+    jump ccend5
+
 
 label robday5:
     scene temphall with pixellate
@@ -840,7 +852,7 @@ label offendrob5:
     show e shock with easeinright
     e "I DO NOT CARE! Your JOB is to watch and maintain the company gym. SLEEPING prevents you from doing that!"
     show e annoy
-    e "Do NOT talk back to the Doctor. She is your supervisor."
+    e "Do NOT talk back to the Doctor. They are your supervisor."
     e "This is ridiculous, Rob."
     hide e with easeoutright
 

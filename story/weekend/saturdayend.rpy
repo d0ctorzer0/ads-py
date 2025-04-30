@@ -8,7 +8,7 @@ label satend:
             jump satend_heath
         "Visit CC to see what he's prepared." if inv_cc == True:
             jump satend_cc
-        "{i}Mycena chlorophos{/i} with Aspen." if inv_aspen == True:
+        "See the glowing algae with Aspen." if inv_aspen == True:
             jump satend_aspen
         "Watching the SuperBowl with Rob." if inv_rob == True:
             jump satend_rob
@@ -239,5 +239,274 @@ label satend_heath:
     hide h with easeoutright
     n "And she's gone."
     n "You get up, compose yourself, and head back to your room to end the night."
+
+    jump day7
+
+label satend_aspen:
+    scene aspentemproom with fade
+    n "You enter into the greenhouse, which much darker inside than usual."
+    n "It's almost dead-silent - no hissing of sprinklers or whirring of Aspen's management rail."
+    n "It's a little terrifying."
+
+    mc "Aspen?"
+
+    n "Silence. You wonder if he decided to just call it a night."
+
+    mc "Aspen, I'm -"
+    
+    n "You step forward and look to your left. The door that's usually closed on the far side of the room is now open, and a soft blue light is emanating from within."
+    n "You approach the door cautiously."
+
+    mc "Aspen?"
+
+    show a look with easeinright
+    n "You step into the room to see Aspen looking down at a water pool."
+    n "Manufactured waves ebb and flow across the surface, moving the algae."
+    show a
+    a "Doctor! Glad you could make it."
+    a "Isn't it beautiful? Haha."
+
+    mc "Wow."
+
+    n "The algae glow a vibrant blue-green light, unlike anything you've ever seen."
+    $ cutscenetextbox = True
+    scene aspen cutscene 2 with fade
+    $ persistent.ac2 = True
+    a "{color=#fff}I mean, I'm sure you've seen things glow before, but... this is different, yes?"
+    a "{color=#fff}{i}Pyrodinium bahamense{/i}. That's their binomial name."
+    a "{color=#fff}But a lot of us just refer to them by their superclass."
+    a "{color=#fff}I personally think using their full name can be important..."
+    a "{color=#fff}There's so many different species, after all."
+    a "{color=#fff}They're on loan to us from Marine Studies. We generally don't carry much sea life in Botany."
+    a "{color=#fff}It's a rare treat."
+    a "{color=#fff}I'm glad you're here."
+
+    mc "{color=#fff}Aspen, this... is beautiful."
+    scene aspentemproom with fade
+    show a look with easeinright
+    $ cutscenetextbox = False
+
+    a "I'm really happy you could make it. I was excited to show you this."
+    a "You've shown a lot of interest in plant life, something I'm really passionate about..."
+    show a
+    a "I just hope you know that I really appreciate you, Doctor."
+
+    mc "I appreciate you too, Aspen. It's been wonderful to learn what little you've shown me."
+    mc "I'd honestly be interested in hearing even more."
+    
+    show a look
+    a "It's such a shame that you're only here for one more week."
+    a "I have so much to tell you..."
+
+    show a
+    mc "I promise I'll come by and visit. Then you can tell me as much as you'd like."
+
+    a "No, that can't work. Once you're back in Manufacturing, you won't be permitted to come into the greenhouse."
+    show a look
+    a "And I'm not permitted to leave..."
+    show a laugh
+    a "Which just means I'll need to take every opportunity I can to teach you!"
+
+    show a
+    n "Under the light of the algae, Aspen begins rattling off about every botany fact he can think of."
+    show a laugh
+    n "It's a lot. How he knows so much, you'll never understand."
+    n "You suppose it's just the passion he has for the craft."
+    n "Before long, you've been here for over an hour, just listening to him."
+
+    show a look
+    a "Oh, uh, Doctor, I'm incredibly sorry, it seems I've kept you here way too late."
+
+    mc "Ah, yes. I didn't realize how tired I was until just now, haha."
+
+    a "I know you need your rest and everything, so..."
+    show a
+    a "Thank you. Again. For visiting me. It's always... so good to be with you."
+    a "I can't wait to see you again on Monday."
+
+    mc "Likewise."
+
+    n "You hesistate, but leave the greenhouse behind and head to bed."
+
+    jump day7
+
+label satend_rob:
+    scene bioroom with fade
+    n "You approach the door to the gym. It's mostly dark through the window, although you can see a faint light through the frosted glass."
+    n "On the door is a sign that says \"CLOSED FOR REPAIRS\"."
+    mc "Yeah, right."
+
+    n "You knock."
+
+    r "Uh, sorry, we're closed!! The sign?? Hello?"
+
+    mc "Rob, it's me."
+
+    r "Agh!! Doctor! One sec, one sec..."
+
+    n "There's a bit of light crashing before you hear the whirring of a door lock."
+    r "Should be open now, come on in!"
+
+    n "You open the door and step in."
+    n "Just like you thought, the faint light you saw from outside the window was, in fact, the TV."
+
+    show r with easeinright
+    r "Glad ya came, Doc. I was just about to start the game."
+    r "Take a seat! Take a seat."
+
+    n "You sit down and look up at the TV."
+    mc "I've been meaning to ask why your TVs are in such a weird aspect ratio."
+    mc "Isn't that the same size most of the new monitors are?"
+
+    show r angry
+    r "Ah, yeah. The boss wanted this newly-invented \"widescreen\" put into everything - our TVs, monitors..."
+    r "That man loved anything with \"science\" in it..."
+    r "Another reason barely anyone comes in here. Everyone's too obsessed with science thanks to that brute."
+
+    mc "Well, not everyone. I'm more interested in engineering than whatever they do up in testing."
+
+    show r
+    r "Prolly why you and I get along so well."
+    r "Anyway, the people up on the surface still haven't all switched over to widescreen, so..."
+    r "...all my programs are still in the usual 4 by 3. Sorry."
+
+    mc "Oh no, it's okay."
+
+    n "You hear a click sound, and the playback on the television starts."
+
+    ann "Do you want the heavy favorite, the San Francisco 49ers, going for their third Super Bowl win this decade..."
+    ann "...or the underdogs by 7 points, the Cincinnati Bengals, trying to celebrate their 200th year as an American city with their first Super Bowl win?"
+    n "The announcer welcomes you to the Superbowl XXIII."
+
+    show r angry
+    r "Y'know, Doc, I don't think anyone's ever sat down to watch a game with me."
+    r "So... in a way, this is kind of a date, huh?"
+
+    mc "Haha. Maybe."
+
+    show r
+    r "Well. Hope my temper doesn't scare ya too bad."
+    r "Oh - check it out, the game's startin'."
+
+    n "You don't understand a lot about what you're watching, but it doesn't bother you too much."
+
+    show r yell
+    r "GO! GO! COME ON, YOU GOT THIS!"
+    
+    n "Rob's energy is contagious. Before you know it, you've joined in."
+
+    mc "YOU'RE ALMOST THERE, COME ON!"
+    show r
+    r "HELL YEAH!"
+    mc "Touchdown!!"
+    $ cutscenetextbox = True
+    scene rob cutscene 2 with fade
+    $ persistent.rc2 = True
+    r "{color=#fff}Now you're getting into it, Doc."
+    r "{color=#fff}Never thought you'd be one to yell."
+    mc "{color=#fff}What can I say? You got me pumped up."
+    r "{color=#fff}Hahaha! I'm so glad. Thanks for joinin' me tonight."
+    r "{color=#fff}You really didn't have to, but..."
+    r "{color=#fff}S'been a long time since I last had some proper company."
+    r "{color=#fff}So I appreciate it."
+    scene robtemproom with fade
+    show r with easeinright
+    $ cutscenetextbox = False
+
+    n "The game's exciting. Rob explains the basics of football to you so you can keep up with what's going on."
+    n "Before you know it, the game's over."
+
+    show r yell
+    r "YEAH!! 49ERS TAKE IT!"
+    show r
+    r "That's my team right there. I've been so hyped for the Superbowl 'cuz they made it all the way this year."
+    r "Anyway. That's all, Doc. Game's over."
+
+    mc "Aw, that's too bad. I was having fun."
+
+    r "There's always more - you can stop in any time to join me."
+    show r angry
+    r "Please don't hesitate, Doc. I really enjoy your company."
+    mc "Yours too, Rob. Your energy's infectious."
+    show r
+    r "Haha! I'm glad."
+    r "Welp. I guess I'll catch you on Monday, then."
+    mc "Guess so."
+    n "You get up to leave the gym."
+    show r angry
+    r "Wait - Doc."
+    mc "What's up?"
+    r "Thanks for not judging me. A lot of the other cores... they think I'm too loud. Too crazy..."
+    r "Hell, my ex-wife left me cuz of that."
+    r "Sports are my passion, and she just... couldn't really accept that."
+    r "It feels good to have someone who does around now."
+    mc "Of course, Rob."
+    r "Goodnight, Doc."
+    mc "Goodnight."
+
+    n "You leave the gym and head back to your room."
+
+    jump day7
+
+label satend_cc:
+    scene bioroom with fade
+    n "You approach CC's door. It's quiet. You knock."
+    mc "CC, it's me."
+    c "Doctor. Come in, please."
+    n "You slowly open the door."
+    $ cutscenetextbox = True
+    scene cc cutscene 2 with fade
+    $ persistent.cc2 = True
+    n "{color=#fff}CC greets you with a raised optic. In between his chassis and his handlebars is a bouquet of white roses."
+    c "{color=#fff}I hope this isn't too... forward, Doctor."
+    c "{color=#fff}Aspen assisted me in acquiring the flowers, so... it wasn't entirely my work."
+    c "{color=#fff}They remind me of you, though. In a way."
+    c "{color=#fff}Please... accept them."
+    mc "{color=#fff}Oh, CC..."
+    scene cctemproom with fade
+    show c look with easeinright
+    $ cutscenetextbox = False
+    n "You take the bouquet from between his handlebars."
+    mc "Thank you, CC. These are beautiful."
+    mc "I can't believe you went out of your way just for me."
+    show c
+    c "Aha... it wasn't all that easy, especially because Aspen and I can't leave our rooms, but..."
+    c "We made it work."
+    show c close
+    c "Thank you for coming back to see me, Doctor. I was afraid you wouldn't."
+    show c look
+    c "Miss Esther is kind, but... I've never had any of the human scientists show me as much grace as you have."
+    c "It is truly unfortunate that you will only be here one more week."
+    mc "I agree. I've really enjoyed my time in maintenance."
+    show c
+    c "Doctor, please... will you stay a little longer?"
+    show c look
+    c "I could use your company."
+    mc "Of course, CC."
+    show c
+    c "Thank you."
+
+    show c close
+    n "You spend the evening with CC, mostly in quiet contemplation."
+    n "Occasionally, he'll have a thought or idea he brings up to you, but otherwise you sit in silence."
+    
+    c "I sometimes feel like my room is in a world separate from the rest of Aperture."
+    c "Because I'm so isolated, I rarely see anyone other than Miss Esther and the maintenance attendant."
+    c "It feels like I live in my own little bubble."
+
+    mc "I understand that."
+
+    show c look
+    c "It's always a little more lively when you visit, though."
+
+    show c close
+    n "Before you know it, it's very late, and you're beginning to get tired."
+
+    show c
+    c "Please, Doctor. If you're tired, you should go to bed."
+    mc "Ah. Yes. I should."
+    c "Thank you again for coming by tonight."
+    show c look
+    c "I will see you on Monday."
 
     jump day7

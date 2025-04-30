@@ -30,6 +30,8 @@ screen galleryk:
     fixed:
         if persistent.kc1 == True:
             add "characters/kris/kris cutscene 1.png" at gallery_size xpos 300 ypos 216
+        if persistent.kc2 == True:
+            add "characters/kris/kris cutscene 2.png" at gallery_size xpos 760 ypos 216
     
     vbox:
         style_prefix "tabs"

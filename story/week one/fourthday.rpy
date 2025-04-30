@@ -1,4 +1,5 @@
 label day4:
+    play music trak1
     scene mctemproom
     with fade
 
@@ -246,30 +247,6 @@ label neutralheath4:
 
     jump heathday4cont
 
-label offendheath4:
-    h "Oh yes, I understand. You have places to be."
-    show h laugh
-    h "No show today, then, Doctor!"
-    if whd3:
-        show h sad
-        h "You seemed so interested yesterday..."
-
-    hide h with easeoutright
-    show e with easeinright
-    
-    e "We should get going, doctor. Just mark the second box on your checklist instead of the first."
-    n "You check off the box that says \"PREVENTED FROM INVESTIGATION\"."
-
-    if romance_points["Heath"] <= 6:
-        mc "This isn't going to make her look bad, is it?"
-        e "It shouldn't, but I'll leave a note just in case."
-    else:
-        pass
-
-    e "Come along now."
-
-    jump estherday4
-
 label heathday4cont:
     hide e with easeoutright
     show h sad with easeinright
@@ -302,6 +279,30 @@ label heathday4cont:
     e "Come along now."
     
     jump estherday4
+
+label offendheath4:
+    h "Oh yes, I understand. You have places to be."
+    if whd3:
+        show h sad
+        h "You seemed so interested yesterday..."
+
+    hide h with easeoutright
+    show e with easeinright
+    
+    e "We should get going, doctor. Just mark the second box on your checklist instead of the first."
+    n "You check off the box that says \"PREVENTED FROM INVESTIGATION\"."
+
+    if romance_points["Heath"] <= 6:
+        mc "This isn't going to make her look bad, is it?"
+        e "It shouldn't, but I'll leave a note just in case."
+    else:
+        pass
+
+    e "Come along now."
+
+    jump estherday4
+
+
 
 label estherday4:
     scene temphall with pixellate
@@ -657,7 +658,7 @@ label robday4cont:
     r "WHAT THE HELL IS YOUR PROBLEM? MOVE, DAVID, MOVE!"
 
     show r
-    r "Sorry. He's a shitty reciever. Would be much better if they put him in literally any other position..."
+    r "Sorry. He's a shitty receiver. Would be much better if they put him in literally any other position..."
 
     if ball == False:
         mc "I have no idea what that means."

@@ -1,4 +1,6 @@
 label day3:
+
+    play music trak1
     scene mctemproom
     with fade
 
@@ -169,7 +171,7 @@ label krisday3good:
     k "Oh, that's right. Esther did say you were a... newer employee."
     k "You must have not been here when Mr. Johnson was still at the head of the company."
 
-    mc "No, I wasn't. I was part of the first new hire wave about 9 months ago."
+    mc "No, I wasn't. I was part of the first new hire wave about 9 months ago. But I've heard... stories about him."
 
     k "Mr. Johnson was an... interesting man. You might hear some... {i}lesser{/i} cores refer to him by his first name, \"Cave\"."
     show k angry
@@ -297,7 +299,7 @@ label heathday3:
     mc "Yes, that's right."
 
     show h laugh
-    h "Well, you're in for a treat. My whole job is entertainment, so I'll be sure to keep you on your toes!"
+    h "Well, you're in for a treat. My whole job is entertainment, so I'll be sure to keep you awake and aware!"
     show h
     h "Don't be surprised if I sweep you off your feet!"
 
@@ -359,7 +361,6 @@ label heathday3good:
         jump heathday3goodpt2
     else:
         h "Oh, just some miscellaneous props and such. Nothing too special."
-        h "Aha! I found it!"
         show h with easeinright
         n "Heath comes back out of the curtains. You try to get a peek at what's behind them, but it's no use."
         

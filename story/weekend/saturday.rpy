@@ -56,11 +56,13 @@ label stay:
 
 label wander:
     if cores_visited < 4:
+        play music map
         scene black with dissolve
         $ renpy.pause(1.0, hard=True)
         scene mapbg with dissolve
         call screen aptmap with easeinbottom
     if cores_visited == 4:
+        play music trak1
         jump satend
 
 # 💻
@@ -355,9 +357,8 @@ label satheathpos:
     n "She's \"breathing\" very heavily."
 
     show h sad
-    h "I was... in a rush... to get back."
-    h "I was down at the lounge... signing up for tonight."
-    h "But I don't... wanna miss... giving a performance in here."
+    h "I was... in a rush... to get back, I was down at the lounge... signing up for tonight, but I..."
+    h "...don't... wanna miss... giving a performance in here."
 
     mc "Tonight? What's tonight?"
 
@@ -417,6 +418,8 @@ label satheathpos_pos:
 label satheathpos_neg:
     show h sad
     h "Oh, yeah, no worries. I'm sure you'll make it if you can!"
+
+    #voice same as last line
     h "Now, I hate to say goodbye, but I've got to practice my tricks, and you'll be spoiled if you watch!"
 
     show h
@@ -640,9 +643,6 @@ label satgreg:
         "I never thought you were weird, Gregory.":
             $ romance_points["Greg"] += 3
             jump satgreg_pos
-        "I mean... it's hard to believe you're not pretending.":
-            $ romance_points["Greg"] -= 3
-            jump satgreg_neg
         "On the contrary. I think you're interesting.":
             $ romance_points["Greg"] += 3
             jump satgreg_pos
@@ -765,9 +765,9 @@ label sataspenpos:
     show a look
     a "Say, uh, Doctor..."
     a "You normally aren't here when this happens, but..."
-    a "We have a sample of {i}Mycena chlorophos{/i} in the lab for the next few days."
+    a "We have a sample of dinoflagellates in the lab for the next few days."
     show a
-    a "It's a bioluminescent fungi. They emit this beautiful green glow in the dark."
+    a "It's a bioluminescent algae. They emit this beautiful blue-green glow in the dark."
     $ inv_aspen = True
     show a look
     a "If you'd like, and you're not busy, would you like to stop by during the artificial night cycle tonight?"
@@ -802,10 +802,8 @@ label sataspenpos_pos:
 label sataspenpos_neg:
     show a laugh
     a "Oh, no worries at all. I get it."
-    show a
-    a "There's always another time."
     show a look
-    a "{i}Mycena cholorophos{/i} don't shine for long, though..."
+    a "There's always another time."
 
     show a
     a "You should leave now - staying too long could get you in trouble."

@@ -110,8 +110,7 @@ screen say(who, what):
         if cutscenetextbox == True:
             style_prefix "cutscene"
             xanchor 0.0
-            ypos 1200
-            xpos 500
+            ypos 1150
             background None
 
         if who is not None:
@@ -1829,12 +1828,7 @@ style bar:
 style vbar:
     variant "small"
     xsize gui.bar_size
-    top_bar Frame("gui/phone/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
-    bottom_bar Frame("gui/phone/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
-
-style scrollbar:
-    variant "small"
-    ysize gui.scrollbar_size
+    top_bar Frame
     base_bar Frame("gui/phone/scrollbar/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
     thumb Frame("gui/phone/scrollbar/horizontal_[prefix_]thumb.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
 

@@ -15,8 +15,8 @@ checklist:
 ☑ night 4
 ☑ day 5
 ☑ night 5
-☐ day 6
-☐ night 6
+☑ day 6
+☑ night 6
 ☐ day 7
 ☐ night 7
 ☐ day 8
@@ -37,5 +37,7 @@ checklist:
 
 
 current roadmap:
-- DAY 6 (SATURDAY!!!)
-- section c8 map
+- add colorblind mode (text to color-coded sections)
+- add pause menu
+- finish day 7
+

@@ -3,7 +3,7 @@ define config.layers = ['master', 'transient', 'screens', 'overlay', 'ontop']
 # GAME
 label start:
 
-    play music cma fadein 0.5 fadeout 0.5
+    play music trak1
 
     if renpy.is_skipping() == False:
         show screen daytransition
@@ -136,8 +136,6 @@ label introcont:
     jump krisday1
 
 label krisday1:
-
-    play music sa fadein 0.5
     scene kristemproom
     with pixellate
 
@@ -267,8 +265,6 @@ label krisday1cont:
     jump heathday1
 
 label heathday1:
-
-    play music dsg fadein 0.5
     scene heathtemproom
     with fade
 
@@ -306,7 +302,7 @@ label heathday1:
     show e annoy
     e "Yes."
 
-    h "Oh. Um. Human? Pretend you didn't hear anything."
+    h "Oh. Pretend you didn't hear anything, hm?"
 
     n "Esther shakes her chassis in a sort of disappointed way."
 
@@ -343,7 +339,7 @@ label heathday1:
             $ romance_points["Heath"] += 3
             jump impressheath
         
-        "Haha, very funny. What's your job, exactly?":
+        "Haha, very funny. What's your job, anyway?":
 
             $ romance_points["Heath"] -= 3
             jump offendheath
@@ -351,7 +347,8 @@ label heathday1:
         "Wow! Impressive.":
         
             show h
-            h "Haha, yes, thank you, thank you."
+            voice "voice/h/h_01_09.ogg"
+            h "Yes, thank you, thank you."
             $ romance_points["Heath"] += 2
             jump heathday1cont
 

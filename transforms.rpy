@@ -19,8 +19,11 @@ transform gallery_size:
     zoom 0.21
 
 define gentleswitch = { "master" : Dissolve(0.2) }
-
+define vigswitch = Dissolve(0.1)
 transform emaildiss:
     on show:
         alpha 0.0
         linear 1.0 alpha 1.0
+
+screen vignette:
+    add "vignette.png"

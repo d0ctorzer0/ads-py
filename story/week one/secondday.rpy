@@ -1,5 +1,6 @@
 label day2:
 
+    play music trak1
     scene mctemproom
     with fade
 
@@ -101,7 +102,7 @@ label letin:
 
     u "Yea, yea, I know. You scientists are always busy."
 
-    n "The core glanced around himself nervously."
+    n "The core glances around himself nervously."
 
     show u upset
     u "Listen, I should scram 'fore that little pink core of yours shows up again."
@@ -289,9 +290,10 @@ label heathday2:
     n "You enter the stage room to find Heath already waiting for you."
 
     show h with easeinright
-    h "Welcome, welcome! Apologies for the delay yesterday, it won't happen again! I'm ready this time!"
+    voice "voice/h/h_02_01.ogg"
+    h "Apologies for the delay yesterday, it won't happen again! I'm ready this time!"
 
-    n "You wait with baited breath."
+    n "You wait with bated breath."
 
     show h sad
     h "Now... choose a card... any card..."
@@ -313,7 +315,7 @@ label heathmenuday2:
             $ romance_points["Heath"] += 3
             jump impressheath2
         
-        "Ace of Spades." if spades == True:
+        "Ace of spades." if spades == True:
             $ romance_points["Heath"] += 1
             jump neutralheath
 
@@ -326,7 +328,7 @@ label offendheath2:
 
     h "That's alright."
 
-    mc "You're doing everything to need to, yes? Keeping morale high and all that?"
+    mc "You're doing everything you need to, yes? Keeping morale high and all that?"
 
     h "I think so."
 
@@ -337,7 +339,7 @@ label offendheath2:
 label impressheath2:
 
     show h laugh
-    h "HAHA! Is {b}THIS{/b} your card?"
+    h "Is {b}THIS{/b} your card?"
 
     n "She pulls out exactly what you thought of - the three of clubs."
 
@@ -360,7 +362,7 @@ label impressheath2:
     mc "Everything's alright here? Everything working fine?"
 
     show h
-    h "Yes! Job's proceeding as normal. No complaints!"
+    h "Job's proceeding as normal. No complaints!"
 
     show h laugh
     h "From me, or your coworkers! Haha!"
@@ -677,7 +679,7 @@ label impressrob2:
     show r
     r "Ahh, thank you. Sometimes it feels like half the machines in here are broke due to, uh, lack of use."
 
-    n "Rob suddenly looked at the screen above him."
+    n "Rob suddenly looks at the screen above him."
 
     show r yell
     r "AH, DAMN YOU! LOST THE BALL AGAIN?"
@@ -688,6 +690,8 @@ label impressrob2:
     show r
     r "Uh, ahem, yeah. They keep me occupied."
     r "Kinda need it with how lonely it gets in here."
+    r "Even when I {i}do{/i} get visitors, they hardly ever talk to me..."
+    r "Assholes."
 
     show e b annoy at bounce
     e "Doctor, we really ought to be going."
