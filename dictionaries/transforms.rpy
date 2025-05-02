@@ -20,6 +20,8 @@ transform gallery_size:
 
 define gentleswitch = { "master" : Dissolve(0.2) }
 define vigswitch = Dissolve(0.1)
+define gallswitch = Dissolve(0.3)
+
 transform emaildiss:
     on show:
         alpha 0.0

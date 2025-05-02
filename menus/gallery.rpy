@@ -7,6 +7,8 @@
 # ???
 # Day 6, Day 11, Ending 1/2 (Day 15)
 
+default selected_char = "kris"
+
 style file_button_text:
     font "terminal-grotesque.ttf"
     color "#f0f0f0"
@@ -29,19 +31,19 @@ screen galleryk:
 
     fixed:
         if persistent.kc1 == True:
-            add "characters/kris/kris cutscene 1.png" at gallery_size xpos 300 ypos 216
+            imagebutton idle "characters/kris/kris cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.kc2 == True:
-            add "characters/kris/kris cutscene 2.png" at gallery_size xpos 760 ypos 216
+            imagebutton idle "characters/kris/kris cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
     
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action NullAction()
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryk"), Show("galleryh")
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryk"), Show("gallerya")
-        textbutton "CC" xpos 924 ypos -14 action Hide("galleryk"), Show("galleryc")
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryk"), Show("galleryr")
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryk"), Show("galleryg")
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryk"), Show("galleryu")
+        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryk"), Show("galleryh"), SetVariable("selected_char", "heath")
+        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryk"), Show("gallerya"), SetVariable("selected_char", "aspen")
+        textbutton "CC" xpos 924 ypos -14 action Hide("galleryk"), Show("galleryc"), SetVariable("selected_char", "cc")
+        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryk"), Show("galleryr"), SetVariable("selected_char", "rob")
+        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryk"), Show("galleryg"), SetVariable("selected_char", "gregory")
+        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryk"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryh:
     style_prefix "file"
@@ -54,18 +56,18 @@ screen galleryh:
 
     fixed:
         if persistent.hc1 == True:
-            add "characters/heath/heath cutscene 1.png" at gallery_size xpos 300 ypos 216
+            imagebutton idle "characters/heath/heath cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.hc2 == True:
-            add "characters/heath/heath cutscene 2.png" at gallery_size xpos 760 ypos 216
+            imagebutton idle "characters/heath/heath cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryh"), Show("galleryk")
+        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryh"), Show("galleryk"), SetVariable("selected_char", "kris")
         textbutton "HEATH" xpos 535 ypos 84 action NullAction()
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryh"), Show("gallerya")
-        textbutton "CC" xpos 924 ypos -14 action Hide("galleryh"), Show("galleryc")
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryh"), Show("galleryr")
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryh"), Show("galleryg")
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryh"), Show("galleryu")
+        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryh"), Show("gallerya"), SetVariable("selected_char", "aspen")
+        textbutton "CC" xpos 924 ypos -14 action Hide("galleryh"), Show("galleryc"), SetVariable("selected_char", "cc")
+        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryh"), Show("galleryr"), SetVariable("selected_char", "rob")
+        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryh"), Show("galleryg"), SetVariable("selected_char", "gregory")
+        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryh"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen gallerya:
     style_prefix "file"
@@ -78,19 +80,19 @@ screen gallerya:
     
     fixed:
         if persistent.ac1 == True:
-            add "characters/aspen/aspen cutscene 1.png" at gallery_size xpos 300 ypos 216
+            imagebutton idle "characters/aspen/aspen cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.hc2 == True:
-            add "characters/aspen/aspen cutscene 2.png" at gallery_size xpos 760 ypos 216
+            imagebutton idle "characters/aspen/aspen cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
 
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("gallerya"), Show("galleryk")
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("gallerya"), Show("galleryh")
+        textbutton "KRIS" xpos 364 ypos 130 action Hide("gallerya"), Show("galleryk"), SetVariable("selected_char", "kris")
+        textbutton "HEATH" xpos 535 ypos 84 action Hide("gallerya"), Show("galleryh"), SetVariable("selected_char", "heath")
         textbutton "ASPEN" xpos 717 ypos 34 action NullAction()
-        textbutton "CC" xpos 924 ypos -14 action Hide("gallerya"), Show("galleryc")
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("gallerya"), Show("galleryr")
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("gallerya"), Show("galleryg")
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("gallerya"), Show("galleryu")
+        textbutton "CC" xpos 924 ypos -14 action Hide("gallerya"), Show("galleryc"), SetVariable("selected_char", "cc")
+        textbutton "ROB" xpos 1100 ypos -63 action Hide("gallerya"), Show("galleryr"), SetVariable("selected_char", "rob")
+        textbutton "GREG" xpos 1265 ypos -112 action Hide("gallerya"), Show("galleryg"), SetVariable("selected_char", "gregory")
+        textbutton "xxx" xpos 1460 ypos -160 action Hide("gallerya"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryc:
     style_prefix "file"
@@ -103,17 +105,17 @@ screen galleryc:
 
     fixed:
         if persistent.cc1 == True:
-            add "characters/cc/cc cutscene 1.png" at gallery_size xpos 300 ypos 216
+            imagebutton idle "characters/cc/cc cutscene 1.png" at gallery_size xpos 300 ypos 216
     
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryc"), Show("galleryk")
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryc"), Show("galleryh")
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryc"), Show("gallerya")
+        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryc"), Show("galleryk"), SetVariable("selected_char", "kris")
+        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryc"), Show("galleryh"), SetVariable("selected_char", "heath")
+        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryc"), Show("gallerya"), SetVariable("selected_char", "aspen")
         textbutton "CC" xpos 924 ypos -14 action NullAction()
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryc"), Show("galleryr")
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryc"), Show("galleryg")
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryc"), Show("galleryu")
+        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryc"), Show("galleryr"), SetVariable("selected_char", "rob")
+        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryc"), Show("galleryg"), SetVariable("selected_char", "gregory")
+        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryc"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryr:
     style_prefix "file"
@@ -126,19 +128,19 @@ screen galleryr:
     
     fixed:
         if persistent.rc1 == True:
-            add "characters/rob/rob cutscene 1.png" at gallery_size xpos 300 ypos 216
+            imagebutton idle "characters/rob/rob cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.hc2 == True:
-            add "characters/rob/rob cutscene 2.png" at gallery_size xpos 760 ypos 216
+            imagebutton idle "characters/rob/rob cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
 
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryr"), Show("galleryk")
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryr"), Show("galleryh")
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryr"), Show("gallerya")
-        textbutton "CC" xpos 924 ypos -14 action Hide("galleryr"), Show("galleryc")
+        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryr"), Show("galleryk"), SetVariable("selected_char", "kris")
+        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryr"), Show("galleryh"), SetVariable("selected_char", "heath")
+        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryr"), Show("gallerya"), SetVariable("selected_char", "aspen")
+        textbutton "CC" xpos 924 ypos -14 action Hide("galleryr"), Show("galleryc"), SetVariable("selected_char", "cc")
         textbutton "ROB" xpos 1100 ypos -63 action NullAction()
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryr"), Show("galleryg")
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryr"), Show("galleryu")
+        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryr"), Show("galleryg"), SetVariable("selected_char", "gregory")
+        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryr"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryg:
     style_prefix "file"
@@ -150,18 +152,18 @@ screen galleryg:
         add "gui/gallery/gregoryunlocked.png"
 
     fixed:
-        if persistent.rc1 == True:
-            add "characters/gregory/gregory cutscene 1.png" at gallery_size xpos 300 ypos 216
+        if persistent.gc1 == True:
+            imagebutton idle "characters/gregory/gregory cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
 
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryg"), Show("galleryk")
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryg"), Show("galleryh")
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryg"), Show("gallerya")
-        textbutton "CC" xpos 924 ypos -14 action Hide("galleryg"), Show("galleryc")
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryg"), Show("galleryr")
+        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryg"), Show("galleryk"), SetVariable("selected_char", "kris")
+        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryg"), Show("galleryh"), SetVariable("selected_char", "heath")
+        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryg"), Show("gallerya"), SetVariable("selected_char", "aspen")
+        textbutton "CC" xpos 924 ypos -14 action Hide("galleryg"), Show("galleryc"), SetVariable("selected_char", "cc")
+        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryg"), Show("galleryr"), SetVariable("selected_char", "rob")
         textbutton "GREG" xpos 1265 ypos -112 action NullAction()
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryg"), Show("galleryu")
+        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryg"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryu:
     style_prefix "file"
@@ -173,15 +175,25 @@ screen galleryu:
         add "gui/gallery/unknownunlocked.png"
 
     fixed:
-        if persistent.rc1 == True:
-            add "characters/unknown/unknown cutscene 1.png" at gallery_size xpos 300 ypos 216
+        if persistent.uc1 == True:
+            imagebutton idle "characters/unknown/unknown cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
 
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryu"), Show("galleryk")
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryu"), Show("galleryh")
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryu"), Show("gallerya")
-        textbutton "CC" xpos 924 ypos -14 action Hide("galleryu"), Show("galleryc")
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryu"), Show("galleryr")
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryu"), Show("galleryg")
+        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryu"), Show("galleryk"), SetVariable("selected_char", "kris")
+        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryu"), Show("galleryh"), SetVariable("selected_char", "heath")
+        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryu"), Show("gallerya"), SetVariable("selected_char", "aspen")
+        textbutton "CC" xpos 924 ypos -14 action Hide("galleryu"), Show("galleryc"), SetVariable("selected_char", "cc")
+        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryu"), Show("galleryr"), SetVariable("selected_char", "rob")
+        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryu"), Show("galleryg"), SetVariable("selected_char", "gregory")
         textbutton "xxx" xpos 1460 ypos -160 action NullAction()
+
+
+
+screen fullcutscene1:
+    add "characters/[selected_char]/[selected_char] cutscene 1.png"
+    imagebutton idle "gui/back.png" action Hide("fullcutscene1", transition=gallswitch)
+
+screen fullcutscene2:
+    add "characters/[selected_char]/[selected_char] cutscene 2.png"
+    imagebutton idle "gui/back.png" action Hide("fullcutscene2", transition=gallswitch)

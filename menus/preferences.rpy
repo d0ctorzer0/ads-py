@@ -18,9 +18,7 @@ default persistent.bluroption = "2"
 init python:
     def reset_data():
         ## deletes all persistent data use with caution
-        for attr in dir(persistent):
-            if not callable(attr) and not attr.startswith("_"):
-                setattr(persistent, attr, None)
+        [setattr(persistent, attr, None) for attr in dir(persistent) if not attr.startswith("_")]
 
         ## deletes all save games use with caution!
         for slot in renpy.list_saved_games(fast=True):
