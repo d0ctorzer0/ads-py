@@ -7,6 +7,9 @@ init python:
             renpy.unlink_save(slot)
         renpy.quit(relaunch=True)
 
+define config.mouse = { }
+define config.mouse['default'] = [ ( "gui/cursor.png", 0, 0) ]
+
 define cutscenetextbox = False
 
 #SPECIAL DEFAULTS

@@ -680,6 +680,7 @@ label satgreg_pos:
     g "Oh - wait a minute -"
     if romance_points["Greg"] >= 8:
         $ cutscenetextbox = True
+        show screen cuttextbox
         scene gregory cutscene 1 with fade
         $ persistent.gc1 = True
         n "{color=#fff}Gregory looks down and begins speaking softly."
@@ -689,6 +690,7 @@ label satgreg_pos:
         g "{color=#fff}I'm so sorry Doctor, can you give me just a minute?"
         g "{color=#fff}What are you doing down there?! Activate the panel!"
         scene templounge with fade
+        hide screen cuttextbox
         $ cutscenetextbox = False
     elif romance_points["Greg"] <= 7:
         pass
@@ -1045,6 +1047,7 @@ label satunknownpos:
 
     if romance_points["???"] >= 7:
         $ cutscenetextbox = True
+        show screen cuttextbox
         scene unknown cutscene 1 with fade
         $ persistent.uc1 = True
         u "Well... yeah. Back when I was... cleaner, and I... remembered my name..."
@@ -1055,6 +1058,7 @@ label satunknownpos:
         u "But it's hard."
         scene unknowntemproom with fade
         show u with easeinright
+        hide screen cuttextbox
         $ cutscenetextbox = False
     elif romance_points["???"] <= 7:
         show u upset

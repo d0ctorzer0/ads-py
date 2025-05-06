@@ -73,6 +73,7 @@ label satend_kris:
 
     $ cutscenetextbox = True
     scene kris cutscene 2 with fade
+    show screen cuttextbox
     $ persistent.kc2 = True
     k "{color=#fff}Mmm. Quite simple, Doctor."
     k "{color=#fff}You're incredibly intriguing. I don't get to know much about you in our day-to-day."
@@ -81,6 +82,7 @@ label satend_kris:
     k "{color=#fff}I'm simply taking the opportunity I've been given."
     k "{color=#fff}You wouldn't fault me for that, would you?"
     scene templounge with fade
+    hide screen cuttextbox
     show k with easeinright
     $ cutscenetextbox = False
 
@@ -180,6 +182,7 @@ label satend_heath:
     $ cutscenetextbox = True
     scene heath cutscene 2 with fade
     $ persistent.hc2 = True
+    show screen cuttextbox
     "{color=#fff}She approaches the microphone, and a spotlight comes up on her."
     h "{color=#fff}Hello, Aperture! I'm glad to be on this stage once more!"
     h "{color=#fff}Say - I was just in the cafeteria the other day, and - just so you know - I'm allergic to peanuts."
@@ -202,6 +205,7 @@ label satend_heath:
     "{color=#fff}She continues for a bit, and her jokes get more laughter each time."
     "{color=#fff}Eventually, she takes her bow."
     scene templounge with fade
+    hide screen cuttextbox
     show h with easeinright
     $ cutscenetextbox = False
     h "Thank you, thank you! I'll be here next week with some more!"
@@ -271,6 +275,7 @@ label satend_aspen:
     n "The algae glow a vibrant blue-green light, unlike anything you've ever seen."
     $ cutscenetextbox = True
     scene aspen cutscene 2 with fade
+    show screen cuttextbox
     $ persistent.ac2 = True
     a "{color=#fff}I mean, I'm sure you've seen things glow before, but... this is different, yes?"
     a "{color=#fff}{i}Pyrodinium bahamense{/i}. That's their binomial name."
@@ -281,9 +286,10 @@ label satend_aspen:
     a "{color=#fff}It's a rare treat."
     a "{color=#fff}I'm glad you're here."
 
-    mc "{color=#fff}Aspen, this... is beautiful."
+    mccut "{color=#fff}Aspen, this... is beautiful."
     scene aspentemproom with fade
     show a look with easeinright
+    hide screen cuttextbox
     $ cutscenetextbox = False
 
     a "I'm really happy you could make it. I was excited to show you this."
@@ -402,13 +408,15 @@ label satend_rob:
     $ cutscenetextbox = True
     scene rob cutscene 2 with fade
     $ persistent.rc2 = True
+    show screen cuttextbox
     r "{color=#fff}Now you're getting into it, Doc."
     r "{color=#fff}Never thought you'd be one to yell."
-    mc "{color=#fff}What can I say? You got me pumped up."
+    mccut "{color=#fff}What can I say? You got me pumped up."
     r "{color=#fff}Hahaha! I'm so glad. Thanks for joinin' me tonight."
     r "{color=#fff}You really didn't have to, but..."
     r "{color=#fff}S'been a long time since I last had some proper company."
     r "{color=#fff}So I appreciate it."
+    hide screen cuttextbox
     scene robtemproom with fade
     show r with easeinright
     $ cutscenetextbox = False
@@ -455,15 +463,17 @@ label satend_cc:
     c "Doctor. Come in, please."
     n "You slowly open the door."
     $ cutscenetextbox = True
+    show screen cuttextbox
     scene cc cutscene 2 with fade
     $ persistent.cc2 = True
-    n "{color=#fff}CC greets you with a raised optic. In between his chassis and his handlebars is a bouquet of white roses."
+    n "{color=#fff}CC greets you with a raised optic. In between his chassis and his handlebars is a bouquet of red roses."
     c "{color=#fff}I hope this isn't too... forward, Doctor."
     c "{color=#fff}Aspen assisted me in acquiring the flowers, so... it wasn't entirely my work."
     c "{color=#fff}They remind me of you, though. In a way."
     c "{color=#fff}Please... accept them."
-    mc "{color=#fff}Oh, CC..."
+    mccut "{color=#fff}Oh, CC..."
     scene cctemproom with fade
+    hide screen cuttextbox
     show c look with easeinright
     $ cutscenetextbox = False
     n "You take the bouquet from between his handlebars."

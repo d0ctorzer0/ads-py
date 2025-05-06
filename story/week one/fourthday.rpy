@@ -7,17 +7,16 @@ label day4:
 
     if wkd3:
         n "You never expected Kris to act so... sensitively. It seemed almost out-of-character."
-    if whd3:
+    elif whd3:
         n "You're glad you spent the day with Heath. She kept you entertained."
-    if wad3:
+    elif wad3:
         n "You figure you learned more about botany today than you ever did in your schooling years."
-    if wcd3:
+    elif wcd3:
         n "CC's conversations can get very deep. It gave you a lot to think about."
-    if wrd3:
+    elif wrd3:
         n "You're exhausted from your shift today, much more than usual. But it feels good."
     else:
         n "You wonder if maybe you should've done something different today, or asked Miss Esther to come with you despite management's wishes."
-    # ^ this line plays regardless of previous variable values. fix later
     n "Regardless, you need your rest for tomorrow's shift. You change out of your work attire and lay down for stasis."
 
     scene black

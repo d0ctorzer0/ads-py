@@ -14,6 +14,8 @@ label start:
     scene office
     with fade
 
+    if persistent.advcap == True:
+        "{i}DAY 1 - MONDAY. Soft lo-fi music begins to play. The scene opens on a bleak white office, with a big window on the left lighting the room."
     n "You sigh. Another day, another dollar. But today's gonna be different."
     n "An issue in another department has forced you to take over another employee's position for a few days."
     
@@ -25,8 +27,12 @@ label start:
     n "You reach your new \"headquarters.\" On the edge of the desk, there's a nametag."
 
     default name = "Polly"
-    $ name = renpy.input("What does it read?", length=14)
-    $ name = name.strip()
+    if persistent.advcap == False:
+        $ name = renpy.input("What does it read?", length=14)
+        $ name = name.strip()
+    else:
+        $ name = renpy.input("What does it read? Please insert your name.", length=14)
+        $ name = name.strip()
     n "The tag has \"[name]\" drawn on it in very hasty handwriting."
     
     mc "Well, at least they tried to be welcoming."
@@ -36,6 +42,8 @@ label start:
     show e
     with easeinright
 
+    if persistent.advcap == True:
+        "{i}Miss Esther enters into frame - a spherical robot with a white hull and pink handlebars. Her optic matches her handles, with one bright pink eye."
     #voice "e/e01-001.ogg"
     e "Why, hello there. I'm Miss Esther. I'm assuming you're the temp replacement for our missing employee, correct?"
 
@@ -139,6 +147,8 @@ label krisday1:
     scene kristemproom
     with pixellate
 
+    if persistent.advcap == True:
+        "{i}The scene fades to a conference room."
     n "As you enter the room of your first checkup, you look up at the wall in front of you to see a stock market display. Green and red lines dance across the screen rapidly."
     n "In the corner of the room, intensely staring at the wall and muttering to itself, is a core, hanging by a management rail that looks like it hasn't been used in ages."
 
@@ -151,8 +161,11 @@ label krisday1:
     hide e annoy
     with easeoutright
 
+    
     show k
     with easeinright
+    if persistent.advcap == True:
+        "{i}Kris comes into frame - though similar in appearance to Miss Esther, his primary color is a bright teal. He wears a bowtie below his eye and his handlebars are covered in fur."
     k "Ahh, Miss Esther. I assume you're here for my checkup?"
     $ persistent.kgunlock = True
 
@@ -265,7 +278,7 @@ label krisday1cont:
     jump heathday1
 
 label heathday1:
-    scene heathtemproom
+    scene temphall
     with fade
 
     n "As you proceed along your route, you notice you've never been down to recreation before. You rarely have time to, and once work is over, well, you've always just gone home."
@@ -282,6 +295,7 @@ label heathday1:
 
     mc "Alright."
 
+    scene heathtemproom with fade
     show e
     n "Miss Esther guides you into the next room, which holds a small stage with a closed curtain. Behind the drapes, you can hear crashing, banging, and..."
 
@@ -313,7 +327,10 @@ label heathday1:
 
     show h
     with easeinright
-    n "The curtains part as a core with a purple optic and ribbon-wrapped handlebars comes barreling out. A flurry of confetti comes up from the floor and lands around it."
+    if persistent.advcap == True:
+        n "{i}The curtains part and Heath enters the frame. Her purple handlebars are wrapped in yellow ribbon. Her optic has a purple spiral. She's a little larger than most cores."
+    else:
+        n "The curtains part as a core with a purple optic and ribbon-wrapped handlebars comes barreling out. A flurry of confetti comes up from the floor and lands around it."
 
     h "Mystery... intrigue... the unknown... what do all these things have in common?"
     $ persistent.hgunlock = True
@@ -425,6 +442,8 @@ label unknownday1:
 
     show e
     with easeinright
+    if persistent.advcap == True:
+        "{i}The scene fades to a white hallway."
     n "Miss Esther guides you to the next area, following you closely on her management rail."
 
     e "Section C8 is mostly a recreational area."
@@ -468,6 +487,9 @@ label unknownday1:
     
     show u
     with easeinright
+    if persistent.advcap == True:
+        "{i}A core comes into frame - several parts of his chassis are broken or cracked, and he's missing half a handlebar."
+        "{i}His entire body is stained brownish-yellow. A lighter fluid sticker is stuck to his plates."
     u "Uhh... huh?"
     $ persistent.ugunlock = True
 
@@ -620,6 +642,8 @@ label aspenday1:
     n "The core stops spraying, turns around in shock, and quickly zooms back over to the entrance."
 
     show a look with easeinright
+    if persistent.advcap == True:
+        "{i}Aspen comes into frame. His entire chassis is covered in moss, and several vines wind their way around his handlebars. His optic is a bright green."
     a "Sorry, sorry, didn't see you there!"
     $ persistent.agunlock = True
 
@@ -709,6 +733,7 @@ label aspenday1cont:
     n "You check \"ASPEN (BOTANICAL CORE)\" off your list. Despite the rather unusual subsection he oversees, he seems content enough with it."
     n "As you exit the greenhouse, Miss Esther greets you."
 
+    scene temphall with fade
     show e
     show e
     with easeinright
@@ -719,12 +744,6 @@ label aspenday1cont:
     jump ccday1
 
 label ccday1:
-
-    scene temphall
-    with pixellate
-    show e
-    with easeinright
-
     n "Miss Esther guides you down the hall, slightly quicker than before."
 
     show e annoy
@@ -747,6 +766,8 @@ label ccday1:
 
     n "The two of you approach a room that is definitely not very well-maintained. The door looks like it's barely hanging on, and the window is so dusty you can't see through it."
     n "You open the door gently. Inside, hanging from the ceiling by a cut-off management rail, is a core."
+    if persistent.advcap == True:
+        "{i}The room looks almost like a hospital room, with a bed and a bunch of monitoring screens. It's lacking the IV bags and sterilized equipment, though."
 
     show e annoy
     with easeinright
@@ -756,6 +777,8 @@ label ccday1:
     with easeoutright
     show c close
     with easeinright
+    if persistent.advcap == True:
+        "{i}CC enters the frame. His chassis is dusty, and he has several tubes coming out of his sides. His accent colors are an indigo-blue hue. He looks incredibly tired."
     cu "Oh, what's the use? The diagnosis will be the same, regardless."
 
     show e b sad at bounce
@@ -906,11 +929,6 @@ label ccday1cont:
     n "You check \"CC\" off your list. So {i}that's{/i} what the C's stand for..."
     n "The last name on your list is a \"ROB\"."
 
-    hide c
-    with easeoutright
-    hide e
-    with easeoutright
-
     jump gregday1
 
 label gregday1:
@@ -944,6 +962,8 @@ label gregday1:
     n "Thankfully it's extremely lightweight, and you don't fall over."
     show g
     n "You look down at the cart to see what is very clearly three cores in a trench coat."
+    if persistent.advcap == True:
+        n "{i}The one at the top has a bright yellow optic, but the other two are concealed by the brown coat."
 
     show g look
     gu "Sorry, sorry. It's hard to control this thing."
@@ -984,7 +1004,8 @@ label robday1:
     scene robtemproom with pixellate
     n "Eventually, you approach a door with \"GYM\" written on it. Not a sign of any other human employees, though."
     n "You open the door to see a core behind a desk, red pupil twitching as it watches a TV screen above it."
-
+    if persistent.advcap == True:
+        n "{i}The room looks like your average gym - several machines and dumbells line the walls. Multiple TV screens hang above the machines."
     show r yell with easeinright
     r "GO! GO!! What are you DOING?! THROW IT!!"
 

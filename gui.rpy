@@ -213,7 +213,7 @@ define gui.choice_button_borders = Borders(0, 8, 40, 10)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xpos = 30
-define gui.choice_button_text_idle_color = '#000000'
+define gui.choice_button_text_idle_color = '#1b1b1b'
 define gui.choice_button_text_hover_color = "#ffffff"
 define gui.choice_button_text_insensitive_color = '#7070707f'
 
@@ -239,7 +239,7 @@ define config.thumbnail_width = 384
 define config.thumbnail_height = 216
 
 ## The number of columns and rows in the grid of save slots.
-define gui.file_slot_cols = 3
+define gui.file_slot_cols = 1
 define gui.file_slot_rows = 2
 
 

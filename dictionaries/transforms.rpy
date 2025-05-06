@@ -11,6 +11,9 @@ transform tilted2:
 transform ab_tilt:
     rotate -4.5
 
+transform save_tilt:
+    rotate -14
+
 transform daydiss:
     on hide:
         linear 0.5 alpha 0.0

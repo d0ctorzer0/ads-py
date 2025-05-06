@@ -98,9 +98,12 @@ style frame:
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
 style cutscene:
-    outlines [(1, "#000000", 0, 0)]
-    ypos 1200
+    ypos 100
     xpos 500
+    outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
+
+screen cuttextbox:
+    add "gui/cut_textbox.png"
 
 screen say(who, what):
     
@@ -109,8 +112,7 @@ screen say(who, what):
 
         if cutscenetextbox == True:
             style_prefix "cutscene"
-            xanchor 0.0
-            ypos 1150
+            ypos 1130
             background None
 
         if who is not None:
@@ -239,8 +241,8 @@ style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xpos 80
-    ypos 405
+    xpos 50
+    ypos 370
     yanchor 300
 
     spacing gui.choice_spacing
@@ -477,8 +479,6 @@ screen main_menu():
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
             #textbutton _("Quit") action Quit(confirm=not main_menu)
-
-    add "logo.png" xpos 200 ypos 600
 
     if gui.show_name:
 

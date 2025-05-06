@@ -15,13 +15,24 @@ screen behindoverlay():
     add "gui/options/black.png"
 
 screen file_slots():
-    use behindoverlay
     add "gui/loadscreen.png"
-    textbutton _("Return"):
-        style "return_button"
+    imagebutton idle "gui/back.png" action Hide("file_slots", transition=easeoutbottom)
 
-        action Hide("file_slots", transition=easeoutbottom)
-    textbutton _("Main Menu"):
-        style "return_button"
+    grid gui.file_slot_cols gui.file_slot_rows at save_tilt:
+        style_prefix "slot"
 
-        action MainMenu()
+        spacing 0
+
+        for i in range(gui.file_slot_cols * gui.file_slot_rows):
+
+            $ slot = i + 1
+
+            vbox:
+                button:
+                    action FileAction(slot)
+
+                    has vbox
+
+                    add FileScreenshot(slot) xalign 0.5
+
+                    key "save_delete" action FileDelete(slot) 

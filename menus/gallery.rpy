@@ -105,7 +105,9 @@ screen galleryc:
 
     fixed:
         if persistent.cc1 == True:
-            imagebutton idle "characters/cc/cc cutscene 1.png" at gallery_size xpos 300 ypos 216
+            imagebutton idle "characters/cc/cc cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
+        if persistent.cc2 == True:
+            imagebutton idle "characters/cc/cc cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
     
     vbox:
         style_prefix "tabs"

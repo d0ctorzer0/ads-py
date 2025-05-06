@@ -79,9 +79,6 @@ label day5:
             e "But it's your time off, so feel free to do whatever you wish."
         "Gregory invited me to go meet him. I might do that.":
             e "Interesting. Well, it's your time off. You're free to do whatever you please."
-        "Honestly, I was just planning on wandering. Maybe finding a bar?":
-            show e laugh
-            e "A bar? Haha, that's hilarious, Doctor."
         "I have absolutely no clue.":
             show e laugh
             e "Fair enough. I suppose you aren't used to being on-campus on your days off."

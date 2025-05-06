@@ -2,8 +2,6 @@ BACKUP ONLY
 
 These files aren't up to date, bestie!! Check your local files instead <3
 
-New commit every day (maybe) (depends on whether my wifi works or not)
-
 checklist:
 ☑ day 1
 ☑ night 1
@@ -17,8 +15,8 @@ checklist:
 ☑ night 5
 ☑ day 6
 ☑ night 6
-☐ day 7
-☐ night 7
+☑ day 7
+☑ night 7
 ☐ day 8
 ☐ night 8
 ☐ day 9
@@ -37,7 +35,5 @@ checklist:
 
 
 current roadmap:
-- add colorblind mode (text to color-coded sections)
 - add pause menu
-- finish day 7
-
+- finish day 8

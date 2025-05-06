@@ -73,6 +73,12 @@ label day3choice:
             $ romance_points["Aspen"] += 3
             $ esther_affection += 1
             jump aspenday3
+        "→":
+            jump day3choice2
+
+label day3choice2:
+    menu:
+        extend ""
         "Is CC an option here?":
             $ romance_points["CC"] += 3
             $ esther_affection += 1
@@ -83,6 +89,8 @@ label day3choice:
         "Rob.":
             $ romance_points["Rob"] += 3
             jump robday3
+        "←":
+            jump day3choice
 
 label uchooseagain:
     $ askforu = True
@@ -196,18 +204,22 @@ label krisday3good:
     # FIRST KRIS CUTSCENE HERE!! YAY!!
     if romance_points["Kris"] >= 7:
         $ cutscenetextbox = True
+        show screen cuttextbox
         scene kris cutscene 1 with fade
         $ persistent.kc1 = True
+        if persistent.advcap == True:
+            "{color=#fff}{i}The scene fades to Kris looking down solemnly."
         k "{color=#fff}I'm stubborn for that reason."
         k "{color=#fff}My job is... simple. Perhaps not every personality core can read a stock market graph, but... it's a useless job."
         k "{color=#fff}Thankless, too."
 
-        mc "{color=#fff}I think what you do is very important."
+        mccut "{color=#fff}I think what you do is very important."
 
         k "{color=#fff}Not as important as it should be. Miss Caroline, she..."
         k "{color=#fff}She doesn't trust us. And I'm not sure why."
         k "{color=#fff}She is excellent at what she does. She's dragged Aperture out of the ditch it was in, but..."
         k "{color=#fff}The company now... it's different. Mr. Johnson was fascinated with us. Miss Caroline is not."
+        hide screen cuttextbox
         scene kristemproom with fade
         show k
         $ cutscenetextbox = False
@@ -216,6 +228,8 @@ label krisday3good:
         jump krisday3goodpt2
 
 label krisday3goodpt2:
+    if persistent.advcap == True:
+        "{i}The screen fades back to normal."
     k "But that's neither here nor there. I'm satisfied enough with the work I do, regardless of how inconsequential it is."
 
     mc "I see."
@@ -339,17 +353,18 @@ label heathday3good:
 
         n "Heath parts the curtains."
         $ cutscenetextbox = True
+        show screen cuttextbox
         scene heath cutscene 1 with fade
         $ persistent.hc1 = True
         n "{color=#fff}You're stunned by what you see - a hidden-away, wooden room, lined with fairy lights, shelves stocked with magic paraphenalia."
         h "{color=#fff}Tada!! This is my magic room. It's where I keep all the stuff I use to perform my tricks."
 
-        mc "{color=#fff}Wow, Heath. I can't believe this. It's amazing."
+        mccut "{color=#fff}Wow, Heath. I can't believe this. It's amazing."
 
         h "{color=#fff}Yes, yes, I know."
         h "{color=#fff}There's my magic 8 ball, my stuffed rabbit, my bowling pins - for juggling."
 
-        mc "{color=#fff}You can juggle?"
+        mccut "{color=#fff}You can juggle?"
 
         h "{color=#fff}Hahaha, no. But you could!"
         h "{color=#fff}I haven't shown anyone else this room, so you should consider yourself lucky!"
@@ -357,6 +372,7 @@ label heathday3good:
         n "{color=#fff}Heath comes back out and closes the curtains."
         scene heathtemproom with fade
         show h with easeinright
+        hide screen cuttextbox
         $ cutscenetextbox = False
         jump heathday3goodpt2
     else:
@@ -407,6 +423,7 @@ label heathday3bad:
     jump day3end
 
 label aspenday3:
+    show e
     e "Good choice. He's a nice kid."
     e "I'm sure he'll appreciate the company."
 
@@ -492,14 +509,17 @@ label aspenday3good:
         n "You follow Aspen on his management rail as he leads you to a back corner."
 
         $ cutscenetextbox = True
+        show screen cuttextbox
         scene aspen cutscene 1 with fade
         $ persistent.ac1 = True
+        if persistent.advcap == True:
+            "{i}The screen fades to a close-up shot of Aspen looking down at a fern. The scene is softly lit and is mostly dark."
         a "{color=#fff}This is Penelope. She's an \"Adiantum\" - a maidenhair fern."
         a "{color=#fff}She's extremely tempermental. Doesn't listen to anyone but me."
         a "{color=#fff}I swear, if any other greenhouse employee tries to water her or test on her, she throws a fit."
         a "{color=#fff}Haha, not literally, of course. She'll just wilt. But she's my favourite."
 
-        mc "{color=#fff}She's beautiful."
+        mccut "{color=#fff}She's beautiful."
 
         a "{color=#fff}Thank you. I know."
 
@@ -507,6 +527,7 @@ label aspenday3good:
 
         scene aspentemproom with fade
         show a look with easeinright
+        hide screen cuttextbox
         $ cutscenetextbox = False
         a "Oh! Ahem, uh, sorry. I was excited to show you my - uh... favorite plant."
 
@@ -619,8 +640,11 @@ label ccday3good:
 
     if romance_points["CC"] >= 7:
         $ cutscenetextbox = True
+        show screen cuttextbox
         scene cc cutscene 1 with fade
         $ persistent.cc1 = True
+        if persistent.advcap == True:
+            "{i}The scene fades to CC looking down solemnly. He's back-lit by his window. In the foreground, you can see the computers that monitor his health."
         c "{color=#fff}Well... it's a little embarrassing."
         c "{color=#fff}See, I have so many bio-simulators and pain receptors stuffed into my chassis, it's like I'm practically organic."
         c "{color=#fff}And I've heard the scientists talk about these {i}wondrous{/i} things called \"waterfalls\"..."
@@ -631,6 +655,7 @@ label ccday3good:
 
         scene cctemproom with fade
         show c close with easeinright
+        hide screen cuttextbox
         $ cutscenetextbox = False
 
         c "But I know I never will. So I look at pictures. And it's almost the same."
@@ -754,24 +779,28 @@ label rday3good:
         n "Rob moves on his management rail over to the elliptical machine."
 
         $ cutscenetextbox = True
+        show screen cuttextbox
         scene rob cutscene 1 with fade
         $ persistent.rc1 = True
+        if persistent.advcap == True:
+            "{i}The scene fades to Rob looking down at you, \"HANG IN THERE!\" poster and TV screen behind him."
         r "Alright, hop on, let's get started."
 
         n "You begin your workout, and Rob coaches you on your form."
 
         r "You're too tight. Loosen up."
-        mc "How do you know so much about fitness without... well... having limbs?"
+        mccut "How do you know so much about fitness without... well... having limbs?"
         r "Well, it's partially 'cuz it's programmed into me."
         r "I'm also just real passionate about humans in general. Fitness is just the one aspect I really enjoy."
 
-        mc "Interesting."
+        mccut "Interesting."
         r "You're going too slow, now. You need to pick up the pace."
-        mc "I'm... trying."
+        mccut "I'm... trying."
 
         r "Don't overwork yourself."
         scene robtemproom with pixellate
         $ cutscenetextbox = False
+        hide screen cuttextbox
         show r with easeinright
         jump rday3goodpt2
     else:

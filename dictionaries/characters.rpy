@@ -8,6 +8,7 @@ define n = Character("")
 define e = Character(_("Miss Esther"), color="#db35a9")
 
 define mc = Character(_("[name]"), color="#000000")
+define mccut = Character(_("[name]"), color="#ffffff")
 
 define k = Character(_("Kris"), color="#25a68c")
 

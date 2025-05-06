@@ -145,6 +145,7 @@ label day7esther:
         e "You had a whole campus to explore, and instead you decided to stay inside?"
         show e annoy
         e "Well then."
+        e "Fair enough."
     if day6stay == False:
         mc "I explored the campus a little. Just wandered, honestly."
         
@@ -158,7 +159,7 @@ label day7esther:
 
     show e annoy
     show screen vignette with vigswitch
-    stop music
+    stop music fadeout 1.0 
     e "Doctor... I have something important to tell you."
     e "Please listen carefully."
 
@@ -198,3 +199,95 @@ label day7esther:
     e "I'm not quite sure exactly how many of us are actually still Supervisor Cores, but..."
     show e
     e "That's neither here nor there."
+    e "Eat! What are you waiting for?"
+
+    mc "Uhh... I've kind of lost my appetite."
+
+    show e
+    e "Oh, that's not good. I hope that wasn't my fault."
+
+    menu:
+        extend ""
+        "It kind of was.":
+            $ esther_affection -= 1
+            show e annoy
+            e "Oh. I'm sorry, Doctor."
+        "No, I'm just not hungry anymore.":
+            $ esther_affection += 1
+            show e laugh
+            e "Fair enough!"
+    
+    show e
+    e "Anyways. Your work is going incredibly well. Management seems to be happy with your reports."
+
+    mc "Well, to be honest, the work isn't very hard."
+
+    e "True enough, though it's one of the few jobs they only want a human to do..."
+    show e annoy
+    e "A robotic supervisor is fine, but apparently I'm not effective enough on my own."
+
+    mc "Interesting."
+
+    show e
+    e "Thinking about it, though, we do sometimes tend to have a... bias towards members of our own species."
+    e "I suppose it only makes sense to have a robot-human team working together..."
+
+    if esther_affection >= 5:
+        show e laugh
+        e "It's a good thing I like you, then, right?"
+
+        menu:
+            extend ""
+            "I like you too, Miss Esther. A lot.":
+                jump esthershootdown
+            "I like you too.":
+                show e
+                e "I'm glad."
+                jump day7plate
+    
+    mc "Yes, I suppose so."
+
+    jump day7plate
+
+
+label day7plate:
+    n "You clear your throat and get up to put your plate away."
+
+    mc "Thanks for inviting me out, Miss Esther, but I'm incredibly tired."
+
+    show e
+    e "Oh yes, absolutely. Please get some rest."
+    show e laugh
+    e "Work starts again tomorrow, after all!"
+    show e
+    e "See you then, Doctor."
+
+    mc "See you then."
+
+    hide e with easeoutright
+
+    n "You leave the cafeteria and head back to your room."
+
+    jump day7end
+
+label esthershootdown:
+    show e shock
+    e "Oh, Doctor, you're not -"
+    e "You're not insinuating -"
+    show e annoy
+    e "I'm terribly sorry, Doctor, but if you're saying what I think you're saying -"
+    e "I'm afraid I just can't reciprocate."
+    show e
+    e "For one, I just warned you not to get too close to us..."
+    show e shock
+    e "But more importantly, I just... I just don't feel that way about anything... any{i}one{/i}, honestly."
+    show e laugh
+    e "I am flattered, though. I hope this won't make working together difficult."
+
+    show e
+    mc "No, I understand, Miss Esther. I apologize."
+    mc "I won't bring it up again."
+
+    e "Thank you, Doctor."
+
+    jump day7plate
