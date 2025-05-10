@@ -1276,7 +1276,8 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/popup.png" xalign .5 yalign .5 zoom 1.2
+    use behindoverlay
+    add "gui/overlay/popup.png" xalign .5 yalign .5
 
     vbox:
         xalign .5
@@ -1285,9 +1286,11 @@ screen confirm(message, yes_action, no_action):
 
         label _(message):
             style "confirm_prompt"
+            ypos 60
             xalign 0.5
 
     hbox:
+        ypos 550
         xalign 0.5
         spacing 150
 

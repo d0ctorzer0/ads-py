@@ -7,8 +7,8 @@ init python:
             renpy.unlink_save(slot)
         renpy.quit(relaunch=True)
 
-define config.mouse = { }
-define config.mouse['default'] = [ ( "gui/cursor.png", 0, 0) ]
+# define config.mouse = { }
+# define config.mouse['default'] = [ ( "gui/cursor.png", 0, 0) ]
 
 define cutscenetextbox = False
 
@@ -21,6 +21,8 @@ default emailfromrobday2 = False
 default askforu = False
 default askforg = False
 default giveccpicture = False
+default cctv = False
+default knowabtwaterfall = False
 
 #GOODBYES
 default krisgoodbye = False
@@ -32,6 +34,11 @@ default haveaheart = False
 #DAY SETUPS
 default goodday3 = False
 default day6stay = False
+default satchoose_kris = False
+default satchoose_heath = False
+default satchoose_aspen = False
+default satchoose_cc = False
+default satchoose_rob = False
 
 #CUSTCENE T/F - "[blank] cutscene [number]"
 default persistent.kc1 = False
@@ -87,7 +94,7 @@ default romance_points = {
     "Greg" : 0 ,
     "Rob" : 0 ,
 }
-default positive = { # 1 = positive, -1 = negative
+default positive = { # 0 = positive, -1 = negative
     "Kris" : 0 ,
     "Heath" : 0 ,
     "???" : 0 ,
@@ -96,11 +103,20 @@ default positive = { # 1 = positive, -1 = negative
     "Greg" : 0 ,
     "Rob" : 0 ,
 }
-
+default priority = {
+    "Kris" : 0 ,
+    "Heath" : 0 ,
+    "???" : 0 ,
+    "Aspen" : 0 ,
+    "CC" : 0 ,
+    "Greg" : 0 ,
+    "Rob" : 0 ,
+}
 $ romance_highest_name = max(romance_points, key=romance_points.get)
+$ highest_priority = max(priority, key=priority.get)
 
 default romance_minimum_for_good_ending = 20
-default romance_minimum_for_perfect_ending = 30
+default romance_minimum_for_true_ending = 30
 
 #ESTHER EVIL SETUP
 default esther_affection = 0

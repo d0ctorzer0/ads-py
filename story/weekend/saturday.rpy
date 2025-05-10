@@ -21,14 +21,18 @@ label day6:
     with fade
     $ daynum = "6"
     $ dayday = "Saturday"
-
     if renpy.is_skipping() == False:
         show screen daytransition
         $ renpy.pause(2.0, hard=True)
     if renpy.is_skipping() == True:
         pass
-
     scene mctemproom with fade
+
+    # BUT I WANT THEM ALL! ACHIEVEMENT
+    if romance_points["Kris"] and romance_points["Heath"] and romance_points["Aspen"] and romance_points["CC"] and romance_points["Rob"] >= 10:
+        $ achievement.grant("ach_biwta")
+        $ achievement.sync()
+
     n "You wake up at 11:00 today. No need to wake up early."
     n "You get changed, and decide..."
     menu:
@@ -69,6 +73,9 @@ label wander:
 
 label satoffice:
     $ v_satoffice = True
+    $ persistent.places_visited += 1
+    $ achievement.progress("ach_explore", persistent.places_visited)
+    $ achievement.sync()
     scene temphall with fade 
     n "You come up to the office door."
     n "You try to open it, but it's locked."
@@ -85,6 +92,9 @@ label satoffice:
 
 label satcafe:
     $ v_satcafe = True
+    $ persistent.places_visited += 1
+    $ achievement.progress("ach_explore", persistent.places_visited)
+    $ achievement.sync()
     scene tempcafe with fade
     n "You enter the cafeteria. You haven't actually been in here yet."
     n "Even though Miss Esther mentioned it to you on your first day, you've been surviving off old protein bars and granola..."
@@ -118,7 +128,9 @@ label cafejello:
 
 label biology:
     $ v_biology = True
-    
+    $ persistent.places_visited += 1
+    $ achievement.progress("ach_explore", persistent.places_visited)
+    $ achievement.sync()
     scene bioroom with fade
     n "You come up to the door to Biology."
     n "It's right across the hallway from the greenhouse."
@@ -132,7 +144,9 @@ label biology:
 
 label wheatleycameo:
     $ v_wheatley = True
-
+    $ persistent.places_visited += 1
+    $ achievement.progress("ach_explore", persistent.places_visited)
+    $ achievement.sync()
     scene relaxationcenterdoor with fade
     n "You come up to the large door that reads \"RELAXATION CENTER\", \"ENTRANCE D\"."
     n "From what you've heard, this is where they keep test subjects in stasis."
@@ -166,6 +180,9 @@ label wheatleycameo:
 
 label manufacture:
     $ v_manufacture = True
+    $ persistent.places_visited += 1
+    $ achievement.progress("ach_explore", persistent.places_visited)
+    $ achievement.sync()
     scene bioroom with fade
     n "You come up to the door with the words \"MANUFACTURING SECTOR - EAST\" painted over it."
     n "You don't recognize this entrance, but your office in Manufacturing was on the west side."
@@ -177,6 +194,9 @@ label manufacture:
 
 label recovery:
     $ v_recovery = True
+    $ persistent.places_visited += 1
+    $ achievement.progress("ach_explore", persistent.places_visited)
+    $ achievement.sync()
     scene bioroom with fade
     n "You come up to the door that reads \"STASIS RECOVERY BAY\" on a plaque next to it."
     n "Not wanting to disturb anything that might be happening inside, you peer through the window."
@@ -885,10 +905,10 @@ label satrobpos:
             jump satrobpos_pos
         "I'm not sure if I could make it.":
             $ romance_points["Rob"] -= 2
-            jump satrospos_neg
+            jump satrobpos_neg
         "I think I got other plans, but maybe." if inv_kris or inv_heath or inv_cc or inv_aspen == True:
             $ romance_points["Rob"] -= 2
-            jump satrospos_neg
+            jump satrobpos_neg
 
 label satrobpos_pos:
     show r
@@ -973,8 +993,9 @@ label satunknown:
         jump satunknownneg
 
 label satunknownpos:
-    show u with easeinright
+    show u upset with easeinright
     u "Who's... who's there?"
+    show u
     u "Doc? That you?"
 
     mc "Yes, it's me. Glad to see you sent the correct coords."
@@ -994,7 +1015,7 @@ label satunknownpos:
 
     mc "Y-Yeah, it's just really dusty in here."
 
-    show u upset
+    show u look
     u "S-Sorry, it's been a long time since I've had a human in here..."
     u "I'm not attached to the system, so I can't call for janitors."
 
@@ -1005,9 +1026,11 @@ label satunknownpos:
     else:
         pass
     u "Your loss, kid, but."
+    show u look
     u "Thanks for stoppin' in. Long time since I had company."
 
     if informed_about_canister == True:
+        $ cctv = True
         n "You look around the room again. The figure in the corner catches your eye."
         mc "Hey... what's that?"
         show u upset
@@ -1027,7 +1050,7 @@ label satunknownpos:
         n "You look around the room again. The shelf catches your eye."
     
     mc "So... lots of lighter fluid, huh?"
-    show u
+    show u look
     u "Uh... yeah. I dunno, I started usin' it, like, I don't know how long ago, but..."
     u "I guess I just never stopped."
 
@@ -1078,7 +1101,7 @@ label satunknownpos:
 
     mc "Thanks for inviting me, but I should really get going."
 
-    show u
+    show u look
     u "Ah, no, I understand. Have a... good day, Doc. Thanks again for stopping in. And talking to me."
 
     n "You leave his room and dust yourself off."

@@ -153,7 +153,6 @@ label impresskris5:
 
     # set positive for the next week
     if romance_points["Kris"] >= 10:
-        $ positive["Kris"] = 1
         show k flirt
         k "Uh, before you leave, Doctor..."
         k "You've been very kind to me this week. I'd just like to... extend my gratitude to you."
@@ -195,7 +194,7 @@ label offendkris5:
         k "You've been incredibly rude to me over the past week, Doctor..."
         k "I'm not sure what I did to upset you, but..."
         k "I don't appreciate it in the slightest."
-    elif romance_points["Kris"] > = 1:
+    elif romance_points["Kris"] >= 1:
         pass  
     jump krisday5cont
 
@@ -278,7 +277,6 @@ label impressheath5:
     h "Ha! I even got ice queen Miss Esther to applaud me!"
 
     if romance_points["Heath"] >= 10:
-        $ positive["Heath"] = 1
         show h sad
         h "By the way, Doctor..."
         h "Thank you for being so kind to me this week."
@@ -432,7 +430,6 @@ label impressaspen5:
     a "Thank you, Doctor."
 
     if romance_points["Aspen"] >= 10:
-        $ positive["Aspen"] = 1
         show a look
         a "And... thank you. For your treatment of me this week."
         a "You've been very respectful and, uh... very kind."
@@ -584,7 +581,6 @@ label ccanduleave:
     hide e b 
 
     if romance_points["???"] >= 8:
-        $ positive["???"] = 1
         show u upset
         u "You're usually pretty... soft to me, Doc. I'm sure this is a one-off."
         show u
@@ -596,7 +592,7 @@ label ccanduleave:
         $ positive["???"] = -1
         show u upset
         u "Seems no matter how hard I try, you simply ain't interested, Doc."
-        show u
+        show u look
         u "S'fine. But I take back my invite for this weekend..."
         hide u with easeoutright
         n "And with that, he leaves."
@@ -609,11 +605,12 @@ label ccanduleave:
 
 label ccanduresolve:
     hide c with easeoutright
-    show u with easeinright
+    show u look with easeinright
     u "S'pretty simple, honest. I thought this was my own room..."
 
     mc "The \"place\" you keep inviting me back to?"
 
+    show u
     u "Yeah, exactly that. And I don't quite remember {i}why{/i} I thought this was my room, but..."
 
     hide u with easeoutright
@@ -644,6 +641,7 @@ label ccanduresolve:
     show u upset
     u "Yeah..."
     u "Yeah, I understand, Doc."
+    show u look
     u "I apologize, uh... CC, right?"
     hide u with easeoutright
 
@@ -655,11 +653,10 @@ label ccanduresolve:
     show u with easeinright
     
     if romance_points["???"] >= 8:
-        $ positive["???"] = 1
         u "I'll get goin' now, Doc."
         show u upset
         u "You've been unusually, uh, patient with me this week."
-        show u
+        show u look
         u "I do reckon you'll visit me tomorrow. Hopefully."
         hide u with easeoutright
         n "And with that, he leaves."
@@ -667,7 +664,7 @@ label ccanduresolve:
     elif romance_points["???"] <= 0:
         $ positive["???"] = -1
         u "Uhh... Doc, I wanna apologize to you too, for uh..."
-        show u upset
+        show u look
         u "Tryin' so hard. Pushin' you too much."
         u "I take back my invite for t'morrow. You don't gotta come."
         hide u with easeoutright
@@ -741,7 +738,6 @@ label impresscc5:
 
 label ccend5:
     if romance_points["CC"] >= 10:
-        $ positive["CC"] = 1
         show c look
         c "Before you go..."
         c "You have been incredibly kind to me, despite that not being necessary."
@@ -863,7 +859,6 @@ label offendrob5:
     r "Sure."
 
     if romance_points["Rob"] >= 10:
-        $ positive["Rob"] = 1
         show r angry
         r "Doc, listen..."
         r "You've been takin' me seriously. Not a lot of other doctors do that."
@@ -898,7 +893,6 @@ label impressrob5:
     r "Sure."
 
     if romance_points["Rob"] >= 10:
-        $ positive["Rob"] = 1
         show r
         r "Doc, listen..."
         r "You've been takin' me seriously. Not a lot of other doctors do that."
@@ -935,7 +929,6 @@ label neutralrob5:
     r "Sure."
 
     if romance_points["Rob"] >= 10:
-        $ positive["Rob"] = 1
         show r
         r "Doc, listen..."
         r "You've been takin' me seriously. Not a lot of other doctors do that."
@@ -954,9 +947,9 @@ label neutralrob5:
     jump day5end
 
 label day5end:
-    if positive["Rob"] == 1:
+    if positive["Rob"] == 0:
         n "You end the day with your final checkmark of the week and head back towards your office."
-    elif positive["Rob"] == 0 or -1:
+    elif positive["Rob"] == -1:
         n "You end your day with a note by Rob's name - \"(sleeping)\". You head back towards your office."
     
     scene office with pixellate

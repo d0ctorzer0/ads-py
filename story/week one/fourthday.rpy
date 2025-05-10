@@ -61,7 +61,7 @@ label day4:
     e "Anyways, we'd better be on our way to Kris. Saturday will come quicker than you expect! Let's go!"
     hide e with easeoutright
 
-    if persistent.cc1 == True and picture == True:
+    if knowabtwaterfall == True and picture == True:
         n "You glance at the picture of Multnomah Falls on your desk and remember what CC said yesterday."
         menu:
             extend " You decide to..."
@@ -590,12 +590,12 @@ label robday4:
         extend ""
         "Oh, no, for sure. Don't worry, I know you're just one core.":
             $ romance_points["Greg"] += 6
-            $ romance_points["Rob"] += 2
+            $ romance_points["Rob"] += 3
             jump impressgreg
 
         "I mean, I think the trench coat is a little ridiculous.":
             $ romance_points["Greg"] -= 3
-            $ romance_points["Rob"] += 2
+            $ romance_points["Rob"] += 3
             jump offendgreg
         
         "I kinda... don't have time for... whatever this is.":

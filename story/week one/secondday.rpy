@@ -102,6 +102,7 @@ label letin:
 
     u "Yea, yea, I know. You scientists are always busy."
 
+    show u look
     n "The core glances around himself nervously."
 
     show u upset

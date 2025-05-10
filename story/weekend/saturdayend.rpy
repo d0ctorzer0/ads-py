@@ -3,14 +3,19 @@ label satend:
     n "It's getting late. What's your plans for tonight?"
     menu:
         "Dinner with Kris at the lounge." if inv_kris == True:
+            $ satchoose_kris == True
             jump satend_kris
         "Watching Heath's performance." if inv_heath == True:
+            $ satchoose_heath == True
             jump satend_heath
         "Visit CC to see what he's prepared." if inv_cc == True:
+            $ satchoose_cc == True
             jump satend_cc
         "See the glowing algae with Aspen." if inv_aspen == True:
+            $ satchoose_aspen == True
             jump satend_aspen
         "Watching the SuperBowl with Rob." if inv_rob == True:
+            $ satchoose_rob == True
             jump satend_rob
 
         "I think I'll just go to bed early.":
@@ -25,6 +30,7 @@ label satend_mc:
     jump day7
 
 label satend_kris:
+    
     scene templounge with fade
     n "You enter into the lounge and look around."
     if v_greg == False:

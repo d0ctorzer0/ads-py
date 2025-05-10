@@ -291,3 +291,50 @@ label esthershootdown:
     e "Thank you, Doctor."
 
     jump day7plate
+
+label day7alone:
+    show e shock
+    e "Ah no, I understand. So sorry to bother you, Doctor."
+    e "I'll let you be, but..."
+    show e annoy
+    show screen vignette with vigswitch
+    stop music fadeout 1.0
+    e "First..."
+    e "Doctor... I have something important to tell you."
+    e "Please listen carefully."
+
+    mc "Uh... yes. I'm listening."
+
+    e "I came here to tell you..."
+    e "Do not get too close to the cores in your section."
+    e "It is against your contract to form strong relationships with them."
+    e "Of course, friendly banter, speaking outside of working hours... that is fine."
+    e "But any more than that and it may become an issue."
+    e "It won't turn out well for you."
+    e "Do you understand?"
+
+    mc "Uh..."
+    mc "Yes. I understand, Miss Esther."
+
+    play music trak1
+    show e
+    hide screen vignette with vigswitch
+    e "Great! I'm glad we got that sorted out."
+    
+    show e shock
+    e "Anyways, I'll leave you be now - get some rest for work tomorrow!"
+    show e
+    e "Goodbye, Doctor!"
+
+    mc "Um... goodbye."
+
+    hide e with easeoutright
+    n "And she's gone, as quickly as she came."
+    n "Did she really only come to give you that warning?"
+    n "You feel a chill run down your spine."
+    n "You shake it off and think about going back into stasis..."
+    n "...but for some reason, it just looks so... uncomfortable."
+
+    n "Instead, you decide to try to focus your mind on other things."
+
+    jump day8beg

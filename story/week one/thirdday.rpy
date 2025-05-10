@@ -639,6 +639,7 @@ label ccday3good:
     mc "What were you... visualizing... about?"
 
     if romance_points["CC"] >= 7:
+        $ knowabtwaterfall = True
         $ cutscenetextbox = True
         show screen cuttextbox
         scene cc cutscene 1 with fade
