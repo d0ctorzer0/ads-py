@@ -7,6 +7,11 @@ init python:
             renpy.unlink_save(slot)
         renpy.quit(relaunch=True)
 
+label splashscreen:
+    $ renpy.movie_cutscene("arlogo_intro.webm")
+    scene mm with dissolve
+    return
+
 # define config.mouse = { }
 # define config.mouse['default'] = [ ( "gui/cursor.png", 0, 0) ]
 

@@ -12,7 +12,7 @@ transform ab_tilt:
     rotate -4.5
 
 transform save_tilt:
-    rotate -14
+    matrixtransform RotateMatrix(0.0, 0.0, -14)
 
 transform daydiss:
     on hide:
@@ -32,3 +32,7 @@ transform emaildiss:
 
 screen vignette:
     add "vignette.png"
+
+transform splashfadeout:
+    alpha 1.00
+    easeout 1.0 alpha 0.00
