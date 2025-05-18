@@ -12,8 +12,8 @@ screen load():
     use file_slots(_("Load"))
 
 define gui.slot_button_text_selected_hover_color = gui.hover_color
-define config.thumbnail_width = 384
-define config.thumbnail_height = 216
+define config.thumbnail_width = 585
+define config.thumbnail_height = 330
 
 define gui.file_slot_cols = 1
 define gui.file_slot_rows = 2
@@ -22,8 +22,13 @@ screen behindoverlay():
     add "gui/options/black.png"
 
 screen file_slots():
+    modal True
     add "gui/loadscreen.png"
-    imagebutton idle "gui/back.png" action Hide("file_slots", transition=easeoutbottom)
+
+    if renpy.get_screen("say") == False:
+        imagebutton idle "gui/back.png" action Hide("file_slots", transition=easeoutbottom)
+    else:
+        dismiss action Hide("file_slots", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
     vbox spacing 25:
 

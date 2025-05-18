@@ -318,43 +318,6 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
-    #vbox:
-
-        #xalign 0.9
-        #yalign 0.1
-
-        #style_prefix "pausemenu"
-
-        #textbutton ("Main Menu") action MainMenu()
-
-        #textbutton ("History") action ShowMenu("history")
-
-        #textbutton ("Save") action ShowMenu("save")
-
-
-
-        #if _in_replay:
-
-            #textbutton _("End Replay") action EndReplay(confirm=True)
-
-        #elif not main_menu:
-
-            #textbutton ("Main Menu") action MainMenu()
-
-        #textbutton _("About") action ShowMenu("about")
-
-        #if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-        #    textbutton _("Help") action ShowMenu("help")
-
-        #if renpy.variant("pc"):
-
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            #textbutton _("Quit") action Quit(confirm=not main_menu)
-
-
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
 
@@ -415,11 +378,11 @@ screen main_menu():
                 ypos 140
                 xpos 180
 
-            imagebutton idle "gui/mmbtn.png" action Show("file_slots", transition=easeinbottom) at tilted:
+            imagebutton idle "gui/mmbtn.png" action Show("file_slots", transition=easeinbottom), Play("sound", "sfx/paperopen3.ogg") at tilted:
                 ypos -80
                 xpos 130
 
-            imagebutton idle "gui/mmbtn.png" action Show("pref_audio", transition=easeinbottom) at tilted:
+            imagebutton idle "gui/mmbtn.png" action Show("pref_audio", transition=easeinbottom), Play("sound", "sfx/paperopen2.ogg") at tilted:
                 ypos -300
                 xpos 80
 
@@ -434,11 +397,11 @@ screen main_menu():
                 ypos 250
                 xpos -60
 
-            imagebutton idle "gui/mmbtn.png" action Show("galleryk", transition=easeinbottom) at tilted2: #gallery
+            imagebutton idle "gui/mmbtn.png" action Show("galleryk", transition=easeinbottom), Play("sound", "sfx/paperopen.ogg"), SetVariable("selected_char", "kris") at tilted2: #gallery
                 ypos 50
                 xpos -30
 
-            imagebutton idle "gui/mmbtn.png" action Quit() at tilted2: #quit
+            imagebutton idle "gui/mmbtn.png" action Quit(confirm=True) at tilted2: #quit
                 ypos -150
                 xpos 0
 
@@ -455,30 +418,6 @@ screen main_menu():
             textbutton ("History") action ShowMenu("history")
 
             textbutton ("Save") action ShowMenu("save")
-
-
-
-
-        #if _in_replay:
-
-            #textbutton _("End Replay") action EndReplay(confirm=True)
-
-        #elif not main_menu:
-
-            #textbutton ("Main Menu") action MainMenu()
-
-        #textbutton _("About") action ShowMenu("about")
-
-        #if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-        #    textbutton _("Help") action ShowMenu("help")
-
-        #if renpy.variant("pc"):
-
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            #textbutton _("Quit") action Quit(confirm=not main_menu)
 
     if gui.show_name:
 
@@ -693,123 +632,6 @@ style about_text is gui_text
 
 style about_label_text:
     size gui.label_text_size
-
-
-## Load and Save screens #######################################################
-##
-## These screens are responsible for letting the player save the game and load
-## it again. Since they share nearly everything in common, both are implemented
-## in terms of a third screen, file_slots.
-##
-## https://www.renpy.org/doc/html/screen_special.html#save https://
-## www.renpy.org/doc/html/screen_special.html#load
-
-# screen save():
-
-#     tag menu
-
-#     use file_slots(_("Save"))
-
-
-# screen load():
-
-#     tag menu
-
-#     use file_slots(_("Load"))
-
-# screen file_slots(title):
-#     use game_menu(title):
-#         text "hello"
-
-# screen file_slots(title):
-
-#     default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
-
-#     use game_menu(title):
-
-#         fixed:
-
-#             ## This ensures the input will get the enter event before any of the
-#             ## buttons do.
-#             order_reverse True
-
-#             ## The page name, which can be edited by clicking on a button.
-#             button:
-#                 style "page_label"
-
-#                 key_events True
-#                 xalign 0.5
-#                 action page_name_value.Toggle()
-
-#                 input:
-#                     style "page_label_text"
-#                     value page_name_value
-
-#             ## The grid of file slots.
-#             grid gui.file_slot_cols gui.file_slot_rows:
-#                 style_prefix "slot"
-
-#                 xalign 0.5
-#                 yalign 0.5
-
-#                 spacing gui.slot_spacing
-
-#                 for i in range(gui.file_slot_cols * gui.file_slot_rows):
-
-#                     $ slot = i + 1
-
-#                     button:
-#                         action FileAction(slot)
-
-#                         has vbox
-
-#                         add FileScreenshot(slot) xalign 0.5
-
-#                         text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-#                             style "slot_time_text"
-
-#                         text FileSaveName(slot):
-#                             style "slot_name_text"
-
-#                         key "save_delete" action FileDelete(slot)
-
-#             ## Buttons to access other pages.
-#             vbox:
-#                 style_prefix "page"
-
-#                 xalign 0.5
-#                 yalign 1.0
-
-#                 hbox:
-#                     xalign 0.5
-
-#                     spacing gui.page_spacing
-
-#                     textbutton _("<") action FilePagePrevious()
-#                     key "save_page_prev" action FilePagePrevious()
-
-#                     if config.has_autosave:
-#                         textbutton _("{#auto_page}A") action FilePage("auto")
-
-#                     if config.has_quicksave:
-#                         textbutton _("{#quick_page}Q") action FilePage("quick")
-
-#                     ## range(1, 10) gives the numbers from 1 to 9.
-#                     for page in range(1, 10):
-#                         textbutton "[page]" action FilePage(page)
-
-#                     textbutton _(">") action FilePageNext()
-#                     key "save_page_next" action FilePageNext()
-
-#                 if config.has_sync:
-#                     if CurrentScreenName() == "save":
-#                         textbutton _("Upload Sync"):
-#                             action UploadSync()
-#                             xalign 0.5
-#                     else:
-#                         textbutton _("Download Sync"):
-#                             action DownloadSync()
-#                             xalign 0.5
 
 
 style page_label is gui_label

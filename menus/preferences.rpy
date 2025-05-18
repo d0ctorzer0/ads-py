@@ -35,7 +35,7 @@ screen pref_audio:
     tag pref
     modal True
     style_prefix "fileblu"
-    imagebutton idle "gui/back.png" action Hide("pref_audio", transition=easeoutbottom), SetVariable("options_visible", True)
+    imagebutton idle "gui/back.png" action Hide("pref_audio", transition=easeoutbottom), SetVariable("options_visible", True), Play("sound", "sfx/paperclose.ogg")
     add "gui/options/audio.png"
 
     vbox:
@@ -61,7 +61,7 @@ screen pref_video:
     modal True
     tag pref
     style_prefix "fileblu"
-    imagebutton idle "gui/back.png" action Hide("pref_video", transition=easeoutbottom), SetVariable("options_visible", True)
+    imagebutton idle "gui/back.png" action Hide("pref_video", transition=easeoutbottom), SetVariable("options_visible", True), Play("sound", "sfx/paperclose.ogg")
     add "gui/options/video.png"
 
     hbox:
@@ -120,7 +120,7 @@ screen pref_other:
     modal True
     tag pref
     style_prefix "fileblu"
-    imagebutton idle "gui/back.png" action Hide("pref_other", transition=easeoutbottom), SetVariable("options_visible", True)
+    imagebutton idle "gui/back.png" action Hide("pref_other", transition=easeoutbottom), SetVariable("options_visible", True), Play("sound", "sfx/paperclose.ogg")
     add "gui/options/other.png"
 
     hbox:
@@ -156,4 +156,15 @@ screen deletenotif():
 
 # imagebutton for options on mm
 screen pref_open():
-    imagebutton idle "gui/optionsopen.png" action Show("pref_audio", transition=easeinbottom), SetVariable("options_visible", False) xpos 1010 ypos 980
+    imagebutton idle "gui/optionsopen.png" action Show("pausemenu", transition=easeinbottom) xpos 1010 ypos 980
+
+screen pausemenu():
+    modal True
+    $ config.rollback_enabled = False
+    dismiss action Hide("pausemenu", transition=easeoutbottom), SetVariable("config.rollback_enabled", True)
+    add "gui/pause/pause_idle.png"
+
+    imagebutton auto "gui/pause/%s_pause_sl.png" action Show("file_slots", transition=easeinbottom), Play("sound", "sfx/paperopen3.ogg") focus_mask True
+    imagebutton auto "gui/pause/%s_pause_options.png" action Show("pref_audio", transition=easeinbottom), Play("sound", "sfx/paperopen.ogg2") focus_mask True
+    imagebutton auto "gui/pause/%s_pause_mm.png" action MainMenu(confirm=True) focus_mask True
+    imagebutton auto "gui/pause/%s_pause_quit.png" action Quit(confirm=True) focus_mask True

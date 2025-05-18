@@ -10,9 +10,9 @@ label day7end:
 
     $ renpy.pause(1.0)
 
-    jump day8beg
+    jump day8
 
-label day8beg:
+label day8:
     n "Before you know it, your eyes are getting heavy."
     n "For a job with not a lot to do, there sure are a lot of emails to respond to..."
 
@@ -157,7 +157,6 @@ label p_krisday8positive:
     k "I knew you would."
     show k
     k "But, uh... yes. Everything is back to normal. Perfect, even. Now that you're here."
-
     show e b annoy at bounce
     e "Kris... watch yourself."
     hide e b 
@@ -510,3 +509,434 @@ label aspenday8:
 
     scene aspentemproom with fade
     n "You enter the greenhouse once more. Nothing seems out of the ordinary."
+    n "Aspen is turned away from you, watering in the back left corner."
+    mc "Aspen?"
+
+    n "He turns around."
+
+    if positive["Aspen"] == 0:
+        jump p_aspenday8
+    if positive["Aspen"] == -1:
+        jump n_aspenday8
+
+label p_aspenday8:
+    show a laugh with easeinright
+    a "Doctor! Come over here, please."
+
+    n "You walk over to the back corner and stand next to him."
+
+    show a look
+    a "Check it out - crysanthemums!"
+    a "{i}Chrysanthemum × morifolium.{/i} Or, y'know, just... chrysanthemums. Florist's daisy."
+
+    mc "Oh my."
+
+    show a
+    a "They're testing micropropogation on them right now... thankfully, a pretty harmless procedure."
+    a "So they're doing really good at the moment."
+
+    show a look
+    a "They {i}should{/i} have bloomed earlier, but things get weird underground."
+    a "I'm not sure how half of them still bloom at the right time of year anymore."
+
+    show a laugh
+    a "Regardless - aren't they beautiful?"
+
+    menu:
+        extend ""
+        "Almost as beautiful as you.":
+            $ romance_points["Aspen"] += 3
+            $ priority["Aspen"] += 1
+            jump p_aspenday8positive
+        "They really are very pretty.":
+            $ romance_points["Aspen"] += 2
+            $ priority["Aspen"] -= 1
+            jump p_aspenday8neutral
+
+label p_aspenday8positive:
+    show a look
+    a "O-Oh, I... um, uh..."
+    a "Ahem. Uh..."
+    a "Thank you, Doctor, I uh..."
+    a "Don't know what to say to that."
+    a "You're... quite beautiful yourself."
+
+    show a laugh
+    a "Anyways! Um, everything's working fine in here right now."
+
+    mc "Sprinkler isn't malfunctioning at all? Moss staying far away from your internal mechanisms?"
+
+    show a
+    a "Yep! All of that!"
+
+    show a look
+    a "So you should, uh... get going. I think I need to..."
+    a "...go dunk myself in the aqueduct."
+
+    hide a with easeoutright
+    n "You laugh and leave the greenhouse behind."
+    jump ccday8
+
+label p_aspenday8neutral:
+    show a
+    a "Anyways, that's what I wanted to show you. They just bloomed yesterday!"
+    a "Everything else is working fine. Nothing to report, no concerns."
+    show a laugh
+    a "It seems most of the specimens have recovered from that brief power loss a few days ago, so that's good!"
+    
+    mc "Glad to hear."
+
+    show a
+    a "Anyways, you should probably be on your way, Doctor. Miss Esther is waiting for you."
+
+    mc "Ah, yes. I'll be going now."
+
+    a "See you tomorrow!"
+
+    n "You say your goodbyes to Aspen and leave the greenhouse behind."
+
+    jump ccday8
+
+label n_aspenday8:
+    show a with easeinright
+    a "Oh, Doctor. Welcome back."
+    a "Here for my check-in, right?"
+
+    mc "Yes, that's correct."
+
+    a "Well, everything's proceeding as normal. I don't have any complaints."
+    a "We are in a delicate testing cycle right now though, so... if you could limit your time here, that would be great."
+
+    mc "I just need to make sure you're not malfunctioning in any way."
+    mc "When I started, I was told your sprinkler can cause issues, so..."
+
+    show a look
+    a "I did already say I didn't have any complaints, Doctor."
+    a "If there was something wrong with my sprinkler I would have said it then."
+
+    mc "Ah. Yes."
+    mc "Uh... thank you, Aspen. I'll be going now."
+
+    show a
+    a "Thank you, Doctor. I'll see you tomorrow."
+
+    n "You shake your head and leave the greenhouse behind."
+
+    jump ccday8
+
+label ccday8:
+    scene temphall with fade
+    show e with easeinright
+    n "Miss Esther is waiting for you outside."
+
+    e "Hello again, Doctor. Hope everything went well in there!"
+    e "Let's be on our way back down to CC, now."
+
+    show e annoy
+    e "I swear..."
+    e "Sometimes it feels like the trip from the main section to this upper part takes up half our shift..."
+
+    scene temphall with fade
+    n "You don't run into anyone on your way to CC's room."
+    show e with easeinright
+    n "Miss Esther seems very happy about that."
+    e "Here we are now. No noises inside the room today..."
+    e "Let's go in."
+
+    scene cctemproom with fade
+    n "You enter into CC's room. He's staring out the window beside him."
+    n "You don't know what he's looking at, considering all you can see outside it is a blank white void."
+
+    show e with easeinright
+    e "Good afternoon, CC. How has your day been?"
+
+    hide e with easeoutright
+    show c with easeinright
+    c "Good, all things considered."
+    c "The usual."
+    show c look
+    c "If you were worried I was getting better, Miss Esther..."
+    show c
+    c "No need to anymore. I feel worse than ever."
+
+    show e b at bounce
+    e "Oh, CC..."
+    hide e b
+
+    if positive["CC"] == 0:
+        jump p_ccday8
+    if positive["CC"] == -1:
+        jump n_ccday8
+    
+label p_ccday8:
+    show c look
+    c "Oh, and Doctor. Good to see you again."
+    show c
+    c "I hope you do not find my pesimissm off-putting."
+    c "As you're well aware, it's difficult to be positive sometimes."
+
+    mc "I know. I understand."
+
+    show c look
+    c "Seeing your face always brightens my day, though."
+
+    mc "Is there anything you need? Anything I can help with?"
+
+    show c close
+    c "Not that I can think of, no. I always appreciate your concern, though."
+    show c
+    c "You make me feel like I'm not just an experiment anymore."
+
+    menu:
+        extend ""
+        "You've always been more than that.":
+            $ romance_points["CC"] += 3
+            $ priority["CC"] += 1
+            jump p_ccday8positive
+        "I'm happy to help, CC. You deserve better.":
+            $ romance_points["CC"] += 2
+            $ priority["CC"] -= 1
+            jump p_ccday8neutral
+
+label p_ccday8positive:
+    show c look
+    c "I... oh."
+    c "Doctor, you're... too kind to me, haha."
+    show c close
+    c "Thank you."
+    c "You... should be going, now. More check-ins to do, yes?"
+    show e b at bounce
+    e "Thank you, CC."
+    hide e b
+    show c
+    c "Doctor... please come and see me tomorrow."
+
+    mc "I will."
+
+    n "You check CC off your list and leave the room with Miss Esther."
+
+    jump robday8
+
+label p_ccday8neutral:
+    show c
+    c "Haha. Thank you, Doctor."
+    show c close
+    c "Even if you're only here for one more week, I will remember your kindness."
+    show c
+    c "You should go, now. I think I need rest."
+
+    mc "Yes. Of course. Have a good day, CC."
+
+    show c close
+    c "Thank you."
+
+    n "You check CC off your list and leave the room with Miss Esther."
+
+    jump robday8
+
+label n_ccday8:
+    show c
+    c "Oh... Doctor. My apologies, I didn't see you there."
+    c "I'm assuming you two have come for my check-up."
+
+    mc "Yes, that's correct."
+
+    c "Well, as I just mentioned, I'm still sick. Very much so."
+    show c close
+    c "No matter how much I rest, it doesn't get any better..."
+    show c
+    c "Of course, I know it won't, but..."
+
+    show e b at bounce
+    e "I'm sorry, CC."
+    hide e b 
+
+    c "It's alright, Miss Esther. But you two should be going. I'm sure you have more to attend to."
+
+    mc "Yes. Thank you, CC."
+
+    n "You check CC off your list and leave the room with Miss Esther."
+
+    jump robday8
+
+label robday8:
+    scene temphall with fade
+    show e annoy with easeinright
+    n "Miss Esther is quiet on the way to the gym."
+    n "Her mood seems to flip on a dime - incredibly happy and energetic at one point, solemn and quiet the next."
+    n "It makes her hard to read."
+    n "You approach the gym door without any interruptions."
+
+    scene robtemproom with fade
+    show r with easeinright
+    if positive["Rob"] == 0:
+        jump p_robday8
+    if positive["Rob"] == -1:
+        jump n_robday8
+
+label p_robday8:
+    r "Doc! Essie! How's it hanging?"
+    r "Good to see you both alive."
+
+    show e b annoy at bounce
+    e "Why wouldn't we be alive?"
+    hide e b 
+
+    show r angry
+    r "Ah, you never know what could happen, yeah?"
+    show r
+    r "Can't ever be too careful!"
+
+    mc "Nice to see you again, Rob. Everything's alright in here?"
+
+    r "Yep! All good, as per -"
+    show r yell
+    r "ARE YOU KIDDING ME? WHY WOULD YOU DO THAT?! DUMBASS!!"
+    show r
+    r "...as per usual, yeah."
+
+    show e b annoy at bounce
+    e "I really wish you'd stop yelling so much, Rob."
+
+    show r angry
+    r "Agh, sorry, Essie."
+
+    show e b at bounce
+    e "And stop calling me Essie. That's {i}Miss Esther{/i} to you."
+    hide e b
+
+    show r
+    r "Habits! What can ya do, yeah?"
+    r "Anyway, Doc, it's all good."
+
+    mc "Oh - Heath asked me to tell you to turn your TV down."
+
+    show r angry
+    r "She can hear it from all the way over there?"
+    r "Yikes. She must hate me, haha."
+
+    show r close
+    r "Ah, I gotcha. I'll turn it down. My bad."
+
+    menu:
+        extend ""
+        "Thank you, Rob.":
+            $ romance_points["Rob"] += 2
+            $ priority["Rob"] -= 1
+            jump p_robday8neutral
+        "You're a good man. Thank you.":
+            $ romance_points["Rob"] += 3
+            $ priority["Rob"] += 1
+            jump p_robday8positive
+
+label p_robday8neutral:
+    show r
+    r "'Course, Doc."
+    r "Now you should prolly -"
+    show r yell
+    r "GO! GO!! COME ON! WHAT THE HELL, JACOB?"
+    show r angry
+    r "- get goin'. S'almost four, yeah?"
+
+    mc "Ah yeah, you're right. Thanks again, Rob."
+
+    show r
+    r "Yeah, s'no problem. See ya tomorrow!"
+    
+    n "You finish off your checklist and head back towards the office."
+
+    jump day8end
+
+label p_robday8positive:
+    show r angry
+    r "Ah, uh, thank you, Doc. Kind of you to say that."
+    show r
+    r "Even though I ain't really a man at all, but..."
+    r "I'm pickin' up what you're puttin' down."
+
+    show e b annoy at bounce
+    e "Eugh."
+    hide e b
+
+    r "Now you should prolly -"
+    show r yell
+    r "GO! GO!! COME ON! WHAT THE HELL, JACOB?"
+    show r angry
+    r "- get goin'. S'almost four, yeah?"
+
+    mc "Ah yeah, you're right. Thanks again, Rob."
+
+    show r
+    r "Anytime, Doc. Always willing to do ya some good."
+    r "If there's anything else I can do for you..."
+
+    show r angry
+    r "...you just let me know."
+
+    mc "Will do."
+
+    show r
+    r "See ya tomorrow!"
+
+    n "You finish off your checklist and head back towards the office."
+
+    jump day8end
+
+label n_robday8:
+    r "Essie! And you brought the Doc with you."
+
+    mc "Just here for the regular routine checkup."
+
+    show r angry
+    r "Ah, yeah. Why else would you be here?"
+    show r close
+    r "Not like you care 'bout ol' Rob, anyhow."
+
+    show r
+    show e b at bounce
+    e "Now, Rob, let's be professional, here."
+    hide e b 
+
+    r "Kinda hard when I'm not treated with respect, Essie."
+
+    show e b annoy at bounce
+    e "To be entirely fair, you don't show me much respect, either."
+    hide e b 
+
+    show r angry
+    r "Got me there."
+    show r
+    r "Anyway. Everything's runnin' fine, so you don't gotta put any little notes on your clipboard there."
+
+    mc "Oh - Heath did ask me to tell you to turn your TV down."
+
+    show r angry
+    r "She can hear it from all the way over there?"
+    r "Yikes. She must hate me, haha. That makes two of ya, I suppose."
+
+    show r close
+    r "I'll turn it down. She's got nothing to worry about."
+
+    mc "Thank you."
+
+    show r angry
+    r "Alrigh', now, you should get goin'. I don't wanna miss any of my game for this."
+
+    mc "We'll be leaving."
+
+    n "And with that, you finish off your checklist and head back to your office."
+
+    jump day8end
+
+label day8end:
+    scene office with fade
+    show e with easeinright
+    e "Well! Uneventful day, all things considered."
+    show e laugh
+    e "That's the way I like it! Haha."
+
+    show e
+    e "Now - expect the normal routine. You should check your email before heading to bed."
+    e "Thank you for your work today, Doctor. I will see you tomorrow."
+
+    jump e8first

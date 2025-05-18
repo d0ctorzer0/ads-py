@@ -10,7 +10,7 @@ define e = Character(_("Miss Esther"), color="#db35a9")
 define mc = Character(_("[name]"), color="#000000")
 define mccut = Character(_("[name]"), color="#ffffff")
 
-define k = Character(_("Kris"), color="#25a68c")
+define k = Character(_("Kris"), color="#25a68c" )
 
 define h = Character(_("Heath"), color="#7f30e0")
 

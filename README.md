@@ -17,8 +17,8 @@ checklist:
 ☑ night 6
 ☑ day 7
 ☑ night 7
-☐ day 8
-☐ night 8
+☑ day 8
+☑ night 8
 ☐ day 9
 ☐ night 9
 ☐ day 10
@@ -28,12 +28,10 @@ checklist:
 ☐ day 12
 ☐ night 12
 ☐ day 13
-☐ night 13
-☐ day 14
-☐ night 14
+☐ night 13 
 ☐ epilogues
 
 
 current roadmap:
 - add pause menu
-- finish day 8
+- finish day 9

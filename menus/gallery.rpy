@@ -22,7 +22,7 @@ style tabs_button_text:
 
 screen galleryk:
     style_prefix "file"
-    imagebutton idle "gui/back.png" action Hide("galleryk", transition=easeoutbottom)
+    imagebutton idle "gui/back.png" action Hide("galleryk", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
     if persistent.kgunlock == False:
         add "gui/gallery/krislocked.png"
@@ -47,7 +47,7 @@ screen galleryk:
 
 screen galleryh:
     style_prefix "file"
-    imagebutton idle "gui/back.png" action Hide("galleryh", transition=easeoutbottom)
+    imagebutton idle "gui/back.png" action Hide("galleryh", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
     if persistent.hgunlock == False:
         add "gui/gallery/heathlocked.png"
@@ -71,7 +71,7 @@ screen galleryh:
 
 screen gallerya:
     style_prefix "file"
-    imagebutton idle "gui/back.png" action Hide("gallerya", transition=easeoutbottom)
+    imagebutton idle "gui/back.png" action Hide("gallerya", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
     if persistent.agunlock == False:
         add "gui/gallery/aspenlocked.png"
@@ -96,7 +96,7 @@ screen gallerya:
 
 screen galleryc:
     style_prefix "file"
-    imagebutton idle "gui/back.png" action Hide("galleryc", transition=easeoutbottom)
+    imagebutton idle "gui/back.png" action Hide("galleryc", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
     if persistent.cgunlock == False:
         add "gui/gallery/cclocked.png"
@@ -121,7 +121,7 @@ screen galleryc:
 
 screen galleryr:
     style_prefix "file"
-    imagebutton idle "gui/back.png" action Hide("galleryr", transition=easeoutbottom)
+    imagebutton idle "gui/back.png" action Hide("galleryr", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
     if persistent.rgunlock == False:
         add "gui/gallery/roblocked.png"
@@ -146,7 +146,7 @@ screen galleryr:
 
 screen galleryg:
     style_prefix "file"
-    imagebutton idle "gui/back.png" action Hide("galleryg", transition=easeoutbottom)
+    imagebutton idle "gui/back.png" action Hide("galleryg", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
     if persistent.ggunlock == False:
         add "gui/gallery/gregorylocked.png"
@@ -169,7 +169,7 @@ screen galleryg:
 
 screen galleryu:
     style_prefix "file"
-    imagebutton idle "gui/back.png" action Hide("galleryu", transition=easeoutbottom)
+    imagebutton idle "gui/back.png" action Hide("galleryu", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
     if persistent.ugunlock == False:
         add "gui/gallery/unknownlocked.png"
