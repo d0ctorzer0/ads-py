@@ -207,7 +207,6 @@ label krisday2:
         
         "I agree. She's doing well for the company.":
             $ romance_points["Kris"] += 1
-            k "Better than the last one, for sure."
             jump krisday2cont
     
 label impresskris2:
@@ -232,7 +231,7 @@ label offendkris2:
     show k angry
     k "What do you mean by that?"
 
-    mc "The former CEO. His reckless spending put the company deep in the gutter."
+    mc "The former CEO. His reckless spending put the company deep in the gutter, from what I've been told."
 
     k "I'm aware, but I don't like your tone."
     k "Finances are not easy to manage."
@@ -449,12 +448,12 @@ label aspenday2:
     show a laugh
     a "Yep! Pretty as a picture. No issues with my sprinkler, either."
 
-    mc "How come I haven't seen any other humans in here? Yesterday, you said there were a few in the greenhouse staff."
+    mc "How come I haven't seen any other humans in here?"
 
     show a look
-    a "Yes, very true, I did say that. I forgot to mention, I guess, that they really only come in the evening to do their experiments."
+    a "They really only come in the evening to do their experiments."
     a "Sometimes when I come in the next morning, plants are missing or mutated or..."
-    a "...and then there was that one time with the potato battery..."
+    a "...then there was that one time with the potato battery..."
 
     menu:
         extend ""

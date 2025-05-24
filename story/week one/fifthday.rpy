@@ -185,7 +185,7 @@ label neutralkris5:
 label offendkris5:
     show k angry
     k "Sense? It makes no sense at all! In fact, the idea is frankly ridiculous."
-    k "I have been doing this for nearly 3 years now - almost half my lifespan!"
+    k "I have been doing this for nearly 5 years now - almost half my lifespan!"
     k "I will not tolerate this disgrace to my intelligence..."
 
     if romance_points["Kris"] <= 0:
@@ -193,16 +193,14 @@ label offendkris5:
         show k flirt
         k "You've been incredibly rude to me over the past week, Doctor..."
         k "I'm not sure what I did to upset you, but..."
+        show k
         k "I don't appreciate it in the slightest."
     elif romance_points["Kris"] >= 1:
         pass  
     jump krisday5cont
 
 label krisday5cont:
-    show k flirt
-    k "You should go now, Doctor. I know you have a schedule to keep." # this line needs to be recorded twice - once negatively and once positively
-
-    mc "Yes, you're very right."
+    mc "I... should be going now. I have a schedule to keep."
 
     hide k with easeoutright
     show e annoy with easeinright
@@ -400,7 +398,7 @@ label aspenday5:
     show a look
     a "When I got in this morning, things were completely dark... I had to quickly report the problem to Facilities so they could fix it."
 
-    n "Aspen is rushing from specimen to specimen as he speaks to you, frantically checking his work."
+    n "Aspen is rushing from specimen to specimen as they speak to you, frantically checking their work."
 
     a "I'm afraid it was too late. And now I'm just doing clean-up before night shift gets here..."
 
@@ -618,7 +616,7 @@ label ccanduresolve:
     c "I sympathize, sir, I really do, but this is technically a research area."
     show c
     c "You can't just go rolling into every room you see."
-    c "Aspen told me you've rammed into his greenhouse door before as well."
+    c "Aspen told me you've rammed into the greenhouse door before as well."
 
     show e b annoy at bounce
     e "Oh, so this is a {i}recurring{/i} problem?"

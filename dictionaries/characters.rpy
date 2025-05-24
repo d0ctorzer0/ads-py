@@ -1,4 +1,5 @@
 define config.auto_voice = "voice/{id}.ogg"
+define config.default_voice_volume = 2.0
 
 define begmc = Character(_("You"), color="#000000")
 

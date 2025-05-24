@@ -50,7 +50,7 @@ label satend_kris:
     n "Kris is sitting in the corner. It seems there's a separate area for cores."
     n "The entire section has management rails coming out from the walls."
     show k with easeinright
-    k "Ah, Doctor. Glad you could join me."
+    k "Ah, Doctor."
     show k flirt
     k "Please, sit. I've been looking forward to this."
     n "You take a seat. There's a plate and a set of silverware in front of you."
@@ -320,11 +320,11 @@ label satend_aspen:
     a "Which just means I'll need to take every opportunity I can to teach you!"
 
     show a
-    n "Under the light of the algae, Aspen begins rattling off about every botany fact he can think of."
+    n "Under the light of the algae, Aspen begins rattling off about every botany fact they can think of."
     show a laugh
-    n "It's a lot. How he knows so much, you'll never understand."
-    n "You suppose it's just the passion he has for the craft."
-    n "Before long, you've been here for over an hour, just listening to him."
+    n "It's a lot. How they know so much, you'll never understand."
+    n "You suppose it's just the passion they have for the craft."
+    n "Before long, you've been here for over an hour, just listening to them."
 
     show a look
     a "Oh, uh, Doctor, I'm incredibly sorry, it seems I've kept you here way too late."

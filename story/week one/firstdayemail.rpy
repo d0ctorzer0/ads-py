@@ -71,7 +71,9 @@ screen email3pt2():
 
 label e1first:
 
-    play music endofday
+    stop music1
+    stop music
+    play music nine
     scene blankemail
     with fade
     call screen emailday1 with dissolve

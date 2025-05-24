@@ -3,7 +3,7 @@ define config.layers = ['master', 'transient', 'screens', 'overlay', 'ontop']
 # GAME
 label start:
 
-    play music trak1
+    play music one
 
     if renpy.is_skipping() == False:
         show screen daytransition
@@ -145,7 +145,8 @@ label introcont:
 
 label krisday1:
     scene kristemproom
-    with pixellate
+    with fade
+    $ audio_crossFade(2, "music/two.ogg")
 
     if persistent.advcap == True:
         "{i}The scene fades to a conference room."
@@ -175,7 +176,7 @@ label krisday1:
     show k flirt
     n "Kris turns down to face you."
 
-    k "A new employee? Hmm. Interesting. Whatever happened to the other human?"
+    k "A new employee? Hmm. Interesting. A replacement already..."
 
     n "He scrutinizes you."
 
@@ -196,8 +197,8 @@ label krisday1:
     mc "I see here your job is to make sure Aperture stock doesn't get too low. Is that correct?"
 
     show k
-    k "Ahem. Yes, that's me. I'm constantly monitoring this board here."
-    k "I own fifteen Fortune-500 companies, you know. I'm an expert in all things business."
+    k "Yes, that's me. I'm constantly monitoring this board here."
+    k "I have stake in fifteen Fortune-500 companies, you know. I'm an expert in all things business."
 
     menu:
         extend ""
@@ -266,7 +267,7 @@ label krisday1cont:
         with easeoutright
         show k flirt
         with easeinright
-        k "I suppose I'll see you tomorrow, then."
+        k "I'll see you tomorrow, then."
 
         mc "I suppose so."
 
@@ -281,12 +282,9 @@ label heathday1:
     scene temphall
     with fade
 
-    n "As you proceed along your route, you notice you've never been down to recreation before. You rarely have time to, and once work is over, well, you've always just gone home."
-    n "The boring, plaster-white tile walls give way to gentler, kinder beige colors, and the floor transitions softly to carpet."
-
     show e
     with easeinright
-    e "We're nearing our next checkup. Her name is Heath. She's... a little eccentric, but nowhere near as rude as Kris."
+    e "Our next check-up is close. Her name is Heath. She's... a little eccentric, but nowhere near as rude as Kris."
 
     mc "Eccentric? How so?"
 
@@ -296,7 +294,8 @@ label heathday1:
     mc "Alright."
 
     scene heathtemproom with fade
-    show e
+    $ audio_crossFade(2, "music/three.ogg")
+    show e with easeinright
     n "Miss Esther guides you into the next room, which holds a small stage with a closed curtain. Behind the drapes, you can hear crashing, banging, and..."
 
     hide e
@@ -439,6 +438,7 @@ label unknownday1:
 
     scene temphall
     with fade
+    $ audio_crossFade(2, "music/eleven.ogg")
 
     show e
     with easeinright
@@ -490,6 +490,7 @@ label unknownday1:
     if persistent.advcap == True:
         "{i}A core comes into frame - several parts of his chassis are broken or cracked, and he's missing half a handlebar."
         "{i}His entire body is stained brownish-yellow. A lighter fluid sticker is stuck to his plates."
+    $ audio_crossFade(2, "music/eight.ogg")
     u "Uhh... huh?"
     $ persistent.ugunlock = True
 
@@ -587,6 +588,7 @@ label unknownday1cont:
 
     show e annoy
     with easeinright
+    $ audio_crossFade(2, "music/eleven.ogg")
     if unknownhumor == True:
         e "I have no idea why you even humoured such a... creature as {i}that.{/i}"
 
@@ -631,7 +633,8 @@ label unknownday1cont:
 label aspenday1:
 
     show aspentemproom
-    with pixellate
+    with fade
+    $ audio_crossFade(2, "music/four.ogg")
 
     n "You enter the greenhouse and are almost instantly blinded by the bright lights above you."
     n "You look around in shock. Hundreds of plants, including some specimens you've never seen, line the floors, the walls, and the ceiling."
@@ -643,7 +646,7 @@ label aspenday1:
 
     show a look with easeinright
     if persistent.advcap == True:
-        "{i}Aspen comes into frame. His entire chassis is covered in moss, and several vines wind their way around his handlebars. His optic is a bright green."
+        "{i}Aspen comes into frame. Their entire chassis is covered in moss, and several vines wind around their handlebars. Their optic is a bright green."
     a "Sorry, sorry, didn't see you there!"
     $ persistent.agunlock = True
 
@@ -651,7 +654,6 @@ label aspenday1:
 
     show a
     a "I'm assuming you're the temp for the maintenance position, yeah?"
-    a "Miss Esther can't come in here, but she briefed me on your arrival this morning."
 
     mc "Yes, that's me. I've just come to check up on you."
 
@@ -661,7 +663,7 @@ label aspenday1:
     a "The day it fails will be a horrible day for Aperture!"
 
     show a laugh
-    n "He laughs nervously."
+    n "They laugh nervously."
 
     menu:
         extend ""
@@ -688,16 +690,17 @@ label impressaspen:
     $ aspengoodbye = True
 
     show a look
-    a "Aha, yes, it is. I'm glad you can, uh, see that."
+    a "Ah, yes, i-it is. I'm glad you can see that."
 
     mc "Are you the only one maintaining these specimens?"
     
     show a
-    a "Oh, not at all. Well, kind of. I'm the only personality core working in here. We've got a few nanobots on the greenhouse staff."
+    a "Oh, not at all. Well, kind of. We've got a few nanobots on the greenhouse staff."
     a "And of course, the scientists. But I would say I definitely work the {i}most{/i}."
 
     mc "Wow, that's awesome."
 
+    show a look
     a "Haha. Thanks."
 
     jump aspenday1cont
@@ -720,17 +723,10 @@ label aspenday1cont:
     show a
     mc "I'll be leaving now. I'm sure Miss Esther is waiting for me."
 
-    if aspengoodbye == True:
-
-        a "Alright. Stay safe! I'll see you tomorrow."
-
-    if aspengoodbye == False:
-
-        show a look
-        a "Hmm. I'm sure."
+    a "Alright. I'll see you tomorrow."
 
     hide a with easeoutright
-    n "You check \"ASPEN (BOTANICAL CORE)\" off your list. Despite the rather unusual subsection he oversees, he seems content enough with it."
+    n "You check \"ASPEN (BOTANICAL CORE)\" off your list. Despite the rather unusual subsection they oversee, they seem content enough with it."
     n "As you exit the greenhouse, Miss Esther greets you."
 
     scene temphall with fade
@@ -762,7 +758,8 @@ label ccday1:
     e "...You'll see."
 
     scene cctemproom
-    with pixellate
+    with fade
+    $ audio_crossFade(2, "music/five.ogg")
 
     n "The two of you approach a room that is definitely not very well-maintained. The door looks like it's barely hanging on, and the window is so dusty you can't see through it."
     n "You open the door gently. Inside, hanging from the ceiling by a cut-off management rail, is a core."
@@ -809,6 +806,8 @@ label ccday1:
     n "The core laughs, then coughs harshly."
 
     show c look
+    stop music1
+    stop music
     c "I have cancer."
     $ persistent.cgunlock = True
 
@@ -817,6 +816,7 @@ label ccday1:
     mc "Sorry. What?"
 
     show c
+    play music five
     c "I know, it sounds ridiculous. A robot, having a human disease. But I do."
 
     mc "Isn't that impossible?"
@@ -936,7 +936,8 @@ label ccday1cont:
 label gregday1:
 
     scene temphall
-    with pixellate
+    with fade
+    $ audio_crossFade(2, "music/eleven.ogg")
 
     n "You and Miss Esther leave CC's room and start heading back towards your office."
 
@@ -957,6 +958,7 @@ label gregday1:
     n "Suddenly, a strangely-shaped figure comes barreling around the corner on a cart. It's headed straight towards you."
 # help he looks SO FUNNY IN GAME OMG
     show g aaa with easeinright
+    $ audio_crossFade(2, "music/seven.ogg")
     gu "Aah!! I'm so so sorry! Watch out watch out!!"
 
     n "You try to move in time, but it's too late. The cart crashes into you."
@@ -999,11 +1001,11 @@ label gregday1:
     jump robday1
 
 label robday1:
-
     show e
     n "Still left with more questions than answers, you follow Miss Esther."
 
-    scene robtemproom with pixellate
+    scene robtemproom with fade
+    $ audio_crossFade(2, "music/six.ogg")
     n "Eventually, you approach a door with \"GYM\" written on it. Not a sign of any other human employees, though."
     n "You open the door to see a core behind a desk, red pupil twitching as it watches a TV screen above it."
     if persistent.advcap == True:
@@ -1114,7 +1116,8 @@ label robday1cont:
 
     with easeoutright
     show temphall
-    with pixellate
+    $ audio_crossFade(2, "music/eleven.ogg")
+    with fade
     n "As you and Miss Esther proceed back to the offices, she conrgatulates you on a job well-done."
 
     show e
@@ -1132,7 +1135,7 @@ label robday1cont:
     e "It'll be the same thing tomorrow, same route, same check-ins."
     
     scene office
-    with pixellate
+    with fade
 
     show e
     with easeinright

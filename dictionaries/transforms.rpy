@@ -14,6 +14,15 @@ transform ab_tilt:
 transform save_tilt:
     matrixtransform RotateMatrix(0.0, 0.0, -14)
 
+transform cred_tilt:
+    rotate -8
+
+transform disc_tilt:
+    rotate 5
+
+transform delete_tilt:
+    matrixtransform RotateMatrix(0.0, 0.0, -90)
+
 transform daydiss:
     on hide:
         linear 0.5 alpha 0.0

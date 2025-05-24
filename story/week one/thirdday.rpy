@@ -144,7 +144,7 @@ label krisday3:
     show k with easeinright
 
     n "Kris turns to face you, smug as ever."
-    k "Well, well. Esther sent me a notification that you'd be overseeing my work today."
+    k "Well, well. Miss Esther sent me a notification that you'd be overseeing my work today."
 
     mc "Yes, that's right."
 
@@ -177,7 +177,7 @@ label krisday3good:
 
     show k
     k "Oh, that's right. Esther did say you were a... newer employee."
-    k "You must have not been here when Mr. Johnson was still at the head of the company."
+    k "You must not have been here when Mr. Johnson was still at the head of the company."
 
     mc "No, I wasn't. I was part of the first new hire wave about 9 months ago. But I've heard... stories about him."
 
@@ -189,8 +189,8 @@ label krisday3good:
     mc "Were you working during the time?"
 
     show k
-    k "In a way, yes. I was activated in 1979, but I was originally just a consultant. As Mr. Johnson lost more and more employees due to mandatory testing, he began replacing them with... us."
-    k "That's why there's so many personality cores around now. We're remnants."
+    k "In a way, yes. I was activated in 1979, but I was originally a consultant. As Mr. Johnson lost more and more employees due to mandatory testing, he began replacing them with... us."
+    k "That's why there's so many personality cores around now. We're... remnants."
 
     show k angry
     k "The man never stopped spending Aperture's money. And it led him to his death."
@@ -211,7 +211,6 @@ label krisday3good:
             "{color=#fff}{i}The scene fades to Kris looking down solemnly."
         k "{color=#fff}I'm stubborn for that reason."
         k "{color=#fff}My job is... simple. Perhaps not every personality core can read a stock market graph, but... it's a useless job."
-        k "{color=#fff}Thankless, too."
 
         mccut "{color=#fff}I think what you do is very important."
 
@@ -424,8 +423,8 @@ label heathday3bad:
 
 label aspenday3:
     show e
-    e "Good choice. He's a nice kid."
-    e "I'm sure he'll appreciate the company."
+    e "Good choice. They're a nice kid."
+    e "I'm sure they'll appreciate the company."
 
     e "I'll put it in my database that you'll be supervising Aspen today. Do you remember the way to the greenhouse?"
 
@@ -436,11 +435,11 @@ label aspenday3:
     scene aspentemproom
     with pixellate
 
-    n "You enter the greenhouse. Aspen is humming to himself while he waters the plants."
+    n "You enter the greenhouse. Aspen is humming quietly while they water the plants."
 
     mc "Aspen?"
 
-    n "He jumps and spins around rapidly."
+    n "They jump and spin around rapidly."
     
     show a look with easeinright
     a "Holy Aperture!! You scared me."
@@ -523,7 +522,7 @@ label aspenday3good:
 
         a "{color=#fff}Thank you. I know."
 
-        n "{color=#fff}You suddenly realize how close you are to Aspen. He realizes, too."
+        n "{color=#fff}You suddenly realize how close you are to Aspen. They realize, too."
 
         scene aspentemproom with fade
         show a look with easeinright
@@ -544,12 +543,12 @@ label aspenday3goodpt2:
     show a
     n "The rest of your shift is very informative."
     show a laugh
-    n "Aspen spends his time watering the plants and rattling off botanical facts."
+    n "Aspen spends their time watering the plants and rattling off botanical facts."
     n "You learn more about botany than you ever thought you'd care to."
 
     show a look
-    n "He seems to love his job."
-    n "You're happy for him."
+    n "They seem to love their job."
+    n "You're happy for them."
 
     show a
     n "Before you know it, it's 16:00 and time to go home."
@@ -561,8 +560,8 @@ label aspenday3bad:
     a "Oh... yeah. I suppose. All I do is water plants, after all."
 
     n "The rest of your shift is easy, yes, but boring."
-    n "You spend most of your time sitting there while Aspen focuses whole-heartedly on his job."
-    n "You have no idea what to say to him."
+    n "You spend most of your time sitting there while Aspen focuses whole-heartedly on their job."
+    n "You have no idea what to say to them."
     n "Perhaps you shouldn't have been so harsh."
 
     n "The time ticks by incredibly slowly. Eventually, it's 16:00, and it's time for you to go."

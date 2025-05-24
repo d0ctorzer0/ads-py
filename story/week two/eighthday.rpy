@@ -447,11 +447,11 @@ label gregday8:
         extend ""
         "That's impressive. Must take a lot of work.":
             $ romance_points["Greg"] += 6
-            $ priority["Greg"] += 1
+            $ priority["Greg"] += 2
             jump impressgreg8
         "That's all you do? Set up rooms?":
             $ romance_points["Greg"] -= 3
-            $ priority["Greg"] -= 1
+            $ priority["Greg"] -= 2
             jump offendgreg8
 
 label impressgreg8:
@@ -523,7 +523,7 @@ label p_aspenday8:
     show a laugh with easeinright
     a "Doctor! Come over here, please."
 
-    n "You walk over to the back corner and stand next to him."
+    n "You walk over to the back corner and stand next to them."
 
     show a look
     a "Check it out - crysanthemums!"

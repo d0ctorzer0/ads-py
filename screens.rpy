@@ -393,7 +393,7 @@ screen main_menu():
 
         elif main_menu and mm2 == True:
 
-            imagebutton idle "gui/mmbtn.png" action ShowMenu("about") at tilted2: #about
+            imagebutton idle "gui/mmbtn.png" action Show("aboutmenu", transition=easeinbottom), Play("sound", "sfx/paperopen2.ogg") at tilted2: #about
                 ypos 250
                 xpos -60
 

@@ -29,7 +29,7 @@ label boss:
     e "You're just like the last employee."
     show e laugh
     e "What is WITH you humans and forming such strong emotional attachments?"
-    e "To INANIMATE OBJECTS, mind you!"
+    e "To BARELY ANIMATE OBJECTS, mind you!"
     show e annoy
     e "Oh well. It's none of my concern."
     e "But you..."

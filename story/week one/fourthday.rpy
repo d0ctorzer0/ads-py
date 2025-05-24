@@ -102,7 +102,7 @@ label krisday4:
             jump impresskris4
         "(Let him think.)":
             $ romance_points["Kris"] += 1
-            k "I've reported it to finanical already, left a note that I believe it may have been a mistake, or something in Testing..."
+            k "I've reported it to finanical already, left a note that it may have been a mistake, or something in Testing..."
             k "I've... done everything I have to. I've done my job."
             k "I'm not sure why I'm still panicking."
 
@@ -157,11 +157,11 @@ label offendkris4:
 
     mc "No excuses. Pull yourself together."
 
-    k "Uh... yes, ma'am."
+    k "I - uh..."
 
     if wkd3:
         show k angry
-        k "I didn't know that... uh, side of you existed, haha..."
+        k "I didn't know that... side of you existed, haha..."
     
     jump krisday4cont
 
@@ -378,7 +378,7 @@ label aspenday4:
 
     mc "That's great."
 
-    n "You suddenly notice something a little concerning - the moss growing on Aspen is beginning to creep into his inner mechanisms."
+    n "You suddenly notice something a little concerning - the moss growing on Aspen is beginning to creep into their inner mechanisms."
     n "This could be a maintenance issue."
 
     mc "Aspen, that moss on you..."
@@ -580,7 +580,7 @@ label robday4:
     hide r with easeoutright
     show g with easeinright
 
-    g "I don't know what he's talking about. I {i}am{/i} only one personality core."
+    g "I-I-I don't know what he's talking about. I am {i}one{/i} personality core."
     show g look
     g "Haha... who goes around... pretending to be three cores in one?"
     show g aaa

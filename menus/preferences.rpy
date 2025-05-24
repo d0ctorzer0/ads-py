@@ -160,11 +160,77 @@ screen pref_open():
 
 screen pausemenu():
     modal True
-    $ config.rollback_enabled = False
-    dismiss action Hide("pausemenu", transition=easeoutbottom), SetVariable("config.rollback_enabled", True)
+    dismiss action Hide("pausemenu", transition=easeoutbottom)
     add "gui/pause/pause_idle.png"
 
     imagebutton auto "gui/pause/%s_pause_sl.png" action Show("file_slots", transition=easeinbottom), Play("sound", "sfx/paperopen3.ogg") focus_mask True
     imagebutton auto "gui/pause/%s_pause_options.png" action Show("pref_audio", transition=easeinbottom), Play("sound", "sfx/paperopen.ogg2") focus_mask True
     imagebutton auto "gui/pause/%s_pause_mm.png" action MainMenu(confirm=True) focus_mask True
     imagebutton auto "gui/pause/%s_pause_quit.png" action Quit(confirm=True) focus_mask True
+
+screen aboutmenu():
+    modal True
+    add "gui/aboutmenu.png"
+    imagebutton idle "gui/back.png" action Hide("aboutmenu", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
+    imagebutton:
+        idle "gui/aboutbutton.png"
+        action Show("aboutcredits", transition=dissolve)
+        xpos 500
+        ypos 600
+        at cred_tilt
+    imagebutton:
+        idle "gui/aboutbutton.png"
+        action Show("disclaimers", transition=dissolve)
+        xpos 700
+        ypos 760
+        at disc_tilt
+
+style about_text:
+    font "fonts/terminal-grotesque.ttf"
+    color "#fff"
+    size 40
+    xpos 30
+    spacing 20
+    ypos 170
+
+style about2_text:
+    font "fonts/terminal-grotesque.ttf"
+    color "#fff"
+    size 35
+    xpos 30
+    spacing 20
+    ypos 150
+    
+
+screen disclaimers():
+    style_prefix "about"
+    modal True
+    use behindoverlay
+    use behindoverlay
+    imagebutton idle "gui/back.png" action Hide("disclaimers", transition=dissolve)
+    #text "test" xpos 30 ypos 150
+    vbox:
+        text _("Version [config.version!t]\n")
+
+            ## gui.about is usually set in options.rpy.
+        if gui.about:
+            text "[gui.about!t]\n"
+
+        text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+
+        text _("\nThis program uses royalty-free sound effects from {a=https://www.freesound.org/}freesound.org{/a} under the Creative Commons License.")
+
+        text _("\nAperture Dating Simulator was made without the use of artificial intelligence. All writing, art, and music was made entirely by human hands and human code. All voice acting you hear was done by human voices. Fuck AI.\n\n")
+
+        text _("This project is a Portal series fan game. It is not commercially associated in any way with Valve or the Portal\nfranchise, and all material used from Portal falls under the copyright of the Valve Corporation. This project is,\nand will always be, free to play.")
+
+screen aboutcredits():
+    style_prefix "about2"
+    modal True
+    use behindoverlay
+    use behindoverlay
+    imagebutton idle "gui/back.png" action Hide("aboutcredits", transition=Dissolve(0.5))
+
+    text "Developer/Artist/Writer:\n{font=Arimo.ttf}{b}———————————{/b}{/font}\nAshleyanna Rivers\n\n\nBackground Artists:\n{font=Arimo.ttf}{b}—————————{/b}{/font}\nHazel Thompson\nDustin Oakley\nAlyx Shipman\n\n\nVoice Actors:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nAshleyanna Rivers {size=25}as Miss Esther{/size}\nTyler Banning {size=25}as Kris{/size}\nCassidy Hancock {size=25}as Heath{/size}\nIsaiah Phommavong {size=25}as Aspen{/size}\nTeetad Govitviwat {size=25}as CC{/size}\nBraeden Dugger {size=25}as Rob{/size}\nJohn Wharton {size=25}as Gregory{/size}\nJeremy R. Arrieta {size=25}as ???{/size}\nMason Dugger {size=25}as additional voices{/size}\nIzzy Woody {size=25}as additional voices{/size}"
+
+    text "Music:\n{font=Arimo.ttf}{b}————{/b}{/font}\nTaisiya Pushkar\nDylan Turner\nAshleyanna Rivers\n\n\nSpecial Thanks:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nPortal Mapping and Modding\nSalt Lake City Public Library\nHLMV++ developers" xpos 750

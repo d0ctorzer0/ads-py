@@ -29,7 +29,7 @@ label day7cont:
 
     scene mctemproom with fade
     n "You wake up to a knocking on your door."
-    stc "Disruption detected. Automatic wake-up sequence initiated."
+    stc "Disruption detected. Automatic waking sequence initiated."
     n "You groan and lean over. The clock reads 09:43."
     mc "Who could possibly..."
     n "The knocking continues."

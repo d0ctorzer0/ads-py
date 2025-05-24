@@ -25,12 +25,9 @@ screen file_slots():
     modal True
     add "gui/loadscreen.png"
 
-    if renpy.get_screen("say") == False:
-        imagebutton idle "gui/back.png" action Hide("file_slots", transition=easeoutbottom)
-    else:
-        dismiss action Hide("file_slots", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
+    dismiss action Hide("file_slots", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    vbox spacing 25:
+    vbox spacing -30:
 
         at transform:
             rotate -14
@@ -43,9 +40,16 @@ screen file_slots():
                 xysize (585, 330)
                 xpos 28
                 ypos 390
-                background "#59577d"
+                background None
                 action FileAction(slot)
 
                 add FileScreenshot(slot) xalign 0.5
 
-                key "save_delete" action FileDelete(slot) 
+                key "save_delete" action FileDelete(slot)
+            
+            vbox spacing 5:
+                imagebutton idle "gui/loadbutton2.png" action FileLoad(slot) xpos 580 ypos 80
+            
+            vbox spacing 5:
+                imagebutton idle "gui/savedelete.png" action FileDelete(slot) at delete_tilt xpos -125 ypos 165
+    

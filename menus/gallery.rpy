@@ -21,6 +21,7 @@ style tabs_button_text:
     size 35
 
 screen galleryk:
+    modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryk", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
@@ -46,6 +47,7 @@ screen galleryk:
         textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryk"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryh:
+    modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryh", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
@@ -70,6 +72,7 @@ screen galleryh:
         textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryh"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen gallerya:
+    modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("gallerya", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
@@ -95,6 +98,7 @@ screen gallerya:
         textbutton "xxx" xpos 1460 ypos -160 action Hide("gallerya"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryc:
+    modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryc", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
@@ -120,6 +124,7 @@ screen galleryc:
         textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryc"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryr:
+    modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryr", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
@@ -145,6 +150,7 @@ screen galleryr:
         textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryr"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryg:
+    modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryg", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
@@ -168,6 +174,7 @@ screen galleryg:
         textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryg"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryu:
+    modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryu", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
@@ -193,9 +200,11 @@ screen galleryu:
 
 
 screen fullcutscene1:
+    modal True
     add "characters/[selected_char]/[selected_char] cutscene 1.png"
     imagebutton idle "gui/back.png" action Hide("fullcutscene1", transition=gallswitch)
 
 screen fullcutscene2:
+    modal True
     add "characters/[selected_char]/[selected_char] cutscene 2.png"
     imagebutton idle "gui/back.png" action Hide("fullcutscene2", transition=gallswitch)
