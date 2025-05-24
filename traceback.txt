@@ -1,0 +1,40 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/story/week one/secondday.rpy", line 3, in script
+    play music trak1
+  File "renpy/common/000statements.rpy", line 124, in execute_play_music
+    renpy.music.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "game/story/week one/secondday.rpy", line 3, in <module>
+    play music trak1
+NameError: name 'trak1' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/story/week one/secondday.rpy", line 3, in script
+    play music trak1
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1987, in execute
+    self.call("execute")
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1966, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 124, in execute_play_music
+    renpy.music.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1215, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1208, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/story/week one/secondday.rpy", line 3, in <module>
+    play music trak1
+NameError: name 'trak1' is not defined
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.6.25022803
+Aperture Dating Simulator 1.0
+Sat May 24 04:49:14 2025
