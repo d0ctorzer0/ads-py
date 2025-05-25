@@ -1,40 +1,59 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/week one/secondday.rpy", line 3, in script
-    play music trak1
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "game/story/week one/secondday.rpy", line 3, in <module>
-    play music trak1
-NameError: name 'trak1' is not defined
+  File "game/menus/loadsave.rpy", line 1, in execute
+    screen save():
+  File "game/menus/loadsave.rpy", line 1, in execute
+    screen save():
+  File "game/menus/loadsave.rpy", line 5, in execute
+    use file_slots(_("Save"))
+TypeError: too many positional arguments
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/week one/secondday.rpy", line 3, in script
-    play music trak1
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1987, in execute
-    self.call("execute")
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1966, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1215, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1208, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/story/week one/secondday.rpy", line 3, in <module>
-    play music trak1
-NameError: name 'trak1' is not defined
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
+    $ ui.interact()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1184, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
+    $ ui.interact()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2748, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2748, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/menus/loadsave.rpy", line 1, in execute
+    screen save():
+  File "game/menus/loadsave.rpy", line 1, in execute
+    screen save():
+  File "game/menus/loadsave.rpy", line 5, in execute
+    use file_slots(_("Save"))
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\parameter.py", line 313, in apply
+    _raise(TypeError, 'too many positional arguments')
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\parameter.py", line 253, in _raise
+    raise exct(msg.format(*argz, **kwargz)) # from None
+TypeError: too many positional arguments
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
 Aperture Dating Simulator 1.0
-Sat May 24 04:49:14 2025
+Sat May 24 14:19:47 2025

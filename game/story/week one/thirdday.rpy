@@ -1,6 +1,6 @@
 label day3:
 
-    play music trak1
+    play music fourteen
     scene mctemproom
     with fade
 
@@ -25,8 +25,8 @@ label day3:
     n "You get up and go towards your office."
 
     scene office
-    with pixellate
-
+    with fade
+    $ audio_crossFade(2, "music/one.ogg")
     n "Miss Esther is here on time today, and greets you happily."
 
     show e with easeinright
@@ -135,7 +135,8 @@ label krisday3:
     e "Perfect. You should be on your way, then."
 
     scene kristemproom
-    with pixellate
+    with fade
+    $ audio_crossFade(2, "music/two.ogg")
 
     n "You enter the conference room to see Kris staring at the screen. You can't understand what's happening, but that's his job, not yours."
 
@@ -288,7 +289,8 @@ label heathday3:
     e "Perfect. On your way, then."
 
     scene heathtemproom
-    with pixellate
+    with fade
+    $ audio_crossFade(2, "music/three.ogg")
 
     n "You enter the empty break room cautiously. Heath is nowhere to be seen."
 
@@ -433,7 +435,8 @@ label aspenday3:
     e "Good. Off you go!"
 
     scene aspentemproom
-    with pixellate
+    with fade
+    $ audio_crossFade(2, "music/four.ogg")
 
     n "You enter the greenhouse. Aspen is humming quietly while they water the plants."
 
@@ -581,7 +584,8 @@ label ccday3:
     
 
     scene cctemproom
-    with pixellate
+    with fade
+    $ audio_crossFade(2, "music/five.ogg")
 
     n "You make your way into CC's \"hospital\" room. He is hanging in the same spot."
 
@@ -711,8 +715,9 @@ label robday3:
     show e annoy
     e "His full name. He prefers to go by Rob, though, so... don't tell him I told you."
 
-    scene robtemproom with pixellate
+    scene robtemproom with fade
     show r yell with easeinright
+    $ audio_crossFade(2, "music/two.ogg")
 
     r "GO! GO! GO!!! COME ON, PUT YOUR BACK INTO IT!"
 
@@ -798,7 +803,7 @@ label rday3good:
         mccut "I'm... trying."
 
         r "Don't overwork yourself."
-        scene robtemproom with pixellate
+        scene robtemproom with fade
         $ cutscenetextbox = False
         hide screen cuttextbox
         show r with easeinright
@@ -861,7 +866,7 @@ label rday3bad:
 # ==================
 label day3end:
     scene office
-    with pixellate
+    with fade
     show e with easeinright
     e "Welcome back, Doctor! How did your shift go?"
 

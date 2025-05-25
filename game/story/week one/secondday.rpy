@@ -1,6 +1,6 @@
 label day2:
 
-    play music trak1
+    play music fourteen
     scene mctemproom
     with fade
 
@@ -31,7 +31,8 @@ label day2:
 
 
     scene office
-    with pixellate
+    with fade
+    $ audio_crossFade(2, "music/eight.ogg")
 
     n "Miss Esther isn't here yet. You organize your files while you wait."
     n "Suddenly, there's a knock on the door."
@@ -146,6 +147,7 @@ label silence:
     jump estherday2
 
 label estherday2:
+    $ audio_crossFade(2, "music/one.ogg")
     n "Just as you sit back down, the door opens and Miss Esther comes barreling in extremely fast."
 
     show e shock
@@ -168,7 +170,7 @@ label estherday2:
 
 label krisday2:
     scene temphall
-    with pixellate
+    with fade
     show e
     with easeinright
     n "You and Miss Esther approach the conference room, just as yesterday."
@@ -178,10 +180,9 @@ label krisday2:
     show e annoy
     e "Epecially considering the majority of personality cores aren't... great."
 
-    scene kristemproom
-    with pixellate
-    show k
-    with easeinright
+    scene kristemproom with fade
+    $ audio_crossFade(2, "music/two.ogg")
+    show k with easeinright
     k "Why hello, and welcome back. I'm assuming your route went well yesterday if you're still here now."
 
     mc "I'd say so. Any changes in the stock today?"
@@ -270,7 +271,7 @@ label krisday2cont:
 
 label heathday2:
     scene temphall
-    with pixellate
+    with fade
 
     show e annoy with easeinright
     e "Heath likes to show a new \"trick\" every day, so don't be surprised if she tries to do one again."
@@ -285,7 +286,8 @@ label heathday2:
     e "\"Connection\"... it's just not my thing. I don't understand how you humans can do it."
 
     scene heathtemproom
-    with pixellate
+    with fade
+    $ audio_crossFade(2, "music/three.ogg")
 
     n "You enter the stage room to find Heath already waiting for you."
 
@@ -383,7 +385,8 @@ label heathday2cont:
     e "I hope that disgusting core we saw yesterday doesn't make another appearance..."
 
     scene temphall
-    with pixellate
+    $ audio_crossFade(2, "music/eleven.ogg")
+    with fade
 
     n "You and Miss Esther make your way over to the greenhouse."
     show e annoy with easeinright
@@ -435,7 +438,8 @@ label whatswrong:
 
 label aspenday2:
 
-    scene aspentemproom with pixellate
+    scene aspentemproom with fade
+    $ audio_crossFade(2, "music/four.ogg")
     n "Once again, you are taken aback by the sheer number of plants in the greenhouse."
 
     n "Aspen greets you with a smile."
@@ -477,7 +481,7 @@ label impressaspen2:
     mc "Well, you know what they say. If you love what you do, you'll never work a day in your life."
 
     show a laugh
-    a "Haha! No, I didn't know that. But now I do! And I love that!"
+    a "No, I didn't know that. But now I do! And I love that!"
 
     if romance_points["Aspen"] >= 4:
         jump aspenfunny
@@ -498,7 +502,7 @@ label offendaspen2:
     mc "Uh-huh."
 
     show a look
-    a "Pfft. You just don't get it. You're just like the last guy."
+    a "You just don't get it. You're just like the last guy."
 
     mc "I should be going."
 
@@ -512,9 +516,9 @@ label bertha:
     mc "She's a snake plant named Bertha."
 
     show a look
-    a "Snake plants... I think we had those a while back."
+    a "Snake plants? I think we had those a while back."
     show a
-    a "Oh my goodness, that's wonderful. How does she survive this far down? There's no sunlight down in the offices, is there?"
+    a "That's wonderful. How does she survive this far down? There's sunlight down in the offices?"
 
     mc "I think they pump it in from the surface, like how they do in here."
     a "That's amazing."
@@ -554,7 +558,7 @@ label aspenfunny:
 label aspenday2cont:
     n "You check Aspen off your list and exit the greenhouse."
 
-    scene temphall with pixellate
+    scene temphall with fade
     show e with easeinright
     e "I hope everything went well in there. We should get back on track towards CC, now."
 
@@ -574,7 +578,8 @@ label aspenday2cont:
     jump ccday2
 
 label ccday2:
-    scene cctemproom with pixellate
+    scene cctemproom with fade
+    $ audio_crossFade(2, "music/five.ogg")
     show c close with easeinright
 
     c "Welcome back, Doctor. How have your rounds been?"
@@ -645,7 +650,8 @@ label ccday2cont:
     jump robday2
 
 label robday2:
-    scene robtemproom with pixellate
+    scene robtemproom with fade
+    $ audio_crossFade(2, "music/six.ogg")
     show r with easeinright
     r "Welcome back, welcome back, doctor. Interested in a run on the treadmill today?"
 
@@ -731,7 +737,8 @@ label offendrob2:
 
 label robday2cont:
     n "You check Rob off your list once more to finish the day off."
-    scene temphall with pixellate
+    scene temphall with fade
+    $ audio_crossFade(2, "music/eleven.ogg")
     show e with easeinright
     n "As you leave the gym, Miss Esther turns to you as you begin walking back to your office."
 
