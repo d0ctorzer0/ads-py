@@ -106,7 +106,7 @@ screen cuttextbox:
     add "gui/cut_textbox.png"
 
 screen say(who, what):
-    
+
     window:
         id "window"
 

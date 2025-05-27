@@ -1,5 +1,4 @@
 define config.layers = ['master', 'transient', 'screens', 'overlay', 'ontop']
-define _game_menu_screen = "pausemenu"
 
 # GAME
 label start:

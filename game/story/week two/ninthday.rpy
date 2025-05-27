@@ -791,3 +791,91 @@ label p_robday9:
     show e b annoy at bounce
     e "Yes, yes... I'm aware."
     hide e b  
+
+    show r
+    r "Anyways, Doc. Real good you're here."
+    r "You're the highlight of my day. Other than the game, 'course."
+
+    mc "That's sweet. Everything working out alright in here?"
+
+    r "Yeah. All the machines are up n' running. I even had someone come in earlier today, which is always a pleasant surprise."
+
+    mc "I'm glad to hear that. Keeps you busy."
+
+    show e b at bounce
+    e "...and awake."
+    hide e b 
+
+    if romance_points["Rob"] >= 15:
+        show r angry
+        r "...Now, I'm not really s'posed to say this, but... before you go..."
+        r "You should totally come by during your one-on-one tomorrow."
+        r "I got a surprise for ya if you do."
+
+        show e b annoy at bounce
+        e "Watch yourself, Robert."
+        hide e b 
+        show r yell
+        r "DON'T CALL ME THAT!"
+        show r
+        r "Anyway. Yeah."
+    
+    hide r with easeoutright
+    show e annoy with easeinright
+    e "Doctor, are you ready to leave now? I am exhausted."
+
+    mc "Oh, yes, Miss Esther. Let's go."
+
+    menu:
+        extend ""
+        "I'll see you tomorrow, Rob. Stay safe.":
+            $ romance_points["Rob"] += 3
+            $ priority["Rob"] += 1
+        "I'll see you later, Rob. Have a good day.":
+            $ romance_points["Rob"] += 1
+            $ priority["Rob"] -= 1
+    
+    hide e with easeoutright
+    show r with easeinright
+    r "Will do."
+
+    n "You check Rob off your list once more and head back to your office."
+
+    jump day9end
+
+label n_robday9:
+    show r close
+    r "Would prefer if I didn't see ya at all, haha."
+
+    mc "Wow. Rude."
+
+    show r
+    r "Anyway. Everything's working fine. Things are normal, you've got nuthin' to worry about here."
+
+    show r yell
+    r "GO! GO! WHAT THE HELL ARE YOU - oh my GOD..."
+    show r 
+    r "Now I... I'm sure you have work to do -"
+    show r close
+    r "Oh no, it's the end of your shift, huh..."
+    show r angry
+    r "Well, an employee is bound to come in here any time now, so... haha..."
+    r "Y'all should prolly get going."
+
+    mc "Alright then."
+
+    n "You check Rob off your list once more and head back to your office."
+
+    jump day9end
+
+label day9end:
+    scene office with fade
+    show e with easeinright
+    e "Alright! Great job, blah blah blah, check your emails..."
+    show e annoy 
+    e "I'm going to bed. Or... you know what I mean."
+    e "I'll see you tomorrow, Doctor."
+
+    mc "Rest well, Miss Esther."
+
+    jump e9first

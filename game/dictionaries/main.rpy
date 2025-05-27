@@ -7,6 +7,9 @@ init python:
             renpy.unlink_save(slot)
         renpy.quit(relaunch=True)
 
+init:
+    $ config.keymap['help'].remove('K_F1')
+
 label splashscreen:
     $ renpy.movie_cutscene("arlogo_intro.webm")
     scene mm with dissolve
@@ -16,6 +19,7 @@ label splashscreen:
 # define config.mouse['default'] = [ ( "gui/cursor.png", 0, 0) ]
 
 define cutscenetextbox = False
+define _game_menu_screen = None
 
 #SPECIAL DEFAULTS
 default plant = False
@@ -86,6 +90,8 @@ default persistent.rgunlock = False
 default persistent.ggunlock = False
 default persistent.ugunlock = False
 
+default emailfromgregday9 = False
+default emailfromunknownday9 = False
 #define shorter_easein = MoveTransition(0.3, enter=offscreenright, enter_time_warp=_warper.easein)
 #define shorter_easeout = MoveTransition(0.3, exit=offscreenright, enter_time_warp=_warper.easein)
 
@@ -117,12 +123,10 @@ default priority = {
     "Greg" : 0 ,
     "Rob" : 0 ,
 }
-$ romance_highest_name = max(romance_points, key=romance_points.get)
 $ highest_priority = max(priority, key=priority.get)
 
 default romance_minimum_for_good_ending = 20
 default romance_minimum_for_true_ending = 30
 
-#ESTHER EVIL SETUP
 default esther_affection = 0
 default esther_affection_minimum = 15

@@ -34,7 +34,7 @@ screen email2_8():
         text "from: Aperture News Now"
     vbox:
         style_prefix "eml"
-        text "Investigations in the Testing department have revealed that the average\ntest subject CANNOT READ!\n\nThis unforseen illiteracy has lead many researchers to ask what the \naverage intelligence of Aperture employees actually is. We spoke to\nDr. Pierce in Neurology with this question.\n\n\"Aperture Laboratories is home to many intelligent scientists and\nresearchers,\" he said. \"The fact that our test subjects tend to be lower on\nthe intelligence scale does not speak to the IQ of our main employee base.\"\n\nRead more on this story {a=https://en.wikipedia.org/wiki/Intelligence_quotient#:~:text=Historically%2C%20many%20proponents%20of%20IQ%20testing%20have%20been%20eugenicists%20who%20used%20pseudoscience%20to%20push%20now%2Ddebunked%20views%20of%20racial%20hierarchy%20in%20order%20to%20justify%20segregation%20and%20oppose%20immigration.%5B25%5D%5B26}here.{/a}"
+        text "Investigations in the Testing department have revealed that the average\ntest subject CANNOT READ!\n\nThis unforseen illiteracy has lead many researchers to ask what the \naverage intelligence of Aperture employees actually is. We spoke to\nDr. Pierce in Neurology with this question.\n\n\"Aperture Laboratories is home to many intelligent scientists and\nresearchers,\" he said. \"The fact that our test subjects tend to be lower on\nthe intelligence scale does not speak to the IQ of our main employee base.\"\n\nRead more on this story {a=https://en.wikipedia.org/wiki/Explosion}here.{/a}"
     use affectionprogress
     vbox:
         style_prefix "emlback"
