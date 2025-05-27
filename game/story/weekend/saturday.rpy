@@ -1,6 +1,7 @@
 label day6:
     scene mctemproom
     with fade
+    play music fourteen
 
     n "You enter your room and change into your pajamas."
     n "You reflect back on the past week,"
@@ -17,6 +18,7 @@ label day6:
     
     n "You crash into your stasis chamber, ready for what the weekend could bring."
 
+    $ audio_crossFade(2, "music/one.ogg")
     scene black
     with fade
     $ daynum = "6"
@@ -45,8 +47,8 @@ label day6:
 
 label stay:
     d "Really? You're going to stay in?"
-    d "You're staying in today? There's a bunch of stuff we programmed waiting for you outside!"
-    d "Lots of dialogue and character interactions and fun stuff!"
+    d "You're staying in today? There's a bunch of stuff I programmed waiting for you outside!"
+    d "Lots of dialogue and character interactions and easter eggs and fun stuff!"
     d "You're sure you want to stay in?"
 
     menu:
@@ -60,13 +62,16 @@ label stay:
 
 label wander:
     if cores_visited < 4:
-        play music map
+        stop music
+        stop music1
+        play music ten
         scene black with dissolve
         $ renpy.pause(1.0, hard=True)
         scene mapbg with dissolve
         call screen aptmap with easeinbottom
     if cores_visited == 4:
-        play music trak1
+        stop music fadeout 1.0
+        stop music1 fadeout 1.0
         jump satend
 
 # 💻
@@ -76,7 +81,8 @@ label satoffice:
     $ persistent.places_visited += 1
     $ achievement.progress("ach_explore", persistent.places_visited)
     $ achievement.sync()
-    scene temphall with fade 
+    scene temphall with fade
+    $ audio_crossFade(1, "music/eleven.ogg") 
     n "You come up to the office door."
     n "You try to open it, but it's locked."
     n "Miss Esther must've locked it up behind her."
@@ -91,6 +97,7 @@ label satoffice:
 # 🥪
 
 label satcafe:
+    $ audio_crossFade(1, "music/eleven.ogg")
     $ v_satcafe = True
     $ persistent.places_visited += 1
     $ achievement.progress("ach_explore", persistent.places_visited)
@@ -115,7 +122,7 @@ label satcafe:
             jump wander
 
 label cafejello:
-    n "You pick up a paper cup and a spoon, scooping the werid gloop into it."
+    n "You pick up a paper cup and a spoon, scooping the weird gloop into it."
     n "You open your mouth and -"
     n "Oh. It's not that bad, actually."
     n "Kind of tastes like strawberries."
@@ -127,6 +134,7 @@ label cafejello:
 # 🦠
 
 label biology:
+    $ audio_crossFade(1, "music/eleven.ogg")
     $ v_biology = True
     $ persistent.places_visited += 1
     $ achievement.progress("ach_explore", persistent.places_visited)
@@ -143,6 +151,7 @@ label biology:
 
 
 label wheatleycameo:
+    $ audio_crossFade(1, "music/eleven.ogg")
     $ v_wheatley = True
     $ persistent.places_visited += 1
     $ achievement.progress("ach_explore", persistent.places_visited)
@@ -179,6 +188,7 @@ label wheatleycameo:
     jump wander
 
 label manufacture:
+    $ audio_crossFade(1, "music/eleven.ogg")
     $ v_manufacture = True
     $ persistent.places_visited += 1
     $ achievement.progress("ach_explore", persistent.places_visited)
@@ -193,6 +203,7 @@ label manufacture:
     jump wander
 
 label recovery:
+    $ audio_crossFade(1, "music/eleven.ogg")
     $ v_recovery = True
     $ persistent.places_visited += 1
     $ achievement.progress("ach_explore", persistent.places_visited)
@@ -218,6 +229,7 @@ label recovery:
 
 ## KRIS
 label satkris:
+    $ audio_crossFade(1, "music/two.ogg")
     python:
         v_kris = True
         cores_visited += 1
@@ -343,6 +355,7 @@ label satkrisneg:
 
 # HEATH
 label satheath:
+    $ audio_crossFade(1, "music/three.ogg")
     python:
         v_heath = True
         cores_visited += 1
@@ -465,6 +478,7 @@ label satheathneg:
     jump wander
 
 label satcc:
+    $ audio_crossFade(1, "music/five.ogg")
     python:
         v_cc = True
         cores_visited += 1
@@ -478,7 +492,7 @@ label satcc:
     n "Doesn't seem like there's anyone else in there."
     n "You open the door carefully."
 
-    scene cctemproom with pixellate
+    scene cctemproom with fade
     show c close with easeinright
     c "Mmm... hello?"
     show c
@@ -586,6 +600,7 @@ label satccneg:
     jump wander
 
 label satgreg:
+    $ audio_crossFade(1, "music/seven.ogg")
     python:
         v_greg = True
         cores_visited += 1
@@ -595,7 +610,7 @@ label satgreg:
     n "Gregory said he'd be in here."
     n "You enter."
 
-    scene templounge with pixellate
+    scene templounge with fade
     n "The place is vibrant. Soft jazz plays over speakers above you and there are many employees milling about."
     n "The room itself is warm and inviting, gentle wooden brown and deep red brick."
     n "It's nothing like the rest of Aperture. It feels like you've just stepped into a different world."
@@ -733,6 +748,7 @@ label satgreg_pos:
     jump wander
 
 label sataspen:
+    $ audio_crossFade(1, "music/four.ogg")
     python:
         v_aspen = True
         cores_visited += 1
@@ -860,6 +876,7 @@ label sataspenneg:
     jump wander
 
 label satrob:
+    $ audio_crossFade(1, "music/six.ogg")
     python:
         v_rob = True
         cores_visited += 1
@@ -977,6 +994,7 @@ label satrobneg:
     jump wander
 
 label satunknown:
+    $ audio_crossFade(1, "music/eight.ogg")
     python:
         v_unknown = True
         cores_visited += 1
@@ -1002,7 +1020,7 @@ label satunknownpos:
 
     u "Mmm. Come on in."
 
-    scene unknowntemproom with pixellate
+    scene unknowntemproom with fade
     show u with easeinright
     u "Welcome to my... humble little abode. Can I get you a drink?"
     n "He wasn't kidding - the closet is unusually large, about the size of a bathroom."

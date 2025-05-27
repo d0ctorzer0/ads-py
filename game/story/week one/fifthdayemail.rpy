@@ -63,14 +63,16 @@ screen email14():
         text "from: Miss Esther"
     vbox:
         style_prefix "eml"
-        text "Congratulations on making it halfway, Doctor!\n\nI'm sure you were briefed on the responsibilities of the maintenance\nemployee for Friday before they leave work, but just in case you forgot,\n make sure you submit your paperwork to Dr. McCoy in MM before EOD.\n\nThis includes all checks you've done throughout the week as well as any\nnotes you may have had. (Feel free to mention that gross core we keep\nencountering - maybe they'll do something about it.)\nCheers! See you next week!\n\nRegards,\nMiss Esther"
+        text "Congratulations on making it halfway, Doctor!\n\nI'm sure you were briefed on the responsibilities of the maintenance\nemployee for Friday before they leave work, but just in case you forgot,\nmake sure you submit your paperwork to Dr. McCoy in MM before EOD.\n\nThis includes all checks you've done throughout the week as well as any\nnotes you may have had. (Feel free to mention that gross core we keep\nencountering - maybe they'll do something about it.)\nCheers! See you next week!\n\nRegards,\nMiss Esther"
     use affectionprogress
     vbox:
         style_prefix "emlback"
         textbutton "<<< back" action Jump("e5")
     
 label e5first:
-    play music endofday
+    stop music
+    stop music1
+    play music nine
     scene blankemail
     with fade
     call screen emailday5 with dissolve

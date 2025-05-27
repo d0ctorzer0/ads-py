@@ -22,6 +22,7 @@ label satend:
             jump satend_mc
 
 label satend_mc:
+    play music fourteen
     scene mctemproom with fade
     n "You decide to just head in for the night."
     n "It was fun to explore the facility, though."
@@ -30,7 +31,7 @@ label satend_mc:
     jump day7
 
 label satend_kris:
-    
+    play music two
     scene templounge with fade
     n "You enter into the lounge and look around."
     if v_greg == False:
@@ -81,6 +82,7 @@ label satend_kris:
     scene kris cutscene 2 with fade
     show screen cuttextbox
     $ persistent.kc2 = True
+    k "{i}{color=#fff}The scene fades to Kris looking at you, lit by candlelight."
     k "{color=#fff}Mmm. Quite simple, Doctor."
     k "{color=#fff}You're incredibly intriguing. I don't get to know much about you in our day-to-day."
     k "{color=#fff}Plus, it's not like we have much time to chat throughout the week, given your busy schedule."
@@ -145,6 +147,7 @@ label satend_kris:
     jump day7
 
 label satend_heath:
+    play music three
     scene templounge with fade
     n "You enter into the lounge and look around."
     if v_greg == False:
@@ -253,6 +256,7 @@ label satend_heath:
     jump day7
 
 label satend_aspen:
+    play music four
     scene aspentemproom with fade
     n "You enter into the greenhouse, which much darker inside than usual."
     n "It's almost dead-silent - no hissing of sprinklers or whirring of Aspen's management rail."
@@ -343,6 +347,7 @@ label satend_aspen:
     jump day7
 
 label satend_rob:
+    play music six
     scene bioroom with fade
     n "You approach the door to the gym. It's mostly dark through the window, although you can see a faint light through the frosted glass."
     n "On the door is a sign that says \"CLOSED FOR REPAIRS\"."
@@ -415,6 +420,8 @@ label satend_rob:
     scene rob cutscene 2 with fade
     $ persistent.rc2 = True
     show screen cuttextbox
+    if advcap == True:
+        "{i}{color=#fff}The scene fades to a dark room lit by a TV screen. Rob turns back to look at you."
     r "{color=#fff}Now you're getting into it, Doc."
     r "{color=#fff}Never thought you'd be one to yell."
     mccut "{color=#fff}What can I say? You got me pumped up."
@@ -463,6 +470,7 @@ label satend_rob:
     jump day7
 
 label satend_cc:
+    play music five
     scene bioroom with fade
     n "You approach CC's door. It's quiet. You knock."
     mc "CC, it's me."

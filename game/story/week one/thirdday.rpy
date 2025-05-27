@@ -487,12 +487,12 @@ label aspenday3good:
     a "Let me think..."
 
     show a
-    a "I believe there's a total of about 70 of us. That's researchers, scientists, gardeners like me."
+    a "I believe there's a total of 70 of us? Uh... the researchers, scientists... gardeners like me."
 
     mc "That's not a lot."
 
     show a laugh
-    a "Haha, you're right - it's really not!"
+    a "You're right - it's really not!"
     show a
     a "I kind of like it though. It keeps us accountable. If even one of us falters, the whole team will suffer."
 
@@ -515,7 +515,7 @@ label aspenday3good:
         scene aspen cutscene 1 with fade
         $ persistent.ac1 = True
         if persistent.advcap == True:
-            "{i}The screen fades to a close-up shot of Aspen looking down at a fern. The scene is softly lit and is mostly dark."
+            "{i}{color=#fff}The screen fades to a close-up shot of Aspen looking down at a fern. The scene is softly lit and is mostly dark."
         a "{color=#fff}This is Penelope. She's an \"Adiantum\" - a maidenhair fern."
         a "{color=#fff}She's extremely tempermental. Doesn't listen to anyone but me."
         a "{color=#fff}I swear, if any other greenhouse employee tries to water her or test on her, she throws a fit."
@@ -648,14 +648,14 @@ label ccday3good:
         scene cc cutscene 1 with fade
         $ persistent.cc1 = True
         if persistent.advcap == True:
-            "{i}The scene fades to CC looking down solemnly. He's back-lit by his window. In the foreground, you can see the computers that monitor his health."
-        c "{color=#fff}Well... it's a little embarrassing."
-        c "{color=#fff}See, I have so many bio-simulators and pain receptors stuffed into my chassis, it's like I'm practically organic."
-        c "{color=#fff}And I've heard the scientists talk about these {i}wondrous{/i} things called \"waterfalls\"..."
-        c "{color=#fff}They must be beautiful. Water falling so freely, no... tubes to tether it down, management rails to confine it..."
+            "{i}{color=#fff}The scene fades to CC looking down solemnly. He's back-lit by his window. In the foreground, you can see the computers that monitor his health."
+        ccg "{color=#fff}Well... it's a little embarrassing."
+        ccg "{color=#fff}See, I have so many bio-simulators and pain receptors stuffed into my chassis, it's like I'm practically organic."
+        ccg "{color=#fff}And I've heard the scientists talk about these {i}wondrous{/i} things called \"waterfalls\"..."
+        ccg "{color=#fff}They must be beautiful. Water falling so freely, no... tubes to tether it down, management rails to confine it..."
 
-        c "{color=#fff}I think about it a lot."
-        c "{color=#fff}I would give anything to see one."
+        ccg "{color=#fff}I think about it a lot."
+        ccg "{color=#fff}I would give anything to see one."
 
         scene cctemproom with fade
         show c close with easeinright
@@ -717,7 +717,7 @@ label robday3:
 
     scene robtemproom with fade
     show r yell with easeinright
-    $ audio_crossFade(2, "music/two.ogg")
+    $ audio_crossFade(2, "music/six.ogg")
 
     r "GO! GO! GO!!! COME ON, PUT YOUR BACK INTO IT!"
 
@@ -788,7 +788,7 @@ label rday3good:
         scene rob cutscene 1 with fade
         $ persistent.rc1 = True
         if persistent.advcap == True:
-            "{i}The scene fades to Rob looking down at you, \"HANG IN THERE!\" poster and TV screen behind him."
+            "{i}{color=#fff}The scene fades to Rob looking down at you, \"HANG IN THERE!\" poster and TV screen behind him."
         r "Alright, hop on, let's get started."
 
         n "You begin your workout, and Rob coaches you on your form."
@@ -867,6 +867,7 @@ label rday3bad:
 label day3end:
     scene office
     with fade
+    $ audio_crossFade(2, "music/one.ogg")
     show e with easeinright
     e "Welcome back, Doctor! How did your shift go?"
 

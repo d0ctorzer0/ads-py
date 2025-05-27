@@ -1,4 +1,5 @@
 label day7:
+    $ audio_crossFade(1, "music/fourteen.ogg")
     scene mctemproom with fade
     n "You enter back into your room and lay down in your stasis chamber."
     n "You set the wakeup time for 11:00, and lay down."
@@ -16,6 +17,7 @@ label day6stayend:
     jump day7cont
 
 label day7cont:
+    # $ MainMenu(confirm=False)()
     scene black
     with fade
     $ daynum = "7"
@@ -72,7 +74,8 @@ label day7esther:
     show e laugh
     e "Excellent!"
     
-    scene temphall with pixellate
+    scene temphall with fade
+    $ audio_crossFade(2, "music/twelve.ogg")
     show e with easeinright
     n "Miss Esther guides you down the hall, out of residential."
     e "Most parts of recreation are closed on Sundays. I suppose it's to give {i}everyone{/i} a day off."
@@ -100,7 +103,7 @@ label day7esther:
     show e
     e "Great! We're almost there."
 
-    scene tempcafe with pixellate
+    scene tempcafe with fade
     n "You walk into the cafeteria. There's actually quite a few people in here."
     n "There's no other cores besides Miss Esther, although that's to be expected with the mostly human fare."
 
@@ -119,7 +122,7 @@ label day7esther:
             mc "I wonder where they get the eggs..."
             n "You decide not to question it further."
         "(A hefty serving of sausage.)":
-            n "You scoop some sausage onto your plate."
+            n "You scoop some sausages onto your plate."
             mc "Need my protein."
             mc "This is probably artificial meat, but..."
             n "You walk over to Miss Esther."
@@ -175,7 +178,7 @@ label day7esther:
     mc "Uh..."
     mc "Yes. I understand, Miss Esther."
 
-    play music trak1
+    play music twelve
     show e
     hide screen vignette with vigswitch
     e "Great! I'm glad we got that sorted out."
@@ -316,7 +319,7 @@ label day7alone:
     mc "Uh..."
     mc "Yes. I understand, Miss Esther."
 
-    play music trak1
+    play music fourteen
     show e
     hide screen vignette with vigswitch
     e "Great! I'm glad we got that sorted out."

@@ -154,6 +154,38 @@ screen deletenotif():
             action Hide("deletenotif")
             xpos 900 ypos 640
 
+screen mmnotif():
+    modal True
+    style_prefix "notif"
+    add "gui/options/black.png"
+    add "gui/overlay/mm_popup.png" yalign .5 xalign .5 zoom 1.2
+
+    hbox:
+        textbutton "Yes, I'm sure.":
+            text_style "notif" 
+            action MainMenu(confirm=False)
+            xpos 600 ypos 640
+        textbutton "No, go back.":
+            text_style "notif"
+            action Hide("mmnotif")
+            xpos 900 ypos 640
+
+screen quitnotif():
+    modal True
+    style_prefix "notif"
+    add "gui/options/black.png"
+    add "gui/overlay/quit_popup.png" yalign .5 xalign .5 zoom 1.2
+
+    hbox:
+        textbutton "Yes, I'm sure.":
+            text_style "notif" 
+            action Quit(confirm=False)
+            xpos 600 ypos 640
+        textbutton "No, go back.":
+            text_style "notif"
+            action Hide("quitnotif")
+            xpos 900 ypos 640
+
 # imagebutton for options on mm
 screen pref_open():
     imagebutton idle "gui/optionsopen.png" action Show("pausemenu", transition=easeinbottom) xpos 1010 ypos 980
@@ -165,8 +197,8 @@ screen pausemenu():
 
     imagebutton auto "gui/pause/%s_pause_sl.png" action Show("file_slots", transition=easeinbottom), Play("sound", "sfx/paperopen3.ogg") focus_mask True
     imagebutton auto "gui/pause/%s_pause_options.png" action Show("pref_audio", transition=easeinbottom), Play("sound", "sfx/paperopen.ogg2") focus_mask True
-    imagebutton auto "gui/pause/%s_pause_mm.png" action MainMenu(confirm=True) focus_mask True
-    imagebutton auto "gui/pause/%s_pause_quit.png" action Quit(confirm=True) focus_mask True
+    imagebutton auto "gui/pause/%s_pause_mm.png" action Play("sound", "sfx/notif.ogg"), Show("mmnotif") focus_mask True
+    imagebutton auto "gui/pause/%s_pause_quit.png" action Play("sound", "sfx/notif.ogg"), Show("quitnotif") focus_mask True
 
 screen aboutmenu():
     modal True

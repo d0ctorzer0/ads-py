@@ -61,8 +61,6 @@ screen aptmapup():
         if v_aspen == False:
             hotspot (790, 235, 470, 170) action Hide("aptmapup", transition=dissolve), Jump("sataspen")
 
-        hotspot (1024, 490, 464, 337) action Jump("management")
-
         hotspot (440, 862, 81, 94) action Hide("aptmapup"), Show("aptmap", transition=dissolve)
 
 screen aptmapdown():

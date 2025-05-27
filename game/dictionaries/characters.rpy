@@ -1,5 +1,4 @@
 define config.auto_voice = "voice/{id}.ogg"
-define config.default_voice_volume = 2.0
 
 define begmc = Character(_("You"), color="#000000")
 
@@ -21,11 +20,13 @@ define a = Character(_("Aspen"), color="#1c710b")
 
 define cu = Character(_("???"), color="#1140a4")
 define c = Character(_("Cancer Core"), color="#1140a4")
+define ccg = Character(("Cancer Core"), color="#1140a4", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 
 define gu = Character(_("???"), color="#c9ae16")
 define g = Character(_("Gregory"), color="#c9ae16")
 
 define r = Character(_("Rob"), color="#8a0d0d")
+define rcg = Character(("Rob"), color="#8a0d0d", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 
 define wu = Character(_("???"), color="#009aab")
 define w = Character(_("Wheatley"), color="#009aab")

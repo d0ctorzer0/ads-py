@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/menus/loadsave.rpy", line 50: 'spacing' is not a keyword argument or valid child of the imagebutton statement.
-    imagebutton idle "gui/loadbutton2.png" action FileLoad(slot) xpos 580 ypos 30 spacing 20
-                                                                                         ^
+File "game/screens.rpy", line 1096: 'call' is not a keyword argument or valid child of the screen statement.
+    call screen "quitnotif"
+        ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Tue May 20 11:56:52 2025
+Tue May 27 14:15:57 2025

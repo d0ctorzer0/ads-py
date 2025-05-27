@@ -1,4 +1,5 @@
 label day9:
+    play music fourteen
     n "You enter your chambers for what feels like the 8th time."
     n "...probably because this is the 8th time."
 
@@ -32,6 +33,7 @@ label day9:
     n "You get dressed and head out the door."
 
     scene office with fade
+    $ audio_crossFade(2, "music/one.ogg")
     show e annoy with easeinright
     e "Hello... Doctor."
 
@@ -49,6 +51,7 @@ label day9:
     jump krisday9
 
 label krisday9:
+    $ audio_crossFade(2, "music/two.ogg")
     scene kristemproom with fade
     n "It takes you no time at all to get to the conference room."
     show e annoy with easeinright
@@ -177,6 +180,7 @@ label unknownday9:
     e "I apologize for not being my... usual self, Doctor."
     e "I hope this shift goes by quickly."
     hide e with easeoutright
+    $ audio_crossFade(2, "music/eight.ogg")
     show u with easeinright
     u "Doc! And..."
     show u upset
@@ -254,9 +258,10 @@ label heathday9:
     show e shock
     e "Oh, we're here."
     show e annoy
-    e "I forgot how close Kris and Heath are to each other."
+    e "I forget how close Kris and Heath are to each other..."
 
     scene heathtemproom with fade
+    $ audio_crossFade(2, "music/three.ogg")
     show h with easeinright
     h "Doctor! I've got another trick for you today!"
     show h sad
@@ -387,6 +392,7 @@ label n_heathday9:
 
 label estherday9:
     scene temphall with fade
+    $ audio_crossFade(2, "music/eleven.ogg")
     show e annoy with easeinright
     e "You know, running along these management rails all day takes a lot more out of me than you might think..."
 
@@ -429,6 +435,7 @@ label aspenday9:
     n "You enter the greenhouse."
 
     scene aspentemproom with fade
+    $ audio_crossFade(2, "music/four.ogg")
 
     n "Everything seems to be normal from the outside."
     n "You're well aware by now, of course, that the only person that could tell something is off would be -"
@@ -560,6 +567,7 @@ label n_aspenday9:
 
 label estherday9pt2:
     scene temphall with fade
+    $ audio_crossFade(2, "music/eleven.ogg")
     show e annoy with easeinright
     e "Ah. Doctor. Welcome back."
     e "Let's be on our way to CC, now."
@@ -595,3 +603,191 @@ label ccday9:
     n "You open the door."
 
     scene cctemproom with fade
+    $ audio_crossFade(2, "music/five.ogg")
+    show c with easeinright
+
+    if positive["CC"] == 0:
+        jump p_ccday9
+    if positive["CC"] == -1:
+        jump n_ccday9
+    
+label p_ccday9:
+    c "Doctor... Miss Esther."
+
+    n "He sounds much... rougher than usual."
+
+    c "Forgive me for my brevity. I am..."
+    show c close
+    n "He coughs harshly."
+    show c
+    c "...not feeling my best."
+    show e b at bounce
+    e "CC... you sound terrible."
+    hide e B
+    show c close
+    c "Haha... yes, I'm aware."
+
+    menu:
+        extend ""
+        "I'm here for you, CC.":
+            $ romance_points["CC"] += 3
+            $ priority["CC"] += 1
+            jump p_ccday9positive
+        "I'm sorry it's gotten worse.":
+            $ romance_points["CC"] += 2
+            $ priority["CC"] -= 1
+            jump p_ccday9neutral
+
+
+label p_ccday9positive:
+    show c look
+    c "Mmm. Thank you, Doctor."
+    c "I know. I appreciate that."
+    show c close
+    c "Honestly, how I feel is up and down on the best of days..."
+    show c
+    c "I just hope it isn't worse tomorrow."
+
+    mc "As do I."
+
+    c "Everything's as it should be, though, Doctor."
+    show c close
+    c "You know... seeing you is one of the only things keeping me going right now."
+    show c look
+    c "..."
+    $ renpy.pause(1.0, hard=True)
+    show c
+    c "Forgive me. That came... out of nowhere."
+    c "I am sorry, Doctor."
+
+    mc "Don't be, CC. It's alright."
+
+    show e b at bounce
+    e "Doctor, we should be leaving - CC needs his rest."
+    hide e b 
+
+    mc "Ah. Yes. Very true."
+    mc "Please rest, CC."
+
+    c "I will."
+    if romance_points["CC"] >= 15:
+        show c look
+        c "Wait - Doctor. Before you leave."
+        c "I know it seems quite... boring in here, but..."
+        c "...if you could choose me for your supervising shift tomorrow, that would be wonderful."
+        c "I know it's not my place to ask, but..."
+
+        mc "We'll see."
+
+        show c
+        c "Thank you."
+    
+    n "You check CC off your list and quietly close the door behind you."
+
+    jump robday9
+
+label p_ccday9neutral:
+    show c
+    c "Ah, it's alright."
+    c "Nothing I haven't been through before."
+
+    mc "Still."
+
+    show c close
+    c "Everything's as it should be in here, though."
+    c "I'm worse than usual - that's the only change."
+    show c look
+    c "Should be good for your paperwork though, yes?"
+    show c
+
+    mc "I guess."
+
+    c "Thank you for your consideration, Doctor."
+    c "You should be on your way, though - I know you have a schedule to keep."
+
+    mc "Ah. Yes."
+    mc "Thank you, CC."
+
+    n "You check him off your list and gently close the door behind you."
+
+label n_ccday9:
+    c "Miss Esther... Doctor."
+
+    n "He sounds much... rougher than usual."
+
+    c "I am..."
+    show c close
+    n "He coughs harshly."
+    show c
+    c "...not feeling my best."
+    c "Apologies."
+    show e b at bounce
+    e "CC... are you okay?"
+    hide e B
+    show c close
+    c "Haha... no, but it's alright."
+    c "Honestly... I just need some rest at the moment."
+    hide c with easeoutright
+    show e annoy with easeinright
+    e "I understand, CC. Don't worry, we'll be brief."
+    e "I think we have all the information we need, anyways."
+    e "We'll be going."
+    hide e with easeoutright
+    show c with easeinright
+    c "Thank you, Miss Esther."
+    c "Have a good day."
+
+    n "You check CC off your list and leave the room."
+
+    jump robday9
+
+label robday9:
+    scene temphall with fade
+    $ audio_crossFade(2, "music/eleven.ogg")
+    show e annoy with easeinright
+    e "Oh thank god. Our route's almost done."
+    e "I am so ready to crash into my... charging... port."
+    show e laugh
+    e "...I guess that phrase doesn't really make sense if I don't have a bed, huh?"
+    show e annoy
+    e "Anyways. Let's be on our way. Quickly now."
+
+    hide e with easeoutright
+    n "Miss Esther advances rapidly on her rail while you try to keep up."
+    n "You make it to the gym in no time."
+    show e annoy with easeinright
+    e "I do hope I won't have a reason to yell at him today..."
+    
+    scene robtemproom with fade
+    $ audio_crossFade(2, "music/six.ogg")
+    show r yell with easeinright
+    r "Go go go go GO GO GO GO GO!! COME ON..."
+    n "You wait patiently."
+    r "GOAL!! YEAH, HAHAHA!"
+    show r
+    r "Oh, Doc. Didn't see you there."
+
+    if priority["Rob"] == 0:
+        jump p_robday9
+    if priority["Rob"] == -1:
+        jump n_robday9
+
+label p_robday9:
+    show r angry
+    r "Sorry, sorry, haha."
+    show r
+    r "Good to see ya, Doc. How's your shift been so far?"
+
+    mc "Not bad. Miss Esther's very tired today, so we've kind of been rushing through it."
+
+    r "Essie? Tired?"
+    show r angry
+    r "Was bound to happen eventually."
+
+    n "He turns to Miss Esther."
+    show r close
+    r "You work yourself too hard."
+
+    show e b annoy at bounce
+    e "Yes, yes... I'm aware."
+    hide e b  

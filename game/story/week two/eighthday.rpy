@@ -1,4 +1,5 @@
 label day7end:
+    $ audio_crossFade(2, "music/fourteen.ogg")
     scene mctemproom with fade
     n "You enter back into your room."
     n "You weren't out for very long - the clock reads 12:35."
@@ -36,6 +37,7 @@ label day8:
     n "Seems your body is getting used to the new sleep schedule - something it'll regret when you go back to work in Manufacturing."
     n "You sigh, change, grab your paperwork, and head out the door."
 
+    $ audio_crossFade(2, "music/one.ogg")
     scene office with fade
     n "You arrive just before shift-start. Miss Esther is waiting for you."
 
@@ -53,6 +55,7 @@ label day8:
     jump krisday8
 
 label krisday8:
+    $ audio_crossFade(2, "music/two.ogg")
     scene kristemproom with fade
     n "You enter into the conference room. It seems everything is back to normal."
     n "The screen is lit up once more, and Kris is back to watching it."
@@ -224,6 +227,8 @@ label heathday8:
     scene temphall with fade
     n "The short trip from the conference room to the break room is once again uneventful."
 
+    stop music fadeout 1.0
+    stop music1 fadeout 1.0
     scene heathtemproom with fade
     n "You enter into the breakroom to find a frightening sight."
 
@@ -241,6 +246,7 @@ label heathday8:
 
     h "I-I'm honestly not sure, Doctor, I..."
     show h laugh
+    play music three
     h "....I GOT YOU!"
 
     n "She suddenly whirls out of in-between the knives in an impressive feat of dexterity."
@@ -395,6 +401,7 @@ label n_heathday8:
     jump gregday8
 
 label gregday8:
+    $ audio_crossFade(2, "music/eleven.ogg")
     scene temphall with fade
     n "You begin heading upstairs towards the greenhouse."
     show e with easeinright
@@ -423,6 +430,7 @@ label gregday8:
     show e shock
     e "But I - wait a minute..."
     hide e with easeoutright
+    $ audio_crossFade(2, "music/seven.ogg")
     show g with easeinright
     g "Doctor! Miss Esther! Good to see you."
 
@@ -508,6 +516,7 @@ label aspenday8:
     e "Go on now, Doctor. I'll be waiting for you."
 
     scene aspentemproom with fade
+    $ audio_crossFade(2, "music/four.ogg")
     n "You enter the greenhouse once more. Nothing seems out of the ordinary."
     n "Aspen is turned away from you, watering in the back left corner."
     mc "Aspen?"
@@ -625,6 +634,7 @@ label n_aspenday8:
     jump ccday8
 
 label ccday8:
+    $ audio_crossFade(2, "music/eleven.ogg")
     scene temphall with fade
     show e with easeinright
     n "Miss Esther is waiting for you outside."
@@ -644,6 +654,7 @@ label ccday8:
     e "Let's go in."
 
     scene cctemproom with fade
+    $ audio_crossFade(2, "music/five.ogg")
     n "You enter into CC's room. He's staring out the window beside him."
     n "You don't know what he's looking at, considering all you can see outside it is a blank white void."
 
@@ -768,6 +779,7 @@ label robday8:
     n "You approach the gym door without any interruptions."
 
     scene robtemproom with fade
+    $ audio_crossFade(2, "music/six.ogg")
     show r with easeinright
     if positive["Rob"] == 0:
         jump p_robday8
@@ -929,6 +941,7 @@ label n_robday8:
     jump day8end
 
 label day8end:
+    $ audio_crossFade(2, "music/one.ogg")
     scene office with fade
     show e with easeinright
     e "Well! Uneventful day, all things considered."

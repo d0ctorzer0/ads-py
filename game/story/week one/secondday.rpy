@@ -178,7 +178,7 @@ label krisday2:
     e "I know maintenance can be a tedious job, but don't get discouraged."
     e "A lot of other employees in this department would kill to have a route like yours."
     show e annoy
-    e "Epecially considering the majority of personality cores aren't... great."
+    e "Especially considering the majority of personality cores aren't... great."
 
     scene kristemproom with fade
     $ audio_crossFade(2, "music/two.ogg")
@@ -428,7 +428,7 @@ label whatswrong:
 
     show e annoy
     e "...y'know, the best of the best."
-    e "Then the 70s hit. And the funds started running low."
+    e "Then the 70's hit. And the funds started running low."
     e "And..."
 
     show e
@@ -442,7 +442,7 @@ label aspenday2:
     $ audio_crossFade(2, "music/four.ogg")
     n "Once again, you are taken aback by the sheer number of plants in the greenhouse."
 
-    n "Aspen greets you with a smile."
+    n "Aspen greets you happily."
 
     show a with easeinright
     a "Welcome back, welcome back."

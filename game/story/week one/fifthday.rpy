@@ -1,5 +1,5 @@
 label day5:
-    play music trak1
+    play music fourteen
     scene mctemproom
     with fade
 
@@ -22,7 +22,7 @@ label day5:
 
     n "You wake with a start." 
     n "You think you were dreaming, but that's not possible in stasis."
-    n "You get up and check your wardrobe. What should you wear for casual friday?"
+    n "You get up and check your wardrobe. What should you wear for Casual Friday?"
 
     menu:
         extend ""
@@ -52,8 +52,8 @@ label day5:
             n "You decide to just wear your uniform as regular, sling the lab coat over your shoulders, and head out the door to work."
 
     scene office
-    with pixellate
-
+    with fade
+    $ audio_crossFade(2, "music/one.ogg")
     n "Miss Esther is waiting for you patiently when you enter."
 
     show e with easeinright
@@ -90,7 +90,8 @@ label day5:
     jump krisday5
 
 label krisday5:
-    scene kristemproom with pixellate
+    scene kristemproom with fade
+    $ audio_crossFade(2, "music/two.ogg")
 
     n "You enter the conference room to find things much calmer than yesterday."
     n "In fact, the screen that is usually moving so vibrantly and quickly is turned off."
@@ -212,7 +213,8 @@ label krisday5cont:
     jump heathday5
 
 label heathday5:
-    scene heathtemproom with pixellate
+    scene heathtemproom with fade
+    $ audio_crossFade(2, "music/three.ogg")
     
     n "You enter into the break room. Heath isn't in the doorway this time - instead, she's waiting patiently up on the stage."
 
@@ -343,12 +345,13 @@ label heathday5cont:
     show e annoy with easeinright
     e "I swear, as much as I like her, that girl gets on my nerves sometimes..."
 
-    mc "You check Heath off your checklist once more and head out of the break room."
+    n "You check Heath off your checklist once more and head out of the break room."
 
     jump aspenday5
 
 label aspenday5:
-    scene temphall with pixellate
+    scene temphall with fade
+    $ audio_crossFade(2, "music/eleven.ogg")
     show e with easeinright
     n "You begin to head up towards the greenhouse with Miss Esther."
 
@@ -380,7 +383,8 @@ label aspenday5:
 
     e "We're here now. Go on in."
 
-    scene aspentemproom with pixellate
+    scene aspentemproom with fade
+    $ audio_crossFade(2, "music/four.ogg")
 
     show a look with easeinright
 
@@ -476,9 +480,10 @@ label offendaspen5:
     jump ccday5
 
 label ccday5:
-    scene temphall with pixellate
+    scene temphall with fade
+    $ audio_crossFade(2, "music/eleven.ogg")
     show e with easeinright
-    e "Doctor, welcome back out. Let's head back down."
+    e "Doctor, welcome back. Let's head back down."
 
     n "You head toward the residential block with Miss Esther."
 
@@ -530,7 +535,8 @@ label ccday5:
 
     n "You do exactly that."
 
-    scene cctemproom with pixellate
+    scene cctemproom with fade
+    $ audio_crossFade(2, "music/eight.ogg")
 
     show u upset with easeinright
     u "I ain't doin' anything wrong, here, am I?"
@@ -678,6 +684,7 @@ label ccanduresolve:
 
 label ccday5cont:
     show c with easeinright
+    $ audio_crossFade(2, "music/five.ogg")
     c "Ahh. Thank you, Doctor."
     
     show e b at bounce
@@ -772,7 +779,7 @@ label neutralcc5:
 
 
 label robday5:
-    scene temphall with pixellate
+    scene temphall with fade
     n "As you approach the door to the gym, you notice a surprising lack of yelling from inside it."
 
     show e annoy with easeinright
@@ -782,7 +789,8 @@ label robday5:
 
     n "You open the door carefully."
 
-    scene robtemproom with pixellate
+    scene robtemproom with fade
+    $ audio_crossFade(2, "music/six.ogg")
     show r close with easeinright
     n "Rob is sound asleep at his desk."
 
@@ -950,8 +958,9 @@ label day5end:
     elif positive["Rob"] == -1:
         n "You end your day with a note by Rob's name - \"(sleeping)\". You head back towards your office."
     
-    scene office with pixellate
+    scene office with fade
     show e with easeinright
+    $ audio_crossFade(2, "music/one.ogg")
     e "Alright, Doctor, I believe that's all!"
     e "You may have some end-of-week emails to go through, though. Other than that..."
     e "I'll see you on Monday!"

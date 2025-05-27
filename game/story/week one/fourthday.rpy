@@ -1,5 +1,5 @@
 label day4:
-    play music trak1
+    play music fourteen
     scene mctemproom
     with fade
 
@@ -34,8 +34,8 @@ label day4:
 
     n "You wake up at 08:00 as usual, get dressed, and head out the door."
 
-    scene office with pixellate
-
+    scene office with fade
+    $ audio_crossFade(2, "music/one.ogg")
     n "Miss Esther greets you at the door."
 
     show e with easeinright
@@ -78,8 +78,8 @@ label day4:
 
 label krisday4:
 
-    scene kristemproom with pixellate
-
+    scene kristemproom with fade
+    $ audio_crossFade(2, "music/two.ogg")
     n "You enter the conference room to see Kris whizzing across his management rail, back and forth, rapidly."
     n "The screen behind him has a lot more red on it than usual."
 
@@ -103,6 +103,7 @@ label krisday4:
         "(Let him think.)":
             $ romance_points["Kris"] += 1
             k "I've reported it to finanical already, left a note that it may have been a mistake, or something in Testing..."
+            show k
             k "I've... done everything I have to. I've done my job."
             k "I'm not sure why I'm still panicking."
 
@@ -187,7 +188,8 @@ label krisday4cont:
     jump heathday4
 
 label heathday4:
-    scene heathtemproom with pixellate
+    $ audio_crossFade(2, "music/three.ogg")
+    scene heathtemproom with fade
 
     n "Before you can enter the break room, Heath stops you at the door."
 
@@ -304,7 +306,8 @@ label offendheath4:
 
 
 label estherday4:
-    scene temphall with pixellate
+    scene temphall with fade
+    $ audio_crossFade(2, "music/eleven.ogg")
 
     n "You and Miss Esther exit the break room and begin heading toward the greenhouse."
     n "You've been around the section enough now that Miss Esther doesn't have to lead you anymore."
@@ -352,7 +355,8 @@ label aspenday4:
     e "I'll wait out here as usual."
     e "Go ahead."
 
-    scene aspentemproom with pixellate
+    scene aspentemproom with fade
+    $ audio_crossFade(2, "music/four.ogg")
     show a laugh with easeinright
 
     a "Doctor! Good to see you."
@@ -426,7 +430,7 @@ label aspenday4cont:
     jump ccday4
 
 label ccday4:
-    scene temphall with pixellate
+    scene temphall with fade
     n "Miss Esther greets you outside the door."
 
     show e with easeinright
@@ -438,8 +442,8 @@ label ccday4:
     else:
         pass
 
-    scene cctemproom with pixellate
-
+    scene cctemproom with fade
+    $ audio_crossFade(2, "music/five.ogg")
     show e with easeinright
     e "CC! Love, it's time for your check-in."
     hide e with easeoutright
@@ -553,11 +557,12 @@ label ccday4cont:
     jump robday4
 
 label robday4:
-    scene temphall with pixellate
+    scene temphall with fade
     n "The gym isn't too far from CC's room, thankfully, and you make it there in no time."
     n "Miss Esther is strangely quiet. And she was so chipper this morning..."
 
-    scene robtemproom with pixellate
+    scene robtemproom with fade
+    $ audio_crossFade(2, "music/seven.ogg")
 
     show r with easeinright
     r "Doc! Essie! Welcome back. I'd like ya to meet my friend here, Greg."
@@ -643,6 +648,7 @@ label robday4cont:
     hide g with easeoutright
     n "Gregory zooms away, gone as quickly as he came."
 
+    $ audio_crossFade(2, "music/six.ogg")
     show r with easeinright
     r "He's an interesting guy. I like him."
     r "Reminds me of myself, in a way."
@@ -686,7 +692,7 @@ label robday4cont:
     jump day4end
 
 label day4end:
-    scene office with pixellate
+    scene office with fade
     show e with easeinright
     e "Good shift today, Doctor. Tomorrow's Casual Friday. Wear whatever you feel is appropriate."
     show e annoy

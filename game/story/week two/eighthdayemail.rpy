@@ -71,8 +71,9 @@ screen email1_8pt2():
         textbutton "<<< back" action Jump("e8")
 
 label e8first:
-
-    play music endofday
+    stop music
+    stop music1
+    play music nine
     scene blankemail
     with fade
     call screen emailday8 with dissolve

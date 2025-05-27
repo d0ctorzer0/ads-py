@@ -1,8 +1,9 @@
 define config.layers = ['master', 'transient', 'screens', 'overlay', 'ontop']
+define _game_menu_screen = "pausemenu"
 
 # GAME
 label start:
-
+    
     play music one
 
     if renpy.is_skipping() == False:
@@ -322,7 +323,8 @@ label heathday1:
     hide e annoy
     with easeoutright
 
-    h "Prepare yourself... for the great and amazing {i}{b}HEATH!{/i}{/b}"
+ 
+    h "Prepare yourself... for the great and amazing {k=1.5}{i}{b}HEATH!{/k}{/i}{/b}"
 
     show h
     with easeinright
@@ -335,7 +337,7 @@ label heathday1:
     $ persistent.hgunlock = True
 
     show h laugh
-    h "{i}{b}ME, OF COURSE!{/i}{/b}"
+    h "{k=1.5}{i}{b}ME, OF COURSE!{/k}{/i}{/b}"
 
     show h
     h "Are you ready for the most amazing trick you'll ever see in your feeble human existence?"
@@ -345,7 +347,7 @@ label heathday1:
     n "Suddenly, fire shoots up from the floor."
 
     show h laugh
-    h "{i}{b}BOOM!! HAHA!!{/i}{/b} I just summoned FIRE with my MIND!!"
+    h "{k=1.5}{i}{b}BOOM!! HAHA!!{/k}{/i}{/b} I just summoned FIRE with my MIND!!"
 
     menu:
         extend ""
