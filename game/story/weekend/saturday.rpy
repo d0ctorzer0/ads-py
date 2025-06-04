@@ -239,9 +239,9 @@ label satkris:
     mc "How are you, Kris?"
 
     show k angry with easeinright
-    if positive["Kris"] == 0 or 1:
+    if positive["Kris"] == 0:
         jump satkrispos
-    elif positive["Kris"] == -1:
+    else:
         jump satkrisneg
 
 label satkrispos:
@@ -378,9 +378,9 @@ label satheath:
     n "It doesn't take long before she bursts into the break room, out of breath."
     n "Or something like that, having no lungs."
 
-    if positive["Heath"] == 0 or 1:
+    if positive["Heath"] == 0:
         jump satheathpos
-    if positive["Heath"] == -1:
+    else:
         jump satheathneg
 
 label satheathpos:
@@ -485,7 +485,7 @@ label satcc:
     scene temphall with fade
     n "You make your way through the residential block, towards CC's room."
 
-    if positive["CC"] == 0 or 1:
+    if positive["CC"] == 0:
         n "You hope you're not disturbing him."
     
     n "Once you reach his door, you listen closely."
@@ -498,9 +498,9 @@ label satcc:
     show c
     mc "Sorry, CC, I didn't realize you were sleeping."
 
-    if positive["CC"] == 0 or 1:
+    if positive["CC"] == 0:
         jump satccpos
-    if positive["CC"] == -1:
+    else:
         jump satccneg
 
 label satccpos:
@@ -727,7 +727,7 @@ label satgreg_pos:
         scene templounge with fade
         hide screen cuttextbox
         $ cutscenetextbox = False
-    elif romance_points["Greg"] <= 7:
+    if romance_points["Greg"] <= 7:
         pass
     show g look at bounce
     n "Suddenly, Gregory lurches closer to you. You back up a bit."
@@ -768,9 +768,9 @@ label sataspen:
 
     mc "I just figured I'd stop by and make sure everything's okay in here now."
 
-    if positive["Aspen"] == 0 or 1:
+    if positive["Aspen"] == 0:
         jump sataspenpos
-    if positive["Aspen"] == -1:
+    else:
         jump sataspenneg
 
 label sataspenpos:
@@ -798,7 +798,7 @@ label sataspenpos:
         mc "I feel like Bertha is trying to tell me things sometimes."
         show a laugh
         a "See, I knew you'd get me."
-    elif plant == False:
+    if plant == False:
         pass
     show a look
     a "Say, uh, Doctor..."
@@ -888,9 +888,9 @@ label satrob:
 
     mc "Kind of. I also just wanted to check up on you."
 
-    if positive["Rob"] == 0 or 1:
+    if positive["Rob"] == 0:
         jump satrobpos
-    if positive["Rob"] == -1:
+    else:
         jump satrobneg
 
 label satrobpos:
@@ -929,7 +929,7 @@ label satrobpos:
 
 label satrobpos_pos:
     show r
-    r "Killer, man! Can't wait. It's gonna be great."
+    r "Killer! Can't wait. It's gonna be great."
     show r yell
     r "HELLO?? ARE YOU EVEN PAYING ATTENTION? WHERE'S YOUR DRIVE?!"
     show r
@@ -1005,9 +1005,9 @@ label satunknown:
     n "You knock."
     n "The door slides open and you-know-who greets you."
 
-    if positive["???"] == 0 or 1:
+    if positive["???"] == 0:
         jump satunknownpos
-    if positive["???"] == -1:
+    else:
         jump satunknownneg
 
 label satunknownpos:
@@ -1064,7 +1064,7 @@ label satunknownpos:
 
         mc "Thanks."
         n "You set the CCTV outside for now."
-    elif informed_about_canister == False:
+    if informed_about_canister == False:
         n "You look around the room again. The shelf catches your eye."
     
     mc "So... lots of lighter fluid, huh?"
@@ -1091,17 +1091,17 @@ label satunknownpos:
         show screen cuttextbox
         scene unknown cutscene 1 with fade
         $ persistent.uc1 = True
-        u "Well... yeah. Back when I was... cleaner, and I... remembered my name..."
-        u "I didn't use it at all..."
-        u "I... miss those days sometimes."        
-        u "I don't really even know who I am now. Or where I am half the time."
-        u "Hell, just yesterday I'd burst into that poor CC's room and I was such a nuisance..."
-        u "But it's hard."
+        u "{color=#fff}Well... yeah. Back when I was... cleaner, and I... remembered my name..."
+        u "{color=#fff}I didn't use it at all..."
+        u "{color=#fff}I... miss those days sometimes."        
+        u "{color=#fff}I don't really even know who I am now. Or where I am half the time."
+        u "{color=#fff}Hell, just yesterday I'd burst into that poor CC's room and I was such a nuisance..."
+        u "{color=#fff}But it's hard."
         scene unknowntemproom with fade
         show u with easeinright
         hide screen cuttextbox
         $ cutscenetextbox = False
-    elif romance_points["???"] <= 7:
+    if romance_points["???"] <= 7:
         show u upset
         u "I... can't remember. I know it wasn't always like this, but..."
         u "I can't think straight much anymore."
@@ -1127,7 +1127,7 @@ label satunknownpos:
     if informed_about_canister == True:
         n "The CCTV is waiting for you here - you almost forgot about it."
         n "You pick it up and take it with you."
-    elif informed_about_canister == False:
+    if informed_about_canister == False:
         pass
 
     jump wander

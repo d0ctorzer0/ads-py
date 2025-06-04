@@ -8,7 +8,7 @@ screen emailday9():
             if romance_highest_name == "Kris":
                 textbutton "    from: {color=#25a68c}Kris{/color}\n        Concerning tomorrow                                                                        " action Jump("ekrisconf")
             if romance_highest_name == "Heath":
-                textbutton "    from: {color=#7f30e0}Heath{/color}\n        A surprise for you!                                                                         " action Jump("eheathconf")
+                textbutton "    from: {color=#7f30e0}Heath{/color}\n        A surprise for you!                                                                       " action Jump("eheathconf")
             if romance_highest_name == "Aspen":
                 textbutton "    from: {color=#1c710b}Aspen{/color}\n        About tomorrow                                                                        " action Jump("easpenconf")
             if romance_highest_name == "CC":
@@ -27,7 +27,7 @@ screen emailday9():
 
     # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        textbutton "    from: {color=#db35a9}Miss Esther{/color}\n        One-on-One Observation                                                                " action Jump("emailone_9")
+        textbutton "    from: {color=#db35a9}Miss Esther{/color}\n        One-on-One Observation                                                             " action Jump("emailone_9")
         textbutton "    from: Len\n        Miss ya down here!!                                                                      " action Jump("emailtwo_9")
     vbox:
         style_prefix "nextday"
@@ -37,13 +37,13 @@ screen emailday9():
 screen email1_9():
     vbox:
         style_prefix "emltitle"
-        text "Miss ya down here!!"
+        text "One-on-One Observation"
     vbox:
         style_prefix "emlfrom"
-        text "from: Len"
+        text "from: Miss Esther"
     vbox:
         style_prefix "eml"
-        text "Hey! Hope you're doing alright up there in maintenance, lol. David won't\nshut up about how much harder his job is now that you're doing\nsomething else for once.\n\nI know you only got a couple more days left up there, so don't give up\nyet! Things are almost back to normal! We miss you down here. Hope you\nhaven't forgotten us yet, LMAO\n\nStay cool. Chill. Whatever adjective you like. Just don't die.\n\nSee ya,\nLen"
+        text "Hello Doctor,\n\nI am just sending you this simple e-mail to remind you of etiquette\nconcerning tomorrow. I am aware this is your last one here, but I would\njust like to remind you not to let the influences of the cores in our section\naffect your decision.\n\nThe one-on-one day is meant to be a surprise to them, so we can catch\nthem not doing their job - this means they cannot anticipate your arrival.\nI hope you will take this into consideration before tomorrow's shift.\n\nExcellent work today. Have a good night.\n\nMiss Esther"
     use affectionprogress
     vbox:
         style_prefix "emlback"

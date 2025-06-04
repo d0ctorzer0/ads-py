@@ -1,5 +1,6 @@
 label day9:
     play music fourteen
+    scene mctemproom with fade
     n "You enter your chambers for what feels like the 8th time."
     n "...probably because this is the 8th time."
 
@@ -710,6 +711,8 @@ label p_ccday9neutral:
 
     n "You check him off your list and gently close the door behind you."
 
+    jump robday9
+
 label n_ccday9:
     c "Miss Esther... Doctor."
 
@@ -767,9 +770,9 @@ label robday9:
     show r
     r "Oh, Doc. Didn't see you there."
 
-    if priority["Rob"] == 0:
+    if romance_points["Rob"] == 0:
         jump p_robday9
-    if priority["Rob"] == -1:
+    if romance_points["Rob"] == -1:
         jump n_robday9
 
 label p_robday9:

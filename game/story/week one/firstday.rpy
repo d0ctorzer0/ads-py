@@ -26,13 +26,21 @@ label start:
     n "It's a little unsettling."
     n "You reach your new \"headquarters.\" On the edge of the desk, there's a nametag."
 
-    default name = "Polly"
+    default name = "Dr. Rowan"
+
+    jump nameselect
+
+label nameselect:
     if persistent.advcap == False:
-        $ name = renpy.input("What does it read?", length=14)
-        $ name = name.strip()
+        $ name = renpy.input("What does it read?", length=14, default="Dr. Rowan")
+        $ name = name.strip() or "Rowan"
+        if name == "":
+            jump nameselect
     else:
-        $ name = renpy.input("What does it read? Please insert your name.", length=14)
-        $ name = name.strip()
+        $ name = renpy.input("What does it read? Please insert your name.", length=14, default="Dr. Rowan")
+        $ name = name.strip() or "Rowan"
+        if name == "":
+            jump nameselect
     n "The tag has \"[name]\" drawn on it in very hasty handwriting."
     
     mc "Well, at least they tried to be welcoming."
@@ -203,7 +211,7 @@ label krisday1:
     menu:
         extend ""
 
-        "Uh-huh. A personality core, running a business.":
+        "Uh-huh. A personality core, holding stock.":
 
             $ romance_points["Kris"] -= 3
             jump offendkris
@@ -1121,8 +1129,8 @@ label robday1cont:
     with fade
     n "As you and Miss Esther proceed back to the offices, she conrgatulates you on a job well-done."
 
+    show e with easeinright
     show e
-    with easeinright
     e "Despite all the interruptions, you made it through your whole route. And in record time, too."
 
     mc "Certainly an interesting cast of characters."

@@ -177,7 +177,7 @@ label krisday3good:
     mc "What was wrong with the former management?"
 
     show k
-    k "Oh, that's right. Esther did say you were a... newer employee."
+    k "Oh, that's right. Miss Esther did say you were a... newer employee."
     k "You must not have been here when Mr. Johnson was still at the head of the company."
 
     mc "No, I wasn't. I was part of the first new hire wave about 9 months ago. But I've heard... stories about him."
@@ -357,7 +357,8 @@ label heathday3good:
         show screen cuttextbox
         scene heath cutscene 1 with fade
         $ persistent.hc1 = True
-        n "{color=#fff}You're stunned by what you see - a hidden-away, wooden room, lined with fairy lights, shelves stocked with magic paraphenalia."
+        n "{color=#fff}You're stunned by what you see -"
+        n "{color=#fff} - a hidden-away, wooden room, lined with fairy lights, shelves stocked with magic paraphenalia."
         h "{color=#fff}Tada!! This is my magic room. It's where I keep all the stuff I use to perform my tricks."
 
         mccut "{color=#fff}Wow, Heath. I can't believe this. It's amazing."
@@ -620,7 +621,7 @@ label ccday3:
             $ romance_points["CC"] += 3
             jump ccday3good
         "Yeah. I planned on just sleeping through my shift.":
-            $ romance_points["CC"] += 3
+            $ romance_points["CC"] -= 3
             jump ccday3bad
 
 label ccday3good:
@@ -789,20 +790,20 @@ label rday3good:
         $ persistent.rc1 = True
         if persistent.advcap == True:
             "{i}{color=#fff}The scene fades to Rob looking down at you, \"HANG IN THERE!\" poster and TV screen behind him."
-        r "Alright, hop on, let's get started."
+        r "{color=#fff}Alright, hop on, let's get started."
 
-        n "You begin your workout, and Rob coaches you on your form."
+        n "{color=#fff}You begin your workout, and Rob coaches you on your form."
 
-        r "You're too tight. Loosen up."
-        mccut "How do you know so much about fitness without... well... having limbs?"
-        r "Well, it's partially 'cuz it's programmed into me."
-        r "I'm also just real passionate about humans in general. Fitness is just the one aspect I really enjoy."
+        r "{color=#fff}You're too tight. Loosen up."
+        mccut "{color=#fff}How do you know so much about fitness without... well... having limbs?"
+        r "{color=#fff}Well, it's partially 'cuz it's programmed into me."
+        r "{color=#fff}I'm also just real passionate about humans in general. Fitness is just the one aspect I really enjoy."
 
-        mccut "Interesting."
-        r "You're going too slow, now. You need to pick up the pace."
-        mccut "I'm... trying."
+        mccut "{color=#fff}Interesting."
+        r "{color=#fff}You're going too slow, now. You need to pick up the pace."
+        mccut "{color=#fff}I'm... trying."
 
-        r "Don't overwork yourself."
+        r "{color=#fff}Don't overwork yourself."
         scene robtemproom with fade
         $ cutscenetextbox = False
         hide screen cuttextbox

@@ -3,7 +3,7 @@ screen emailday4():
         style_prefix "emailbtns"
         textbutton "    from: {color=#c9ae16}Gregory{/color}\n        an invite?                                                                                   " action Jump("emaileight")
         textbutton "    from: {color=#db35a9}Miss Esther{/color}\n        Friday Etiquette                                                                           " action Jump("emailnine")
-        textbutton "    from: Dr. Lillihammer{color=#5d5d5d}, etc.{/color}\n        Operation RPO Update                                                                 " action Jump("emailten")
+        textbutton "    from: Dr. Lillihammer{color=#5d5d5d}, etc.{/color}\n        Operation ACRI Update                                                                 " action Jump("emailten")
         textbutton "    from: Management\n        IMPORTANT MESSAGE                                                                 " action Jump("emaileleven")
     vbox:
         style_prefix "nextday"
@@ -58,13 +58,13 @@ screen email9pt2():
 screen email10():
     vbox:
         style_prefix "emltitle"
-        text "Operation RPO Update" #rpo stands for "robot project overhaul"
+        text "Operation ACRI Update" #rpo stands for "robot project overhaul"
     vbox:
         style_prefix "emlfrom"
         text "from: Dr. Lillihammer, Dr. Zero, Dr. Chakwas, cont."
     vbox:
         style_prefix "eml"
-        text "Attention all high-level employees,\n\nOperation RPO will be underway shortly, possibly by the end of this\nmonth. I know this project has been highly anticipated and we look\nforward to commencing with it. We have been working closely with the\nCEO to ensure the fallout from this project will be minimal at worst, \nnonexistent at best.\n\nWe thank you all for your patience in this tumultuous time.\n\nDr. Lillian S. Lillihammer\nHead of RPO"
+        text "Attention all high-level employees,\n\nOperation ACRI will be underway shortly, possibly by the end of this\nmonth. I know this project has been highly anticipated and we look\nforward to commencing with it. We have been working closely with the\nCEO to ensure the fallout from this project will be minimal at worst, \nnonexistent at best.\n\nWe thank you all for your patience in this tumultuous time.\n\nDr. Lillian S. Lillihammer\nHead of RPO"
     use affectionprogress
     vbox:
         style_prefix "emlback"

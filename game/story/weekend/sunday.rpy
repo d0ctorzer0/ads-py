@@ -302,6 +302,7 @@ label day7alone:
     show e annoy
     show screen vignette with vigswitch
     stop music fadeout 1.0
+    stop music1 fadeout 1.0
     e "First..."
     e "Doctor... I have something important to tell you."
     e "Please listen carefully."
@@ -339,5 +340,6 @@ label day7alone:
     n "...but for some reason, it just looks so... uncomfortable."
 
     n "Instead, you decide to try to focus your mind on other things."
+    n "You read, sift through your paperwork... not a lot to do when you're holed up in your room like this."
 
-    jump day8beg
+    jump day8

@@ -1,28 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/week two/ninthdayemail.rpy", line 183, in script
-    call screen emailday9
-ScriptError: could not find label 'day10'.
+  File "game/story/week two/tenthday.rpy", line 844, in script
+    m "Before you know it, it's almost 16:00, and it's time to clock out."
+Exception: Sayer 'm' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 652, in main
-    run(restart)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 148, in run
-    renpy.execution.run_context(True)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\execution.py", line 958, in run_context
-    context.run()
-  File "game/story/week two/ninthdayemail.rpy", line 183, in script
-    call screen emailday9
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'day10'.
+  File "game/story/week two/tenthday.rpy", line 844, in script
+    m "Before you know it, it's almost 16:00, and it's time to clock out."
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 583, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 472, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'm' is not defined.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
-Aperture Dating Simulator 1.0
-Tue May 27 17:26:48 2025
+Aperture Dating Simulator 0.1.8alpha
+Tue Jun  3 12:30:58 2025

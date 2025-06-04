@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1096: 'call' is not a keyword argument or valid child of the screen statement.
-    call screen "quitnotif"
-        ^
+File "game/story/week two/tenthday.rpy", line 346: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    jump day10end
+    ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Tue May 27 14:15:57 2025
+Fri May 30 15:17:20 2025

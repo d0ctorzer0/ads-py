@@ -414,7 +414,7 @@ label gregday8:
     show e annoy
     e "Honestly, I'm not sure why..."
     show e
-    e "I like Aspen. He's a good kid - incredibly kind to everyone he meets."
+    e "I like Aspen. They're a good kid - incredibly kind to everyone they meet."
     show e annoy
     e "And I feel for CC. His plight is an... indicator of how Aperture treats us."
     e "But I'm not sure why I can't seem to... {i}connect{/i} with any of the others."
@@ -521,7 +521,7 @@ label aspenday8:
     n "Aspen is turned away from you, watering in the back left corner."
     mc "Aspen?"
 
-    n "He turns around."
+    n "They turn around."
 
     if positive["Aspen"] == 0:
         jump p_aspenday8
@@ -535,7 +535,7 @@ label p_aspenday8:
     n "You walk over to the back corner and stand next to them."
 
     show a look
-    a "Check it out - crysanthemums!"
+    a "Check it out - chrysanthemums!"
     a "{i}Chrysanthemum × morifolium.{/i} Or, y'know, just... chrysanthemums. Florist's daisy."
 
     mc "Oh my."

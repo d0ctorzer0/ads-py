@@ -420,7 +420,7 @@ label satend_rob:
     scene rob cutscene 2 with fade
     $ persistent.rc2 = True
     show screen cuttextbox
-    if advcap == True:
+    if persistent.advcap == True:
         "{i}{color=#fff}The scene fades to a dark room lit by a TV screen. Rob turns back to look at you."
     r "{color=#fff}Now you're getting into it, Doc."
     r "{color=#fff}Never thought you'd be one to yell."

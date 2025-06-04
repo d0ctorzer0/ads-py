@@ -271,7 +271,7 @@ label heathday4cont:
     hide h with easeoutright
     show e with easeinright
 
-    e "We should get going, doctor. Just mark the second box on your checklist instead of the first."
+    e "We should get going, Doctor. Just mark the second box on your checklist instead of the first."
     n "You check off the box that says \"PREVENTED FROM INVESTIGATION\"."
 
     mc "This isn't going to make her look bad, is it?"

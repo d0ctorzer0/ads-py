@@ -196,8 +196,6 @@ label offendkris5:
         k "I'm not sure what I did to upset you, but..."
         show k
         k "I don't appreciate it in the slightest."
-    elif romance_points["Kris"] >= 1:
-        pass  
     jump krisday5cont
 
 label krisday5cont:

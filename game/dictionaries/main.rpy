@@ -9,6 +9,14 @@ init python:
 
 init:
     $ config.keymap['help'].remove('K_F1')
+    # $ config.keymap['input_left'].remove('K_LEFT')
+    # $ config.keymap['input_left'].remove('KP_LEFT')
+    # $ config.keymap['input_right'].remove('K_RIGHT')
+    # $ config.keymap['input_right'].remove('KP_RIGHT')
+    # $ config.keymap['input_up'].remove('K_UP')
+    # $ config.keymap['input_up'].remove('KP_UP')
+    # $ config.keymap['input_down'].remove('K_DOWN')
+    # $ config.keymap['input_left'].remove('KP_DOWN')
 
 label splashscreen:
     $ renpy.movie_cutscene("arlogo_intro.webm")
@@ -32,6 +40,7 @@ default askforg = False
 default giveccpicture = False
 default cctv = False
 default knowabtwaterfall = False
+default cactusname = ""
 
 #GOODBYES
 default krisgoodbye = False
@@ -52,18 +61,23 @@ default satchoose_rob = False
 #CUSTCENE T/F - "[blank] cutscene [number]"
 default persistent.kc1 = False
 default persistent.kc2 = False
+default persistent.kc3 = False
 
 default persistent.hc1 = False
 default persistent.hc2 = False
+default persistent.hc3 = False
 
 default persistent.ac1 = False
 default persistent.ac2 = False
+default persistent.ac3 = False
 
 default persistent.cc1 = False
 default persistent.cc2 = False
+default persistent.cc3 = False
 
 default persistent.rc1 = False
 default persistent.rc2 = False
+default persistent.rc3 = False
 
 default persistent.gc1 = False
 default persistent.uc1 = False

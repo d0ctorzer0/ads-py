@@ -228,13 +228,33 @@ style input:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
-screen choice(items):
-    style_prefix "choice"
+default cutscenechoice = False
 
+screen choice(items):
+    if cutscenechoice == True:
+        style_prefix "choice_cutscene"
+    if cutscenechoice == False:
+        style_prefix "choice"
+        
     vbox:
         for i in items:
             textbutton i.caption action i.action
+            
 
+style choice_cutscene_button is choice_button
+style choice_cutscene_button:
+    background "gui/button/cutscenechoice.png"
+    xysize (500, 200)
+    ypos 70
+
+style choice_cutscene_button_text:
+    xpos 30
+    ypos 35
+    color "#a0a0a0"
+    hover_color "#ffffff"
+
+style choice_cutscene_vbox:
+    spacing -80
 
 style choice_vbox is vbox
 style choice_button is button

@@ -35,7 +35,9 @@ screen galleryk:
             imagebutton idle "characters/kris/kris cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.kc2 == True:
             imagebutton idle "characters/kris/kris cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
-    
+        if persistent.kc3 == True:
+            imagebutton idle "characters/kris/kris cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
+        
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action NullAction()
@@ -61,6 +63,8 @@ screen galleryh:
             imagebutton idle "characters/heath/heath cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.hc2 == True:
             imagebutton idle "characters/heath/heath cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
+        if persistent.hc3 == True:
+            imagebutton idle "characters/heath/heath cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryh"), Show("galleryk"), SetVariable("selected_char", "kris")
@@ -84,7 +88,7 @@ screen gallerya:
     fixed:
         if persistent.ac1 == True:
             imagebutton idle "characters/aspen/aspen cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
-        if persistent.hc2 == True:
+        if persistent.ac2 == True:
             imagebutton idle "characters/aspen/aspen cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
 
     vbox:
@@ -136,7 +140,7 @@ screen galleryr:
     fixed:
         if persistent.rc1 == True:
             imagebutton idle "characters/rob/rob cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
-        if persistent.hc2 == True:
+        if persistent.rc2 == True:
             imagebutton idle "characters/rob/rob cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
 
     vbox:
@@ -208,3 +212,8 @@ screen fullcutscene2:
     modal True
     add "characters/[selected_char]/[selected_char] cutscene 2.png"
     imagebutton idle "gui/back.png" action Hide("fullcutscene2", transition=gallswitch)
+
+screen fullcutscene3:
+    modal True
+    add "characters/[selected_char]/[selected_char] cutscene 3.png"
+    imagebutton idle "gui/back.png" action Hide("fullcutscene3", transition=gallswitch)

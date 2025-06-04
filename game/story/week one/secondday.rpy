@@ -544,7 +544,7 @@ label aspenfunny:
 
     show a laugh
     a "Tell me about it!"
-    a "But now you're here, and you're so much better."
+    a "But you're here now, and you're so much better."
 
     mc "That's sweet of you."
 
@@ -634,6 +634,8 @@ label offendcc2:
     jump ccday2cont
 
 label ccday2cont:
+    scene temphall with fade
+    
     n "As you close the door to CC's room behind you, you glance around."
     n "No sign of that strange figure from yesterday, thankfully."
 
