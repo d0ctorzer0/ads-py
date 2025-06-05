@@ -16,3 +16,7 @@ screen daytransition():
         xalign 0.5
         yalign 0.6
         #at daydiss
+
+screen timeskip():
+    timer 0.5 action Hide("timeskip")
+    add "gui/black.png" #at daydiss

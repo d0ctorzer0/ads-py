@@ -1,24 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/week two/tenthday.rpy", line 844, in script
-    m "Before you know it, it's almost 16:00, and it's time to clock out."
-Exception: Sayer 'm' is not defined.
+  File "game/story/week two/eleventhday.rpy", line 370, in script
+    else:
+ScriptError: could not find label 'aspenday11'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/week two/tenthday.rpy", line 844, in script
-    m "Before you know it, it's almost 16:00, and it's time to clock out."
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
-    Say.execute(self)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 583, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 472, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'm' is not defined.
+  File "game/story/week two/eleventhday.rpy", line 370, in script
+    else:
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1712, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'aspenday11'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
-Aperture Dating Simulator 0.1.8alpha
-Tue Jun  3 12:30:58 2025
+Aperture Dating Simulator 0.1.9alpha
+Thu Jun  5 12:36:10 2025

@@ -80,7 +80,9 @@ default persistent.rc2 = False
 default persistent.rc3 = False
 
 default persistent.gc1 = False
+default persistent.gc2 = False
 default persistent.uc1 = False
+default persistent.uc2 = False
 
 #DAY 3 - "with [blank] day 3"
 default wkd3 = False
@@ -108,6 +110,15 @@ default emailfromgregday9 = False
 default emailfromunknownday9 = False
 #define shorter_easein = MoveTransition(0.3, enter=offscreenright, enter_time_warp=_warper.easein)
 #define shorter_easeout = MoveTransition(0.3, exit=offscreenright, enter_time_warp=_warper.easein)
+
+#ENDING SETUP
+default lock_kris = False
+default lock_heath = False
+default lock_aspen = False
+default lock_cc = False
+default lock_rob = False
+default lock_gregory = False
+default lock_unknown = False
 
 #ROMANCE SETUP
 default romance_points = {

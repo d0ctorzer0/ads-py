@@ -113,7 +113,7 @@ label p_krisday8:
 label p_krisday8neutral:
     show k angry
     k "Yes... I did not appreciate the glitch last week that caused my panic."
-    k "I spoke to Finanical about it and they assured me that it shouldn't happen again, but..."
+    k "I spoke to Financial about it and they assured me that it shouldn't happen again, but..."
     k "I doubt their truthfulness."
 
     mc "Why's that?"

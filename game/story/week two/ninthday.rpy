@@ -68,7 +68,7 @@ label krisday9:
     hide e b 
 
     show k
-    k "Well. I have good news for you, then - everything's running smoothly here."
+    k "Well. I have good news for you, then - everything's alright in here."
     k "I don't have anything to report today."
     k "The stock is looking better than ever, and I'm running smoothly as well."
     if romance_points["Kris"] >= 13:
@@ -95,7 +95,7 @@ label p_krisday9:
         show e b annoy at bounce
         e "Kris... what are you saying?"
         hide e b 
-        k "Nothing, Miss Esther. I apologise."
+        k "Nothing, Miss Esther. I apologize."
     k "Always good to see your face, Doctor."
     show k flirt
     k "Sunshine on a cloudy day."
@@ -377,7 +377,7 @@ label n_heathday9:
     show h laugh
     h "Forgive me if I can't resist the urge to show off!"
     show h
-    h "As you can see, though, everything here is working jsut fine."
+    h "As you can see, though, everything here is working just fine."
     h "I know you have a schedule to keep, so..."
 
     mc "...Yes, I'll be going."

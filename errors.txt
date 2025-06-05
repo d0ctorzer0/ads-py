@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/story/week two/tenthday.rpy", line 346: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    jump day10end
-    ^
+File "game/story/week two/eleventhday.rpy", line 41: expected end of line
+    stop music with fadeout
+               ^
+
+File "game/story/week two/eleventhday.rpy", line 42: expected end of line
+    stop music1 with fadeout
+                ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Fri May 30 15:17:20 2025
+Wed Jun  4 23:17:57 2025

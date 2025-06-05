@@ -55,6 +55,8 @@ label day10:
         e "Just try not to be too bothersome to him, alright?"
         show e
         e "Have a good shift, Doctor."
+
+        jump unlikableday10
     else:
         e "Who are you interested in overseeing?"
     
@@ -71,7 +73,7 @@ label day10choice:
         extend ""
 
         "Kris." if krischooseagain == False:
-            if positive["Kris"] == -1 or romance_points["Kris"] <= 8:
+            if positive["Kris"] == -1 or romance_points["Kris"] <= 5:
                 $ krischooseagain = True
                 show e annoy
                 e "Unfortunately, Kris has requested you not supervise him today."
@@ -84,7 +86,7 @@ label day10choice:
                 jump krisday10
 
         "Heath." if heathchooseagain == False:
-            if positive["Heath"] == -1 or romance_points["Heath"] <= 8:
+            if positive["Heath"] == -1 or romance_points["Heath"] <= 5:
                 $ heathchooseagain = True
                 show e annoy
                 e "Heath has specifically requested you not supervise her alone."
@@ -96,7 +98,7 @@ label day10choice:
                 jump heathday10
 
         "Aspen." if aspenchooseagain == False:
-            if positive["Aspen"] == -1 or romance_points["Aspen"] <= 8:
+            if positive["Aspen"] == -1 or romance_points["Aspen"] <= 5:
                 $ aspenchooseagain = True
                 show e annoy
                 e "I'm afraid Aspen contacted HR and asked that you not oversee him today."
@@ -107,7 +109,7 @@ label day10choice:
                 $ romance_points["Aspen"] += 3
                 jump aspenday10
         "CC." if ccchooseagain == False:
-            if positive["CC"] == -1 or romance_points["CC"] <= 8:
+            if positive["CC"] == -1:
                 $ ccchooseagain = True
                 show e annoy
                 e "CC asked me personally not to see you today, Doctor. I'm sorry."
@@ -118,7 +120,7 @@ label day10choice:
                 $ romance_points["CC"] += 3
                 jump ccday10
         "Rob." if robchooseagain == False:
-            if positive["Rob"] == -1 or romance_points["Rob"] <= 8:
+            if positive["Rob"] == -1 or romance_points["Rob"] <= 5:
                 $ robchooseagain = True
                 show e annoy
                 e "Rob asked me not to let you in the gym today, for some reason."
@@ -205,6 +207,7 @@ label krisconfession:
     menu:
         extend ""
         "I feel the same way, Kris.":
+            $ lock_kris = True
             k "{color=#fff}Oh, Doctor..."
             k "{color=#fff}I'm so glad."
             jump krisacceptance
@@ -388,6 +391,7 @@ label heathday10:
     menu:
         extend ""
         "Oh, Heath. I feel the same way.":
+            $ lock_heath = True
             h "{color=#fff}Oh, Doctor..."
             h "{color=#fff}Thank you, thank you!"
             jump heathacceptance
@@ -573,6 +577,7 @@ label aspenday10:
     menu:
         extend ""
         "I'd never forget you, Aspen.":
+            $ lock_aspen = True
             a "{color=#fff}You... oh, Doctor, I..."
             a "{color=#fff}Goodness. You're something, alright."
             jump aspenacceptance
@@ -778,6 +783,7 @@ label ccday10:
     menu:
         extend ""
         "I will, CC. Always.":
+            $ lock_cc = True
             c "{color=#fff}Oh. I..."
             c "{color=#fff}You..."
             n "{color=#fff}He sighs."
@@ -973,25 +979,25 @@ label robday10:
     scene rob cutscene 3 with fade
     $ cutscenetextbox = True
     $ persistent.rc3 = True
-    r "This is my most prized possession - it's an authentic 1988 Topps baseball card."
-    r "Jose Canseco. The guy on the card."
-    r "It's pretty hard to find baseball cards this far down..."
-    r "This one was given to me by the guy in the position before ya."
-    r "Anyway. I want you to have it now."
+    r "{color=#fff}This is my most prized possession - it's an authentic 1988 Topps baseball card."
+    r "{color=#fff}Jose Canseco. The guy on the card."
+    r "{color=#fff}It's pretty hard to find baseball cards this far down..."
+    r "{color=#fff}This one was given to me by the guy in the position before ya."
+    r "{color=#fff}Anyway. I want you to have it now."
 
-    mc "Rob... this seems very personal to you."
+    mc "{color=#fff}Rob... this seems very personal to you."
 
-    r "Yeah. 'Course it is. That's why I'm giving it to ya."
-    r "It's important to me. Just like... you are."
-    r "Listen, Doc, I ain't gonna beat 'round the bush -"
-    r "I really like you. I haven't felt feelings this strong since my wife left me! Ha!"
-    r "So. Anyway."
-    r "Wanna go out? Y'know... you n' me?"
+    r "{color=#fff}Yeah. 'Course it is. That's why I'm giving it to ya."
+    r "{color=#fff}It's important to me. Just like... you are."
+    r "{color=#fff}Listen, Doc, I ain't gonna beat 'round the bush -"
+    r "{color=#fff}I really like you. I haven't felt feelings this strong since my wife left me! Ha!"
+    r "{color=#fff}So. Anyway."
+    r "{color=#fff}Wanna go out? Y'know... you n' me?"
     menu:
         extend ""
         "You're funny. I'd love to.":
-            r "Hell yeah! You're the best, Doc."
-            r "Haha... thank you."
+            r "{color=#fff}Hell yeah! You're the best, Doc."
+            r "{color=#fff}Haha... thank you."
             jump robacceptance
         "I don't think I can accept this.":
             jump robrejection
@@ -1147,7 +1153,45 @@ label robrejection:
 
     jump day10end
 
-# need to write cc day when all cores hate mc
+label unlikableday10:
+    scene cctemproom with fade
+    $ audio_crossFade(2, "music/five.ogg")
+    n "It takes no time at all to reach CC's room."
+    
+    n "When you enter, you find him staring out his window once again."
+
+    show c with easeinright
+    n "He turns to face you."
+    c "Hello, Doctor."
+
+    mc "Hi, CC."
+    c "As I'm sure you're well aware, I asked not to see you today."
+    c "I suppose Miss Esther had no other choice."
+
+    mc "That's correct."
+
+    show c close
+    c "Unfortunate."
+    show c
+    c "Please, show me some grace - I'd like silence."
+
+    mc "Okay."
+
+    n "The shift goes by slowly, but nothing bad happens."
+    n "Generally CC stays quiet, only mumbling to himself every now and then."
+    n "He never talks to you directly."
+    n "Eventually, 16:00 comes along."
+
+    show c close
+    c "Thank you for the quiet shift, Doctor."
+    show c
+    c "Have a good day."
+
+    mc "Will do."
+
+    n "You finish your checklist and leave the room."
+
+    jump day10end
 
 
 label day10end:
@@ -1155,10 +1199,20 @@ label day10end:
     show e with easeinright
     e "Doctor! How was your shift?"
 
-    mc "It was alright. Just like last week's, honestly."
+    if positive["Kris"] and positive["Heath"] and positive["Aspen"] and positive["CC"] and positive["Rob"] == -1:
+        "It was okay. Quiet. Boring."
 
-    e "Glad to hear. Go ahead and finish your paperwork and check your emails."
+        e "That's understandable. Go ahead and finish your paperwork and check your emails."
+    else:
+        mc "It was alright. Just like last week's, honestly."
+
+        e "Glad to hear. Go ahead and finish your paperwork and check your emails."
+
     e "Only two more days to go!"
+
+    mc "Thank you, Miss Esther."
+
+    jump e10first
 
 label endtest:
     "endtest"

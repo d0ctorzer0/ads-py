@@ -19,9 +19,9 @@ checklist:
 ☑ night 7
 ☑ day 8
 ☑ night 8
-☐ day 9
-☐ night 9
-☐ day 10
+☑ day 9
+☑ night 9
+☑ day 10
 ☐ night 10
 ☐ day 11
 ☐ night 11
