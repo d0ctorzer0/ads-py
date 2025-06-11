@@ -50,8 +50,6 @@ label day12:
 
 
 
-
-
 label boss:
 
     play music boss fadein 0.5

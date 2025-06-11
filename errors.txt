@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label boss is defined twice, at File "game/story/boss.rpyc", line 3:
-
-and File "game/story/endings/boss.rpy", line 3:
-label boss:
-
+File "game/screens.rpy", line 211: 'background' is not a keyword argument or valid child of the vbox statement.
+    background None
+              ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Tue Jun 10 23:50:02 2025
+Wed Jun 11 10:33:12 2025

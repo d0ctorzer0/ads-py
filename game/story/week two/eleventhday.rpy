@@ -555,18 +555,18 @@ label unknownday11:
     $ cutscenetextbox = True
     $ persistent.uc2 = True    
     u "{color=#fff}I really wanted to prove to ya that I'm more than what I look like."
-    u "Now, s'true, I've been on a downwards spiral for years now..."
-    u "Hell, I can't even remember my own name..."
-    u "But I really hope that doesn't dissuade ya."
-    u "I'm tryin' to be better. Fixing myself up like this... that's my proof to ya, Doc."
-    u "You've been awfully patient with me. Through my flirtin' and everything..."
-    u "I wanna keep... what we have... goin'."
-    u "Whaddaya say?"
+    u "{color=#fff}Now, s'true, I've been on a downwards spiral for years now..."
+    u "{color=#fff}Hell, I can't even remember my own name..."
+    u "{color=#fff}But I really hope that doesn't dissuade ya."
+    u "{color=#fff}I'm tryin' to be better. Fixing myself up like this... that's my proof to ya, Doc."
+    u "{color=#fff}You've been awfully patient with me. Through my flirtin' and everything..."
+    u "{color=#fff}I wanna keep... what we have... goin'."
+    u "{color=#fff}Whaddaya say?"
     menu:
         extend ""
         "I'm in the same boat.":
-            u "Well then..."
-            u "I'd consider myself one lucky guy."
+            u "{color=#fff}Well then..."
+            u "{color=#fff}I'd consider myself one lucky guy."
             jump unknownacceptance
         "I appreciate it, but... no thanks.":
             jump unknownrejection

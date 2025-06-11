@@ -114,6 +114,11 @@ screen say(who, what):
             style_prefix "cutscene"
             ypos 1130
             background None
+        
+        if terminaltext == True:
+            style_prefix "terminal"
+            xpos 1250 ypos 1045
+            background None
 
         if who is not None:
 
@@ -201,6 +206,7 @@ screen input(prompt):
     window:
 
         vbox:
+
             xanchor gui.dialogue_text_xalign
             xpos gui.dialogue_xpos
             xsize gui.dialogue_width

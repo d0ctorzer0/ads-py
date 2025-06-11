@@ -672,7 +672,11 @@ label aspenacceptance:
     jump day10end
 
 label aspenrejection:
-    show a look
+    $ cutscenechoice = False
+    hide screen cuttextbox
+    scene aspentemproom with fade
+    $ cutscenetextbox = False
+    show a look with easeinright
     a "O-Oh. I'm sorry for assuming, Doctor, I..."
     a "That's on me."
     a "I hope we can stay... friends."

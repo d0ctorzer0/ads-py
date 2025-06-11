@@ -3,8 +3,6 @@ screen emailday11():
         style_prefix "emailbtns"
         textbutton "    from: Dr. McCoy\n        Transferring Back                                                                        " action Jump("emailone_11")
         textbutton "    from: HR\n        \"RETIREMENT\" ANNOUNCEMENT                                 " action Jump("emailtwo_11")
-        if romance_points["Greg"] >= 10:
-            textbutton "    from: {color=#c9ae16}Gregory{/color}\n        good to see you again                                                                       " action Jump("emailthree_11")
     vbox:
         style_prefix "nextday"
         textbutton "NEXT DAY >>" action Jump("day12")
