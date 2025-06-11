@@ -117,7 +117,7 @@ label letin:
 
     hide u
     with easeoutright
-    n "The core gave a little bow and exited the room."
+    n "The core gives a little bow and exits the room."
 
     mc "If nothing else, he's certainly interesting..."
 
@@ -155,7 +155,7 @@ label estherday2:
     e "Sorry! Sorry I'm late! I got caught up in rail traffic..."
 
     show e annoy
-    n "She shakes her head."
+    n "She shakes her chassis."
 
     e "You'd think with the increase in robots working at Aperture, they'd at least {i}try{/i} to expand the rail system..."
 
@@ -169,7 +169,7 @@ label estherday2:
     jump krisday2
 
 label krisday2:
-    scene temphall
+    scene hall
     with fade
     show e
     with easeinright
@@ -270,7 +270,7 @@ label krisday2cont:
     jump heathday2
 
 label heathday2:
-    scene temphall
+    scene hall
     with fade
 
     show e annoy with easeinright
@@ -384,7 +384,7 @@ label heathday2cont:
     show e annoy with easeinright
     e "I hope that disgusting core we saw yesterday doesn't make another appearance..."
 
-    scene temphall
+    scene hall
     $ audio_crossFade(2, "music/eleven.ogg")
     with fade
 
@@ -558,7 +558,7 @@ label aspenfunny:
 label aspenday2cont:
     n "You check Aspen off your list and exit the greenhouse."
 
-    scene temphall with fade
+    scene hall with fade
     show e with easeinright
     e "I hope everything went well in there. We should get back on track towards CC, now."
 
@@ -634,7 +634,7 @@ label offendcc2:
     jump ccday2cont
 
 label ccday2cont:
-    scene temphall with fade
+    scene hall with fade
     
     n "As you close the door to CC's room behind you, you glance around."
     n "No sign of that strange figure from yesterday, thankfully."
@@ -739,7 +739,7 @@ label offendrob2:
 
 label robday2cont:
     n "You check Rob off your list once more to finish the day off."
-    scene temphall with fade
+    scene hall with fade
     $ audio_crossFade(2, "music/eleven.ogg")
     show e with easeinright
     n "As you leave the gym, Miss Esther turns to you as you begin walking back to your office."

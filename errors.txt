@@ -2,13 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/story/week two/eleventhday.rpy", line 41: expected end of line
-    stop music with fadeout
-               ^
+The label boss is defined twice, at File "game/story/boss.rpyc", line 3:
 
-File "game/story/week two/eleventhday.rpy", line 42: expected end of line
-    stop music1 with fadeout
-                ^
+and File "game/story/endings/boss.rpy", line 3:
+label boss:
+
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Wed Jun  4 23:17:57 2025
+Tue Jun 10 23:50:02 2025

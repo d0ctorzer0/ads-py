@@ -1,4 +1,56 @@
 # wow!! SPOILERS!!! my favourite
+label day12:
+    $ audio_crossFade(2, "music/fourteen.ogg")
+    scene mctemproom with fade
+    mc "Nothing from Miss Esther..."
+    mc "Oh well. I guess I'll see her tomorrow."
+    mc "Maybe..."
+
+    n "You throw down your paperwork, exhausted, and fall into your stasis chamber."
+
+    scene black
+    with fade
+    $ daynum = "12"
+    $ dayday = "Friday"
+
+    if renpy.is_skipping() == False:
+        show screen daytransition
+        $ renpy.pause(2.0, hard=True)
+    if renpy.is_skipping() == True:
+        pass
+
+    scene mctemproom
+    with fade
+
+    jump endtest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 label boss:
 

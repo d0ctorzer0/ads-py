@@ -509,7 +509,7 @@ label aspenday3good:
         a "Oh yes! Absolutely! Come over here, and I'll show you."
 
         hide a with easeoutright
-        n "You follow Aspen on his management rail as he leads you to a back corner."
+        n "You follow Aspen on his management rail as they lead you to a back corner."
 
         $ cutscenetextbox = True
         show screen cuttextbox
@@ -519,7 +519,7 @@ label aspenday3good:
             "{i}{color=#fff}The screen fades to a close-up shot of Aspen looking down at a fern. The scene is softly lit and is mostly dark."
         a "{color=#fff}This is Penelope. She's an \"Adiantum\" - a maidenhair fern."
         a "{color=#fff}She's extremely tempermental. Doesn't listen to anyone but me."
-        a "{color=#fff}I swear, if any other greenhouse employee tries to water her or test on her, she throws a fit."
+        a "{color=#fff}I swear, if any other greenhouse employee tries to water her or test on her, she'll throw a fit."
         a "{color=#fff}Haha, not literally, of course. She'll just wilt. But she's my favourite."
 
         mccut "{color=#fff}She's beautiful."
@@ -532,7 +532,7 @@ label aspenday3good:
         show a look with easeinright
         hide screen cuttextbox
         $ cutscenetextbox = False
-        a "Oh! Ahem, uh, sorry. I was excited to show you my - uh... favorite plant."
+        a "Oh! Uh, sorry. I'm just excited to show you my... favorite plant."
 
         mc "No worries."
         jump aspenday3goodpt2
@@ -540,7 +540,7 @@ label aspenday3good:
         a "Oh, not really. I like all my plants equally."
 
         show a laugh
-        a "Can't be picking favorites - what if it dies? Haha."
+        a "Can't be picking favorites - what if one dies? Hah."
         jump aspenday3goodpt2
 
 label aspenday3goodpt2:

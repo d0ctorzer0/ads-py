@@ -176,7 +176,7 @@ label n_krisday9:
     jump unknownday9
 
 label unknownday9:
-    scene temphall with fade
+    scene hall with fade
     show e annoy with easeinright
     e "I apologize for not being my... usual self, Doctor."
     e "I hope this shift goes by quickly."
@@ -392,7 +392,7 @@ label n_heathday9:
     jump estherday9
 
 label estherday9:
-    scene temphall with fade
+    scene hall with fade
     $ audio_crossFade(2, "music/eleven.ogg")
     show e annoy with easeinright
     e "You know, running along these management rails all day takes a lot more out of me than you might think..."
@@ -567,7 +567,7 @@ label n_aspenday9:
     jump estherday9pt2
 
 label estherday9pt2:
-    scene temphall with fade
+    scene hall with fade
     $ audio_crossFade(2, "music/eleven.ogg")
     show e annoy with easeinright
     e "Ah. Doctor. Welcome back."
@@ -745,7 +745,7 @@ label n_ccday9:
     jump robday9
 
 label robday9:
-    scene temphall with fade
+    scene hall with fade
     $ audio_crossFade(2, "music/eleven.ogg")
     show e annoy with easeinright
     e "Oh thank god. Our route's almost done."

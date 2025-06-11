@@ -348,7 +348,7 @@ label heathday5cont:
     jump aspenday5
 
 label aspenday5:
-    scene temphall with fade
+    scene hall with fade
     $ audio_crossFade(2, "music/eleven.ogg")
     show e with easeinright
     n "You begin to head up towards the greenhouse with Miss Esther."
@@ -386,7 +386,7 @@ label aspenday5:
 
     show a look with easeinright
 
-    a "Doctor, Doctor, now's... really not a good time, haha..."
+    a "Doctor, Doctor, now's not a really good time!"
 
     n "You look around the room. It's darker than usual - not a good sign for an underground greenhouse."
 
@@ -396,7 +396,7 @@ label aspenday5:
 
     a "Ahh, yeah, kind of? Haha... the artificial sunlight, pumped in from the surface..."
     show a
-    a "It turned off overnight. I'm not quite sure why."
+    a "It turned off overnight."
     show a look
     a "When I got in this morning, things were completely dark... I had to quickly report the problem to Facilities so they could fix it."
 
@@ -415,7 +415,7 @@ label aspenday5:
 
 label impressaspen5:
     show a
-    a "Oh, no, Doctor, this is my job. Plus, you aren't cleared to work on this."
+    a "Oh, no, Doctor, this is my job. Plus, you aren't really cleared to work on this."
     show a look
     a "I appreciate it, though."
     show a
@@ -432,8 +432,8 @@ label impressaspen5:
     if romance_points["Aspen"] >= 10:
         show a look
         a "And... thank you. For your treatment of me this week."
-        a "You've been very respectful and, uh... very kind."
-        a "I'm not used to it. It's a little strange."
+        a "You've been very respectful and... very kind."
+        a "I'm not used to it. It's a little strange..."
         a "But thank you."
 
         mc "You're welcome, Aspen."
@@ -450,9 +450,9 @@ label impressaspen5:
 
 label offendaspen5:
     show a laugh
-    a "Oh, that's funny - no, no. They look okay from the outside, but on the inside..."
+    a "Oh, that's funny - no, no. They look okay from the outside, but on the inside, they're dying."
     show a look
-    a "They're dying. Without the sunlight for that long, and this deep into the facility..."
+    a "Without the sunlight for that long, and this deep into the facility..."
     show a
     a "It's dangerous. We might lose half of these specimens because of this."
 
@@ -478,7 +478,7 @@ label offendaspen5:
     jump ccday5
 
 label ccday5:
-    scene temphall with fade
+    scene hall with fade
     $ audio_crossFade(2, "music/eleven.ogg")
     show e with easeinright
     e "Doctor, welcome back. Let's head back down."
@@ -777,7 +777,7 @@ label neutralcc5:
 
 
 label robday5:
-    scene temphall with fade
+    scene hall with fade
     n "As you approach the door to the gym, you notice a surprising lack of yelling from inside it."
 
     show e annoy with easeinright

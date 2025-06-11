@@ -74,7 +74,7 @@ label day7esther:
     show e laugh
     e "Excellent!"
     
-    scene temphall with fade
+    scene hall with fade
     $ audio_crossFade(2, "music/twelve.ogg")
     show e with easeinright
     n "Miss Esther guides you down the hall, out of residential."

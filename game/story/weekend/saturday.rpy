@@ -81,7 +81,7 @@ label satoffice:
     $ persistent.places_visited += 1
     $ achievement.progress("ach_explore", persistent.places_visited)
     $ achievement.sync()
-    scene temphall with fade
+    scene hall with fade
     $ audio_crossFade(1, "music/eleven.ogg") 
     n "You come up to the office door."
     n "You try to open it, but it's locked."
@@ -482,7 +482,7 @@ label satcc:
     python:
         v_cc = True
         cores_visited += 1
-    scene temphall with fade
+    scene hall with fade
     n "You make your way through the residential block, towards CC's room."
 
     if positive["CC"] == 0:
@@ -604,7 +604,7 @@ label satgreg:
     python:
         v_greg = True
         cores_visited += 1
-    scene temphall with fade
+    scene hall with fade
     n "You approach the sliding door with the label \"EMPLOYEE LOUNGE\"."
     n "This door looks much different from the others - newer, and the label isn't as large."
     n "Gregory said he'd be in here."
@@ -790,8 +790,8 @@ label sataspenpos:
     a "Over the weekend, none of the scientists are here..."
     a "...and the plants are happy. It's peaceful."
     show a
-    a "They have feelings, you know, and - not that I don't get it, but..."
-    a "Sometimes I wish they wouldn't test so much on them."
+    a "They have feelings, you know, and - not that I don't get it..."
+    a "But sometimes I wish they wouldn't test on them so much."
 
     mc "I understand."
     if plant == True:
@@ -805,7 +805,7 @@ label sataspenpos:
     a "You normally aren't here when this happens, but..."
     a "We have a sample of dinoflagellates in the lab for the next few days."
     show a
-    a "It's a bioluminescent algae. They emit this beautiful blue-green glow in the dark."
+    a "It's a bioluminescent algae - they emit this beautiful blue-green glow in the dark."
     $ inv_aspen = True
     show a look
     a "If you'd like, and you're not busy, would you like to stop by during the artificial night cycle tonight?"
@@ -831,7 +831,7 @@ label sataspenpos_pos:
     mc "Oh. Yes, I'll leave."
 
     show a 
-    a "I hope I'll see you tonight, Doctor."
+    a "I hope I... I'll see you tonight, Doctor."
 
     n "You leave the greenhouse and carefully close the door behind you."
 
@@ -845,12 +845,10 @@ label sataspenpos_neg:
 
     show a
     a "You should leave now - staying too long could get you in trouble."
-    show a look
-    a "We don't want that."
 
     mc "Oh. Yes, I'll leave."
 
-    show a 
+    show a look
     a "I hope I'll see you tonight, Doctor, regardless!"
 
     n "You leave the greenhouse and carefully close the door behind you."
@@ -861,10 +859,9 @@ label sataspenneg:
     show a laugh
     a "Ah, yes. Facilities contacted me personally, so you didn't need to send an email."
     show a
-    a "Everything's working fine, but..."
-    a "You really shouldn't be here outside of working hours, Doctor."
+    a "Everything's working fine."
     show a look
-    a "You could contaminate the specimens. And I don't think you're approved to be in here off-hours anyway."
+    a "I don't think you're approved to be in here off-hours, anyways."
 
     mc "Oh. Yes, sorry. I'll go."
 

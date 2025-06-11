@@ -287,7 +287,7 @@ label krisday1cont:
     jump heathday1
 
 label heathday1:
-    scene temphall
+    scene hall
     with fade
 
     show e
@@ -445,7 +445,7 @@ label heathday1cont:
 
 label unknownday1:
 
-    scene temphall
+    scene hall
     with fade
     $ audio_crossFade(2, "music/eleven.ogg")
 
@@ -738,7 +738,7 @@ label aspenday1cont:
     n "You check \"ASPEN (BOTANICAL CORE)\" off your list. Despite the rather unusual subsection they oversee, they seem content enough with it."
     n "As you exit the greenhouse, Miss Esther greets you."
 
-    scene temphall with fade
+    scene hall with fade
     show e
     show e
     with easeinright
@@ -944,7 +944,7 @@ label ccday1cont:
 
 label gregday1:
 
-    scene temphall
+    scene hall
     with fade
     $ audio_crossFade(2, "music/eleven.ogg")
 
@@ -1086,7 +1086,7 @@ label robday1:
 label impressrob:
 
     show r
-    r "Why, thank you. I try to keep in nice just in case someone needs it."
+    r "Why, thank you. I try to keep in nice in case someone needs it."
     r "I do get the occasional customer, but it's only about once a week."
     r "So I spend my shifts watching the game instead."
 
@@ -1124,7 +1124,7 @@ label robday1cont:
     n "You check off \"ROB (SPORTS CORE)\" from your list. That's the whole route done!"
 
     with easeoutright
-    show temphall
+    show hall
     $ audio_crossFade(2, "music/eleven.ogg")
     with fade
     n "As you and Miss Esther proceed back to the offices, she conrgatulates you on a job well-done."

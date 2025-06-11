@@ -224,7 +224,7 @@ label n_krisday8:
     jump heathday8
 
 label heathday8:
-    scene temphall with fade
+    scene hall with fade
     n "The short trip from the conference room to the break room is once again uneventful."
 
     stop music fadeout 1.0
@@ -402,7 +402,7 @@ label n_heathday8:
 
 label gregday8:
     $ audio_crossFade(2, "music/eleven.ogg")
-    scene temphall with fade
+    scene hall with fade
     n "You begin heading upstairs towards the greenhouse."
     show e with easeinright
     n "Miss Esther follows close behind."
@@ -635,7 +635,7 @@ label n_aspenday8:
 
 label ccday8:
     $ audio_crossFade(2, "music/eleven.ogg")
-    scene temphall with fade
+    scene hall with fade
     show e with easeinright
     n "Miss Esther is waiting for you outside."
 
@@ -646,7 +646,7 @@ label ccday8:
     e "I swear..."
     e "Sometimes it feels like the trip from the main section to this upper part takes up half our shift..."
 
-    scene temphall with fade
+    scene hall with fade
     n "You don't run into anyone on your way to CC's room."
     show e with easeinright
     n "Miss Esther seems very happy about that."
@@ -771,7 +771,7 @@ label n_ccday8:
     jump robday8
 
 label robday8:
-    scene temphall with fade
+    scene hall with fade
     show e annoy with easeinright
     n "Miss Esther is quiet on the way to the gym."
     n "Her mood seems to flip on a dime - incredibly happy and energetic at one point, solemn and quiet the next."

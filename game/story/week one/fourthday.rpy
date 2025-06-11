@@ -306,7 +306,7 @@ label offendheath4:
 
 
 label estherday4:
-    scene temphall with fade
+    scene hall with fade
     $ audio_crossFade(2, "music/eleven.ogg")
 
     n "You and Miss Esther exit the break room and begin heading toward the greenhouse."
@@ -378,7 +378,7 @@ label aspenday4:
         pass
 
     show a
-    a "Ahem. Sprinklers functioning normally, all that, yes, yeah."
+    a "Ahem. Sprinklers functioning normally, yes, yeah."
 
     mc "That's great."
 
@@ -399,10 +399,10 @@ label aspenday4:
 
 label aspenday4cont:
     show a look
-    a "Oh, this? It's just sphagnum moss. It really shouldn't be an issue."
+    a "Oh, this? It's just sphagnum moss. It shouldn't be an issue."
 
     show a
-    a "Don't worry. It won't get into anything critical. My core systems are sealed in case something like that were to happen."
+    a "Don't worry. It won't get into anything critical. My core systems are sealed in case something like this were to happen."
 
     show a laugh
     a "It's all under control! Haha."
@@ -416,12 +416,12 @@ label aspenday4cont:
         pass
 
     show a look
-    a "You should probably be going, now. Miss Esther is waiting."
+    a "You should probably get going, now. Miss Esther is waiting."
 
     mc "Yes, you're right. I'll see you tomorrow?"
 
     show a laugh
-    a "Casual Friday! Yes, you'll see me."
+    a "Yes, you'll see me."
     show a
     a "Have a good day, Doctor."
 
@@ -430,7 +430,7 @@ label aspenday4cont:
     jump ccday4
 
 label ccday4:
-    scene temphall with fade
+    scene hall with fade
     n "Miss Esther greets you outside the door."
 
     show e with easeinright
@@ -557,7 +557,7 @@ label ccday4cont:
     jump robday4
 
 label robday4:
-    scene temphall with fade
+    scene hall with fade
     n "The gym isn't too far from CC's room, thankfully, and you make it there in no time."
     n "Miss Esther is strangely quiet. And she was so chipper this morning..."
 

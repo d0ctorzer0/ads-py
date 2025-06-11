@@ -352,28 +352,32 @@ label n_heathday11:
     jump subromanceday11
 
 label subromanceday11:
-    scene temphall with fade
-    n "The walk up to the greenhouse is incredibly long and boring."
+    scene hall with fade
+    if not lock_kris and not lock_aspen and not lock_cc and not lock_heath and not lock_rob:
+        if romance_points["???"] == romance_points["Greg"]:
+            $ day11lock_randomizer = renpy.random.choice(['???', 'Greg'])
+            if day11lock_randomizer == "Greg":
+                if romance_points["Greg"] >= 8:
+                    jump gregday11
+                else:
+                    jump aspenday11
+            elif day11lock_randomizer == "???":
+                if romance_points["???"] >= 8:
+                    jump unknownday11
+                else:
+                    jump aspenday11
 
-    # if lock_kris and lock_aspen and lock_cc and lock_heath and lock_rob == False:
-    #     if romance_points["???"] == romance_points["Greg"]:
-    #         $ day11lock_randomizer = renpy.random.choice(['???', 'Greg'])
-    #         if day11lock_randomizer == "Greg":
-    #             jump gregday11
-    #         elif day11lock_randomizer == "???":
-    #             jump unknownday11
-
-    if romance_points["???"] < romance_points["Greg"]:
-        jump gregday11
-    elif romance_points["???"] > romance_points["Greg"]:
-        jump unknownday11
+        elif romance_points["???"] < romance_points["Greg"]:
+            jump gregday11
+        elif romance_points["???"] > romance_points["Greg"]:
+            jump unknownday11
     else:
         jump aspenday11
 
 label gregday11:
     n "Suddenly, you hear a familiar sound - weighed-down wheels."
     $ audio_crossFade(2, "music/seven.ogg")
-    show g aaa
+    show g aaa with easeinright
     n "Gregory comes around the corner and nearly runs into you."
     g "Doctor! O-Oh. Hi!"
 
@@ -406,27 +410,27 @@ label gregday11:
     scene greg cutscene 3 with fade
     $ cutscenetextbox = True
     $ persistent.gc2 = True
-    n "Gregory moves his bottom handle slightly, unbuttoning his trench coat. It falls to the ground."
-    n "What stands before you is not a personality core - but three of them, just as you thought."
-    n "The top one - Gregory's voice, you assume - looks down nervously at the other two."
-    n "The middle one looks up at you curiously, and the bottom one glares at you in turn."
+    n "{color=#fff}Gregory moves his bottom handle slightly, unbuttoning his trench coat. It falls to the ground."
+    n "{color=#fff}What stands before you is not a personality core - but three of them, just as you thought."
+    n "{color=#fff}The top one - Gregory's voice, you assume - looks down nervously at the other two."
+    n "{color=#fff}The middle one looks up at you curiously, and the bottom one glares at you in turn."
 
-    g "I-I'm not... really... a personality core. I'm... three of them."
-    g "I know I've been trying to hide it, and this is really difficult - no one knows this but my creators, and..."
-    g "I figured you should know the truth before I ask you to accept me any further."
+    g "{color=#fff}I-I'm not... really... a personality core. I'm... three of them."
+    g "{color=#fff}I know I've been trying to hide it, and this is really difficult - no one knows this but my creators, and..."
+    g "{color=#fff}I figured you should know the truth before I ask you to accept me any further."
 
-    mc "Accept you?"
+    mc "{color=#fff}Accept you?"
 
-    g "Well, Doctor... we... have constantly been running into you, and... you treat me - uh, us so well."
-    g "No one's done that for us before."
-    g "I don't want you to think we're weird, or awkward, but..."
-    g "Can you give me a chance? To be closer to you?"
+    g "{color=#fff}Well, Doctor... we... have constantly been running into you, and... you treat me - uh, us so well."
+    g "{color=#fff}No one's done that for us before."
+    g "{color=#fff}I don't want you to think we're weird, or awkward, but..."
+    g "{color=#fff}Can you give me a chance? To be closer to you?"
 
     menu:
         extend ""
         "I'll accept you no matter what.":
-            g "Oh, Doctor... I..."
-            g "Thank you. So much."
+            g "{color=#fff}Oh, Doctor... I..."
+            g "{color=#fff}Thank you. So much."
             jump gregacceptance
         "This is too weird for me.":
             jump gregrejection
@@ -434,8 +438,9 @@ label gregday11:
 label gregacceptance:
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene temphall with fade
+    scene hall with fade
     $ cutscenetextbox = False
+    $ lock_gregory = True
     show g nocoatlook with easeinright
     g "I don't want to rush things too much between us, so I'm sorry if it came off that way."
 
@@ -490,5 +495,628 @@ label gregacceptance:
 
     jump aspenday11
 
+label gregrejection:
+    $ cutscenechoice = False
+    hide screen cuttextbox
+    scene hall with fade
+    $ cutscenetextbox = False
+    show g nocoatlook with easeinright
+    g "Oh... I'm sorry, Doctor, I-I know it is a little weird, haha."
+    g "Can you... put my trench coat back on me?"
+
+    mc "Sure, Gregory."
+
+    show g
+    n "You put the trench coat back over his... \"shoulders\"."
+
+    show g look
+    g "Well... this certainly got awkward quick."
+    show g aaa
+    g "On second thought, I should probably leave. I..."
+    g "I'll see you later, Doc!"
+
+    hide g with easeoutright
+
+    n "And he's gone."
+    n "How strange..."
+
+    jump aspenday11
+
+
 label unknownday11:
-    "endtest_???"
+    n "Suddenly, you hear a sound - a faint, but distinct, humming."
+    show u c with easeinright
+    $ audio_crossFade(2, "music/eight.ogg")
+    n "A familiar-looking \"face\" rounds the corner - albeit, a little... different from when you last saw it."
+
+    u "Oh! Doc! Sorry, didn't mean to intrude on your route, I..."
+    u "Where's that core that's always following you?"
+
+    mc "Don't know, but... is that really you?"
+
+    show u c look
+    u "Yep! It's me. I know, I look a little different..."
+    u "I finally got off my ass and went down to repair to go get fixed."
+
+    show u c 
+    u "They almost refused me service! Hah."
+    u "Took a lot of work - 'bout 3 hours, but... I feel better than ever."
+
+    mc "You... sound better, too."
+
+    show u c look
+    u "Well, it ain't easy... I still got a lot of pain in my chassis, and... y'know..."
+    u "I'm tryin' to be better."
+    u "'Cuz, well, Doc..."
+
+    $ cutscenechoice = True
+    show screen cuttextbox
+    scene unknown cutscene 3 with fade
+    $ cutscenetextbox = True
+    $ persistent.uc2 = True    
+    u "{color=#fff}I really wanted to prove to ya that I'm more than what I look like."
+    u "Now, s'true, I've been on a downwards spiral for years now..."
+    u "Hell, I can't even remember my own name..."
+    u "But I really hope that doesn't dissuade ya."
+    u "I'm tryin' to be better. Fixing myself up like this... that's my proof to ya, Doc."
+    u "You've been awfully patient with me. Through my flirtin' and everything..."
+    u "I wanna keep... what we have... goin'."
+    u "Whaddaya say?"
+    menu:
+        extend ""
+        "I'm in the same boat.":
+            u "Well then..."
+            u "I'd consider myself one lucky guy."
+            jump unknownacceptance
+        "I appreciate it, but... no thanks.":
+            jump unknownrejection
+
+label unknownacceptance:
+    $ cutscenechoice = False
+    hide screen cuttextbox
+    scene hall with fade
+    $ cutscenetextbox = False
+    show u c with easeinright
+    $ lock_unknown = True
+    mc "I can't believe you went and fixed yourself up just for me."
+
+    u "Well, it wasn't {i}all{/i} for you, y'know."
+    u "Some of it was for myself, too."
+    show u c look
+    u "Can't stay like that forever..."
+    show u c
+    u "But yeah. Mostly you."
+
+    mc "You said you can't remember your name? At all?"
+
+    u "Yeah, that's right. I haven't been attached to the system in so long, I don't even know when I was activated..."
+    u "I'm sure the memory's somewhere deep in my systems, but..."
+    u "I've yet to reach it."
+
+    mc "That must be hard."
+
+    u "Sometimes. I don't know how to introduce myself..."
+    u "So I jus' don't."
+
+    mc "Fair enough."
+
+    show u c look
+    u "Now, Doc, I have a feeling you're runnin' late, so you should prolly get on your way..."
+    show u c 
+    u "But don't worry. You'll see me later for sure."
+
+    mc "Can't wait."
+
+    u "See ya, Doc."
+    hide u c with easeoutright
+
+    n "And he's gone."
+    mc "How interesting."
+
+    jump aspenday11
+
+label unknownrejection:
+    $ cutscenechoice = False
+    hide screen cuttextbox
+    scene hall with fade
+    $ cutscenetextbox = False
+    show u c look with easeinright
+    $ lock_unknown = True
+    u "Well... no worries. I get it."
+    u "I'm a better man. I can take rejection."
+
+    mc "Sorry, it's just -"
+
+    show u c 
+    u "Nah, Doc, I understand. Don't feel guilty."
+    u "I can improve myself for me, y'know."
+
+    show u c look
+    u "Anyways, you should get goin'. I can tell you're kinda in a hurry."
+    u "I'll see ya around."
+
+    hide u c with easeoutright
+
+    n "And he's off."
+
+    jump aspenday11
+
+label aspenday11:
+    n "The walk up to the greenhouse is incredibly long and boring."
+    
+    mc "I wonder where she went..."
+
+    n "Eventually, you reach Aspen's door. You open it carefully."
+
+    scene aspentemproom with fade
+    $ audio_crossFade(2, "music/four.ogg")
+    show a with easeinright
+    a "Doctor! You're late today..."
+
+    mc "Yeah. Miss Esther didn't show up, so I didn't really know what I was supposed to do."
+
+    show a look
+    a "Strange..."
+
+    if positive["Aspen"] == 0:
+        if lock_aspen == True:
+            jump romanceaspenday11
+        if lock_cc == False:
+            jump p_aspenday11
+    if positive["Aspen"] == -1:
+        jump n_aspenday11
+
+label romanceaspenday11:
+    mc "Are you okay? You seem awfully concerned."
+
+    show a
+    a "Yeah, I'm okay, but..."
+    a "There's something in the air. The plants are quiet... too quiet."
+
+    mc "Quiet?"
+
+    show a look
+    a "Yeah. Usually they make this soft, gentle sound - you'd know if you spent all day with them..."
+    a "But today... they're silent. No crying, no singing, no laughter..."
+    a "Silence."
+
+    mc "Huh."
+
+    show a laugh
+    a "They usually sound even more beautiful when you're here."
+    a "They tend to like the same things I do! Haha... uh..."
+    show a look
+    a "But yeah. Nothing."
+
+    mc "Is that a bad thing?"
+
+    show a
+    a "Not necessarily bad, just... interesting. I don't know."
+    show a laugh
+    a "It's so good to see you, though. I'm glad you came back after... yesterday, haha."
+    
+    mc "Why wouldn't I have come back?"
+
+    show a look
+    a "Oh, I don't know. I get worried like that."
+
+    mc "Don't worry, Aspen. I'm not going anywhere."
+
+    show a
+    a "Good."
+    show a look
+    a "You should be going, though. A-As much as I'd love to keep you, you {i}are{/i} behind on schedule, haha..."
+
+    mc "Yes, you're right, Aspen."
+    mc "I hope the plants... feel better."
+
+    show a
+    a "Me too."
+
+    mc "I'll see you tomorrow, Aspen."
+
+    a "Same to you, Doctor. Hah."
+
+    n "You finish your checklist on Aspen and leave the room."
+
+    jump ccday11
+
+label p_aspenday11:
+    mc "Is everything alright in here? You seem awfully concerned."
+
+    show a
+    a "Yeah. Well, everything's physically fine, but..."
+    a "There's something in the air. The plants are quiet... too quiet."
+
+    mc "Quiet?"
+
+    show a look
+    a "Yeah. Usually they make this soft, gentle sound - you'd know if you spent all day with them..."
+    a "But today... they're silent. No crying, no singing, no laughter..."
+    a "Silence."
+
+    mc "Huh."
+    mc "Is that a bad thing?"
+
+    show a
+    a "Not necessarily bad, just... interesting. I don't know."
+    show a laugh
+    a "It's good to see you, though."
+    show a
+    a "I'm glad there's at least one constant in my daily routine."
+    
+    mc "I can imagine the stress of maintaining these plants could get to someone."
+
+    show a look
+    a "Sometimes, yeah. But I enjoy it regardless."
+
+    mc "That's good, Aspen."
+    show a look
+    a "You should be going, though. As much as I like the company, you {i}are{/i} behind on schedule, haha..."
+
+    mc "Yes, you're right, Aspen."
+    mc "I hope the plants... feel better."
+
+    show a
+    a "Me too."
+
+    mc "I'll see you tomorrow, Aspen."
+
+    a "Same to you."
+
+    n "You finish your checklist on Aspen and leave the room."
+
+    jump ccday11
+
+label n_aspenday11:
+    mc "Is everything alright in here? You seem hesitant today."
+
+    show a look
+    a "Well, there are some concerns I have about that plants..."
+    show a laugh
+    a "But that's completely natural. It's my whole job to be worried about them! Haha."
+
+    show a
+    mc "If you say so."
+
+    a "Everything's pretty much fine in here, though. No issues with my systems, which is what your real concern is, anyways."
+
+    mc "True. That is my main priority."
+
+    show a look
+    a "Since you are behind on schedule, though, you should probably get going."
+
+    mc "Yes, you're right. I'll see you tomorrow."
+
+    show a
+    a "Thank you, Doctor."
+
+    n "You finish your checklist and leave the greenhouse."
+    jump ccday11
+
+label ccday11:
+    scene hall with fade
+    n "The walk back down to the main section is uneventful."
+    n "After what feels like forever, you finally reach the door to CC's room."
+    n "You gently open the door."
+
+    scene cctemproom with fade
+    $ audio_crossFade(2, "music/five.ogg")
+    show c look with easeinright
+    n "You find CC looking at you expectantly."
+    c "Doctor? Where is Miss Esther?"
+    mc "She didn't show up this morning. I have no idea where she is."
+    c "Interesting. That's very unlike her."
+    mc "That's what everyone's said so far."
+
+    if positive["CC"] == 0:
+        if lock_cc == True:
+            jump romanceccday11
+        if lock_cc == False:
+            jump p_ccday11
+    if positive["CC"] == -1:
+        jump n_ccday11
+
+label romanceccday11:
+    show c
+    c "Regardless, it's... good to see your face."
+    c "As you're well aware, it gets lonely in here. I was worried you weren't coming at all."
+
+    mc "Nonsense. I have a job to do."
+    mc "And of course, I want to see you."
+
+    show c look
+    c "I'm so glad. You are too kind to me, Doctor."
+
+    mc "You deserve it, CC. How are you feeling today?"
+
+    show c
+    c "Terrible. The worst I've ever felt, I..."
+
+    mc "It's hard to talk about, I understand."
+
+    show c close
+    c "Yes. I know you do."
+
+    show c
+    c "I was talking to that core, the damaged one that you apparently keep bumping into..."
+    
+    mc "Wasn't he in your room the other day?"
+
+    show c look
+    c "Yes. We've been talking a lot recently."
+    c "Honestly, sometimes I'll sneak him in here so I have some company..."
+
+    mc "Sounds like you guys are getting along well."
+    
+    show c
+    c "Yes. He's kind. And he's been... trying to get better."
+    
+    mc "That's great to hear."
+    
+    show c look
+    c "Isn't it?"
+
+    show c
+    c "I only wish I could say the same about myself."
+    
+    show c close
+    c "Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence, but - you should be going, now."
+
+    show c
+    mc "Yes, CC, you're right. I'll see you tomorrow?"
+
+    c "I hope so."
+
+    n "You finish your checklist, gently touch CC on the... \"cheek\", and leave his room."
+
+    jump robday11
+
+label p_ccday11:
+    show c look
+    c "Regardless, it's good to see you. I was worried something had happened."
+
+    mc "Well, technically something did, but... I have a job to do."
+
+    show c
+    c "Very true."
+
+    mc "How are you feeling today?"
+
+    c "Terrible. The worst I've ever felt, I..."
+
+    mc "It's hard to talk about, I understand."
+
+    show c close
+    c "Yes. I know you do."
+
+    show c
+    c "I was talking to that core, the damaged one that you apparently keep bumping into..."
+    
+    if lock_unknown == True:
+        mc "I know who you mean."
+    mc "Wasn't he in your room the other day?"
+
+    show c look
+    c "Yes. We've been talking a lot recently."
+    c "Honestly, sometimes I'll sneak him in here so I have some company..."
+
+    mc "Sounds like you guys are getting along well."
+    
+    show c
+    c "Yes. He's kind. And he's been... trying to get better."
+    
+    if lock_unknown == True:
+        mc "It certainly looks that way. I saw him earlier. It's good for him."
+    else:
+        mc "That's great to hear."
+    
+    show c look
+    c "Isn't it?"
+
+    show c
+    c "I only wish I could say the same about myself."
+    
+    show c close
+    c "Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence, but - you should be going, now."
+
+    show c
+    mc "Yes, CC, you're right. I'll see you tomorrow."
+
+    c "Yes."
+
+    n "You finish your checklist and leave the room quietly."
+
+    jump robday11
+
+label n_ccday11:
+    show c close
+    c "You're late today - I was concerned you might not show up at all."
+
+    show c
+    c "I still have two more days before my time here is over. I have a job to do, with my supervisor or without."
+
+    c "Mmm. Very true, Doctor."
+
+    mc "How are you feeling today?"
+
+    show c close
+    c "Terrible. The worst I've ever felt, I..."
+
+    show c
+    mc "No need to elaborate. That's all the information my report requires."
+    mc "Oh, and CC -"
+
+    show c close
+    c "I truly hate to rush you along, but you are behind schedule, Doctor. You should be going."
+
+    show c
+    mc "Ah. Yes, you're right. Thank you, CC."
+
+    n "You finish your checklist and leave the room quietly."
+
+    jump robday11
+
+label robday11:
+    scene hall with fade
+    mc "Almost done..."
+
+    n "You slowly trudge your way over to the gym."
+
+    mc "Maybe she'll have sent me an email explaining her absence tonight."
+
+    scene robtemproom with fade
+    $ audio_crossFade(2, "music/six.ogg")
+    show r yell with easeinright
+    n "Once again, Rob is yelling at the TV above him."
+
+    r "OH, YOU'VE {i}GOT{/i} TO BE KIDDING ME. AM I THE ONLY SMART ONE HERE?"
+    r "FOR ONCE IN YOUR GODDAMN LIFE, COACH, COULD YOU MAKE A GOOD CALL?"
+    show r close
+    r "Jeez..."
+
+    show r at bounce
+    r "Oh! Doc. Sorry, didn't hear ya come in."
+    r "I wasn't even sure you were gonna show at all! You're awfully late."
+    show r angry
+    r "Say, where's Miss Esther?"
+
+    mc "Dunno. She never showed up to work."
+
+    r "Really? Huh..."
+
+    if positive["Rob"] == 0:
+        if lock_rob == True:
+            jump romancerobday11
+        if lock_cc == False:
+            jump p_robday11
+    if positive["Rob"] == -1:
+        jump n_robday11
+
+label romancerobday11:
+    show r
+    r "Anyhow! Good to see ya, Doc."
+    r "Hope you're taking care of that card I gave you."
+
+    mc "Of course I am. I'd treasure anything you gave me."
+
+    show r angry
+    r "Aww, you flatter me."
+    show r
+    r "Big mistake! I love compliments."
+
+    mc "Who doesn't?"
+
+    r "True, true..."
+    show r close
+    r "But yeah. Everything's working fine in here."
+    show r
+    r "I ain't got any complaints."
+    show r angry
+    r "Other than that you aren't in here with me."
+
+    mc "You flatter me right back, Rob."
+
+    show r
+    r "I know!"
+
+    show r yell
+    r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!"
+    show r
+    r "Oh shoot! It's almost 4, Doc!"
+
+    mc "Oh God, you're right. I didn't even realize."
+
+    show r angry
+    r "You should get goin'. But hey - we'll have plenty of time this weekend, right?"
+
+    mc "Of course."
+
+    show r
+    r "Awesome. See ya, Doc."
+
+    n "You finally finish your checklist and head back out to your office."
+
+    jump day11end
+
+label p_robday11:
+    show r
+    r "Anyhow! Good to see ya, Doc."
+    r "Everything's working fine in here. Don't got any complaints."
+
+    mc "That's good. How's business?"
+
+    show r angry
+    r "Picking up, actually. Which is fine."
+    r "It ain't the best 'cuz I can't yell as much, but it's better than being in here alone all day."
+
+    mc "That's good, then."
+    mc "Aren't you glad people are finally using these machines?"
+
+    show r
+    r "Yeah! Course I am, but -"
+
+    show r yell
+    r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!"
+    show r
+    r "Oh shoot! It's almost 4, Doc!"
+
+    mc "Oh God, you're right. I didn't even realize."
+
+    show r angry
+    r "You should get goin'. Don't want you to get in trouble for going over."
+
+    mc "Of course."
+
+    show r
+    r "See ya tomorrow, Doc."
+
+    n "You finally finish your checklist and head back out to your office."
+
+    jump day11end
+
+label n_robday11:
+    show r
+    r "Anyhow!"
+    r "Everything's working fine in here. Don't got any complaints."
+
+    mc "How's business?"
+
+    show r angry
+    r "Picking up. It's whatever."
+    r "Keeps me busy."
+
+    mc "Are you alright? You're pretty short with me today, I -"
+
+    show r yell
+    r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!"
+    show r
+    r "Oh shoot! It's almost 4, Doc!"
+
+    mc "Oh, you're right. I didn't even realize."
+
+    show r angry
+    r "You should prolly get going, huh?"
+
+    mc "Yeah. Probably"
+
+    show r
+    r "Don't worry about anything in here. It's all working fine."
+    
+    mc "Roger that."
+
+    n "You finally finish your checklist and head back out to your office."
+
+    jump day11end
+
+label day11end:
+    scene office with fade
+    n "Still no sign of Miss Esther."
+    n "You sigh."
+
+    mc "Maybe in my emails?"
+
+    n "You sit down at your desk and leave your paperwork on top."
+    n "With no one to process it, you aren't sure what to do with it..."
+
+    jump e11first

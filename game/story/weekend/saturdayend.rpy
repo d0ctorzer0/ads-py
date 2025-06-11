@@ -289,9 +289,8 @@ label satend_aspen:
     $ persistent.ac2 = True
     a "{color=#fff}I mean, I'm sure you've seen things glow before, but... this is different, yes?"
     a "{color=#fff}{i}Pyrodinium bahamense{/i}. That's their binomial name."
-    a "{color=#fff}But a lot of us just refer to them by their superclass."
+    a "{color=#fff}But a lot of us just refer to them as their superclass."
     a "{color=#fff}I personally think using their full name can be important..."
-    a "{color=#fff}There's so many different species, after all."
     a "{color=#fff}They're on loan to us from Marine Studies. We generally don't carry much sea life in Botany."
     a "{color=#fff}It's a rare treat."
     a "{color=#fff}I'm glad you're here."
@@ -312,7 +311,7 @@ label satend_aspen:
     
     show a look
     a "It's such a shame that you're only here for one more week."
-    a "I have so much to tell you..."
+    a "I have so much I could tell you..."
 
     show a
     mc "I promise I'll come by and visit. Then you can tell me as much as you'd like."

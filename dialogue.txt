@@ -1475,7 +1475,7 @@ I suppose I am. Not entirely sure why, but...
 Oh, do not worry. I will.
 
 Yes... I did not appreciate the glitch last week that caused my panic.
-I spoke to Finanical about it and they assured me that it shouldn't happen again, but...
+I spoke to Financial about it and they assured me that it shouldn't happen again, but...
 I doubt their truthfulness.
 Why's that?
 They've lied to me in the past. Perhaps they see me as a shell of my former glory?
@@ -1843,7 +1843,7 @@ I'm not sure.
 Fair enough.
 Change is difficult.
 I'm curious who the permanent employee for this position might be...
-If they're anything like you, I'll be happy. All I ask is for is someone kind.
+If they're anything like you, I'll be happy. All I ask is for someone kind.
 Now. As much as I'd love to have you stay and chat, you're very far behind on schedule.
 Yes, I know.
 Miss Esther may not be here to usher you along, but you must stay disciplined.
@@ -1929,6 +1929,76 @@ You should get going!
 Oh. Yes. I will.
 Thank you, Heath.
 You check Heath off your list and leave the break room.
+The walk up to the greenhouse is incredibly long and boring.
+Suddenly, you hear a familiar sound - weighed-down wheels.
+Gregory comes around the corner and nearly runs into you.
+Doctor! O-Oh. Hi!
+Gregory? What are you doing down here?
+I was just on my way to see Kris - there's a... a meeting in his conference room. They ran out of space upstairs.
+So I have to go get it ready.
+But...
+Actually, now that you're here, there's... uh... something I need to tell you, Doc -
+Me? Specifically?
+Yeah! You! Uh...
+It might be a little strange...
+A-And you might think of me differently afterwards, but...
+This is important. To me. To... us.
+We've been thinking it over, and we have to do this.
+Us? We?
+Gregory moves his bottom handle slightly, unbuttoning his trench coat. It falls to the ground.
+What stands before you is not a personality core - but three of them, just as you thought.
+The top one - Gregory's voice, you assume - looks down nervously at the other two.
+The middle one looks up at you curiously, and the bottom one glares at you in turn.
+I-I'm not... really... a personality core. I'm... three of them.
+I know I've been trying to hide it, and this is really difficult - no one knows this but my creators, and...
+I figured you should know the truth before I ask you to accept me any further.
+Accept you?
+Well, Doctor... we... have constantly been running into you, and... you treat me - uh, us so well.
+No one's done that for us before.
+I don't want you to think we're weird, or awkward, but...
+Can you give me a chance? To be closer to you?
+
+Oh, Doctor... I...
+Thank you. So much.
+I don't want to rush things too much between us, so I'm sorry if it came off that way.
+Oh no. It wasn't like that at all.
+I'm glad.
+How does... this work, anyway?
+Well, it's a little complicated...
+I'd like to know regardless.
+I - the one with the yellow eye - I do most of the talking. And appearing, of course.
+The one right below me - it does a lot of the thinking. Since we're really small physically, we don't have as much processing power...
+We gotta divide our jobs, y'know?
+And the bottom one?
+It controls the movement - the cart we're on, and our handles, our eyes...
+But we can't be separated. From what I know. We'd be incomplete, we'd...
+We wouldn't be fully functional.
+That sounds hard, Gregory.
+It is, but...
+Oh shoot! Look at the time! I've gotta get down to Kris!
+Can you put the trench coat back on me?
+Sure.
+You slide the trench coat back over Gregory and fasten it at the top.
+Thank you, Doctor.
+I'll... see you later, right?
+Absolutely.
+And they're gone.
+How strange.
+Oh... I'm sorry, Doctor, I-I know it is a little weird, haha.
+Can you... put my trench coat back on me?
+Sure, Gregory.
+You put the trench coat back over his... "shoulders".
+Well... this certainly got awkward quick.
+On second thought, I should probably leave. I...
+I'll see you later, Doc!
+And he's gone.
+How strange...
+Suddenly, you hear a familiar sound - a faint, but distinct, humming.
+You enter CC's room. He's looking at you expectantly.
+Doctor? Where is Miss Esther?
+She didn't show up this morning. I have no idea where she is.
+Interesting. That's very unlike her.
+That's what everyone's said so far.
 You enter your chambers for what feels like the 8th time.
 ...probably because this is the 8th time.
 Only 4 more days till you're out of here...
@@ -1949,7 +2019,7 @@ Kris, it's time... for your check-in.
 Er, Miss Esther... is everything alright?
 She's tired, apparently.
 Very much so.
-Well. I have good news for you, then - everything's running smoothly here.
+Well. I have good news for you, then - everything's alright in here.
 I don't have anything to report today.
 The stock is looking better than ever, and I'm running smoothly as well.
 Do you want to see how smoothly I'm running, Doctor?
@@ -1963,7 +2033,7 @@ Doctor, I know you have your one-on-one supervising shift tomorrow, and...
 It would be well in your interest to supervise me tomorrow.
 That's all I'll say.
 Kris... what are you saying?
-Nothing, Miss Esther. I apologise.
+Nothing, Miss Esther. I apologize.
 Always good to see your face, Doctor.
 Sunshine on a cloudy day.
 ...whatever that means.
@@ -2058,7 +2128,7 @@ You check Heath off and leave the break room with Miss Esther.
 I genuinely don't know how you did that.
 I know you feel this is a waste of time, Doctor, but this is my passion.
 Forgive me if I can't resist the urge to show off!
-As you can see, though, everything here is working jsut fine.
+As you can see, though, everything here is working just fine.
 I know you have a schedule to keep, so...
 ...Yes, I'll be going.
 Wonderful! I mean...
