@@ -1,24 +1,89 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/endings/battle.rpy", line 65, in script
-    "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ YIELD ] COMMAND\n\nYIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 50% CHANCE OF STUNNING CORE FOR ONE (1) CYCLE. CHANCE DECREASES WITH EACH USE."
-ValueError: unsupported format character 'C' (0x43) at index 114
+  File "game/story/endings/battle.rpy", line 179, in script
+    show screen esther_speak with easeintop
+  File "renpy/common/000statements.rpy", line 650, in execute_show_screen
+    renpy.with_statement(eval(transition_expr))
+  File "game/story/endings/battle.rpy", line 235, in execute
+    screen esther_speak:
+  File "game/story/endings/battle.rpy", line 235, in execute
+    screen esther_speak:
+  File "game/story/endings/battle.rpy", line 236, in execute
+    add "gui/boss/speakingbox_[es_turn].png"
+Exception: DynamicImage 'gui/boss/speakingbox_[es_turn].png': could not find image. ('gui/boss/speakingbox_4.png')
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/endings/battle.rpy", line 65, in script
-    "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ YIELD ] COMMAND\n\nYIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 50% CHANCE OF STUNNING CORE FOR ONE (1) CYCLE. CHANCE DECREASES WITH EACH USE."
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
-    Say.execute(self)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\sayexports.py", line 121, in say
-    what = what % tag_quoting_dict
-ValueError: unsupported format character 'C' (0x43) at index 114
+  File "game/story/endings/battle.rpy", line 179, in script
+    show screen esther_speak with easeintop
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1987, in execute
+    self.call("execute")
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1966, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 650, in execute_show_screen
+    renpy.with_statement(eval(transition_expr))
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\statementexports.py", line 257, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 1581, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2882, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 1384, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\movetransition.py", line 383, in render
+    old_r = renpy.display.render.render(self.old, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\transform.py", line 1056, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 994, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 427, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 2184, in render
+    cr = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 752, in render
+    self.update()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/story/endings/battle.rpy", line 235, in execute
+    screen esther_speak:
+  File "game/story/endings/battle.rpy", line 235, in execute
+    screen esther_speak:
+  File "game/story/endings/battle.rpy", line 236, in execute
+    add "gui/boss/speakingbox_[es_turn].png"
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\sl2\sldisplayables.py", line 453, in sl2add
+    d = renpy.easy.displayable(d, scope=scope)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\easy.py", line 119, in displayable
+    return renpy.display.image.DynamicImage(d, scope=scope)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\image.py", line 598, in __init__
+    self.find_target(scope)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\image.py", line 683, in find_target
+    raise Exception(error)
+Exception: DynamicImage 'gui/boss/speakingbox_[es_turn].png': could not find image. ('gui/boss/speakingbox_4.png')
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
 Aperture Dating Simulator 0.2.5alpha
-Wed Jun 11 10:54:47 2025
+Thu Jun 12 12:53:44 2025

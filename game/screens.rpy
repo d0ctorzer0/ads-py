@@ -204,27 +204,40 @@ screen input(prompt):
     style_prefix "input"
 
     window:
+        if terminaltext == True:
+            background None
+            ypos 1045
+            xpos 1250
 
         vbox:
-
             xanchor gui.dialogue_text_xalign
             xpos gui.dialogue_xpos
             xsize gui.dialogue_width
             ypos gui.dialogue_ypos
 
+            
+            
             text prompt style "input_prompt"
-            input id "input"
+            
+            if terminaltext == True:
+                input id "input2"
+            elif terminaltext == False:
+                input id "input"
+
 
 style input_prompt is default
 
-style input_prompt:
-    xalign gui.dialogue_text_xalign
-    properties gui.text_properties("input_prompt")
+style terminalinput is default
 
 style input:
+    color "#b8b8b8"
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
-
+    
+style input2:
+    color "#cdcdcd"
+    xalign gui.dialogue_text_xalign
+    xmaximum gui.dialogue_width
 
 ## Choice screen ###############################################################
 ##
