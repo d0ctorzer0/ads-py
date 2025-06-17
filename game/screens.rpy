@@ -118,6 +118,7 @@ screen say(who, what):
         if terminaltext == True:
             style_prefix "terminal"
             xpos 1250 ypos 1045
+            
             background None
 
         if who is not None:
@@ -230,12 +231,12 @@ style input_prompt is default
 style terminalinput is default
 
 style input:
-    color "#b8b8b8"
+    color "#787878"
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
     
 style input2:
-    color "#cdcdcd"
+    color "#9e9e9e"
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
 

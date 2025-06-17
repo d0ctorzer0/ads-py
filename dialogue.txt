@@ -1,3 +1,68 @@
+WELCOME TO APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
+BOOTING...
+BOOT SUCCESSFUL
+APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
+COMMAND LIST
+
+[[] HELP  - DISPLAYS THIS LIST
+[[] YIELD  - ATTEMPT A HACK INTO MAIN CORE SYSTEMS
+[[] DELETE  - CAUTION! MAY DELETE CRUCIAL CORE FUNCTIONS
+
+[[] PRINT  - INPUT TEXT INTO MAIN CORE SYSTEMS
+[[] RETURN  - END ACTION
+
+ENTER "HELP [[]COMMAND NAME" ON MAIN INPUT SCREEN FOR
+MORE INFORMATION.
+APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
+[[] YIELD  COMMAND
+
+YIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 50 PERCENT
+CHANCE OF STUNNING CORE FOR ONE (1) CYCLE. CHANCE DECREASES
+WITH EACH USE. USES ONE (1) COMMAND POINT.
+APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
+[[] DELETE  COMMAND
+
+THIS FUNCTION MAY CAUSE CRITICAL DAMAGE TO CORE. USE WITH CAUTION.
+MAIN SYSTEMS PROTECTED. CONTACT ENCODING FOR ADDITIONAL
+RE-ADJUSTMENT IF NECESSARY. USES TWO (2) COMMAND POINTS.
+APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
+[[] PRINT  COMMAND
+
+ATTEMPTS TO "SPEAK" TO THE CORE VIA A CODE STRING. CORE MUST
+HAVE AN OPEN CHANNEL FOR THIS COMMAND TO FUNCTION PROPERLY.
+USES ONE (1) COMMAND POINT.
+APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
+[[] RETURN  COMMAND
+
+PASSES COMMAND INPUT AND ENDS CYCLE, ALLOWING CORE TO EXECUTE COMMANDS. RETURNS (2) COMMAND POINTS IF NO OTHER COMMANDS EXECUTED, AND (1) OTHERWISE.
+NOT ENOUGH COMMAND POINTS REMAINING. UNABLE TO EXECUTE.
+NO MORE COMMAND POINTS REMAINING. UNABLE TO EXECUTE.
+CORE ALREADY STUNNED. UNABLE TO EXECUTE.
+PRINT COMMAND SUCCESSFUL.
+PRINT COMMAND FAILED. CORE UNABLE TO RECIEVE TEXT STRING.
+COMMAND NOT RECOGNIZED. PLEASE ENTER A COMMAND.
+DELETE COMMAND EXECUTED.
+YIELD COMMAND EXECUTED. CORE STUNNED FOR ONE (1) CYCLE.
+YIELD COMMAND FAILED. UNABLE TO EXECUTE.
+CYCLE ENDED. CORE EXECUTING COUNTER-COMMANDS.
+CORE UNABLE TO EXECUTE COMMANDS. RESTARTING CYCLE.
+LASER ACTIVATED. PLEASE STAND BACK.
+FLOODING PROTOCOL ACTIVATED. PLEASE REACH HIGHER GROUND.
+CORE_SYSTEM_PASS. CORE CYCLE ENDED. RESTARTING.
+NEUROTOXIC PROTOCOL ACTIVATED. PLEASE ATTACH GAS MASK.
+YOU: "Why are you doing this, Miss Esther?
+ What do you have to gain?"
+YOU: "What happened to the previous employee? Were you behind that?"
+YOU: "I can't believe this, Miss Esther. All this time, you were planning this?"
+mc died the end
+game is continuing here
+Nothing from Miss Esther...
+Oh well. I guess I'll see her tomorrow.
+Maybe...
+You throw down your paperwork, exhausted, and fall into your stasis chamber.
+You wake up to a strange feeling in the air...
+Something feels off.
+Ignoring it, you grab your paperwork and leave your room. Only one more night in here...
 Doctor.
 I'm sure you're well aware of the warning I gave you a while back.
 "Don't get too attached to the cores?"
@@ -17,6 +82,27 @@ What is WITH you humans and forming such strong emotional attachments?
 To BARELY ANIMATE OBJECTS, mind you!
 Oh well. It's none of my concern.
 But you...
+You've become a problem. One I cannot ignore.
+I'm... I'm sorry, Doctor.
+Doctor! I apologize for my absence yesterday...
+I was trapped in my charging port - a simple code failure - but for some reason, Repair didn't come by until 6pm...
+That's annoying.
+Tell me about it!
+But yes. I apologize.
+I do have good news for you though!
+Management contacted me this morning and told me the permanent employee will be starting today.
+What does that mean for me, then?
+Well, I hate to say, but you'll be on your way back down to Maintenance today.
+I know it's very short notice, and I'm truly sorry about that, but...
+I'm just following what upper management is telling me.
+No, I understand. I'm sure my coworkers down there will be happy, anyways.
+Suddenly, there's a knock on the door.
+Oh! That must be her! Sorry, Doctor, but I need you to leave now.
+It was a pleasure to work with you. Truly one of the best employees I've had in a while.
+I'll see you around, Doctor.
+I hope you've enjoyed your time here. I'll see you around.
+ace ending
+unlikable ending
 You make it to your room, change into your bedclothes, and prepare to sleep.
 Tomorrow's the last day of the week, and maintenance doesn't work on the weekends, other than being on-call.
 You're excited for your first day off, though a little curious what you'll do if you can't leave the campus.
@@ -137,16 +223,16 @@ I believe the new CEO installed that only recently, with the new funds Aperture'
 Interesting. Manufacturing is also below us, I believe, but I've never heard of there being a lounge...
 Manufacturing is quite large. Perhaps you've simply never encountered it.
 We're here now. Go on in.
-Doctor, Doctor, now's... really not a good time, haha...
+Doctor, Doctor, now's not a really good time!
 You look around the room. It's darker than usual - not a good sign for an underground greenhouse.
 Is something going on?
 Ahh, yeah, kind of? Haha... the artificial sunlight, pumped in from the surface...
-It turned off overnight. I'm not quite sure why.
+It turned off overnight.
 When I got in this morning, things were completely dark... I had to quickly report the problem to Facilities so they could fix it.
 Aspen is rushing from specimen to specimen as they speak to you, frantically checking their work.
 I'm afraid it was too late. And now I'm just doing clean-up before night shift gets here...
 
-Oh, no, Doctor, this is my job. Plus, you aren't cleared to work on this.
+Oh, no, Doctor, this is my job. Plus, you aren't really cleared to work on this.
 I appreciate it, though.
 I've already sent an email to Facilities asking them to increase the sunlight output for a while, but...
 ...can you send them one as well? Your input might be more convincing for them.
@@ -154,15 +240,15 @@ I don't think they respect me very much...
 Yes, I'll do that, Aspen.
 Thank you, Doctor.
 And... thank you. For your treatment of me this week.
-You've been very respectful and, uh... very kind.
-I'm not used to it. It's a little strange.
+You've been very respectful and... very kind.
+I'm not used to it. It's a little strange...
 But thank you.
 You're welcome, Aspen.
 I should be going now. Good luck in here.
 I'll make sure to send that email tonight.
 Yes. I'll see you on Monday, Doctor.
-Oh, that's funny - no, no. They look okay from the outside, but on the inside...
-They're dying. Without the sunlight for that long, and this deep into the facility...
+Oh, that's funny - no, no. They look okay from the outside, but on the inside, they're dying.
+Without the sunlight for that long, and this deep into the facility...
 It's dangerous. We might lose half of these specimens because of this.
 Well, you're the expert, I suppose.
 Yes, I am, I guess.
@@ -563,7 +649,7 @@ The core slowly opens its optic and turns to face you. It looks... tired, someho
 Oh. This one's new, isn't it?
 Yes. This is the new temp.
 What's wrong with you?
-What's wrong with me? Haha...
+What's wrong with me?
 The core laughs, then coughs harshly.
 I have cancer.
 You look at the core, then at Miss Esther, then back at the core again.
@@ -580,7 +666,7 @@ Are you sure you want to choose this option? It is unnecessarily cruel and horri
 Don't ask me. Humans can be cruel. Especially... Aperture ones.
 Yes. Horrible indeed.
 Does that mean you're dying?
-Haha... they aren't sure. That's what they're testing.
+They aren't sure. That's what they're testing.
 If they wanted to test... robotic disease, or whatever... why didn't they use one of the non-sentient machines?
 Don't ask me. You humans are cruel.
 Well. Maybe not all of you.
@@ -639,7 +725,7 @@ Not really. Too busy with their fancy science to get some exercise in.
 
 Yeah, I suppose so.
 Keep it up.
-Why, thank you. I try to keep in nice just in case someone needs it.
+Why, thank you. I try to keep in nice in case someone needs it.
 I do get the occasional customer, but it's only about once a week.
 So I spend my shifts watching the game instead.
 Sounds fun.
@@ -778,20 +864,20 @@ That's better than "absolutely horrible, thanks Aspen," haha.
 Everything alright in here? Sprinklers functioning as normal?
 Yes, actually.
 Things are even better now that you're here!
-Ahem. Sprinklers functioning normally, all that, yes, yeah.
+Ahem. Sprinklers functioning normally, yes, yeah.
 That's great.
 You suddenly notice something a little concerning - the moss growing on Aspen is beginning to creep into their inner mechanisms.
 This could be a maintenance issue.
 Aspen, that moss on you...
 
-Oh, this? It's just sphagnum moss. It really shouldn't be an issue.
-Don't worry. It won't get into anything critical. My core systems are sealed in case something like that were to happen.
+Oh, this? It's just sphagnum moss. It shouldn't be an issue.
+Don't worry. It won't get into anything critical. My core systems are sealed in case something like this were to happen.
 It's all under control! Haha.
 I do appreciate you showing concern, though, Doctor.
 Of course.
-You should probably be going, now. Miss Esther is waiting.
+You should probably get going, now. Miss Esther is waiting.
 Yes, you're right. I'll see you tomorrow?
-Casual Friday! Yes, you'll see me.
+Yes, you'll see me.
 Have a good day, Doctor.
 You mark off your checklist and leave the greenhouse.
 Miss Esther greets you outside the door.
@@ -913,7 +999,7 @@ Listen, I should scram 'fore that little pink core of yours shows up again.
 Miss Esther, you mean?
 Yeah, yeah, her. So. I'll send you a little message tonight.
 Keep an eye on your inbox, yeah?
-The core gave a little bow and exited the room.
+The core gives a little bow and exits the room.
 If nothing else, he's certainly interesting...
 You return back to your desk.
 You stay quiet.
@@ -927,7 +1013,7 @@ You hear the core zoom away from your door. You sigh.
 You return to your desk.
 Just as you sit back down, the door opens and Miss Esther comes barreling in extremely fast.
 Sorry! Sorry I'm late! I got caught up in rail traffic...
-She shakes her head.
+She shakes her chassis.
 You'd think with the increase in robots working at Aperture, they'd at least try to expand the rail system...
 Regardless! Welcome back. Since we're a little behind, we should get started right away. Do you have everything you need?
 Yes, I believe so.
@@ -1290,19 +1376,19 @@ That's a lot of pressure.
 Tell me about it.
 So, uh... do you have a favorite plant? Out of all of these?
 Oh yes! Absolutely! Come over here, and I'll show you.
-You follow Aspen on his management rail as he leads you to a back corner.
+You follow Aspen on their management rail as they lead you to a back corner.
 The screen fades to a close-up shot of Aspen looking down at a fern. The scene is softly lit and is mostly dark.
 This is Penelope. She's an "Adiantum" - a maidenhair fern.
 She's extremely tempermental. Doesn't listen to anyone but me.
-I swear, if any other greenhouse employee tries to water her or test on her, she throws a fit.
+I swear, if any other greenhouse employee tries to water her or test on her, she'll throw a fit.
 Haha, not literally, of course. She'll just wilt. But she's my favourite.
 She's beautiful.
 Thank you. I know.
 You suddenly realize how close you are to Aspen. They realize, too.
-Oh! Ahem, uh, sorry. I was excited to show you my - uh... favorite plant.
+Oh! Uh, sorry. I'm just excited to show you my... favorite plant.
 No worries.
 Oh, not really. I like all my plants equally.
-Can't be picking favorites - what if it dies? Haha.
+Can't be picking favorites - what if one dies? Hah.
 The rest of your shift is very informative.
 Aspen spends their time watering the plants and rattling off botanical facts.
 You learn more about botany than you ever thought you'd care to.
@@ -1929,7 +2015,6 @@ You should get going!
 Oh. Yes. I will.
 Thank you, Heath.
 You check Heath off your list and leave the break room.
-The walk up to the greenhouse is incredibly long and boring.
 Suddenly, you hear a familiar sound - weighed-down wheels.
 Gregory comes around the corner and nearly runs into you.
 Doctor! O-Oh. Hi!
@@ -1993,12 +2078,247 @@ On second thought, I should probably leave. I...
 I'll see you later, Doc!
 And he's gone.
 How strange...
-Suddenly, you hear a familiar sound - a faint, but distinct, humming.
-You enter CC's room. He's looking at you expectantly.
+Suddenly, you hear a sound - a faint, but distinct, humming.
+A familiar-looking "face" rounds the corner - albeit, a little... different from when you last saw it.
+Oh! Doc! Sorry, didn't mean to intrude on your route, I...
+Where's that core that's always following you?
+Don't know, but... is that really you?
+Yep! It's me. I know, I look a little different...
+I finally got off my ass and went down to repair to go get fixed.
+They almost refused me service! Hah.
+Took a lot of work - 'bout 3 hours, but... I feel better than ever.
+You... sound better, too.
+Well, it ain't easy... I still got a lot of pain in my chassis, and... y'know...
+I'm tryin' to be better.
+'Cuz, well, Doc...
+I really wanted to prove to ya that I'm more than what I look like.
+Now, s'true, I've been on a downwards spiral for years now...
+Hell, I can't even remember my own name...
+But I really hope that doesn't dissuade ya.
+I'm tryin' to be better. Fixing myself up like this... that's my proof to ya, Doc.
+You've been awfully patient with me. Through my flirtin' and everything...
+I wanna keep... what we have... goin'.
+Whaddaya say?
+
+Well then...
+I'd consider myself one lucky guy.
+I can't believe you went and fixed yourself up just for me.
+Well, it wasn't all for you, y'know.
+Some of it was for myself, too.
+Can't stay like that forever...
+But yeah. Mostly you.
+You said you can't remember your name? At all?
+Yeah, that's right. I haven't been attached to the system in so long, I don't even know when I was activated...
+I'm sure the memory's somewhere deep in my systems, but...
+I've yet to reach it.
+That must be hard.
+Sometimes. I don't know how to introduce myself...
+So I jus' don't.
+Fair enough.
+Now, Doc, I have a feeling you're runnin' late, so you should prolly get on your way...
+But don't worry. You'll see me later for sure.
+Can't wait.
+See ya, Doc.
+And he's gone.
+How interesting.
+Well... no worries. I get it.
+I'm a better man. I can take rejection.
+Sorry, it's just -
+Nah, Doc, I understand. Don't feel guilty.
+I can improve myself for me, y'know.
+Anyways, you should get goin'. I can tell you're kinda in a hurry.
+I'll see ya around.
+And he's off.
+The walk up to the greenhouse is incredibly long and boring.
+I wonder where she went...
+Eventually, you reach Aspen's door. You open it carefully.
+Doctor! You're late today...
+Yeah. Miss Esther didn't show up, so I didn't really know what I was supposed to do.
+Strange...
+Are you okay? You seem awfully concerned.
+Yeah, I'm okay, but...
+There's something in the air. The plants are quiet... too quiet.
+Quiet?
+Yeah. Usually they make this soft, gentle sound - you'd know if you spent all day with them...
+But today... they're silent. No crying, no singing, no laughter...
+Silence.
+Huh.
+They usually sound even more beautiful when you're here.
+They tend to like the same things I do! Haha... uh...
+But yeah. Nothing.
+Is that a bad thing?
+Not necessarily bad, just... interesting. I don't know.
+It's so good to see you, though. I'm glad you came back after... yesterday, haha.
+Why wouldn't I have come back?
+Oh, I don't know. I get worried like that.
+Don't worry, Aspen. I'm not going anywhere.
+Good.
+You should be going, though. A-As much as I'd love to keep you, you are behind on schedule, haha...
+Yes, you're right, Aspen.
+I hope the plants... feel better.
+Me too.
+I'll see you tomorrow, Aspen.
+Same to you, Doctor. Hah.
+You finish your checklist on Aspen and leave the room.
+Is everything alright in here? You seem awfully concerned.
+Yeah. Well, everything's physically fine, but...
+There's something in the air. The plants are quiet... too quiet.
+Quiet?
+Yeah. Usually they make this soft, gentle sound - you'd know if you spent all day with them...
+But today... they're silent. No crying, no singing, no laughter...
+Silence.
+Huh.
+Is that a bad thing?
+Not necessarily bad, just... interesting. I don't know.
+It's good to see you, though.
+I'm glad there's at least one constant in my daily routine.
+I can imagine the stress of maintaining these plants could get to someone.
+Sometimes, yeah. But I enjoy it regardless.
+That's good, Aspen.
+You should be going, though. As much as I like the company, you are behind on schedule, haha...
+Yes, you're right, Aspen.
+I hope the plants... feel better.
+Me too.
+I'll see you tomorrow, Aspen.
+Same to you.
+You finish your checklist on Aspen and leave the room.
+Is everything alright in here? You seem hesitant today.
+Well, there are some concerns I have about that plants...
+But that's completely natural. It's my whole job to be worried about them! Haha.
+If you say so.
+Everything's pretty much fine in here, though. No issues with my systems, which is what your real concern is, anyways.
+True. That is my main priority.
+Since you are behind on schedule, though, you should probably get going.
+Yes, you're right. I'll see you tomorrow.
+Thank you, Doctor.
+You finish your checklist and leave the greenhouse.
+The walk back down to the main section is uneventful.
+After what feels like forever, you finally reach the door to CC's room.
+You gently open the door.
+You find CC looking at you expectantly.
 Doctor? Where is Miss Esther?
 She didn't show up this morning. I have no idea where she is.
 Interesting. That's very unlike her.
 That's what everyone's said so far.
+Regardless, it's... good to see your face.
+As you're well aware, it gets lonely in here. I was worried you weren't coming at all.
+Nonsense. I have a job to do.
+And of course, I want to see you.
+I'm so glad. You are too kind to me, Doctor.
+You deserve it, CC. How are you feeling today?
+Terrible. The worst I've ever felt, I...
+It's hard to talk about, I understand.
+Yes. I know you do.
+I was talking to that core, the damaged one that you apparently keep bumping into...
+Wasn't he in your room the other day?
+Yes. We've been talking a lot recently.
+Honestly, sometimes I'll sneak him in here so I have some company...
+Sounds like you guys are getting along well.
+Yes. He's kind. And he's been... trying to get better.
+That's great to hear.
+Isn't it?
+I only wish I could say the same about myself.
+Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence, but - you should be going, now.
+Yes, CC, you're right. I'll see you tomorrow?
+I hope so.
+You finish your checklist, gently touch CC on the... "cheek", and leave his room.
+Regardless, it's good to see you. I was worried something had happened.
+Well, technically something did, but... I have a job to do.
+Very true.
+How are you feeling today?
+Terrible. The worst I've ever felt, I...
+It's hard to talk about, I understand.
+Yes. I know you do.
+I was talking to that core, the damaged one that you apparently keep bumping into...
+I know who you mean.
+Wasn't he in your room the other day?
+Yes. We've been talking a lot recently.
+Honestly, sometimes I'll sneak him in here so I have some company...
+Sounds like you guys are getting along well.
+Yes. He's kind. And he's been... trying to get better.
+It certainly looks that way. I saw him earlier. It's good for him.
+That's great to hear.
+Isn't it?
+I only wish I could say the same about myself.
+Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence, but - you should be going, now.
+Yes, CC, you're right. I'll see you tomorrow.
+Yes.
+You finish your checklist and leave the room quietly.
+You're late today - I was concerned you might not show up at all.
+I still have two more days before my time here is over. I have a job to do, with my supervisor or without.
+Mmm. Very true, Doctor.
+How are you feeling today?
+Terrible. The worst I've ever felt, I...
+No need to elaborate. That's all the information my report requires.
+Oh, and CC -
+I truly hate to rush you along, but you are behind schedule, Doctor. You should be going.
+Ah. Yes, you're right. Thank you, CC.
+You finish your checklist and leave the room quietly.
+Almost done...
+You slowly trudge your way over to the gym.
+Maybe she'll have sent me an email explaining her absence tonight.
+Once again, Rob is yelling at the TV above him.
+OH, YOU'VE GOT TO BE KIDDING ME. AM I THE ONLY SMART ONE HERE?
+FOR ONCE IN YOUR GODDAMN LIFE, COACH, COULD YOU MAKE A GOOD CALL?
+Jeez...
+Oh! Doc. Sorry, didn't hear ya come in.
+I wasn't even sure you were gonna show at all! You're awfully late.
+Say, where's Miss Esther?
+Dunno. She never showed up to work.
+Really? Huh...
+Anyhow! Good to see ya, Doc.
+Hope you're taking care of that card I gave you.
+Of course I am. I'd treasure anything you gave me.
+Aww, you flatter me.
+Big mistake! I love compliments.
+Who doesn't?
+True, true...
+But yeah. Everything's working fine in here.
+I ain't got any complaints.
+Other than that you aren't in here with me.
+You flatter me right back, Rob.
+I know!
+HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!
+Oh shoot! It's almost 4, Doc!
+Oh God, you're right. I didn't even realize.
+You should get goin'. But hey - we'll have plenty of time this weekend, right?
+Of course.
+Awesome. See ya, Doc.
+You finally finish your checklist and head back out to your office.
+Anyhow! Good to see ya, Doc.
+Everything's working fine in here. Don't got any complaints.
+That's good. How's business?
+Picking up, actually. Which is fine.
+It ain't the best 'cuz I can't yell as much, but it's better than being in here alone all day.
+That's good, then.
+Aren't you glad people are finally using these machines?
+Yeah! Course I am, but -
+HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!
+Oh shoot! It's almost 4, Doc!
+Oh God, you're right. I didn't even realize.
+You should get goin'. Don't want you to get in trouble for going over.
+Of course.
+See ya tomorrow, Doc.
+You finally finish your checklist and head back out to your office.
+Anyhow!
+Everything's working fine in here. Don't got any complaints.
+How's business?
+Picking up. It's whatever.
+Keeps me busy.
+Are you alright? You're pretty short with me today, I -
+HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!
+Oh shoot! It's almost 4, Doc!
+Oh, you're right. I didn't even realize.
+You should prolly get going, huh?
+Yeah. Probably
+Don't worry about anything in here. It's all working fine.
+Roger that.
+You finally finish your checklist and head back out to your office.
+Still no sign of Miss Esther.
+You sigh.
+Maybe in my emails?
+You sit down at your desk and leave your paperwork on top.
+With no one to process it, you aren't sure what to do with it...
 You enter your chambers for what feels like the 8th time.
 ...probably because this is the 8th time.
 Only 4 more days till you're out of here...
@@ -3126,34 +3446,32 @@ Really? Doesn't this place take a lot of work to maintain?
 Only when the specimens are constantly being tested on.
 Over the weekend, none of the scientists are here...
 ...and the plants are happy. It's peaceful.
-They have feelings, you know, and - not that I don't get it, but...
-Sometimes I wish they wouldn't test so much on them.
+They have feelings, you know, and - not that I don't get it...
+But sometimes I wish they wouldn't test on them so much.
 I understand.
 I feel like Bertha is trying to tell me things sometimes.
 See, I knew you'd get me.
 Say, uh, Doctor...
 You normally aren't here when this happens, but...
 We have a sample of dinoflagellates in the lab for the next few days.
-It's a bioluminescent algae. They emit this beautiful blue-green glow in the dark.
+It's a bioluminescent algae - they emit this beautiful blue-green glow in the dark.
 If you'd like, and you're not busy, would you like to stop by during the artificial night cycle tonight?
 
 Oh, wonderful, wonderful, haha.
 You should leave now - staying too long could get you in trouble.
 I don't want that.
 Oh. Yes, I'll leave.
-I hope I'll see you tonight, Doctor.
+I hope I... I'll see you tonight, Doctor.
 You leave the greenhouse and carefully close the door behind you.
 Oh, no worries at all. I get it.
 There's always another time.
 You should leave now - staying too long could get you in trouble.
-We don't want that.
 Oh. Yes, I'll leave.
 I hope I'll see you tonight, Doctor, regardless!
 You leave the greenhouse and carefully close the door behind you.
 Ah, yes. Facilities contacted me personally, so you didn't need to send an email.
-Everything's working fine, but...
-You really shouldn't be here outside of working hours, Doctor.
-You could contaminate the specimens. And I don't think you're approved to be in here off-hours anyway.
+Everything's working fine.
+I don't think you're approved to be in here off-hours, anyways.
 Oh. Yes, sorry. I'll go.
 Ah, thank you. I'll see you on Monday.
 You leave the greenhouse and carefully close the door behind you.
@@ -3426,9 +3744,8 @@ Wow.
 The algae glow a vibrant blue-green light, unlike anything you've ever seen.
 I mean, I'm sure you've seen things glow before, but... this is different, yes?
 Pyrodinium bahamense. That's their binomial name.
-But a lot of us just refer to them by their superclass.
+But a lot of us just refer to them as their superclass.
 I personally think using their full name can be important...
-There's so many different species, after all.
 They're on loan to us from Marine Studies. We generally don't carry much sea life in Botany.
 It's a rare treat.
 I'm glad you're here.
@@ -3439,7 +3756,7 @@ I just hope you know that I really appreciate you, Doctor.
 I appreciate you too, Aspen. It's been wonderful to learn what little you've shown me.
 I'd honestly be interested in hearing even more.
 It's such a shame that you're only here for one more week.
-I have so much to tell you...
+I have so much I could tell you...
 I promise I'll come by and visit. Then you can tell me as much as you'd like.
 No, that can't work. Once you're back in Manufacturing, you won't be permitted to come into the greenhouse.
 And I'm not permitted to leave...

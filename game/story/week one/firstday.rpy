@@ -5,6 +5,8 @@ label start:
     
     play music one
 
+    $ terminaltext = False
+
     if renpy.is_skipping() == False:
         show screen daytransition
         $ renpy.pause(2.0, hard=True)
@@ -809,7 +811,7 @@ label ccday1:
     with easeinright
     mc "What's wrong with you?"
 
-    cu "What's wrong with me? Haha..."
+    cu "What's wrong with me?"
 
     show c close
     n "The core laughs, then coughs harshly."
@@ -893,7 +895,7 @@ label impresscc:
     mc "Does that mean you're dying?"
 
     show c close
-    c "Haha... they aren't sure. That's what they're testing."
+    c "They aren't sure. That's what they're testing."
 
     mc "If they wanted to test... robotic disease, or whatever... why didn't they use one of the non-sentient machines?"
 

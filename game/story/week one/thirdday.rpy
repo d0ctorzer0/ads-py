@@ -509,7 +509,7 @@ label aspenday3good:
         a "Oh yes! Absolutely! Come over here, and I'll show you."
 
         hide a with easeoutright
-        n "You follow Aspen on his management rail as they lead you to a back corner."
+        n "You follow Aspen on their management rail as they lead you to a back corner."
 
         $ cutscenetextbox = True
         show screen cuttextbox
