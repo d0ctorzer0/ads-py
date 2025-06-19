@@ -350,7 +350,7 @@ label heathday10:
     e "I'm sure you remember the way to the break room. Have a good shift, Doctor."
     mc "Thank you, Miss Esther."
 
-    scene heathtemproom with fade
+    scene heathroom with fade
     $ audio_crossFade(2, "music/three.ogg")
     n "You enter the break room to find all the lights turned off - except for one."
     n "The stage is lit up by a spotlight, something you're {i}certain{/i} wasn't there before."
@@ -401,7 +401,7 @@ label heathday10:
 label heathacceptance:
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene heathtemproom with fade
+    scene heathroom with fade
     $ cutscenetextbox = False
     show h with easeinright
     h "I'm so, so glad you do, Doctor."
@@ -488,7 +488,7 @@ label heathacceptance:
 label heathrejection:
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene heathtemproom with fade
+    scene heathroom with fade
     $ cutscenetextbox = False
     show h sad with easeinright
     h "Oh, no worries, Doctor. I'm sorry!"
@@ -676,6 +676,7 @@ label aspenrejection:
     hide screen cuttextbox
     scene aspentemproom with fade
     $ cutscenetextbox = False
+    scene aspentemproom with fade
     show a look with easeinright
     a "O-Oh. I'm sorry for assuming, Doctor, I..."
     a "That's on me."
@@ -1220,3 +1221,4 @@ label day10end:
 
 label endtest:
     "endtest"
+    $ MainMenu(confirm=False)

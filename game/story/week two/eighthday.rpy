@@ -229,7 +229,7 @@ label heathday8:
 
     stop music fadeout 1.0
     stop music1 fadeout 1.0
-    scene heathtemproom with fade
+    scene heathroom with fade
     n "You enter into the breakroom to find a frightening sight."
 
     show e shock with easeinright

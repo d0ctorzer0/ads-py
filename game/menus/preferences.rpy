@@ -31,7 +31,7 @@ style fileblu_button_text:
     color "#f0f0f0"
     hover_color "#94bbe3"
 
-screen pref_audio:
+screen pref_audio():
     tag pref
     modal True
     style_prefix "fileblu"
@@ -57,7 +57,7 @@ screen pref_audio:
 
 
 
-screen pref_video:
+screen pref_video():
     modal True
     tag pref
     style_prefix "fileblu"
@@ -116,7 +116,7 @@ screen pref_video:
         imagebutton idle "gui/options/emptyblurbutton.png" xpos 1180 ypos 955 action SetVariable("persistent.bluroption", "5")
     
 
-screen pref_other:
+screen pref_other():
     modal True
     tag pref
     style_prefix "fileblu"

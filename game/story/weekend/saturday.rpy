@@ -156,8 +156,8 @@ label wheatleycameo:
     $ persistent.places_visited += 1
     $ achievement.progress("ach_explore", persistent.places_visited)
     $ achievement.sync()
-    scene relaxationcenterdoor with fade
-    n "You come up to the large door that reads \"RELAXATION CENTER\", \"ENTRANCE D\"."
+    scene door2 with fade
+    n "You come up to the large door that reads \"AUTHORIZED PERSONNEL ONLY\"."
     n "From what you've heard, this is where they keep test subjects in stasis."
     n "You open the door."
 
@@ -193,10 +193,10 @@ label manufacture:
     $ persistent.places_visited += 1
     $ achievement.progress("ach_explore", persistent.places_visited)
     $ achievement.sync()
-    scene bioroom with fade
-    n "You come up to the door with the words \"MANUFACTURING SECTOR - EAST\" painted over it."
+    scene door2 with fade
+    n "You come up to the door that you assume leads to your old workplace."
     n "You don't recognize this entrance, but your office in Manufacturing was on the west side."
-    n "What Miss Esther said yesterday is probably correct. - Manufacturing is really just that large."
+    n "What Miss Esther said yesterday is probably correct - Manufacturing is really just that large."
     n "You try to open the door, but it's locked shut for the weekend. No windows to peer into, etiher."
     n "Dejected, you leave Manufacturing behind."
 
@@ -359,7 +359,7 @@ label satheath:
     python:
         v_heath = True
         cores_visited += 1
-    scene heathtemproom with fade
+    scene heathroom with fade
     n "You enter into Section C8's break room. An actual human greets you this time."
     cw "Oh, you're that new temp, right?"
 

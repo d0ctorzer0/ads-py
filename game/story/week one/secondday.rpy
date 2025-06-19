@@ -285,7 +285,7 @@ label heathday2:
 
     e "\"Connection\"... it's just not my thing. I don't understand how you humans can do it."
 
-    scene heathtemproom
+    scene heathroom
     with fade
     $ audio_crossFade(2, "music/three.ogg")
 

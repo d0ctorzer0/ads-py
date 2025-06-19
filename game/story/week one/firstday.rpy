@@ -303,7 +303,7 @@ label heathday1:
 
     mc "Alright."
 
-    scene heathtemproom with fade
+    scene heathroom with fade
     $ audio_crossFade(2, "music/three.ogg")
     show e with easeinright
     n "Miss Esther guides you into the next room, which holds a small stage with a closed curtain. Behind the drapes, you can hear crashing, banging, and..."

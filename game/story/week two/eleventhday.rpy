@@ -191,7 +191,7 @@ label n_krisday11:
     jump heathday11
 
 label heathday11:
-    scene heathtemproom with fade
+    scene heathroom with fade
     $ audio_crossFade(2, "music/three.ogg")
     n "You enter Heath's break room once again."
 

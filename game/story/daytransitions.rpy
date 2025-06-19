@@ -20,3 +20,6 @@ screen daytransition():
 screen timeskip():
     timer 0.5 action Hide("timeskip")
     add "gui/black.png" #at daydiss
+
+screen creditsfadeout():
+    add "gui/black.png"

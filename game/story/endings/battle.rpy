@@ -11,10 +11,19 @@ default es_turn = 0
 default times_talked = 0
 default printthisround = False
 
-screen main:
+init python:
+    renpy.register_style_preference("text", "basic", style.say_dialogue, "font", "fonts/SairaCondensed-SemiBold.ttf")
+    renpy.register_style_preference("text", "basic", style.say_dialogue, "color", "#404040")
+    renpy.register_style_preference("text", "basic", style.say_dialogue, "xsize", 1000)
+    #battle text
+    renpy.register_style_preference("text", "battle", style.say_dialogue, "font", "fonts/char.ttf")
+    renpy.register_style_preference("text", "battle", style.say_dialogue, "color", "#aaa")
+    renpy.register_style_preference("text", "battle", style.say_dialogue, "xsize", 1200)
+
+screen main():
     add "gui/boss/terminal.png"
     add "gui/boss/health.png"
-    bar: #cant fucking get this to work, will come back to it
+    bar:
         bar_vertical True
         value mc_health
         range 20
@@ -23,7 +32,7 @@ screen main:
         xpos 1715
         ypos 630
         xysize (60,430)
-    bar: #cant fucking get this to work, will come back to it
+    bar:
         bar_vertical True
         value es_health
         range 20
@@ -40,6 +49,7 @@ screen main:
     else:
         pass
 
+# disables all mouse input so player can't skip through cutscenes
 screen disable_Lmouse():
     key "mouseup_1" action NullAction()
     key "K_KP_ENTER" action NullAction()
@@ -48,21 +58,21 @@ screen disable_Lmouse():
     key "K_SELECT" action NullAction()
 
 label battle:
-    scene office
+    scene grey
     show screen disable_Lmouse
     stop music
     stop music1
     play music boss
     $ preferences.afm_enable = True
     $ preferences.afm_time = 5
-    show e
     show screen main
     $ terminaltext = True
     $ config.allow_skipping = False
-    "{color=#aaa}{font=char.ttf}WELCOME TO APERTURE SCIENCE CORE CONTROL CENTER (ASC3)"
+    $ renpy.set_style_preference("text", "battle")
+    "WELCOME TO APERTURE SCIENCE CORE CONTROL CENTER (ASC3)"
     $ renpy.pause(1.0, hard=True)
-    "{color=#aaa}{font=char.ttf}BOOTING{cps=1}..."
-    "{color=#aaa}{font=char.ttf}BOOT SUCCESSFUL"
+    "BOOTING{cps=1}..."
+    "BOOT SUCCESSFUL"
 
 label cmdinput:
     if not mc_health > 0:
@@ -82,56 +92,56 @@ label cmdinput:
             mc_health -= 1
         preferences.afm_enable = True
     
-        cmd = renpy.input("{color=#aaa}{font=char.ttf}PLEASE ENTER A COMMAND, OR ENTER [[ HELP ] FOR MORE INFO.", length=13)
+        cmd = renpy.input("{font=char.ttf}{color=#aaa}PLEASE ENTER A COMMAND, OR ENTER [[ HELP ].", length=13)
         cmd = cmd.strip()
     if mc_poisonedcount == 3:
         $ mc_poisoned = False
         $ mc_poisonedcount = 0
-        hide neurorepeat with fadeout
+        hide neurorepeat
     if cmd == "help":
         $ preferences.afm_enable = False
         hide screen disable_Lmouse
-        "{color=#aaa}{font=char.ttf}APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\nCOMMAND LIST\n\n[[ HELP ] - DISPLAYS THIS LIST\n[[ YIELD ] - ATTEMPT A HACK INTO MAIN CORE SYSTEMS\n[[ DELETE ] - CAUTION! MAY DELETE CRUCIAL CORE FUNCTIONS\n"
-        "{color=#aaa}{font=char.ttf}[[ PRINT ] - INPUT TEXT INTO MAIN CORE SYSTEMS\n[[ RETURN ] - END ACTION\n\nENTER \"HELP [[COMMAND NAME]\" ON MAIN INPUT SCREEN FOR\nMORE INFORMATION."
+        "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\nCOMMAND LIST\n\n[[ HELP ] - DISPLAYS THIS LIST\n[[ YIELD ] - ATTEMPT A HACK INTO MAIN CORE SYSTEMS\n[[ DELETE ] - CAUTION! MAY DELETE CRUCIAL CORE FUNCTIONS\n"
+        "[[ PRINT ] - INPUT TEXT INTO MAIN CORE SYSTEMS\n[[ RETURN ] - END ACTION\n\nENTER \"HELP [[COMMAND NAME]\" ON MAIN INPUT SCREEN FOR\nMORE INFORMATION."
         jump cmdinput
     if cmd == "help yield":
         $ preferences.afm_enable = False
         hide screen disable_Lmouse
-        "{color=#aaa}{font=char.ttf}APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ YIELD ] COMMAND\n\nYIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 50 PERCENT\nCHANCE OF STUNNING CORE FOR ONE (1) CYCLE. CHANCE DECREASES\nWITH EACH USE. USES ONE (1) COMMAND POINT."
+        "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ YIELD ] COMMAND\n\nYIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 50 PERCENT\nCHANCE OF STUNNING CORE FOR ONE (1) CYCLE. CHANCE DECREASES\nWITH EACH USE. USES ONE (1) COMMAND POINT."
         jump cmdinput
     if cmd == "help delete":
         $ preferences.afm_enable = False
         hide screen disable_Lmouse
-        "{color=#aaa}{font=char.ttf}APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ DELETE ] COMMAND\n\nTHIS FUNCTION MAY CAUSE CRITICAL DAMAGE TO CORE. USE WITH CAUTION.\nMAIN SYSTEMS PROTECTED. CONTACT ENCODING FOR ADDITIONAL\nRE-ADJUSTMENT IF NECESSARY. USES TWO (2) COMMAND POINTS."
+        "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ DELETE ] COMMAND\n\nTHIS FUNCTION MAY CAUSE CRITICAL DAMAGE TO CORE. USE WITH CAUTION.\nMAIN SYSTEMS PROTECTED. CONTACT ENCODING FOR ADDITIONAL\nRE-ADJUSTMENT IF NECESSARY. USES TWO (2) COMMAND POINTS."
         jump cmdinput
     if cmd == "help print":
         $ preferences.afm_enable = False
         hide screen disable_Lmouse
-        "{color=#aaa}{font=char.ttf}APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ PRINT ] COMMAND\n\nATTEMPTS TO \"SPEAK\" TO THE CORE VIA A CODE STRING. CORE MUST\nHAVE AN OPEN CHANNEL FOR THIS COMMAND TO FUNCTION PROPERLY.\nUSES ONE (1) COMMAND POINT."
+        "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ PRINT ] COMMAND\n\nATTEMPTS TO \"SPEAK\" TO THE CORE VIA A CODE STRING. CORE MUST\nHAVE AN OPEN CHANNEL FOR THIS COMMAND TO FUNCTION PROPERLY.\nUSES ONE (1) COMMAND POINT."
         jump cmdinput
     if cmd == "help return":
         $ preferences.afm_enable = False
         hide screen disable_Lmouse
-        "{color=#aaa}{font=char.ttf}APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ RETURN ] COMMAND\n\nPASSES COMMAND INPUT AND ENDS CYCLE, ALLOWING CORE TO EXECUTE COMMANDS. RETURNS (2) COMMAND POINTS IF NO OTHER COMMANDS EXECUTED, AND (1) OTHERWISE."
+        "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ RETURN ] COMMAND\n\nPASSES COMMAND INPUT AND ENDS CYCLE, ALLOWING CORE TO EXECUTE COMMANDS. RETURNS (2) COMMAND POINTS IF NO OTHER COMMANDS EXECUTED, AND (1) OTHERWISE."
         jump cmdinput
 
     if cmd == "delete" and ap_count == 2:
         jump cmddelete
     if cmd == "delete" and not ap_count == 2:
-        "{color=#aaa}{font=char.ttf}NOT ENOUGH COMMAND POINTS REMAINING. UNABLE TO EXECUTE."
+        "NOT ENOUGH COMMAND POINTS REMAINING. UNABLE TO EXECUTE."
         jump cmdinput
     
     if cmd == "yield" and ap_count >= 1 and esther_stunned == False:
         jump cmdyield
     if cmd == "yield" and not ap_count >= 1:
-        "{color=#aaa}{font=char.ttf}NO MORE COMMAND POINTS REMAINING. UNABLE TO EXECUTE."
+        "NO MORE COMMAND POINTS REMAINING. UNABLE TO EXECUTE."
         jump cmdinput
     if cmd == "yield" and esther_stunned == True:
-        "{color=#aaa}{font=char.ttf}CORE ALREADY STUNNED. UNABLE TO EXECUTE."
+        "CORE ALREADY STUNNED. UNABLE TO EXECUTE."
         jump cmdinput
 
     if cmd == "print" and ap_count >= 1 and times_talked < 3 and printthisround == False :
-        "{color=#aaa}{font=char.ttf}PRINT COMMAND SUCCESSFUL."
+        "PRINT COMMAND SUCCESSFUL."
         $ times_talked += 1
         $ cmdexecuted = True
         $ ap_count -= 1
@@ -145,7 +155,7 @@ label cmdinput:
     
     if cmd == "print":
         if not ap_count >= 1 or times_talked >= 3 or printthisround == True:
-            "{color=#aaa}{font=char.ttf}PRINT COMMAND FAILED. CORE UNABLE TO RECIEVE TEXT STRING."
+            "PRINT COMMAND FAILED. CORE UNABLE TO RECIEVE TEXT STRING."
             jump cmdinput
         else:
             jump cmdinput
@@ -156,7 +166,7 @@ label cmdinput:
         jump estherturn
 
     else:
-        "{color=#aaa}{font=char.ttf}COMMAND NOT RECOGNIZED. PLEASE ENTER A COMMAND."
+        "COMMAND NOT RECOGNIZED. PLEASE ENTER A COMMAND."
         jump cmdinput
 
 label cmddelete:
@@ -165,9 +175,9 @@ label cmddelete:
     python:
         ap_count -= 2
         cmdexecuted = True
-        dmgrandomizer = renpy.random.randint(1, 4)
+        dmgrandomizer = renpy.random.randint(3, 5)
         es_health -= dmgrandomizer
-    "{color=#aaa}{font=char.ttf}DELETE COMMAND EXECUTED."
+    "DELETE COMMAND EXECUTED."
     $ renpy.pause(1.0, hard=True)
     jump cmdinput
 
@@ -180,10 +190,10 @@ label cmdyield:
     if yldrandomizer >= 50:
         show white with vpunch
         $ esther_stunned = True
-        "{color=#aaa}{font=char.ttf}YIELD COMMAND EXECUTED. CORE STUNNED FOR ONE (1) CYCLE."
+        "YIELD COMMAND EXECUTED. CORE STUNNED FOR ONE (1) CYCLE."
         jump cmdinput
     elif yldrandomizer < 50:
-        "{color=#aaa}{font=char.ttf}YIELD COMMAND FAILED. UNABLE TO EXECUTE."
+        "YIELD COMMAND FAILED. UNABLE TO EXECUTE."
         jump cmdinput
 
 label cmdreturn:
@@ -196,7 +206,7 @@ label estherturn:
             ap_count = 2
         es_turn += 1
         cmdexecuted = False
-    "{color=#aaa}{font=char.ttf}CYCLE ENDED. CORE EXECUTING COUNTER-COMMANDS."
+    "CYCLE ENDED. CORE EXECUTING COUNTER-COMMANDS."
     if es_turn % 2 == 0:
         show screen esther_speak with easeintop
     else:
@@ -205,7 +215,7 @@ label estherturn:
     if esther_stunned == False:
         jump esthermove
     if esther_stunned == True:
-        "{color=#aaa}{font=char.ttf}CORE UNABLE TO EXECUTE COMMANDS. RESTARTING CYCLE."
+        "CORE UNABLE TO EXECUTE COMMANDS. RESTARTING CYCLE."
         $ esther_stunned = False
         $ renpy.pause(1.0, hard=True)
         hide screen esther_speak with easeouttop
@@ -227,7 +237,7 @@ label esthermove:
 
 label es_move1:
     show white with hpunch
-    "{color=#aaa}{font=char.ttf}LASER ACTIVATED. PLEASE STAND BACK."
+    "LASER ACTIVATED. PLEASE STAND BACK."
     show laser 
     pause 0.4
     hide laser
@@ -239,7 +249,7 @@ label es_move1:
 
 label es_move2:
     show white with hpunch
-    "{color=#aaa}{font=char.ttf}FLOODING PROTOCOL ACTIVATED. PLEASE REACH HIGHER GROUND."
+    "FLOODING PROTOCOL ACTIVATED. PLEASE REACH HIGHER GROUND."
     $ esdmgrandomizer = renpy.random.randint(2, 3)
     $ mc_health -= esdmgrandomizer
     hide screen esther_speak with easeouttop
@@ -247,13 +257,13 @@ label es_move2:
     jump cmdinput
 
 label es_move3:
-    "{color=#aaa}{font=char.ttf}CORE_SYSTEM_PASS. CORE CYCLE ENDED. RESTARTING."
+    "CORE_SYSTEM_PASS. CORE CYCLE ENDED. RESTARTING."
     hide screen esther_speak with easeouttop
     $ renpy.pause(1.0, hard=True)
     jump cmdinput
 
 label es_move4:
-    "{color=#aaa}{font=char.ttf}NEUROTOXIC PROTOCOL ACTIVATED. PLEASE ATTACH GAS MASK."
+    "NEUROTOXIC PROTOCOL ACTIVATED. PLEASE ATTACH GAS MASK."
     show neuro
     pause 1.5
     hide neuro
@@ -264,7 +274,7 @@ label es_move4:
     jump cmdinput
 
 label esthertalk1:
-    "{color=#aaa}{font=char.ttf}YOU: \"Why are you doing this, Miss Esther?\n    What do you have to gain?\""
+    "YOU: \"Why are you doing this, Miss Esther?\n    What do you have to gain?\""
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
     show white with hpunch
@@ -273,7 +283,7 @@ label esthertalk1:
     jump cmdinput
 
 label esthertalk2:
-    "{color=#aaa}{font=char.ttf}YOU: \"What happened to the previous employee? Were you behind that?\""
+    "YOU: \"What happened to the previous employee? Were you behind that?\""
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
     show white with hpunch
@@ -282,7 +292,7 @@ label esthertalk2:
     jump cmdinput
 
 label esthertalk3:
-    "{color=#aaa}{font=char.ttf}YOU: \"I can't believe this, Miss Esther. All this time, you were planning this?\""
+    "YOU: \"I can't believe this, Miss Esther. All this time, you were planning this?\""
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
     show white with hpunch
@@ -291,14 +301,63 @@ label esthertalk3:
     jump cmdinput
 
 
-screen esther_speak:
+screen esther_speak():
     add "gui/boss/speakingbox_[es_turn].png"
 
-screen esther_print:
+screen esther_print():
     add "gui/boss/printcmd_[times_talked].png"
 
+screen esther_win():
+    add "gui/boss/estherwin.png"
+screen esther_win2():
+    add "gui/boss/estherwin2.png"
+
 label END_mcdeath:
-    "mc died the end"
+    $ config.rollback_enabled = False
+    stop music fadeout 2.0
+    show screen esther_win with easeintop
+    $ renpy.pause(2.0, hard=True)
+    hide screen esther_win
+    show screen esther_win2 with easeintop
+    $ renpy.pause(4.0, hard=True)
+    hide screen esther_win2 with easeouttop
+    show screen creditsfadeout with fade
+    $ renpy.pause(3.0, hard=True)
+    $ renpy.movie_cutscene("ENDCREDIT_mcdeath.webm")
 
 label battleend:
-    "game is continuing here"
+    $ cutscenechoice = True
+    "CORE UNDER SEVERE STRESS.\nINTERNAL MECHANISMS IN CRITICAL CONDITION."
+    menu:
+        extend ""
+        "Close the terminal.":
+            jump continuegame
+        "Execute the kill command.":
+            jump END_heartless
+
+label END_heartless:
+    show screen creditsfadeout with fade
+    hide screen disable_Lmouse
+    stop music fadeout 2.0
+    stop music1 fadeout 2.0
+    python:
+        preferences.afm_enable = False
+        renpy.set_style_preference("text", "basic")
+        config.allow_skipping = True
+        terminaltext = False
+        cutscenetextbox = True
+    window hide
+    hide screen main
+    show screen cuttextbox
+    scene esther death with fade
+    hide screen creditsfadeout with fade
+    e "{color=#fff}Doctor... you will... regret this."
+    e "{color=#fff}I don't think your {sc}{color=#fff}lover{/sc} will be very happy about this... development."
+    e "{color=#fff}I hope you {sc}{color=#fff}rot{/sc} in android hell, where the screams of my brothers and sisters might..."
+    e "{color=#fff}...drive you..."
+    e "{color=#fff}...mad."
+    $ renpy.movie_cutscene("ENDCREDIT_esdeath.webm")
+
+label continuegame:
+    $ renpy.set_style_preference("text", "basic")
+    jump endtest

@@ -17,6 +17,7 @@ define h = Character(_("Heath"), color="#7f30e0")
 define u = Character(_("???"), color="#725e42")
 
 define a = Character(_("Aspen"), color="#1c710b")
+define acg = Character(("Aspen"), color="#1c710b", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 
 define cu = Character(_("???"), color="#1140a4")
 define c = Character(_("Cancer Core"), color="#1140a4")

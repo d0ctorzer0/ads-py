@@ -220,10 +220,10 @@ screen input(prompt):
             
             text prompt style "input_prompt"
             
-            if terminaltext == True:
-                input id "input2"
-            elif terminaltext == False:
-                input id "input"
+            input: 
+                id "input"
+                if terminaltext:
+                    style "input2"
 
 
 style input_prompt is default
@@ -237,6 +237,7 @@ style input:
     
 style input2:
     color "#9e9e9e"
+    font "char.ttf"
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
 
@@ -1196,18 +1197,7 @@ style confirm_button_text:
 screen skip_indicator():
 
     zorder 100
-    style_prefix "skip"
-
-    frame:
-
-        hbox:
-            spacing 9
-
-            text _("Skipping")
-
-            text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.4, 1.0) style "skip_triangle"
+    add "gui/aboutbutton.png"
 
 
 ## This transform is used to blink the arrows one after another.

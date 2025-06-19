@@ -261,7 +261,7 @@ label heathday9:
     show e annoy
     e "I forget how close Kris and Heath are to each other..."
 
-    scene heathtemproom with fade
+    scene heathroom with fade
     $ audio_crossFade(2, "music/three.ogg")
     show h with easeinright
     h "Doctor! I've got another trick for you today!"

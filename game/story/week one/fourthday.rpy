@@ -189,7 +189,7 @@ label krisday4cont:
 
 label heathday4:
     $ audio_crossFade(2, "music/three.ogg")
-    scene heathtemproom with fade
+    scene heathroom with fade
 
     n "Before you can enter the break room, Heath stops you at the door."
 

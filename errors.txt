@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 212: 'font' is not a keyword argument or valid child of the window statement.
-    font "char.ttf"
-        ^
+File "game/story/endings/battle.rpy", line 353: expected simple expression
+    play music vergin fadein
+                            ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Mon Jun 16 11:46:47 2025
+Wed Jun 18 13:04:34 2025

@@ -288,7 +288,7 @@ label heathday3:
 
     e "Perfect. On your way, then."
 
-    scene heathtemproom
+    scene heathroom
     with fade
     $ audio_crossFade(2, "music/three.ogg")
 
@@ -372,7 +372,7 @@ label heathday3good:
         h "{color=#fff}I haven't shown anyone else this room, so you should consider yourself lucky!"
 
         n "{color=#fff}Heath comes back out and closes the curtains."
-        scene heathtemproom with fade
+        scene heathroom with fade
         show h with easeinright
         hide screen cuttextbox
         $ cutscenetextbox = False
