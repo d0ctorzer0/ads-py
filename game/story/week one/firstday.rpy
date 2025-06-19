@@ -374,7 +374,6 @@ label heathday1:
         "Wow! Impressive.":
         
             show h
-            voice "voice/h/h_01_09.ogg"
             h "Yes, thank you, thank you."
             $ romance_points["Heath"] += 2
             jump heathday1cont

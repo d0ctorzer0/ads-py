@@ -61,15 +61,5 @@ label emailtwo_11:
     scene blankemail
     call screen email2_11
 
-label emailthree_11:
-    
-    scene blankemail
-    call screen email3_11
-
-label emailone_11pt2:
-    
-    scene blankemail
-    call screen email1_11pt2
-
 #oh my god i cant believe i got this to work
 #this shit scuffed AS FUCK!!!

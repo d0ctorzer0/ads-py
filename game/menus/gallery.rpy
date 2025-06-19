@@ -20,7 +20,7 @@ style tabs_button_text:
     hover_color "#000000"
     size 35
 
-screen galleryk:
+screen galleryk():
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryk", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
@@ -48,7 +48,7 @@ screen galleryk:
         textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryk"), Show("galleryg"), SetVariable("selected_char", "gregory")
         textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryk"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
-screen galleryh:
+screen galleryh():
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryh", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
@@ -75,7 +75,7 @@ screen galleryh:
         textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryh"), Show("galleryg"), SetVariable("selected_char", "gregory")
         textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryh"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
-screen gallerya:
+screen gallerya():
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("gallerya", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
@@ -101,7 +101,7 @@ screen gallerya:
         textbutton "GREG" xpos 1265 ypos -112 action Hide("gallerya"), Show("galleryg"), SetVariable("selected_char", "gregory")
         textbutton "xxx" xpos 1460 ypos -160 action Hide("gallerya"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
-screen galleryc:
+screen galleryc():
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryc", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
@@ -127,7 +127,7 @@ screen galleryc:
         textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryc"), Show("galleryg"), SetVariable("selected_char", "gregory")
         textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryc"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
-screen galleryr:
+screen galleryr():
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryr", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
@@ -153,7 +153,7 @@ screen galleryr:
         textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryr"), Show("galleryg"), SetVariable("selected_char", "gregory")
         textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryr"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
-screen galleryg:
+screen galleryg():
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryg", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
@@ -177,7 +177,7 @@ screen galleryg:
         textbutton "GREG" xpos 1265 ypos -112 action NullAction()
         textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryg"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
-screen galleryu:
+screen galleryu():
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryu", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
@@ -203,17 +203,17 @@ screen galleryu:
 
 
 
-screen fullcutscene1:
+screen fullcutscene1():
     modal True
     add "characters/[selected_char]/[selected_char] cutscene 1.png"
     imagebutton idle "gui/back.png" action Hide("fullcutscene1", transition=gallswitch)
 
-screen fullcutscene2:
+screen fullcutscene2():
     modal True
     add "characters/[selected_char]/[selected_char] cutscene 2.png"
     imagebutton idle "gui/back.png" action Hide("fullcutscene2", transition=gallswitch)
 
-screen fullcutscene3:
+screen fullcutscene3():
     modal True
     add "characters/[selected_char]/[selected_char] cutscene 3.png"
     imagebutton idle "gui/back.png" action Hide("fullcutscene3", transition=gallswitch)

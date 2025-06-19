@@ -292,7 +292,6 @@ label heathday2:
     n "You enter the stage room to find Heath already waiting for you."
 
     show h with easeinright
-    voice "voice/h/h_02_01.ogg"
     h "Apologies for the delay yesterday, it won't happen again! I'm ready this time!"
 
     n "You wait with bated breath."

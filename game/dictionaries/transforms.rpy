@@ -39,7 +39,7 @@ transform emaildiss:
         alpha 0.0
         linear 1.0 alpha 1.0
 
-screen vignette:
+screen vignette():
     add "vignette.png"
 
 transform splashfadeout:

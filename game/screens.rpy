@@ -102,7 +102,7 @@ style cutscene:
     xpos 500
     outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
 
-screen cuttextbox:
+screen cuttextbox():
     add "gui/cut_textbox.png"
 
 screen say(who, what):
