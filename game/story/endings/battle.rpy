@@ -11,8 +11,9 @@ default es_turn = 0
 default times_talked = 0
 default printthisround = False
 
-init python:
-    renpy.register_style_preference("text", "basic", style.say_dialogue, "font", "fonts/SairaCondensed-SemiBold.ttf")
+init python: # this is the code that determines what font and color to use for the text.
+# the basic style is used thru the rest of the game. the battle style is only for the boss.
+    renpy.register_style_preference("text", "basic", style.say_dialogue, "font", "fonts/SairaCondensed-Medium.ttf")
     renpy.register_style_preference("text", "basic", style.say_dialogue, "color", "#404040")
     renpy.register_style_preference("text", "basic", style.say_dialogue, "xsize", 1000)
     #battle text

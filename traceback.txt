@@ -1,57 +1,91 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/endings/battle.rpy", line 349, in script
-    scene esther death with fade
-  File "renpy/common/000window.rpy", line 129, in _window_auto_callback
-    _window_hide(auto=True)
-  File "renpy/common/000window.rpy", line 111, in _window_hide
-    renpy.with_statement(trans)
-TypeError: got an unexpected keyword argument 'layer'
+  File "game/story/week one/firstday.rpy", line 29, in script
+    n "You reach your new \"headquarters.\" On the edge of the desk, there's a nametag."
+  File "game/story/week one/firstday.rpy", line 29, in script
+    n "You reach your new \"headquarters.\" On the edge of the desk, there's a nametag."
+Exception: Could not find font 'fonts/SairaCondensed.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/endings/battle.rpy", line 349, in script
-    scene esther death with fade
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1253, in execute
-    statement_name("scene")
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 58, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 129, in _window_auto_callback
-    _window_hide(auto=True)
-  File "renpy/common/000window.rpy", line 111, in _window_hide
-    renpy.with_statement(trans)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\statementexports.py", line 257, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 1581, in do_with
-    return self.interact(trans_pause=True,
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 652, in main
+    run(restart)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\execution.py", line 958, in run_context
+    context.run()
+  File "game/story/week one/firstday.rpy", line 29, in script
+    n "You reach your new \"headquarters.\" On the edge of the desk, there's a nametag."
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "game/story/week one/firstday.rpy", line 29, in script
+    n "You reach your new \"headquarters.\" On the edge of the desk, there's a nametag."
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1470, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1117, in do_display
+    display_say(who,
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 814, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2748, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  [Previous line repeated 1 more time]
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2748, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 700, in update
-    self.screen.function(**self.scope)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\parameter.py", line 455, in apply_arguments
-    return parameters.apply(args or (), kwargs or {}, ignore_errors)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\parameter.py", line 384, in apply
-    raise TypeError(
-TypeError: got an unexpected keyword argument 'layer'
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2882, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 1384, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 755, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 1457, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 2614, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 775, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 348, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample, self.shaper, self.instance, self.axis)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\font.py", line 745, in get_font
+    face = load_face(fn, shaper)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\font.py", line 673, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font 'fonts/SairaCondensed.ttf'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
-Aperture Dating Simulator 0.2.5alpha
-Wed Jun 18 12:13:04 2025
+Aperture Dating Simulator 0.3.1alpha
+Thu Jun 19 09:42:06 2025
