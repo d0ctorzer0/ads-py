@@ -87,3 +87,7 @@ Version: b'4.6.0 NVIDIA 555.97'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
 Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1532, 975) drawable=(1532, 975)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1733, 961) drawable=(1733, 961)
+Maximum texture size: 4096x4096
