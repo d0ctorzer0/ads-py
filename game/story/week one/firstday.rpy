@@ -13,6 +13,7 @@ label start:
     if renpy.is_skipping() == True:
         pass
 
+    $ renpy.set_style_preference("text", "basic")
     scene office
     with fade
 

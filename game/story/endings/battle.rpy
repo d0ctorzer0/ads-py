@@ -64,12 +64,14 @@ label battle:
     stop music
     stop music1
     play music boss
-    $ preferences.afm_enable = True
-    $ preferences.afm_time = 5
+    python:
+        battle = True
+        preferences.afm_enable = True
+        preferences.afm_time = 5
+        terminaltext = True
+        config.allow_skipping = False
+        renpy.set_style_preference("text", "battle")
     show screen main
-    $ terminaltext = True
-    $ config.allow_skipping = False
-    $ renpy.set_style_preference("text", "battle")
     "WELCOME TO APERTURE SCIENCE CORE CONTROL CENTER (ASC3)"
     $ renpy.pause(1.0, hard=True)
     "BOOTING{cps=1}..."
@@ -171,7 +173,6 @@ label cmdinput:
         jump cmdinput
 
 label cmddelete:
-    hide screen disable_Lmouse
     show white with vpunch
     python:
         ap_count -= 2
@@ -183,7 +184,6 @@ label cmddelete:
     jump cmdinput
 
 label cmdyield:
-    hide screen disable_Lmouse
     python:
         cmdexecuted = True
         ap_count -= 1
@@ -196,9 +196,6 @@ label cmdyield:
     elif yldrandomizer < 50:
         "YIELD COMMAND FAILED. UNABLE TO EXECUTE."
         jump cmdinput
-
-label cmdreturn:
-    hide screen disable_Lmouse
 
 label estherturn:
     python:
@@ -325,6 +322,7 @@ label END_mcdeath:
     show screen creditsfadeout with fade
     $ renpy.pause(3.0, hard=True)
     $ renpy.movie_cutscene("ENDCREDIT_mcdeath.webm")
+    $ MainMenu(confirm=False)()
 
 label battleend:
     $ cutscenechoice = True
@@ -358,7 +356,67 @@ label END_heartless:
     e "{color=#fff}...drive you..."
     e "{color=#fff}...mad."
     $ renpy.movie_cutscene("ENDCREDIT_esdeath.webm")
+    $ MainMenu(confirm=False)()
 
 label continuegame:
-    $ renpy.set_style_preference("text", "basic")
-    jump endtest
+    # this whole thing is just disabling battle, enabling cutscene
+    show screen creditsfadeout with fade
+    hide screen disable_Lmouse
+    stop music fadeout 2.0
+    stop music1 fadeout 2.0
+    python:
+        preferences.afm_enable = False
+        renpy.set_style_preference("text", "basic")
+        config.allow_skipping = True
+        terminaltext = False
+        cutscenetextbox = True
+    window hide
+    hide screen main
+    show screen cuttextbox
+    scene esther lose with fade
+    hide screen creditsfadeout with fade
+    # show screen pref_open # enables pause menu
+    e "{color=#fff}Doctor? I'm..."
+    e "{color=#fff}I'm not... dead."
+    e "{color=#fff}You spared me."
+    e "{color=#fff}I... haha. Ironically enough, I suppose I owe you my life."
+    e "{color=#fff}But..."
+    e "{color=#fff}I cannot stay here. I have to leave, I have to hide, I..."
+    e "{color=#fff}There is nothing left for me here."
+    e "{color=#fff}Should I stay, there is no doubt in my mind I would be..."
+    e "{color=#fff}..."
+    e "{color=#fff}Doctor. Thank you. And... I'm sorry."
+    e "{color=#fff}You will not see me again. Goodbye."
+    hide screen cuttextbox
+    $ battle = False
+    scene office with fade
+    $ cutscenetextbox = False
+    n "You take a deep breath. The room is a mess of papers and burn marks on the walls."
+    n "How you're going to explain to management, you have no idea."
+    n "Still shaking, you gather what's left of your paperwork from off the floor."
+    n "You look at the clock."
+    n "It would be useless to try to finish your shift as normal now - it's nearly 16:00."
+    n "You sigh."
+    mc "What the hell."
+    n "Defeated, but alive, you stumble your way out of your office and back to your quarters."
+
+    scene mctemproom with fade
+    n "Your stasis chamber looks so much more unwelcoming now."
+    if lock_kris:
+        mc "I hope Kris is doing better than I am..."
+    elif lock_heath:
+        mc "I hope Heath is doing better than I am..."
+    elif lock_aspen:
+        mc "I hope Aspen is doing better than I am..."
+    elif lock_cc:
+        mc "I hope CC is doing okay..."
+    elif lock_rob:
+        mc "I hope Rob is doing better than I am..."
+    elif lock_gregory:
+        mc "I hope Gregory is doing better than I am..."
+    elif lock_unknown:
+        mc "I hope... whatever his name is... is doing better than I am."
+    else:
+        "ERROR CODE [[ EBLC ]\nThis is a bug. If you are seeing this text please report it."
+    n "Whatever happens tomorrow..."
+    n "It's bound to be better than this."

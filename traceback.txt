@@ -1,11 +1,19 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/week one/firstday.rpy", line 29, in script
-    n "You reach your new \"headquarters.\" On the edge of the desk, there's a nametag."
-  File "game/story/week one/firstday.rpy", line 29, in script
-    n "You reach your new \"headquarters.\" On the edge of the desk, there's a nametag."
-Exception: Could not find font 'fonts/SairaCondensed.ttf'.
+  File "game/story/endings/battle.rpy", line 77, in script
+    "BOOTING{cps=1}..."
+  File "game/story/endings/battle.rpy", line 77, in script
+    "BOOTING{cps=1}..."
+  File "game/screens.rpy", line 108, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 108, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 133, in execute
+    if battle == False:
+  File "game/screens.rpy", line 133, in <module>
+    if battle == False:
+NameError: name 'battle' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -18,11 +26,11 @@ Full traceback:
     renpy.execution.run_context(True)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\execution.py", line 958, in run_context
     context.run()
-  File "game/story/week one/firstday.rpy", line 29, in script
-    n "You reach your new \"headquarters.\" On the edge of the desk, there's a nametag."
+  File "game/story/endings/battle.rpy", line 77, in script
+    "BOOTING{cps=1}..."
   File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/story/week one/firstday.rpy", line 29, in script
-    n "You reach your new \"headquarters.\" On the edge of the desk, there's a nametag."
+  File "game/story/endings/battle.rpy", line 77, in script
+    "BOOTING{cps=1}..."
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
     Say.execute(self)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
@@ -33,59 +41,23 @@ Full traceback:
     self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1117, in do_display
     display_say(who,
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 814, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2882, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 1384, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 755, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 1457, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 2614, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 775, in __init__
-    glyphs = ts.glyphs(s, self)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 348, in glyphs
-    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample, self.shaper, self.instance, self.axis)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\font.py", line 745, in get_font
-    face = load_face(fn, shaper)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\font.py", line 673, in load_face
-    raise Exception("Could not find font {0!r}.".format(orig_fn))
-Exception: Could not find font 'fonts/SairaCondensed.ttf'.
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 749, in display_say
+    what_text = renpy.display.screen.get_widget(what_text[0], what_text[1], what_text[2])
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 1541, in get_displayable
+    screen.update()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 108, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 108, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 133, in execute
+    if battle == False:
+  File "game/screens.rpy", line 133, in <module>
+    if battle == False:
+NameError: name 'battle' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
 Aperture Dating Simulator 0.3.1alpha
-Thu Jun 19 09:42:06 2025
+Sat Jun 21 22:51:22 2025

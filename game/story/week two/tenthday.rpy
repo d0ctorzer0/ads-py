@@ -641,7 +641,7 @@ label aspenacceptance:
     a "Oh..."
 
     show a
-    n "Before you know it, the shift has rushed by, and it's almost 14:00."
+    n "Before you know it, the shift has rushed by, and it's almost 16:00."
 
     mc "Aspen - it's time for me to go. I don't want to, but..."
 
@@ -711,7 +711,7 @@ label aspenrejection:
     mc "Yes, but it's alright."
 
     show a
-    n "Before you know it, the shift has rushed by, and it's almost 14:00."
+    n "Before you know it, the shift has rushed by, and it's almost 16:00."
 
     mc "Aspen - it's time for me to go."
 
@@ -885,6 +885,7 @@ label ccacceptance:
             jump day10end
 
 label ccrejection:
+    $ config.allow_skipping = True
     $ cutscenechoice = False
     hide screen cuttextbox
     scene cctemproom with fade

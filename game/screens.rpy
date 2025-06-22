@@ -130,7 +130,8 @@ screen say(who, what):
 
         text what id "what"
     
-    use pref_open
+    if battle == False:
+        use pref_open
 
 
     ## If there's a side image, display it above the text. Do not display on the

@@ -66,7 +66,7 @@ label estherattack:
     e "To BARELY ANIMATE OBJECTS, mind you!"
     show e annoy
     e "Oh well. It's none of my concern."
-    e "But you..."
+    e "But you..."    
     e "You've become a problem. One I cannot ignore."
     e "I'm... I'm sorry, Doctor."
 
@@ -120,7 +120,9 @@ label enddecide_aceorunlikable:
 label END_ace:
     scene black
     "ace ending"
+    $ MainMenu(confirm=False)()
 
 label END_unlikable:
     scene black
     "unlikable ending"
+    $ MainMenu(confirm=False)()

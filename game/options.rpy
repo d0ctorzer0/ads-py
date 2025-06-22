@@ -131,6 +131,7 @@ default preferences.afm_time = 15
 ## literal string, not an expression.
 
 define config.save_directory = "core-1741019771"
+define config.has_autosave = False
 
 
 ## Icon ########################################################################
