@@ -184,7 +184,7 @@ label n_krisday8:
 
     show e b annoy at bounce
     e "You'll be well aware when we're late, Kris."
-    hide e B
+    hide e b
 
     k "And Miss Esther. Good morning to you."
 

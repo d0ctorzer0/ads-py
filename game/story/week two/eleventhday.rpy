@@ -661,7 +661,7 @@ label aspenday11:
     if positive["Aspen"] == 0:
         if lock_aspen == True:
             jump romanceaspenday11
-        if lock_cc == False:
+        if lock_aspen == False:
             jump p_aspenday11
     if positive["Aspen"] == -1:
         jump n_aspenday11
@@ -934,7 +934,7 @@ label n_ccday11:
     c "You're late today - I was concerned you might not show up at all."
 
     show c
-    c "I still have two more days before my time here is over. I have a job to do, with my supervisor or without."
+    mc "I still have two more days before my time here is over. I have a job to do, with my supervisor or without."
 
     c "Mmm. Very true, Doctor."
 
@@ -988,7 +988,7 @@ label robday11:
     if positive["Rob"] == 0:
         if lock_rob == True:
             jump romancerobday11
-        if lock_cc == False:
+        if lock_rob == False:
             jump p_robday11
     if positive["Rob"] == -1:
         jump n_robday11

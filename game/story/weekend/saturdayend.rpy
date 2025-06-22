@@ -264,7 +264,7 @@ label satend_aspen:
 
     mc "Aspen?"
 
-    n "Silence. You wonder if he decided to just call it a night."
+    n "Silence. You wonder if they decided to just call it a night."
 
     mc "Aspen, I'm -"
     
@@ -291,7 +291,7 @@ label satend_aspen:
     acg "{color=#fff}{i}Pyrodinium bahamense{/i}. That's their binomial name."
     acg "{color=#fff}But a lot of us just refer to them as their superclass."
     acg "{color=#fff}I personally think using their full name can be important..."
-    acg "{color=#fff}They're on loan to us from Marine Studies. We generally don't carry much seacg life in Botany."
+    acg "{color=#fff}They're on loan to us from Marine Studies. We generally don't carry much sea life in Botany."
     acg "{color=#fff}It's a rare treat."
     acg "{color=#fff}I'm glad you're here."
 

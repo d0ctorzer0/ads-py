@@ -127,7 +127,7 @@ label cafejello:
     n "Oh. It's not that bad, actually."
     n "Kind of tastes like strawberries."
 
-    n "You shurg, toss out the cup, and exit the cafeteria."
+    n "You shrug, toss out the cup, and exit the cafeteria."
 
     jump wander
 

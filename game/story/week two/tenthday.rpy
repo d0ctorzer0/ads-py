@@ -1001,6 +1001,7 @@ label robday10:
     menu:
         extend ""
         "You're funny. I'd love to.":
+            $ lock_rob = True
             r "{color=#fff}Hell yeah! You're the best, Doc."
             r "{color=#fff}Haha... thank you."
             jump robacceptance
