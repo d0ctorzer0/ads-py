@@ -77,10 +77,13 @@ label wander:
 # 💻
 
 label satoffice:
-    $ v_satoffice = True
-    $ persistent.places_visited += 1
-    $ achievement.progress("ach_explore", persistent.places_visited)
-    $ achievement.sync()
+    python:
+        v_satoffice = True
+        if persistent.visited["office"] == False:
+            persistent.places_visited += 1
+            persistent.visited["office"] = True
+        achievement.progress("ach_explore", persistent.places_visited)
+        achievement.sync()
     scene hall with fade
     $ audio_crossFade(1, "music/eleven.ogg") 
     n "You come up to the office door."
@@ -98,10 +101,13 @@ label satoffice:
 
 label satcafe:
     $ audio_crossFade(1, "music/eleven.ogg")
-    $ v_satcafe = True
-    $ persistent.places_visited += 1
-    $ achievement.progress("ach_explore", persistent.places_visited)
-    $ achievement.sync()
+    python:
+        v_satcafe = True
+        if persistent.visited["cafe"] == False:
+            persistent.places_visited += 1
+            persistent.visited["cafe"] = True
+        achievement.progress("ach_explore", persistent.places_visited)
+        achievement.sync()
     scene tempcafe with fade
     n "You enter the cafeteria. You haven't actually been in here yet."
     n "Even though Miss Esther mentioned it to you on your first day, you've been surviving off old protein bars and granola..."
@@ -135,10 +141,13 @@ label cafejello:
 
 label biology:
     $ audio_crossFade(1, "music/eleven.ogg")
-    $ v_biology = True
-    $ persistent.places_visited += 1
-    $ achievement.progress("ach_explore", persistent.places_visited)
-    $ achievement.sync()
+    python:
+        v_biology = True
+        if persistent.visited["biology"] == False:
+            persistent.places_visited += 1
+            persistent.visited["biology"] = True
+        achievement.progress("ach_explore", persistent.places_visited)
+        achievement.sync() 
     scene bioroom with fade
     n "You come up to the door to Biology."
     n "It's right across the hallway from the greenhouse."
@@ -152,10 +161,13 @@ label biology:
 
 label wheatleycameo:
     $ audio_crossFade(1, "music/eleven.ogg")
-    $ v_wheatley = True
-    $ persistent.places_visited += 1
-    $ achievement.progress("ach_explore", persistent.places_visited)
-    $ achievement.sync()
+    python:
+        v_wheatley = True
+        if persistent.visited["wheatley"] == False:
+            persistent.places_visited += 1
+            persistent.visited["wheatley"] = True
+        achievement.progress("ach_explore", persistent.places_visited)
+        achievement.sync() 
     scene door2 with fade
     n "You come up to the large door that reads \"AUTHORIZED PERSONNEL ONLY\"."
     n "From what you've heard, this is where they keep test subjects in stasis."
@@ -189,10 +201,13 @@ label wheatleycameo:
 
 label manufacture:
     $ audio_crossFade(1, "music/eleven.ogg")
-    $ v_manufacture = True
-    $ persistent.places_visited += 1
-    $ achievement.progress("ach_explore", persistent.places_visited)
-    $ achievement.sync()
+    python:
+        v_manufacture = True
+        if persistent.visited["manufacture"] == False:
+            persistent.places_visited += 1
+            persistent.visited["manufacture"] = True
+        achievement.progress("ach_explore", persistent.places_visited)
+        achievement.sync() 
     scene door2 with fade
     n "You come up to the door that you assume leads to your old workplace."
     n "You don't recognize this entrance, but your office in Manufacturing was on the west side."
@@ -204,10 +219,13 @@ label manufacture:
 
 label recovery:
     $ audio_crossFade(1, "music/eleven.ogg")
-    $ v_recovery = True
-    $ persistent.places_visited += 1
-    $ achievement.progress("ach_explore", persistent.places_visited)
-    $ achievement.sync()
+    python:
+        v_recovery = True
+        if persistent.visited["recovery"] == False:
+            persistent.places_visited += 1
+            persistent.visited["recovery"] = True
+        achievement.progress("ach_explore", persistent.places_visited)
+        achievement.sync() 
     scene bioroom with fade
     n "You come up to the door that reads \"STASIS RECOVERY BAY\" on a plaque next to it."
     n "Not wanting to disturb anything that might be happening inside, you peer through the window."
