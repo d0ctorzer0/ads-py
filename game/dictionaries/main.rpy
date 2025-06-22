@@ -9,14 +9,14 @@ init python:
 
 init:
     $ config.keymap['help'].remove('K_F1')
-    # $ config.keymap['input_left'].remove('K_LEFT')
-    # $ config.keymap['input_left'].remove('KP_LEFT')
-    # $ config.keymap['input_right'].remove('K_RIGHT')
-    # $ config.keymap['input_right'].remove('KP_RIGHT')
-    # $ config.keymap['input_up'].remove('K_UP')
-    # $ config.keymap['input_up'].remove('KP_UP')
-    # $ config.keymap['input_down'].remove('K_DOWN')
-    # $ config.keymap['input_left'].remove('KP_DOWN')
+    # key "K_LEFT" action NullAction()
+    # key "KP_LEFT" action NullAction()
+    # $ config.key "K_RIGHT" action NullAction()
+    # $ config.key "KP_RIGHT" action NullAction()
+    # $ config.key "K_UP" action NullAction()
+    # $ config.key "KP_UP" action NullAction()
+    # $ config.key "K_DOWN" action NullAction()
+    # $ config.key "KP_DOWN" action NullAction()
 
 label splashscreen:
     $ renpy.movie_cutscene("arlogo_intro.webm")
@@ -155,4 +155,3 @@ default romance_minimum_for_good_ending = 20
 default romance_minimum_for_true_ending = 30
 
 default esther_affection = 0
-default esther_affection_minimum = 15
