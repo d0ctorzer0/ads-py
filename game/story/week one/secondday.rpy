@@ -80,7 +80,7 @@ label lockout:
 label letin:
     n "You unlock the door using the keypad, and a familiar face comes \"stumbling\" in."
 
-    $ emailfromrobday2 = True
+    $ emailfromunknownday2 = True
     show u
     with easeinright
     u "Why hello there, pretty little thing."

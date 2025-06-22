@@ -293,7 +293,7 @@ label offendheath4:
     e "We should get going, doctor. Just mark the second box on your checklist instead of the first."
     n "You check off the box that says \"PREVENTED FROM INVESTIGATION\"."
 
-    if romance_points["Heath"] <= 6:
+    if romance_points["Heath"] >= 6:
         mc "This isn't going to make her look bad, is it?"
         e "It shouldn't, but I'll leave a note just in case."
     else:
@@ -371,7 +371,7 @@ label aspenday4:
 
     a "Yes, actually."
 
-    if romance_points["Aspen"] <= 8:
+    if romance_points["Aspen"] >= 8:
         show a look
         a "Things are even better now that you're here!"
     else:
@@ -407,7 +407,7 @@ label aspenday4cont:
     show a laugh
     a "It's all under control! Haha."
 
-    if wad3 == True or romance_points["Aspen"] <= 9:
+    if wad3 == True or romance_points["Aspen"] >= 9:
         show a look
         a "I do appreciate you showing concern, though, Doctor."
 
@@ -540,7 +540,7 @@ label ccday4cont:
     show c
     c "Yes, I understand."
 
-    if romance_points["CC"] <= 9:
+    if romance_points["CC"] >= 9:
         show c look
         c "I'll see you tomorrow, Doctor, yes?"
 

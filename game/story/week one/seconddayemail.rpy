@@ -18,9 +18,9 @@ screen email4():
         text "from: UNKNOWN"
     vbox:
         style_prefix "eml"
-        if emailfromrobday2 == True:
+        if emailfromunknownday2 == True:
             text "I told you I'd send ya a little message. Listen, I keep seein' ya 'round these\nparts, and I'm gonna take a chance while I have it, yeah? Not a lot of\nopportunities for a core such as myself. Y'know...\n\nSo hey, maybe over the weekend, you wanna stop by my place? It's\npretty humble, just a closet with a charging port. Big closet though. Lots\nof room for a human. Whaddaya say?\n\nY'know what, don't respond - I already know the answer is yes. So I'll\nsee ya soon."
-        if emailfromrobday2 == False:
+        if emailfromunknownday2 == False:
             text "Heyyy there. You keep blowin' me off now and it's not very kind of ya!\nI'm just tryna make a move on a pretty human, here. Can't fault a core\nfor that. So hey, next time I catch ya 'round, be little nicer, yeah?\n\nAnyway. You should slide on over to my place this weekend. I've got\nenough drinks for the two of us. I might even have some \"human alcohol\"\nin here somewhere."
     use affectionprogress
     vbox:
