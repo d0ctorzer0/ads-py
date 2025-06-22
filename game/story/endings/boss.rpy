@@ -126,3 +126,37 @@ label END_unlikable:
     scene black
     "unlikable ending"
     $ MainMenu(confirm=False)()
+
+
+
+
+label day12end:
+    n "You take a deep breath. The room is a mess of papers and burn marks on the walls."
+    n "How you're going to explain to management, you have no idea."
+    n "Still shaking, you gather what's left of your paperwork from off the floor."
+    n "You look at the clock."
+    n "It would be useless to try to finish your shift as normal now - it's nearly 16:00."
+    n "You sigh."
+    mc "What the hell."
+    n "Defeated, but alive, you stumble your way out of your office and back to your quarters."
+
+    scene mctemproom with fade
+    n "Your stasis chamber looks so much more unwelcoming now."
+    if lock_kris:
+        mc "I hope Kris is doing better than I am..."
+    elif lock_heath:
+        mc "I hope Heath is doing better than I am..."
+    elif lock_aspen:
+        mc "I hope Aspen is doing better than I am..."
+    elif lock_cc:
+        mc "I hope CC is doing okay..."
+    elif lock_rob:
+        mc "I hope Rob is doing better than I am..."
+    elif lock_gregory:
+        mc "I hope Gregory is doing better than I am..."
+    elif lock_unknown:
+        mc "I hope... whatever his name is... is doing better than I am."
+    else:
+        "ERROR CODE [[ EBLC ]\nThis is a bug. If you are seeing this text please report it."
+    n "Whatever happens tomorrow..."
+    n "It's bound to be better than this."
