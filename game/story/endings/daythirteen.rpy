@@ -218,29 +218,29 @@ label saveheath:
     h "Oh... Doctor..."
     h "I-I... my magic supplies, my... livelihood, it's..."
 
-    mc "Heath, are you okay?"
+    mccut "Heath, are you okay?"
 
     h "I'm fine physically, Doctor. I think. But I..."
     h "Look at my emporium. It's..."
     h "No amount of magic could fix something this devastating..."
 
-    mc "Heath, I'm so sorry. I know this is really difficult."
+    mccut "Heath, I'm so sorry. I know this is really difficult."
 
     h "Yeah..."
 
-    mc "But you'll burn alive if we don't get you out of here."
+    mccut "But you'll burn alive if we don't get you out of here."
 
     h "Oh. Yes."
 
-    mc "Here. Drop off your rail. I'll catch you."
+    mccut "Here. Drop off your rail. I'll catch you."
 
     h "But - I'm too warm for you to hold on to. You'll burn yourself."
 
-    mc "I can't get you out of here otherwise."
+    mccut "I can't get you out of here otherwise."
 
     n "You take your lab coat off your shoulders and hold it in front of you."
 
-    mc "Here - the coat will protect me. Let's get you out of here."
+    mccut "Here - the coat will protect me. Let's get you out of here."
 
     h "Okay. I trust you."
 
