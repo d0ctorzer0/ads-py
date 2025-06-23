@@ -509,6 +509,7 @@ label offendaspen2:
     jump aspenday2cont
 
 label bertha:
+    $ aspenknowabtbertha = True
     show a laugh
     a "WHAT? No way! What type is she?"
 

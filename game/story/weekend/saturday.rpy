@@ -812,7 +812,7 @@ label sataspenpos:
     a "But sometimes I wish they wouldn't test on them so much."
 
     mc "I understand."
-    if plant == True:
+    if plant == True and aspenknowabtbertha == True:
         mc "I feel like Bertha is trying to tell me things sometimes."
         show a laugh
         a "See, I knew you'd get me."

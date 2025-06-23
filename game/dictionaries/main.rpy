@@ -42,6 +42,7 @@ default cctv = False
 default knowabtwaterfall = False
 default cactusname = ""
 default battle = False
+default aspenknowabtbertha = False
 
 #GOODBYES
 default krisgoodbye = False
