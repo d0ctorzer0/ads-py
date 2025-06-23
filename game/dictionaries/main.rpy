@@ -83,6 +83,7 @@ default persistent.cc4 = False
 default persistent.rc1 = False
 default persistent.rc2 = False
 default persistent.rc3 = False
+default persistent.rc4 = False
 
 default persistent.gc1 = False
 default persistent.gc2 = False

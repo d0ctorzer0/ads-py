@@ -62,6 +62,7 @@ label emmap:
     show flash
     stop music
     stop music1
+    $ sfx_crossFade(2, "sfx/alarm_q.ogg")
     scene black with dissolve
     $ renpy.pause(1.0, hard=True)
     scene emmapbg with dissolve
@@ -77,6 +78,7 @@ label unknownmissing:
     scene bioroom with fade
     show flash
     window show
+    $ sfx_crossFade(2, "sfx/alarm.ogg")
     n "You approach the room where what's-his-name usually is."
     n "The whole room is seemingly caved in."
     n "You dig under the rubble but see no core trapped underneath."
@@ -92,6 +94,7 @@ label unknownmissing:
 # ######################################
 
 label saveaspen:
+    $ sfx_crossFade(2, "sfx/alarm.ogg")
     if lock_aspen == False:
         jump noaspen
     else:
@@ -116,6 +119,7 @@ label noaspen:
 # ######################################
 
 label savegreg:
+    $ sfx_crossFade(2, "sfx/alarm.ogg")
     if lock_gregory == False:
         jump nogreg
     else:
@@ -154,11 +158,67 @@ label nogreg:
 # ######################################
 
 label saverob:
+    $ sfx_crossFade(2, "sfx/alarm.ogg")
     if lock_rob == False:
         jump norob
     else:
         pass
-    jump endtest
+    n "You push the door open into the gym. There's a fire near one of the machines in the back."
+    n "All the TVs are flashing a warning signal - except for one."
+
+    mc "Oh my god - Rob!!"
+
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    scene rob cutscene 4 with fade
+    show flash
+    $ persistent.rc4 = True
+    n "{color=#fff}Rob has fallen off his management rail, trapped under the TV that used to be hung up behind him."
+    n "{color=#fff}One of his handles is broken off and his eye is twitching."
+
+    mc "{color=#fff}Oh my god. Rob, are you okay?!"
+
+    r "{color=#fff}D-Doc? Oh, haha, it {i}is{/i} you..."
+    r "{color=#fff}I'm not doing... great, no..."
+
+    mc "{color=#fff}Hold on. I'll get you out of there."
+
+    n "{color=#fff}The fire behind him flares up threateningly."
+
+    r "{color=#fff}Wait... it's dangerous. And this TV... i-it's heavy."
+
+    mc "{color=#fff}If you've taught me anything, I think I'll be able to lift it just fine."
+
+    n "{color=#fff}You wrap your arms under the TV and push it up. Rob's right - it's incredibly heavy."
+    n "{color=#fff}Somehow, though, you manage to get it up and push it off him."
+
+    mc "{color=#fff}Oh my god."
+
+    hide screen cuttextbox
+    scene cctemproom with fade
+    show flash
+    $ cutscenetextbox = False
+    window show
+    show r with easeinright
+    r "Doc... you came for me. You didn't need to do that."
+
+    mc "Of course I did."
+
+    n "You pick his broken handle up off the floor."
+
+    r "Eh... I don't need that, hah. I got you here. That's all I need."
+
+    mc "No, right now you need to get out of here. But that's sweet of you."
+    mc "We can't take the surface elevators - I'm almost positive they won't let you up with me."
+
+    r "I... I think I know a different way. Y'know where Heath's break room is, yeah?"
+    r "There's a staircase behind it. I've gotten complaints from visitors that they can hear me yelling from over there..."
+    r "It's not a very popular entrance. Maybe 'cuz of me, haha."
+    r "But I know it leads to the surface."
+
+    mc "Great idea, Rob. Let's get out of here."
+
+    jump escape_rob
 
 label norob:
     $ emv_rob = True
@@ -177,6 +237,7 @@ label norob:
 # ######################################
 
 label saveccunknown:
+    $ sfx_crossFade(2, "sfx/alarm.ogg")
     if lock_cc == False and lock_unknown == False:
         jump nocc
     else:

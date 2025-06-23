@@ -6,3 +6,6 @@ label escape_heath:
 
 label escape_ccunknown:
     jump endtest
+
+label escape_rob:
+    jump endtest
