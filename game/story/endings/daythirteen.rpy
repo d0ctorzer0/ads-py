@@ -349,7 +349,7 @@ label saveccunknown:
 
     show u c with easeinright
     if lock_unknown:
-        u "Well, Doc, this is certainly one way to get aquainted..."
+        u "Well, Doc, this is certainly one way to get acquainted..."
     else:
         u "Good catch."
 

@@ -902,7 +902,7 @@ label ccrejection:
 
     c "Life is an... interesting concept to me."
     c "It's not as easily definable as a lot of the scientists here seem to think..."
-    c "Me, fort example. Am I alive? And on top of that, am I {i}living?{/i}"
+    c "Me, for example. Am I alive? And on top of that, am I {i}living?{/i}"
     c "Stuck in this room all day..."
 
     show c look
