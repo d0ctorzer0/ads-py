@@ -76,6 +76,7 @@ label unknownmissing:
     $ emv_unknown = True
     scene bioroom with fade
     show flash
+    window show
     n "You approach the room where what's-his-name usually is."
     n "The whole room is seemingly caved in."
     n "You dig under the rubble but see no core trapped underneath."
@@ -98,6 +99,7 @@ label saveaspen:
     jump endtest
 
 label noaspen:
+    window show
     $ emv_aspen = True
     scene bioroom with fade
     show flash
@@ -124,6 +126,7 @@ label nogreg:
     $ emv_greg = True
     scene bioroom with fade
     show flash
+    window show
     n "You run up to the door leading to the lounge. One of your coworkers greets you."
 
     cw "What are you doing here?! There's no -"
@@ -143,6 +146,7 @@ label nogreg:
 
     n "You quickly leave the lounge behind."
 
+    window hide
     jump emmap
 
 
@@ -160,6 +164,7 @@ label norob:
     $ emv_rob = True
     scene robtemproom with fade
     show flash
+    window show
     n "You push the door open into the gym. There's a fire near one of the machines in the back."
     n "All the TVs are flashing a warning signal."
     n "Rob is nowhere to be found."
@@ -178,6 +183,7 @@ label saveccunknown:
         pass
     scene bioroom with fade
     show flash
+    window show
     $ renpy.sound.play("sfx/fire.ogg", channel='fire', loop=True)
     n "You approach the door to CC's room. You hear fire from inside."
 
@@ -301,6 +307,7 @@ label nocc:
     $ emv_cc = True
     scene bioroom with fade
     show flash
+    window show
     $ renpy.sound.play("sfx/fire.ogg", channel='fire', loop=True)
     n "You approach the door to CC's room. You hear fire from inside."
 
@@ -326,6 +333,7 @@ label saveheath:
         pass
     scene heathroom with fade
     show flash
+    window show
     n "You enter the break room."
     n "The stage is concave, and the curtains are on fire."
     n "Tables are flipped over and chairs are thrown across the floor."
@@ -400,6 +408,7 @@ label noheath:
     $ emv_heath = True
     scene heathroom with fade
     show flash
+    window show
     n "You enter the break room."
     n "The stage is concave, and the curtains are on fire."
     n "Tables are flipped over and chairs are thrown across the floor."
@@ -419,6 +428,7 @@ label savekris:
         pass
     scene kristemproom with fade
     show flash
+    window show
     n "You push your way into Kris' conference room."
     n "It's a little difficult to get through the jammed door, but you make it in."
     n "The stock market screen is on fire."
@@ -476,6 +486,7 @@ label nokris:
     $ emv_kris = True
     scene kristemproom with fade
     show flash
+    window show
     n "You push your way into Kris' conference room."
     n "It's a little difficult to get through the jammed door, but you make it in."
     n "Kris isn't here, though. The screen is turned off, too."
