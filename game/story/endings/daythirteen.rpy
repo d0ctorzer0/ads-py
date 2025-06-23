@@ -337,37 +337,37 @@ label saveheath:
     scene heath cutscene 4 with fade
     show flash
     $ persistent.hc4 = True
-    h "Oh... Doctor..."
-    h "I-I... my magic supplies, my... livelihood, it's..."
+    h "{color=#fff}Oh... Doctor..."
+    h "{color=#fff}I-I... my magic supplies, my... livelihood, it's..."
 
-    mccut "Heath, are you okay?"
+    mccut "{color=#fff}Heath, are you okay?"
 
-    h "I'm fine physically, Doctor. I think. But I..."
-    h "Look at my emporium. It's..."
-    h "No amount of magic could fix something this devastating..."
+    h "{color=#fff}I'm fine physically, Doctor. I think. But I..."
+    h "{color=#fff}Look at my emporium. It's..."
+    h "{color=#fff}No amount of magic could fix something this devastating..."
 
-    mccut "Heath, I'm so sorry. I know this is really difficult."
+    mccut "{color=#fff}Heath, I'm so sorry. I know this is really difficult."
 
-    h "Yeah..."
+    h "{color=#fff}Yeah..."
 
-    mccut "But you'll burn alive if we don't get you out of here."
+    mccut "{color=#fff}But you'll burn alive if we don't get you out of here."
 
-    h "Oh. Yes."
+    h "{color=#fff}Oh. Yes."
 
-    mccut "Here. Drop off your rail. I'll catch you."
+    mccut "{color=#fff}Here. Drop off your rail. I'll catch you."
 
-    h "But - I'm too warm for you to hold on to. You'll burn yourself."
+    h "{color=#fff}But - I'm too warm for you to hold on to. You'll burn yourself."
 
-    mccut "I can't get you out of here otherwise."
+    mccut "{color=#fff}I can't get you out of here otherwise."
 
-    n "You take your lab coat off your shoulders and hold it in front of you."
+    n "{color=#fff}You take your lab coat off your shoulders and hold it in front of you."
 
-    mccut "Here - the coat will protect me. Let's get you out of here."
+    mccut "{color=#fff}Here - the coat will protect me. Let's get you out of here."
 
-    h "Okay. I trust you."
+    h "{color=#fff}Okay. I trust you."
 
-    n "Heath takes a deep breath..."
-    n "...and jumps off her rail, into your coat."
+    n "{color=#fff}Heath takes a deep breath..."
+    n "{color=#fff}...and jumps off her rail, into your coat."
     hide screen cuttextbox
     scene heathroom with fade
     show flash
