@@ -63,6 +63,7 @@ default satchoose_rob = False
 default persistent.kc1 = False
 default persistent.kc2 = False
 default persistent.kc3 = False
+default persistent.kc4 = False
 
 default persistent.hc1 = False
 default persistent.hc2 = False

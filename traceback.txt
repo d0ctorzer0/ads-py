@@ -1,36 +1,19 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/endings/battle.rpy", line 77, in script
-    "BOOTING{cps=1}..."
-  File "game/story/endings/battle.rpy", line 77, in script
-    "BOOTING{cps=1}..."
-  File "game/screens.rpy", line 108, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 108, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 133, in execute
-    if battle == False:
-  File "game/screens.rpy", line 133, in <module>
-    if battle == False:
-NameError: name 'battle' is not defined
+  File "game/story/endings/daythirteen.rpy", line 182, in script
+    mc "A large {i}{sc}crash{/i}{/sc} resonates through the door."
+  File "game/kinetic_text_tags.rpy", line 596, in scare_tag
+    elif not my_style.add_tags(text):
+  File "game/kinetic_text_tags.rpy", line 79, in add_tags
+    self.tags.pop(tag)
+KeyError: 'i'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 652, in main
-    run(restart)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 148, in run
-    renpy.execution.run_context(True)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\execution.py", line 958, in run_context
-    context.run()
-  File "game/story/endings/battle.rpy", line 77, in script
-    "BOOTING{cps=1}..."
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/story/endings/battle.rpy", line 77, in script
-    "BOOTING{cps=1}..."
+  File "game/story/endings/daythirteen.rpy", line 182, in script
+    mc "A large {i}{sc}crash{/i}{/sc} resonates through the door."
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
     Say.execute(self)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
@@ -41,23 +24,21 @@ Full traceback:
     self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1117, in do_display
     display_say(who,
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 749, in display_say
-    what_text = renpy.display.screen.get_widget(what_text[0], what_text[1], what_text[2])
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 1541, in get_displayable
-    screen.update()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 700, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 108, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 108, in execute
-    screen say(who, what):
-  File "game/screens.rpy", line 133, in execute
-    if battle == False:
-  File "game/screens.rpy", line 133, in <module>
-    if battle == False:
-NameError: name 'battle' is not defined
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 796, in display_say
+    what_text.update()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 2311, in update
+    tokens = self.apply_custom_tags(tokens)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 2907, in apply_custom_tags
+    new_contents = func(tag, value, contents)
+  File "game/kinetic_text_tags.rpy", line 596, in scare_tag
+    elif not my_style.add_tags(text):
+  File "game/kinetic_text_tags.rpy", line 79, in add_tags
+    self.tags.pop(tag)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\revertable.py", line 90, in do_mutation
+    return method(self, *args, **kwargs)
+KeyError: 'i'
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
 Aperture Dating Simulator 0.3.1alpha
-Sat Jun 21 22:51:22 2025
+Sun Jun 22 18:05:48 2025

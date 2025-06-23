@@ -7,6 +7,7 @@ init python:
     renpy.music.set_volume(0.5, channel="music1")
     renpy.music.set_volume(0.7, channel="sound")
     renpy.music.register_channel("music1", mixer="music", loop=True, stop_on_mute=True, tight=True, file_prefix='', file_suffix='', buffer_queue=True)
+    renpy.music.register_channel("fire", mixer="sound", loop=True)
 
     def audio_crossFade(fadeTime, music):
         oldChannel = None

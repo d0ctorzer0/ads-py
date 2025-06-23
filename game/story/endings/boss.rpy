@@ -160,3 +160,5 @@ label day12end:
         "ERROR CODE [[ EBLC ]\nThis is a bug. If you are seeing this text please report it."
     n "Whatever happens tomorrow..."
     n "It's bound to be better than this."
+
+    jump day13

@@ -2,37 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/dictionaries/main.rpy", line 12: invalid syntax
-    config.key "K_LEFT" action NullAction()
-                ^
+The label noheath is defined twice, at File "game/story/endings/daythirteen.rpy", line 202:
+label noheath:
+and File "game/story/endings/daythirteen.rpy", line 224:
+label noheath:
 
-File "game/dictionaries/main.rpy", line 13: invalid syntax
-    config.key "KP_LEFT" action NullAction()
-                ^
-
-File "game/dictionaries/main.rpy", line 14: invalid syntax
-    config.key "K_RIGHT" action NullAction()
-                ^
-
-File "game/dictionaries/main.rpy", line 15: invalid syntax
-    config.key "KP_RIGHT" action NullAction()
-                ^
-
-File "game/dictionaries/main.rpy", line 16: invalid syntax
-    config.key "K_UP" action NullAction()
-                ^
-
-File "game/dictionaries/main.rpy", line 17: invalid syntax
-    config.key "KP_UP" action NullAction()
-                ^
-
-File "game/dictionaries/main.rpy", line 18: invalid syntax
-    config.key "K_DOWN" action NullAction()
-                ^
-
-File "game/dictionaries/main.rpy", line 19: invalid syntax
-    config.key "KP_DOWN" action NullAction()
-                ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sat Jun 21 23:27:05 2025
+Sun Jun 22 18:15:17 2025

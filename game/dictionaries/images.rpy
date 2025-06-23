@@ -56,3 +56,12 @@ image laser:
     "gui/boss/laser/l_8.png"
     pause .05
     #total time = 0.4
+
+
+image flash:
+    "#84000070"
+    alpha 0.0
+    linear .45 alpha 0.5
+    pause 0.12     
+    linear .45 alpha 0.0
+    repeat
