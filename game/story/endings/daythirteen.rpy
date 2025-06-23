@@ -176,23 +176,23 @@ label saverob:
     n "{color=#fff}Rob has fallen off his management rail, trapped under the TV that used to be hung up behind him."
     n "{color=#fff}One of his handles is broken off and his eye is twitching."
 
-    mc "{color=#fff}Oh my god. Rob, are you okay?!"
+    mccut "{color=#fff}Oh my god. Rob, are you okay?!"
 
     r "{color=#fff}D-Doc? Oh, haha, it {i}is{/i} you..."
     r "{color=#fff}I'm not doing... great, no..."
 
-    mc "{color=#fff}Hold on. I'll get you out of there."
+    mccut "{color=#fff}Hold on. I'll get you out of there."
 
     n "{color=#fff}The fire behind him flares up threateningly."
 
     r "{color=#fff}Wait... it's dangerous. And this TV... i-it's heavy."
 
-    mc "{color=#fff}If you've taught me anything, I think I'll be able to lift it just fine."
+    mccut "{color=#fff}If you've taught me anything, I think I'll be able to lift it just fine."
 
     n "{color=#fff}You wrap your arms under the TV and push it up. Rob's right - it's incredibly heavy."
     n "{color=#fff}Somehow, though, you manage to get it up and push it off him."
 
-    mc "{color=#fff}Oh my god."
+    mccut "{color=#fff}Oh my god."
 
     hide screen cuttextbox
     scene cctemproom with fade
