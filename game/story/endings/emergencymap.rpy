@@ -42,7 +42,7 @@ screen emergencymap():
         image "gui/em_map/roomblocked.png"
     if emv_heath == True:
         image "gui/em_map/breakroomblocked.png"
-    if emv_heath == True:
+    if emv_kris == True:
         image "gui/em_map/conferenceblocked.png"
 
 screen emergencymapup():

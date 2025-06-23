@@ -1,44 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/endings/daythirteen.rpy", line 182, in script
-    mc "A large {i}{sc}crash{/i}{/sc} resonates through the door."
-  File "game/kinetic_text_tags.rpy", line 596, in scare_tag
-    elif not my_style.add_tags(text):
-  File "game/kinetic_text_tags.rpy", line 79, in add_tags
-    self.tags.pop(tag)
-KeyError: 'i'
+  File "game/story/endings/daythirteen.rpy", line 253, in script
+    show h look with easeinright
+Exception: Image 'h' does not accept attributes 'look'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/endings/daythirteen.rpy", line 182, in script
-    mc "A large {i}{sc}crash{/i}{/sc} resonates through the door."
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
-    Say.execute(self)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1470, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1117, in do_display
-    display_say(who,
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 796, in display_say
-    what_text.update()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 2311, in update
-    tokens = self.apply_custom_tags(tokens)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 2907, in apply_custom_tags
-    new_contents = func(tag, value, contents)
-  File "game/kinetic_text_tags.rpy", line 596, in scare_tag
-    elif not my_style.add_tags(text):
-  File "game/kinetic_text_tags.rpy", line 79, in add_tags
-    self.tags.pop(tag)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\revertable.py", line 90, in do_mutation
-    return method(self, *args, **kwargs)
-KeyError: 'i'
+  File "game/story/endings/daythirteen.rpy", line 253, in script
+    show h look with easeinright
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1124, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1087, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'h' does not accept attributes 'look'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
 Aperture Dating Simulator 0.3.1alpha
-Sun Jun 22 18:05:48 2025
+Sun Jun 22 19:44:26 2025

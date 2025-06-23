@@ -62,6 +62,6 @@ image flash:
     "#84000070"
     alpha 0.0
     linear .45 alpha 0.5
-    pause 0.12     
+    pause 0.55     
     linear .45 alpha 0.0
     repeat

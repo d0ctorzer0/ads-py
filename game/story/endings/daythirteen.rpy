@@ -202,7 +202,77 @@ label saveheath:
         jump noheath
     else:
         pass
-    jump endtest
+    scene heathroom with fade
+    show flash
+    n "You enter the break room."
+    n "The stage is concave, and the curtains are on fire."
+    n "Tables are flipped over and chairs are thrown across the floor."
+    n "Heath is close to the stage, staring at the curtains."
+
+    mc "Heath!"
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    scene heath cutscene 4 with fade
+    show flash
+    $ persistent.hc4 = True
+    h "Oh... Doctor..."
+    h "I-I... my magic supplies, my... livelihood, it's..."
+
+    mc "Heath, are you okay?"
+
+    h "I'm fine physically, Doctor. I think. But I..."
+    h "Look at my emporium. It's..."
+    h "No amount of magic could fix something this devastating..."
+
+    mc "Heath, I'm so sorry. I know this is really difficult."
+
+    h "Yeah..."
+
+    mc "But you'll burn alive if we don't get you out of here."
+
+    h "Oh. Yes."
+
+    mc "Here. Drop off your rail. I'll catch you."
+
+    h "But - I'm too warm for you to hold on to. You'll burn yourself."
+
+    mc "I can't get you out of here otherwise."
+
+    n "You take your lab coat off your shoulders and hold it in front of you."
+
+    mc "Here - the coat will protect me. Let's get you out of here."
+
+    h "Okay. I trust you."
+
+    n "Heath takes a deep breath..."
+    n "...and jumps off her rail, into your coat."
+    hide screen cuttextbox
+    scene heathroom with fade
+    show flash
+    $ cutscenetextbox = False
+    show h sad with easeinright
+
+    h "I'm sorry, Doctor, I'm... I don't know what to think."
+
+    mc "You're plenty magic without your supplies, Heath."
+
+    h "You certainly make me feel that way, regardless..."
+
+    mc "Let's get out of here."
+    mc "I'm not sure they'll let me out with you in the surface elevators..."
+    mc "From what I've seen so far, I expect the exact opposite, in fact."
+
+    show h
+    h "OH! Doctor! I have an idea!"
+    h "The stairs! They're just behind Kris' conference rooms!"
+    h "I sometimes hide behind the panels near it to surprise people, haha."
+    h "They lead to the surface. And they aren't that well-known. It's perfect!"
+
+    mc "You're a genius, Heath. Guide me there."
+
+    h "Aye aye, captain!"
+
+    jump escape_heath
 
 label noheath:
     $ emv_heath = True

@@ -68,6 +68,7 @@ default persistent.kc4 = False
 default persistent.hc1 = False
 default persistent.hc2 = False
 default persistent.hc3 = False
+default persistent.hc4 = False
 
 default persistent.ac1 = False
 default persistent.ac2 = False

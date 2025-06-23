@@ -148,7 +148,7 @@ screen gregconfemail():
         text "from: Gregory"
     vbox:
         style_prefix "eml"
-        text "hi doctor! looks like we've been missing each other lately, haha. i know\nthat tomorrow is your one-on-one shift - or at least, that's what rob\ntold me - so i hope you have fun with that! anyways. would you be\ninterested in meeting me in the lounge after your shift is over?\n\ni have something for you that i think you'll be interested in! it's nothing\nmuch so don't be concerned if you can't make it, but, just something to\nkeep in mind.\n\nthat's all! have a good night, doctor.\n\n- gregory"
+        text "hi doctor! looks like we've been missing each other lately, haha. i know\nthat tomorrow is your one-on-one shift - or at least, that's what rob\ntold me - so i hope you have fun with that! anyways.\n\ni have something for you that i think you'll be interested in! it's nothing\nmuch so don't be concerned if you don't see me soon, but, just something to\nkeep in mind.\n\nthat's all! have a good night, doctor.\n\n- gregory"
     use affectionprogress
     vbox:
         style_prefix "emlback"
@@ -163,7 +163,7 @@ screen unknownconfemail():
         text "from: UNKNOWN"
     vbox:
         style_prefix "eml"
-        text "How's it going? Hope you're doing alright. It was good to run into ya today.\n\nI know that tomorrow's your observation day - the one-on-one, where\nyou spend your shift with one of the cores? That's what CC told me.\nYeah, him and me have been talking lately, haha. I've been... trying to get\nbetter, if you get what I mean.\n\nAnyways, Doc, I was messaging you to see if you'd be interested in\nmeeting me at the lounge after your shift tomorrow? I got a big surprise\nfor ya but I don't really think your little friend would be very nice to me\nif I saw you out and about.\n\nThink about it, will ya? See you, Doc."
+        text "How's it going? Hope you're doing alright. It was good to run into ya today.\n\nI know that tomorrow's your observation day - the one-on-one, where\nyou spend your shift with one of the cores? That's what CC told me.\nYeah, him and me have been talking lately, haha. I've been... trying to get\nbetter, if you get what I mean.\n\nAnyways, Doc, I was messaging you to see if you'd be free sometime soon?\n\nI got a big surprise\nfor ya but I don't really think your little friend would be very nice to me\nif I saw you out and about.\n\nThink about it, will ya? See you, Doc."
     use affectionprogress
     vbox:
         style_prefix "emlback"
