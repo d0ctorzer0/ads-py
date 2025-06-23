@@ -77,6 +77,7 @@ default persistent.ac3 = False
 default persistent.cc1 = False
 default persistent.cc2 = False
 default persistent.cc3 = False
+default persistent.cc4 = False
 
 default persistent.rc1 = False
 default persistent.rc2 = False
@@ -86,6 +87,7 @@ default persistent.gc1 = False
 default persistent.gc2 = False
 default persistent.uc1 = False
 default persistent.uc2 = False
+default persistent.uc3 = persistent.cc4
 
 #DAY 3 - "with [blank] day 3"
 default wkd3 = False

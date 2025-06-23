@@ -173,7 +173,123 @@ label saveccunknown:
         jump nocc
     else:
         pass
-    jump endtest
+    scene bioroom with fade
+    show flash
+    $ renpy.sound.play("sfx/fire.ogg", channel='fire', loop=True)
+    n "You approach the door to CC's room. You hear fire from inside."
+
+    mc "CC?! Are you in there?!"
+
+    u "Doc?! Holy cow, is that you?"
+
+    mc "What the -"
+
+    u "There should be a spot to crawl into on the edge of the door - it's where I squeezed in."
+
+    n "Sure enough, there's a core-sized indent in the door that looks just big enough to fit through."
+    n "You take a quick breath, compose yourself, and climb through."
+
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    scene cc cutscene 4 with fade
+    show flash
+    $ persistent.cc4 = True
+    c "Doctor..."
+    n "As soon as you enter, you're met with a very peculiar sight."
+    n "Multiple walls are on fire and all of CC's monitoring systems are off."
+    n "In addition, what's-his-name is trying - desperately - to wrangle CC off his management rail and into..."
+
+    if cctv == True:
+        mccut "Is that the CCTV? The one I took from your room?"
+        
+        u "Uh - yeah. I broke into the office and stole it back from ya. Sorry, Doc."
+        u "Figured out after some snooping around that it used to be used for transporting CC around."
+
+        c "He's right. I-I had no idea it was with him this whole time, haha..."
+    elif cctv == False:
+        mccut "What is that thing?"
+
+        u "It's the... uh, CCTV. Cancer Core Transportation Vehicle, or somethin' like that."
+        u "Used to be used for hauling CC around campus. Guess it got stuffed into my old closet a while back."
+
+        c "I'm glad it was left with you and not thrown in an incinerator..."
+    
+    mccut "Here, let me help you."
+
+    if cc_lock:
+        c "No, Doctor, wait. It's dangerous - the whole room is unstable."
+        mccut "Neither of you have hands. I'm your only hope."
+
+        c "I..."
+        c "Okay. I trust you. But please... be careful. I wouldn't want anything to happen to you."
+    if unknown_lock:
+        u "You better not, Doc. It's dangerous. The whole place could come crashing down any minute."
+        mccut "Neither of you have hands. I'm your only hope."
+
+        u "But..."
+        u "Ugh. You're right, as usual. C'mere. But be careful - if ya got hurt, I wouldn't forgive myself."
+    
+    n "You approach the two of them carefully."
+    n "With gentle manuvering, you successfully detach CC from both his tubes and his management rails, and get him down into the CCTV."
+
+    if cc_lock:
+        c "You should handle me like that more often, haha..."
+    if unknown_lock:
+        u "Wish you were handlin' {i}me{/i} like that, haha..."
+    
+    n "You plug the canister on the back into CC's ports and lock them in place."
+
+    hide screen cuttextbox
+    scene cctemproom with fade
+    show flash
+    $ cutscenetextbox = False
+    show u c with easeinright
+    u "Okay, Doc. Is he in alright?"
+
+    mc "I think so. No guarantees, but this is our only choice."
+
+    hide u c with easeoutright
+
+    show c with easeinright
+    c "I... I'll be okay, you two. We need to leave. This room isn't safe."
+
+    mc "One second."
+    hide c with easeoutright
+
+    n "You move over to the door and try to pry it open."
+    n "Thankfully, it gives way easily - seems it was just stuck from the outside."
+
+    show u c with easeinright
+    mc "I'm gonna need to get you off that management rail."
+
+    u "You're right. I don't think Aperture cares too much about keepin' us alive anymore..."
+
+    hide u c with easeoutright
+
+    show c with easeinright
+    c "Did they ever?"
+    hide c with easeoutright
+
+    n "The core drops off his rail and into your arms."
+
+    show u c with easeinright
+    if lock_unknown:
+        u "Well, Doc, this is certainly one way to get aquainted..."
+    else:
+        u "Good catch."
+
+    mc "Anyone got any escape plans? The elevators are probably a no-go."
+
+    hide u c with easeinright
+    u "It... won't be easy, with CC's chair and all, but... I do know one way."
+    u "Behind the break room, there's a set of stairs... I see people come down that way sometimes, but not often."
+    u "It's not a very well-known exit. Prolly our best bet."
+
+    mc "Great idea. Let's go."
+
+    n "Broken-down core in one hand and a wheelchair-bound one in the other, you rush hurriedly to the break room area."
+
+    jump escape_ccunknown
 
 label nocc:
     $ emv_cc = True

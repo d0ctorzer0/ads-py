@@ -3,3 +3,6 @@ label escape_kris:
 
 label escape_heath:
     jump endtest
+
+label escape_ccunknown:
+    jump endtest
