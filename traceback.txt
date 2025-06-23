@@ -1,30 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/endings/daythirteen.rpy", line 253, in script
-    show h look with easeinright
-Exception: Image 'h' does not accept attributes 'look'.
+  File "game/story/endings/daythirteen.rpy", line 243, in script
+    if unknown_lock:
+  File "game/story/endings/daythirteen.rpy", line 243, in <module>
+    if unknown_lock:
+NameError: name 'unknown_lock' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/endings/daythirteen.rpy", line 253, in script
-    show h look with easeinright
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1124, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1087, in show_imspec
-    renpy.config.show(name,
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\displayexports.py", line 477, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 249, in _duplicate
-    args.extraneous()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 109, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'h' does not accept attributes 'look'.
+  File "game/story/endings/daythirteen.rpy", line 243, in script
+    if unknown_lock:
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1856, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1215, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1208, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/story/endings/daythirteen.rpy", line 243, in <module>
+    if unknown_lock:
+NameError: name 'unknown_lock' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
-Aperture Dating Simulator 0.3.1alpha
-Sun Jun 22 19:44:26 2025
+Aperture Dating Simulator 0.4.0alpha
+Mon Jun 23 01:37:27 2025

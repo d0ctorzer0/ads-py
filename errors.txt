@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label noheath is defined twice, at File "game/story/endings/daythirteen.rpy", line 202:
-label noheath:
-and File "game/story/endings/daythirteen.rpy", line 224:
-label noheath:
-
+File "game/dictionaries/transforms.rpy", line 50: 'solid' is not a keyword argument or valid child of the screen statement.
+    solid "#fff"
+         ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sun Jun 22 18:15:17 2025
+Mon Jun 23 01:28:47 2025

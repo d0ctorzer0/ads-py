@@ -59,6 +59,7 @@ screen disable_Lmouse():
     key "K_SELECT" action NullAction()
 
 label battle:
+    
     scene grey
     show screen disable_Lmouse
     stop music
@@ -71,7 +72,7 @@ label battle:
         terminaltext = True
         config.allow_skipping = False
         renpy.set_style_preference("text", "battle")
-    show screen main
+    show screen main with easeinbottom
     "WELCOME TO APERTURE SCIENCE CORE CONTROL CENTER (ASC3)"
     $ renpy.pause(1.0, hard=True)
     "BOOTING{cps=1}..."
