@@ -34,7 +34,7 @@ screen email9():
         text "from: Miss Esther"
     vbox:
         style_prefix "eml"
-        text "Hello Doctor,\n\nI figured you might be confused about \"Casual Friday\" here in maintenance,\nas I'm fairly sure manufacturing doesn't engage in the practice.\n\nEssentially, tomorrow, there is no need to wear your uniform. You can\nwear whatever \"surface clothes\" your heart desires, as long as they follow\nthese guidelines:\n\n> No cropped or low-cut tops. Stomach and chest covered.\n> No ripped or torn pants.\n> No Black Mesa paraphenalia.\n> No logos/companies that promote drug/alcohol consumption.\n"
+        text "Hello Doctor,\n\nI figured you might be confused about \"Casual Friday\" here in maintenance,\nas I'm fairly sure manufacturing doesn't engage in the practice.\n\nEssentially, tomorrow, there is no need to wear your uniform. You can\nwear whatever \"surface clothes\" your heart desires, as long as they follow\nthese guidelines:\n\n> No cropped or low-cut tops. Stomach and chest covered.\n> No ripped or torn pants.\n> No Black Mesa paraphernalia.\n> No logos/companies that promote drug/alcohol consumption.\n"
     use affectionprogress
     vbox:
         style_prefix "emlback"

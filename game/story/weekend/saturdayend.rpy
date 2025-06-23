@@ -82,7 +82,8 @@ label satend_kris:
     scene kris cutscene 2 with fade
     show screen cuttextbox
     $ persistent.kc2 = True
-    k "{i}{color=#fff}The scene fades to Kris looking at you, lit by candlelight."
+    if persistent.advcap == True:
+        "{i}{color=#fff}The scene fades to Kris looking at you, lit by candlelight."
     k "{color=#fff}Mmm. Quite simple, Doctor."
     k "{color=#fff}You're incredibly intriguing. I don't get to know much about you in our day-to-day."
     k "{color=#fff}Plus, it's not like we have much time to chat throughout the week, given your busy schedule."

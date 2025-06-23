@@ -103,11 +103,11 @@ label noaspen:
     n "You peer into the window. It looks like it's flooding, and the sprinklers are on..."
     n "But you don't see Aspen anywhere."
 
-    mc "It seems someone from the greenhouse might've gotten him already..."
+    mc "It seems someone from the greenhouse might've gotten them already..."
 
     jump emmap
 
-# ###################################### ASPEN
+# ###################################### GREGORY
 # ######################################
 
 label savegreg:
@@ -243,16 +243,16 @@ label savekris:
     k "{color=#fff}You know what?! I bet I was right! This is it! The \"Operation ACRI\" that's happening right now -"
     k "{color=#fff}That's how they're getting rid of us, Doctor! I was right! I told you, I..."
 
-    mc "{color=#fff}Kris, that isn't important right now."
-    mc "{color=#fff}We need to get you out of here."
+    mccut "{color=#fff}Kris, that isn't important right now."
+    mccut "{color=#fff}We need to get you out of here."
 
     k "{color=#fff}Y-You're right, Doctor. I'm..."
 
-    mc "{color=#fff}I know you're scared. I'm right here."
+    mccut "{color=#fff}I know you're scared. I'm right here."
 
     k "{color=#fff}I've never been off my management rail before. I'm terrified."
 
-    mc "{color=#fff}I've got you."
+    mccut "{color=#fff}I've got you."
 
     n "{color=#fff}Kris takes a deep breath..."
     n "{color=#fff}...and drops off his rail."

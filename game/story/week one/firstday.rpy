@@ -357,7 +357,7 @@ label heathday1:
     n "Suddenly, fire shoots up from the floor."
 
     show h laugh
-    h "{k=1.5}{i}{b}BOOM!! HAHA!!{/k}{/i}{/b} I just summoned FIRE with my MIND!!"
+    h "{k=1.5}{i}{b}BOOM!! HAHA!!{/k}{/i}{/b} I just summoned FIRE with my MIND!!"
 
     menu:
         extend ""
@@ -1129,7 +1129,7 @@ label robday1cont:
     show hall
     $ audio_crossFade(2, "music/eleven.ogg")
     with fade
-    n "As you and Miss Esther proceed back to the offices, she conrgatulates you on a job well-done."
+    n "As you and Miss Esther proceed back to the offices, she congratulates you on a job well-done."
 
     show e with easeinright
     show e

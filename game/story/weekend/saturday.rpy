@@ -737,7 +737,7 @@ label satgreg_pos:
         scene gregory cutscene 1 with fade
         $ persistent.gc1 = True
         n "{color=#fff}Gregory looks down and begins speaking softly."
-        g "{color=#fff}No, I need to you go closer!!"
+        g "{color=#fff}No, I need you to go closer!!"
         g "{color=#fff}Less left, more right! Come on!"
         g "{color=#fff}T-They're looking at us, we need to {i}move!{/i}"
         g "{color=#fff}I'm so sorry Doctor, can you give me just a minute?"
@@ -1116,7 +1116,7 @@ label satunknownpos:
         show u with easeinright
         hide screen cuttextbox
         $ cutscenetextbox = False
-    if romance_points["???"] <= 7:
+    if romance_points["???"] < 7:
         show u upset
         u "I... can't remember. I know it wasn't always like this, but..."
         u "I can't think straight much anymore."

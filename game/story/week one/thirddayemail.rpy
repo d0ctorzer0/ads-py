@@ -50,7 +50,7 @@ screen email7heath():
         text "from: Heath"
     vbox:
         style_prefix "eml"
-        text "Heyyy Doctor!\n\nGlad you came to see my show today, haha. I haven't had someone give\nme that much attention since I was activated, like, 6 years ago!\n\nIt's unfortunate we had to cut it short to accomodate your busy, busy\nschedule. I'll be sure to make it up to you in the future with even more\nsurprises! Don't be shocked if I'm on fire the next time ya catch me!\n\nCheers,\nHeath, MAGIC CORE!!"
+        text "Heyyy Doctor!\n\nGlad you came to see my show today, haha. I haven't had someone give\nme that much attention since I was activated, like, 6 years ago!\n\nIt's unfortunate we had to cut it short to accommodate your busy, busy\nschedule. I'll be sure to make it up to you in the future with even more\nsurprises! Don't be shocked if I'm on fire the next time ya catch me!\n\nCheers,\nHeath, MAGIC CORE!!"
     use affectionprogress
     vbox:
         style_prefix "emlback"
