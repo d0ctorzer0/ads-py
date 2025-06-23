@@ -452,7 +452,8 @@ label savekris:
     scene kristemproom with fade
     show flash
     $ cutscenetextbox = False
-    show k look with easeinright
+    show k look offrail with easeinbottom
+    window show
     n "You quickly catch him. He looks up at where he came from, worriedly."
 
     k "I don't... it feels so strange to be off it, but..."
