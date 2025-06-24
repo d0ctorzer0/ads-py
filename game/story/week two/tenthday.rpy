@@ -991,7 +991,7 @@ label robday10:
     r "{color=#fff}This one was given to me by the guy in the position before ya."
     r "{color=#fff}Anyway. I want you to have it now."
 
-    mc "{color=#fff}Rob... this seems very personal to you."
+    mccut "{color=#fff}Rob... this seems very personal to you."
 
     r "{color=#fff}Yeah. 'Course it is. That's why I'm giving it to ya."
     r "{color=#fff}It's important to me. Just like... you are."

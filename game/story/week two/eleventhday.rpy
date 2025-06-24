@@ -419,7 +419,7 @@ label gregday11:
     g "{color=#fff}I know I've been trying to hide it, and this is really difficult - no one knows this but my creators, and..."
     g "{color=#fff}I figured you should know the truth before I ask you to accept me any further."
 
-    mc "{color=#fff}Accept you?"
+    mccut "{color=#fff}Accept you?"
 
     g "{color=#fff}Well, Doctor... we... have constantly been running into you, and... you treat me - uh, us so well."
     g "{color=#fff}No one's done that for us before."
