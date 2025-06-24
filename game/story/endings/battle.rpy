@@ -189,12 +189,12 @@ label cmdyield:
         cmdexecuted = True
         ap_count -= 1
         yldrandomizer = renpy.random.randint(1, 100)
-    if yldrandomizer >= 50:
+    if yldrandomizer > 50:
         show white with vpunch
         $ esther_stunned = True
         "YIELD COMMAND EXECUTED. CORE STUNNED FOR ONE (1) CYCLE."
         jump cmdinput
-    elif yldrandomizer < 50:
+    elif yldrandomizer <= 50:
         "YIELD COMMAND FAILED. UNABLE TO EXECUTE."
         jump cmdinput
 
