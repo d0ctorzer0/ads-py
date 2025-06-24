@@ -15,7 +15,7 @@ label day13:
 
     scene mctemproom with fade
     show flash
-    window show
+    window auto
 
     n "You wake with a start. Red lights fill your vision, and a grating alarm plays, almost as like it's inside your head."
     stc "Emergency detected. Automatic wake-up sequence initiated."
@@ -77,7 +77,7 @@ label unknownmissing:
     $ emv_unknown = True
     scene bioroom with fade
     show flash
-    window show
+    window auto
     
     n "You approach the room where what's-his-name usually is."
     n "The whole room is seemingly caved in."
@@ -102,7 +102,7 @@ label saveaspen:
     jump endtest
 
 label noaspen:
-    window show
+    window auto
     $ emv_aspen = True
     scene bioroom with fade
     show flash
@@ -126,7 +126,7 @@ label savegreg:
         pass
     show bioroom with fade
     show flash
-    window show
+    window auto
     n "You approach the door to the lounge to find a frightening sight."
     n "Gregory's caught on the door - it seems like it's jammed shut on his trench coat."
 
@@ -215,7 +215,7 @@ label nogreg:
     $ emv_greg = True
     scene bioroom with fade
     show flash
-    window show
+    window auto
     n "You run up to the door leading to the lounge. One of your coworkers greets you."
 
     cw "What are you doing here?! There's no -"
@@ -283,7 +283,7 @@ label saverob:
     scene cctemproom with fade
     show flash
     $ cutscenetextbox = False
-    window show
+    window auto
     show r with easeinright
     r "Doc... you came for me. You didn't need to do that."
 
@@ -309,7 +309,7 @@ label norob:
     $ emv_rob = True
     scene robtemproom with fade
     show flash
-    window show
+    window auto
     n "You push the door open into the gym. There's a fire near one of the machines in the back."
     n "All the TVs are flashing a warning signal."
     n "Rob is nowhere to be found."
@@ -329,7 +329,7 @@ label saveccunknown:
         pass
     scene bioroom with fade
     show flash
-    window show
+    window auto
     $ renpy.sound.play("sfx/fire.ogg", channel='fire', loop=True)
     n "You approach the door to CC's room. You hear fire from inside."
 
@@ -402,7 +402,7 @@ label saveccunknown:
     scene cctemproom with fade
     show flash
     $ cutscenetextbox = False
-    window show
+    window auto
     show u c with easeinright
     u "Okay, Doc. Is he in alright?"
 
@@ -410,7 +410,7 @@ label saveccunknown:
 
     hide u c with easeoutright
 
-    show c with easeinright
+    show c offrail with easeinright
     c "I... I'll be okay, you two. We need to leave. This room isn't safe."
 
     mc "One second."
@@ -426,7 +426,7 @@ label saveccunknown:
 
     hide u c with easeoutright
 
-    show c with easeinright
+    show c offrail with easeinright
     c "Did they ever?"
     hide c with easeoutright
 
@@ -453,7 +453,7 @@ label nocc:
     $ emv_cc = True
     scene bioroom with fade
     show flash
-    window show
+    window auto
     $ renpy.sound.play("sfx/fire.ogg", channel='fire', loop=True)
     n "You approach the door to CC's room. You hear fire from inside."
 
@@ -479,7 +479,7 @@ label saveheath:
         pass
     scene heathroom with fade
     show flash
-    window show
+    window auto
     n "You enter the break room."
     n "The stage is concave, and the curtains are on fire."
     n "Tables are flipped over and chairs are thrown across the floor."
@@ -526,7 +526,7 @@ label saveheath:
     scene heathroom with fade
     show flash
     $ cutscenetextbox = False
-    show h sad with easeinright
+    show h look offrail with easeinbottom
 
     h "I'm sorry, Doctor, I'm... I don't know what to think."
 
@@ -538,11 +538,14 @@ label saveheath:
     mc "I'm not sure they'll let me out with you in the surface elevators..."
     mc "From what I've seen so far, I expect the exact opposite, in fact."
 
-    show h
+    show h offrail
     h "OH! Doctor! I have an idea!"
     h "The stairs! They're just behind Kris' conference rooms!"
+    show h look offrail
     h "I sometimes hide behind the panels near it to surprise people, haha."
     h "They lead to the surface. And they aren't that well-known. It's perfect!"
+
+    show h offrail
 
     mc "You're a genius, Heath. Guide me there."
 
@@ -554,7 +557,7 @@ label noheath:
     $ emv_heath = True
     scene heathroom with fade
     show flash
-    window show
+    window auto
     n "You enter the break room."
     n "The stage is concave, and the curtains are on fire."
     n "Tables are flipped over and chairs are thrown across the floor."
@@ -572,9 +575,9 @@ label savekris:
         jump nokris
     else:
         pass
+    window auto
     scene kristemproom with fade
     show flash
-    window show
     n "You push your way into Kris' conference room."
     n "It's a little difficult to get through the jammed door, but you make it in."
     n "The stock market screen is on fire."
@@ -604,17 +607,18 @@ label savekris:
 
     n "{color=#fff}Kris takes a deep breath..."
     n "{color=#fff}...and drops off his rail."
+    window auto
     hide screen cuttextbox
     scene kristemproom with fade
     show flash
     $ cutscenetextbox = False
     show k look offrail with easeinbottom
-    window show
     n "You quickly catch him. He looks up at where he came from, worriedly."
 
     k "I don't... it feels so strange to be off it, but..."
 
     mc "We really don't have a choice."
+    show k offrail
     mc "If you're right, and they're truly trying to get rid of you..."
     mc "...they won't let me out with you via the surface elevators."
 
@@ -622,6 +626,8 @@ label savekris:
     k "There's a back way. Stairs."
 
     mc "How do you know..."
+
+    show k look offrail
 
     k "Gregory told me. They sometimes bring special guests in that way for conferences."
     k "Quick - I'll direct you."
@@ -632,7 +638,7 @@ label nokris:
     $ emv_kris = True
     scene kristemproom with fade
     show flash
-    window show
+    window auto
     n "You push your way into Kris' conference room."
     n "It's a little difficult to get through the jammed door, but you make it in."
     n "Kris isn't here, though. The screen is turned off, too."
