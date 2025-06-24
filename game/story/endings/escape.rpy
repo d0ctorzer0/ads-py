@@ -12,3 +12,6 @@ label escape_rob:
 
 label escape_gregory:
     jump endtest
+
+label escape_aspen:
+    jump endtest

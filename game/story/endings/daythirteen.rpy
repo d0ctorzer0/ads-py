@@ -100,6 +100,65 @@ label saveaspen:
     else:
         pass
     jump endtest
+    window auto
+    $ emv_aspen = True
+    scene bioroom with fade
+    show flash
+    n "You approach the door to the greenhouse."
+    n "You peer into the window. It looks like it's flooding, and the sprinklers are on..."
+    n "And Aspen is on the ground."
+
+    mc "Aspen!"
+
+    n "You force the door open."
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    scene aspen cutscene 4 with fade
+    show flash
+    $ persistent.ac4 = True
+    n "{color=#fff}Instantly, you're soaked to the bone. Shaking off the cold, you look down to see Aspen off their management rail."
+
+    a "{color=#fff}Doctor! Oh, I'm so happy to see you! The... the management rail got slippery, and I fell off, I..."
+    a "{color=#fff}What's going on out there?"
+
+    mccut "{color=#fff}I'm not really sure, but they're evacuating everyone."
+
+    a "{color=#fff}Wh... why didn't my coworkers come back for me, then?"
+
+    mccut "{color=#fff}I think... I think they're only evacuating human employees."
+
+    a "{color=#fff}What?"
+
+    mccut "{color=#fff}That's not important right now, though. This room is flooding and soon enough we won't be able to get this door open."
+
+    a "{color=#fff}Y-You're right, Doctor. We should get out of here."
+
+    hide screen cuttextbox
+    window auto
+    scene aspentemproom with fade
+    show flash
+    $ cutscenetextbox = False
+    show a look with easeinright
+
+    n "You grab Aspen by the handles and lift them up to you. They're slippery."
+
+    a "O-Oh, I didn't expect you to... haha... oh my."
+
+    mc "Do you know a way out other than the surface elevators?"
+
+    a "There's a set of stairs right behind the greenhouse - it's how they bring in fresh samples."
+    a "It's only used in rare cases though so it's not in the best condition, but..."
+
+    mc "Doesn't matter. It's our only chance. Let's go."
+
+    a "O-Okay. I trust you."
+    a "My... my plants, they..."
+
+    mc "I know."
+
+    n "Struggling to keep a hold of Aspen, you push your way out of the greenhouse doors."
+
+    jump escape_aspen
 
 label noaspen:
     window auto
