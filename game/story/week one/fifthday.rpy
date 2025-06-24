@@ -234,8 +234,9 @@ label heathday5:
 
     show h
     n "At least 10 meters of scarf has now exited Heath's chassis, and it's still going."
-    n "Cores aren't very large - a little bigger than a basketball, at most."
-    n "How she fit this much cloth into such a tiny compartment, let alone while avoiding her circuitry, {i}and{/i} without hands..."
+    n "Cores aren't {i}that{/i} large, all things considered - just slightly bigger than a small yoga ball."
+    n "Regardless, they're certainly not big enough to fit that much cloth in..."
+    n "How she managed this, let alone while avoiding her circuitry, {i}and{/i} without hands..."
     n "You're not sure."
 
     show e b happy at bounce
