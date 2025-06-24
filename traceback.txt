@@ -1,30 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/endings/daythirteen.rpy", line 65, in script
-    $ sfx_crossFade(2, "sfx/alarm_q.ogg")
-  File "game/story/endings/daythirteen.rpy", line 65, in <module>
-    $ sfx_crossFade(2, "sfx/alarm_q.ogg")
-  File "game/dictionaries/audio.rpy", line 49, in sfx_crossFade
-    renpy.music.play(music, channel=newChannel, loop=None,fadein=fadeTime)
-NameError: name 'music' is not defined
+  File "game/story/endings/escape.rpy", line 14, in script
+    jump entest
+ScriptError: could not find label 'entest'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/endings/daythirteen.rpy", line 65, in script
-    $ sfx_crossFade(2, "sfx/alarm_q.ogg")
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 834, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1184, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/story/endings/daythirteen.rpy", line 65, in <module>
-    $ sfx_crossFade(2, "sfx/alarm_q.ogg")
-  File "game/dictionaries/audio.rpy", line 49, in sfx_crossFade
-    renpy.music.play(music, channel=newChannel, loop=None,fadein=fadeTime)
-NameError: name 'music' is not defined
+  File "game/story/endings/escape.rpy", line 14, in script
+    jump entest
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1712, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'entest'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
 Aperture Dating Simulator 0.4.0alpha
-Mon Jun 23 12:05:03 2025
+Tue Jun 24 12:05:50 2025

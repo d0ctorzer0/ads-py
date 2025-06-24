@@ -9,3 +9,6 @@ label escape_ccunknown:
 
 label escape_rob:
     jump endtest
+
+label escape_gregory:
+    jump endtest

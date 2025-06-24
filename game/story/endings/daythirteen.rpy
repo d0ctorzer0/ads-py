@@ -62,7 +62,7 @@ label emmap:
     show flash
     stop music
     stop music1
-    $ sfx_crossFade(2, "sfx/alarm_q.ogg")
+    # $ sfx_crossFade(2, "sfx/alarm_q.ogg")
     scene black with dissolve
     $ renpy.pause(1.0, hard=True)
     scene emmapbg with dissolve
@@ -78,7 +78,7 @@ label unknownmissing:
     scene bioroom with fade
     show flash
     window show
-    $ sfx_crossFade(2, "sfx/alarm.ogg")
+    
     n "You approach the room where what's-his-name usually is."
     n "The whole room is seemingly caved in."
     n "You dig under the rubble but see no core trapped underneath."
@@ -94,7 +94,7 @@ label unknownmissing:
 # ######################################
 
 label saveaspen:
-    $ sfx_crossFade(2, "sfx/alarm.ogg")
+    
     if lock_aspen == False:
         jump noaspen
     else:
@@ -119,12 +119,97 @@ label noaspen:
 # ######################################
 
 label savegreg:
-    $ sfx_crossFade(2, "sfx/alarm.ogg")
+    
     if lock_gregory == False:
         jump nogreg
     else:
         pass
-    jump endtest
+    show bioroom with fade
+    show flash
+    window show
+    n "You approach the door to the lounge to find a frightening sight."
+    n "Gregory's caught on the door - it seems like it's jammed shut on his trench coat."
+
+    mc "Gregory!"
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    scene greg cutscene 3 with fade
+    show flash
+    $ persistent.gc3 = True
+    g "{color=#fff}O-Oh, Doctor! Can you - oh my god, can you help me?! Please!"
+
+    mccut "{color=#fff}Where are you caught on?"
+
+    g "{color=#fff}The... the door's jammed shut."
+    g "{color=#fff}I was trying to get everyone else out first, but the servos failed while I was leaving..."
+    g "{color=#fff}My coat is caught in the door."
+
+    mccut "{color=#fff}We might have to take the coat off, then."
+
+    g "{color=#fff}B-But - what if someone sees?! You're the only person I've ever told, I -"
+
+    mccut "{color=#fff}Everyone else is gone. They're evacuating."
+
+    g "{color=#fff}I..."
+
+    mccut "{color=#fff}We don't have much time."
+
+    g "{color=#fff}O-Okay. I trust you, Doctor."
+
+    n "{color=#fff}You attempt to unbutton the trench coat to free them, but it's very tight."
+    
+    mccut "{color=#fff}I think the only way to free you is to rip this off."
+
+    g "{color=#fff}My favorite coat..."
+
+    n "{color=#fff}With all your strength, you grab the coat's fabric and rip it off them."
+    n "{color=#fff}Gregory comes cascading down - and when they land..."
+
+    hide screen cuttextbox
+    window auto
+    scene hall with fade
+    show flash
+    $ cutscenetextbox = False
+    show g nocoat with easeinright
+    g1 "W-What? What's... what's going on?"
+    g2 "Who..."
+    g3 "Where am I? Who are you?"
+
+    mc "Oh my god. Gregory, are you okay?!"
+
+    gall "Yeah, I'm fine."
+    g2 "Wait a minute - are we... separated?!"
+    g1 "Oh no. Oh no. This can't be happening."
+    g3 "Great. This is just great."
+
+    mc "I thought you... all... said you {i}couldn't{/i} be separated?"
+
+    g2 "That's what I thought, but... I suppose I was wrong."
+    g1 "{i}You{/i} thought? That was {i}my{/i} idea!"
+    g3 "It was {i}our{/i} idea. We thought that together."
+
+    mc "I - ugh. We don't have time for this, we need to get out of here."
+    mc "Everyone else has left. The surface elevators are probably full of people, and I don't think they'd like it if you came with me."
+
+    g1 "Probably not."
+    g2 "Agreed."
+    g3 "Stealing Aperture property."
+
+    n "You take off your lab coat and scoop the three small cores into it."
+
+    mc "Any of you have any ideas?"
+
+    g2 "Hmm..."
+    gall "The stairs!"
+    g1 "They're stairs behind Kris' conference room."
+    g2 "Sometimes our stockholders will come down that way, but rarely."
+    g3 "It's our only choice."
+
+    mc "Great idea, you three. Let's go."
+
+    n "You hurriedly adjust your grip on your coat and run back up towards the conference rooms."
+
+    jump escape_gregory
 
 label nogreg:
     $ emv_greg = True
@@ -158,7 +243,7 @@ label nogreg:
 # ######################################
 
 label saverob:
-    $ sfx_crossFade(2, "sfx/alarm.ogg")
+    
     if lock_rob == False:
         jump norob
     else:
@@ -237,7 +322,7 @@ label norob:
 # ######################################
 
 label saveccunknown:
-    $ sfx_crossFade(2, "sfx/alarm.ogg")
+    
     if lock_cc == False and lock_unknown == False:
         jump nocc
     else:

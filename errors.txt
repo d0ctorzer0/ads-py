@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/dictionaries/transforms.rpy", line 50: 'solid' is not a keyword argument or valid child of the screen statement.
-    solid "#fff"
-         ^
+File "game/dictionaries/characters.rpy", line 31: invalid syntax
+    Character(_("Gregory (all)")), color="#8c6f57"
+                                         ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Mon Jun 23 01:28:47 2025
+Tue Jun 24 11:57:47 2025
