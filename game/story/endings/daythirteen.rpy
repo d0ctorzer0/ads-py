@@ -491,7 +491,7 @@ label saveccunknown:
 
     n "The core drops off his rail and into your arms."
 
-    show u c with easeinright
+    show u offrail with easeinbottom
     if lock_unknown:
         u "Well, Doc, this is certainly one way to get acquainted..."
     else:
@@ -503,6 +503,7 @@ label saveccunknown:
     u "It's not a very well-known exit. Prolly our best bet."
 
     mc "Great idea. Let's go."
+    hide u offrail with easeoutbottom
 
     n "Broken-down core in one hand and a wheelchair-bound one in the other, you rush hurriedly to the break room area."
 
