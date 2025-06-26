@@ -19,7 +19,7 @@ screen email1_8():
         text "from: HR"
     vbox:
         style_prefix "eml"
-        text "Our mandatory sexual harrassment training is swiftly approaching.\nWe know many long-term employees may still not be used to this\nprogram, so we would like to remind you of the conduct we expect\nduring these trainings.\n\nDo not, under any circumstances, use this mandatory training as a basis\nfor jokes at the expense of the company or your coworkers.\n\nIn addition, we expect a certain modicum of respect for those giving the\npresentation and providing resources to our employees.\n\nThis email also serves as a reminder that any and all harrassment\nconcerns should be reported immediately to HR. Reports can also be"
+        text "Our mandatory sexual harassment training is swiftly approaching.\nWe know many long-term employees may still not be used to this\nprogram, so we would like to remind you of the conduct we expect\nduring these trainings.\n\nDo not, under any circumstances, use this mandatory training as a basis\nfor jokes at the expense of the company or your coworkers.\n\nIn addition, we expect a certain modicum of respect for those giving the\npresentation and providing resources to our employees.\n\nThis email also serves as a reminder that any and all harassment\nconcerns should be reported immediately to HR. Reports can also be"
     use affectionprogress
     vbox:
         style_prefix "emlback"

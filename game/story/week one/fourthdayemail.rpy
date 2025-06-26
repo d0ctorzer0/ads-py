@@ -79,7 +79,7 @@ screen email11():
         text "from: Management"
     vbox:
         style_prefix "eml"
-        text "ATTENTION ALL EMPLOYEES,\n\nIt has been brought to our attention that an email regarding a top-secret \nproject may have accidentally been sent to many low-level human\nemployees, particularly in manufacturing. This was unintended and you\nare required to forget said email's existence if you have received it.\n\nIn addition, all associates who receieved the email are eligible to win up to\n$150 if they choose to undergo a quick and easy memory-erasure\nprocedure.\n\nThank you,\nManagement"
+        text "ATTENTION ALL EMPLOYEES,\n\nIt has been brought to our attention that an email regarding a top-secret \nproject may have accidentally been sent to many low-level human\nemployees, particularly in manufacturing. This was unintended and you\nare required to forget said email's existence if you have received it.\n\nIn addition, all associates who received the email are eligible to win up to\n$150 if they choose to undergo a quick and easy memory-erasure\nprocedure.\n\nThank you,\nManagement"
 
     use affectionprogress
     vbox:
