@@ -313,7 +313,7 @@ screen esther_win2():
     add "gui/boss/estherwin2.png"
 
 label END_mcdeath:
-=    $ renpy.set_style_preference("text", "basic")
+    $ renpy.set_style_preference("text", "basic")
     $ config.rollback_enabled = False
     stop music fadeout 2.0
     show screen esther_win with easeintop
@@ -346,6 +346,7 @@ label END_heartless:
         preferences.afm_enable = False
         renpy.set_style_preference("text", "basic")
         config.allow_skipping = True
+        renpy.stop_skipping()
         terminaltext = False
         cutscenetextbox = True
     window hide
@@ -371,6 +372,7 @@ label continuegame:
         preferences.afm_enable = False
         renpy.set_style_preference("text", "basic")
         config.allow_skipping = True
+        renpy.stop_skipping()
         terminaltext = False
         cutscenetextbox = True
     window hide
