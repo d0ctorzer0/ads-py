@@ -74,6 +74,30 @@ label escape_kris:
     k "{color=#fff}Beautiful. I..."
     n "{color=#fff}He turns to look at you."
 
+    k "{color=#fff}The only thing more amazing than what's happening right now..."
+    k "{color=#fff}Is that you're here, experiencing it with me."
+
+    # mc has to stay normal here because the cutscene is quite bright, white text may not work,
+    # do not edit for now and we'll come back to it later
+    mc "{color=#fff}Kris, I..."
+
+    k "{color=#fff}I-I think I love you."
+
+    mc "{color=#fff}Wh-"
+
+    k "{color=#fff}You've been so kind to me, despite my... attitude."
+    k "{color=#fff}You risked your life, gave up your job, and possibly endangered your future..."
+    k "{color=#fff}All for me."
+    k "{color=#fff}I..."
+
+    n "{color=#fff}He laughs softly."
+
+    k "{color=#fff}I'm so selfish."
+    k "{color=#fff}I hope you can learn to love me as well."
+
+    mc "{color=#fff}Kris..."
+    mc "{color=#fff}I think I've already started to."
+
     k "{color=#fff}Doctor, you..."
     k "{color=#fff}Oh, thank you. This is... just incredible."
 
