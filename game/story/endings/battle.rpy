@@ -70,6 +70,7 @@ label battle:
         preferences.afm_enable = True
         preferences.afm_time = 5
         terminaltext = True
+        renpy.stop_skipping()
         config.allow_skipping = False
         renpy.set_style_preference("text", "battle")
     show screen main with easeinbottom
@@ -312,7 +313,7 @@ screen esther_win2():
     add "gui/boss/estherwin2.png"
 
 label END_mcdeath:
-    $ renpy.set_style_preference("text", "basic")
+=    $ renpy.set_style_preference("text", "basic")
     $ config.rollback_enabled = False
     stop music fadeout 2.0
     show screen esther_win with easeintop
