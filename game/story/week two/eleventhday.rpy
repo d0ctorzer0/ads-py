@@ -540,6 +540,7 @@ label unknownday11:
 
     show u c 
     u "They almost refused me service! Hah."
+    u "Thankfully a little core named Virgil backed me up."
     u "Took a lot of work - 'bout 3 hours, but... I feel better than ever."
 
     mc "You... sound better, too."

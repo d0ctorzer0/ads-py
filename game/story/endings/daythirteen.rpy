@@ -445,6 +445,7 @@ label saveccunknown:
     
     n "{color=#fff}You approach the two of them carefully."
     n "{color=#fff}With gentle manuvering, you successfully detach CC from both his tubes and his management rails."
+    n "{color=#fff}Water leaks out of the tubes as you remove them from his systems."
     n "{color=#fff}He's heavy."
     n "{color=#fff}Thankfully though, you eventually get him down into the CCTV."
 

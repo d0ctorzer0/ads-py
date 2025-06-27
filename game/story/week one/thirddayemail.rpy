@@ -19,6 +19,7 @@ screen emailday3():
 
         #textbutton "    from: {color=#c9ae16}Gregory{/color}\n        an invite?                                                                                   " action Jump("emaileight")
         textbutton "    from: [[ BLOCKED ]\n        [[ HIGH SCAM LIKELIHOOD ]                                                           " action Jump("e3")
+        textbutton "    from: Financial\n        FWD: Core Maintenance Cost Report                                                           " action Jump("emailreport")
     vbox:
         style_prefix "nextday"
         textbutton "NEXT DAY >>" action Jump("day4")
@@ -103,21 +104,54 @@ screen email7rob():
 
     # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#screen email8():
-    #vbox:
-        #style_prefix "emltitle"
-        #text "an invite??"
-    #vbox:
-        #style_prefix "emlfrom"
-        #text "from: Gregory"
-    #vbox:
-        #style_prefix "eml"
-        #text "hey doc!!\n\nglad you opened this email up, didn't know if you would! haha.\n\nlisten, i've been thinking about two days ago, when we bumped into each\nother? you might've gotten some ideas about me that aren't\nparticularly true, so i just wanna clear things up. if you're interested, i'm \ngonna be at the gym this saturday!\n\ni don't know if you'll be on-campus, but i figured it's worth a shot,\nright? so yeah, maybe we grab a coffee, i can clear up any question\nyou might have, yeah?? anyway. think about it!!\n\n- gregory"
-    #use affectionprogress
-    #vbox:
-        #style_prefix "emlback"
-        #textbutton "<<< back" action Jump("e3")
-    
+screen emailrep():
+    vbox:
+        style_prefix "emltitle"
+        text "FWD: Core Maintenance Cost Report"
+    vbox:
+        style_prefix "emlfrom"
+        text "from: Financial"
+    vbox:
+        style_prefix "eml"
+        text "Hello Doctor,\n\nThe monthly maintenance cost report is finished. It is attached on the\nnext page. Please forward this to your supervisor at your earliest\nconvenience.\n\nIn addition, do not share the information on the next page with\nnon-Aperture employees, as it is entirely confidential. Leaking this report\nwill be seen as an act of insubordination and will result in immediate\ntermination.\n\nThank you,\nDr. Azrael\nFinancial Department - Robotics Sector"
+
+
+    use affectionprogress
+    vbox:
+        style_prefix "emlback"
+        textbutton "next >>>" action Jump("emailreport2")
+
+screen emailrep2():
+    vbox:
+        style_prefix "emltitle"
+        text "FWD: Core Maintenance Cost Report"
+    vbox:
+        style_prefix "emlfrom"
+        text "from: Financial"
+    vbox:
+        style_prefix "eml"
+        text "{font=bulletin.ttf}{size=30}ASPC FINANCIAL REPORT - MONTH OF JUNE\n\n+-------+----------+------------------+---------+\n| Date  | Core ID |     Service      |  Cost  |\n+-------+----------+------------------+---------+\n| 06/02 | C9-AN4  | Handles          | $3.5k  |\n| 06/05 | B6-QY6  | Framework Update | $9.8k  |\n| 06/09 | D8-PB3  | Coolant          | $4.2k  |\n| 06/09 | W6-BA5  | Optics Repair    | $5.2k  |\n| 06/14 | U3-TO1  | Encoding Fix     | $24.3k |\n| 06/15 | T1-HB4  | Chassis Repair   | $6.2k  |\n| 06/26 | E9-YZ8  | Handles          | $3.6k  |\n| 06/27 | C7-JB9  | General Repair   | $18.7k |\n| 06/30 | C8-XA3  | Miscellaneous    | $10.7k |\n+-------+----------+------------------+---------+"
+        
+# +-------+---------+------------------+--------+\n
+# | Date  | Core ID |     Service      |  Cost  |\n
+# +-------+---------+------------------+--------+\n
+# | 06/02 | C9-AN4  | Handles          | $3.5k  |\n
+# | 06/05 | B6-QY6  | Framework Update | $9.8k  |\n
+# | 06/09 | D8-PB3  | Coolant          | $4.2k  |\n
+# | 06/09 | W6-BA5  | Optics Repair    | $5.2k  |\n
+# | 06/14 | U3-TO1  | Encoding Fix     | $24.3k |\n
+# | 06/15 | T1-HB4  | Chassis Repair   | $6.2k  |\n
+# | 06/26 | E9-YZ8  | Handles          | $3.6k  |\n
+# | 06/27 | C7-JB9 (this is gregory :3) | General Repair   | $18.7k |\n
+# | 06/30 | C8-XA3 (this is miss esther :3) | Miscellaneous    | $10.7k |\n
+# +-------+---------+------------------+--------+
+
+
+    use affectionprogress
+    vbox:
+        style_prefix "emlback"
+        textbutton "<<< back" action Jump("e3")
+
 label e3first:
 
     stop music
@@ -157,7 +191,11 @@ label emailsevenrob:
     scene blankemail
     call screen email7rob
 
-#label emaileight:
+label emailreport:
     
-    #scene blankemail
-    #call screen email8
+    scene blankemail
+    call screen emailrep
+
+label emailreport2:
+    scene blankemail
+    call screen emailrep2

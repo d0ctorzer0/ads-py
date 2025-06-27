@@ -310,7 +310,127 @@ label escape_heath:
         jump END_heathtrue
 
 label escape_ccunknown:
-    jump endtest
+    scene hall with fade
+    show flash
+    n "They're heavy. Heavier than you thought they would be."
+    if lock_cc == True:
+        jump leave_unknown
+    if lock_unknown == True:
+        jump leave_cc
+
+label leave_unknown:
+    show c offrail with easeinright
+    c "Doctor, are you alright?"
+
+    mc "Y-Yes, I'm just... I'm just exhausted."
+
+    hide c with easeoutright
+    show u offrail with easeinbottom
+    u "We're almost outta here. The stairs are just around the corner."
+
+    n "You push forward slowly. Eventually, you finally reach the stairs."
+    scene stairs with fade
+    show flash
+    mc "Alright. We're... we're here."
+    mc "Okay. How are we gonna get you up, CC?"
+
+    show c offrail with easeinright
+    c "My chair has wheels that {i}should{/i} be able to go up stairs..."
+    c "But I'm not sure you'll be able to take us both at the same time."
+
+    hide c with easeoutright
+    show u offrail with easeinbottom
+    u "Take him first, Doc. He's heavier - it'll be easier to carry me up after."
+    u "Don't worry. I'll be fine."
+
+    hide u with easeoutbottom
+    show c with easeinright
+    c "No - what if they find you? What if they..."
+    c "It's not safe. You should go up first."
+    hide c with easeoutright
+    show u offrail with easeinbottom
+    u "Don't listen to him, Doc. Please - take him first."
+
+    mc "CC - he's right. It'll be easier to come back for him than for you..."
+    mc "I'm already... quite exhausted."
+
+    hide u with easeoutbottom
+    show c offrail with easeinright
+    n "CC sighs."
+
+    c "Okay. I trust you -"
+
+    hide c with easeoutright
+    show u offrail with easeinbottom
+    u "Ryland."
+
+    mc "What?"
+
+    ry "My name. I... I remembered. Yesterday."
+    ry "I've just been... scared to tell anyone. 'Case I forget again."
+
+    hide u with easeoutbottom
+    show c offrail with easeinright
+    c "Ryland."
+    c "That's an excellent name."
+    c "I trust you."
+    c "I'll see you at the surface."
+
+    hide c with easeoutright
+    n "You begin the ascent, slowly pushing CC's chair up, step by step."
+    n "It's not easy, and your arms nearly give in with every other push, but eventually, you're already halfway up."
+    n "Suddenly, you hear Ryland call out from behind you -"
+
+    ry "Doc! Hurry! They're -"
+
+    vc "HEY! There's still one over here - what do you want me to do with it?"
+    vc2 "Orders are to just throw them in the incinerator now. Boss says it's not worth the hassle."
+    vc "Roger that."
+    
+    ry "CC, I -"
+    ry "You guys need to get goin'."
+
+    c "RYLAND!"
+
+    ry "I'll be fine."
+
+    n "Grimacing, you push CC up as quickly as you can, trying your best to ignore the scene behind you."
+
+    show c with easeinright
+    c "Doctor, do you think -"
+
+    mc "I don't know, CC. I don't... I don't know."
+    mc "But we have to keep going. If they discover I have you, they'll do the same thing to you."
+
+    c "You're... you're right. I..."
+
+    mc "I'm sorry, CC. I know how much you cared about him."
+
+    c "Y-Yeah. I guess... hah. I guess that's Aperture for you."
+
+    n "Before you know it, you've crested the \"horizon\"."
+
+    hide flash
+    scene black with fade
+    $ renpy.pause(2.0, hard=True)
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    $ renpy.music.play("music/outsidereveal.ogg")
+    $ renpy.music.queue("music/outside.ogg", clear_queue=False)
+    scene white with blindplayer
+
+    c "{color=#fff}I-It's like the window outside my room..."
+    c "{color=#fff}Except..."
+
+    scene cc cutscene 5 with dissolve
+    $ persistent.cc5 = True
+    n "{color=#fff}Your vision is blinded by the bright light of the outside world."
+    n "{color=#fff}It's only been about two weeks since you were last outside, but..."
+    c "This is... incredible. Everything's so vibrant and bright and..."
+    c "The air is so... clear."
+
+    n "...CC's never seen the surface."
+
 
 label escape_rob:
     jump endtest

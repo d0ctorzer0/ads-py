@@ -15,6 +15,7 @@ define k = Character(_("Kris"), color="#25a68c" )
 define h = Character(_("Heath"), color="#7f30e0")
 
 define u = Character(_("???"), color="#725e42")
+define ry = Character(_("Ryland"), color="#725e42")
 
 define a = Character(_("Aspen"), color="#1c710b")
 define acg = Character(("Aspen"), color="#1c710b", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
@@ -41,3 +42,5 @@ define bar = Character(_("Bartender"), color="#323232")
 define ann = Character(_("Announcer"), color="#323232")
 define stc = Character(_("Stasis Chamber"), color="#323232")
 define intc = Character(_("Intercom"), color="#323232")
+define vc = Character(_("Voice 1"), color="#323232")
+define vc2 = Character(_("Voice 2"), color="#323232")
