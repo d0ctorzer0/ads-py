@@ -127,7 +127,7 @@ label escape_kris:
 
     k "You should rest, Doctor. It's getting late."
 
-    mc "Thank you Kris."
+    mc "Thank you, Kris."
 
     k "I'm a little terrified of the future..."
     k "You {i}did{/i} just steal \"Aperture property\", you know."
