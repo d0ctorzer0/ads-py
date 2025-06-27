@@ -45,3 +45,7 @@ screen vignette():
 transform splashfadeout:
     alpha 1.00
     easeout 1.0 alpha 0.00
+
+transform fade_in_text(time=0.5, distance=20):
+    alpha 0 xoffset distance
+    ease time alpha 1 xoffset 0
