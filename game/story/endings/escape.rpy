@@ -199,7 +199,7 @@ label escape_heath:
     h "That I have! Haha, you've got me there, Doc."
     show h look offrail
     h "Phew. Alright."
-    h "It's not like we got much of choice, huh?"
+    h "It's not like we got much of a choice, huh?"
 
     mc "Yeah."
 
