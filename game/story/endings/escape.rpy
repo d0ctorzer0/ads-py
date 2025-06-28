@@ -426,10 +426,10 @@ label leave_unknown:
     $ persistent.cc5 = True
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
-    c "This is... incredible. Everything's so vibrant and bright and..."
-    c "The air is so... clear."
+    c "{color=#fff}This is... incredible. Everything's so vibrant and bright and..."
+    c "{color=#fff}The air is so... clear."
 
-    n "...CC's never seen the surface."
+    n "{color=#fff}...CC's never seen the surface."
 
 
 label escape_rob:
