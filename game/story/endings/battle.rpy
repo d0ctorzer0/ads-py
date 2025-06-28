@@ -325,6 +325,7 @@ label END_mcdeath:
     show screen creditsfadeout with fade
     $ renpy.pause(3.0, hard=True)
     $ renpy.movie_cutscene("ENDCREDIT_mcdeath.webm")
+    $ config.allow_skipping = True
     $ MainMenu(confirm=False)()
 
 label battleend:
