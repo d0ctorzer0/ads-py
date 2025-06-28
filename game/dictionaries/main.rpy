@@ -20,6 +20,11 @@ init:
 
 label splashscreen:
     $ renpy.movie_cutscene("arlogo_intro.webm")
+    $ config.allow_skipping = True
+    $ renpy.register_style_preference("text", "basic", style.say_dialogue, "font", "fonts/SairaCondensed-Medium.ttf")
+    $ renpy.register_style_preference("text", "basic", style.say_dialogue, "color", "#404040")
+    $ renpy.register_style_preference("text", "basic", style.say_dialogue, "xsize", 1000)
+    $ renpy.set_style_preference("text", "basic")
     scene mm with dissolve
     return
 
