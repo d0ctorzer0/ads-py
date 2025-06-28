@@ -1198,7 +1198,7 @@ style confirm_button_text:
 screen skip_indicator():
 
     zorder 100
-    add "gui/aboutbutton.png"
+    add "gui/skip.png"
 
 
 ## This transform is used to blink the arrows one after another.
