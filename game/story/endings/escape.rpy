@@ -434,9 +434,12 @@ label leave_unknown:
     n "{color=#fff}...CC's never seen the surface."
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 label leave_cc:
     jump endtest
 =======
+=======
+>>>>>>> Stashed changes
     c "{color=#fff}All the poetry I've read, and none of it ever described the surface accurately."
     c "{color=#fff}It's... entirely different in person."
     c "{color=#fff}It's beautiful. It's..."
@@ -512,6 +515,9 @@ label leave_cc:
         $ MainMenu(confirm=False)()
     if romance_points["CC"] >= 30:
         jump END_cctrue
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 label escape_rob:
