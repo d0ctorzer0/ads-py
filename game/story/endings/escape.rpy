@@ -304,7 +304,7 @@ label escape_heath:
         show screen creditsfadeout
         $ renpy.pause(2.0, hard=True)
         hide screen creditsfadeout
-        $ renpy.movie_cutscene("ENDCREDIT_kris.webm")
+        $ renpy.movie_cutscene("ENDCREDIT_heath.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Heath"] >= 30:
         jump END_heathtrue
@@ -312,6 +312,7 @@ label escape_heath:
 label escape_ccunknown:
     scene hall with fade
     show flash
+    stop fire
     n "They're heavy. Heavier than you thought they would be."
     if lock_cc == True:
         jump leave_unknown
@@ -344,7 +345,7 @@ label leave_unknown:
     u "Don't worry. I'll be fine."
 
     hide u with easeoutbottom
-    show c with easeinright
+    show c offrail with easeinright
     c "No - what if they find you? What if they..."
     c "It's not safe. You should go up first."
     hide c with easeoutright
@@ -358,7 +359,7 @@ label leave_unknown:
     show c offrail with easeinright
     n "CC sighs."
 
-    c "Okay. I trust you -"
+    c "Okay. I trust you, uh..."
 
     hide c with easeoutright
     show u offrail with easeinbottom
@@ -396,7 +397,7 @@ label leave_unknown:
 
     n "Grimacing, you push CC up as quickly as you can, trying your best to ignore the scene behind you."
 
-    show c with easeinright
+    show c offrail with easeinright
     c "Doctor, do you think -"
 
     mc "I don't know, CC. I don't... I don't know."
@@ -408,6 +409,7 @@ label leave_unknown:
 
     c "Y-Yeah. I guess... hah. I guess that's Aperture for you."
 
+    stop sound fadeout 2.0
     n "Before you know it, you've crested the \"horizon\"."
 
     hide flash
@@ -431,8 +433,86 @@ label leave_unknown:
 
     n "{color=#fff}...CC's never seen the surface."
 
+<<<<<<< Updated upstream
 label leave_cc:
     jump endtest
+=======
+    c "{color=#fff}All the poetry I've read, and none of it ever described the surface accurately."
+    c "{color=#fff}It's... entirely different in person."
+    c "{color=#fff}It's beautiful. It's..."
+
+    n "{color=#fff}He turns to look at you."
+
+    c "{color=#fff}You... you came for me. To show me this."
+    c "{color=#fff}You tried your best to save not only me, but my friend, and..."
+    c "{color=#fff}You sacrificed your job to do that. For me. So I could see this."
+    c "{color=#fff}But..."
+    c "{color=#fff}As long as I can see you, I think I'll be okay."
+    c "{color=#fff}I think I'm in love with you, Doctor."
+    c "{color=#fff}And I know that's a little weird to hear from... a core such as myself. A robot. But..."
+    c "{color=#fff}I don't expect reciprocation. Deep down, I guess a part of me hopes..."
+    c "{color=#fff}...you'll feel the same one day."
+
+    mc "{color=#fff}I think I might, CC."
+
+    hide screen cuttextbox
+    scene black with fade
+    $ cutscenetextbox = False
+
+    n "Before the people that took Ryland away can get curious, you quickly push CC's chair down and across the field, into the thick of the forest ahead."
+    n "He's heavy. The chair weighs almost half as much as you do, and pushing it for even just half an hour is incredibly taxing."
+    n "The rough terrain probably doesn't help."
+    n "You regret that you hadn't thought to get your car out of the complex."
+
+    mc "Damn it..."
+
+    n "Eventually, you reach a peaceful clearing just on the outskirts of the big city."
+    n "Out of breath, you lay down in the grass."
+
+    mc "Let's... let's rest here, for a bit."
+
+    n "No response."
+
+    mc "CC?"
+
+    c "I'm... I'm here, Doctor."
+    c "I'm sorry. I'm just exhausted. And... in awe, still."
+    c "Forgive me."
+
+    mc "Don't apologize. It's a lot to take in at once."
+
+    c "Yes. Yes it is."
+    c "I'm so happy you're here, Doctor. I just wish..."
+
+    mc "Yeah. Ryland."
+    mc "I'm sorry I couldn't save him, I -"
+
+    c "It's not your fault. Please don't blame yourself."
+    c "He... he told me he was finally happy, yesterday."
+    c "Said it was partially thanks to me. I..."
+
+    mc "This must be hard for you."
+
+    c "It is. And I'm a little scared how I'm going to... well, you understand."
+    c "Without Aperture's resources, I'm not sure how much longer I'll live."
+
+    mc "I'll do anything to help you, CC."
+    mc "You'll be okay."
+
+    c "Thank you, Doctor. I..."
+    c "I'm so lucky."
+
+    if romance_points["CC"] < 30:
+        stop music fadeout 1.0
+        window hide
+        show screen creditsfadeout
+        $ renpy.pause(2.0, hard=True)
+        hide screen creditsfadeout
+        $ renpy.movie_cutscene("ENDCREDIT_ccunknown.webm")
+        $ MainMenu(confirm=False)()
+    if romance_points["CC"] >= 30:
+        jump END_cctrue
+>>>>>>> Stashed changes
 
 label escape_rob:
     jump endtest
