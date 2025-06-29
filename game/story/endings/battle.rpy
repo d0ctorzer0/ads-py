@@ -98,7 +98,7 @@ label cmdinput:
         preferences.afm_enable = True
     
         cmd = renpy.input("{font=char.ttf}{color=#aaa}PLEASE ENTER A COMMAND, OR ENTER [[ HELP ].", length=13)
-        cmd = cmd.strip()
+        cmd = cmd.strip().lower()
     if mc_poisonedcount == 3:
         $ mc_poisoned = False
         $ mc_poisonedcount = 0

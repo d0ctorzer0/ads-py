@@ -431,6 +431,8 @@ label leave_unknown:
 
     n "{color=#fff}...CC's never seen the surface."
 
+label leave_cc:
+    jump endtest
 
 label escape_rob:
     jump endtest
