@@ -130,7 +130,7 @@ screen say(who, what):
 
         text what id "what"
     
-    if battle == False:
+    if battle == False and cutscenetextbox == False:
         use pref_open
 
 
