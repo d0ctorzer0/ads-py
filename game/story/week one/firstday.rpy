@@ -3,6 +3,7 @@ define config.layers = ['master', 'transient', 'screens', 'overlay', 'ontop']
 # GAME
 label start:
     
+    show screen disable_arrows
     play music one
 
     $ terminaltext = False

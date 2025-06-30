@@ -193,12 +193,12 @@ screen pref_open():
 screen pausemenu():
     modal True
     dismiss action Hide("pausemenu", transition=easeoutbottom)
-    add "gui/pause/pause_idle.png"
+    add "gui/pause/pause_idle.png" xpos 55
 
-    imagebutton auto "gui/pause/%s_pause_sl.png" action Show("file_slots", transition=easeinbottom), Play("sound", "sfx/paperopen3.ogg") focus_mask True
-    imagebutton auto "gui/pause/%s_pause_options.png" action Show("pref_audio", transition=easeinbottom), Play("sound", "sfx/paperopen.ogg2") focus_mask True
-    imagebutton auto "gui/pause/%s_pause_mm.png" action Play("sound", "sfx/notif.ogg"), Show("mmnotif") focus_mask True
-    imagebutton auto "gui/pause/%s_pause_quit.png" action Play("sound", "sfx/notif.ogg"), Show("quitnotif") focus_mask True
+    imagebutton auto "gui/pause/%s_pause_sl.png" action Show("file_slots", transition=easeinbottom), Play("sound", "sfx/paperopen3.ogg") focus_mask True xpos 55
+    imagebutton auto "gui/pause/%s_pause_options.png" action Show("pref_audio", transition=easeinbottom), Play("sound", "sfx/paperopen.ogg2") focus_mask True xpos 55
+    imagebutton auto "gui/pause/%s_pause_mm.png" action Play("sound", "sfx/notif.ogg"), Show("mmnotif") focus_mask True xpos 55
+    imagebutton auto "gui/pause/%s_pause_quit.png" action Play("sound", "sfx/notif.ogg"), Show("quitnotif") focus_mask True xpos 55
 
 screen aboutmenu():
     modal True

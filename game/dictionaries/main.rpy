@@ -18,6 +18,16 @@ init:
     # $ config.key "K_DOWN" action NullAction()
     # $ config.key "KP_DOWN" action NullAction()
 
+screen disable_arrows(): #disable arrow keys
+    key "K_RIGHT" action NullAction()
+    key "KP_RIGHT" action NullAction()
+    key "K_LEFT" action NullAction()
+    key "KP_LEFT" action NullAction()
+    key "K_UP" action NullAction()
+    key "KP_UP" action NullAction()
+    key "K_DOWN" action NullAction()
+    key "KP_DOWN" action NullAction()
+
 label splashscreen:
     $ renpy.movie_cutscene("arlogo_intro.webm")
     $ config.allow_skipping = True

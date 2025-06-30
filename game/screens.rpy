@@ -1138,31 +1138,48 @@ screen confirm(message, yes_action, no_action):
 
     zorder 200
 
-    style_prefix "confirm"
+    if message == "Are you sure you want to overwrite your save?":
+        style_prefix "notif"
+        add "gui/options/black.png"
+        add "gui/overlay/ow_popup.png" yalign .5 xalign .5 zoom 1.2
 
-    use behindoverlay
-    add "gui/overlay/popup.png" xalign .5 yalign .5
+        hbox:
+            textbutton "Yes, I'm sure.":
+                text_style "notif" 
+                action yes_action
+                xpos 600 ypos 640
+            textbutton "No, go back.":
+                text_style "notif"
+                action no_action
+                xpos 900 ypos 640
+    if message == "Are you sure you want to delete this save?":
+        style_prefix "notif"
+        add "gui/options/black.png"
+        add "gui/overlay/deletesave_popup.png" yalign .5 xalign .5 zoom 1.2
 
-    vbox:
-        xalign .5
-        ypos 370
-        spacing 45
+        hbox:
+            textbutton "Yes, I'm sure.":
+                text_style "notif" 
+                action yes_action
+                xpos 600 ypos 600
+            textbutton "No, go back.":
+                text_style "notif"
+                action no_action
+                xpos 900 ypos 600
+    if message == "Loading will lose unsaved progress.\nAre you sure you want to do this?":
+        style_prefix "notif"
+        add "gui/options/black.png"
+        add "gui/overlay/load_popup.png" yalign .5 xalign .5 zoom 1.2
 
-        label _(message):
-            style "confirm_prompt"
-            ypos 60
-            xalign 0.5
-
-    hbox:
-        ypos 550
-        xalign 0.5
-        spacing 150
-
-        textbutton _("Yes, I'm sure") action yes_action
-        textbutton _("No, go back") action no_action
-
-    ## Right-click and escape answer "no".
-    key "game_menu" action no_action
+        hbox:
+            textbutton "Yes, load this save.":
+                text_style "notif" 
+                action yes_action
+                xpos 600 ypos 600
+            textbutton "No, go back.":
+                text_style "notif"
+                action no_action
+                xpos 750 ypos 600
 
 
 #style confirm_frame is gui_frame
