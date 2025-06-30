@@ -71,6 +71,7 @@ label battle:
         preferences.afm_time = 5
         terminaltext = True
         renpy.stop_skipping()
+        renpy.block_rollback()
         config.allow_skipping = False
         renpy.set_style_preference("text", "battle")
     show screen main with easeinbottom

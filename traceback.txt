@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing text tag {atl=fade_in_text} in '{color=#fff}Oh... {i}{atl=fade_in_text}wow.{/i}{/atl}'.:
-  File "game/story/endings/escape.rpy", line 219, in script
-    k "{color=#fff}Oh... {i}{atl=fade_in_text}wow.{/i}{/atl}"
-Exception: Unknown text tag 'atl=fade_in_text'
+While processing text tag {/fast} in '{fast}Now we {/fast}make our own path.'.:
+  File "game/story/endings/escape.rpy", line 676, in script
+    mc "{fast}Now we {/fast}make our own path."
+Exception: {/fast} isn't valid, since the fast text tag doesn't take a close tag.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/endings/escape.rpy", line 219, in script
-    k "{color=#fff}Oh... {i}{atl=fade_in_text}wow.{/i}{/atl}"
+  File "game/story/endings/escape.rpy", line 676, in script
+    mc "{fast}Now we {/fast}make our own path."
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
     Say.execute(self)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
@@ -64,11 +64,11 @@ Full traceback:
     virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 738, in __init__
     self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 1540, in segment
-    raise Exception("Unknown text tag %r" % text)
-Exception: Unknown text tag 'atl=fade_in_text'
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 1282, in segment
+    raise Exception("{/%s} isn't valid, since the %s text tag doesn't take a close tag." % (tag, tag))
+Exception: {/fast} isn't valid, since the fast text tag doesn't take a close tag.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
-Aperture Dating Simulator 0.5.0alpha
-Fri Jun 27 04:13:24 2025
+Aperture Dating Simulator 0.5.5alpha
+Sun Jun 29 20:18:45 2025

@@ -7,11 +7,11 @@ label day13:
 
     if renpy.is_skipping() == False:
         show screen daytransition
-        $ renpy.sound.play("sfx/alarm.ogg", loop=True)
+        play music "sfx/alarm.ogg"
         $ renpy.pause(2.0, hard=True)
     if renpy.is_skipping() == True:
         pass
-        $ renpy.sound.play("sfx/alarm.ogg", loop=True)
+        play music "sfx/alarm.ogg"
 
     scene mctemproom with fade
     show flash
@@ -60,9 +60,6 @@ label day13:
 label emmap:
     window hide
     show flash
-    stop music
-    stop music1
-    # $ sfx_crossFade(2, "sfx/alarm_q.ogg")
     scene black with dissolve
     $ renpy.pause(1.0, hard=True)
     scene emmapbg with dissolve

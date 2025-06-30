@@ -23,7 +23,7 @@ label escape_kris:
 
     stop music fadeout 1.0
     stop music1 fadeout 1.0
-    stop sound fadeout 3.0
+    stop music fadeout 3.0
 
     n "Kris looks away nervously."
 
@@ -176,7 +176,7 @@ label escape_heath:
 
     stop music fadeout 1.0
     stop music1 fadeout 1.0
-    stop sound fadeout 3.0
+    stop music fadeout 3.0
     show h look offrail
     h "My whole life is down here, Doctor."
     h "My magic emporium, my tricks, the parts of the break room I control to make confetti shoot out of the walls..."
@@ -232,7 +232,7 @@ label escape_heath:
 
     h "{color=#fff}I-I can't get over this - the trees, it's like they make their own confetti, and..."
     h "{color=#fff}Everything's glowing!"
-    h "{color=#fff}Oh, and Doctor! Listen to that sound! {i}Real animals!{/i}"
+    h "{color=#fff}Oh, and Doctor! Listen to that music! {i}Real animals!{/i}"
 
     mc "{color=#fff}Haha, yeah."
 
@@ -409,7 +409,7 @@ label leave_unknown:
 
     c "Y-Yeah. I guess... hah. I guess that's Aperture for you."
 
-    stop sound fadeout 2.0
+    stop music fadeout 2.0
     n "Before you know it, you've crested the \"horizon\"."
 
     hide flash
@@ -508,6 +508,195 @@ label leave_unknown:
         $ MainMenu(confirm=False)()
     if romance_points["CC"] >= 30:
         jump END_cctrue
+
+label leave_cc:
+    show u offrail with easeinright
+    u "Hey Doc, you doing good?"
+
+    mc "Y-Yes, I'm just... I'm just exhausted."
+
+    u "We're almost outta here. The stairs are just around the corner."
+
+    n "You push forward slowly. Eventually, you finally reach the stairs."
+    scene stairs with fade
+    show flash
+    mc "Alright. We're... we're here."
+    mc "Okay. How are we gonna get you two up?"
+
+    show c offrail with easeinright
+    c "My chair has wheels that {i}should{/i} be able to go up stairs..."
+    c "But I'm not sure you'll be able to take us both at the same time."
+
+    hide c with easeoutright
+    show u offrail with easeinbottom
+    u "Take him first, Doc. He's heavier - it'll be easier to carry me up after."
+    u "Don't worry. I'll be fine."
+
+    hide u with easeoutbottom
+    show c offrail with easeinright
+    c "No - what if they find you? What if they..."
+    c "It's not safe. You should go up first."
+    c "Plus, you're lighter - the doctor will waste less energy by taking you first."
+    hide c with easeoutright
+    show u offrail with easeinbottom
+    u "Don't listen to him, Doc. Please - take him first."
+
+    mc "No, CC's right. I can carry you up quicker and come back down for CC."
+    mc "I'm already... quite exhausted. It'll be better to save my energy for the harder climb."
+
+    n "He sighs."
+
+    u "Okay. I trust you two."
+    hide u with easeoutbottom
+    show c offrail with easeinright
+    c "Thank you, uh..."
+
+    hide c with easeoutright
+    show u offrail with easeinbottom
+    u "Ryland."
+
+    mc "What?"
+
+    ry "My name. I... I remembered. Yesterday."
+    ry "I've just been... scared to tell anyone. 'Case I forget again."
+
+    hide u with easeoutbottom
+    show c offrail with easeinright
+    c "Ryland."
+    c "That's an excellent name."
+    c "I'll see you on the surface, alright?"
+    c "Just don't spoil it for me."
+
+    hide c with easeoutright
+    n "You begin the ascent, quickly carrying Ryland up step by step."
+    n "It's not easy, and the stairs seem to go on forever... but eventually, you're already halfway up."
+    n "Suddenly, you hear CC call out from behind you -"
+
+    c "Doctor! Hurry! They're -"
+
+    vc "HEY! There's still one over here - what do you want me to do with it?"
+    vc2 "Orders are to just throw them in the incinerator now. Boss says it's not worth the hassle."
+    vc "Roger that."
+    
+    c "Ryland, I -"
+    c "You guys should hurry."
+
+    ry "CC!"
+
+    n "Grimacing, you carry Ryland up as quickly as you can, trying your best to ignore the scene behind you."
+
+    show u offrail with easeinbottom
+    ry "Doctor, do you think -"
+
+    mc "I don't know, Ryland. I don't... I don't know."
+    mc "But we have to keep going. If they discover I have you, they'll do the same thing to you."
+
+    ry "You're... you're right."
+
+    mc "I'm sorry. I know how much he cared about you, though."
+
+    ry "I don't think he would've wanted it any other way."
+
+    stop music fadeout 2.0
+    n "Before you know it, you've crested the \"horizon\"."
+
+    hide flash
+    scene black with fade
+    $ renpy.pause(2.0, hard=True)
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    $ renpy.music.play("music/outsidereveal.ogg")
+    $ renpy.music.queue("music/outside.ogg", clear_queue=False)
+    scene white with blindplayer
+
+    ry "{color=#fff}It's so bright out here..."
+    ry "{color=#fff}I can barely see a th- oh my..."
+
+    scene unknown cutscene 3 with dissolve
+    $ persistent.uc3 = True
+    n "{color=#fff}Your vision is blinded by the bright light of the outside world."
+    n "{color=#fff}It's only been about two weeks since you were last outside, but..."
+    ry "{color=#fff}What the..."
+    ry "{color=#fff}This is insane. I've been hiding away in a closet my whole life?!"
+    ry "{color=#fff}This... this was above me? All this time?!"
+    ry "{color=#fff}Haha! Wow!"
+
+    n "{color=#fff}...for all he knows, Ryland has never seen the surface."
+
+    ry "{color=#fff}This fresh air through my circuits, it's like... it's better than any drink I've had."
+    ry "{color=#fff}If only... CC could've seen this."
+    ry "{color=#fff}But..."
+
+    n "{color=#fff}He turns to face you."
+
+    ry "{color=#fff}I'm glad you're here."
+    ry "{color=#fff}You... hah, Doc, you risked your life for us both."
+    ry "{color=#fff}Not just me, but CC, too. And..."
+    ry "{color=#fff}I can't thank you enough."
+    ry "{color=#fff}You're really somethin' else."
+    ry "{color=#fff}And I might love that."
+    ry "{color=#fff}I know I ain't been the best to you. I know I've been a flirt, and I've been annoying..."
+    ry "{color=#fff}But I hope you'll love me back. One day. If I try hard enough."
+
+    mc "{color=#fff}I think... it'll take time, Ryland. But I might."
+
+    hide screen cuttextbox
+    scene black with fade
+    $ cutscenetextbox = False
+
+    n "Steeling yourself for the future, you run away from the complex with Ryland before you can be followed."
+    n "You don't dare look back."
+    n "Pushing through the brush and the trees, you slowly make your way towards the city."
+    n "It's exhausting."
+    n "Eventually, you reach a quiet clearing just on the outskirts."
+
+    ry "Wait, Doc. Let's stop here for a bit."
+    ry "You look beat."
+
+    mc "Hah. You know what I could really use right now?"
+
+    ry "A drink?"
+
+    mc "Hell yeah."
+
+    ry "Honestly, me too. I may be tryna quit, but I sometimes wish I wasn't, hah."
+
+    mc "I don't think I ever told you how much that means to me."
+    mc "That you would try to... get yourself clean for me."
+
+    ry "Well. Like I said, not {i}all{/i} for you, but..."
+    ry "You were the... uh, \"catalyst\", I think the word is?"
+
+    mc "Hahaha. Yeah."
+
+    ry "What... what are we gonna do now?"
+    ry "I mean. I wasn't doin' much down in Aperture, anyway."
+
+    mc "Now we..."
+    mc "Now we {fast}make our own path."
+
+    ry "Think they're gonna come looking for us?"
+
+    mc "No. I don't think they care, frankly."
+    mc "I left all my keys and stuff down in the office, so it's not like I have stuff to return..."
+
+    ry "Other than me, 'course."
+
+    mc "I don't plan to return you."
+
+    ry "Good. I like it out here."
+    ry "With you."
+
+    if romance_points["???"] < 15:
+        stop music fadeout 1.0
+        window hide
+        show screen creditsfadeout
+        $ renpy.pause(2.0, hard=True)
+        hide screen creditsfadeout
+        $ renpy.movie_cutscene("ENDCREDIT_ccunknown.webm")
+        $ MainMenu(confirm=False)()
+    if romance_points["???"] >= 15:
+        jump END_unknowntrue    
 
 label escape_rob:
     jump endtest
