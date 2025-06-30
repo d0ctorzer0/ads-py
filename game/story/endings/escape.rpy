@@ -309,6 +309,96 @@ label escape_heath:
     if romance_points["Heath"] >= 30:
         jump END_heathtrue
 
+label escape_aspen:
+    scene stairs with fade
+    show flash
+    show a with easeinbottom
+    a "H-Here it is."
+    a "I'm not sure we're supposed to use these -"
+    a "Actually, we're probably definitely not supposed to use these, haha."
+    a "B-But I don't think we have any other choice, so..."
+
+    mc "No. We really don't."
+
+    a "Doctor - wait. Wait wait."
+
+    mc "What's up?"
+
+    stop music fadeout 1.0
+    stop music1 fadeout 1.0
+    stop music fadeout 3.0
+    a "I... I don't know what to expect up there."
+    a "And I'm terrified."
+    a "Hah... I mean... other than when I was activated, this is my first time outside the greenhouse..."
+    a "Let alone somewhere even farther than that."
+    a "I have no... I have no frame of reference, I have no experience..."
+    a "What am I supposed to do?"
+
+    mc "You {i}do{/i} have a frame of reference, Aspen."
+    mc "Plants are your specialty."
+    mc "And if I know anything about the surface, there's a hell of a lot of them up there."
+
+    a "I... I suppose you're right, Doctor."
+
+    mc "And I'm going to be here for you the entire time."
+    mc "I promise I won't leave your side."
+
+    a "O-Okay. I..."
+    a "I think I'm ready, then."
+    a "I... I can't wait to see what real grass looks like."
+
+    n "Steeling yourself, you hold tighter onto Aspen and begin the ascent."
+
+    hide flash
+    scene black with fade
+    $ renpy.pause(2.0, hard=True)
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    $ renpy.music.play("music/outsidereveal.ogg")
+    $ renpy.music.queue("music/outside.ogg", clear_queue=False)
+    scene white with blindplayer
+
+    a "{color=#fff}The light - agh, it's just like when the greenhouse lights turn on..."
+    a "{color=#fff}I... oh my god!"
+
+    scene aspen cutscene 5 with dissolve
+    $ persistent.ac5 = True
+    n "{color=#fff}Your vision is blinded by the bright light of the outside world."
+    n "{color=#fff}It's only been about two weeks since you were last outside, but..."
+
+    a "{color=#fff}The sky! The grass! The... oh, {i}pseudotsuga menziesii...{/i}"
+    a "{color=#fff}It's all so bright... and so green... and so beautiful!"
+
+    n "{color=#fff}...Aspen has never seen the surface."
+
+    a "{color=#fff}Wow, this is incredible! I can't..."
+    a "{color=#fff}Doctor, can you set me down in the grass?"
+
+    n "{color=#fff}You lay Aspen down in front of you. They look up and around themselves in wonder."
+
+    a "{color=#fff}These - these are {i}Taraxacum officinale{/i}, aren't they? Dandelions!"
+    a "{color=#fff}They're so plentiful. And so yellow."
+    a "{color=#fff}And... oh, it's all so wonderful. I..."
+
+    n "{color=#fff}Aspen turns to look up at you."
+
+    a "{color=#fff}You gave me this opportunity, Doctor."
+    a "{color=#fff}You almost got yourself... killed... all for me. You..."
+    a "{color=#fff}You came to save me, even though it was flooding. You rushed me through fires and..."
+    a "{color=#fff}And because of that, I get to see this."
+    a "{color=#fff}Y-You..."
+    a "{color=#fff}I think I... I think I love you, Doctor."
+    a "{color=#fff}A-And I know that's a little strange to hear from a core like me, haha, so I understand if you..."
+    
+    n "{color=#fff}They sigh."
+
+    a "{color=#fff}I hope you'll feel the same. One day."
+
+    mc "{color=#fff}I think I've already started to, Aspen."
+
+
+
+
 label escape_ccunknown:
     scene hall with fade
     show flash
@@ -702,7 +792,4 @@ label escape_rob:
     jump endtest
 
 label escape_gregory:
-    jump endtest
-
-label escape_aspen:
     jump endtest

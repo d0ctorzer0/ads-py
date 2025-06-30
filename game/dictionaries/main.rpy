@@ -95,6 +95,7 @@ default persistent.ac1 = False
 default persistent.ac2 = False
 default persistent.ac3 = False
 default persistent.ac4 = False
+default persistent.ac5 = False
 
 default persistent.cc1 = False
 default persistent.cc2 = False
