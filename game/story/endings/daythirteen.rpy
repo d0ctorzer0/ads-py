@@ -96,7 +96,6 @@ label saveaspen:
         jump noaspen
     else:
         pass
-    jump endtest
     window auto
     $ emv_aspen = True
     scene bioroom with fade
@@ -135,7 +134,7 @@ label saveaspen:
     scene aspentemproom with fade
     show flash
     $ cutscenetextbox = False
-    show a look with easeinright
+    show a look offrail with easeinbottom
 
     n "You grab Aspen by the handles and lift them up to you. They're slippery."
 
@@ -143,12 +142,16 @@ label saveaspen:
 
     mc "Do you know a way out other than the surface elevators?"
 
+    show a offrail
+
     a "There's a set of stairs right behind the greenhouse - it's how they bring in fresh samples."
     a "It's only used in rare cases though so it's not in the best condition, but..."
 
     mc "Doesn't matter. It's our only chance. Let's go."
 
     a "O-Okay. I trust you."
+
+    show a look offrail
     a "My... my plants, they..."
 
     mc "I know."
