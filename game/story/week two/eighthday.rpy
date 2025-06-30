@@ -387,6 +387,16 @@ label n_heathday8:
 
     mc "That's good."
 
+    show h sad
+    h "Although... when you stop by the gym today, could you ask Rob to turn his TV down?"
+    h "It keeps breaking my concentration! I'm trying to plan my next show, and..."
+    show h laugh
+    h "It sometimes surprises me how thin these walls are..."
+    show h
+    h "...although it {i}is{/i} pretty much just management rails back there. And empty space."
+
+    mc "Yes, I'll take care of it."
+
     show h
     h "You should be on your way now - you've got more cores to check in on, after all!"
 
