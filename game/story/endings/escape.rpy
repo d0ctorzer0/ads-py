@@ -613,7 +613,7 @@ label leave_cc:
     ry "{color=#fff}I can barely see a th- oh my..."
 
     scene unknown cutscene 3 with dissolve
-    $ persistent.uc3 = True
+    $ persistent.uc4 = True
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     ry "{color=#fff}What the..."
