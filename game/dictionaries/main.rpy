@@ -43,6 +43,7 @@ label splashscreen:
 
 define cutscenetextbox = False
 define _game_menu_screen = None
+default savequestionpopup = False
 
 #SPECIAL DEFAULTS
 default plant = False

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1157: 'play' is not a keyword argument or valid child of the screen statement.
-    play sound "sfx/notif.ogg"
-        ^
+File "game/story/endings/boss.rpy", line 80: Line is indented, but the preceding style_prefix statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    add "gui/options/black.png"
+    ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sun Jun 29 21:33:18 2025
+Sun Jun 29 22:33:24 2025

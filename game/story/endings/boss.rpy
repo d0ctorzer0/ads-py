@@ -70,7 +70,26 @@ label estherattack:
     e "You've become a problem. One I cannot ignore."
     e "I'm... I'm sorry, Doctor."
 
+    scene black with fade
+    $ savequestionpopup = True
+    call screen savequestion
+
     jump battle
+
+screen savequestion:
+    style_prefix "notif"
+    add "gui/options/black.png"
+    add "gui/overlay/save_popup.png" yalign .5 xalign .5 zoom 1.2
+
+    hbox:
+        textbutton "Yes, save my game.":
+            text_style "notif" 
+            action Show("file_slots", transition=easeinbottom), Play("sound", "sfx/paperopen3.ogg"), Hide("savequestion", transition=fade)
+            xpos 600 ypos 640
+        textbutton "I like the risk.":
+            text_style "notif"
+            action Hide("savequestion", transition=fade), SetVariable("savequestionpopup", "False"), Jump("battle")
+            xpos 750 ypos 640
 
 label enddecide_aceorunlikable:
     $ audio_crossFade(2, "music/one.ogg")

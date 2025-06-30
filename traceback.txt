@@ -1,40 +1,35 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/week one/firstday.rpy", line 22, in script
-    n "You sigh. Another day, another dollar. But today's gonna be different."
-  File "game/story/week one/firstday.rpy", line 22, in script
-    n "You sigh. Another day, another dollar. But today's gonna be different."
-TypeError: missing a required argument: 'OVERWRITE_SAVE'
+  File "game/story/endings/boss.rpy", line 74, in script
+    call screen savequestion
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots():
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots():
+  File "game/menus/loadsave.rpy", line 28, in execute
+    if savequestionpopup == False:
+  File "game/menus/loadsave.rpy", line 28, in <module>
+    if savequestionpopup == False:
+NameError: name 'savequestionpopup' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 652, in main
-    run(restart)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 148, in run
-    renpy.execution.run_context(True)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\execution.py", line 958, in run_context
-    context.run()
-  File "game/story/week one/firstday.rpy", line 22, in script
-    n "You sigh. Another day, another dollar. But today's gonna be different."
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/story/week one/firstday.rpy", line 22, in script
-    n "You sigh. Another day, another dollar. But today's gonna be different."
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
-    Say.execute(self)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1470, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1117, in do_display
-    display_say(who,
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 814, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "game/story/endings/boss.rpy", line 74, in script
+    call screen savequestion
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1987, in execute
+    self.call("execute")
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1966, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\statementexports.py", line 345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ui.py", line 301, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
@@ -47,6 +42,7 @@ Full traceback:
     d.visit_all(callback, seen)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 434, in visit_all
     d.visit_all(callback, seen)
+  [Previous line repeated 2 more times]
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 480, in visit_all
     callback(self)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2748, in <lambda>
@@ -55,13 +51,17 @@ Full traceback:
     self.update()
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 700, in update
     self.screen.function(**self.scope)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\parameter.py", line 455, in apply_arguments
-    return parameters.apply(args or (), kwargs or {}, ignore_errors)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\parameter.py", line 307, in apply
-    raise TypeError(msg) # from None
-TypeError: missing a required argument: 'OVERWRITE_SAVE'
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots():
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots():
+  File "game/menus/loadsave.rpy", line 28, in execute
+    if savequestionpopup == False:
+  File "game/menus/loadsave.rpy", line 28, in <module>
+    if savequestionpopup == False:
+NameError: name 'savequestionpopup' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
 Aperture Dating Simulator 0.5.5alpha
-Sun Jun 29 21:06:49 2025
+Sun Jun 29 22:40:51 2025
