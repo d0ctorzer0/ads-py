@@ -151,7 +151,7 @@ label END_unlikable:
 
 label day12end:
     n "You take a deep breath. The room is a mess of papers and burn marks on the walls."
-    n "How you're going to explain to management, you have no idea."
+    n "How you're going to explain this to management, you have no idea."
     n "Still shaking, you gather what's left of your paperwork from off the floor."
     n "You look at the clock."
     n "It would be useless to try to finish your shift as normal now - it's nearly 16:00."

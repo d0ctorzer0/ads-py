@@ -1085,4 +1085,193 @@ label escape_rob:
         jump END_robtrue  
 
 label escape_gregory:
-    jump endtest
+    scene stairs with fade
+    show flash
+    show g offrail with easeinbottom
+    g1 "Here we are, Doctor."
+
+    n "You look down at the three cores bundled up in your coat."
+
+    mc "This is still a little weird to me."
+
+    g3 "You're not the only one."
+    g2 "We have more pressing concerns right now."
+
+    mc "Yes, you're right."
+    mc "Alright. Let's -"
+
+    show g offrail at bounce
+    gall "Wait!"
+
+    mc "Wh -"
+
+    stop music fadeout 3.0
+    show g look offrail
+    g1 "Sorry, Doctor, give us just a second."
+    g2 "This is... a new experience."
+    g3 "All of this."
+    g1 "Being separated..."
+    g2 "Thinking independently..."
+    g3 "...going to the surface."
+    gall "And I'm a little scared."
+    g1 "We've had a lot of contact with surface humans before."
+    g2 "In particular, the shareholders that come down for meetings."
+    g3 "But we've never been to the surface ourselves."
+    g1 "I don't know what to expect up there."
+    g2 "I'm not used to this... silence in my head."
+    g3 "How are we supposed to process this?"
+    gall "Separately?"
+
+    mc "I can imagine that would be quite terrifying."
+    mc "Spending your whole life thinking as one entity - and now you have to think for yourselves."
+
+    show g offrail
+    g2 "It's not just that. Think about this logically -"
+    g3 "You're basically stealing us from Aperture."
+    g1 "What if they come after you?"
+
+    mc "I don't think they will. I think we'll be just fine."
+    mc "We don't have much of a choice, either way."
+
+    g2 "That much is accurate..."
+    g1 "Okay."
+    show g look offrail
+    g3 "I still think this is a bad idea."
+    gall "But I'm ready."
+
+    mc "Alright."
+
+    n "You hold the coat close to your stomach and begin the ascent."
+
+    hide flash
+    scene black with fade
+    $ renpy.pause(2.0, hard=True)
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    $ renpy.music.play("music/outsidereveal.ogg")
+    $ renpy.music.queue("music/outside.ogg", clear_queue=False)
+    scene white with blindplayer
+
+    g1 "{color=#fff}It's so bright out here!"
+    g2 "{color=#fff}Agh, my optics -"
+    g3 "{color=#fff}Would you two quit whining?"
+    gall "{color=#fff}Oh my god..."
+
+    scene greg cutscene 4 with dissolve
+    python:
+        if persistent.gc4 == False:
+            persistent.cutscenes_seen += 1
+            persistent.gc4 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
+    n "{color=#fff}Your vision is blinded by the bright light of the outside world."
+    n "{color=#fff}It's only been about two weeks since you were last outside, but..."
+    g1 "{color=#fff}Guys! Oh my god, look at how vibrant the sky is!"
+    g2 "{color=#fff}And the grass... such a beautiful green."
+    g3 "{color=#fff}Pfft, I've seen better..."
+    g2 "{color=#fff}No you haven't."
+
+    n "{color=#fff}...Gregory's never seen the surface."
+
+    g1 "{color=#fff}This is crazy! I can't believe we've been missing this all this time!"
+    g2 "{color=#fff}Incredible. There's so much to see out here."
+    g3 "{color=#fff}Aperture is nothing compared to this..."
+    gall "{color=#fff}Wow."
+
+    n "{color=#fff}The three cores turn to look at you."
+
+    g1 "{color=#fff}Doctor, you brought us up here. You..."
+    g2 "{color=#fff}It's thanks to you we're seeing this right now."
+    g3 "{color=#fff}You're brave. Saving us despite the risk."
+    g1 "{color=#fff}You've never once judged me. You've never questioned me."
+    g2 "{color=#fff}Kept our secret... and when we told you, you accepted us regardless."
+    g3 "{color=#fff}Doctor..."
+    g1 "{color=#fff}I think I love you."
+    g2 "{color=#fff}Me too."
+    g3 "{color=#fff}Me three."
+    g1 "{color=#fff}Hah... this is a little weird, huh?"
+    g1 "{color=#fff}We all still have the same feelings for you despite the separation..."
+
+    mc "{color=#fff}It is a little strange."
+    mc "{color=#fff}Especially considering I still feel the same way I did about you before."
+    mc "{color=#fff}But we'll... figure it out."
+
+    hide screen cuttextbox
+    scene black with fade
+    $ cutscenetextbox = False
+    n "Looking back at the complex you came from, you tie the sleeves of your coat together around Gregory and sprint off."
+
+    n "You keep to the forest neighboring the road, making sure to stay far enough away that no one will see you."
+    n "Thankfully, Gregory's lightweight - the three of them together are still about half the weight of a full core."
+    n "It's still a long jog, though."
+    n "You regret that you left your car back at the complex."
+
+    mc "Damn..."
+
+    g1 "Doctor - you should probably rest for a bit."
+    g2 "It's dangerous to push yourself too hard."
+    g3 "Yeah. Listen to them."
+
+    mc "Alright, alright."
+
+    n "You reach a clearing just on the outskirts of the city."
+
+    mc "Let's rest here a bit."
+
+    n "You lay down on the grass and unfurl your lab coat, letting Gregory see the sky once again."
+
+    g1 "Can't get over that view..."
+    g2 "Incredible."
+    g3 "I can't believe we aren't in Aperture anymore."
+    g1 "I know, right?"
+    g2 "It almost feels impossible."
+    g1 "What are we going to do now?"
+    g2 "What {i}should{/i} we do?"
+    g3 "Hah! What {i}shouldn't{/i} we do?!"
+    g2 "Don't get ahead of yourself."
+    g1 "Doctor?"
+
+    mc "Yeah?"
+
+    g2 "What's next?"
+    g3 "We reach the city, dumbass."
+    g1 "Well yeah. I think he's asking {i}what then?{/i}"
+
+    mc "Who knows. First things first, I get a new job. And then..."
+    mc "Well. I don't know."
+
+    g1 "It still feels weird being separated..."
+    g2 "Agreed. It's a little uncomfortable."
+    g3 "Oh, get over yourselves. We'll get used to it."
+    g1 "She's right. It'll just take some time."
+
+    mc "You three are funny."
+
+    g2 "What do you mean?"
+
+    mc "Oh, nothing."
+    mc "But don't worry. We'll figure things out."
+
+    g1 "I'm sure things will be just fine with you here, Doctor."
+    g2 "Agreed. You're smart."
+    g3 "And pretty."
+
+    mc "Haha. Thank you, guys."
+    if romance_points["Greg"] < 21:
+        stop music fadeout 1.0
+        window hide
+        show screen creditsfadeout
+        $ renpy.pause(2.0, hard=True)
+        hide screen creditsfadeout
+        python:
+            if persistent.endings_got["greggood"] == False:
+                persistent.endings_count += 1
+                persistent.endings_got["greggood"] = True
+            achievement.progress("ach_seenitall", persistent.endings_count)
+            achievement.sync()
+            achievement.grant("ach_greggood")
+            achievement.sync()
+        $ renpy.movie_cutscene("ENDCREDIT_greg.webm")
+        $ MainMenu(confirm=False)()
+    if romance_points["Greg"] >= 21:
+        jump END_gregtrue  

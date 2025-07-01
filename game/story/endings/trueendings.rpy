@@ -15,3 +15,6 @@ label END_unknowntrue:
 
 label END_robtrue:
     jump endtest
+
+label END_gregtrue:
+    jump endtest

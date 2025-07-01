@@ -239,14 +239,16 @@ label savegreg:
     scene hall with fade
     show flash
     $ cutscenetextbox = False
-    show g nocoat with easeinright
+    show g look offrail with easeinbottom
     g1 "W-What? What's... what's going on?"
     g2 "Who..."
     g3 "Where am I? Who are you?"
 
     mc "Oh my god. Gregory, are you okay?!"
 
+    show g offrail
     gall "Yeah, I'm fine."
+    show g look offrail
     g2 "Wait a minute - are we... separated?!"
     g1 "Oh no. Oh no. This can't be happening."
     g3 "Great. This is just great."
@@ -260,6 +262,7 @@ label savegreg:
     mc "I - ugh. We don't have time for this, we need to get out of here."
     mc "Everyone else has left. The surface elevators are probably full of people, and I don't think they'd like it if you came with me."
 
+    show g offrail
     g1 "Probably not."
     g2 "Agreed."
     g3 "Stealing Aperture property."
@@ -268,9 +271,11 @@ label savegreg:
 
     mc "Any of you have any ideas?"
 
+    show g look offrail
     g2 "Hmm..."
+    show g offrail at bounce
     gall "The stairs!"
-    g1 "They're stairs behind Kris' conference room."
+    g1 "There's stairs behind Kris' conference room."
     g2 "Sometimes our stockholders will come down that way, but rarely."
     g3 "It's our only choice."
 
@@ -317,6 +322,9 @@ label saverob:
         jump norob
     else:
         pass
+    scene robtemproom with fade
+    show flash
+    window show
     n "You push the door open into the gym. There's a fire near one of the machines in the back."
     n "All the TVs are flashing a warning signal - except for one."
 
