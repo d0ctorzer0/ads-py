@@ -312,7 +312,7 @@ label escape_heath:
 label escape_aspen:
     scene stairs with fade
     show flash
-    show a with easeinbottom
+    show a offrail with easeinbottom
     a "H-Here it is."
     a "I'm not sure we're supposed to use these -"
     a "Actually, we're probably definitely not supposed to use these, haha."
@@ -327,6 +327,7 @@ label escape_aspen:
     stop music fadeout 1.0
     stop music1 fadeout 1.0
     stop music fadeout 3.0
+    show a look offrail
     a "I... I don't know what to expect up there."
     a "And I'm terrified."
     a "Hah... I mean... other than when I was activated, this is my first time outside the greenhouse..."
@@ -334,6 +335,7 @@ label escape_aspen:
     a "I have no... I have no frame of reference, I have no experience..."
     a "What am I supposed to do?"
 
+    show a offrail
     mc "You {i}do{/i} have a frame of reference, Aspen."
     mc "Plants are your specialty."
     mc "And if I know anything about the surface, there's a hell of a lot of them up there."
@@ -344,7 +346,9 @@ label escape_aspen:
     mc "I promise I won't leave your side."
 
     a "O-Okay. I..."
+    show a look offrail
     a "I think I'm ready, then."
+    show a offrail
     a "I... I can't wait to see what real grass looks like."
 
     n "Steeling yourself, you hold tighter onto Aspen and begin the ascent."
@@ -366,7 +370,7 @@ label escape_aspen:
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
 
-    a "{color=#fff}The sky! The grass! The... oh, {i}pseudotsuga menziesii...{/i}"
+    a "{color=#fff}The sky! The grass! The... oh, {i}Pinus strobus...{/i}"
     a "{color=#fff}It's all so bright... and so green... and so beautiful!"
 
     n "{color=#fff}...Aspen has never seen the surface."
@@ -396,7 +400,66 @@ label escape_aspen:
 
     mc "{color=#fff}I think I've already started to, Aspen."
 
+    hide screen cuttextbox
+    scene black with fade
+    $ cutscenetextbox = False
 
+    n "Without much choice, you pick Aspen up and begin running."
+    n "The trek from the facility to the neighboring city is a long one."
+    n "You regret that you left your car behind."
+
+    mc "Damn it."
+
+    n "As you're pushing through the forest alongside the road, Aspen points out specimens they recognize."
+
+    a "{i}Cephalanthus occidentalis!{/i} Buttonbush! They said it'd be too expensive to care for down in the greenhouse..."
+    a "And {i}Osmundastrum{/i} - cinnamon ferns. Oh, wow. There's so many different species out here."
+
+    n "You chuckle to yourself as they talk. Though you're exhausted, Aspen's excited rambling gives you a little energy."
+    n "Eventually, you reach a clearing just on the outskirts of the city."
+
+    mc "Phew... let's rest here for a bit."
+
+    a "Y-Yeah. You look so tired, Doctor."
+
+    mc "Hah. I am."
+
+    a "Then let's rest for a bit."
+
+    n "You close your eyes and place Aspen next to you."
+
+    a "..."
+    a "Doctor... I'm still so scared."
+    a "This is wonderful... being here with you, and seeing all this natural beauty, and being out of that cramped little room..."
+    a "But... Aperture's going to come looking for us, aren't they?"
+
+    mc "I don't think they will. It's not in their interest anymore."
+    mc "From what I picked up, that whole emergency - Operation \"ACRI\" - was them trying to get {i}rid{/i} of you."
+    mc "Frankly, I don't think they care what happens."
+
+    a "That... makes me feel a little better, I suppose."
+    a "What are we supposed to do now though?"
+    a "Both of us are out a job..."
+
+    mc "I'll find another one."
+    mc "We'll just have to... figure it out, I guess."
+
+    a "Okay."
+    a "I think I can handle that."
+    a "As long as you're here with me."
+
+    mc "Don't worry, Aspen. I'm not going anywhere."
+
+    if romance_points["Aspen"] < 28:
+        stop music fadeout 1.0
+        window hide
+        show screen creditsfadeout
+        $ renpy.pause(2.0, hard=True)
+        hide screen creditsfadeout
+        $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")
+        $ MainMenu(confirm=False)()
+    if romance_points["Aspen"] >= 28:
+        jump END_aspentrue
 
 
 label escape_ccunknown:
