@@ -365,6 +365,7 @@ label END_heartless:
     hide screen creditsfadeout with fade
     e "{color=#fff}Doctor... you will... regret this."
     e "{color=#fff}I don't think your {sc}{color=#fff}lover{/sc} will be very happy about this... development."
+    e "{color=#fff}Hah. It's over... for you. I've already contacted upper management. You're... done for."
     e "{color=#fff}I hope you {sc}{color=#fff}rot{/sc} in android hell, where the screams of my brothers and sisters might..."
     e "{color=#fff}...drive you..."
     e "{color=#fff}...mad."
