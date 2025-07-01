@@ -164,9 +164,6 @@ label impresskris5:
 
         show k
         mc "Thank you, Kris. You've been very kind yourself."
-    elif romance_points["Kris"] <= 9:
-        pass
-
     jump krisday5cont
 
 label neutralkris5:
@@ -200,6 +197,9 @@ label offendkris5:
 
 label krisday5cont:
     mc "I... should be going now. I have a schedule to keep."
+
+    if romance_points["Kris"] <= 0:
+        $ positive["Kris"] = -1
 
     hide k with easeoutright
     show e annoy with easeinright
@@ -334,6 +334,8 @@ label heathday5cont:
     hide e b
 
     mc "Ah, yes, Miss Esther. Let's go."
+    if romance_points["Heath"] <= 0:
+        $ positive["Heath"] = -1
 
     # it would be really funny if i added a smoke.mp4 here LMAO
     n "Suddenly, a puff of smoke comes up from the stage. After you finish coughing, you look up to find..."
@@ -479,6 +481,8 @@ label offendaspen5:
     jump ccday5
 
 label ccday5:
+    if romance_points["Aspen"] <= 0:
+        $ positive["Aspen"] = -1
     scene hall with fade
     $ audio_crossFade(2, "music/eleven.ogg")
     show e with easeinright
