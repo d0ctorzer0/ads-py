@@ -17,7 +17,7 @@ screen email1_11():
         text "from: Dr. McCoy"
     vbox:
         style_prefix "eml"
-        text "Hello,\n\nIt has come to my attention that you will be ending your temporary\nposition in Maintenance this coming Friday. Due to exterior circumstances\nthat do not concern you, this transfer process may be difficult - we did\nnot anticipate this occurence, and we deeply apologize in advance.\n\nFor your safety and the consideration of Aperture Science, we ask that\nyou proceed as normal unless other instruction is given. Please send in\nall your reports and checklists by EOD Friday.\n\nThank you,\nDr. McCoy, Maintenance Lead"
+        text "Hello,\n\nIt has come to my attention that you will be ending your temporary\nposition in Maintenance this coming Friday. Due to exterior circumstances\nthat do not concern you, this transfer process may be difficult - we did\nnot anticipate this occurrence, and we deeply apologize in advance.\n\nFor your safety and the consideration of Aperture Science, we ask that\nyou proceed as normal unless other instruction is given. Please send in\nall your reports and checklists by EOD Friday.\n\nThank you,\nDr. McCoy, Maintenance Lead"
     use affectionprogress
     vbox:
         style_prefix "emlback"

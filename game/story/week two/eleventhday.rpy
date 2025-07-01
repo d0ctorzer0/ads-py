@@ -783,7 +783,7 @@ label n_aspenday11:
     mc "Is everything alright in here? You seem hesitant today."
 
     show a look
-    a "Well, there are some concerns I have about that plants..."
+    a "Well, there are some concerns I have about the plants..."
     show a laugh
     a "But that's completely natural. It's my whole job to be worried about them! Haha."
 
@@ -1109,7 +1109,7 @@ label n_robday11:
     show r angry
     r "You should prolly get going, huh?"
 
-    mc "Yeah. Probably"
+    mc "Yeah. Probably."
 
     show r
     r "Don't worry about anything in here. It's all working fine."

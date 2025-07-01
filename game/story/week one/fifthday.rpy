@@ -756,7 +756,7 @@ label ccend5:
         c "I'm not sure what the issue is, but..."
         c "It seems you don't like me very much, Doctor."
         show c
-        c "That's alright though. That's a common occurence."
+        c "That's alright though. That's a common occurrence."
 
         mc "CC -"
 
