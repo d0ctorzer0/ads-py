@@ -293,7 +293,7 @@ label p_heathday8neutral:
 
     show e b annoy at bounce
     e "Yes. Worried I'd be stuck with even more paperwork tonight..."
-    hide e B
+    hide e b
 
     h "She's so harsh."
 
@@ -683,7 +683,7 @@ label p_ccday8:
     show c look
     c "Oh, and Doctor. Good to see you again."
     show c
-    c "I hope you do not find my pesimissm off-putting."
+    c "I hope you do not find my pessimism off-putting."
     c "As you're well aware, it's difficult to be positive sometimes."
 
     mc "I know. I understand."

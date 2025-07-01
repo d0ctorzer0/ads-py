@@ -17,7 +17,6 @@ label day6stayend:
     jump day7cont
 
 label day7cont:
-    # $ MainMenu(confirm=False)()
     scene black
     with fade
     $ daynum = "7"
@@ -140,7 +139,7 @@ label day7esther:
     show e annoy
     e "So... how was yesterday?"
 
-    if day6stay == True:
+    if day6stay == True: # Why would you ever do this? Seriously? You disappointment.
         mc "Oh, I just stayed in my room and read some books."
         mc "Nothing much happened, honestly."
 

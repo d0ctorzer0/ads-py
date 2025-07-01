@@ -624,7 +624,7 @@ label p_ccday9:
     c "...not feeling my best."
     show e b at bounce
     e "CC... you sound terrible."
-    hide e B
+    hide e b
     show c close
     c "Haha... yes, I'm aware."
 
@@ -726,7 +726,7 @@ label n_ccday9:
     c "Apologies."
     show e b at bounce
     e "CC... are you okay?"
-    hide e B
+    hide e b
     show c close
     c "Haha... no, but it's alright."
     c "Honestly... I just need some rest at the moment."

@@ -717,7 +717,7 @@ label ccday5cont:
             jump neutralcc5
 
 label impresscc5:
-    hide e B
+    hide e b
     show c
     c "Haha... excuse my language, but..."
     show c look # cc gets agitated here
