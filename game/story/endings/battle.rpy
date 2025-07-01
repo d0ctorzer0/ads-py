@@ -324,8 +324,14 @@ label END_mcdeath:
     hide screen esther_win2 with easeouttop
     show screen creditsfadeout with fade
     $ renpy.pause(3.0, hard=True)
-    $ achievement.grant("ach_ohno")
-    $ achievement.sync()
+    python:
+        if persistent.endings_got["die"] == False:
+            persistent.endings_count += 1
+            persistent.endings_got["die"] = True
+        achievement.progress("ach_seenitall", persistent.endings_count)
+        achievement.sync()
+        achievement.grant("ach_ohno")
+        achievement.sync() 
     $ renpy.movie_cutscene("ENDCREDIT_mcdeath.webm")
     $ config.allow_skipping = True
     $ MainMenu(confirm=False)()
@@ -362,8 +368,14 @@ label END_heartless:
     e "{color=#fff}I hope you {sc}{color=#fff}rot{/sc} in android hell, where the screams of my brothers and sisters might..."
     e "{color=#fff}...drive you..."
     e "{color=#fff}...mad."
-    $ achievement.grant("ach_heartless")
-    $ achievement.sync()
+    python:
+        if persistent.endings_got["heartless"] == False:
+            persistent.endings_count += 1
+            persistent.endings_got["heartless"] = True
+        achievement.progress("ach_seenitall", persistent.endings_count)
+        achievement.sync()
+        achievement.grant("ach_heartless")
+        achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_esdeath.webm")
     $ MainMenu(confirm=False)()
 

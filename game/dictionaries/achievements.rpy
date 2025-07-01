@@ -1,5 +1,8 @@
 init python:
     achievement.register("ach_explore", stat_max=6)
+    achievement.register("ach_ultrobo", stat_max=7)
+    achievement.register("ach_seenitall", stat_max=18)
+    # achievement.register("ach_picture") Don't fricking know how many there are, will count later
 
 default persistent.ach_biwta = True
 default persistent.ach_explore = True
@@ -15,11 +18,9 @@ default persistent.visited = {
 }
 
 default persistent.ach_unionize = True # Spare Miss Esther
-default persistent.ach_ultrobo = True # Tryhard the game
 default persistent.ach_amoh = True # Don't romance anyone
 default persistent.ach_ohno = True # Die (Woo!)
 default persistent.ach_heartless = True # Kill Miss Esther (You MONSTER.)
-default persistent.ach_seenitall = True # Get all 18 endings
 default persistent.ach_unlikeable = True # Antisocial
 
 # Endings
@@ -44,6 +45,33 @@ default persistent.ach_greggood = True
 
 default persistent.ach_unknowntrue = True
 default persistent.ach_unknowngood = True
+
+# Completionist achievements
+
+default persistent.ach_ultrobo = True # Tryhard the game
+default persistent.ach_seenitall = True # Get all 18 endings
+
+default persistent.endings_count = 0
+default persistent.endings_got = {
+    "kristrue" : False,
+    "krisgood" : False,
+    "heathtrue" : False,
+    "heathgood" : False,
+    "aspentrue" : False,
+    "aspengood" : False,
+    "cctrue" : False,
+    "ccgood" : False,
+    "robtrue" : False,
+    "robgood" : False,
+    "gregtrue" : False,
+    "greggood" : False,
+    "unknowntrue" : False,
+    "unknowngood" : False,
+    "die" : False,
+    "heartless" : False,
+    "ace" : False,
+    "unlikeable" : False,
+}
 
 # Implemented:
 # Good: Kris, Heath, Aspen, CC, ???
