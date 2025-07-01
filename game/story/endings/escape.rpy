@@ -340,7 +340,6 @@ label escape_aspen:
 
     mc "What's up?"
 
-    stop music fadeout 1.0
     stop music1 fadeout 1.0
     stop music fadeout 3.0
     show a look offrail
@@ -378,7 +377,7 @@ label escape_aspen:
     $ renpy.music.queue("music/outside.ogg", clear_queue=False)
     scene white with blindplayer
 
-    a "{color=#fff}The light - agh, it's just like when the greenhouse lights turn on..."
+    a "{color=#fff}Agh, it's just like when the greenhouse lights turn on..."
     a "{color=#fff}I... oh my god!"
 
     scene aspen cutscene 5 with dissolve
@@ -892,7 +891,160 @@ label leave_cc:
         jump END_unknowntrue    
 
 label escape_rob:
-    jump endtest
+    scene stairs with fade
+    show flash
+    show r offrail with easeinbottom
+    r "Alright, Doc. Here she is."
+    r "Those are some long stairs. Think ya got the leg strength for it?"
+
+    mc "Hah, you kidding me?"
+
+    r "Maybe."
+    r "I..."
+    show r look offrail
+    r "Wait a sec, Doc."
+
+    mc "We don't have a lot of time -"
+
+    r "I know, I know, but..."
+
+    stop music fadeout 3.0
+    r "I... I've never been up there, y'know."
+    r "We aren't allowed up to the surface. All I know is what I've seen on TV."
+    r "Fitness, athletics - that's my specialty."
+    r "I don't like change all that much."
+
+    show r offrail
+    r "And I'm... frankly, Doc, I'm kinda scared."
+
+    mc "I understand. But there's so much up there to see."
+    
+    show r look offrail
+    mc "It might be scary, but we don't have much of a choice."
+    mc "And Rob?"
+
+    show r offrail
+    r "Yeah?"
+
+    mc "I'm not leaving your side. I'll be right here the whole time."
+
+    r "I..."
+    r "Alright."
+    r "Let's get goin'."
+
+    n "You pat Rob's chassis gently and begin the ascent."
+
+    hide flash
+    scene black with fade
+    $ renpy.pause(2.0, hard=True)
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    $ renpy.music.play("music/outsidereveal.ogg")
+    $ renpy.music.queue("music/outside.ogg", clear_queue=False)
+    scene white with blindplayer
+
+    r "{color=#fff}What the - why's it so goddamn bright out here?!"
+    r "{color=#fff}Oh... holy cow..."
+
+    scene rob cutscene 5 with dissolve
+    $ persistent.rc5 = True
+    n "{color=#fff}Your vision is blinded by the bright light of the outside world."
+    n "{color=#fff}It's only been about two weeks since you were last outside, but..."
+    r "{color=#fff}This is insane. Did you know about this? The sky? And... oh, the clouds, goddamn!"
+    r "{color=#fff}Hah! I've only seen this stuff through a screen!"
+
+    n "{color=#fff}...Rob's never seen the surface."
+
+    r "{color=#fff}This is crazy! It's all real - real grass, real blue and green and..."
+    r "{color=#fff}Oh, feel that fresh air through your circuits!"
+    r "{color=#fff}...or lungs, in your case."
+    r "{color=#fff}It's so much better than that stuffy mess of a gym..."
+
+    mc "{color=#fff}I told you so."
+
+    r "{color=#fff}You sure did! Haha!"
+    r "{color=#fff}God... I can't believe we made it out of there."
+
+    n "{color=#fff}He turns to look at you."
+
+    r "{color=#fff}I can't believe you {i}got{/i} me out of there, I... hah... I can't thank you enough, Doc."
+    r "{color=#fff}Wow. You're real pretty in this light."
+
+    mc "{color=#fff}Thank you."
+
+    r "{color=#fff}You've got such a... glow around you, Doc. And I don't want to leave it."
+    r "{color=#fff}I think I love ya. As silly as that sounds."
+    r "{color=#fff}And I KNOW, I {i}know{/i}, alright, we ain't known each other long..."
+    r "{color=#fff}I'm just hopin' you'll give me a chance."
+    r "{color=#fff}I mean... I'm sure we'll have plenty of time now, right?"
+
+    mc "{color=#fff}Haha. That we will."
+
+    hide screen cuttextbox
+    scene black with fade
+    $ cutscenetextbox = False
+
+    n "Clutching Rob to your side, you take off towards the city."
+    n "You stay close enough to the road to know where you're going, but far enough away that no one will see you."
+
+    r "KEEP GOING, DOC! YOU GOT THIS! PUSH YOURSELF!"
+    mc "I'm pushing as hard as I can!!"
+
+    n "The run is difficult, but Rob's encouragement does wonders."
+    n "You still regret that you left your car at the complex."
+    mc "Damn it!"
+    r "Alright, I think we're far 'nough away from the complex. Let's take a rest... uh, here."
+
+    n "The two of you reach a clearing just on the outskirts of the city."
+    n "Breathing heavily, you lean against a tree, Rob on your lap."
+
+    r "How you doin', Doc?"
+
+    mc "I'm alright. Adrenaline's still pumping through my veins, but I'm coming down. Slowly."
+
+    r "Good, good. Take a deep breath."
+
+    n "Rob sighs."
+
+    r "Still can't believe you came back for me. Celine never woulda done somethin' like that."
+    r "You're real selfless, Doc."
+
+    mc "Thanks, Rob. I try to be."
+
+    r "Make sure you're lookin' out for yourself, too."
+
+    mc "Yeah, yeah."
+
+    n "..."
+
+    r "D'ya think they're gonna come lookin' for us?"
+
+    mc "No. We honestly probably saved them time by disappearing."
+    mc "I don't think they care anymore. Thankfully."
+
+    r "Huh."
+    r "What's next, then?"
+
+    mc "Well. I'm not sure."
+    mc "It's up to us to figure that out."
+    mc "I should probably start by finding a new job..."
+
+    r "That you should."
+    r "Heh..."
+    r "Thanks, Doc."
+    r "I'm glad you're here."
+    r "I'm glad we met."
+
+    if romance_points["Rob"] < 29:
+        stop music fadeout 1.0
+        window hide
+        show screen creditsfadeout
+        $ renpy.pause(2.0, hard=True)
+        hide screen creditsfadeout
+        $ renpy.movie_cutscene("ENDCREDIT_ccunknown.webm")
+        $ MainMenu(confirm=False)()
+    if romance_points["???"] >= 29:
+        jump END_robtrue    
 
 label escape_gregory:
     jump endtest

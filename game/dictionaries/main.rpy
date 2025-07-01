@@ -107,10 +107,12 @@ default persistent.rc1 = False
 default persistent.rc2 = False
 default persistent.rc3 = False
 default persistent.rc4 = False
+default persistent.rc5 = False
 
 default persistent.gc1 = False
 default persistent.gc2 = False
 default persistent.gc3 = False
+default persistent.gc4 = False
 
 default persistent.uc1 = False
 default persistent.uc2 = False

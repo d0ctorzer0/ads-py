@@ -343,18 +343,20 @@ label saverob:
     show flash
     $ cutscenetextbox = False
     window auto
-    show r with easeinright
+    show r offrail with easeinbottom
     r "Doc... you came for me. You didn't need to do that."
 
     mc "Of course I did."
 
     n "You pick his broken handle up off the floor."
 
+    show r look offrail
     r "Eh... I don't need that, hah. I got you here. That's all I need."
 
     mc "No, right now you need to get out of here. But that's sweet of you."
     mc "We can't take the surface elevators - I'm almost positive they won't let you up with me."
 
+    show r offrail
     r "I... I think I know a different way. Y'know where Heath's break room is, yeah?"
     r "There's a staircase behind it. I've gotten complaints from visitors that they can hear me yelling from over there..."
     r "It's not a very popular entrance. Maybe 'cuz of me, haha."

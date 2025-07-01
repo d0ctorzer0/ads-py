@@ -12,3 +12,6 @@ label END_cctrue:
 
 label END_unknowntrue:
     jump endtest
+
+label END_robtrue:
+    jump endtest
