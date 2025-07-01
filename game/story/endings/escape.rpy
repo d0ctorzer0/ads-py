@@ -1041,9 +1041,17 @@ label escape_rob:
         show screen creditsfadeout
         $ renpy.pause(2.0, hard=True)
         hide screen creditsfadeout
-        $ renpy.movie_cutscene("ENDCREDIT_ccunknown.webm")
+        python:
+            if persistent.endings_got["robgood"] == False:
+                persistent.endings_count += 1
+                persistent.endings_got["robgood"] = True
+            achievement.progress("ach_seenitall", persistent.endings_count)
+            achievement.sync()
+            achievement.grant("ach_robgood")
+            achievement.sync()
+        $ renpy.movie_cutscene("ENDCREDIT_rob.webm")
         $ MainMenu(confirm=False)()
-    if romance_points["???"] >= 29:
+    if romance_points["Rob"] >= 29:
         jump END_robtrue    
 
 label escape_gregory:
