@@ -111,7 +111,12 @@ label saveaspen:
     show screen cuttextbox
     scene aspen cutscene 4 with fade
     show flash
-    $ persistent.ac4 = True
+    python:
+        if persistent.ac4 == False:
+            persistent.cutscenes_seen += 1
+            persistent.ac4 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     n "{color=#fff}Instantly, you're soaked to the bone. Shaking off the cold, you look down to see Aspen off their management rail."
 
     a "{color=#fff}Doctor! Oh, I'm so happy to see you! The... the management rail got slippery, and I fell off, I..."
@@ -194,7 +199,12 @@ label savegreg:
     show screen cuttextbox
     scene greg cutscene 3 with fade
     show flash
-    $ persistent.gc3 = True
+    python:
+        if persistent.gc3 == False:
+            persistent.cutscenes_seen += 1
+            persistent.gc3 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     g "{color=#fff}O-Oh, Doctor! Can you - oh my god, can you help me?! Please!"
 
     mccut "{color=#fff}Where are you caught on?"
@@ -316,7 +326,12 @@ label saverob:
     show screen cuttextbox
     scene rob cutscene 4 with fade
     show flash
-    $ persistent.rc4 = True
+    python:
+        if persistent.rc4 == False:
+            persistent.cutscenes_seen += 1
+            persistent.rc4 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     n "{color=#fff}Rob has fallen off his management rail, trapped under the TV that used to be hung up behind him."
     n "{color=#fff}One of his handles is broken off and his eye is twitching."
 
@@ -409,7 +424,12 @@ label saveccunknown:
     show screen cuttextbox
     scene cc cutscene 4 with fade
     show flash
-    $ persistent.cc4 = True
+    python:
+        if persistent.cc4 == False:
+            persistent.cutscenes_seen += 1
+            persistent.cc4 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     c "{color=#fff}Doctor..."
     n "{color=#fff}As soon as you enter, you're met with a very peculiar sight."
     n "{color=#fff}Multiple walls are on fire and all of CC's monitoring systems are off."
@@ -553,7 +573,12 @@ label saveheath:
     show screen cuttextbox
     scene heath cutscene 4 with fade
     show flash
-    $ persistent.hc4 = True
+    python:
+        if persistent.hc4 == False:
+            persistent.cutscenes_seen += 1
+            persistent.hc4 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     h "{color=#fff}Oh... Doctor..."
     h "{color=#fff}I-I... my magic supplies, my... livelihood, it's..."
 
@@ -651,7 +676,12 @@ label savekris:
     show screen cuttextbox
     scene kris cutscene 4 with fade
     show flash
-    $ persistent.kc4 = True
+    python:
+        if persistent.kc4 == False:
+            persistent.cutscenes_seen += 1
+            persistent.kc4 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     k "{color=#fff}Doctor! Thank god you're here, I..."
     k "{color=#fff}I don't know what's going on. I got to work, started doing my normal thing -"    
     k "{color=#fff}You know what?! I bet I was right! This is it! The \"Operation ACRI\" that's happening right now -"

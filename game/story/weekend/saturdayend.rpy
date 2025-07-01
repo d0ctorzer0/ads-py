@@ -81,7 +81,12 @@ label satend_kris:
     $ cutscenetextbox = True
     scene kris cutscene 2 with fade
     show screen cuttextbox
-    $ persistent.kc2 = True
+    python:
+        if persistent.kc2 == False:
+            persistent.cutscenes_seen += 1
+            persistent.kc2 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     if persistent.advcap == True:
         "{i}{color=#fff}The scene fades to Kris looking at you, lit by candlelight."
     k "{color=#fff}Mmm. Quite simple, Doctor."
@@ -191,7 +196,12 @@ label satend_heath:
 
     $ cutscenetextbox = True
     scene heath cutscene 2 with fade
-    $ persistent.hc2 = True
+    python:
+        if persistent.hc2 == False:
+            persistent.cutscenes_seen += 1
+            persistent.hc2 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     show screen cuttextbox
     "{color=#fff}She approaches the microphone, and a spotlight comes up on her."
     h "{color=#fff}Hello, Aperture! I'm glad to be on this stage once more!"
@@ -287,7 +297,12 @@ label satend_aspen:
     $ cutscenetextbox = True
     scene aspen cutscene 2 with fade
     show screen cuttextbox
-    $ persistent.ac2 = True
+    python:
+        if persistent.ac2 == False:
+            persistent.cutscenes_seen += 1
+            persistent.ac2 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     acg "{color=#fff}I mean, I'm sure you've seen things glow before, but... this is different, yes?"
     acg "{color=#fff}{i}Pyrodinium bahamense{/i}. That's their binomial name."
     acg "{color=#fff}But a lot of us just refer to them as their superclass."
@@ -418,7 +433,12 @@ label satend_rob:
     mc "Touchdown!!"
     $ cutscenetextbox = True
     scene rob cutscene 2 with fade
-    $ persistent.rc2 = True
+    python:
+        if persistent.rc2 == False:
+            persistent.cutscenes_seen += 1
+            persistent.rc2 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     show screen cuttextbox
     if persistent.advcap == True:
         "{i}{color=#fff}The scene fades to a dark room lit by a TV screen. Rob turns back to look at you."
@@ -479,7 +499,12 @@ label satend_cc:
     $ cutscenetextbox = True
     show screen cuttextbox
     scene cc cutscene 2 with fade
-    $ persistent.cc2 = True
+    python:
+        if persistent.cc2 == False:
+            persistent.cutscenes_seen += 1
+            persistent.cc2 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     n "{color=#fff}CC greets you with a raised optic. In between his chassis and his handlebars is a bouquet of red roses."
     c "{color=#fff}I hope this isn't too... forward, Doctor."
     c "{color=#fff}Aspen assisted me in acquiring the flowers, so... it wasn't entirely my work."

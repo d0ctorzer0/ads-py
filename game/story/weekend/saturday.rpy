@@ -735,7 +735,12 @@ label satgreg_pos:
         $ cutscenetextbox = True
         show screen cuttextbox
         scene gregory cutscene 1 with fade
-        $ persistent.gc1 = True
+        python:
+            if persistent.gc1 == False:
+                persistent.cutscenes_seen += 1
+                persistent.gc1 = True
+            achievement.progress("ach_picture", persistent.cutscenes_seen)
+            achievement.sync()
         n "{color=#fff}Gregory looks down and begins speaking softly."
         g "{color=#fff}No, I need you to go closer!!"
         g "{color=#fff}Less left, more right! Come on!"
@@ -1105,7 +1110,12 @@ label satunknownpos:
         $ cutscenetextbox = True
         show screen cuttextbox
         scene unknown cutscene 1 with fade
-        $ persistent.uc1 = True
+        python:
+            if persistent.uc1 == False:
+                persistent.cutscenes_seen += 1
+                persistent.uc1 = True
+            achievement.progress("ach_picture", persistent.cutscenes_seen)
+            achievement.sync()
         u "{color=#fff}Well... yeah. Back when I was... cleaner, and I... remembered my name..."
         u "{color=#fff}I didn't use it at all..."
         u "{color=#fff}I... miss those days sometimes."        

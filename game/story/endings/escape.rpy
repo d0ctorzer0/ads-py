@@ -61,7 +61,12 @@ label escape_kris:
     k "{color=#fff}Oh my god..."
 
     scene kris cutscene 5 with dissolve
-    $ persistent.kc5 = True
+    python:
+        if persistent.kc5 == False:
+            persistent.cutscenes_seen += 1
+            persistent.kc5 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
 
@@ -227,7 +232,12 @@ label escape_heath:
     h "{color=#fff}Oh... {i}wow.{/i}"
 
     scene heath cutscene 5 with dissolve
-    $ persistent.hc5 = True
+    python:
+        if persistent.hc5 == False:
+            persistent.cutscenes_seen += 1
+            persistent.hc5 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
 
@@ -381,7 +391,12 @@ label escape_aspen:
     a "{color=#fff}I... oh my god!"
 
     scene aspen cutscene 5 with dissolve
-    $ persistent.ac5 = True
+    python:
+        if persistent.ac5 == False:
+            persistent.cutscenes_seen += 1
+            persistent.ac5 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
 
@@ -601,7 +616,12 @@ label leave_unknown:
     c "{color=#fff}Except..."
 
     scene cc cutscene 5 with dissolve
-    $ persistent.cc5 = True
+    python:
+        if persistent.cc5 == False:
+            persistent.cutscenes_seen += 1
+            persistent.cc5 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     c "{color=#fff}This is... incredible. Everything's so vibrant and bright and..."
@@ -797,7 +817,12 @@ label leave_cc:
     ry "{color=#fff}I can barely see a th- oh my..."
 
     scene unknown cutscene 3 with dissolve
-    $ persistent.uc4 = True
+    python:
+        if persistent.uc4 == False:
+            persistent.cutscenes_seen += 1
+            persistent.uc4 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     ry "{color=#fff}What the..."
@@ -947,7 +972,12 @@ label escape_rob:
     r "{color=#fff}Oh... holy cow..."
 
     scene rob cutscene 5 with dissolve
-    $ persistent.rc5 = True
+    python:
+        if persistent.rc5 == False:
+            persistent.cutscenes_seen += 1
+            persistent.rc5 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     r "{color=#fff}This is insane. Did you know about this? The sky? And... oh, the clouds, goddamn!"
@@ -1052,7 +1082,7 @@ label escape_rob:
         $ renpy.movie_cutscene("ENDCREDIT_rob.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Rob"] >= 29:
-        jump END_robtrue    
+        jump END_robtrue  
 
 label escape_gregory:
     jump endtest

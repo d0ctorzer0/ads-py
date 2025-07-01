@@ -96,28 +96,33 @@ default persistent.ac2 = False
 default persistent.ac3 = False
 default persistent.ac4 = False
 default persistent.ac5 = False
+default persistent.ac6 = False
 
 default persistent.cc1 = False
 default persistent.cc2 = False
 default persistent.cc3 = False
 default persistent.cc4 = False
 default persistent.cc5 = False
+default persistent.cc6 = False
 
 default persistent.rc1 = False
 default persistent.rc2 = False
 default persistent.rc3 = False
 default persistent.rc4 = False
 default persistent.rc5 = False
+default persistent.rc6 = False
 
 default persistent.gc1 = False
 default persistent.gc2 = False
 default persistent.gc3 = False
 default persistent.gc4 = False
+default persistent.gc5 = False
 
 default persistent.uc1 = False
 default persistent.uc2 = False
 default persistent.uc3 = persistent.cc4
 default persistent.uc4 = False
+default persistent.uc5 = False
 
 #DAY 3 - "with [blank] day 3"
 default wkd3 = False

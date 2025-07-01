@@ -409,7 +409,12 @@ label gregday11:
     show screen cuttextbox
     scene greg cutscene 3 with fade
     $ cutscenetextbox = True
-    $ persistent.gc2 = True
+    python:
+        if persistent.gc2 == False:
+            persistent.cutscenes_seen += 1
+            persistent.gc2 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     n "{color=#fff}Gregory moves his bottom handle slightly, unbuttoning his trench coat. It falls to the ground."
     n "{color=#fff}What stands before you is not a personality core - but three of them, just as you thought."
     n "{color=#fff}The top one - Gregory's voice, you assume - looks down nervously at the other two."
@@ -554,7 +559,12 @@ label unknownday11:
     show screen cuttextbox
     scene unknown cutscene 3 with fade
     $ cutscenetextbox = True
-    $ persistent.uc2 = True    
+    python:
+        if persistent.uc2 == False:
+            persistent.cutscenes_seen += 1
+            persistent.uc2 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()  
     u "{color=#fff}I really wanted to prove to ya that I'm more than what I look like."
     u "{color=#fff}Now, s'true, I've been on a downwards spiral for years now..."
     u "{color=#fff}Hell, I can't even remember my own name..."

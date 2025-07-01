@@ -191,7 +191,12 @@ label krisconfession:
     $ cutscenechoice = True
     show screen cuttextbox
     scene kris cutscene 3 with fade
-    $ persistent.kc3 = True
+    python:
+        if persistent.kc3 == False:
+            persistent.cutscenes_seen += 1
+            persistent.kc3 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     if persistent.advcap == True:
         "{color=#fff}{i}The scene fades to Kris looking down, offering you a silver watch in a blue box."
     k "{color=#fff}This... is for you. It's a watch."
@@ -373,7 +378,12 @@ label heathday10:
     show screen cuttextbox
     scene heath cutscene 3 with fade
     $ cutscenetextbox = True
-    $ persistent.hc3 = True
+    python:
+        if persistent.hc3 == False:
+            persistent.cutscenes_seen += 1
+            persistent.hc3 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     "{color=#fff}With a sudden explosion of sparkle and feathers, a dove emerges from Heath's chassis."
     "{color=#fff}In its beak, it's holding a perfectly-preserved letter."
     h "{color=#fff}TADA! For you, Doctor - a special letter!"
@@ -562,7 +572,12 @@ label aspenday10:
     show screen cuttextbox
     scene aspen cutscene 3 with fade
     $ cutscenetextbox = True
-    $ persistent.ac3 = True
+    python:
+        if persistent.ac3 == False:
+            persistent.cutscenes_seen += 1
+            persistent.ac3 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     a "{color=#fff}This cactus... it's for you."
     a "{color=#fff}I know you're probably tired of my botany facts, but..."
     a "{color=#fff}This is a Scarlet Ball Cactus - {i}parodia haselbergii{/i}."
@@ -770,7 +785,12 @@ label ccday10:
     show screen cuttextbox
     scene cc cutscene 3 with fade
     $ cutscenetextbox = True
-    $ persistent.cc3 = True
+    python:
+        if persistent.cc3 == False:
+            persistent.cutscenes_seen += 1
+            persistent.cc3 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     c "{color=#fff}I wore apathy like armor..."
     c "{color=#fff}...but cracked every time you looked at me, like I was worth being seen."
 
@@ -984,7 +1004,12 @@ label robday10:
     show screen cuttextbox
     scene rob cutscene 3 with fade
     $ cutscenetextbox = True
-    $ persistent.rc3 = True
+    python:
+        if persistent.rc3 == False:
+            persistent.cutscenes_seen += 1
+            persistent.rc3 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     r "{color=#fff}This is my most prized possession - it's an authentic 1988 Topps baseball card."
     r "{color=#fff}Jose Canseco. The guy on the card."
     r "{color=#fff}It's pretty hard to find baseball cards this far down..."
