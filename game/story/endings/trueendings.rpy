@@ -4,6 +4,9 @@ label END_kristrue:
 label END_heathtrue:
     jump endtest
 
+label END_aspentrue:
+    jump endtest
+
 label END_cctrue:
     jump endtest
 

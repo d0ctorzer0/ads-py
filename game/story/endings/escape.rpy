@@ -146,6 +146,8 @@ label escape_kris:
         show screen creditsfadeout
         $ renpy.pause(2.0, hard=True)
         hide screen creditsfadeout
+        $ achievement.grant("ach_krisgood")
+        $ achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_kris.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Kris"] >= 30:
@@ -304,6 +306,8 @@ label escape_heath:
         show screen creditsfadeout
         $ renpy.pause(2.0, hard=True)
         hide screen creditsfadeout
+        $ achievement.grant("ach_heathgood")
+        $ achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_heath.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Heath"] >= 30:
@@ -456,6 +460,8 @@ label escape_aspen:
         show screen creditsfadeout
         $ renpy.pause(2.0, hard=True)
         hide screen creditsfadeout
+        $ achievement.grant("ach_aspengood")
+        $ achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Aspen"] >= 28:
@@ -657,6 +663,8 @@ label leave_unknown:
         show screen creditsfadeout
         $ renpy.pause(2.0, hard=True)
         hide screen creditsfadeout
+        $ achievement.grant("ach_ccgood")
+        $ achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_ccunknown.webm")
         $ MainMenu(confirm=False)()
     if romance_points["CC"] >= 30:
@@ -846,6 +854,8 @@ label leave_cc:
         show screen creditsfadeout
         $ renpy.pause(2.0, hard=True)
         hide screen creditsfadeout
+        $ achievement.grant("ach_unknowngood")
+        $ achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_ccunknown.webm")
         $ MainMenu(confirm=False)()
     if romance_points["???"] >= 15:
