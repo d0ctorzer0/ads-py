@@ -59,6 +59,7 @@ screen disable_Lmouse():
     key "K_SELECT" action NullAction()
 
 label battle:
+    $ savequestionpopup = False
     scene grey with fade
     show screen disable_Lmouse
     stop music

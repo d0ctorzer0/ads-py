@@ -1081,7 +1081,7 @@ label robday1:
         
         "I mean, as long as someone uses it every now and then, right?":
 
-            $romance_points["Rob"] -= 1
+            $ romance_points["Rob"] -= 1
             r "Yeah, I suppose so."
             mc "Keep it up."
             jump robday1cont
@@ -1089,7 +1089,7 @@ label robday1:
 label impressrob:
 
     show r
-    r "Why, thank you. I try to keep in nice in case someone needs it."
+    r "Why, thank you. I try to keep it nice in case someone needs it."
     r "I do get the occasional customer, but it's only about once a week."
     r "So I spend my shifts watching the game instead."
 
