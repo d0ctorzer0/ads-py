@@ -206,3 +206,76 @@ label END_kristrue:
     mc "You're crazy."
     show k look offrail
     k "Maybe a little."
+    k "..."
+    k "Thank you."
+    mc "Hm?"
+    show kris blush with Dissolve(0.05)
+    k "For doing this for me."
+    k "For... being here for me."
+    k "I love you."
+    mc "I..."
+    menu:
+        extend ""
+        "Thank you, Kris.":
+            hide kris blush
+            show k offrail
+            k "I hope we can make a lot more memories together."
+            mc "We will."
+            jump END_kristrue2
+        "I love you too.":
+            hide kris blush
+            show k happy offrail
+            k "Oh, you finally said it, did you?"
+            mc "I've been thinking it for a while."
+            show k offrail
+            k "You're stubborn."
+            mc "So are you."
+            jump END_kristrue2
+
+label END_kristrue2:
+    scene black with fade
+    $ renpy.pause(1.0, hard=True)
+    scene nyc park with fade
+    "The sun is shining. The birds are chirping... it's peaceful."
+    "Central Park is fairly busy today, but everyone's generally worried about their own activities to notice you and your weird spherical device."
+    "It's a beautiful day."
+    "You lay down in the grass, near a swath of small daisies."
+    show k offrail with easeinbottom
+    "Unbuckling Kris from your bag, you lay him down next to you, looking at the sky."
+    k "What are these? Daisies?"
+    mc "Something like that. They're very prevalent in parks during the summer."
+    k "Huh. Interesting."
+    show k sus offrail
+    k "I'm still getting used to... not being... down there, you know."
+    k "It's still strange sometimes. Not waking up in a charging port, not staring at that screen all the time..."
+    show k offrail
+    k "But... when I see you, it's... easier."
+    mc "You're a lot more sappy than you pretend to be, you know."
+    show k look offrail
+    k "I know, I know."
+    k "Can't help it... my attitude's deep in my programming."
+    k "You don't seem to mind it, though."
+    mc "I like a man who's confident."
+    show k offrail
+    k "I'm not a man."
+    mc "I'm well aware."
+    show k happy offrail
+    k "Haha... you're interesting, that's for sure."
+    k "If that brought us together, though..."
+    show k offrail
+    k "I'm all the happier for it."
+    stop music fadeout 1.0
+    window hide
+    show screen creditsfadeout
+    $ renpy.pause(2.0, hard=True)
+    hide screen creditsfadeout
+    python:
+        if persistent.endings_got["kristrue"] == False:
+            persistent.endings_count += 1
+            persistent.endings_got["kristrue"] = True
+        achievement.progress("ach_seenitall", persistent.endings_count)
+        achievement.sync()
+        achievement.grant("ach_kristrue")
+        achievement.sync()
+    $ renpy.movie_cutscene("ENDCREDIT_kris.webm")
+    $ MainMenu(confirm=False)()

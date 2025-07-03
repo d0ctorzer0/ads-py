@@ -78,4 +78,5 @@ default persistent.endings_got = {
 
 # Implemented:
 # Good: Kris, Heath, Aspen, CC, ???
+# True: Kris
 # BIWTA, explore, heartless, unionize, ohno
