@@ -719,7 +719,7 @@ label savekris:
     k "I don't... it feels so strange to be off it, but..."
 
     mc "We really don't have a choice."
-    show k offrail
+    show k sus offrail
     mc "If you're right, and they're truly trying to get rid of you..."
     mc "...they won't let me out with you via the surface elevators."
 

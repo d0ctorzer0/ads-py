@@ -1552,14 +1552,7 @@ style nextday_button_text:
     size 40
 
 ## DAY TRANSITION
-style dttitle_text:
-    font "terminal-grotesque.ttf"
-    color "#fff"
-    size 100
-style dtsubtitle_text:
-    font "terminal-grotesque.ttf"
-    color "#616161"
-    size 60
+
 
 
 ################################################################################

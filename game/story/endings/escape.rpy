@@ -3,7 +3,7 @@ define blindplayer = Fade(0.1, 0.0, 0.5, color="#fff")
 label escape_kris:
     scene stairs with fade
     show flash
-    show k offrail with easeinbottom
+    show k sus offrail with easeinbottom
     n "Overly-snobby core in hand, you approach the stairs to the surface."
 
     mc "That's a long way up..."
@@ -27,7 +27,7 @@ label escape_kris:
 
     n "Kris looks away nervously."
 
-    show k offrail
+    show k sus offrail
     k "Doctor, I'm not built for the surface. I'm not even sure what to expect."
     k "I have no idea what's up there."
     k "And I..."
@@ -43,7 +43,7 @@ label escape_kris:
     mc "We'll figure it out. Together."
 
     k "I..."
-    show k offrail
+    show k sus offrail
     k "Y-You're right. We should... stop stalling now. It's a... a waste of resources."
 
     n "Clutching Kris tightly under your arm, you begin the ascent up the stairs."

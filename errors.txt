@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/boss.rpy", line 80: Line is indented, but the preceding style_prefix statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    add "gui/options/black.png"
-    ^
+File "game/story/endings/kristrue.rpy", line 176: expected statement.
+    You approach a big building with columns and statues adorning its roof. American flags decorate the top, and four golden words adorn its face: NEW YORK STOCK EXCHANGE.
+                                ^
+
+File "game/story/endings/kristrue.rpy", line 191: expected statement.
+    You lean down to your side slightly, keeping your voice low.
+                                       ^
+
+File "game/story/endings/kristrue.rpy", line 194: expected statement.
+    You lift yourself up slightly.
+                                 ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sun Jun 29 22:33:24 2025
+Wed Jul  2 21:08:57 2025
