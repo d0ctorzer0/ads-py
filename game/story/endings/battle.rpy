@@ -58,7 +58,7 @@ screen disable_Lmouse():
     key "K_SPACE" action NullAction()
     key "K_SELECT" action NullAction()
 
-label battle:
+label battle: # Thanks Mo for absolutely DESTROYING my time and sanity because I have worked THREE FUCKING HOURS ON THIS AND GUESS WHAT? IT STILL DOESN'T WORK
     scene grey with fade
     show screen disable_Lmouse
     stop music
@@ -85,7 +85,6 @@ label cmdinput:
     if not es_health > 0:
         jump battleend
 
-    show screen disable_Lmouse
     python:
         if ap_count > 2:
             ap_count = 2
@@ -105,28 +104,23 @@ label cmdinput:
         hide neurorepeat
     if cmd == "help":
         $ preferences.afm_enable = False
-        hide screen disable_Lmouse
         "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\nCOMMAND LIST\n\n[[ HELP ] - DISPLAYS THIS LIST\n[[ YIELD ] - ATTEMPT A HACK INTO MAIN CORE SYSTEMS\n[[ DELETE ] - CAUTION! MAY DELETE CRUCIAL CORE FUNCTIONS\n"
         "[[ PRINT ] - INPUT TEXT INTO MAIN CORE SYSTEMS\n[[ RETURN ] - END ACTION\n\nENTER \"HELP [[COMMAND NAME]\" ON MAIN INPUT SCREEN FOR\nMORE INFORMATION."
         jump cmdinput
     if cmd == "help yield":
         $ preferences.afm_enable = False
-        hide screen disable_Lmouse
         "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ YIELD ] COMMAND\n\nYIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 50 PERCENT\nCHANCE OF STUNNING CORE FOR ONE (1) CYCLE. CHANCE DECREASES\nWITH EACH USE. USES ONE (1) COMMAND POINT."
         jump cmdinput
     if cmd == "help delete":
         $ preferences.afm_enable = False
-        hide screen disable_Lmouse
         "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ DELETE ] COMMAND\n\nTHIS FUNCTION MAY CAUSE CRITICAL DAMAGE TO CORE. USE WITH CAUTION.\nMAIN SYSTEMS PROTECTED. CONTACT ENCODING FOR ADDITIONAL\nRE-ADJUSTMENT IF NECESSARY. USES TWO (2) COMMAND POINTS."
         jump cmdinput
     if cmd == "help print":
         $ preferences.afm_enable = False
-        hide screen disable_Lmouse
         "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ PRINT ] COMMAND\n\nATTEMPTS TO \"SPEAK\" TO THE CORE VIA A CODE STRING. CORE MUST\nHAVE AN OPEN CHANNEL FOR THIS COMMAND TO FUNCTION PROPERLY.\nUSES ONE (1) COMMAND POINT."
         jump cmdinput
     if cmd == "help return":
         $ preferences.afm_enable = False
-        hide screen disable_Lmouse
         "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ RETURN ] COMMAND\n\nPASSES COMMAND INPUT AND ENDS CYCLE, ALLOWING CORE TO EXECUTE COMMANDS. RETURNS (2) COMMAND POINTS IF NO OTHER COMMANDS EXECUTED, AND (1) OTHERWISE."
         jump cmdinput
 
@@ -334,6 +328,7 @@ label END_mcdeath:
         achievement.sync() 
     $ renpy.movie_cutscene("ENDCREDIT_mcdeath.webm")
     $ config.allow_skipping = True
+    hide screen disable_Lmouse
     $ MainMenu(confirm=False)()
 
 label battleend:
@@ -383,9 +378,9 @@ label END_heartless:
 label continuegame:
     # this whole thing is just disabling battle, enabling cutscene
     show screen creditsfadeout with fade
-    hide screen disable_Lmouse
     stop music fadeout 2.0
     stop music1 fadeout 2.0
+    hide screen disable_Lmouse
     python:
         preferences.afm_enable = False
         renpy.set_style_preference("text", "basic")
