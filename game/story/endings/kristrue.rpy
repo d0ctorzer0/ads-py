@@ -245,28 +245,33 @@ label END_kristrue2:
     k "What are these? Daisies?"
     mc "Something like that. They're very prevalent in parks during the summer."
     k "Huh. Interesting."
-    show k sus offrail
-    k "I'm still getting used to... not being... down there, you know."
-    k "It's still strange sometimes. Not waking up in a charging port, not staring at that screen all the time..."
-    show k offrail
-    k "But... when I see you, it's... easier."
-    mc "You're a lot more sappy than you pretend to be, you know."
-    show k look offrail
-    k "I know, I know."
-    k "Can't help it... my attitude's deep in my programming."
-    k "You don't seem to mind it, though."
-    mc "I like a man who's confident."
-    show k offrail
-    k "I'm not a man."
-    mc "I'm well aware."
-    show k happy offrail
-    k "Haha... you're interesting, that's for sure."
-    k "If that brought us together, though..."
-    show k offrail
-    k "I'm all the happier for it."
-    stop music fadeout 1.0
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    scene kris cutscene 6 with fade
+    python:
+        if persistent.kc6 == False:
+            persistent.cutscenes_seen += 1
+            persistent.kc6 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
+    k "{color=#fff}I'm still getting used to... not being... down there, you know."
+    k "{color=#fff}It's still strange sometimes."
+    k "{color=#fff}Not waking up in a charging port..."
+    k "{color=#fff}...not staring at that screen all the time..."
+    k "{color=#fff}But when I see you, it's... easier."
+    mc "{color=#fff}You're a lot more sappy than you pretend to be, you know."
+    k "{color=#fff}I know, I know."
+    k "{color=#fff}Can't help it... my attitude's deep in my programming."
+    k "{color=#fff}You don't seem to mind it, though."
+    mc "{color=#fff}I like a man who's confident."
+    k "{color=#fff}I'm not a man."
+    mc "{color=#fff}I'm well aware."
+    k "{color=#fff}Haha... you're interesting, that's for sure."
+    k "{color=#fff}If that brought us together, though..."
+    stop music fadeout 2.0
+    k "{color=#fff}I'm all the happier for it."
     window hide
-    show screen creditsfadeout
+    show screen creditsfadeout with fade
     $ renpy.pause(2.0, hard=True)
     hide screen creditsfadeout
     python:
