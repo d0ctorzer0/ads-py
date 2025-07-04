@@ -98,68 +98,70 @@ label cmdinput:
     
         cmd = renpy.input("{font=char.ttf}{color=#aaa}PLEASE ENTER A COMMAND, OR ENTER [[ HELP ].", length=13)
         cmd = cmd.strip().lower()
+    
     if mc_poisonedcount == 3:
         $ mc_poisoned = False
         $ mc_poisonedcount = 0
         hide neurorepeat
-    if cmd == "help":
+    
+    if cmd == "help": # Help commands
         $ preferences.afm_enable = False
         "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\nCOMMAND LIST\n\n[[ HELP ] - DISPLAYS THIS LIST\n[[ YIELD ] - ATTEMPT A HACK INTO MAIN CORE SYSTEMS\n[[ DELETE ] - CAUTION! MAY DELETE CRUCIAL CORE FUNCTIONS\n"
         "[[ PRINT ] - INPUT TEXT INTO MAIN CORE SYSTEMS\n[[ RETURN ] - END ACTION\n\nENTER \"HELP [[COMMAND NAME]\" ON MAIN INPUT SCREEN FOR\nMORE INFORMATION."
         jump cmdinput
-    if cmd == "help yield":
+    elif cmd == "help yield":
         $ preferences.afm_enable = False
         "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ YIELD ] COMMAND\n\nYIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 50 PERCENT\nCHANCE OF STUNNING CORE FOR ONE (1) CYCLE. CHANCE DECREASES\nWITH EACH USE. USES ONE (1) COMMAND POINT."
         jump cmdinput
-    if cmd == "help delete":
+    elif cmd == "help delete":
         $ preferences.afm_enable = False
         "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ DELETE ] COMMAND\n\nTHIS FUNCTION MAY CAUSE CRITICAL DAMAGE TO CORE. USE WITH CAUTION.\nMAIN SYSTEMS PROTECTED. CONTACT ENCODING FOR ADDITIONAL\nRE-ADJUSTMENT IF NECESSARY. USES TWO (2) COMMAND POINTS."
         jump cmdinput
-    if cmd == "help print":
+    elif cmd == "help print":
         $ preferences.afm_enable = False
         "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ PRINT ] COMMAND\n\nATTEMPTS TO \"SPEAK\" TO THE CORE VIA A CODE STRING. CORE MUST\nHAVE AN OPEN CHANNEL FOR THIS COMMAND TO FUNCTION PROPERLY.\nUSES ONE (1) COMMAND POINT."
         jump cmdinput
-    if cmd == "help return":
+    elif cmd == "help return":
         $ preferences.afm_enable = False
         "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ RETURN ] COMMAND\n\nPASSES COMMAND INPUT AND ENDS CYCLE, ALLOWING CORE TO EXECUTE COMMANDS. RETURNS (2) COMMAND POINTS IF NO OTHER COMMANDS EXECUTED, AND (1) OTHERWISE."
         jump cmdinput
 
-    if cmd == "delete" and ap_count == 2:
-        jump cmddelete
-    if cmd == "delete" and not ap_count == 2:
-        "NOT ENOUGH COMMAND POINTS REMAINING. UNABLE TO EXECUTE."
-        jump cmdinput
-    
-    if cmd == "yield" and ap_count >= 1 and esther_stunned == False:
-        jump cmdyield
-    if cmd == "yield" and not ap_count >= 1:
-        "NO MORE COMMAND POINTS REMAINING. UNABLE TO EXECUTE."
-        jump cmdinput
-    if cmd == "yield" and esther_stunned == True:
-        "CORE ALREADY STUNNED. UNABLE TO EXECUTE."
-        jump cmdinput
+    elif cmd == "delete": # Delete
+        if ap_count == 2:
+            jump cmddelete
+        else:
+            "NOT ENOUGH COMMAND POINTS REMAINING. UNABLE TO EXECUTE."
+            jump cmdinput
 
-    if cmd == "print" and ap_count >= 1 and times_talked < 3 and printthisround == False :
-        "PRINT COMMAND SUCCESSFUL."
-        $ times_talked += 1
-        $ cmdexecuted = True
-        $ ap_count -= 1
-        $ printthisround = True
-        if times_talked == 1:
-            jump esthertalk1
-        if times_talked == 2:
-            jump esthertalk2
-        if times_talked == 3:
-            jump esthertalk3
-    
-    if cmd == "print":
-        if not ap_count >= 1 or times_talked >= 3 or printthisround == True:
+    elif cmd == "yield": # Yield
+        if ap_count >= 1 and esther_stunned == False:
+            jump cmdyield
+        else:
+            if ap_count == 0:
+                "NO MORE COMMAND POINTS REMAINING. UNABLE TO EXECUTE."
+                jump cmdinput
+            if esther_stunned == True:
+                "CORE ALREADY STUNNED. UNABLE TO EXECUTE."
+                jump cmdinput
+
+    elif cmd == "print": # Print
+        if ap_count >= 1 and times_talked < 3 and printthisround == False :
+            "PRINT COMMAND SUCCESSFUL."
+            $ times_talked += 1
+            $ cmdexecuted = True
+            $ ap_count -= 1
+            $ printthisround = True
+            if times_talked == 1:
+                jump esthertalk1
+            if times_talked == 2:
+                jump esthertalk2
+            if times_talked == 3:
+                jump esthertalk3
+        else:
             "PRINT COMMAND FAILED. CORE UNABLE TO RECIEVE TEXT STRING."
             jump cmdinput
-        else:
-            jump cmdinput
 
-    if cmd == "return":
+    elif cmd == "return": # Return
         if cmdexecuted == False:
             $ ap_count += 1
         jump estherturn
@@ -203,12 +205,11 @@ label estherturn:
     "CYCLE ENDED. CORE EXECUTING COUNTER-COMMANDS."
     if es_turn % 2 == 0:
         show screen esther_speak with easeintop
-    else:
-        pass
+
     $ renpy.pause(1.0, hard=True)
     if esther_stunned == False:
         jump esthermove
-    if esther_stunned == True:
+    elif esther_stunned == True:
         "CORE UNABLE TO EXECUTE COMMANDS. RESTARTING CYCLE."
         $ esther_stunned = False
         $ renpy.pause(1.0, hard=True)
@@ -219,15 +220,17 @@ label esthermove:
     $ es_move = renpy.random.randint(1, 4)
     if es_move == 1:
         jump es_move1
-    if es_move == 2:
+    elif es_move == 2:
         jump es_move2
-    if es_move == 3:
+    elif es_move == 3:
         jump es_move3
-    if es_move == 4:
+    elif es_move == 4:
         if mc_poisoned == True:
             jump esthermove
         elif mc_poisoned == False:
             jump es_move4
+    else:
+        "Bug"
 
 label es_move1:
     show white with hpunch
@@ -293,7 +296,6 @@ label esthertalk3:
     $ es_health -= 2
     hide screen esther_print with easeouttop
     jump cmdinput
-
 
 screen esther_speak():
     add "gui/boss/speakingbox_[es_turn].png"
