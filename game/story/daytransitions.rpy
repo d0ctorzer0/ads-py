@@ -1,6 +1,5 @@
 default daynum = "1"
 default dayday = "Monday"
-default timeofday = "Evening"
 
 style dttitle_text:
     font "terminal-grotesque.ttf"
@@ -53,7 +52,7 @@ screen truedaytransition():
         #at daydiss
     vbox:
         style_prefix "truesubtitle"
-        text "[dayday], [timeofday]"
+        text "[dayday]"
         xalign 0.5
         yalign 0.6
         #at daydiss  

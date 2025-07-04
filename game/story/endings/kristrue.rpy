@@ -3,7 +3,7 @@ label END_kristrue:
     scene black
     with fade
     $ daynum = "47"
-    $ dayday = "New York City"
+    $ dayday = "New York City, Evening"
 
     if renpy.is_skipping() == False:
         show screen truedaytransition
@@ -96,8 +96,7 @@ label END_kristrue:
     scene black
     with fade
     $ daynum = "48"
-    $ dayday = "New York City"
-    $ timeofday = "Morning"
+    $ dayday = "New York City, Morning"
 
     if renpy.is_skipping() == False:
         show screen truedaytransition
