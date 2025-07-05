@@ -506,10 +506,10 @@ label satend_cc:
         achievement.progress("ach_picture", persistent.cutscenes_seen)
         achievement.sync()
     n "{color=#fff}CC greets you with a raised optic. In between his chassis and his handlebars is a bouquet of red roses."
-    c "{color=#fff}I hope this isn't too... forward, Doctor."
-    c "{color=#fff}Aspen assisted me in acquiring the flowers, so... it wasn't entirely my work."
-    c "{color=#fff}They remind me of you, though. In a way."
-    c "{color=#fff}Please... accept them."
+    ccg "{color=#fff}I hope this isn't too... forward, Doctor."
+    ccg "{color=#fff}Aspen assisted me in acquiring the flowers, so... it wasn't entirely my work."
+    ccg "{color=#fff}They remind me of you, though. In a way."
+    ccg "{color=#fff}Please... accept them."
     mccut "{color=#fff}Oh, CC..."
     scene cctemproom with fade
     hide screen cuttextbox
