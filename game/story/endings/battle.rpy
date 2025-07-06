@@ -58,9 +58,9 @@ screen disable_Lmouse():
     key "K_SPACE" action NullAction()
     key "K_SELECT" action NullAction()
 
-label battle: # Thanks Mo for absolutely DESTROYING my time and sanity because I have worked THREE FUCKING HOURS ON THIS AND GUESS WHAT? IT STILL DOESN'T WORK
-    scene grey with fade
-    show screen disable_Lmouse
+# Thanks Mo for absolutely DESTROYING my time and sanity because I have worked SIX FUCKING HOURS ON THIS
+label battle: # AND GUESS WHAT? IT STILL DOESN'T WORK
+    scene grey with fade # Edit: IT FUCKING WORKS LESGOOOOOO
     stop music
     stop music1
     play music boss
@@ -68,14 +68,17 @@ label battle: # Thanks Mo for absolutely DESTROYING my time and sanity because I
         battle = True
         preferences.afm_enable = True
         preferences.afm_time = 5
+        preferences.afm_after_click = True
         terminaltext = True
         renpy.stop_skipping()
         renpy.block_rollback()
         config.allow_skipping = False
         renpy.set_style_preference("text", "battle")
     show screen main with easeinbottom
+
+    show screen disable_Lmouse
     "WELCOME TO APERTURE SCIENCE CORE CONTROL CENTER (ASC3)"
-    $ renpy.pause(1.0, hard=True)
+
     "BOOTING{cps=1}..."
     "BOOT SUCCESSFUL"
 
