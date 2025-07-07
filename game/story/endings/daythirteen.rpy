@@ -13,14 +13,14 @@ label day13:
         pass
         play music "sfx/alarm.ogg"
 
-    scene mctemproom with fade
+    scene mcroom day with fade
     show flash
     window auto
 
     n "You wake with a start. Red lights fill your vision, and a grating alarm plays, almost as like it's inside your head."
-    stc "Emergency detected. Automatic wake-up sequence initiated."
-    stc "Please gather all vital equipment and proceed to the nearest surface elevator."
-    stc "Surface elevator nearest SECTION 7, CHAMBER 14: [[ INFORMATION UNKNOWN ]"
+    ac "Emergency detected. Automatic wake-up sequence initiated."
+    ac "Please gather all vital equipment and proceed to the nearest surface elevator."
+    ac "Surface elevator nearest SECTION 7, CHAMBER 14: [[ INFORMATION UNKNOWN ]"
 
     mc "Shit. Shit shit shit. Oh my god."
 
@@ -362,7 +362,7 @@ label saverob:
     mccut "{color=#fff}Oh my god."
 
     hide screen cuttextbox
-    scene cctemproom with fade
+    scene ccroom with fade
     show flash
     $ cutscenetextbox = False
     window auto
@@ -489,7 +489,7 @@ label saveccunknown:
     n "{color=#fff}You plug the canister on the back into CC's ports and lock them in place."
 
     hide screen cuttextbox
-    scene cctemproom with fade
+    scene ccroom with fade
     show flash
     $ cutscenetextbox = False
     window auto
@@ -672,7 +672,7 @@ label savekris:
     else:
         pass
     window auto
-    scene kristemproom with fade
+    scene krisroom with fade
     show flash
     n "You push your way into Kris' conference room."
     n "It's a little difficult to get through the jammed door, but you make it in."
@@ -710,7 +710,7 @@ label savekris:
     n "{color=#fff}...and drops off his rail."
     window auto
     hide screen cuttextbox
-    scene kristemproom with fade
+    scene krisroom with fade
     show flash
     $ cutscenetextbox = False
     show k look offrail with easeinbottom
@@ -737,7 +737,7 @@ label savekris:
 
 label nokris:
     $ emv_kris = True
-    scene kristemproom with fade
+    scene krisroom with fade
     show flash
     window auto
     n "You push your way into Kris' conference room."

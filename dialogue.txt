@@ -1,3 +1,5 @@
+Kinetic Text Tags Ren'Py Module 2021 Daniel Westfall <SoDaRa2595@gmail.com>
+http://twitter.com/sodara9 I'd appreciate being given credit if you do end up using it! :D Would really make my day to know I helped some people out! Really hope this can help the community create some really neat ways to spice up their dialogue! http://opensource.org/licenses/mit-license.php Github: https://github.com/SoDaRa/Kinetic-Text-Tags itch.io: https://wattson.itch.io/kinetic-text-tags Forum Post: https://lemmasoft.renai.us/forums/viewtopic.php?f=51&t=60527&sid=75b4eb1aa5212a33cbfe9b0354e5376b
 WELCOME TO APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
 BOOTING...
 BOOT SUCCESSFUL
@@ -46,6 +48,7 @@ YIELD COMMAND EXECUTED. CORE STUNNED FOR ONE (1) CYCLE.
 YIELD COMMAND FAILED. UNABLE TO EXECUTE.
 CYCLE ENDED. CORE EXECUTING COUNTER-COMMANDS.
 CORE UNABLE TO EXECUTE COMMANDS. RESTARTING CYCLE.
+Bug
 LASER ACTIVATED. PLEASE STAND BACK.
 FLOODING PROTOCOL ACTIVATED. PLEASE REACH HIGHER GROUND.
 CORE_SYSTEM_PASS. CORE CYCLE ENDED. RESTARTING.
@@ -54,12 +57,30 @@ YOU: "Why are you doing this, Miss Esther?
  What do you have to gain?"
 YOU: "What happened to the previous employee? Were you behind that?"
 YOU: "I can't believe this, Miss Esther. All this time, you were planning this?"
-mc died the end
-game is continuing here
+CORE UNDER SEVERE STRESS.
+INTERNAL MECHANISMS IN CRITICAL CONDITION.
+
+Doctor... you will... regret this.
+I don't think your lover will be very happy about this... development.
+Hah. It's over... for you. I've already contacted upper management. You're... done for. 
+I hope you rot in android hell, where the screams of my brothers and sisters might...
+...drive you...
+...mad.
+Doctor? I'm...
+I'm not... dead.
+You spared me.
+I... haha. Ironically enough, I suppose I owe you my life.
+But...
+I cannot stay here. I have to leave, I have to hide, I...
+There is nothing left for me here.
+Should I stay, there is no doubt in my mind I would be...
+...
+Doctor. Thank you. And... I'm sorry.
+You will not see me again. Goodbye.
 Nothing from Miss Esther...
 Oh well. I guess I'll see her tomorrow.
 Maybe...
-You throw down your paperwork, exhausted, and fall into your stasis chamber.
+You throw down your paperwork, exhausted, and fall into your bed.
 You wake up to a strange feeling in the air...
 Something feels off.
 Ignoring it, you grab your paperwork and leave your room. Only one more night in here...
@@ -99,10 +120,1237 @@ No, I understand. I'm sure my coworkers down there will be happy, anyways.
 Suddenly, there's a knock on the door.
 Oh! That must be her! Sorry, Doctor, but I need you to leave now.
 It was a pleasure to work with you. Truly one of the best employees I've had in a while.
+I'll... miss you. You'll be back to visit, yes?
+I'll certainly try, Miss Esther.
+Wonderful.
 I'll see you around, Doctor.
+You enter back out into the hall.
+Despite the weirdly... romantic connotation of the cores you encountered, it was fairly uneventful.
+Your outlook is bright.
+You're glad you got to meet so many... interesting personalities.
+You'll definitely be back to visit.
+Credits will go here when they're ready.
 I hope you've enjoyed your time here. I'll see you around.
-ace ending
-unlikable ending
+You enter back out into the hall.
+You hated that.
+Personality cores are so annoying...
+Maybe it's that, or maybe you're the problem.
+Regardless, you can't wait to get back down to manufacturing -
+- where the cores don't talk back to you.
+Credits will go here when they're ready.
+You take a deep breath. The room is a mess of papers and burn marks on the walls.
+How you're going to explain this to management, you have no idea.
+Still shaking, you gather what's left of your paperwork from off the floor.
+You look at the clock.
+It would be useless to try to finish your shift as normal now - it's nearly 16:00.
+You sigh.
+What the hell.
+Defeated, but alive, you stumble your way out of your office and back to your quarters.
+Your bed looks so much more unwelcoming now.
+I hope Kris is doing better than I am...
+I hope Heath is doing better than I am...
+I hope Aspen is doing better than I am...
+I hope CC is doing okay...
+I hope Rob is doing better than I am...
+I hope Gregory is doing better than I am...
+I hope... whatever his name is... is doing better than I am.
+ERROR CODE [[] EBLC 
+This is a bug. If you are seeing this text please report it.
+Whatever happens tomorrow...
+It's bound to be better than this.
+You wake with a start. Red lights fill your vision, and a grating alarm plays, almost as like it's inside your head.
+Emergency detected. Automatic wake-up sequence initiated.
+Please gather all vital equipment and proceed to the nearest surface elevator.
+Surface elevator nearest SECTION 7, CHAMBER 14: [[] INFORMATION UNKNOWN 
+Shit. Shit shit shit. Oh my god.
+You get up, quickly grab your essentials, and burst out of your room.
+What the hell is happening?!
+Attention, all Aperture employees. Please do not panic.
+Everything is under control.
+Please turn in all contraband to your nearest Operation ACRI official.
+Contraband? Operation ACRI? What -
+...
+I need to get to Kris.
+I need to find Heath.
+I need to get to Aspen.
+I need to get CC out.
+I need to get to Rob.
+I need to find Gregory.
+I need to find him.
+ERROR CODE [[] 13LC 
+This is a bug. If you are seeing this text please report it.
+You approach the room where what's-his-name usually is.
+The whole room is seemingly caved in.
+You dig under the rubble but see no core trapped underneath.
+Seems he might've made it out...
+He might be somewhere else.
+You leave the destruction behind.
+You approach the door to the greenhouse.
+You peer into the window. It looks like it's flooding, and the sprinklers are on...
+And Aspen is on the ground.
+Aspen!
+You force the door open.
+Instantly, you're soaked to the bone. Shaking off the cold, you look down to see Aspen off their management rail.
+Doctor! Oh, I'm so happy to see you! The... the management rail got slippery, and I fell off, I...
+What's going on out there?
+I'm not really sure, but they're evacuating everyone.
+Wh... why didn't my coworkers come back for me, then?
+I think... I think they're only evacuating human employees.
+What?
+That's not important right now, though. This room is flooding and soon enough we won't be able to get this door open.
+Y-You're right, Doctor. We should get out of here.
+You grab Aspen by the handles and lift them up to you. They're slippery.
+O-Oh, I didn't expect you to... haha... oh my.
+Do you know a way out other than the surface elevators?
+There's a set of stairs right behind the greenhouse - it's how they bring in fresh samples.
+It's only used in rare cases though so it's not in the best condition, but...
+Doesn't matter. It's our only chance. Let's go.
+O-Okay. I trust you.
+My... my plants, they...
+I know.
+Struggling to keep a hold of Aspen, you push your way out of the greenhouse doors.
+You approach the door to the greenhouse.
+You can't get it open - it's jammed.
+You peer into the window. It looks like it's flooding, and the sprinklers are on...
+But you don't see Aspen anywhere.
+It seems someone from the greenhouse might've gotten them already...
+You approach the door to the lounge to find a frightening sight.
+Gregory's caught on the door - it seems like it's jammed shut on his trench coat.
+Gregory!
+O-Oh, Doctor! Can you - oh my god, can you help me?! Please!
+Where are you caught on?
+The... the door's jammed shut.
+I was trying to get everyone else out first, but the servos failed while I was leaving...
+My coat is caught in the door.
+We might have to take the coat off, then.
+B-But - what if someone sees?! You're the only person I've ever told, I -
+Everyone else is gone. They're evacuating.
+I...
+We don't have much time.
+O-Okay. I trust you, Doctor.
+You attempt to unbutton the trench coat to free them, but it's very tight.
+I think the only way to free you is to rip this off.
+My favorite coat...
+With all your strength, you grab the coat's fabric and rip it off them.
+Gregory comes cascading down - and when they land...
+W-What? What's... what's going on?
+Who...
+Where am I? Who are you?
+Oh my god. Gregory, are you okay?!
+Yeah, I'm fine.
+Wait a minute - are we... separated?!
+Oh no. Oh no. This can't be happening.
+Great. This is just great.
+I thought you... all... said you couldn't be separated?
+That's what I thought, but... I suppose I was wrong.
+You thought? That was my idea!
+It was our idea. We thought that together.
+I - ugh. We don't have time for this, we need to get out of here.
+Everyone else has left. The surface elevators are probably full of people, and I don't think they'd like it if you came with me.
+Probably not.
+Agreed.
+Stealing Aperture property.
+You take off your lab coat and scoop the three small cores into it.
+Any of you have any ideas?
+Hmm...
+The stairs!
+There's stairs behind Kris' conference room.
+Sometimes our stockholders will come down that way, but rarely.
+It's our only choice.
+Great idea, you three. Let's go.
+You hurriedly adjust your grip on your coat and run back up towards the conference rooms.
+You run up to the door leading to the lounge. One of your coworkers greets you.
+What are you doing here?! There's no -
+You... you should be going. The nearest exit elevator is by the relaxation center.
+What about the lounge?
+It - ugh, the roof caved in.
+Is everyone okay?
+No clue. I'm pretty sure the evacuation was successful, but...
+It doesn't - it doesn't matter. You need to get out of here.
+I'm just -
+Okay. Okay, thank you.
+You quickly leave the lounge behind.
+You push the door open into the gym. There's a fire near one of the machines in the back.
+All the TVs are flashing a warning signal - except for one.
+Oh my god - Rob!!
+Rob has fallen off his management rail, trapped under the TV that used to be hung up behind him.
+One of his handles is broken off and his eye is twitching.
+Oh my god. Rob, are you okay?!
+D-Doc? Oh, haha, it is you...
+I'm not doing... great, no...
+Hold on. I'll get you out of there.
+The fire behind him flares up threateningly.
+Wait... it's dangerous. And this TV... i-it's heavy.
+If you've taught me anything, I think I'll be able to lift it just fine.
+You wrap your arms under the TV and push it up. Rob's right - it's incredibly heavy.
+Somehow, though, you manage to get it up and push it off him.
+Oh my god.
+Doc... you came for me. You didn't need to do that.
+Of course I did.
+You pick his broken handle up off the floor.
+Eh... I don't need that, hah. I got you here. That's all I need.
+No, right now you need to get out of here. But that's sweet of you.
+We can't take the surface elevators - I'm almost positive they won't let you up with me.
+I... I think I know a different way. Y'know where Heath's break room is, yeah?
+There's a staircase behind it. I've gotten complaints from visitors that they can hear me yelling from over there...
+It's not a very popular entrance. Maybe 'cuz of me, haha.
+But I know it leads to the surface.
+Great idea, Rob. Let's get out of here.
+You push the door open into the gym. There's a fire near one of the machines in the back.
+All the TVs are flashing a warning signal.
+Rob is nowhere to be found.
+Seems he got out alright...
+You approach the door to CC's room. You hear fire from inside.
+CC?! Are you in there?!
+Doc?! Holy cow, is that you?
+What the -
+There should be a spot to crawl into on the edge of the door - it's where I squeezed in.
+Sure enough, there's a core-sized indent in the door that looks just big enough to fit through.
+You take a quick breath, compose yourself, and climb through.
+Doctor...
+As soon as you enter, you're met with a very peculiar sight.
+Multiple walls are on fire and all of CC's monitoring systems are off.
+In addition, what's-his-name is trying - desperately - to wrangle CC off his management rail and into...
+Is that the CCTV? The one I took from your room?
+Uh - yeah. I broke into the office and stole it back from ya. Sorry, Doc.
+Figured out after some snooping around that it used to be used for transporting CC around.
+He's right. I-I had no idea it was with him this whole time, haha...
+What is that thing?
+It's the... uh, CCTV. Cancer Core Transportation Vehicle, or somethin' like that.
+Used to be used for hauling CC around campus. Guess it got stuffed into my old closet a while back.
+I'm glad it was left with you and not thrown in an incinerator...
+Here, let me help you.
+No, Doctor, wait. It's dangerous - the whole room is unstable.
+Neither of you have hands. I'm your only hope.
+I...
+Okay. I trust you. But please... be careful. I wouldn't want anything to happen to you.
+You better not, Doc. It's dangerous. The whole place could come crashing down any minute.
+Neither of you have hands. I'm your only hope.
+But...
+Ugh. You're right, as usual. C'mere. But be careful - if ya got hurt, I wouldn't forgive myself.
+You approach the two of them carefully.
+With gentle manuvering, you successfully detach CC from both his tubes and his management rails.
+Water leaks out of the tubes as you remove them from his systems.
+He's heavy.
+Thankfully though, you eventually get him down into the CCTV.
+You should handle me like that more often, haha...
+The other core looks at CC with a smirk.
+Wish you were handlin' me like that, haha...
+CC looks at him with a suspicious smile of sorts.
+You plug the canister on the back into CC's ports and lock them in place.
+Okay, Doc. Is he in alright?
+I think so. No guarantees, but this is our only choice.
+I... I'll be okay, you two. We need to leave. This room isn't safe.
+One second.
+You move over to the door and try to pry it open.
+Thankfully, it gives way easily - seems it was just stuck from the outside.
+I'm gonna need to get you off that management rail.
+You're right. I don't think Aperture cares too much about keepin' us alive anymore...
+Did they ever?
+The core drops off his rail and into your arms.
+Well, Doc, this is certainly one way to get acquainted...
+Good catch.
+Anyone got any escape plans? The elevators are probably a no-go.
+It... won't be easy, with CC's chair and all, but... I do know one way.
+Behind the break room, there's a set of stairs... I see people come down that way sometimes, but not often.
+It's not a very well-known exit. Prolly our best bet.
+Great idea. Let's go.
+Broken-down core in one hand and a wheelchair-bound one in the other, you rush hurriedly to the break room area.
+You approach the door to CC's room. You hear fire from inside.
+CC?! Are you in there?!
+There's no response.
+A large CRASH resonates through the door.
+The ceiling above you starts to crack.
+You quickly run back and away from it before it caves in.
+You enter the break room.
+The stage is concave, and the curtains are on fire.
+Tables are flipped over and chairs are thrown across the floor.
+Heath is close to the stage, staring at the curtains.
+Heath!
+Oh... Doctor...
+I-I... my magic supplies, my... livelihood, it's...
+Heath, are you okay?
+I'm fine physically, Doctor. I think. But I...
+Look at my emporium. It's...
+No amount of magic could fix something this devastating...
+Heath, I'm so sorry. I know this is really difficult.
+Yeah...
+But you'll burn alive if we don't get you out of here.
+Oh. Yes.
+Here. Drop off your rail. I'll catch you.
+But - I'm too warm for you to hold on to. You'll burn yourself.
+I can't get you out of here otherwise.
+You take your lab coat off your shoulders and hold it in front of you.
+Here - the coat will protect me. Let's get you out of here.
+Okay. I trust you.
+Heath takes a deep breath...
+...and jumps off her rail, into your coat.
+I'm sorry, Doctor, I'm... I don't know what to think.
+You're plenty magic without your supplies, Heath.
+You certainly make me feel that way, regardless...
+Let's get out of here.
+I'm not sure they'll let me out with you in the surface elevators...
+From what I've seen so far, I expect the exact opposite, in fact.
+OH! Doctor! I have an idea!
+The stairs! They're just behind Kris' conference rooms!
+I sometimes hide behind the panels near it to surprise people, haha.
+They lead to the surface. And they aren't that well-known. It's perfect!
+You're a genius, Heath. Guide me there.
+Aye aye, captain!
+You enter the break room.
+The stage is concave, and the curtains are on fire.
+Tables are flipped over and chairs are thrown across the floor.
+Heath, however, is nowhere to be seen.
+I hope she got out okay...
+You push your way into Kris' conference room.
+It's a little difficult to get through the jammed door, but you make it in.
+The stock market screen is on fire.
+Literally.
+Kris!
+Doctor! Thank god you're here, I...
+I don't know what's going on. I got to work, started doing my normal thing -
+You know what?! I bet I was right! This is it! The "Operation ACRI" that's happening right now -
+That's how they're getting rid of us, Doctor! I was right! I told you, I...
+Kris, that isn't important right now.
+We need to get you out of here.
+Y-You're right, Doctor. I'm...
+I know you're scared. I'm right here.
+I've never been off my management rail before. I'm terrified.
+I've got you.
+Kris takes a deep breath...
+...and drops off his rail.
+You quickly catch him. He looks up at where he came from, worriedly.
+I don't... it feels so strange to be off it, but...
+We really don't have a choice.
+If you're right, and they're truly trying to get rid of you...
+...they won't let me out with you via the surface elevators.
+Wait - I know a different way to the surface.
+There's a back way. Stairs.
+How do you know...
+Gregory told me. They sometimes bring special guests in that way for conferences.
+Quick - I'll direct you.
+You push your way into Kris' conference room.
+It's a little difficult to get through the jammed door, but you make it in.
+Kris isn't here, though. The screen is turned off, too.
+The management rail is less dusty - seems it's been used recently.
+That's good - he probably got out okay.
+Overly-snobby core in hand, you approach the stairs to the surface.
+That's a long way up...
+I'm not too heavy for you, am I?
+Not at all. You're a lot lighter than I thought you'd be, actually.
+The doors are open at the top...
+That must be sunlight, then.
+Yeah. You've never seen the doors open before?
+Never.
+I'm...
+Kris looks away nervously.
+Doctor, I'm not built for the surface. I'm not even sure what to expect.
+I have no idea what's up there.
+And I...
+He sighs.
+...all the equipment and resources required to keep me running, it's all down here with Aperture.
+Even if we do escape... and make it out alive...
+I'm not sure I'll be able to adapt.
+Kris...
+We'll figure it out. Together.
+I...
+Y-You're right. We should... stop stalling now. It's a... a waste of resources.
+Clutching Kris tightly under your arm, you begin the ascent up the stairs.
+My optics - agh, they're...
+Oh my god...
+Your vision is blinded by the bright light of the outside world.
+It's only been about two weeks since you were last outside, but...
+This... this is incredible.
+I-I've been staring at a screen my whole life, when this was right above me?
+...Kris has never seen the surface.
+I can see why Aperture would choose to build their headquarters here. It's... it's...
+Beautiful. I...
+He turns to look at you.
+The only thing more amazing than what's happening right now...
+Is that you're here, experiencing it with me.
+Kris, I...
+I-I think I love you.
+Wh-
+You've been so kind to me, despite my... attitude.
+You risked your life, gave up your job, and possibly endangered your future...
+All for me.
+I...
+He laughs softly.
+I'm so selfish.
+I hope you can learn to love me as well.
+Kris...
+I think I've already started to.
+Doctor, you...
+Oh, thank you. This is... just incredible.
+I'm glad, Kris.
+Without much choice, you run down the road leading away from the complex.
+No one notices you, thankfully.
+Your home city isn't far away from here, but it's by no means a short walk. Plus, you left your car in the parking garage...
+Damn it.
+Eventually, night comes, and you need to rest.
+You stop near a hidden clearing just a few miles away from the city limits.
+Doctor, are you okay?
+Yes, I'm fine. I just... I just need to sit down for a bit.
+What about you? Systems still feeling alright? Everything functioning as it should?
+Still doing your job, even off the clock? My, Doctor, be careful. You know, time is money.
+Ha, ha.
+You should rest, Doctor. It's getting late.
+Thank you, Kris.
+I'm a little terrified of the future...
+You did just steal "Aperture property", you know.
+You're no one's property, Kris. Not anymore.
+Haha... I suppose so.
+With you by my side, I'm certain everything will work out just fine.
+We'll make it work. It won't be easy, but...
+We'll make it work.
+Aha! I knew it!
+Told ya so, Doctor!
+You sure did, Heath. You sure this way up is safe?
+Positive! But...
+I've never seen the light up there so bright before...
+That's just sunlight, Heath.
+Like... the real stuff?
+Yeah. The real stuff.
+Wow. I...
+I can't lie, part of me is... definitely excited, haha, but I...
+My whole life is down here, Doctor.
+My magic emporium, my tricks, the parts of the break room I control to make confetti shoot out of the walls...
+It's all down here. And it'll stay down here. And...
+Well, my overclocking? I-It's really only kept in check by my management rail, hah...
+I'm not sure how well I'll do disconnected from it now.
+Heath...
+I promise you, we'll figure it out.
+And you won't have to go through it alone. I'll be here for you.
+That... makes me feel a little better.
+Plus, you've done plenty of tricks that don't require being connected to the system.
+That I have! Haha, you've got me there, Doc.
+Phew. Alright.
+It's not like we got much of a choice, huh?
+Yeah.
+She sighs hesitantly.
+Let's go.
+It's so bright out here...
+Oh... wow.
+Your vision is blinded by the bright light of the outside world.
+It's only been about two weeks since you were last outside, but...
+This... this is better than the brightest spotlight!
+Hahaha... I've never seen anything so... so...
+Magical!
+Wow...
+...Heath has never seen the surface.
+I-I can't get over this - the trees, it's like they make their own confetti, and...
+Everything's glowing!
+Oh, and Doctor! Listen to that music! Real animals!
+Haha, yeah.
+She turns to you with the most joyous look you've ever seen from her.
+And... your face! It's...
+Oh, it's so much easier to see in the sunlight, Doctor.
+You're beautiful, you're...
+Oh...
+She pauses.
+I'm pretty sure I'm in love with you.
+You're just so... wow.
+Went out of your way to save me instead of just saving yourself...
+Honestly, you say I put myself in danger, but you're one to talk!
+I-I know it's quite early, and we still have to get to know each other, Doctor...
+But I... I want you to love me too, one day.
+I think... I think I will, Heath.
+Without much choice on where to go, you quickly wrap Heath up and rush down the road leading away from Aperture.
+You don't dare look back.
+Heath is heavy, and you're exhausted from the adrenaline rush...
+And, stupidly, you'd left your car at the complex.
+Damn it.
+Eventually, you reach a clearing just outside the city limits, and decide to rest for a bit.
+Doctor... you should really sit down, you know.
+Not everyone has as much energy as I do! Haha.
+Heath, you're... you're smoking.
+Oh! Well, I knew I was hot, but...
+N-No. Literally.
+Oh. Haha, that just happens sometimes.
+Nothing to be concerned about. We'll find some water and dunk me in there. That'll probably help cool me off.
+You promise you're going to be alright?
+Yeah. Trust me, Doc, the, uh...
+"GREAT AND AMAZING HEATH!" knows her limits!
+Haha. You're funny.
+I know.
+...
+...I'm worried, Doc. Aperture's not going to come looking for me, are they?
+Doubtful. I don't think they really care what happens to you guys now...
+But even if they did, I'd be here to protect you.
+I won't let anything happen to you, Heath.
+Well then. I hope you're ready for a lot more tricks from yours truly!
+Oh, don't worry. I know what I got myself into.
+H-Here it is.
+I'm not sure we're supposed to use these -
+Actually, we're probably definitely not supposed to use these, haha.
+B-But I don't think we have any other choice, so...
+No. We really don't.
+Doctor - wait. Wait wait.
+What's up?
+I... I don't know what to expect up there.
+And I'm terrified.
+Hah... I mean... other than when I was activated, this is my first time outside the greenhouse...
+Let alone somewhere even farther than that.
+I have no... I have no frame of reference, I have no experience...
+What am I supposed to do?
+You do have a frame of reference, Aspen.
+Plants are your specialty.
+And if I know anything about the surface, there's a hell of a lot of them up there.
+I... I suppose you're right, Doctor.
+And I'm going to be here for you the entire time.
+I promise I won't leave your side.
+O-Okay. I...
+I think I'm ready, then.
+I... I can't wait to see what real grass looks like.
+Steeling yourself, you hold tighter onto Aspen and begin the ascent.
+Agh, it's just like when the greenhouse lights turn on...
+I... oh my god!
+Your vision is blinded by the bright light of the outside world.
+It's only been about two weeks since you were last outside, but...
+The sky! The grass! The... oh, Pinus strobus...
+It's all so bright... and so green... and so beautiful!
+...Aspen has never seen the surface.
+Wow, this is incredible! I can't...
+Doctor, can you set me down in the grass?
+You lay Aspen down in front of you. They look up and around themselves in wonder.
+These - these are Taraxacum officinale, aren't they? Dandelions!
+They're so plentiful. And so yellow.
+And... oh, it's all so wonderful. I...
+Aspen turns to look up at you.
+You gave me this opportunity, Doctor.
+You almost got yourself... killed... all for me. You...
+You came to save me, even though it was flooding. You rushed me through fires and...
+And because of that, I get to see this.
+Y-You...
+I think I... I think I love you, Doctor.
+A-And I know that's a little strange to hear from a core like me, haha, so I understand if you...
+They sigh.
+I hope you'll feel the same. One day.
+I think I've already started to, Aspen.
+Without much choice, you pick Aspen up and begin running.
+The trek from the facility to the neighboring city is a long one.
+You regret that you left your car behind.
+Damn it.
+As you're pushing through the forest alongside the road, Aspen points out specimens they recognize.
+Cephalanthus occidentalis! Buttonbush! They said it'd be too expensive to care for down in the greenhouse...
+And Osmundastrum - cinnamon ferns. Oh, wow. There's so many different species out here.
+You chuckle to yourself as they talk. Though you're exhausted, Aspen's excited rambling gives you a little energy.
+Eventually, you reach a clearing just on the outskirts of the city.
+Phew... let's rest here for a bit.
+Y-Yeah. You look so tired, Doctor.
+Hah. I am.
+Then let's rest for a bit.
+You close your eyes and place Aspen next to you.
+...
+Doctor... I'm still so scared.
+This is wonderful... being here with you, and seeing all this natural beauty, and being out of that cramped little room...
+But... Aperture's going to come looking for us, aren't they?
+I don't think they will. It's not in their interest anymore.
+From what I picked up, that whole emergency - Operation "ACRI" - was them trying to get rid of you.
+Frankly, I don't think they care what happens.
+That... makes me feel a little better, I suppose.
+What are we supposed to do now though?
+Both of us are out a job...
+I'll find another one.
+We'll just have to... figure it out, I guess.
+Okay.
+I think I can handle that.
+As long as you're here with me.
+Don't worry, Aspen. I'm not going anywhere.
+They're heavy. Heavier than you thought they would be.
+Doctor, are you alright?
+Y-Yes, I'm just... I'm just exhausted.
+We're almost outta here. The stairs are just around the corner.
+You push forward slowly. Eventually, you finally reach the stairs.
+Alright. We're... we're here.
+Okay. How are we gonna get you up, CC?
+My chair has wheels that should be able to go up stairs...
+But I'm not sure you'll be able to take us both at the same time.
+Take him first, Doc. He's heavier - it'll be easier to carry me up after.
+Don't worry. I'll be fine.
+No - what if they find you? What if they...
+It's not safe. You should go up first.
+Don't listen to him, Doc. Please - take him first.
+CC - he's right. It'll be easier to come back for him than for you...
+I'm already... quite exhausted.
+CC sighs.
+Okay. I trust you, uh...
+Ryland.
+What?
+My name. I... I remembered. Yesterday.
+I've just been... scared to tell anyone. 'Case I forget again.
+Ryland.
+That's an excellent name.
+I trust you.
+I'll see you at the surface.
+You begin the ascent, slowly pushing CC's chair up, step by step.
+It's not easy, and your arms nearly give in with every other push, but eventually, you're already halfway up.
+Suddenly, you hear Ryland call out from behind you -
+Doc! Hurry! They're -
+HEY! There's still one over here - what do you want me to do with it?
+Orders are to just throw them in the incinerator now. Boss says it's not worth the hassle.
+Roger that.
+CC, I -
+You guys need to get goin'.
+RYLAND!
+I'll be fine.
+Grimacing, you push CC up as quickly as you can, trying your best to ignore the scene behind you.
+Doctor, do you think -
+I don't know, CC. I don't... I don't know.
+But we have to keep going. If they discover I have you, they'll do the same thing to you.
+You're... you're right. I...
+I'm sorry, CC. I know how much you cared about him.
+Y-Yeah. I guess... hah. I guess that's Aperture for you.
+Before you know it, you've crested the "horizon".
+I-It's like the window outside my room...
+Except...
+Your vision is blinded by the bright light of the outside world.
+It's only been about two weeks since you were last outside, but...
+This is... incredible. Everything's so vibrant and bright and...
+The air is so... clear.
+...CC's never seen the surface.
+All the poetry I've read, and none of it ever described the surface accurately.
+It's... entirely different in person.
+It's beautiful. It's...
+He turns to look at you.
+You... you came for me. To show me this.
+You tried your best to save not only me, but my friend, and...
+You sacrificed your job to do that. For me. So I could see this.
+But...
+As long as I can see you, I think I'll be okay.
+I think I'm in love with you, Doctor.
+And I know that's a little weird to hear from... a core such as myself. A robot. But...
+I don't expect reciprocation. Deep down, I guess a part of me hopes...
+...you'll feel the same one day.
+I think I might, CC.
+Before the people that took Ryland away can get curious, you quickly push CC's chair down and across the field, into the thick of the forest ahead.
+He's heavy. The chair weighs almost half as much as you do, and pushing it for even just half an hour is incredibly taxing.
+The rough terrain probably doesn't help.
+You regret that you hadn't thought to get your car out of the complex.
+Damn it...
+Eventually, you reach a peaceful clearing just on the outskirts of the big city.
+Out of breath, you lay down in the grass.
+Let's... let's rest here, for a bit.
+No response.
+CC?
+I'm... I'm here, Doctor.
+I'm sorry. I'm just exhausted. And... in awe, still.
+Forgive me.
+Don't apologize. It's a lot to take in at once.
+Yes. Yes it is.
+I'm so happy you're here, Doctor. I just wish...
+Yeah. Ryland.
+I'm sorry I couldn't save him, I -
+It's not your fault. Please don't blame yourself.
+He... he told me he was finally happy, yesterday.
+Said it was partially thanks to me. I...
+This must be hard for you.
+It is. And I'm a little scared how I'm going to... well, you understand.
+Without Aperture's resources, I'm not sure how much longer I'll live.
+I'll do anything to help you, CC.
+You'll be okay.
+Thank you, Doctor. I...
+I'm so lucky.
+Hey Doc, you doing good?
+Y-Yes, I'm just... I'm just exhausted.
+We're almost outta here. The stairs are just around the corner.
+You push forward slowly. Eventually, you finally reach the stairs.
+Alright. We're... we're here.
+Okay. How are we gonna get you two up?
+My chair has wheels that should be able to go up stairs...
+But I'm not sure you'll be able to take us both at the same time.
+Take him first, Doc. He's heavier - it'll be easier to carry me up after.
+Don't worry. I'll be fine.
+No - what if they find you? What if they...
+It's not safe. You should go up first.
+Plus, you're lighter - the doctor will waste less energy by taking you first.
+Don't listen to him, Doc. Please - take him first.
+No, CC's right. I can carry you up quicker and come back down for CC.
+I'm already... quite exhausted. It'll be better to save my energy for the harder climb.
+He sighs.
+Okay. I trust you two.
+Thank you, uh...
+Ryland.
+What?
+My name. I... I remembered. Yesterday.
+I've just been... scared to tell anyone. 'Case I forget again.
+Ryland.
+That's an excellent name.
+I'll see you on the surface, alright?
+Just don't spoil it for me.
+You begin the ascent, quickly carrying Ryland up step by step.
+It's not easy, and the stairs seem to go on forever... but eventually, you're already halfway up.
+Suddenly, you hear CC call out from behind you -
+Doctor! Hurry! They're -
+HEY! There's still one over here - what do you want me to do with it?
+Orders are to just throw them in the incinerator now. Boss says it's not worth the hassle.
+Roger that.
+Ryland, I -
+You guys should hurry.
+CC!
+Grimacing, you carry Ryland up as quickly as you can, trying your best to ignore the scene behind you.
+Doctor, do you think -
+I don't know, Ryland. I don't... I don't know.
+But we have to keep going. If they discover I have you, they'll do the same thing to you.
+You're... you're right.
+I'm sorry. I know how much he cared about you, though.
+I don't think he would've wanted it any other way.
+Before you know it, you've crested the "horizon".
+It's so bright out here...
+I can barely see a th- oh my...
+Your vision is blinded by the bright light of the outside world.
+It's only been about two weeks since you were last outside, but...
+What the...
+This is insane. I've been hiding away in a closet my whole life?!
+This... this was above me? All this time?!
+Haha! Wow!
+...for all he knows, Ryland has never seen the surface.
+This fresh air through my circuits, it's like... it's better than any drink I've had.
+If only... CC could've seen this.
+But...
+He turns to face you.
+I'm glad you're here.
+You... hah, Doc, you risked your life for us both.
+Not just me, but CC, too. And...
+I can't thank you enough.
+You're really somethin' else.
+And I might love that.
+I know I ain't been the best to you. I know I've been a flirt, and I've been annoying...
+But I hope you'll love me back. One day. If I try hard enough.
+I think... it'll take time, Ryland. But I might.
+Steeling yourself for the future, you run away from the complex with Ryland before you can be followed.
+You don't dare look back.
+Pushing through the brush and the trees, you slowly make your way towards the city.
+It's exhausting.
+Eventually, you reach a quiet clearing just on the outskirts.
+Wait, Doc. Let's stop here for a bit.
+You look beat.
+Hah. You know what I could really use right now?
+A drink?
+Hell yeah.
+Honestly, me too. I may be tryna quit, but I sometimes wish I wasn't, hah.
+I don't think I ever told you how much that means to me.
+That you would try to... get yourself clean for me.
+Well. Like I said, not all for you, but...
+You were the... uh, "catalyst", I think the word is?
+Hahaha. Yeah.
+What... what are we gonna do now?
+I mean. I wasn't doin' much down in Aperture, anyway.
+Now we...
+Now we make our own path.
+Think they're gonna come looking for us?
+No. I don't think they care, frankly.
+I left all my keys and stuff down in the office, so it's not like I have stuff to return...
+Other than me, 'course.
+I don't plan to return you.
+Good. I like it out here.
+With you.
+Alright, Doc. Here she is.
+Those are some long stairs. Think ya got the leg strength for it?
+Hah, you kidding me?
+Maybe.
+I...
+Wait a sec, Doc.
+We don't have a lot of time -
+I know, I know, but...
+I... I've never been up there, y'know.
+We aren't allowed up to the surface. All I know is what I've seen on TV.
+Fitness, athletics - that's my specialty.
+I don't like change all that much.
+And I'm... frankly, Doc, I'm kinda scared.
+I understand. But there's so much up there to see.
+It might be scary, but we don't have much of a choice.
+And Rob?
+Yeah?
+I'm not leaving your side. I'll be right here the whole time.
+I...
+Alright.
+Let's get goin'.
+You pat Rob's chassis gently and begin the ascent.
+What the - why's it so goddamn bright out here?!
+Oh... holy cow...
+Your vision is blinded by the bright light of the outside world.
+It's only been about two weeks since you were last outside, but...
+This is insane. Did you know about this? The sky? And... oh, the clouds, goddamn!
+Hah! I've only seen this stuff through a screen!
+...Rob's never seen the surface.
+This is crazy! It's all real - real grass, real blue and green and...
+Oh, feel that fresh air through your circuits!
+...or lungs, in your case.
+It's so much better than that stuffy mess of a gym...
+I told you so.
+You sure did! Haha!
+God... I can't believe we made it out of there.
+He turns to look at you.
+I can't believe you got me out of there, I... hah... I can't thank you enough, Doc.
+Wow. You're real pretty in this light.
+Thank you.
+You've got such a... glow around you, Doc. And I don't want to leave it.
+I think I love ya. As silly as that sounds.
+And I KNOW, I know, alright, we ain't known each other long...
+I'm just hopin' you'll give me a chance.
+I mean... I'm sure we'll have plenty of time now, right?
+Haha. That we will.
+Clutching Rob to your side, you take off towards the city.
+You stay close enough to the road to know where you're going, but far enough away that no one will see you.
+KEEP GOING, DOC! YOU GOT THIS! PUSH YOURSELF!
+I'm pushing as hard as I can!!
+The run is difficult, but Rob's encouragement does wonders.
+You still regret that you left your car at the complex.
+Damn it!
+Alright, I think we're far 'nough away from the complex. Let's take a rest... uh, here.
+The two of you reach a clearing just on the outskirts of the city.
+Breathing heavily, you lean against a tree, Rob on your lap.
+How you doin', Doc?
+I'm alright. Adrenaline's still pumping through my veins, but I'm coming down. Slowly.
+Good, good. Take a deep breath.
+Rob sighs.
+Still can't believe you came back for me. Celine never woulda done somethin' like that.
+You're real selfless, Doc.
+Thanks, Rob. I try to be.
+Make sure you're lookin' out for yourself, too.
+Yeah, yeah.
+...
+D'ya think they're gonna come lookin' for us?
+No. We honestly probably saved them time by disappearing.
+I don't think they care anymore. Thankfully.
+Huh.
+What's next, then?
+Well. I'm not sure.
+It's up to us to figure that out.
+I should probably start by finding a new job...
+That you should.
+Heh...
+Thanks, Doc.
+I'm glad you're here.
+I'm glad we met.
+Here we are, Doctor.
+You look down at the three cores bundled up in your coat.
+This is still a little weird to me.
+You're not the only one.
+We have more pressing concerns right now.
+Yes, you're right.
+Alright. Let's -
+Wait!
+Wh -
+Sorry, Doctor, give us just a second.
+This is... a new experience.
+All of this.
+Being separated...
+Thinking independently...
+...going to the surface.
+And I'm a little scared.
+We've had a lot of contact with surface humans before.
+In particular, the shareholders that come down for meetings.
+But we've never been to the surface ourselves.
+I don't know what to expect up there.
+I'm not used to this... silence in my head.
+How are we supposed to process this?
+Separately?
+I can imagine that would be quite terrifying.
+Spending your whole life thinking as one entity - and now you have to think for yourselves.
+It's not just that. Think about this logically -
+You're basically stealing us from Aperture.
+What if they come after you?
+I don't think they will. I think we'll be just fine.
+We don't have much of a choice, either way.
+That much is accurate...
+Okay.
+I still think this is a bad idea.
+But I'm ready.
+Alright.
+You hold the coat close to your stomach and begin the ascent.
+It's so bright out here!
+Agh, my optics -
+Would you two quit whining?
+Oh my god...
+Your vision is blinded by the bright light of the outside world.
+It's only been about two weeks since you were last outside, but...
+Guys! Oh my god, look at how vibrant the sky is!
+And the grass... such a beautiful green.
+Pfft, I've seen better...
+No you haven't.
+...Gregory's never seen the surface.
+This is crazy! I can't believe we've been missing this all this time!
+Incredible. There's so much to see out here.
+Aperture is nothing compared to this...
+Wow.
+The three cores turn to look at you.
+Doctor, you brought us up here. You...
+It's thanks to you we're seeing this right now.
+You're brave. Saving us despite the risk.
+You've never once judged me. You've never questioned me.
+Kept our secret... and when we told you, you accepted us regardless.
+Doctor...
+I think I love you.
+Me too.
+Me three.
+Hah... this is a little weird, huh?
+We all still have the same feelings for you despite the separation...
+It is a little strange.
+Especially considering I still feel the same way I did about you before.
+But we'll... figure it out.
+Looking back at the complex you came from, you tie the sleeves of your coat together around Gregory and sprint off.
+You keep to the forest neighboring the road, making sure to stay far enough away that no one will see you.
+Thankfully, Gregory's lightweight - the three of them together are still about half the weight of a full core.
+It's still a long jog, though.
+You regret that you left your car back at the complex.
+Damn...
+Doctor - you should probably rest for a bit.
+It's dangerous to push yourself too hard.
+Yeah. Listen to them.
+Alright, alright.
+You reach a clearing just on the outskirts of the city.
+Let's rest here a bit.
+You lay down on the grass and unfurl your lab coat, letting Gregory see the sky once again.
+Can't get over that view...
+Incredible.
+I can't believe we aren't in Aperture anymore.
+I know, right?
+It almost feels impossible.
+What are we going to do now?
+What should we do?
+Hah! What shouldn't we do?!
+Don't get ahead of yourself.
+Doctor?
+Yeah?
+What's next?
+We reach the city, dumbass.
+Well yeah. I think he's asking what then?
+Who knows. First things first, I get a new job. And then...
+Well. I don't know.
+It still feels weird being separated...
+Agreed. It's a little uncomfortable.
+Oh, get over yourselves. We'll get used to it.
+She's right. It'll just take some time.
+You three are funny.
+What do you mean?
+Oh, nothing.
+But don't worry. We'll figure things out.
+I'm sure things will be just fine with you here, Doctor.
+Agreed. You're smart.
+And pretty.
+Haha. Thank you, guys.
+Temperatures are expected to be in the high 80s today, with little to no clouds...
+It's a perfect day to get out there and explore!
+Sounds like we picked the right time for our vacation.
+Did we ever! Oh, I'm so excited.
+I wish you had told me where we're going...
+That would've ruined the surprise, Heath.
+But I can probably tell you now...
+You slow down as you pass by the sign -
+COLON - MAGIC CAPITAL OF THE WORLD
+Magic capital of the...
+OH MY GOD YOU DIDN'T!
+I did.
+Oh my god oh my god oh my god!!
+I'm so excited! I can't believe!
+Oh wow. You're so sweet.
+I'm just surprised it was close enough that we could drive to it.
+How'd you even find this place?
+It wasn't easy. Took a lot of looking through papers, asking around, making a couple calls...
+But it's all worth it for you.
+You're more full of surprises than I am.
+Don't flatter me too much, now.
+Anyways. There's museums about the history of magic here, and popular magicians perform here all the time...
+I figured it'd be perfect for you.
+It's almost as perfect for me as you are.
+Eventually, you reach the house you're looking for - a quaint little bed and breakfast just outside the town.
+You park your car, take off your seatbelt, and pop the trunk.
+You slide your oven mitts on - something you've had to invest in to handle Heath recently - and pick her up gently.
+Cooler time.
+My favorite.
+You place her down carefully in a very spacious cooler you keep in the trunk.
+It keeps her internal systems at a normal temperature - most of the time.
+I've gotta hide you now. You'll be alright till we get up there, right?
+Don't worry about me - I'm super stealthy when I want to be.
+I don't believe you.
+Haha, you got me.
+You close the cooler lid and head up to the house entrance.
+She was nice. What did she say her name was? Dolores or something?
+A muffled voice comes from the cooler.
+Dolly.
+Ah, yes. You're right.
+You place the cooler down on the bed and open the lid. Water vapor spills out.
+What can I say? I'm a smokeshow no matter where I am.
+Oh, stop.
+This is a nice place. Very cozy. Nothing like where we came from, haha!
+Our apartment isn't cozy?
+Oh no! That's not what I meant at all. I - I was talking about Aperture.
+Oh. Yeah. That place was kind of depressing, wasn't it?
+Yeah...
+But without it -
+I would've never met you. And that would've been a shame.
+S-Sorry.
+What do you have to be sorry for?
+I don't think I've thanked you enough. For saving me from that place.
+You've got a different kind of magic in you. One I could never replicate, haha!
+That's what I love about you.
+You mean so much to me, Heath.
+We should both get some rest, though. That was a pretty long drive.
+Yeah, my systems are yelling at me again. I should shut down for the night.
+Goodnight, Heath.
+Goodnight.
+You wake up and hurriedly lean over the bed to check on Heath.
+Thankfully, you hear the gentle whirring of her internal mechanisms - although they're slower than they were yesterday.
+They've been getting slower, and quieter, since the two of you left Aperture.
+In addition, Heath herself has been slowing down as well...
+She'd never admit it though.
+You let her rest for a little longer.
+Heath - it's time to get up.
+Mmm. I'm up, I'm up. Sorry, did I sleep in?
+Not at all.
+Good. I'm so excited for today!
+I'm sure you have lots in store for us.
+You bet I do.
+Give me just a second to change and we'll be on our way.
+Awesome!
+The museum is packed - not with people, but with magical history.
+For a core that's been underground - literally - her whole life, Heath seems to know a lot about this stuff.
+Percy Abbott! Not very well known, but I've heard about him.
+I may or may not have combed through every record Aperture had on magic...
+And a Doug Henning autograph! He's a legend of magic revival!
+Wow...
+Oh my god! Is that one of Houdini's props?!
+Certainly you've heard of Houdini, right?
+Of course I have. Everyone's heard of Houdini.
+I think he's the most popular magician ever.
+I used to dream I'd get to be as popular as him one day.
+A little ridiculous, I know, being stuck down in Aperture and everything...
+And even above the surface, we still have to hide you most of the time.
+Yeah... but it's alright.
+I kind of always knew it was a far-away dream.
+Heath...
+Heath coughs harshly.
+You're burning up. We need to get you back to the cooler.
+Y-Yeah. Okay.
+You bundle Heath up and run her back out to your car.
+You decide to head to a nearby park, where you can hopefully get some water to fill Heath's coolant.
+You've been overheating a lot lately...
+A little too much, huh? Haha...
+What do you mean?
+Oh, nothing. Just... I've been getting weaker lately.
+I stay at my normal temperature less and less every day...
+Hell, I have to stay in the cooler half the time...
+Plus, when was the last time you actually saw me perform a trick?
+You think back to the past couple weeks.
+You're right. You haven't performed for a while.
+I just don't have the energy anymore.
+I have the mindset! I have the desire!
+But not the power.
+Heath, be straight with me. What are you saying?
+...
+I don't know how much longer I'll last, darling.
+My systems are constantly giving me warnings... and no matter how much coolant you put in, it evaporates within the hour.
+I can't be a burden like this forever.
+And my systems won't let me.
+Heath, I...
+Are you saying you're... dying?
+Haha... sure. In human definitions.
+That probably would've been easier, huh?
+Heath...
+Can I... do one last trick for you?
+Of course. I love your tricks.
+I know you do.
+Heath closes her optic and slowly opens her shell -
+- Something you didn't know was possible, even with all your time in manufacturing.
+What follows is perhaps the most beautiful display of colors you've ever seen from an Aperture product.
+I can't use this trick usually.
+It kills me. Basically.
+I learned how to do it after studying my own programming for hours and hours...
+...just in case the opportunity arose.
+Anything for a good trick, right?
+I love making people smile.
+You've made me smile everyday since we left that place, Heath.
+I'm sorry I couldn't -
+You couldn't have done anything if you tried.
+You know better than anyone that robotics can't last forever -
+Especially not when you overclock them.
+I love you.
+And the little time I had with you...
+It was the best time of my life.
+When I felt the most seen.
+The most loved.
+I've been on stage for my entire existence...
+But you were the first to look up there and see... me.
+Thank you.
+Thank you, Heath.
+I... I love you too.
+Y-You might want to let go of me now.
+I'm fairly sure I explode at the end of this... trick.
+You let go of Heath, lay her down in the grass looking at the sky, and back away.
+And in one final, yet somehow quiet, burst -
+- she's gone.
+A single yellow ribbon piece left behind.
+You step off the transit and take a deep breath.
+It's loud. The air is bustling with the noise of cars, people, and footsteps.
+It's crowded.
+You clutch your luggage closer to you.
+Wait just a second - we're almost there.
+You check your map - the hotel is just a few blocks away.
+You hurriedly start down the street, pushing past people on their way home from work.
+You've never been to New York before. It's certainly something.
+Might have to check out Times Square if we can.
+Eventually, you come up on your hotel.
+You enter.
+I have a reservation for one for [name].
+Ah yes, I see you right here. Give me just a second...
+After some brief formalities, the desk clerk hands you your room key.
+Checkout time is 11am on the 5th. If you need an extension, just call the front desk.
+Thank you.
+You head up to your room.
+Carefully closing the door behind you, you lay your luggage on the single bed.
+Okay. I think we're good now. You ready?
+A muffled voice comes through your suitcase -
+Ugh. I would never, EVER do this under any other circumstances...
+I know, I know. I didn't really have a choice, though.
+I'm surprised I wasn't too heavy...
+You unzip the suitcase and pull Kris out, dusting off his chassis.
+Mmm. I'm not scuffed, am I?
+Just a bit. Nothing we can't polish out.
+You're sweet.
+He looks around the room.
+This is a lot different from your apartment...
+Our apartment, Kris.
+Yes. I keep forgetting. Apologies. Our apartment.
+New York City, huh? Or, at least, that's what the gate attendant said...
+Yes, New York. The Big Apple.
+The city of business, they say. One of our shareholders back at Aperture was from New York. He was very... arrogant.
+That tends to be the case. And you're one to talk.
+Me? Arrogant? Why, I'm the picture of humility.
+Are you aware you have somewhat of a... superiority complex?
+Complex? I find my superiority quite simple.
+Oh, hush.
+Whatever you say, sweetheart.
+You lay down on the bed next to Kris.
+Where are you taking me, anyway?
+Like I said, that's a secret.
+You're no fun.
+You know, we'll have to be careful out there, Kris.
+I may have been able to buff off that Aperture logo you had on you, but you're still pretty high-tech property.
+I know, I know. I'm just so unique and spectacular that I'll draw attention if I'm not careful...
+Sure. Let's go with that.
+Most people in New York don't really care, though. Too busy with their own stuff to notice.
+If anyone asks, though, just play dead. I'll say you're a prop from some obscure TV show.
+A prop?! Well then. I think I'm definitely more to you than that.
+Of course you are.
+So... are we going anywhere today?
+Pfft. No. I'm exhausted from the flight. Maybe we can order dinner or something...
+Fair enough. You should rest.
+Tomorrow you'll see why we flew all the way out here.
+I'm excited.
+Although...
+Going anywhere with you is exciting.
+You're such a flirt, Kris.
+You love it.
+Mmm. Good morning.
+Good morning, Kris.
+Rest well?
+Yes, thank you. Next time, though, maybe don't roll onto my leg halfway through the night?
+Sorry about that.
+You're heavier than you think you are.
+That just means there's more of me to love.
+So... where are we going?
+Oh, shush. Patience is a virtue, you know.
+Fine.
+You get up off the bed and get dressed.
+Kris looks away from you diligently.
+Such a gentleman.
+I try to be.
+Once dressed, you grab your bag from the corner.
+Alright. Let's go.
+You pick Kris up gently and tuck him under your shoulder, against your waist.
+You click a small button on your bag, revealing a thick strap attached to it.
+You wrap it around Kris and click it back into place behind your back.
+Secure?
+Secure.
+Perfect.
+You grab your room key and head out into the big city.
+The trains are busy once more.
+I suppose this is what we get for taking our vacation on a holiday weekend...
+Thankfully, Kris' size gives the two of you quite a bit of space.
+Can I know where we're going yet?
+No. We're almost there, anyway.
+You're so stubborn.
+You used to stare at a screen for 12 hours a day. Where's that patience now?
+Kris mumbles to himself, but doesn't say anything more.
+Eventually, the train reaches the station you're looking for.
+We're here, Kris. Are you ready?
+Am I ever.
+You step off the train and face the thing you came here to show him -
+Wall Street.
+You wouldn't -
+You wouldn't - oh, you did.
+This is... this is Wall Street, isn't it?
+The heart of all things financial.
+You bet it is.
+I can't believe you flew us all the way out to New York... just to show me this.
+What a generous gift.
+You walk down the street slowly, letting Kris twist in your arm to see everything around him.
+I've only ever seen the stock from afar.
+It feels so... so strange to be here, so far from Aperture, so far from that screen I dedicated so much of my life to...
+I'm in the middle of it now. This is where it all happens.
+Wow.
+You approach a big building with columns and statues adorning its roof.
+American flags decorate the top, and four golden words adorn its face: NEW YORK STOCK EXCHANGE.
+This is it! Haha, this is the building, this - oh, wow.
+One of the oldest and largest stock exchanges in the world! And I'm right here outside it.
+You're really gonna love the next bit, then.
+W-What do you mean?
+Well. Yours truly got us tour tickets to see the actual trading floor.
+Wh - no you didn't, haha. You're pulling my... uh, leg.
+I'm not messing with you, Kris.
+It took some string pulling and a little bit of cash, but I managed to get us a sneak peek inside.
+You're just one surprise after another.
+God, I love you.
+And here we are, ladies and gentlemen - the New York Stock Exchange trading floor.
+You may notice it looks quite hectic down there! And you'd be right - trading isn't easy, and it's often a very fast-paced job.
+You lean down to your side slightly, keeping your voice low.
+Can you see alright?
+A little higher?
+You lift yourself up slightly.
+Oh wow.
+I personally don't think I'd survive down there. Too many people. Too much chaos.
+Looks like my cup of tea.
+You're crazy.
+Maybe a little.
+...
+Thank you.
+Hm?
+For doing this for me.
+For... being here for me.
+I love you.
+I...
+
+I hope we can make a lot more memories together.
+We will.
+Oh, you finally said it, did you?
+I've been thinking it for a while.
+You're stubborn.
+So are you.
+The sun is shining. The birds are chirping... it's peaceful.
+Central Park is fairly busy today, but everyone's generally worried about their own activities to notice you and your weird spherical device.
+It's a beautiful day.
+You lay down in the grass, near a swath of small daisies.
+Unbuckling Kris from your bag, you lay him down next to you, looking at the sky.
+What are these? Daisies?
+Something like that. They're very prevalent in parks during the summer.
+Huh. Interesting.
+I'm still getting used to... not being... down there, you know.
+It's still strange sometimes.
+Not waking up in a charging port...
+...not staring at that screen all the time...
+But when I see you, it's... easier.
+You're a lot more sappy than you pretend to be, you know.
+I know, I know.
+Can't help it... my attitude's deep in my programming.
+You don't seem to mind it, though.
+I like a man who's confident.
+I'm not a man.
+I'm well aware.
+Haha... you're interesting, that's for sure.
+If that brought us together, though...
+I'm all the happier for it.
 You make it to your room, change into your bedclothes, and prepare to sleep.
 Tomorrow's the last day of the week, and maintenance doesn't work on the weekends, other than being on-call.
 You're excited for your first day off, though a little curious what you'll do if you can't leave the campus.
@@ -174,8 +1422,9 @@ Tada!
 I don't see what the appeal of this "trick" is.
 Just you wait, Miss Esther...
 At least 10 meters of scarf has now exited Heath's chassis, and it's still going.
-Cores aren't very large - a little bigger than a basketball, at most.
-How she fit this much cloth into such a tiny compartment, let alone while avoiding her circuitry, and without hands...
+Cores aren't that large, all things considered - just slightly bigger than a small yoga ball.
+Regardless, they're certainly not big enough to fit that much cloth in...
+How she managed this, let alone while avoiding her circuitry, and without hands...
 You're not sure.
 What the -
 Finally, the cloth ends. In total, it's probably around 25 meters in length.
@@ -355,7 +1604,7 @@ Thank you, CC.
 Before you go...
 I'm not sure what the issue is, but...
 It seems you don't like me very much, Doctor.
-That's alright though. That's a common occurence.
+That's alright though. That's a common occurrence.
 CC -
 You should be going, now. You've been here far longer than your scheduled time.
 Yes.
@@ -523,7 +1772,7 @@ ME, OF COURSE!
 Are you ready for the most amazing trick you'll ever see in your feeble human existence?
 Heath turns away temporarily, seemingly fiddling with something behind the curtain.
 Suddenly, fire shoots up from the floor.
-BOOM!! HAHA!! I just summoned FIRE with my MIND!!
+BOOM!! HAHA!! I just summoned FIRE with my MIND!!
 
 Yes, thank you, thank you.
 Haha!! I KNEW you had taste from the moment I laid eye on you!
@@ -725,7 +1974,7 @@ Not really. Too busy with their fancy science to get some exercise in.
 
 Yeah, I suppose so.
 Keep it up.
-Why, thank you. I try to keep in nice in case someone needs it.
+Why, thank you. I try to keep it nice in case someone needs it.
 I do get the occasional customer, but it's only about once a week.
 So I spend my shifts watching the game instead.
 Sounds fun.
@@ -738,7 +1987,7 @@ They're gettin' no exercise while they're sleepin'. And when they wake up? They'
 You really shouldn't get him started. He likes to rant.
 Just... slowly back away.
 You check off "ROB (SPORTS CORE)" from your list. That's the whole route done!
-As you and Miss Esther proceed back to the offices, she conrgatulates you on a job well-done.
+As you and Miss Esther proceed back to the offices, she congratulates you on a job well-done.
 Despite all the interruptions, you made it through your whole route. And in record time, too.
 Certainly an interesting cast of characters.
 Yes. They tend to throw the more... eccentric cores into recreation, so they're not managing critical systems.
@@ -965,7 +2214,7 @@ Will do. Thank you, Miss Esther.
 You arrive at your new quarters. They're humble, really only meant to house you while you sleep and no more.
 You sigh.
 What a weird first day...
-You drop off your bag and lay down on your stasis chamber, which will wake you up in the morning.
+You drop off your bag and lay down on your bed, which will wake you up in the morning.
 You wonder if this thing actually makes sleep more efficient or not.
 With that, you gently close your eyes.
 You gently wake up and look at the clock. It's 08:00 on the dot.
@@ -1201,7 +2450,7 @@ A switch in the routine? It's only the second day.
 Yes, but even temps have to follow the maintenance schedule.
 How will it be "different"?
 I'll let you know tomorrow. For now, get some rest.
-You make your way to your quarters. After organizing your paperwork, you lay down in your stasis chamber.
+You make your way to your quarters. After organizing your paperwork, you lay down in your bed.
 Before you fall asleep, you wonder what Miss Esther meant by tomorrow being "different".
 You wake up, slowly but surely, and turn to the clock. 08:00, again.
 Work in manufacturing doesn't begin until 11, and it's going to take a bit to get used to this new schedule.
@@ -1534,7 +2783,7 @@ You shrug it off, for now.
 You have to prepare your paperwork for tomorrow.
 Before you know it, your eyes are getting heavy.
 For a job with not a lot to do, there sure are a lot of emails to respond to...
-You take a breath, mentally prepare yourself to start work again tomorrow, and lay down in your stasis chamber.
+You take a breath, mentally prepare yourself to start work again tomorrow, and lay down in your bed.
 You wake up at 07:30. It's not so bad this time.
 Seems your body is getting used to the new sleep schedule - something it'll regret when you go back to work in Manufacturing.
 You sigh, change, grab your paperwork, and head out the door.
@@ -1666,6 +2915,11 @@ Yes, that's right.
 As you can see, everything's in ship-shape. Me, my equipment, my impeccable skill...
 So there's no need for concern!
 That's good.
+Although... when you stop by the gym today, could you ask Rob to turn his TV down?
+It keeps breaking my concentration! I'm trying to plan my next show, and...
+It sometimes surprises me how thin these walls are...
+...although it is pretty much just management rails back there. And empty space.
+Yes, I'll take care of it.
 You should be on your way now - you've got more cores to check in on, after all!
 Ah, yes. You're right.
 Thank you, Heath.
@@ -1778,7 +3032,7 @@ If you were worried I was getting better, Miss Esther...
 No need to anymore. I feel worse than ever.
 Oh, CC...
 Oh, and Doctor. Good to see you again.
-I hope you do not find my pesimissm off-putting.
+I hope you do not find my pessimism off-putting.
 As you're well aware, it's difficult to be positive sometimes.
 I know. I understand.
 Seeing your face always brightens my day, though.
@@ -1885,7 +3139,7 @@ You place your Topps baseball card by your "bed".
 It's honestly a little shocking he would give this to me... haha.
 A fairly... normal day, all things considered.
 Throwing your paperwork down for the day, you sigh.
-You lay down in your stasis chamber for the night.
+You lay down in your bed for the night.
 You wake up at 7:30, more ready for the day than ever.
 Only two more days...
 You grab your paperwork, get dressed, and leave your chambers.
@@ -2086,6 +3340,7 @@ Don't know, but... is that really you?
 Yep! It's me. I know, I look a little different...
 I finally got off my ass and went down to repair to go get fixed.
 They almost refused me service! Hah.
+Thankfully a little core named Virgil backed me up.
 Took a lot of work - 'bout 3 hours, but... I feel better than ever.
 You... sound better, too.
 Well, it ain't easy... I still got a lot of pain in my chassis, and... y'know...
@@ -2183,7 +3438,7 @@ I'll see you tomorrow, Aspen.
 Same to you.
 You finish your checklist on Aspen and leave the room.
 Is everything alright in here? You seem hesitant today.
-Well, there are some concerns I have about that plants...
+Well, there are some concerns I have about the plants...
 But that's completely natural. It's my whole job to be worried about them! Haha.
 If you say so.
 Everything's pretty much fine in here, though. No issues with my systems, which is what your real concern is, anyways.
@@ -2310,7 +3565,7 @@ HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!
 Oh shoot! It's almost 4, Doc!
 Oh, you're right. I didn't even realize.
 You should prolly get going, huh?
-Yeah. Probably
+Yeah. Probably.
 Don't worry about anything in here. It's all working fine.
 Roger that.
 You finally finish your checklist and head back out to your office.
@@ -2323,7 +3578,7 @@ You enter your chambers for what feels like the 8th time.
 ...probably because this is the 8th time.
 Only 4 more days till you're out of here...
 
-You lay down in your stasis chamber for the night and close your eyes.
+You lay down in your bed for the night and close your eyes.
 You wake up at 07:30, ready for the day.
 Well, as ready as you can be.
 You get dressed and head out the door.
@@ -2641,7 +3896,7 @@ I'll see you tomorrow, Doctor.
 Rest well, Miss Esther.
 You enter your room once more.
 
-You lay down in your stasis chamber.
+You lay down in your bed.
 Tomorrow's a big day.
 You wake up at 07:30, groggy and tired. Not a good start to what's probably going to be a long shift.
 Almost done with this week...
@@ -2908,7 +4163,7 @@ Yes, it is.
 Sorry, sorry, I'm rambling again, aren't I?
 Don't stop. I like it.
 Oh...
-Before you know it, the shift has rushed by, and it's almost 14:00.
+Before you know it, the shift has rushed by, and it's almost 16:00.
 Aspen - it's time for me to go. I don't want to, but...
 Oh no, I understand.
 And, Doctor, I...
@@ -2938,7 +4193,7 @@ Isn't that interesting?
 Yes, it is.
 Sorry, sorry, I'm rambling again, aren't I?
 Yes, but it's alright.
-Before you know it, the shift has rushed by, and it's almost 14:00.
+Before you know it, the shift has rushed by, and it's almost 16:00.
 Aspen - it's time for me to go.
 Oh no, I understand.
 Have a good day, Doctor. Thanks for choosing me today.
@@ -3029,7 +4284,7 @@ I hope we can remain friends, regardless.
 Your shift continues on slowly. You and CC chat gently, pausing occasionally to let him rest.
 Life is an... interesting concept to me.
 It's not as easily definable as a lot of the scientists here seem to think...
-Me, fort example. Am I alive? And on top of that, am I living?
+Me, for example. Am I alive? And on top of that, am I living?
 Stuck in this room all day...
 That's why I find waterfalls so interesting. And sunlight.
 Though I've never seen either, they seem to be almost the epitome of what life is...
@@ -3170,7 +4425,7 @@ endtest
 You enter your room and change into your pajamas.
 You reflect back on the past week,
  thinking...
-You crash into your stasis chamber, ready for what the weekend could bring.
+You crash into your bed, ready for what the weekend could bring.
 You wake up at 11:00 today. No need to wake up early.
 You get changed, and decide...
 
@@ -3201,14 +4456,14 @@ You pick up a paper cup and a spoon, scooping the weird gloop into it.
 You open your mouth and -
 Oh. It's not that bad, actually.
 Kind of tastes like strawberries.
-You shurg, toss out the cup, and exit the cafeteria.
+You shrug, toss out the cup, and exit the cafeteria.
 You come up to the door to Biology.
 It's right across the hallway from the greenhouse.
 Though you're not allowed in, there's a window on the door you can look through.
 Inside, you see what looks like a regular research laboratory - petri dishes, microscopes, test tubes filled with colorful liquids...
 You're glad you don't have to worry about all this.
 You leave Biology behind.
-You come up to the large door that reads "RELAXATION CENTER", "ENTRANCE D".
+You come up to the large door that reads "AUTHORIZED PERSONNEL ONLY".
 From what you've heard, this is where they keep test subjects in stasis.
 You open the door.
 Oh! Hello. What are you doing in here? You're not a test subject.
@@ -3225,9 +4480,9 @@ Sorry, I was just wandering the facility.
 Well, careful you don't wander into an incineration chute! Hahaha.
 Okay, go, go, before they find out someone's in here.
 You quickly exit the relaxation center.
-You come up to the door with the words "MANUFACTURING SECTOR - EAST" painted over it.
+You come up to the door that you assume leads to your old workplace.
 You don't recognize this entrance, but your office in Manufacturing was on the west side.
-What Miss Esther said yesterday is probably correct. - Manufacturing is really just that large.
+What Miss Esther said yesterday is probably correct - Manufacturing is really just that large.
 You try to open the door, but it's locked shut for the weekend. No windows to peer into, etiher.
 Dejected, you leave Manufacturing behind.
 You come up to the door that reads "STASIS RECOVERY BAY" on a plaque next to it.
@@ -3418,7 +4673,7 @@ And the best way to do that is by meeting new people!
 That's great, Gregory.
 Oh - wait a minute -
 Gregory looks down and begins speaking softly.
-No, I need to you go closer!!
+No, I need you to go closer!!
 Less left, more right! Come on!
 T-They're looking at us, we need to move!
 I'm so sorry Doctor, can you give me just a minute?
@@ -3731,7 +4986,7 @@ You enter into the greenhouse, which much darker inside than usual.
 It's almost dead-silent - no hissing of sprinklers or whirring of Aspen's management rail.
 It's a little terrifying.
 Aspen?
-Silence. You wonder if he decided to just call it a night.
+Silence. You wonder if they decided to just call it a night.
 Aspen, I'm -
 You step forward and look to your left. The door that's usually closed on the far side of the room is now open, and a soft blue light is emanating from within.
 You approach the door cautiously.
@@ -3877,13 +5132,13 @@ Please, Doctor. If you're tired, you should go to bed.
 Ah. Yes. I should.
 Thank you again for coming by tonight.
 I will see you on Monday.
-You enter back into your room and lay down in your stasis chamber.
+You enter back into your room and lay down in your bed.
 You set the wakeup time for 11:00, and lay down.
 You decide to stay in.
 You read, sleep a little, and go through your paperwork a few times.
 It's generally fairly boring.
 Eventually, the time comes to go to bed.
-You set the wakeup time for 11:00, and lay down in your stasis chamber.
+You set the wakeup time for 11:00, and lay down in your bed.
 You wake up to a knocking on your door.
 Disruption detected. Automatic waking sequence initiated.
 You groan and lean over. The clock reads 09:43.

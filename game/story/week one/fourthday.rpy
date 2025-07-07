@@ -1,6 +1,6 @@
 label day4:
     play music fourteen
-    scene mctemproom
+    scene mcroom night
     with fade
 
     n "You put in the code to your room and enter it, dropping your paperwork on the floor."
@@ -30,7 +30,7 @@ label day4:
     if renpy.is_skipping() == True:
         pass
 
-    scene mctemproom with fade
+    scene mcroom day with fade
 
     n "You wake up at 08:00 as usual, get dressed, and head out the door."
 
@@ -78,7 +78,7 @@ label day4:
 
 label krisday4:
 
-    scene kristemproom with fade
+    scene krisroom with fade
     $ audio_crossFade(2, "music/two.ogg")
     n "You enter the conference room to see Kris whizzing across his management rail, back and forth, rapidly."
     n "The screen behind him has a lot more red on it than usual."
@@ -442,7 +442,7 @@ label ccday4:
     else:
         pass
 
-    scene cctemproom with fade
+    scene ccroom with fade
     $ audio_crossFade(2, "music/five.ogg")
     show e with easeinright
     e "CC! Love, it's time for your check-in."

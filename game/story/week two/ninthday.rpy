@@ -1,6 +1,11 @@
 label day9:
     play music fourteen
-    scene mctemproom with fade
+    if renpy.random.randint(0, 1000) == 0:
+        $ secretchance = "secret"
+    else:
+        $ secretchance = "night"
+    scene mcroom nightchance
+    with fade
     n "You enter your chambers for what feels like the 8th time."
     n "...probably because this is the 8th time."
 
@@ -13,7 +18,7 @@ label day9:
         "I don't really want to leave, but...":
             pass
     
-    n "You lay down in your stasis chamber for the night and close your eyes."
+    n "You lay down in your bed for the night and close your eyes."
 
     scene black
     with fade
@@ -26,7 +31,7 @@ label day9:
     if renpy.is_skipping() == True:
         pass
 
-    scene mctemproom
+    scene mcroom day
     with fade
 
     n "You wake up at 07:30, ready for the day."
@@ -53,7 +58,7 @@ label day9:
 
 label krisday9:
     $ audio_crossFade(2, "music/two.ogg")
-    scene kristemproom with fade
+    scene krisroom with fade
     n "It takes you no time at all to get to the conference room."
     show e annoy with easeinright
     e "Kris, it's time... for your check-in."
@@ -603,7 +608,7 @@ label ccday9:
     n "You hear... \"coughing\" from inside. It seems CC is already awake."
     n "You open the door."
 
-    scene cctemproom with fade
+    scene ccroom with fade
     $ audio_crossFade(2, "music/five.ogg")
     show c with easeinright
 

@@ -30,6 +30,9 @@ transform daydiss:
 transform gallery_size:
     zoom 0.21
 
+transform example_size:
+    zoom 0.12
+
 define gentleswitch = { "master" : Dissolve(0.2) }
 define vigswitch = Dissolve(0.1)
 define gallswitch = Dissolve(0.3)

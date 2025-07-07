@@ -145,8 +145,9 @@ label escape_kris:
     mc "We'll make it work. It won't be easy, but..."
     mc "We'll make it work."
 
-    if romance_points["Kris"] < 30:
-        stop music fadeout 1.0
+    stop music fadeout 1.0
+
+    if romance_points["Kris"] < 29: #tested it myself - it's 29 not 30!
         window hide
         show screen creditsfadeout
         $ renpy.pause(2.0, hard=True)
@@ -161,7 +162,7 @@ label escape_kris:
             achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_kris.webm")
         $ MainMenu(confirm=False)()
-    if romance_points["Kris"] >= 30:
+    if romance_points["Kris"] >= 29:
         jump END_kristrue
 
 label escape_heath:
@@ -316,8 +317,9 @@ label escape_heath:
 
     mc "Oh, don't worry. I know what I got myself into."
 
-    if romance_points["Heath"] < 30:
-        stop music fadeout 1.0
+    stop music fadeout 1.0
+
+    if romance_points["Heath"] < 29:
         window hide
         show screen creditsfadeout
         $ renpy.pause(2.0, hard=True)
@@ -332,7 +334,7 @@ label escape_heath:
             achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_heath.webm")
         $ MainMenu(confirm=False)()
-    if romance_points["Heath"] >= 30:
+    if romance_points["Heath"] >= 29:
         jump END_heathtrue
 
 label escape_aspen:

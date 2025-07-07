@@ -1,15 +1,14 @@
 label day2:
 
     play music fourteen
-    scene mctemproom
-    with fade
+    scene mcroom night with fade
 
     n "You arrive at your new quarters. They're humble, really only meant to house you while you sleep and no more."
     n "You sigh."
 
     mc "What a weird first day..."
 
-    n "You drop off your bag and lay down on your stasis chamber, which will wake you up in the morning."
+    n "You drop off your bag and lay down on your bed, which will wake you up in the morning."
     n "You wonder if this thing actually makes sleep more efficient or not."
     n "With that, you gently close your eyes."
 
@@ -24,7 +23,7 @@ label day2:
     if renpy.is_skipping() == True:
         pass
 
-    scene mctemproom with fade
+    scene mcroom day with fade
 
     n "You gently wake up and look at the clock. It's 08:00 on the dot."
     n "Groaning, you get up and head towards your office."
@@ -180,7 +179,8 @@ label krisday2:
     show e annoy
     e "Especially considering the majority of personality cores aren't... great."
 
-    scene kristemproom with fade
+    scene krisroom with fade
+    show screen secretbendy
     $ audio_crossFade(2, "music/two.ogg")
     show k with easeinright
     k "Why hello, and welcome back. I'm assuming your route went well yesterday if you're still here now."
@@ -267,6 +267,7 @@ label krisday2cont:
         hide k with easeoutright
 
     n "You check Kris off your list and head out."
+    hide screen secretbendy
     jump heathday2
 
 label heathday2:
@@ -578,7 +579,7 @@ label aspenday2cont:
     jump ccday2
 
 label ccday2:
-    scene cctemproom with fade
+    scene ccroom with fade
     $ audio_crossFade(2, "music/five.ogg")
     show c close with easeinright
 

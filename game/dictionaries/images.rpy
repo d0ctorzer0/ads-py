@@ -2,6 +2,19 @@
 #image e laugh = "images/characters/esther/laugh.png"
 #image e shock = "images/characters/esther/shock.png"
 
+default secretchance = "night" 
+image mcroom nightchance = "[persistent.bgtype]mcroom [secretchance].png"
+
+image krisroom = "[persistent.bgtype]krisroom.png"
+image heathroom = "[persistent.bgtype]heathroom.png"
+image ccroom = "[persistent.bgtype]ccroom.png"
+image lounge = "[persistent.bgtype]lounge.png"
+image hall = "[persistent.bgtype]hall.png"
+image door2 = "[persistent.bgtype]door2.png"
+image mcroom day = "[persistent.bgtype]mcroom day.png"
+image mcroom night = "[persistent.bgtype]mcroom night.png"
+image stairs = "[persistent.bgtype]stairs.png"
+
 image neuro:
     "gui/boss/neuro/n_1.png"
     pause .15
@@ -59,7 +72,7 @@ image laser:
 
 
 image flash:
-    "#84000070"
+    "#b3000070"
     alpha 0.0
     linear .45 alpha 0.5
     pause 0.55     

@@ -3,12 +3,12 @@ default aceending = False
 default unlikableending = False
 label day12:
     $ audio_crossFade(2, "music/fourteen.ogg")
-    scene mctemproom with fade
+    scene mcroom night with fade
     mc "Nothing from Miss Esther..."
     mc "Oh well. I guess I'll see her tomorrow."
     mc "Maybe..."
 
-    n "You throw down your paperwork, exhausted, and fall into your stasis chamber."
+    n "You throw down your paperwork, exhausted, and fall into your bed."
 
     scene black
     with fade
@@ -21,7 +21,7 @@ label day12:
     if renpy.is_skipping() == True:
         pass
 
-    scene mctemproom
+    scene mcroom day
     with fade
 
     n "You wake up to a strange feeling in the air..."
@@ -127,23 +127,41 @@ label enddecide_aceorunlikable:
     show e shock
     e "Oh! That must be her! Sorry, Doctor, but I need you to leave now."
     if aceending == True:
-        show e
-        e "It was a pleasure to work with you. Truly one of the best employees I've had in a while."
-        e "I'll see you around, Doctor."
         jump END_ace
     if unlikableending == True:
-        show e
-        e "I hope you've enjoyed your time here. I'll see you around."
         jump END_unlikable
 
 label END_ace:
-    scene black
-    "ace ending"
+    show e
+    e "It was a pleasure to work with you. Truly one of the best employees I've had in a while."
+    show e shock
+    e "I'll... miss you. You'll be back to visit, yes?"
+    mc "I'll certainly try, Miss Esther."
+    show e
+    e "Wonderful."
+    e "I'll see you around, Doctor."
+    scene hall with fade
+    n "You enter back out into the hall."
+    n "Despite the weirdly... romantic connotation of the cores you encountered, it was fairly uneventful."
+    n "Your outlook is bright."
+    n "You're glad you got to meet so many... interesting personalities."
+    n "You'll definitely be back to visit."
+
+    n "Credits will go here when they're ready."
     $ MainMenu(confirm=False)()
 
 label END_unlikable:
-    scene black
-    "unlikable ending"
+    show e
+    e "I hope you've enjoyed your time here. I'll see you around."
+    scene hall with fade
+    n "You enter back out into the hall."
+    n "You hated that."
+    mc "Personality cores are so annoying..."
+    n "Maybe it's that, or maybe {i}you're{/i} the problem."
+    n "Regardless, you can't wait to get back down to manufacturing -"
+    n "- where the cores don't talk back to you."
+
+    n "Credits will go here when they're ready."
     $ MainMenu(confirm=False)()
 
 
@@ -159,8 +177,8 @@ label day12end:
     mc "What the hell."
     n "Defeated, but alive, you stumble your way out of your office and back to your quarters."
 
-    scene mctemproom with fade
-    n "Your stasis chamber looks so much more unwelcoming now."
+    scene mcroom night with fade
+    n "Your bed looks so much more unwelcoming now."
     if lock_kris:
         mc "I hope Kris is doing better than I am..."
     elif lock_heath:

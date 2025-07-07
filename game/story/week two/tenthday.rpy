@@ -1,5 +1,5 @@
 label day10:
-    scene mctemproom with fade
+    scene mcroom night with fade
     play music fourteen
     n "You enter your room once more."
 
@@ -10,7 +10,7 @@ label day10:
         "I'm so excited to use an actual bed again.":
             pass
     
-    n "You lay down in your stasis chamber."
+    n "You lay down in your bed."
     n "Tomorrow's a big day."
 
     scene black
@@ -24,7 +24,7 @@ label day10:
     if renpy.is_skipping() == True:
         pass
 
-    scene mctemproom
+    scene mcroom day
     with fade
 
     n "You wake up at 07:30, groggy and tired. Not a good start to what's probably going to be a long shift."
@@ -141,7 +141,7 @@ label krisday10:
 
     mc "Thank you, Miss Esther."
 
-    scene kristemproom
+    scene krisroom
     with fade
     n "You enter the conference room. Kris turns to you."
     $ audio_crossFade(2, "music/two.ogg")
@@ -222,7 +222,7 @@ label krisconfession:
 label krisacceptance:
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene kristemproom with fade
+    scene krisroom with fade
     $ cutscenetextbox = False
     show k look with easeinright
     k "Well then. Ahem."
@@ -307,7 +307,7 @@ label krisacceptance:
 label krisrejection:
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene kristemproom with fade
+    scene krisroom with fade
     $ cutscenetextbox = False
     show k look with easeinright
     k "Well then. Ahem. I'm... sorry for assuming things, Doctor."
@@ -750,7 +750,7 @@ label ccday10:
     e "Have a great shift!"
     mc "Thank you, Miss Esther."
 
-    scene cctemproom with fade
+    scene ccroom with fade
     $ audio_crossFade(2, "music/five.ogg")
     n "It takes no time at all to reach CC's room."
     
@@ -821,7 +821,7 @@ label ccday10:
 label ccacceptance:
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene cctemproom with fade
+    scene ccroom with fade
     $ cutscenetextbox = False
     show c look with easeinright
     c "I honestly didn't expect you to... say yes."
@@ -908,7 +908,7 @@ label ccrejection:
     $ config.allow_skipping = True
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene cctemproom with fade
+    scene ccroom with fade
     $ cutscenetextbox = False
     show c look with easeinright
     c "It's alright, Doctor. I understand."
@@ -1186,7 +1186,7 @@ label robrejection:
     jump day10end
 
 label unlikableday10:
-    scene cctemproom with fade
+    scene ccroom with fade
     $ audio_crossFade(2, "music/five.ogg")
     n "It takes no time at all to reach CC's room."
     

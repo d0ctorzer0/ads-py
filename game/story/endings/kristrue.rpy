@@ -2,6 +2,7 @@ label END_kristrue:
     window auto
     scene black
     with fade
+    $ renpy.pause(2.0, hard=True)
     $ daynum = "47"
     $ dayday = "New York City, Evening"
 
@@ -11,8 +12,8 @@ label END_kristrue:
     if renpy.is_skipping() == True:
         pass
 
-    scene nyc eve with fade
-    play music thirteen
+    scene nyc with fade
+    play music deathtoaperture
     "You step off the transit and take a deep breath." 
     "It's loud. The air is bustling with the noise of cars, people, and footsteps."
     "It's crowded."

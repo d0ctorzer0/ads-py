@@ -1,6 +1,6 @@
 label day5:
     play music fourteen
-    scene mctemproom
+    scene mcroom night
     with fade
 
     n "You make it to your room, change into your bedclothes, and prepare to sleep."
@@ -18,7 +18,7 @@ label day5:
         $ renpy.pause(2.0, hard=True)
     if renpy.is_skipping() == True:
         pass
-    scene mctemproom with fade
+    scene mcroom day with fade
 
     n "You wake with a start." 
     n "You think you were dreaming, but that's not possible in stasis."
@@ -90,7 +90,7 @@ label day5:
     jump krisday5
 
 label krisday5:
-    scene kristemproom with fade
+    scene krisroom with fade
     $ audio_crossFade(2, "music/two.ogg")
 
     n "You enter the conference room to find things much calmer than yesterday."
@@ -538,7 +538,7 @@ label ccday5:
 
     n "You do exactly that."
 
-    scene cctemproom with fade
+    scene ccroom with fade
     $ audio_crossFade(2, "music/eight.ogg")
 
     show u upset with easeinright

@@ -23,7 +23,7 @@ label satend:
 
 label satend_mc:
     play music fourteen
-    scene mctemproom with fade
+    scene mcroom night with fade
     n "You decide to just head in for the night."
     n "It was fun to explore the facility, though."
     n "You change into your pajamas and head to bed."
@@ -32,7 +32,7 @@ label satend_mc:
 
 label satend_kris:
     play music two
-    scene templounge with fade
+    scene lounge with fade
     n "You enter into the lounge and look around."
     if v_greg == False:
         n "The place is vibrant. Soft jazz plays over speakers above you and there are many employees milling about."
@@ -95,7 +95,7 @@ label satend_kris:
     k "{color=#fff}And, on top of all this, you'll be gone in another week."
     k "{color=#fff}I'm simply taking the opportunity I've been given."
     k "{color=#fff}You wouldn't fault me for that, would you?"
-    scene templounge with fade
+    scene lounge with fade
     hide screen cuttextbox
     show k with easeinright
     $ cutscenetextbox = False
@@ -154,7 +154,7 @@ label satend_kris:
 
 label satend_heath:
     play music three
-    scene templounge with fade
+    scene lounge with fade
     n "You enter into the lounge and look around."
     if v_greg == False:
         n "The place is vibrant. Soft jazz plays over speakers above you and there are many employees milling about."
@@ -224,7 +224,7 @@ label satend_heath:
     "{color=#fff}Heath looks very happy."
     "{color=#fff}She continues for a bit, and her jokes get more laughter each time."
     "{color=#fff}Eventually, she takes her bow."
-    scene templounge with fade
+    scene lounge with fade
     hide screen cuttextbox
     show h with easeinright
     $ cutscenetextbox = False
@@ -511,7 +511,7 @@ label satend_cc:
     ccg "{color=#fff}They remind me of you, though. In a way."
     ccg "{color=#fff}Please... accept them."
     mccut "{color=#fff}Oh, CC..."
-    scene cctemproom with fade
+    scene ccroom with fade
     hide screen cuttextbox
     show c look with easeinright
     $ cutscenetextbox = False

@@ -12,7 +12,7 @@ default persistent.skipop1 = False
 default persistent.skipop2 = False
 default persistent.skipop3 = False
 
-default persistent.bluroption = "2"
+default persistent.bgtype = ""
 #default vidset = "off"
 
 init python:
@@ -96,7 +96,7 @@ screen pref_video():
         imagebutton idle "gui/options/check_[persistent.skipop1].png" xpos 837 ypos 564 action ToggleVariable("persistent.skipop1"), Preference("skip", "toggle")
         imagebutton idle "gui/options/check_[persistent.skipop2].png" xpos 835 ypos 570 action ToggleVariable("persistent.skipop2"), Preference("after choices", "toggle")
         imagebutton idle "gui/options/check_[persistent.skipop3].png" xpos 835 ypos 565 action ToggleVariable("persistent.skipop3"), InvertSelected(Preference("transitions", "toggle"))
-
+   
     # sliders
     vbox:
         style_prefix "slider"
@@ -104,16 +104,14 @@ screen pref_video():
 
         bar value Preference("auto-forward time") xpos 850 ypos 365
     
-    # blur box
+    # image type box
     fixed:
-        add "gui/options/blurempty.png" xpos 795 ypos 940
-        add "gui/options/blur[persistent.bluroption].png" xpos 795 ypos 940
-        imagebutton idle "gui/options/emptyblurbutton.png" xpos 805 ypos 955 action SetVariable("persistent.bluroption", "0")
-        imagebutton idle "gui/options/emptyblurbutton.png" xpos 880 ypos 955 action SetVariable("persistent.bluroption", "1")
-        imagebutton idle "gui/options/emptyblurbutton.png" xpos 955 ypos 955 action SetVariable("persistent.bluroption", "2")
-        imagebutton idle "gui/options/emptyblurbutton.png" xpos 1030 ypos 955 action SetVariable("persistent.bluroption", "3")
-        imagebutton idle "gui/options/emptyblurbutton.png" xpos 1105 ypos 955 action SetVariable("persistent.bluroption", "4")
-        imagebutton idle "gui/options/emptyblurbutton.png" xpos 1180 ypos 955 action SetVariable("persistent.bluroption", "5")
+        if persistent.bgtype == "":
+            add "images/krisroom.png" at example_size xpos 915 ypos 895
+        if persistent.bgtype == "p":
+            add "images/pkrisroom.png" at example_size xpos 915 ypos 895
+        imagebutton auto "gui/options/painted_%s.png" xpos 785 ypos 915 action SetVariable("persistent.bgtype", "p")
+        imagebutton auto "gui/options/source_%s.png" xpos 785 ypos 970 action SetVariable("persistent.bgtype", "")
     
 
 screen pref_other():
@@ -263,6 +261,6 @@ screen aboutcredits():
     use behindoverlay
     imagebutton idle "gui/back.png" action Hide("aboutcredits", transition=Dissolve(0.5))
 
-    text "Developer/Artist/Writer:\n{font=Arimo.ttf}{b}———————————{/b}{/font}\nAshleyanna Rivers\n\n\nBackground Artists:\n{font=Arimo.ttf}{b}—————————{/b}{/font}\nHazel Thompson\nDustin Oakley\nAlyx Shipman\n\n\nVoice Actors:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nAshleyanna Rivers {size=25}as Miss Esther{/size}\nTyler Banning {size=25}as Kris{/size}\nCassidy Hancock {size=25}as Heath{/size}\nIsaiah Phommavong {size=25}as Aspen{/size}\nTeetad Govitviwat {size=25}as CC{/size}\nBraeden Dugger {size=25}as Rob{/size}\nJohn Wharton {size=25}as Gregory{/size}\nJeremy R. Arrieta {size=25}as ???{/size}\nMason Dugger {size=25}as additional voices{/size}\nIzzy Woody {size=25}as additional voices{/size}"
+    text "Developer/Artist/Writer:\n{font=Arimo.ttf}{b}———————————{/b}{/font}\nAshleyanna Rivers\n\n\nBackground Artists:\n{font=Arimo.ttf}{b}—————————{/b}{/font}\nHazel Thompson\nDustin Oakley\nAlyx Shipman\nEvelyn Gallaher\n\n\nVoice Actors:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nAshleyanna Rivers {size=25}as Miss Esther{/size}\nTyler Banning {size=25}as Kris{/size}\nCassidy Hancock {size=25}as Heath{/size}\nIsaiah Phommavong {size=25}as Aspen{/size}\nTeetad Govitviwat {size=25}as CC{/size}\nBraeden Dugger {size=25}as Rob{/size}\nJohn Wharton {size=25}as Gregory{/size}\nJeremy R. Arrieta {size=25}as ???{/size}\nMason Dugger {size=25}as additional voices{/size}\nIzzy Woody {size=25}as additional voices{/size}"
 
     text "Music:\n{font=Arimo.ttf}{b}————{/b}{/font}\nTaisiya Pushkar\nDylan Turner\nWilson Hiatt\nAshleyanna Rivers\n\n\nPlaytesters:\n{font=Arimo.ttf}{b}——————{/b}{/font}\ncaitgirl\nthecreatorlynne\nifthenunless\nMorality9\nBembWasHere\nRoss Callenry\n\nSpecial Thanks:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nPortal Mapping and Modding\nSalt Lake City Public Library\nHLMV++ developers" xpos 750

@@ -97,6 +97,10 @@ style frame:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
+## secret bendy :3
+screen secretbendy(): # here's where the new ACH_INSURANCE achievement should be granted - when this button is clicked!
+    imagebutton idle "images/bendy.png" xpos 1080 ypos 520 action Play("sound", "sfx/notif.ogg")
+
 style cutscene:
     ypos 100
     xpos 500

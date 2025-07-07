@@ -1,7 +1,7 @@
 label day7:
     $ audio_crossFade(1, "music/fourteen.ogg")
-    scene mctemproom with fade
-    n "You enter back into your room and lay down in your stasis chamber."
+    scene mcroom night with fade
+    n "You enter back into your room and lay down in your bed."
     n "You set the wakeup time for 11:00, and lay down."
     
     jump day7cont
@@ -12,7 +12,7 @@ label day6stayend:
     n "You read, sleep a little, and go through your paperwork a few times."
     n "It's generally fairly boring."
     n "Eventually, the time comes to go to bed."
-    n "You set the wakeup time for 11:00, and lay down in your stasis chamber."
+    n "You set the wakeup time for 11:00, and lay down in your bed."
 
     jump day7cont
 
@@ -28,9 +28,9 @@ label day7cont:
     if renpy.is_skipping() == True:
         pass
 
-    scene mctemproom with fade
+    scene mcroom day with fade
     n "You wake up to a knocking on your door."
-    stc "Disruption detected. Automatic waking sequence initiated."
+    ac "Disruption detected. Automatic waking sequence initiated."
     n "You groan and lean over. The clock reads 09:43."
     mc "Who could possibly..."
     n "The knocking continues."

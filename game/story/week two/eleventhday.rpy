@@ -1,6 +1,6 @@
 label day11:
     $ audio_crossFade(2, "music/fourteen.ogg")
-    scene mctemproom with fade
+    scene mcroom night with fade
     n "You enter your chambers once more."
     if lock_kris:
         mc "Well... Kris certainly gave me a run for my money today... haha!"
@@ -17,7 +17,7 @@ label day11:
     else:
         n "A fairly... normal day, all things considered."
     n "Throwing your paperwork down for the day, you sigh."
-    n "You lay down in your stasis chamber for the night."
+    n "You lay down in your bed for the night."
 
     scene black
     with fade
@@ -30,7 +30,7 @@ label day11:
     if renpy.is_skipping() == True:
         pass
 
-    scene mctemproom
+    scene mcroom day
     with fade
 
     n "You wake up at 7:30, more ready for the day than ever."
@@ -71,7 +71,7 @@ label day11:
     jump krisday11
 
 label krisday11:
-    scene kristemproom with fade
+    scene krisroom with fade
     $ audio_crossFade(2, "music/two.ogg")
     n "You enter Kris' room without Miss Esther behind you. It still feels a little strange."
 
@@ -811,7 +811,7 @@ label ccday11:
     n "After what feels like forever, you finally reach the door to CC's room."
     n "You gently open the door."
 
-    scene cctemproom with fade
+    scene ccroom with fade
     $ audio_crossFade(2, "music/five.ogg")
     show c look with easeinright
     n "You find CC looking at you expectantly."

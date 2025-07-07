@@ -156,7 +156,7 @@ label introcont:
     jump krisday1
 
 label krisday1:
-    scene kristemproom
+    scene krisroom
     with fade
     $ audio_crossFade(2, "music/two.ogg")
 
@@ -769,7 +769,7 @@ label ccday1:
 
     e "...You'll see."
 
-    scene cctemproom
+    scene ccroom
     with fade
     $ audio_crossFade(2, "music/five.ogg")
 

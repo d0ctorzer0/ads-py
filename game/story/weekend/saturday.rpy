@@ -1,5 +1,5 @@
 label day6:
-    scene mctemproom
+    scene mcroom night
     with fade
     play music fourteen
 
@@ -16,7 +16,7 @@ label day6:
         "How fun!":
             pass
     
-    n "You crash into your stasis chamber, ready for what the weekend could bring."
+    n "You crash into your bed, ready for what the weekend could bring."
 
     $ audio_crossFade(2, "music/one.ogg")
     scene black
@@ -28,7 +28,7 @@ label day6:
         $ renpy.pause(2.0, hard=True)
     if renpy.is_skipping() == True:
         pass
-    scene mctemproom with fade
+    scene mcroom day with fade
 
     # BUT I WANT THEM ALL! ACHIEVEMENT
     if romance_points["Kris"] and romance_points["Heath"] and romance_points["Aspen"] and romance_points["CC"] and romance_points["Rob"] >= 10:
@@ -251,7 +251,7 @@ label satkris:
     python:
         v_kris = True
         cores_visited += 1
-    scene kristemproom with fade
+    scene krisroom with fade
     n "You enter into the conference room. Kris is reading something on his screen, and the usual stock market graph is gone."
 
     mc "How are you, Kris?"
@@ -510,7 +510,7 @@ label satcc:
     n "Doesn't seem like there's anyone else in there."
     n "You open the door carefully."
 
-    scene cctemproom with fade
+    scene ccroom with fade
     show c close with easeinright
     c "Mmm... hello?"
     show c
@@ -628,7 +628,7 @@ label satgreg:
     n "Gregory said he'd be in here."
     n "You enter."
 
-    scene templounge with fade
+    scene lounge with fade
     n "The place is vibrant. Soft jazz plays over speakers above you and there are many employees milling about."
     n "The room itself is warm and inviting, gentle wooden brown and deep red brick."
     n "It's nothing like the rest of Aperture. It feels like you've just stepped into a different world."
@@ -747,7 +747,7 @@ label satgreg_pos:
         g "{color=#fff}T-They're looking at us, we need to {i}move!{/i}"
         g "{color=#fff}I'm so sorry Doctor, can you give me just a minute?"
         g "{color=#fff}What are you doing down there?! Activate the panel!"
-        scene templounge with fade
+        scene lounge with fade
         hide screen cuttextbox
         $ cutscenetextbox = False
     if romance_points["Greg"] <= 7:

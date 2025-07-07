@@ -1,6 +1,6 @@
 label day7end:
     $ audio_crossFade(2, "music/fourteen.ogg")
-    scene mctemproom with fade
+    scene mcroom day with fade
     n "You enter back into your room."
     n "You weren't out for very long - the clock reads 12:35."
     n "You think back to Miss Esther's warning."
@@ -14,10 +14,11 @@ label day7end:
     jump day8
 
 label day8:
+    scene mcroom night with dissolve
     n "Before you know it, your eyes are getting heavy."
     n "For a job with not a lot to do, there sure are a lot of emails to respond to..."
 
-    n "You take a breath, mentally prepare yourself to start work again tomorrow, and lay down in your stasis chamber."
+    n "You take a breath, mentally prepare yourself to start work again tomorrow, and lay down in your bed."
 
     scene black
     with fade
@@ -30,7 +31,7 @@ label day8:
     if renpy.is_skipping() == True:
         pass
 
-    scene mctemproom
+    scene mcroom day
     with fade
 
     n "You wake up at 07:30. It's not so bad this time."
@@ -56,7 +57,7 @@ label day8:
 
 label krisday8:
     $ audio_crossFade(2, "music/two.ogg")
-    scene kristemproom with fade
+    scene krisroom with fade
     n "You enter into the conference room. It seems everything is back to normal."
     n "The screen is lit up once more, and Kris is back to watching it."
 
@@ -663,7 +664,7 @@ label ccday8:
     e "Here we are now. No noises inside the room today..."
     e "Let's go in."
 
-    scene cctemproom with fade
+    scene ccroom with fade
     $ audio_crossFade(2, "music/five.ogg")
     n "You enter into CC's room. He's staring out the window beside him."
     n "You don't know what he's looking at, considering all you can see outside it is a blank white void."

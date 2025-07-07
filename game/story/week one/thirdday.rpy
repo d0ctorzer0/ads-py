@@ -1,10 +1,10 @@
 label day3:
 
     play music fourteen
-    scene mctemproom
+    scene mcroom night
     with fade
 
-    n "You make your way to your quarters. After organizing your paperwork, you lay down in your stasis chamber."
+    n "You make your way to your quarters. After organizing your paperwork, you lay down in your bed."
     n "Before you fall asleep, you wonder what Miss Esther meant by tomorrow being \"different\"."
 
     scene black
@@ -18,7 +18,7 @@ label day3:
     if renpy.is_skipping() == True:
         pass
 
-    scene mctemproom with fade
+    scene mcroom day with fade
 
     n "You wake up, slowly but surely, and turn to the clock. 08:00, again." 
     n "Work in manufacturing doesn't begin until 11, and it's going to take a bit to get used to this new schedule."
@@ -134,7 +134,7 @@ label krisday3:
 
     e "Perfect. You should be on your way, then."
 
-    scene kristemproom
+    scene krisroom
     with fade
     $ audio_crossFade(2, "music/two.ogg")
 
@@ -225,7 +225,7 @@ label krisday3good:
         k "{color=#fff}She is excellent at what she does. She's dragged Aperture out of the ditch it was in, but..."
         k "{color=#fff}The company now... it's different. Mr. Johnson was fascinated with us. Miss Caroline is not."
         hide screen cuttextbox
-        scene kristemproom with fade
+        scene krisroom with fade
         show k
         $ cutscenetextbox = False
         jump krisday3goodpt2
@@ -599,7 +599,7 @@ label ccday3:
     e "Perfect. On your way, then!"
     
 
-    scene cctemproom
+    scene ccroom
     with fade
     $ audio_crossFade(2, "music/five.ogg")
 
@@ -678,7 +678,7 @@ label ccday3good:
         ccg "{color=#fff}I think about it a lot."
         ccg "{color=#fff}I would give anything to see one."
 
-        scene cctemproom with fade
+        scene ccroom with fade
         show c close with easeinright
         hide screen cuttextbox
         $ cutscenetextbox = False
