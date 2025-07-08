@@ -1126,10 +1126,8 @@ label robday1cont:
 
     n "You check off \"ROB (SPORTS CORE)\" from your list. That's the whole route done!"
 
-    with easeoutright
-    show hall
+    scene hall with fade
     $ audio_crossFade(2, "music/eleven.ogg")
-    with fade
     n "As you and Miss Esther proceed back to the offices, she congratulates you on a job well-done."
 
     show e with easeinright
