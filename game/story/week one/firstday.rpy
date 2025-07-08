@@ -1126,11 +1126,7 @@ label robday1cont:
 
     n "You check off \"ROB (SPORTS CORE)\" from your list. That's the whole route done!"
 
-<<<<<<< Updated upstream
     scene hall with fade
-=======
-    show hall with fade
->>>>>>> Stashed changes
     $ audio_crossFade(2, "music/eleven.ogg")
     n "As you and Miss Esther proceed back to the offices, she congratulates you on a job well-done."
 
