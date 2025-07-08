@@ -14,38 +14,38 @@ label END_kristrue:
 
     scene nyc with fade
     play music deathtoaperture
-    "You step off the transit and take a deep breath." 
-    "It's loud. The air is bustling with the noise of cars, people, and footsteps."
-    "It's crowded."
-    "You clutch your luggage closer to you."
+    n "You step off the transit and take a deep breath." 
+    n "It's loud. The air is bustling with the noise of cars, people, and footsteps."
+    n "It's crowded."
+    n "You clutch your luggage closer to you."
     mc "Wait just a second - we're almost there."
-    "You check your map - the hotel is just a few blocks away." 
-    "You hurriedly start down the street, pushing past people on their way home from work."
-    "You've never been to New York before. It's certainly something."
+    n "You check your map - the hotel is just a few blocks away." 
+    n "You hurriedly start down the street, pushing past people on their way home from work."
+    n "You've never been to New York before. It's certainly something."
     mc "Might have to check out Times Square if we can."
-    "Eventually, you come up on your hotel."
-    "You enter."
+    n "Eventually, you come up on your hotel."
+    n "You enter."
     scene nyc hotel front with fade 
     mc "I have a reservation for one for [name]."
     dc "Ah yes, I see you right here. Give me just a second..."
-    "After some brief formalities, the desk clerk hands you your room key."
+    n "After some brief formalities, the desk clerk hands you your room key."
     dc "Checkout time is 11am on the 5th. If you need an extension, just call the front desk."
     mc "Thank you."
-    "You head up to your room."
+    n "You head up to your room."
     scene nyc hotel with fade
-    "Carefully closing the door behind you, you lay your luggage on the single bed."
+    n "Carefully closing the door behind you, you lay your luggage on the single bed."
     mc "Okay. I think we're good now. You ready?"
-    "A muffled voice comes through your suitcase -"
+    n "A muffled voice comes through your suitcase -"
     k "Ugh. I would never, EVER do this under any other circumstances..."
     mc "I know, I know. I didn't really have a choice, though."
     k "I'm surprised I wasn't too heavy..."
-    "You unzip the suitcase and pull Kris out, dusting off his chassis."
+    n "You unzip the suitcase and pull Kris out, dusting off his chassis."
     show k sus offrail with easeinbottom
     k "Mmm. I'm not scuffed, am I?"
     mc "Just a bit. Nothing we can't polish out."
     show k offrail
     k "You're sweet."
-    "He looks around the room."
+    n "He looks around the room."
     k "This is a lot different from your apartment..."
     mc "Our apartment, Kris."
     show k look offrail
@@ -63,7 +63,7 @@ label END_kristrue:
     mc "Oh, hush."
     show k offrail
     k "Whatever you say, sweetheart."
-    "You lay down on the bed next to Kris." 
+    n "You lay down on the bed next to Kris." 
     show k offrail
     k "Where are you taking me, anyway?"
     mc "Like I said, that's a secret."
@@ -121,23 +121,23 @@ label END_kristrue:
     k "So... where are we going?"
     mc "Oh, shush. Patience is a virtue, you know."
     k "Fine."
-    "You get up off the bed and get dressed."
+    n "You get up off the bed and get dressed."
     show k look offrail
-    "Kris looks away from you diligently."
+    n "Kris looks away from you diligently."
     mc "Such a gentleman." 
     k "I try to be."
-    "Once dressed, you grab your bag from the corner."
+    n "Once dressed, you grab your bag from the corner."
     show k offrail
     mc "Alright. Let's go."
-    "You pick Kris up gently and tuck him under your shoulder, against your waist."
+    n "You pick Kris up gently and tuck him under your shoulder, against your waist."
     show k sus offrail
-    "You click a small button on your bag, revealing a thick strap attached to it."
-    "You wrap it around Kris and click it back into place behind your back."
+    n "You click a small button on your bag, revealing a thick strap attached to it."
+    n "You wrap it around Kris and click it back into place behind your back."
     show k offrail
     mc "Secure?"
     k "Secure."
     mc "Perfect."
-    "You grab your room key and head out into the big city."
+    n "You grab your room key and head out into the big city."
 
     scene black with fade
     "The trains are busy once more."
@@ -147,13 +147,13 @@ label END_kristrue:
     mc "No. We're almost there, anyway."
     k "You're so stubborn."
     mc "You used to stare at a screen for 12 hours a day. Where's that patience now?"
-    "Kris mumbles to himself, but doesn't say anything more."
-    "Eventually, the train reaches the station you're looking for."
+    n "Kris mumbles to himself, but doesn't say anything more."
+    n "Eventually, the train reaches the station you're looking for."
     mc "We're here, Kris. Are you ready?"
     k "Am I ever."
-    "You step off the train and face the thing you came here to show him -"
+    n "You step off the train and face the thing you came here to show him -"
     scene nyc wall street with fade
-    "Wall Street."
+    n "Wall Street."
     show k sus offrail with easeinbottom
     k "You wouldn't -"
     show k offrail
@@ -163,11 +163,11 @@ label END_kristrue:
     mc "You bet it is."
     show k look offrail
     show kris blush with Dissolve(0.05)
-    "I can't believe you flew us all the way out to New York... just to show me this."
-    "What a generous gift."
+    k "I can't believe you flew us all the way out to New York... just to show me this."
+    k "What a generous gift."
     hide kris blush
     show k offrail
-    "You walk down the street slowly, letting Kris twist in your arm to see everything around him."
+    n "You walk down the street slowly, letting Kris twist in your arm to see everything around him."
     k "I've only ever seen the stock from afar."
     show k sus offrail
     k "It feels so... so strange to be here, so far from Aperture, so far from that screen I dedicated so much of my life to..."
@@ -175,8 +175,8 @@ label END_kristrue:
     k "I'm in the middle of it now. This is where it all happens."
     show k offrail
     k "Wow."
-    "You approach a big building with columns and statues adorning its roof."
-    "American flags decorate the top, and four golden words adorn its face: NEW YORK STOCK EXCHANGE."
+    n "You approach a big building with columns and statues adorning its roof."
+    n "American flags decorate the top, and four golden words adorn its face: NEW YORK STOCK EXCHANGE."
     show k happy offrail
     k "This is it! Haha, this is {i}the{/i} building, this - oh, wow."
     k "One of the oldest and largest stock exchanges in the world! And I'm right here outside it."
@@ -194,7 +194,7 @@ label END_kristrue:
     scene nyc trade with fade
     tg "And here we are, ladies and gentlemen - the New York Stock Exchange trading floor."
     tg "You may notice it looks quite hectic down there! And you'd be right - trading isn't easy, and it's often a very fast-paced job."
-    "You lean down to your side slightly, keeping your voice low."
+    n "You lean down to your side slightly, keeping your voice low."
     mc "Can you see alright?"
     k "A little higher?"
     show k sus offrail with easeinbottom
@@ -236,12 +236,12 @@ label END_kristrue2:
     scene black with fade
     $ renpy.pause(1.0, hard=True)
     scene nyc park with fade
-    "The sun is shining. The birds are chirping... it's peaceful."
-    "Central Park is fairly busy today, but everyone's generally worried about their own activities to notice you and your weird spherical device."
-    "It's a beautiful day."
-    "You lay down in the grass, near a swath of small daisies."
+    n "The sun is shining. The birds are chirping... it's peaceful."
+    n "Central Park is fairly busy today, but everyone's generally worried about their own activities to notice you and your weird spherical device."
+    n "It's a beautiful day."
+    n "You lay down in the grass, near a swath of small daisies."
     show k offrail with easeinbottom
-    "Unbuckling Kris from your bag, you lay him down next to you, looking at the sky."
+    n "Unbuckling Kris from your bag, you lay him down next to you, looking at the sky."
     k "What are these? Daisies?"
     mc "Something like that. They're very prevalent in parks during the summer."
     k "Huh. Interesting."

@@ -170,7 +170,7 @@ label END_heathtrue:
     n "You bundle Heath up and run her back out to your car."
     
     scene colon park with fade
-    n "You decide to head to a nearby park, where you can hopefully get some water to fill Heath's coolant."
+    n "You decide to head to a nearby park, where you can hopefully get some water to fill Heath's cooler."
     mc "You've been overheating a lot lately..."
     show h look offrail with easeinbottom
     h "A little too much, huh? Haha..."

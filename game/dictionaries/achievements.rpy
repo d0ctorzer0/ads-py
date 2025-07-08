@@ -8,6 +8,7 @@ default persistent.ach_biwta = True
 default persistent.ach_explore = True
 
 default persistent.ach_closet = True
+default persistent.ach_insurance = True
 
 default persistent.places_visited = 0
 default persistent.visited = {
