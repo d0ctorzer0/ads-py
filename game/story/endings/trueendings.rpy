@@ -1,8 +1,3 @@
-
-
-label END_aspentrue:
-    jump endtest
-
 label END_cctrue:
     jump endtest
 

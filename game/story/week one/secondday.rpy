@@ -25,7 +25,7 @@ label day2:
 
     scene mcroom day with fade
 
-    n "You gently wake up and look at the clock. It's 08:00 on the dot."
+    n "You gently wake up and look at the clock. It's 07:30 on the dot."
     n "Groaning, you get up and head towards your office."
 
 

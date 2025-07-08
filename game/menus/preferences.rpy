@@ -250,6 +250,8 @@ screen disclaimers():
 
         text _("\nThis program uses royalty-free sound effects from {a=https://www.freesound.org/}freesound.org{/a} under the Creative Commons License.")
 
+        text _("\nPhotos by Dwight Burdette under {a=https://creativecommons.org/licenses/by/3.0/}CC BY 3.0{/a}")
+
         text _("\nAperture Dating Simulator was made without the use of artificial intelligence. All writing, art, and music was made entirely by human hands and human code. All voice acting you hear was done by human voices. {color=#ff0000}Fuck AI.\n\n")
 
         text _("This project is a Portal series fan game. It is not commercially associated in any way with Valve or the Portal\nfranchise, and all material used from Portal falls under the copyright of the Valve Corporation. The base game is,\nand will always be, free to play.")
@@ -261,6 +263,8 @@ screen aboutcredits():
     use behindoverlay
     imagebutton idle "gui/back.png" action Hide("aboutcredits", transition=Dissolve(0.5))
 
-    text "Developer/Artist/Writer:\n{font=Arimo.ttf}{b}———————————{/b}{/font}\nAshleyanna Rivers\n\n\nBackground Artists:\n{font=Arimo.ttf}{b}—————————{/b}{/font}\nHazel Thompson\nDustin Oakley\nAlyx Shipman\nEvelyn Gallaher\n\n\nVoice Actors:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nAshleyanna Rivers {size=25}as Miss Esther{/size}\nTyler Banning {size=25}as Kris{/size}\nCassidy Hancock {size=25}as Heath{/size}\nIsaiah Phommavong {size=25}as Aspen{/size}\nTeetad Govitviwat {size=25}as CC{/size}\nBraeden Dugger {size=25}as Rob{/size}\nJohn Wharton {size=25}as Gregory{/size}\nJeremy R. Arrieta {size=25}as ???{/size}\nMason Dugger {size=25}as additional voices{/size}\nIzzy Woody {size=25}as additional voices{/size}"
+    text "Developer/Artist/Writer:\n{font=Arimo.ttf}{b}———————————{/b}{/font}\nAshleyanna Rivers\n\nBackground Artists:\n{font=Arimo.ttf}{b}—————————{/b}{/font}\nAlyx Shipman\nHazel Thompson\nDustin Oakley\nEvelyn Gallaher\n\nVoice Actors:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nAshleyanna Rivers {size=25}as Miss Esther{/size}\nTyler Banning {size=25}as Kris{/size}\nCassidy Hancock {size=25}as Heath{/size}\nIsaiah Phommavong {size=25}as Aspen{/size}\nTeetad Govitviwat {size=25}as CC{/size}\nBraeden Dugger {size=25}as Rob{/size}\nJohn Wharton {size=25}as Gregory{/size}\nJeremy R. Arrieta {size=25}as ???{/size}\nMason Dugger {size=25}as additional voices{/size}\nIzzy Woody {size=25}as additional voices{/size}"
 
-    text "Music:\n{font=Arimo.ttf}{b}————{/b}{/font}\nTaisiya Pushkar\nDylan Turner\nWilson Hiatt\nAshleyanna Rivers\n\n\nPlaytesters:\n{font=Arimo.ttf}{b}——————{/b}{/font}\ncaitgirl\nthecreatorlynne\nifthenunless\nMorality9\nBembWasHere\nRoss Callenry\n\nSpecial Thanks:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nPortal Mapping and Modding\nSalt Lake City Public Library\nHLMV++ developers" xpos 750
+    text "Music:\n{font=Arimo.ttf}{b}————{/b}{/font}\nTaisiya Pushkar\nDylan Turner\nWilson Hiatt\nDestructo20\n\nPlaytesters:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nRoss Callenry\ncaitgirl\nthecreatorlynne\nifthenunless\nMorality9\nBembWasHere\n\nSpecial Thanks:\n{font=Arimo.ttf}{b}———————{/b}{/font}\nPortal Mapping and Modding\nSalt Lake City Public Library\nHLMV++ developers" xpos 600
+
+    text "Assets:\n{font=Arimo.ttf}{b}————{/b}{/font}\n" xpos 1100

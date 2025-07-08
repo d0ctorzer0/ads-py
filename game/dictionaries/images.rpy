@@ -14,6 +14,7 @@ image door2 = "[persistent.bgtype]door2.png"
 image mcroom day = "[persistent.bgtype]mcroom day.png"
 image mcroom night = "[persistent.bgtype]mcroom night.png"
 image stairs = "[persistent.bgtype]stairs.png"
+image closet = "[persistent.bgtype]closet.png"
 
 image neuro:
     "gui/boss/neuro/n_1.png"

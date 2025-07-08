@@ -1040,7 +1040,7 @@ label satunknownpos:
 
     u "Mmm. Come on in."
 
-    scene unknowntemproom with fade
+    scene closet with fade
     show u with easeinright
     u "Welcome to my... humble little abode. Can I get you a drink?"
     n "He wasn't kidding - the closet is unusually large, about the size of a bathroom."
@@ -1122,7 +1122,7 @@ label satunknownpos:
         u "{color=#fff}I don't really even know who I am now. Or where I am half the time."
         u "{color=#fff}Hell, just yesterday I'd burst into that poor CC's room and I was such a nuisance..."
         u "{color=#fff}But it's hard."
-        scene unknowntemproom with fade
+        scene closet with fade
         show u with easeinright
         hide screen cuttextbox
         $ cutscenetextbox = False

@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/heathtrue.rpy", line 15: expected end of line
-    play music death to aperture
-                     ^
+The label END_aspentrue is defined twice, at File "game/story/endings/aspentrue.rpy", line 1:
+label END_aspentrue:
+and File "game/story/endings/trueendings.rpy", line 3:
+label END_aspentrue:
+
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sun Jul  6 21:12:50 2025
+Tue Jul  8 14:06:15 2025
