@@ -115,3 +115,183 @@ label END_aspentrue:
     a "{i}Allium schoenoprasum!{/i}"
     a "These are chives! Like the ones humans use for cooking!"
     show a left offrail
+    a "Sometimes I wish I could smell them... or taste them!"
+    a "But they're pretty just to look at."
+    a "It's pretty crazy how much botany relies on scent..."
+    show a look offrail
+    a "Made my job harder sometimes! Hah... haha..."
+    a "Glad I wasn't one of the scientists."
+    mc "How were your coworkers, anyway?"
+    show a offrail
+    a "Well... the greenhouse supervisor, Dr. Olive... she was nice."
+    a "I think she was one of the only people there who actually cared about me."
+    show a look offrail
+    a "She only really worked {i}inside{/i} the greenhouse once or twice a week..."
+    a "Most of her time was spent overseeing plant testing, haha."
+    show a offrail
+    a "We had a few nanobots on staff as well. Usually in the pipes, making sure the water pressure levels were consistent."
+    a "It was a small team! But hardworking."
+    show a left offrail
+    a "They just... didn't supply us with enough people to... supplement for me."
+    a "Hence my lack of breaks."
+    mc "I'm sorry, Aspen. That sounds difficult."
+    a "It was, but..."
+    show a offrail
+    a "Hey! {i}Zinnia elegans{/i}!"
+    n "The next few hours is spent listening to Aspen reciting botany facts."
+    n "Thankfully, the garden is relatively empty, so Aspen spends most of the day out of their tote bag."
+    n "Slowly, the two of you make your way over to the garden's sprawling trails."
+    
+    scene mat trail with fade
+    show a left offrail
+    a "It feels like we've been here for hours!"
+    mc "Probably because we have been, Aspen."
+    show a look offrail
+    a "Oh... I didn't even realize."
+    mc "You were too busy enjoying yourself to realize, Aspen."
+    mc "There's a human phrase - time flies when you're having fun."
+    show a offrail
+    a "I am having fun."
+    mc "I'm glad."
+    show a left offrail
+    show aspen blush with Dissolve(0.05)
+    n "Suddenly, Aspen looks away from you, down at the wood-paneled trail you're currently walking."
+    mc "Is something wrong?"
+    a "N-No. Nothing. I just..."
+    show a look offrail
+    a "I-I'm just so lucky to have you."
+    a "Can you imagine if you had never taken that maintenance position?"
+    a "I would've... I probably would've..."
+    n "They take a deep breath."
+    a "I would've died down there."
+    a "A-And I would've never experienced all of... this."
+    hide aspen blush
+    show a offrail
+    a "I just don't think I thank you enough."
+    a "You're... so kind to me."
+    mc "Aspen..."
+    a "Yes?"
+    mc "You're rambling again."
+    show a look offrail
+    a "O-Oh! I'm so sorry! I... I really didn't mean to, I'm..."
+    mc "No. I like it, remember?"
+    mc "It's my favorite thing about you."
+    mc "How passionate you get. How excitable you are."
+    a "I..."
+    show a offrail
+    a "I-I really love you, you know."
+    menu:
+        extend ""
+        "You're so sweet.":
+            pass
+        "I love you too.":
+            show a left offrail
+            show aspen blush with Dissolve(0.05)
+            a "O-Oh. I didn't expect..."
+            a "I didn't think you were going to say it back, haha..."
+            mc "Why wouldn't I?"
+            a "I... I don't know, I just..."
+            a "Wow."
+    
+    scene black with fade
+    scene mat trail with fade
+    show a offrail with easeinbottom
+    mc "You know, you haven't called me Doctor since we left."
+    if name.lower() == 'dr. rowan':
+        a "Would you prefer I call you Rowan?"
+    elif name.lower() == 'lily':
+        a "Would you prefer I call you Lily?"
+    elif name.lower() == 'ross':
+        a "Would you prefer I call you Ross?"
+    elif name.lower() == 'avery':
+        a "Would you prefer I call you Avery?"
+    elif name.lower() == 'hazel':
+        a "Would you prefer I call you Hazel?"
+    elif name.lower() == 'len':
+        a "Would you prefer I call you Len?"
+    elif name.lower() == 'evely':
+        a "Would you prefer I call you Evely?"
+    elif name.lower() == 'lynne':
+        a "Would you prefer I call you Lynne?"
+    elif name.lower() == 'mo':
+        a "Would you prefer I call you Mo?"
+    elif name.lower() == 'bemb':
+        a "Would you prefer I call you Bemb?"
+    elif name.lower() == 'cass':
+        a "Would you prefer I call you Cass?"
+    elif name.lower() == 'tyler':
+        a "Would you prefer I call you Tyler?"
+    elif name.lower() == 'john':
+        a "Would you prefer I call you John?"
+    elif name.lower() == 'jeremy':
+        a "Would you prefer I call you Jeremy?"
+    elif name.lower() == 'mason':
+        a "Would you prefer I call you Mason?"
+    elif name.lower() == 'izzy':
+        a "Would you prefer I call you Izzy?"
+    else:
+        jump END_aspentrue2
+    n "You laugh."
+    mc "Haha. Maybe."
+    show a look offrail
+    a "That was so embarrassing."
+    mc "On the contrary. I thought it was cute."
+    a "Stop."
+    jump END_aspentrue2
+
+label END_aspentrue2:
+    show a offrail
+    a "Wait!"
+    a "Look at those daisies, just off the path!"
+    show a look offrail
+    a "Do you think we can... go over there?"
+    mc "I don't see why not."
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    scene aspen cutscene 6 with fade
+    python:
+        if persistent.ac6 == False:
+            persistent.cutscenes_seen += 1
+            persistent.ac6 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
+    n "{color=#fff}You set Aspen down in the daisy patch and lay down next to them."
+    a "{color=#fff}Oh wow... the sun's already starting to set..."
+    a "{color=#fff}It's so beautiful."
+    a "{color=#fff}Today's been perfect."
+    a "{color=#fff}You've..."
+    a "{color=#fff}You've been perfect."
+    mc "{color=#fff}I hope I can keep that stellar reputation up."
+    a "{color=#fff}I-I'm sure you will."
+    a "{color=#fff}You're so... you're so kind to me."
+    a "{color=#fff}So gentle."
+    a "{color=#fff}Something a lot of people back in Aperture... weren't."
+    a "{color=#fff}I was so lonely in there."
+    a "{color=#fff}Not being able to leave the greenhouse... stuck in that one room my entire life..."
+    a "{color=#fff}I-It really got to me sometimes."
+    a "{color=#fff}And now I get to look up at the sky..."
+    a "{color=#fff}And it feels like I could fall up into it any second!"
+    a "{color=#fff}I-It's crazy!"
+    a "{color=#fff}I wake up every morning next to you and every morning I'm amazed all over again."
+    mc "{color=#fff}You haven't even seen the half of it, Aspen."
+    a "{color=#fff}I hope you'll show me everything."
+    a "{color=#fff}I want to see everything."
+    mc "{color=#fff}I want to show you everything."
+    a "{color=#fff}I love you."
+    a "{color=#fff}This..."
+    a "{color=#fff}This is perfect."
+    stop music fadeout 2.0
+    window hide
+    show screen creditsfadeout with fade
+    $ renpy.pause(2.0, hard=True)
+    hide screen creditsfadeout
+    python:
+        if persistent.endings_got["aspentrue"] == False:
+            persistent.endings_count += 1
+            persistent.endings_got["aspentrue"] = True
+        achievement.progress("ach_seenitall", persistent.endings_count)
+        achievement.sync()
+        achievement.grant("ach_heathtrue")
+        achievement.sync()
+    $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")
+    $ MainMenu(confirm=False)()

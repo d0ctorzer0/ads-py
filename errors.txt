@@ -2,11 +2,13 @@
 errors listed below, and try again.
 
 
-The label END_aspentrue is defined twice, at File "game/story/endings/aspentrue.rpy", line 1:
-label END_aspentrue:
-and File "game/story/endings/trueendings.rpy", line 3:
-label END_aspentrue:
+File "game/story/endings/aspentrue.rpy", line 202: end of line expected.
+    if "lily" in name.lower()::
+                              ^
 
+File "game/story/endings/aspentrue.rpy", line 204: end of line expected.
+    if "ross" in name.lower()::
+                              ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Tue Jul  8 14:06:15 2025
+Tue Jul  8 15:49:42 2025
