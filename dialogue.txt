@@ -1,5 +1,182 @@
 Kinetic Text Tags Ren'Py Module 2021 Daniel Westfall <SoDaRa2595@gmail.com>
 http://twitter.com/sodara9 I'd appreciate being given credit if you do end up using it! :D Would really make my day to know I helped some people out! Really hope this can help the community create some really neat ways to spice up their dialogue! http://opensource.org/licenses/mit-license.php Github: https://github.com/SoDaRa/Kinetic-Text-Tags itch.io: https://wattson.itch.io/kinetic-text-tags Forum Post: https://lemmasoft.renai.us/forums/viewtopic.php?f=51&t=60527&sid=75b4eb1aa5212a33cbfe9b0354e5376b
+The car is quiet - just the way the two of you like it.
+The radio's off.
+The only sounds are the gentle whirring of the car engine and the wind passing by the windows.
+The scenery changes from wheat fields to forest and back again.
+The sun shines through an overcast sky.
+You pass by a sign -
+UNIVERSITY OF MICHIGAN - 5 MILES
+University? What are we going to a university for?
+Well, it's not really the uni we're going to...
+You're really good at keeping secrets.
+I think you're just a little dense.
+Hey!
+You're not wrong, haha...
+The car goes quiet again, but you don't mind it.
+You've learned over the past few weeks that Aspen tends to be very quiet unless there's plants nearby -
+- in which case they'll gladly talk for hours.
+You chuckle to yourself. They'll be very talkative today for sure.
+You pull into the lot and put the car into park.
+You ready?
+I think so. I still don't know what's happening, though.
+Hard to prepare for something I don't know anything about...
+You laugh.
+Oh, you're ready.
+You pick up your tote bag from the backseat.
+I'm going to pick you up now, alright?
+A-Alright.
+You gently scoop your hands underneath Aspen's chassis and lift them up and into the tote bag.
+Snug, I hope?
+Yeah. I'm still not used to it, but what can you do? Haha.
+Perfect.
+You walk up to the entrance.
+Aspen - why don't you read that sign next to us?
+Matthaei... Botanical...
+Oh my goodness! The Matthaei Botanical Gardens!
+I've heard about these - they're the closest gardens to Aperture!
+Or... the closest to where Aperture used to be, haha...
+I can't believe I'm actually here!
+They have so many different species here... so many different types of plants... I...
+Oh wow. Thank you. I-I don't even know what to say.
+You're welcome, Aspen.
+I've been wanting to take you here for a while now.
+You know me so well.
+I certainly hope I do.
+The gardens are beautiful - brightly-colored flowers spot the landscape of dark green bushes and trees.
+Aspen is enthralled, completely in their element.
+Morning glories! I believe this one's specifically Ipomoea nil...
+And flowering tobacco! Nicotiana alata!
+Oh wow... they never brought any of these down into my greenhouse.
+We had very few flowers... mostly ferns and bushes.
+About that...
+I'm sorry we couldn't save Penelope, Aspen.
+Yes... I know.
+It's okay.
+Besides... I got out of there thanks to you.
+You saved me. I couldn't have gotten out alone.
+You sacrificed so much for me.
+And you brought me here. To this beautiful place.
+I loved my job in Aperture. I loved the plants I cared for.
+But Aperture... didn't care for me very much.
+You probably know this, but I never got a break.
+I would spend 2 hours per night in my charging port at the back of the greenhouse...
+...then wake up and water the plants the entire day.
+And as much as I loved it...
+I was so, so tired.
+Thanks to you, though, I get to enjoy this freely...
+And I get to spend time with my favourite human ever.
+You're so sweet, Aspen.
+Ah... ahaha... sorry. I may have gotten a little sappy there.
+I love it when you talk like that.
+Y-You can stop now. Your compliments overheat my systems too much.
+Wow...
+Allium schoenoprasum!
+These are chives! Like the ones humans use for cooking!
+Sometimes I wish I could smell them... or taste them!
+But they're pretty just to look at.
+It's pretty crazy how much botany relies on scent...
+Made my job harder sometimes! Hah... haha...
+Glad I wasn't one of the scientists.
+How were your coworkers, anyway?
+Well... the greenhouse supervisor, Dr. Olive... she was nice.
+I think she was one of the only people there who actually cared about me.
+She only really worked inside the greenhouse once or twice a week...
+Most of her time was spent overseeing plant testing, haha.
+We had a few nanobots on staff as well. Usually in the pipes, making sure the water pressure levels were consistent.
+It was a small team! But hardworking.
+They just... didn't supply us with enough people to... supplement for me.
+Hence my lack of breaks.
+I'm sorry, Aspen. That sounds difficult.
+It was, but...
+Hey! Zinnia elegans!
+The next few hours is spent listening to Aspen reciting botany facts.
+Thankfully, the garden is relatively empty, so Aspen spends most of the day out of their tote bag.
+Slowly, the two of you make your way over to the garden's sprawling trails.
+It feels like we've been here for hours!
+Probably because we have been, Aspen.
+Oh... I didn't even realize.
+You were too busy enjoying yourself to realize, Aspen.
+There's a human phrase - time flies when you're having fun.
+I am having fun.
+I'm glad.
+Suddenly, Aspen looks away from you, down at the wood-paneled trail you're currently walking.
+Is something wrong?
+N-No. Nothing. I just...
+I-I'm just so lucky to have you.
+Can you imagine if you had never taken that maintenance position?
+I would've... I probably would've...
+They take a deep breath.
+I would've died down there.
+A-And I would've never experienced all of... this.
+I just don't think I thank you enough.
+You're... so kind to me.
+Aspen...
+Yes?
+You're rambling again.
+O-Oh! I'm so sorry! I... I really didn't mean to, I'm...
+No. I like it, remember?
+It's my favorite thing about you.
+How passionate you get. How excitable you are.
+I...
+I-I really love you, you know.
+
+O-Oh. I didn't expect...
+I didn't think you were going to say it back, haha...
+Why wouldn't I?
+I... I don't know, I just...
+Wow.
+You know, you haven't called me Doctor since we left.
+Would you prefer I call you Rowan?
+Would you prefer I call you Lily?
+Would you prefer I call you Ross?
+Would you prefer I call you Avery?
+Would you prefer I call you Hazel?
+Would you prefer I call you Len?
+Would you prefer I call you Evely?
+Would you prefer I call you Lynne?
+Would you prefer I call you Mo?
+Would you prefer I call you Bemb?
+Would you prefer I call you Cass?
+Would you prefer I call you Tyler?
+Would you prefer I call you John?
+Would you prefer I call you Jeremy?
+Would you prefer I call you Mason?
+Would you prefer I call you Izzy?
+You laugh.
+Haha. Maybe.
+That was so embarrassing.
+On the contrary. I thought it was cute.
+Stop.
+Wait!
+Look at those daisies, just off the path!
+Do you think we can... go over there?
+I don't see why not.
+You set Aspen down in the daisy patch and lay down next to them.
+Oh wow... the sun's already starting to set...
+It's so beautiful.
+Today's been perfect.
+You've...
+You've been perfect.
+I hope I can keep that stellar reputation up.
+I-I'm sure you will.
+You're so... you're so kind to me.
+So gentle.
+Something a lot of people back in Aperture... weren't.
+I was so lonely in there.
+Not being able to leave the greenhouse... stuck in that one room my entire life...
+I-It really got to me sometimes.
+And now I get to look up at the sky...
+And it feels like I could fall up into it any second!
+I-It's crazy!
+I wake up every morning next to you and every morning I'm amazed all over again.
+You haven't even seen the half of it, Aspen.
+I hope you'll show me everything.
+I want to see everything.
+I want to show you everything.
+I love you.
+This...
+This is perfect.
 WELCOME TO APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
 BOOTING...
 BOOT SUCCESSFUL
@@ -1125,7 +1302,7 @@ Heath coughs harshly.
 You're burning up. We need to get you back to the cooler.
 Y-Yeah. Okay.
 You bundle Heath up and run her back out to your car.
-You decide to head to a nearby park, where you can hopefully get some water to fill Heath's coolant.
+You decide to head to a nearby park, where you can hopefully get some water to fill Heath's cooler.
 You've been overheating a lot lately...
 A little too much, huh? Haha...
 What do you mean?
@@ -2217,7 +2394,7 @@ What a weird first day...
 You drop off your bag and lay down on your bed, which will wake you up in the morning.
 You wonder if this thing actually makes sleep more efficient or not.
 With that, you gently close your eyes.
-You gently wake up and look at the clock. It's 08:00 on the dot.
+You gently wake up and look at the clock. It's 07:30 on the dot.
 Groaning, you get up and head towards your office.
 Miss Esther isn't here yet. You organize your files while you wait.
 Suddenly, there's a knock on the door.

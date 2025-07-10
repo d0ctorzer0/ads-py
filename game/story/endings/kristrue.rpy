@@ -145,7 +145,6 @@ label END_kristrue:
     "Thankfully, Kris' size gives the two of you quite a bit of space."
     k "Can I know where we're going yet?"
     mc "No. We're almost there, anyway."
-    k "You're so stubborn."
     mc "You used to stare at a screen for 12 hours a day. Where's that patience now?"
     n "Kris mumbles to himself, but doesn't say anything more."
     n "Eventually, the train reaches the station you're looking for."

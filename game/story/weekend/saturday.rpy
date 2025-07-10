@@ -257,7 +257,7 @@ label satkris:
     mc "How are you, Kris?"
 
     show k angry with easeinright
-    if positive["Kris"] == 0:
+    if positive["Kris"] == True:
         jump satkrispos
     else:
         jump satkrisneg
@@ -396,7 +396,7 @@ label satheath:
     n "It doesn't take long before she bursts into the break room, out of breath."
     n "Or something like that, having no lungs."
 
-    if positive["Heath"] == 0:
+    if positive["Heath"] == True:
         jump satheathpos
     else:
         jump satheathneg
@@ -503,7 +503,7 @@ label satcc:
     scene hall with fade
     n "You make your way through the residential block, towards CC's room."
 
-    if positive["CC"] == 0:
+    if positive["CC"] == True:
         n "You hope you're not disturbing him."
     
     n "Once you reach his door, you listen closely."
@@ -516,7 +516,7 @@ label satcc:
     show c
     mc "Sorry, CC, I didn't realize you were sleeping."
 
-    if positive["CC"] == 0:
+    if positive["CC"] == True:
         jump satccpos
     else:
         jump satccneg
@@ -791,7 +791,7 @@ label sataspen:
 
     mc "I just figured I'd stop by and make sure everything's okay in here now."
 
-    if positive["Aspen"] == 0:
+    if positive["Aspen"] == True:
         jump sataspenpos
     else:
         jump sataspenneg
@@ -908,7 +908,7 @@ label satrob:
 
     mc "Kind of. I also just wanted to check up on you."
 
-    if positive["Rob"] == 0:
+    if positive["Rob"] == True:
         jump satrobpos
     else:
         jump satrobneg
@@ -1025,7 +1025,7 @@ label satunknown:
     n "You knock."
     n "The door slides open and you-know-who greets you."
 
-    if positive["???"] == 0:
+    if positive["???"] == True:
         jump satunknownpos
     else:
         jump satunknownneg

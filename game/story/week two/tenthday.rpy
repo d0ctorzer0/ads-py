@@ -7,10 +7,10 @@ label day10:
         extend ""
         "I'm gonna miss this place when I leave.":
             pass
-        "I'm so excited to use an actual bed again.":
+        "I'm so excited to use my own bed again.":
             pass
     
-    n "You lay down in your bed."
+    n "You lay down and close your eyes."
     n "Tomorrow's a big day."
 
     scene black
@@ -42,7 +42,7 @@ label day10:
     e "Yes, much better, haha. Not as tired, for sure!"
     show e
     e "Alright - you know the drill. Today's the one-on-one observation day."
-    if positive["Kris"] and positive["Heath"] and positive["Aspen"] and positive["CC"] and positive["Rob"] == -1:
+    if not positive["Kris"] and not positive["Heath"] and not positive["Aspen"] and not positive["CC"] and not positive["Rob"] == True:
         show e annoy
         e "Unfortunately, every single one of the cores under our section has specifically requested -"
         e "- either to me, or to HR -"
@@ -73,7 +73,7 @@ label day10choice:
         extend ""
 
         "Kris." if krischooseagain == False:
-            if positive["Kris"] == -1 or romance_points["Kris"] <= 5:
+            if positive["Kris"] == False or romance_points["Kris"] <= 5:
                 $ krischooseagain = True
                 show e annoy
                 e "Unfortunately, Kris has requested you not supervise him today."
@@ -86,7 +86,7 @@ label day10choice:
                 jump krisday10
 
         "Heath." if heathchooseagain == False:
-            if positive["Heath"] == -1 or romance_points["Heath"] <= 5:
+            if positive["Heath"] == False or romance_points["Heath"] <= 5:
                 $ heathchooseagain = True
                 show e annoy
                 e "Heath has specifically requested you not supervise her alone."
@@ -98,7 +98,7 @@ label day10choice:
                 jump heathday10
 
         "Aspen." if aspenchooseagain == False:
-            if positive["Aspen"] == -1 or romance_points["Aspen"] <= 5:
+            if positive["Aspen"] == False or romance_points["Aspen"] <= 5:
                 $ aspenchooseagain = True
                 show e annoy
                 e "I'm afraid Aspen contacted HR and asked that you not oversee him today."
@@ -109,7 +109,7 @@ label day10choice:
                 $ romance_points["Aspen"] += 3
                 jump aspenday10
         "CC." if ccchooseagain == False:
-            if positive["CC"] == -1:
+            if positive["CC"] == False:
                 $ ccchooseagain = True
                 show e annoy
                 e "CC asked me personally not to see you today, Doctor. I'm sorry."
@@ -120,7 +120,7 @@ label day10choice:
                 $ romance_points["CC"] += 3
                 jump ccday10
         "Rob." if robchooseagain == False:
-            if positive["Rob"] == -1 or romance_points["Rob"] <= 5:
+            if positive["Rob"] == False or romance_points["Rob"] <= 5:
                 $ robchooseagain = True
                 show e annoy
                 e "Rob asked me not to let you in the gym today, for some reason."

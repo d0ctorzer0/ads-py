@@ -170,15 +170,16 @@ default romance_points = {
     "Greg" : 0 ,
     "Rob" : 0 ,
 }
-default positive = { # 0 = positive, -1 = negative
-    "Kris" : 0 ,
-    "Heath" : 0 ,
-    "???" : 0 ,
-    "Aspen" : 0 ,
-    "CC" : 0 ,
-    "Greg" : 0 ,
-    "Rob" : 0 ,
+default positive = {
+    "Kris" : True ,
+    "Heath" : True ,
+    "???" : True ,
+    "Aspen" : True ,
+    "CC" : True ,
+    "Greg" : True ,
+    "Rob" : True ,
 }
+
 default priority = {
     "Kris" : 0 ,
     "Heath" : 0 ,
@@ -188,6 +189,7 @@ default priority = {
     "Greg" : 0 ,
     "Rob" : 0 ,
 }
+
 $ highest_priority = max(priority, key=priority.get)
 
 default romance_minimum_for_good_ending = 20

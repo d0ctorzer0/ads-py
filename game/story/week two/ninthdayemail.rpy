@@ -15,10 +15,10 @@ screen emailday9():
                 textbutton "    from: {color=#1140a4}CC{/color}\n        I hope you'll stop by.                                                                        " action Jump("eccconf")
             if romance_highest_name == "Rob":
                 textbutton "    from: {color=#8a0d0d}Rob{/color}\n        Hoping to see ya tomorrow!                                                                        " action Jump("erobconf")
-            if romance_highest_name == "???":
+            if romance_highest_name == "???" and romance_points["???"] >= 8:
                 $ emailfromunknownday9 == True
                 textbutton "    from: {color=#725e42}UNKNOWN{/color}\n        Hey, Doc                                                                        " action Jump("eunknownconf")
-            if romance_highest_name == "Greg":
+            if romance_highest_name == "Greg" and romance_points["Greg"] >= 8:
                 $ emailfromgregday9 == True
                 textbutton "    from: {color=#c9ae16}Gregory{/color}\n        seeing if you're interested...                                                                        " action Jump("egregconf")
 

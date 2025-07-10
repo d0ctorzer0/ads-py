@@ -83,9 +83,9 @@ label krisday9:
         show k
         k "Your loss."
         mc "Anyways..."
-    if positive["Kris"] == 0:
+    if positive["Kris"] == True:
         jump p_krisday9
-    if positive["Kris"] == -1:
+    if positive["Kris"] == False:
         jump n_krisday9
 
 label p_krisday9:
@@ -249,7 +249,7 @@ label impressunknown9:
 label offendunknown9:
     show u upset
     u "Agh, sorry, yeah, I'm movin'."
-    if positive["???"] == -1:
+    if positive["???"] == False:
         u "Jeez, you're {i}real{/i} rude."
     
     show u
@@ -290,9 +290,9 @@ label heathday9:
     h "TADA!!"
     h "Just a little... sleight-of-handle."
     
-    if positive["Heath"] == 0:
+    if positive["Heath"] == True:
         jump p_heathday9
-    if positive["Heath"] == -1:
+    if positive["Heath"] == False:
         jump n_heathday9
 
 label p_heathday9:
@@ -450,9 +450,9 @@ label aspenday9:
 
     show a with easeinright
     n "Aspen turns around to face you."
-    if positive["Aspen"] == 0:
+    if positive["Aspen"] == True:
         jump p_aspenday9
-    if positive["Aspen"] == -1:
+    if positive["Aspen"] == False:
         jump n_aspenday9
 
 label p_aspenday9:
@@ -612,9 +612,9 @@ label ccday9:
     $ audio_crossFade(2, "music/five.ogg")
     show c with easeinright
 
-    if positive["CC"] == 0:
+    if positive["CC"] == True:
         jump p_ccday9
-    if positive["CC"] == -1:
+    if positive["CC"] == False:
         jump n_ccday9
     
 label p_ccday9:
@@ -834,18 +834,18 @@ label p_robday9:
 
     mc "Oh, yes, Miss Esther. Let's go."
 
-    menu:
-        extend ""
-        "I'll see you tomorrow, Rob. Stay safe.":
-            $ romance_points["Rob"] += 3
-            $ priority["Rob"] += 1
-        "I'll see you later, Rob. Have a good day.":
-            $ romance_points["Rob"] += 1
-            $ priority["Rob"] -= 1
-    
-    hide e with easeoutright
-    show r with easeinright
-    r "Will do."
+    if romance_points["Rob"] >= 15:
+        menu:
+            extend ""
+            "I'll see you tomorrow, Rob. Stay safe.":
+                $ romance_points["Rob"] += 3
+                $ priority["Rob"] += 1
+                hide e with easeoutright
+                show r with easeinright
+                r "Will do."
+            "I'll see you later, Rob.":
+                $ romance_points["Rob"] -= 3
+                $ priority["Rob"] -= 1
 
     n "You check Rob off your list once more and head back to your office."
 

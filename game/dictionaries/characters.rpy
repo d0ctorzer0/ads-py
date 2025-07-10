@@ -22,6 +22,7 @@ define acg = Character(("Aspen"), color="#1c710b", who_outlines=[(4, "#000000", 
 
 define cu = Character(_("???"), color="#1140a4")
 define c = Character(_("Cancer Core"), color="#1140a4")
+define cc = Character(_("CC"), color="#1140a4")
 define ccg = Character(("Cancer Core"), color="#1140a4", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 
 define gu = Character(_("???"), color="#c9ae16")

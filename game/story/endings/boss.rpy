@@ -93,7 +93,7 @@ screen savequestion:
 
 label enddecide_aceorunlikable:
     $ audio_crossFade(2, "music/one.ogg")
-    if positive["Kris"] or positive["Heath"] or positive["Aspen"] or positive["CC"] or positive["Rob"] == 0:
+    if positive["Kris"] or positive["Heath"] or positive["Aspen"] or positive["CC"] or positive["Rob"] == True:
         $ aceending = True
     else:
         $ unlikableending = True
@@ -158,8 +158,8 @@ label END_unlikable:
     n "You hated that."
     mc "Personality cores are so annoying..."
     n "Maybe it's that, or maybe {i}you're{/i} the problem."
-    n "Regardless, you can't wait to get back down to manufacturing -"
-    n "- where the cores don't talk back to you."
+    n "Regardless, you can't wait to get back down to manufacturing..."
+    n "...where the cores don't talk back to you."
 
     n "Credits will go here when they're ready."
     $ MainMenu(confirm=False)()

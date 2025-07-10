@@ -8,8 +8,10 @@ label day2:
 
     mc "What a weird first day..."
 
-    n "You drop off your bag and lay down on your bed, which will wake you up in the morning."
-    n "You wonder if this thing actually makes sleep more efficient or not."
+    n "You drop off your bag and lay down on your bed."
+    ac "Aperture Science Sleep-End Device - ACTIVE."
+    n "You jump."
+    mc "Oh... just an alarm clock. Of course."
     n "With that, you gently close your eyes."
 
     scene black

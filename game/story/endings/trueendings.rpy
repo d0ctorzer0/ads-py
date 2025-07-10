@@ -1,6 +1,3 @@
-label END_cctrue:
-    jump endtest
-
 label END_unknowntrue:
     jump endtest
 

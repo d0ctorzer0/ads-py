@@ -88,12 +88,12 @@ label krisday11:
     k "It's not like her to be late..."
     show k
     k "Anyhow. Things are proceeding as normal here."
-    if positive["Kris"] == 0:
+    if positive["Kris"] == True:
         if lock_kris == True:
             jump romancekrisday11
         if lock_kris == False:
             jump p_krisday11
-    if positive["Kris"] == -1:
+    if positive["Kris"] == False:
         jump n_krisday11
 
 label romancekrisday11:
@@ -250,12 +250,12 @@ label heathday11:
     show h laugh
     h "Keep it, Doc! A little gift from me."
 
-    if positive["Heath"] == 0:
+    if positive["Heath"] == True:
         if lock_heath == True:
             jump romanceheathday11
         if lock_heath == False:
             jump p_heathday11
-    if positive["Heath"] == -1:
+    if positive["Heath"] == False:
         jump n_heathday11
 
 label romanceheathday11:
@@ -368,9 +368,15 @@ label subromanceday11:
                     jump aspenday11
 
         elif romance_points["???"] < romance_points["Greg"]:
-            jump gregday11
+            if romance_points["Greg"] >= 8:
+                jump gregday11
+            else:
+                jump aspenday11
         elif romance_points["???"] > romance_points["Greg"]:
-            jump unknownday11
+            if romance_points["???"] >= 8:
+                jump unknownday11
+            else:
+                jump aspenday11
     else:
         jump aspenday11
 
@@ -669,12 +675,12 @@ label aspenday11:
     show a look
     a "Strange..."
 
-    if positive["Aspen"] == 0:
+    if positive["Aspen"] == True:
         if lock_aspen == True:
             jump romanceaspenday11
         if lock_aspen == False:
             jump p_aspenday11
-    if positive["Aspen"] == -1:
+    if positive["Aspen"] == False:
         jump n_aspenday11
 
 label romanceaspenday11:
@@ -820,12 +826,12 @@ label ccday11:
     c "Interesting. That's very unlike her."
     mc "That's what everyone's said so far."
 
-    if positive["CC"] == 0:
+    if positive["CC"] == True:
         if lock_cc == True:
             jump romanceccday11
         if lock_cc == False:
             jump p_ccday11
-    if positive["CC"] == -1:
+    if positive["CC"] == False:
         jump n_ccday11
 
 label romanceccday11:
@@ -996,12 +1002,12 @@ label robday11:
 
     r "Really? Huh..."
 
-    if positive["Rob"] == 0:
+    if positive["Rob"] == True:
         if lock_rob == True:
             jump romancerobday11
         if lock_rob == False:
             jump p_robday11
-    if positive["Rob"] == -1:
+    if positive["Rob"] == False:
         jump n_robday11
 
 label romancerobday11:

@@ -28,7 +28,7 @@ label satend_mc:
     n "It was fun to explore the facility, though."
     n "You change into your pajamas and head to bed."
 
-    jump day7
+    jump day7cont
 
 label satend_kris:
     play music two

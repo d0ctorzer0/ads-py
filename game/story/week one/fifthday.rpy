@@ -187,7 +187,7 @@ label offendkris5:
     k "I will not tolerate this disgrace to my intelligence..."
 
     if romance_points["Kris"] <= 0:
-        $ positive["Kris"] = -1
+        $ positive["Kris"] = False
         show k flirt
         k "You've been incredibly rude to me over the past week, Doctor..."
         k "I'm not sure what I did to upset you, but..."
@@ -199,7 +199,7 @@ label krisday5cont:
     mc "I... should be going now. I have a schedule to keep."
 
     if romance_points["Kris"] <= 0:
-        $ positive["Kris"] = -1
+        $ positive["Kris"] = False
 
     hide k with easeoutright
     show e annoy with easeinright
@@ -302,7 +302,7 @@ label offendheath5:
     h "Maybe..."
 
     if romance_points["Heath"] <= 0:
-        $ positive["Heath"] = -1
+        $ positive["Heath"] = False
         h "Y'know, Doc... I've really tried this week..."
         h "Pulled out all the stops so you'd enjoy my performances."
         h "I guess not every person likes magic, though."
@@ -335,7 +335,7 @@ label heathday5cont:
 
     mc "Ah, yes, Miss Esther. Let's go."
     if romance_points["Heath"] <= 0:
-        $ positive["Heath"] = -1
+        $ positive["Heath"] = False
 
     # it would be really funny if i added a smoke.mp4 here LMAO
     n "Suddenly, a puff of smoke comes up from the stage. After you finish coughing, you look up to find..."
@@ -465,7 +465,7 @@ label offendaspen5:
     a "Yes, I am, I guess."
 
     if romance_points["Aspen"] <= 0:
-        $ positive["Aspen"] = -1
+        $ positive["Aspen"] = False
         show a look
         a "You're a lot like the previous maintenance employee..."
         a "He didn't care much for botany, either."
@@ -482,7 +482,7 @@ label offendaspen5:
 
 label ccday5:
     if romance_points["Aspen"] <= 0:
-        $ positive["Aspen"] = -1
+        $ positive["Aspen"] = False
     scene hall with fade
     $ audio_crossFade(2, "music/eleven.ogg")
     show e with easeinright
@@ -596,7 +596,7 @@ label ccanduleave:
         n "And with that, he leaves."
 
     elif romance_points["???"] <= 0:
-        $ positive["???"] = -1
+        $ positive["???"] = False
         show u upset
         u "Seems no matter how hard I try, you simply ain't interested, Doc."
         show u look
@@ -669,7 +669,7 @@ label ccanduresolve:
         n "And with that, he leaves."
 
     elif romance_points["???"] <= 0:
-        $ positive["???"] = -1
+        $ positive["???"] = False
         u "Uhh... Doc, I wanna apologize to you too, for uh..."
         show u look
         u "Tryin' so hard. Pushin' you too much."
@@ -754,7 +754,7 @@ label ccend5:
         mc "Thank you, CC."
 
     elif romance_points["CC"] <= 0:
-        $ positive["CC"] = -1
+        $ positive["CC"] = False
         show c look
         c "Before you go..."
         c "I'm not sure what the issue is, but..."
@@ -875,7 +875,7 @@ label offendrob5:
         
         mc "No problem, Rob."
     elif romance_points["Rob"] <= 0:
-        $ positive["Rob"] = -1
+        $ positive["Rob"] = False
         r "I don't know what your problem is, Doc, but..."
         r "The way you talked to me this past week, I..."
         r "I dunno."
@@ -909,7 +909,7 @@ label impressrob5:
         
         mc "No prob, Rob." # LMAO
     elif romance_points["Rob"] <= 0:
-        $ positive["Rob"] = -1
+        $ positive["Rob"] = False
         show r angry
         r "But... I really don't know how to feel about you yet."
         r "Seems you're flip-floppin'. Gotta make up your mind."
@@ -945,7 +945,7 @@ label neutralrob5:
         
         mc "No problem, Rob." 
     elif romance_points["Rob"] <= 0:
-        $ positive["Rob"] = -1
+        $ positive["Rob"] = False
         show r
         r "Doc, listen."
         r "It seems you don't really care for me, or the gym, or any of that shit."
@@ -956,9 +956,9 @@ label neutralrob5:
     jump day5end
 
 label day5end:
-    if positive["Rob"] == 0:
+    if positive["Rob"] == True:
         n "You end the day with your final checkmark of the week and head back towards your office."
-    elif positive["Rob"] == -1:
+    elif positive["Rob"] == False:
         n "You end your day with a note by Rob's name - \"(sleeping)\". You head back towards your office."
     
     scene office with fade

@@ -528,7 +528,7 @@ label leave_unknown:
     mc "Alright. We're... we're here."
     mc "Okay. How are we gonna get you up, CC?"
 
-    show c offrail with easeinright
+    show c annoy offrail with easeinright
     c "My chair has wheels that {i}should{/i} be able to go up stairs..."
     c "But I'm not sure you'll be able to take us both at the same time."
 
@@ -538,8 +538,9 @@ label leave_unknown:
     u "Don't worry. I'll be fine."
 
     hide u with easeoutbottom
-    show c offrail with easeinright
+    show c close offrail with easeinright
     c "No - what if they find you? What if they..."
+    show c annoy offrail
     c "It's not safe. You should go up first."
     hide c with easeoutright
     show u offrail with easeinbottom
@@ -549,9 +550,10 @@ label leave_unknown:
     mc "I'm already... quite exhausted."
 
     hide u with easeoutbottom
-    show c offrail with easeinright
+    show c close offrail with easeinright
     n "CC sighs."
 
+    show c offrail
     c "Okay. I trust you, uh..."
 
     hide c with easeoutright
@@ -564,9 +566,10 @@ label leave_unknown:
     ry "I've just been... scared to tell anyone. 'Case I forget again."
 
     hide u with easeoutbottom
-    show c offrail with easeinright
+    show c happy offrail with easeinright
     c "Ryland."
     c "That's an excellent name."
+    show c close offrail
     c "I trust you."
     c "I'll see you at the surface."
 
@@ -596,10 +599,12 @@ label leave_unknown:
     mc "I don't know, CC. I don't... I don't know."
     mc "But we have to keep going. If they discover I have you, they'll do the same thing to you."
 
+    show c annoy offrail
     c "You're... you're right. I..."
 
     mc "I'm sorry, CC. I know how much you cared about him."
 
+    show c close offrail
     c "Y-Yeah. I guess... hah. I guess that's Aperture for you."
 
     stop music fadeout 2.0
@@ -729,7 +734,7 @@ label leave_cc:
     mc "Alright. We're... we're here."
     mc "Okay. How are we gonna get you two up?"
 
-    show c offrail with easeinright
+    show c annoy offrail with easeinright
     c "My chair has wheels that {i}should{/i} be able to go up stairs..."
     c "But I'm not sure you'll be able to take us both at the same time."
 
@@ -739,8 +744,9 @@ label leave_cc:
     u "Don't worry. I'll be fine."
 
     hide u with easeoutbottom
-    show c offrail with easeinright
+    show c annoy offrail with easeinright
     c "No - what if they find you? What if they..."
+    show c offrail
     c "It's not safe. You should go up first."
     c "Plus, you're lighter - the doctor will waste less energy by taking you first."
     hide c with easeoutright
@@ -767,7 +773,7 @@ label leave_cc:
     ry "I've just been... scared to tell anyone. 'Case I forget again."
 
     hide u with easeoutbottom
-    show c offrail with easeinright
+    show c happy offrail with easeinright
     c "Ryland."
     c "That's an excellent name."
     c "I'll see you on the surface, alright?"
