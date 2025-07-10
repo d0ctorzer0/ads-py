@@ -293,7 +293,7 @@ label END_aspentrue2:
             persistent.endings_got["aspentrue"] = True
         achievement.progress("ach_seenitall", persistent.endings_count)
         achievement.sync()
-        achievement.grant("ach_heathtrue")
+        achievement.grant("ach_aspentrue")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")
     $ MainMenu(confirm=False)()
