@@ -31,7 +31,7 @@ label day6:
     scene mcroom day with fade
 
     # BUT I WANT THEM ALL! ACHIEVEMENT
-    if romance_points["Kris"] and romance_points["Heath"] and romance_points["Aspen"] and romance_points["CC"] and romance_points["Rob"] >= 10:
+    if min([romance_points["Kris"], romance_points["Heath"], romance_points["Aspen"], romance_points["CC"], romance_points["Rob"]]) >= 10:
         $ achievement.grant("ach_biwta")
         $ achievement.sync()
 

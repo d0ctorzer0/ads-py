@@ -93,7 +93,7 @@ screen savequestion:
 
 label enddecide_aceorunlikable:
     $ audio_crossFade(2, "music/one.ogg")
-    if positive["Kris"] or positive["Heath"] or positive["Aspen"] or positive["CC"] or positive["Rob"] == True:
+    if positive["Kris"] or positive["Heath"] or positive["Aspen"] or positive["CC"] or positive["Rob"]:
         $ aceending = True
     else:
         $ unlikableending = True

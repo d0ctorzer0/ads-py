@@ -3,7 +3,7 @@ screen emailday9():
     vbox:
         style_prefix "emailbtns"
             # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        if romance_points["Kris"] or romance_points["Heath"] or romance_points["Aspen"] or romance_points["CC"] or romance_points["Rob"] or romance_points["???"] or romance_points["Greg"] >= 8:
+        if max([romance_points["Kris"], romance_points["Heath"], romance_points["Aspen"], romance_points["CC"], romance_points["Rob"], romance_points["???"], romance_points["Greg"]]) >= 8:
 
             if romance_highest_name == "Kris":
                 textbutton "    from: {color=#25a68c}Kris{/color}\n        Concerning tomorrow                                                                        " action Jump("ekrisconf")
