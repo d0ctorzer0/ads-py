@@ -22,9 +22,6 @@ screen emailday9():
                 $ emailfromgregday9 == True
                 textbutton "    from: {color=#c9ae16}Gregory{/color}\n        seeing if you're interested...                                                                        " action Jump("egregconf")
 
-        else:
-            pass
-
     # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         textbutton "    from: {color=#db35a9}Miss Esther{/color}\n        One-on-One Observation                                                             " action Jump("emailone_9")

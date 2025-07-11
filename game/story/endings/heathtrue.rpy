@@ -8,8 +8,6 @@ label END_heathtrue:
     if renpy.is_skipping() == False:
         show screen truedaytransition
         $ renpy.pause(2.0, hard=True)
-    if renpy.is_skipping() == True:
-        pass
     
     scene black with fade
     play music deathtoaperture
@@ -113,8 +111,6 @@ label END_heathtrue:
     if renpy.is_skipping() == False:
         show screen truedaytransition
         $ renpy.pause(2.0, hard=True)
-    if renpy.is_skipping() == True:
-        pass
 
     scene colon bnb with fade
 

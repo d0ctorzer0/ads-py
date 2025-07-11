@@ -18,8 +18,6 @@ label day12:
     if renpy.is_skipping() == False:
         show screen daytransition
         $ renpy.pause(2.0, hard=True)
-    if renpy.is_skipping() == True:
-        pass
 
     scene mcroom day
     with fade
@@ -32,7 +30,7 @@ label day12:
 
     scene office with fade
 
-    if lock_kris or lock_aspen or lock_cc or lock_gregory or lock_heath or lock_rob or lock_unknown == True:
+    if lock_kris or lock_aspen or lock_cc or lock_gregory or lock_heath or lock_rob or lock_unknown:
         jump estherattack
     else:
         jump enddecide_aceorunlikable

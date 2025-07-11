@@ -11,8 +11,6 @@ label start:
     if renpy.is_skipping() == False:
         show screen daytransition
         $ renpy.pause(2.0, hard=True)
-    if renpy.is_skipping() == True:
-        pass
 
     $ renpy.set_style_preference("text", "basic")
     scene office

@@ -94,8 +94,6 @@ label saveaspen:
     
     if lock_aspen == False:
         jump noaspen
-    else:
-        pass
     window auto
     $ emv_aspen = True
     scene bioroom with fade
@@ -186,8 +184,6 @@ label savegreg:
     
     if lock_gregory == False:
         jump nogreg
-    else:
-        pass
     show bioroom with fade
     show flash
     window auto
@@ -320,8 +316,6 @@ label saverob:
     
     if lock_rob == False:
         jump norob
-    else:
-        pass
     scene robtemproom with fade
     show flash
     window show
@@ -409,8 +403,6 @@ label saveccunknown:
     
     if lock_cc == False and lock_unknown == False:
         jump nocc
-    else:
-        pass
     scene bioroom with fade
     show flash
     window auto
@@ -566,8 +558,6 @@ label nocc:
 label saveheath:
     if lock_heath == False:
         jump noheath
-    else:
-        pass
     scene heathroom with fade
     show flash
     window auto
@@ -669,8 +659,6 @@ label noheath:
 label savekris:
     if lock_kris == False:
         jump nokris
-    else:
-        pass
     window auto
     scene krisroom with fade
     show flash

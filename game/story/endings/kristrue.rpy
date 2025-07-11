@@ -9,8 +9,6 @@ label END_kristrue:
     if renpy.is_skipping() == False:
         show screen truedaytransition
         $ renpy.pause(2.0, hard=True)
-    if renpy.is_skipping() == True:
-        pass
 
     scene nyc with fade
     play music deathtoaperture
@@ -102,8 +100,6 @@ label END_kristrue:
     if renpy.is_skipping() == False:
         show screen truedaytransition
         $ renpy.pause(2.0, hard=True)
-    if renpy.is_skipping() == True:
-        pass
 
     scene nyc hotel with fade
     show k sus offrail with easeinbottom

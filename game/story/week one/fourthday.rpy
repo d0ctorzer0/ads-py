@@ -27,8 +27,6 @@ label day4:
     if renpy.is_skipping() == False:
         show screen daytransition
         $ renpy.pause(2.0, hard=True)
-    if renpy.is_skipping() == True:
-        pass
 
     scene mcroom day with fade
 
@@ -265,8 +263,6 @@ label heathday4cont:
         show e b annoy at bounce
         n "Miss Esther looks at Heath suspiciously."
         hide e b
-    else:
-        pass
 
     hide h with easeoutright
     show e with easeinright
@@ -296,8 +292,6 @@ label offendheath4:
     if romance_points["Heath"] >= 6:
         mc "This isn't going to make her look bad, is it?"
         e "It shouldn't, but I'll leave a note just in case."
-    else:
-        pass
 
     e "Come along now."
 
@@ -374,8 +368,6 @@ label aspenday4:
     if romance_points["Aspen"] >= 8:
         show a look
         a "Things are even better now that you're here!"
-    else:
-        pass
 
     show a
     a "Ahem. Sprinklers functioning normally, yes, yeah."
@@ -412,8 +404,6 @@ label aspenday4cont:
         a "I do appreciate you showing concern, though, Doctor."
 
         mc "Of course."
-    else:
-        pass
 
     show a look
     a "You should probably get going, now. Miss Esther is waiting."
@@ -439,8 +429,6 @@ label ccday4:
     n "The trip to CC's room is uneventful."
     if giveccpicture == True:
         n "You contemplate how you're going to give your picture to him."
-    else:
-        pass
 
     scene ccroom with fade
     $ audio_crossFade(2, "music/five.ogg")
@@ -480,9 +468,6 @@ label ccday4:
         e "This is very sweet of you, Doctor."
         hide e b
         jump ccday4cont
-
-    else:
-        pass
 
     mc "Have there been any changes in your health?"
 
@@ -549,8 +534,6 @@ label ccday4cont:
         show c
         c "Good."
         hide c with easeoutright
-    else:
-        pass
     
     n "You both leave CC behind and exit the room."
 

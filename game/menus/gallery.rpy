@@ -27,7 +27,7 @@ screen galleryk():
 
     if persistent.kgunlock == False:
         add "gui/gallery/krislocked.png"
-    elif persistent.kgunlock == True:
+    else:
         add "gui/gallery/krisunlocked.png"
 
     fixed:
@@ -57,7 +57,7 @@ screen galleryh():
 
     if persistent.hgunlock == False:
         add "gui/gallery/heathlocked.png"
-    elif persistent.hgunlock == True:
+    else:
         add "gui/gallery/heathunlocked.png"
 
     fixed:
@@ -84,7 +84,7 @@ screen gallerya():
 
     if persistent.agunlock == False:
         add "gui/gallery/aspenlocked.png"
-    elif persistent.agunlock == True:
+    else:
         add "gui/gallery/aspenunlocked.png"
     
     fixed:
@@ -110,7 +110,7 @@ screen galleryc():
 
     if persistent.cgunlock == False:
         add "gui/gallery/cclocked.png"
-    elif persistent.cgunlock == True:
+    else:
         add "gui/gallery/ccunlocked.png"
 
     fixed:
@@ -138,7 +138,7 @@ screen galleryr():
 
     if persistent.rgunlock == False:
         add "gui/gallery/roblocked.png"
-    elif persistent.rgunlock == True:
+    else:
         add "gui/gallery/robunlocked.png"
     
     fixed:
@@ -164,7 +164,7 @@ screen galleryg():
 
     if persistent.ggunlock == False:
         add "gui/gallery/gregorylocked.png"
-    elif persistent.ggunlock == True:
+    else:
         add "gui/gallery/gregoryunlocked.png"
 
     fixed:
@@ -188,7 +188,7 @@ screen galleryu():
 
     if persistent.ugunlock == False:
         add "gui/gallery/unknownlocked.png"
-    elif persistent.ugunlock == True:
+    else:
         add "gui/gallery/unknownunlocked.png"
 
     fixed:

@@ -25,8 +25,6 @@ label day7cont:
     if renpy.is_skipping() == False:
         show screen daytransition
         $ renpy.pause(2.0, hard=True)
-    if renpy.is_skipping() == True:
-        pass
 
     scene mcroom day with fade
     n "You wake up to a knocking on your door."

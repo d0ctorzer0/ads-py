@@ -27,7 +27,7 @@ screen file_slots():
 
     if savequestionpopup == False:
         dismiss action Hide("file_slots", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
-    if savequestionpopup == True:
+    else:
         dismiss action Hide("file_slots", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg"), SetVariable("savequestionpopup", "False"), Jump("battle")
 
     vbox spacing -30:

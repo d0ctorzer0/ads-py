@@ -26,8 +26,7 @@ label day6:
     if renpy.is_skipping() == False:
         show screen daytransition
         $ renpy.pause(2.0, hard=True)
-    if renpy.is_skipping() == True:
-        pass
+
     scene mcroom day with fade
 
     # BUT I WANT THEM ALL! ACHIEVEMENT
@@ -750,8 +749,7 @@ label satgreg_pos:
         scene lounge with fade
         hide screen cuttextbox
         $ cutscenetextbox = False
-    if romance_points["Greg"] <= 7:
-        pass
+
     show g look at bounce
     n "Suddenly, Gregory lurches closer to you. You back up a bit."
     g "S-Sorry, Doc, hard to... control my speed."
@@ -821,8 +819,7 @@ label sataspenpos:
         mc "I feel like Bertha is trying to tell me things sometimes."
         show a laugh
         a "See, I knew you'd get me."
-    if plant == False:
-        pass
+
     show a look
     a "Say, uh, Doctor..."
     a "You normally aren't here when this happens, but..."
@@ -1061,8 +1058,7 @@ label satunknownpos:
     mc "It's alright. And no, I don't need a drink."
     if v_greg == True:
         mc "I already got one from the lounge."
-    else:
-        pass
+
     u "Your loss, kid, but."
     show u look
     u "Thanks for stoppin' in. Long time since I had company."
@@ -1154,8 +1150,6 @@ label satunknownpos:
         n "You pick it up and take it with you."
         $ achievement.grant("ach_closet")
         $ achievement.sync()
-    if informed_about_canister == False:
-        pass
 
     jump wander
 

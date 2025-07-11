@@ -172,8 +172,6 @@ label satend_heath:
     if inv_kris == True:
         n "Kris is at a table on the other side of the room. Seems like there's a specific section that management rails go to."
         n "It's separated from the rest of the \"human\" tables."
-    elif inv_kris == False:
-        pass
     n "You sit down fairly close to the stage."
     n "After a short while, an employee enters through the curtains."
 

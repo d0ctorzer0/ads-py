@@ -16,8 +16,7 @@ label day5:
     if renpy.is_skipping() == False:
         show screen daytransition
         $ renpy.pause(2.0, hard=True)
-    if renpy.is_skipping() == True:
-        pass
+
     scene mcroom day with fade
 
     n "You wake with a start." 
@@ -285,8 +284,6 @@ label impressheath5:
         h "I hope you'll keep coming by to see me."
         
         mc "Don't worry, Heath. I will."
-    elif romance_points["Heath"] <= 9:
-        pass
 
     jump heathday5cont
 
@@ -306,8 +303,6 @@ label offendheath5:
         h "Y'know, Doc... I've really tried this week..."
         h "Pulled out all the stops so you'd enjoy my performances."
         h "I guess not every person likes magic, though."
-    elif romance_points["Heath"] >= 1:
-        pass
 
     jump heathday5cont
 
@@ -440,8 +435,6 @@ label impressaspen5:
         a "But thank you."
 
         mc "You're welcome, Aspen."
-    elif romance_points["Aspen"] <= 9:
-        pass
 
     show a
     mc "I should be going now. Good luck in here."
@@ -470,8 +463,6 @@ label offendaspen5:
         a "You're a lot like the previous maintenance employee..."
         a "He didn't care much for botany, either."
         a "It's alright, though. It's not for everyone."
-    elif romance_points["Aspen"] >= 1:
-        pass
 
     show a
     mc "I should be going now. Good luck in here."

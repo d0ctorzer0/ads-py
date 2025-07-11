@@ -259,7 +259,7 @@ default cutscenechoice = False
 screen choice(items):
     if cutscenechoice == True:
         style_prefix "choice_cutscene"
-    if cutscenechoice == False:
+    else:
         style_prefix "choice"
         
     vbox:

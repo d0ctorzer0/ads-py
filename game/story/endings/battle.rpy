@@ -47,8 +47,6 @@ screen main():
         add "gui/boss/top_ap.png"
     elif ap_count == 1:
         add "gui/boss/bot_ap.png"
-    else:
-        pass
 
 # disables all mouse input so player can't skip through cutscenes
 screen disable_Lmouse():
