@@ -195,4 +195,6 @@ $ highest_priority = max(priority, key=priority.get)
 default romance_minimum_for_good_ending = 20
 default romance_minimum_for_true_ending = 30
 
+default gotconfession = False # Decides ace or unlikeable ending
+
 default esther_affection = 0

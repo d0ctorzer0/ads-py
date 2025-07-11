@@ -148,6 +148,7 @@ label krisday10:
     jump krisconfession
 
 label krisconfession:
+    $ gotconfession = True
     show k flirt with easeinright
     k "Doctor... hello."
 
@@ -373,7 +374,7 @@ label heathday10:
     show h laugh
     h "Behold... my magnum opus!"
 
-    
+    $ gotconfession = True
     $ cutscenechoice = True
     show screen cuttextbox
     scene heath cutscene 3 with fade
@@ -568,6 +569,7 @@ label aspenday10:
     show a look
     a "Umm..."
 
+    $ gotconfession = True
     $ cutscenechoice = True
     show screen cuttextbox
     scene aspen cutscene 3 with fade
@@ -781,6 +783,7 @@ label ccday10:
     c "I'm going to phrase it in a particular way, however, as I'm..."
     c "...not sure I have the words otherwise."
 
+    $ gotconfession = True
     $ cutscenechoice = True
     show screen cuttextbox
     scene cc cutscene 3 with fade
@@ -1000,6 +1003,7 @@ label robday10:
 
     n "You approach the gym kiosk."
 
+    $ gotconfession = True
     $ cutscenechoice = True
     show screen cuttextbox
     scene rob cutscene 3 with fade

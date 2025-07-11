@@ -411,6 +411,7 @@ label gregday11:
 
     mc "Us? We?"
 
+    $ gotconfession = True
     $ cutscenechoice = True
     show screen cuttextbox
     scene greg cutscene 3 with fade
@@ -561,6 +562,7 @@ label unknownday11:
     u "I'm tryin' to be better."
     u "'Cuz, well, Doc..."
 
+    $ gotconfession = True
     $ cutscenechoice = True
     show screen cuttextbox
     scene unknown cutscene 3 with fade
