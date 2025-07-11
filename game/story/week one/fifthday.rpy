@@ -956,9 +956,9 @@ label neutralrob5:
     jump day5end
 
 label day5end:
-    if positive["Rob"] == True:
+    if positive["Rob"]:
         n "You end the day with your final checkmark of the week and head back towards your office."
-    elif positive["Rob"] == False:
+    else:
         n "You end your day with a note by Rob's name - \"(sleeping)\". You head back towards your office."
     
     scene office with fade

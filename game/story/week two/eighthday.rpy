@@ -68,9 +68,9 @@ label krisday8:
     hide e with easeoutright
     show k with easeinright
 
-    if positive["Kris"] == True:
+    if positive["Kris"]:
         jump p_krisday8
-    elif positive["Kris"] == False:
+    else:
         jump n_krisday8
 
 label p_krisday8:
@@ -262,9 +262,9 @@ label heathday8:
     e "Not really {i}magic,{/i} but..."
     hide e b
 
-    if positive["Heath"] == True:
+    if positive["Heath"]:
         jump p_heathday8
-    if positive["Heath"] == False:
+    else:
         jump n_heathday8
 
 label p_heathday8:
@@ -534,9 +534,9 @@ label aspenday8:
 
     n "They turn around."
 
-    if positive["Aspen"] == True:
+    if positive["Aspen"]:
         jump p_aspenday8
-    if positive["Aspen"] == False:
+    else:
         jump n_aspenday8
 
 label p_aspenday8:
@@ -685,9 +685,9 @@ label ccday8:
     e "Oh, CC..."
     hide e b
 
-    if positive["CC"] == True:
+    if positive["CC"]:
         jump p_ccday8
-    if positive["CC"] == False:
+    else:
         jump n_ccday8
     
 label p_ccday8:
@@ -792,9 +792,9 @@ label robday8:
     scene robtemproom with fade
     $ audio_crossFade(2, "music/six.ogg")
     show r with easeinright
-    if positive["Rob"] == True:
+    if positive["Rob"]:
         jump p_robday8
-    if positive["Rob"] == False:
+    else:
         jump n_robday8
 
 label p_robday8:

@@ -83,9 +83,9 @@ label krisday9:
         show k
         k "Your loss."
         mc "Anyways..."
-    if positive["Kris"] == True:
+    if positive["Kris"]:
         jump p_krisday9
-    if positive["Kris"] == False:
+    else:
         jump n_krisday9
 
 label p_krisday9:
@@ -290,9 +290,9 @@ label heathday9:
     h "TADA!!"
     h "Just a little... sleight-of-handle."
     
-    if positive["Heath"] == True:
+    if positive["Heath"]:
         jump p_heathday9
-    if positive["Heath"] == False:
+    else:
         jump n_heathday9
 
 label p_heathday9:
@@ -450,9 +450,9 @@ label aspenday9:
 
     show a with easeinright
     n "Aspen turns around to face you."
-    if positive["Aspen"] == True:
+    if positive["Aspen"]:
         jump p_aspenday9
-    if positive["Aspen"] == False:
+    else:
         jump n_aspenday9
 
 label p_aspenday9:
@@ -612,9 +612,9 @@ label ccday9:
     $ audio_crossFade(2, "music/five.ogg")
     show c with easeinright
 
-    if positive["CC"] == True:
+    if positive["CC"]:
         jump p_ccday9
-    if positive["CC"] == False:
+    else:
         jump n_ccday9
     
 label p_ccday9:

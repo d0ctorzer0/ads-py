@@ -42,7 +42,7 @@ label day10:
     e "Yes, much better, haha. Not as tired, for sure!"
     show e
     e "Alright - you know the drill. Today's the one-on-one observation day."
-    if not positive["Kris"] and not positive["Heath"] and not positive["Aspen"] and not positive["CC"] and not positive["Rob"] == True:
+    if not positive["Kris"] and not positive["Heath"] and not positive["Aspen"] and not positive["CC"] and not positive["Rob"]:
         show e annoy
         e "Unfortunately, every single one of the cores under our section has specifically requested -"
         e "- either to me, or to HR -"
@@ -1231,7 +1231,7 @@ label day10end:
     show e with easeinright
     e "Doctor! How was your shift?"
 
-    if positive["Kris"] and positive["Heath"] and positive["Aspen"] and positive["CC"] and positive["Rob"] == -1:
+    if not positive["Kris"] and not positive["Heath"] and not positive["Aspen"] and not positive["CC"] and not positive["Rob"]:
         "It was okay. Quiet. Boring."
 
         e "That's understandable. Go ahead and finish your paperwork and check your emails."
