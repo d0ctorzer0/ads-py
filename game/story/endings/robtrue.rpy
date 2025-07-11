@@ -9,8 +9,6 @@ label END_robtrue:
     if renpy.is_skipping() == False:
         show screen truedaytransition
         $ renpy.pause(2.0, hard=True)
-    if renpy.is_skipping() == True:
-        pass
 
     scene det car with fade
     play music deathtoaperture
@@ -58,7 +56,7 @@ label END_robtrue:
     n "The stadium's packed."
     n "You clutch your backpack close to your chest and squeeze into your two seats in the back."
     n "Thankfully, it looks like the seats beside you are fairly empty."
-    n "You lean over to you bag and whisper into it."
+    n "You lean over to your bag and whisper into it."
     mc "Looks like it'll be safe to take you out in just a little bit."
     r "Alright, Doc, but hurry, yeah?"
     r "It's hot as hell in here!"
@@ -161,7 +159,7 @@ label END_robtrue:
 
     if ball == True:
         mc "The bases being \"loaded\" - remind me what that means again?"
-    if ball == False:
+    else:
         mc "The bases being \"loaded\" - what does that mean?"
     
     show r look offrail

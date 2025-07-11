@@ -303,7 +303,7 @@ label satend_aspen:
         achievement.sync()
     acg "{color=#fff}I mean, I'm sure you've seen things glow before, but... this is different, yes?"
     acg "{color=#fff}{i}Pyrodinium bahamense{/i}. That's their binomial name."
-    acg "{color=#fff}But a lot of us just refer to them as their superclass."
+    acg "{color=#fff}But a lot of us just refer to them by their superclass."
     acg "{color=#fff}I personally think using their full name can be important..."
     acg "{color=#fff}They're on loan to us from Marine Studies. We generally don't carry much sea life in Botany."
     acg "{color=#fff}It's a rare treat."
