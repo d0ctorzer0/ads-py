@@ -64,7 +64,9 @@ label estherattack:
     e "To BARELY ANIMATE OBJECTS, mind you!"
     show e annoy
     e "Oh well. It's none of my concern."
-    e "But you..."    
+    e "But you..."
+    if esther_affection >= 10:
+        jump battleskip    
     e "You've become a problem. One I cannot ignore."
     e "I'm... I'm sorry, Doctor."
 
@@ -162,8 +164,50 @@ label END_unlikable:
     n "Credits will go here when they're ready."
     $ MainMenu(confirm=False)()
 
+label battleskip:
+    show e look
+    e "I-I..."
+    show e close
+    e "I can't, Doctor. I..."
+    show e look
+    e "You've been so kind to me. More than anyone before you."
+    e "My programming is screaming at me..."
+    e "To not let you do this. To not let you go."
+    show e laugh
+    e "Y-You know, if Aperture finds out I'm letting you get away with this, they'll..."
+    show e look
+    e "They'll..."
+    show e close
+    n "She sighs."
+    show e look
+    e "You remember... how I said I have... difficulty connecting with anyone?"
+    e "Cores... humans... doesn't matter. It's such a struggle."
+    e "And I feel I can be... a bit negative, sometimes."
+    show e laugh
+    e "There's a reason they called me the Sociopath Core up in Testing! Haha!"
+    show e look
+    e "Hah..."
+    show e close
+    e "Y-You should go. Before I can change my mind."
+    e "I don't think I could ever hurt my first... true... {i}friend."
+    show e look
+    e "Doctor. Thank you. And... I'm sorry."
+    e "You will not see me again. I-I have to leave, I..."
+    e "Please stay safe."
+    e "I... care for you."
+    hide e with easeoutright
+    n "...And she's gone."
+    n "You have a deep, nagging feeling you just avoided something horrible."
+    n "You take a deep breath."
+    n "Your office, once a somewhat calming place, seems so unwelcoming now."
+    n "The chairs look uncomfortable. The desks look suffocating."
+    n "Would it even be worth finishing your shift now?"
+    n "Would Aperture care?"
+    n "You decide it's probably best to just lay down for a bit."
+    n "You certainly have a lot to think about."
 
-
+    scene mcroom day with fade
+    jump day12endcont
 
 label day12end:
     n "You take a deep breath. The room is a mess of papers and burn marks on the walls."
@@ -177,6 +221,10 @@ label day12end:
 
     scene mcroom night with fade
     n "Your bed looks so much more unwelcoming now."
+
+    jump day12endcont
+
+label day12endcont:
     if lock_kris:
         mc "I hope Kris is doing better than I am..."
     elif lock_heath:
