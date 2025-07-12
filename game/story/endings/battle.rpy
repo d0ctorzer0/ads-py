@@ -278,7 +278,7 @@ label esthertalk1:
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
     show white with hpunch
-    $ es_health -= 2
+    $ es_health -= 3
     hide screen esther_print with easeouttop
     jump cmdinput
 
@@ -287,7 +287,7 @@ label esthertalk2:
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
     show white with hpunch
-    $ es_health -= 2
+    $ es_health -= 3
     hide screen esther_print with easeouttop
     jump cmdinput
 
@@ -296,7 +296,7 @@ label esthertalk3:
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
     show white with hpunch
-    $ es_health -= 2
+    $ es_health -= 3
     hide screen esther_print with easeouttop
     jump cmdinput
 
