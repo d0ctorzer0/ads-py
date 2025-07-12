@@ -2,13 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/aspentrue.rpy", line 202: end of line expected.
-    if "lily" in name.lower()::
-                              ^
+The label END_unknowntrue is defined twice, at File "game/story/endings/trueendings.rpy", line 1:
+label END_unknowntrue:
+and File "game/story/endings/unknowntrue.rpy", line 1:
+label END_unknowntrue:
 
-File "game/story/endings/aspentrue.rpy", line 204: end of line expected.
-    if "ross" in name.lower()::
-                              ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Tue Jul  8 15:49:42 2025
+Sat Jul 12 06:17:13 2025
