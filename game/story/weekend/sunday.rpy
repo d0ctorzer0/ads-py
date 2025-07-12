@@ -159,7 +159,8 @@ label day7esther:
 
     show e annoy
     show screen vignette with vigswitch
-    stop music fadeout 1.0 
+    stop music fadeout 1.0
+    stop music1 fadeout 1.0
     e "Doctor... I have something important to tell you."
     e "Please listen carefully."
 
