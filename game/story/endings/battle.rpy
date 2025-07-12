@@ -114,7 +114,7 @@ label cmdinput:
         jump cmdinput
     elif cmd == "help yield":
         $ preferences.afm_time = 7
-        "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ YIELD ] COMMAND\n\nYIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 50 PERCENT\nCHANCE OF STUNNING CORE FOR ONE (1) CYCLE. CHANCE DECREASES\nWITH EACH USE. USES ONE (1) COMMAND POINT."
+        "APERTURE SCIENCE CORE CONTROL CENTER (ASC3)\n[[ YIELD ] COMMAND\n\nYIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 75 PERCENT\nCHANCE OF STUNNING CORE FOR ONE (1) CYCLE. CHANCE DECREASES\nWITH EACH USE. USES ONE (1) COMMAND POINT."
         jump cmdinput
     elif cmd == "help delete":
         $ preferences.afm_time = 7
@@ -189,12 +189,12 @@ label cmdyield:
         cmdexecuted = True
         ap_count -= 1
         yldrandomizer = renpy.random.randint(1, 100)
-    if yldrandomizer > 50:
+    if yldrandomizer > 25:
         show white with vpunch
         $ esther_stunned = True
         "YIELD COMMAND EXECUTED. CORE STUNNED FOR ONE (1) CYCLE."
         jump cmdinput
-    elif yldrandomizer <= 50:
+    else:
         "YIELD COMMAND FAILED. UNABLE TO EXECUTE."
         jump cmdinput
 
