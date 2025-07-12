@@ -71,7 +71,7 @@ label estherattack:
     scene black with fade
     $ savequestionpopup = True
     call screen savequestion
-
+    $ savequestionpopup = False
     jump battle
 
 screen savequestion:

@@ -64,6 +64,7 @@ label battle: # AND GUESS WHAT? IT STILL DOESN'T WORK
     play music boss
     python:
         battle = True
+        savequestionpopup = False
         preferences.afm_enable = True
         preferences.afm_time = 5
         preferences.afm_after_click = True
