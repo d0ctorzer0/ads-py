@@ -2,11 +2,17 @@
 errors listed below, and try again.
 
 
-The label END_unknowntrue is defined twice, at File "game/story/endings/trueendings.rpy", line 1:
-label END_unknowntrue:
+The label END_gregtrue is defined twice, at File "game/story/endings/gregorytrue.rpy", line 1:
+label END_gregtrue:
+and File "game/story/endings/trueendings.rpyc", line 4:
+
+
+
+The label END_unknowntrue is defined twice, at File "game/story/endings/trueendings.rpyc", line 1:
+
 and File "game/story/endings/unknowntrue.rpy", line 1:
 label END_unknowntrue:
 
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sat Jul 12 06:17:13 2025
+Mon Jul 14 14:45:23 2025
