@@ -1,16 +1,16 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/endings/kristrue.rpy", line 14, in script
-    scene nyc eve with fade
-Exception: Image 'nyc' does not accept attributes 'eve'.
+  File "game/story/endings/daythirteen.rpy", line 239, in script
+    show gore sus
+Exception: Image 'gore' does not accept attributes 'sus'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/endings/kristrue.rpy", line 14, in script
-    scene nyc eve with fade
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1258, in execute
+  File "game/story/endings/daythirteen.rpy", line 239, in script
+    show gore sus
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1124, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1087, in show_imspec
     renpy.config.show(name,
@@ -22,9 +22,9 @@ Full traceback:
     args.extraneous()
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 109, in extraneous
     raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'nyc' does not accept attributes 'eve'.
+Exception: Image 'gore' does not accept attributes 'sus'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
-Aperture Dating Simulator 0.6.0alpha
-Mon Jul  7 01:36:28 2025
+Aperture Dating Simulator 0.7.0alpha
+Mon Jul 14 15:39:24 2025

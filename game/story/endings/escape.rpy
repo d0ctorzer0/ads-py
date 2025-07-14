@@ -1094,56 +1094,84 @@ label escape_rob:
 
 label escape_gregory:
     scene stairs with fade
-    show flash
-    show g offrail with easeinbottom
+    show flash with None
+    show gre
+    show gore
+    show rie happy
+    with easeinbottom
     g1 "Here we are, Doctor."
 
     n "You look down at the three cores bundled up in your coat."
 
     mc "This is still a little weird to me."
 
+    show rie
     g3 "You're not the only one."
+    show gore look
     g2 "We have more pressing concerns right now."
 
     mc "Yes, you're right."
     mc "Alright. Let's -"
 
-    show g offrail at bounce
+    show gre at bounce
+    show gore at bounce
+    show rie happy at bounce
     gall "Wait!"
 
     mc "Wh -"
 
     stop music fadeout 3.0
-    show g look offrail
+    show gre look
     g1 "Sorry, Doctor, give us just a second."
+    show gore close
     g2 "This is... a new experience."
+    show rie look
     g3 "All of this."
+    show gre sus
     g1 "Being separated..."
+    show gore look
     g2 "Thinking independently..."
+    show rie
     g3 "...going to the surface."
+    show gre look
+    show gore
+    show rie happy
     gall "And I'm a little scared."
     g1 "We've had a lot of contact with surface humans before."
+    show gore close
     g2 "In particular, the shareholders that come down for meetings."
+    show rie look
     g3 "But we've never been to the surface ourselves."
+    show gre sus
     g1 "I don't know what to expect up there."
+    show gore
     g2 "I'm not used to this... silence in my head."
+    show rie
     g3 "How are we supposed to process this?"
+    show gre look
+    show gore close
+    show rie look
     gall "Separately?"
 
     mc "I can imagine that would be quite terrifying."
     mc "Spending your whole life thinking as one entity - and now you have to think for yourselves."
 
-    show g offrail
+    show gore look
     g2 "It's not just that. Think about this logically -"
+    show rie angry
     g3 "You're basically stealing us from Aperture."
+    show gre
     g1 "What if they come after you?"
 
+    show rie
     mc "I don't think they will. I think we'll be just fine."
     mc "We don't have much of a choice, either way."
 
+    show gore
     g2 "That much is accurate..."
+    show gre look
     g1 "Okay."
-    show g look offrail
+    show rie look
     g3 "I still think this is a bad idea."
     gall "But I'm ready."
 

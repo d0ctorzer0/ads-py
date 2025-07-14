@@ -233,33 +233,47 @@ label savegreg:
     hide screen cuttextbox
     window auto
     scene hall with fade
-    show flash
+    show flash with None
     $ cutscenetextbox = False
-    show g look offrail with easeinbottom
+    show gre look
+    show gore look
+    show rie angry
+    with easeinbottom
     g1 "W-What? What's... what's going on?"
     g2 "Who..."
     g3 "Where am I? Who are you?"
 
     mc "Oh my god. Gregory, are you okay?!"
 
-    show g offrail
+    show gre
+    show gore
+    show rie happy
     gall "Yeah, I'm fine."
-    show g look offrail
+    show gore look
     g2 "Wait a minute - are we... separated?!"
+    show gre look
     g1 "Oh no. Oh no. This can't be happening."
+    show rie
     g3 "Great. This is just great."
 
     mc "I thought you... all... said you {i}couldn't{/i} be separated?"
 
+    show gore close
     g2 "That's what I thought, but... I suppose I was wrong."
+    show gre sus
     g1 "{i}You{/i} thought? That was {i}my{/i} idea!"
+    show rie angry
     g3 "It was {i}our{/i} idea. We thought that together."
 
     mc "I - ugh. We don't have time for this, we need to get out of here."
+    show gre
+    show gore
+    show rie
     mc "Everyone else has left. The surface elevators are probably full of people, and I don't think they'd like it if you came with me."
 
-    show g offrail
+    show gre look
     g1 "Probably not."
+    show gore close
     g2 "Agreed."
     g3 "Stealing Aperture property."
 
@@ -267,9 +281,11 @@ label savegreg:
 
     mc "Any of you have any ideas?"
 
-    show g look offrail
+    show gore look
     g2 "Hmm..."
-    show g offrail at bounce
+    show gre at bounce
+    show gore at bounce
+    show rie happy at bounce
     gall "The stairs!"
     g1 "There's stairs behind Kris' conference room."
     g2 "Sometimes our stockholders will come down that way, but rarely."
