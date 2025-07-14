@@ -22,13 +22,16 @@ label END_unknowntrue:
     n "He tends to be quieter recently - lots of introspection to do."
     n "You put down your bag, take off your shoes, and round the corner."
     mc "Hey, Ryland."
-    show u offrail with easeinbottom
+    show ry happy with easeinbottom at bounce
     ry "Ah! Sorry, I, uh..."
+    show ry look
     ry "I didn't hear you come in."
     mc "Any new developments today?"
+    show ry happy
     ry "I had a bit of a breakthrough..."
     ry "Nothin' spectacular, but it's better than nothing."
     mc "Oh yeah? What was it?"
+    show ry look
     ry "I remembered my original job. Y'know, what I was before I was cut from the system."
     mc "That's not \"spectacular\" to you?! That's huge!"
     ry "Hah... I guess."
@@ -40,6 +43,7 @@ label END_unknowntrue:
     mc "Sounds rough."
     ry "Y-Yeah, I think that mighta had somethin' to do with... how I got to... {i}that{/i} point."
     mc "Ryland, you don't have to talk about that if you -"
+    show ry happy
     ry "Nah, nah. It's fine. It... helps. To talk about it."
     ry "Reminds me how far I've come."
     mc "That's good."
@@ -50,11 +54,13 @@ label END_unknowntrue:
     n "He'd only recently stopped having withdrawal symptoms."
     n "You look down at him."
     mc "How are you feeling? Anything internally?"
+    show ry look
     ry "Mmm... not that I can tell. No new systems breaks, if that's what you're askin'."
     ry "Can't believe you still remember all that training..."
     mc "I {i}was{/i} in Manufacturing for, what, nine months?"
     mc "I built so many cores down there."
     mc "You're honestly surprised I know them inside and out?"
+    show ry happy
     ry "Hah... guess not."
     ry "Still... it prolly ain't easy caring for me all the time."
     mc "It's worth it."
@@ -62,6 +68,7 @@ label END_unknowntrue:
     ry "And it's only been two months."
     ry "Ha! Imagine how much more you got ahead of ya to deal with..."
     mc "I think I'm ready."
+    show ry look
     n "The two of you sit on the couch in silence for a bit."
     n "You've gotten used to the rhythmic clanking of Ryland's internals -"
     n "A little rougher than the average Aperture core, but a sign that he's still running, nonetheless."
@@ -79,12 +86,74 @@ label END_unknowntrue:
     mc "Or... a version of it."
     mc "Is it really a lie to tell them you've got coffee-colored eyes and a few scars on your body?"
     ry "I mean... kinda. Optics and metal patch plates, but..."
+    show ry happy
     ry "I guess it's kinda the same, huh?"
     mc "..."
     ry "..."
     mc "Do you want to go out to the balcony?"
+    show ry look
     ry "Yeah. I think I'd like that."
     mc "Let me go grab a drink and we'll go out together."
 
     scene black with fade
     scene apt balcony with fade
+    n "The sun is still nicely over the horizon -"
+    n "- but not so far that it's too bright out."
+    n "It's a perfect summer afternoon."
+    show ry happy
+    ry "Ain't it beautiful out here?"
+    mc "It sure is."
+    show ry look
+    ry "..."
+    mc "Do you wanna play our little game?"
+    ry "Mmm... sure."
+    mc "Alright."
+    mc "What's your name?"
+    ry "Ryland."
+    mc "Activation year?"
+    ry "Uhh..."
+    ry "1973."
+    mc "That's what you said last time, too. That's good."
+    mc "Activation {i}month?"
+    ry "Ugh, that's a tough one."
+    ry "J... J something..."
+    ry "January?"
+    mc "Last time you said June."
+    ry "Well, we've narrowed it down to a J month, at least."
+    mc "Any progress is good."
+    ry "You're a sweetheart, y'know?"
+    ry "It's prolly tough. Taking care of me an' all."
+    mc "You're right. It's not always the most... easy thing, but..."
+    mc "It's worth it. For you."
+    n "The two of you sit in silence for a bit, looking out over the balcony."
+    n "Your apartment is located in a very nice part of Adrian."
+    n "Summers thankfully don't get too hot in Michigan, which lets you enjoy the balcony more often."
+    n "Much to Ryland's delight."
+    n "Occasionally, he'll even ask you to leave him out there for a few hours..."
+    n "...just to watch the sky."
+    ry "Hey..."
+    mc "What's up?"
+    ry "This is gonna sound like it came from nowhere..."
+    mc "You tend to come up with some pretty crazy things."
+    mc "Whatever it is, I probably won't be surprised."
+    ry "Hah... you really do know me pretty well, huh?"
+    ry "..."
+    ry "Do you think... there's a robot heaven?"
+    mc "Dang. That really did come from nowhere."
+    ry "I-I've just been thinkin' about the other robots back at Aperture..."
+    ry "They definitely didn't all make it out from that, y'know."
+    ry "I mean... CC's the prime example, but..."
+    menu:
+        extend ""
+        "I think there's a robot heaven.":
+            ry "That's... good."
+            ry "I hope they're happy up there."
+            mc "Me too."
+        "I doubt something like that exists, though.":
+            ry "Hah. You're prolly right."
+            ry "Still... wonder what happens when our systems shut down..."
+            mc "You're awfully philosophical today, Ryland."
+            ry "Yeah, hah. Guess I am."
+        "I'm not sure."
+            ry "Me either."
+    n "The two of you go quiet again."
