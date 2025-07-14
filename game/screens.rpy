@@ -436,7 +436,7 @@ screen main_menu():
                 ypos -575
                 xpos -52
                 focus_mask True
-
+    
         elif main_menu and mm2 == True:
 
             imagebutton idle "gui/mmbtn.png" action Show("aboutmenu", transition=easeinbottom), Play("sound", "sfx/paperopen2.ogg") at tilted2: #about

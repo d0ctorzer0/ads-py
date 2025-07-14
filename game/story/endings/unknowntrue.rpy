@@ -152,8 +152,88 @@ label END_unknowntrue:
         "I doubt something like that exists, though.":
             ry "Hah. You're prolly right."
             ry "Still... wonder what happens when our systems shut down..."
-            mc "You're awfully philosophical today, Ryland."
-            ry "Yeah, hah. Guess I am."
         "I'm not sure."
             ry "Me either."
     n "The two of you go quiet again."
+    ry "I guess it doesn't really matter, huh?"
+    mc "What do you mean?"
+    ry "I mean. As long as I'm with you, I'd rather enjoy the time I have, y'know?"
+    ry "Can't get to stressin' about all that."
+    mc "I agree."
+    ry "I-I remember - well, not many details 'bout it, but I remember - they told me about android hell."
+    ry "Where ya go if you fail."
+    ry "I thought I'd be sent there for sure eventually."
+    mc "Why?"
+    ry "Well, I... hah..."
+    ry "I was breakin' into rooms, stealin' product from the company..."
+    ry "I wasn't workin' at all. I mean..."
+    mc "I can see why you might've thought that."
+    ry "I think... no matter what happens when I shut down..."
+    ry "I'll be happy."
+    ry "Even if there is no robot heaven..."
+    ry "This has gotta be pretty close, yeah?"
+    mc "You're sweet."
+    ry "You're one to talk."
+
+    show screen cuttextbox
+    scene unknown cutscene 5 with fade
+    $ cutscenetextbox = True
+    $ cutscenechoice = True
+    python:
+        if persistent.uc5 == False:
+            persistent.cutscenes_seen += 1
+            persistent.uc5 = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
+    ry "I just remembered something else."
+    mc "What's that?"
+    ry "My alias."
+    ry "Y'know... how CC was Cancer Core, that Kris fellow was the Business Core..."
+    mc "Really?"
+    ry "Yeah. Hah. You're gonna laugh when you hear it."
+    mc "Maybe, maybe not."
+    ry "Philosophy Core."
+    ry "That was my title."
+    ry "At least, it was when I was first activated."
+    mc "That makes a lot of things click."
+    ry "They started callin' me the Alcoholic Core instead like, I dunno, 4 years ago?"
+    ry "And it kinda stuck..."
+    mc "I didn't expect all this from you when we first met, but..."
+    mc "I don't mind it."
+    ry "I'm glad."
+    ry "You're really somethin' special."
+    ry "I knew that when we first met, y'know?"
+    ry "Something about you..."
+    # mc "Hmm. Maybe it's because I'm the main character?"
+    mc "You're pretty special yourself, Ryland."
+    ry "I love it when you say my name like that."
+    ry "I-I love you."
+    menu:
+        extend ""
+        "I love you too.":
+            ry "Finally said it, huh?"
+            ry "Took ya long enough!"
+            mc "Haha, yeah, yeah."
+        "I'll have to say your name more, then.":
+            ry "I don't think I'd mind that at all."
+    n "The two of you watch as the sun sets in the distance."
+    n "Ryland still has a long way to go, but..."
+    n "Progress is progress, regardless."
+    n "And he seems a lot happier."
+    n "And you're a lot happier, too."
+    stop music fadeout 2.0
+    window hide
+    $ cutscenechoice = False
+    show screen creditsfadeout with fade
+    $ renpy.pause(2.0, hard=True)
+    hide screen creditsfadeout
+    python:
+        if persistent.endings_got["unknowntrue"] == False:
+            persistent.endings_count += 1
+            persistent.endings_got["unknowntrue"] = True
+        achievement.progress("ach_seenitall", persistent.endings_count)
+        achievement.sync()
+        achievement.grant("ach_unknowntrue")
+        achievement.sync()
+    $ renpy.movie_cutscene("ENDCREDIT_ccunknown.webm")
+    $ MainMenu(confirm=False)()
