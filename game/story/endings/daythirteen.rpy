@@ -260,7 +260,7 @@ label savegreg:
 
     show gore close
     g2 "That's what I thought, but... I suppose I was wrong."
-    show gre sus
+    show gre shock
     g1 "{i}You{/i} thought? That was {i}my{/i} idea!"
     show rie angry
     g3 "It was {i}our{/i} idea. We thought that together."

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/daythirteen.rpy", line 289: expected statement.
+File "game/story/endings/gregorytrue.rpy", line 222: expected statement.
     at bounce
              ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Mon Jul 14 15:42:38 2025
+Mon Jul 14 21:03:00 2025
