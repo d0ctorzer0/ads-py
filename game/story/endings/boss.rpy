@@ -148,6 +148,14 @@ label END_ace:
     n "You'll definitely be back to visit."
 
     n "Credits will go here when they're ready."
+    python:
+        if persistent.endings_got["ace"] == False:
+            persistent.endings_count += 1
+            persistent.endings_got["ace"] = True
+        achievement.progress("ach_seenitall", persistent.endings_count)
+        achievement.sync()
+        achievement.grant("ach_amoh")
+        achievement.sync() 
     $ MainMenu(confirm=False)()
 
 label END_unlikable:
@@ -162,6 +170,14 @@ label END_unlikable:
     n "...where the cores don't talk back to you."
 
     n "Credits will go here when they're ready."
+    python:
+        if persistent.endings_got["unlikeable"] == False:
+            persistent.endings_count += 1
+            persistent.endings_got["unlikeable"] = True
+        achievement.progress("ach_seenitall", persistent.endings_count)
+        achievement.sync()
+        achievement.grant("ach_unlikeable")
+        achievement.sync() 
     $ MainMenu(confirm=False)()
 
 label battleskip:

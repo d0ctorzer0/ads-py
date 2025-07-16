@@ -194,7 +194,7 @@ label END_unknowntrue:
     mc "Why?"
     ry "Well, I... hah..."
     show ry look
-    ry "I was breakin' into rooms, stealin' product from the company..."
+    ry "I was breakin' into rooms, stealin' products from the company..."
     ry "I wasn't workin' at all. I mean..."
     mc "I can see why you might've thought that."
     ry "I think... no matter what happens when I shut down..."

@@ -444,6 +444,7 @@ label saveccunknown:
         if persistent.cc4 == False:
             persistent.cutscenes_seen += 1
             persistent.cc4 = True
+            persistent.uc3 = True
         achievement.progress("ach_picture", persistent.cutscenes_seen)
         achievement.sync()
     c "{color=#fff}Doctor..."
