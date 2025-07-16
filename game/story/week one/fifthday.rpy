@@ -25,25 +25,25 @@ label day5:
 
     menu:
         extend ""
-        "A t-shirt and jeans.":
+        "(A t-shirt and jeans.)":
             python:
                 tshirt = True
                 romance_points["Aspen"] += 1
                 romance_points["Greg"] += 1
             n "You put on a regular old t-shirt and blue jeans, and head out the door to work."
-        "Your best formalwear.":
+        "(Your best formalwear.)":
             python:
                 formal = True
                 romance_points["Kris"] += 1
                 romance_points["Heath"] += 1
             n "You put on your best date-night attire, and head out the door to work."
-        "A Hawaiian shirt and khakis.":
+        "(A Hawaiian shirt and khakis.)":
             python:
                 vaca = True
                 romance_points["Rob"] += 1
                 romance_points["???"] += 1
             n "You put on your vacation clothes, and head out the door to work."
-        "Just your regular uniform.":
+        "(Just your regular uniform.)":
             python:
                 uniform = True
                 romance_points["CC"] += 1

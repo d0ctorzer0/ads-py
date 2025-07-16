@@ -105,19 +105,19 @@ label introcont:
     menu:
         extend ""
 
-        "A potted plant you call \"Bertha\".":
+        "(A potted plant you call \"Bertha\".)":
 
             $ plant = True
 
             n "You set down Bertha and pat down her soil slightly. She somehow survives, even with the lack of real sunlight this far down."
         
-        "A baseball signed by your favorite player.":
+        "(A baseball signed by your favorite player.)":
 
             $ ball = True
 
             n "You place the ball carefully on a round stand so that the autograph is facing toward you."
         
-        "A picture of Multnomah Falls, Oregon.":
+        "(A picture of Multnomah Falls, Oregon.)":
 
             $ picture = True
 
