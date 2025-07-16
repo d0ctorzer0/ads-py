@@ -285,7 +285,7 @@ label krisacceptance:
 
     menu:
         extend ""
-        "Kiss him.":
+        "(Kiss him.)":
             n "You lean over to him and gently kiss him on the chassis."
             show k angry at bounce
             k "Doctor!"
@@ -296,7 +296,7 @@ label krisacceptance:
             mc "You too, Kris."
             n "You finish your checklist quickly and leave the conference room, and Kris, behind."
             jump day10end
-        "Say goodbye.":
+        "(Say goodbye.)":
             mc "Goodbye, Kris. I'll see you tomorrow."
             show k
             k "Yes. I'll see you tomorrow, Doctor."
@@ -472,7 +472,7 @@ label heathacceptance:
     h "Doctor, I..."
     menu:
         extend ""
-        "Kiss her. Or try, at least.":
+        "(Kiss her. Or try, at least.)":
             n "You lean over and gently kiss Heath on the chassis. It's very warm, but it doesn't hurt too much."
             show h laugh at bounce
             h "Oh! Doctor, I - well! Didn't see that one coming!"
@@ -484,7 +484,7 @@ label heathacceptance:
 
             n "You finish your checklist and head back to the office."
             jump day10end
-        "Say goodnight.":
+        "(Say goodnight.)":
             mc "Goodnight, Heath."
 
             show h
@@ -666,7 +666,7 @@ label aspenacceptance:
     a "And, Doctor, I..."
     menu:
         extend ""
-        "Kiss them.":
+        "(Kiss them.)":
             n "You lean over and gently kiss Aspen's chassis, avoiding the moss-covered areas."
             show a look at bounce
             a "O-Oh... Oh my goodness. I... well. Doctor."
@@ -677,7 +677,7 @@ label aspenacceptance:
 
             show a laugh
             a "I, uh, yes! I'll see you tomorrow."
-        "Let them get back to work.":
+        "(Let them get back to work.)":
             a "Have a great night. I'll see you tomorrow."
 
             mc "See you tomorrow, Aspen."
@@ -885,7 +885,7 @@ label ccacceptance:
     c "And..."
     menu:
         extend ""
-        "Kiss him.":
+        "(Kiss him.)":
             n "You lean over CC's bed and gently place a kiss on his plates."
             show c close
             c "You... are incredible."
@@ -897,7 +897,7 @@ label ccacceptance:
 
             n "You finish your checklist and head out of his room."
             jump day10end
-        "Say goodnight.":
+        "(Say goodnight.)":
             mc "Goodnight, CC."
 
             show c
@@ -1096,7 +1096,7 @@ label robacceptance:
     r "No prob, Doc. And - uh. Before ya go..."
     menu:
         extend ""
-        "Kiss him.":
+        "(Kiss him.)":
             n "You lean over - making sure he's not about to go ballistic at the TV again - and kiss him lightly on the chassis."
             show r yell at bounce
             r "Doc! Jeez!"
@@ -1110,7 +1110,7 @@ label robacceptance:
 
             jump day10end
 
-        "Say goodnight.":
+        "(Say goodnight.)":
             show r
             r "Goodnight. I'll see ya tomorrow, yeah?"
 

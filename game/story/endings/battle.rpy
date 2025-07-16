@@ -341,9 +341,9 @@ label battleend:
     "CORE UNDER SEVERE STRESS.\nINTERNAL MECHANISMS IN CRITICAL CONDITION."
     menu:
         extend ""
-        "Close the terminal.":
+        "(Close the terminal.)":
             jump continuegame
-        "Execute the kill command.":
+        "(Execute the kill command.)":
             jump END_heartless
 
 label END_heartless:

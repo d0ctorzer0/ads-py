@@ -64,10 +64,10 @@ label day4:
         menu:
             extend " You decide to..."
 
-            "Bring it with you.":
+            "(Bring it with you.)":
                 n "You pick up the picture and tuck it in with your paperwork."
                 $ giveccpicture = True
-            "Leave it behind.":
+            "(Leave it behind.)":
                 n "You leave the picture on the desk. Maybe another day."
     
     n "You follow Miss Esther out of the office and towards the conference room."

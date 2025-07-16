@@ -119,9 +119,9 @@ label satcafe:
 
     menu:
         extend " You..."
-        "Give it a shot.":
+        "(Give it a shot.)":
             jump cafejello
-        "Pass on it.":
+        "(Pass on it.)":
             mc "Not gonna risk it."
             n "You exit the cafeteria before your curiosity gets the better of you."
             jump wander
