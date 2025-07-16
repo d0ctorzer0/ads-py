@@ -12,7 +12,7 @@ label day6stayend:
     n "You read, sleep a little, and go through your paperwork a few times."
     n "It's generally fairly boring."
     n "Eventually, the time comes to go to bed."
-    n "You set the wakeup time for 11:00, and lay down in your bed."
+    n "You set the wakeup time for 11:00, and lay down."
 
     jump day7cont
 
@@ -334,7 +334,7 @@ label day7alone:
     n "And she's gone, as quickly as she came."
     n "Did she really only come to give you that warning?"
     n "You feel a chill run down your spine."
-    n "You shake it off and think about going back into stasis..."
+    n "You shake it off and think about going back to bed..."
     n "...but for some reason, it just looks so... uncomfortable."
 
     n "Instead, you decide to try to focus your mind on other things."

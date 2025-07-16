@@ -145,6 +145,15 @@ label END_gregtrue:
     n "You get up off the bed to plug the three of them in."
     n "You find an outlet near the bed that'll serve well."
     n "After laying one of the bed's blankets down in front of it, you carefully set the three down."
+    menu:
+        extend ""
+        "(Kiss them.)":
+            n "You lean down and kiss each of them, one at a time."
+            show rie happy
+            g3e "Heh... too bad they weren't awake for that."
+            mc "Oh, shush."
+        "(Wish them goodnight.)":
+            pass
     mc "Goodnight, you three."
     show rie close
     g3e "Mmm... goodnight."

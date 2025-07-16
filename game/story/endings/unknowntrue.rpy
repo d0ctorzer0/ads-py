@@ -100,6 +100,19 @@ label END_unknowntrue:
     ry "I guess it's kinda the same, huh?"
     hide ryland blush
     show ry sus
+    menu:
+        extend ""
+        "(Kiss him.)":
+            n "You lean down over him and place one gentle kiss on his chassis."
+            show ry happy at bounce
+            ry "Doc! Oh, man."
+            show ry look
+            ry "Glad you waited to do that, haha..."
+            ry "I wasn't exactly the cleanest when we first met."
+            mc "You're warm."
+            ry "Hah. Yeah, I'm aware."
+        "(Stay quiet.)":
+            pass
     mc "..."
     ry "..."
     mc "Do you want to go out to the balcony?"

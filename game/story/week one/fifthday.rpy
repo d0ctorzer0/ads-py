@@ -20,7 +20,7 @@ label day5:
     scene mcroom day with fade
 
     n "You wake with a start." 
-    n "You think you were dreaming, but that's not possible in stasis."
+    n "You think you were dreaming... what about, though, you have no clue."
     n "You get up and check your wardrobe. What should you wear for Casual Friday?"
 
     menu:

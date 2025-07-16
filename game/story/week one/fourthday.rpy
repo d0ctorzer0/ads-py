@@ -17,7 +17,7 @@ label day4:
         n "You're exhausted from your shift today, much more than usual. But it feels good."
     else:
         n "You wonder if maybe you should've done something different today, or asked Miss Esther to come with you despite management's wishes."
-    n "Regardless, you need your rest for tomorrow's shift. You change out of your work attire and lay down for stasis."
+    n "Regardless, you need your rest for tomorrow's shift. You change out of your work attire and lay down for bed."
 
     scene black
     with fade
