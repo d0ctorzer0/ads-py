@@ -44,7 +44,7 @@ label END_gregtrue:
     n "Exploring it has been exciting."
     n "They had split up the name \"Gregory\" into three separate monikers -"
     n "Greg, Gore, and Rie."
-    n "It would incredibly smart if it wasn't just the {i}tiniest{/i} bit silly."
+    n "It would be incredibly smart if it wasn't just the {i}tiniest{/i} bit silly."
     n "There's also been a few complications with the separation -"
     g3e "Oh, Doc, you might wanna pull over."
     g2e "I believe Greg's about to go to sleep again."
@@ -97,7 +97,7 @@ label END_gregtrue:
     g1e "Oh wow! This room is so cute!"
     g2e "This is very thoughtful of you."
     g3e "I call the right side."
-    n "You breath a sigh of relief and set the three cores down on the bed next to you."
+    n "You breathe a sigh of relief and set the three cores down on the bed next to you."
     mc "This is where we'll be staying the next few nights, so get comfortable."
     show rie
     g3e "Are we all gonna be squeezing together on this bed?"

@@ -1,36 +1,37 @@
-2025-07-15 04:40:59 UTC
+2025-07-17 23:48:21 UTC
 Windows-10-10.0.26100
 Ren'Py 8.3.6.25022803
 
 Early init took 0.22s
-Loading error handling took 0.13s
-Loading script took 0.46s
+Loading error handling took 0.07s
+Loading script took 0.96s
 Loading save slot metadata took 0.05s
 Loading persistent took 0.00s
 Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
- - Init at renpy/common/00steam.rpy:845 took 0.34655 s.
-Running init code took 0.44s
+ - Init at renpy/common/00steam.rpy:845 took 0.30750 s.
+Running init code took 0.41s
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.03s
 Index archives took 0.00s
-Dump and make backups took 0.09s
+Backing up script files to 'C:\\Users\\seven\\AppData\\Roaming/RenPy/backups\\core':
+Dump and make backups took 0.14s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.11s
+Initial gc took 0.13s
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.44s
+Creating interface object took 0.46s
 Cleaning stores took 0.00s
-Init translation took 0.08s
+Init translation took 0.09s
 Build styles took 0.00s
-Load screen analysis took 0.07s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.20s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.06s
+Prepare screens took 0.18s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.05s
 Running _start took 0.00s
 Interface start took 0.17s
 

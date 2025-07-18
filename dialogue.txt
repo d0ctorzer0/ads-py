@@ -137,6 +137,7 @@ Would you prefer I call you Evely?
 Would you prefer I call you Lynne?
 Would you prefer I call you Mo?
 Would you prefer I call you Bemb?
+Would you prefer I call you Unny?
 Would you prefer I call you Cass?
 Would you prefer I call you Tyler?
 Would you prefer I call you John?
@@ -195,7 +196,7 @@ MORE INFORMATION.
 APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
 [[] YIELD  COMMAND
 
-YIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 50 PERCENT
+YIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 75 PERCENT
 CHANCE OF STUNNING CORE FOR ONE (1) CYCLE. CHANCE DECREASES
 WITH EACH USE. USES ONE (1) COMMAND POINT.
 APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
@@ -312,9 +313,37 @@ You enter back out into the hall.
 You hated that.
 Personality cores are so annoying...
 Maybe it's that, or maybe you're the problem.
-Regardless, you can't wait to get back down to manufacturing -
-- where the cores don't talk back to you.
+Regardless, you can't wait to get back down to manufacturing...
+...where the cores don't talk back to you.
 Credits will go here when they're ready.
+I-I...
+I can't, Doctor. I...
+You've been so kind to me. More than anyone before you.
+My programming is screaming at me...
+To not let you do this. To not let you go.
+Y-You know, if Aperture finds out I'm letting you get away with this, they'll...
+They'll...
+She sighs.
+You remember... how I said I have... difficulty connecting with anyone?
+Cores... humans... doesn't matter. It's such a struggle.
+And I feel I can be... a bit negative, sometimes.
+There's a reason they called me the Sociopath Core up in Testing! Haha!
+Hah...
+Y-You should go. Before I can change my mind.
+I don't think I could ever hurt my first... true... friend.
+Doctor. Thank you. And... I'm sorry.
+You will not see me again. I-I have to leave, I...
+Please stay safe.
+I... care for you.
+...And she's gone.
+You have a deep, nagging feeling you just avoided something horrible.
+You take a deep breath.
+Your office, once a somewhat calming place, seems so unwelcoming now.
+The chairs look uncomfortable. The desks look suffocating.
+Would it even be worth finishing your shift now?
+Would Aperture care?
+You decide it's probably best to just lay down for a bit.
+You certainly have a lot to think about.
 You take a deep breath. The room is a mess of papers and burn marks on the walls.
 How you're going to explain this to management, you have no idea.
 Still shaking, you gather what's left of your paperwork from off the floor.
@@ -335,6 +364,178 @@ ERROR CODE [[] EBLC
 This is a bug. If you are seeing this text please report it.
 Whatever happens tomorrow...
 It's bound to be better than this.
+You check the rear-view mirror, making sure your "cargo" is still secure.
+It is.
+He's sleeping peacefully.
+Under the sound of classical music playing through the radio, you can hear the gentle woosh of water in the back canister.
+The passenger seat holds three extra gallons - just in case.
+But something tells you you aren't going to need them.
+You turn the car - gently - into the parking lot, pull into a space, and park.
+Unbuckling your seatbelt, you go to slide open the van door.
+Hey, sleepyhead. We're here.
+Mmm. Good morning.
+Afternoon, honey, but yes.
+I'm sorry. I fell asleep again.
+That's perfectly okay. You'll need your rest for this, anyway.
+Let's get you out of here, alright?
+Okay.
+You pull the ramp out of the side of the van and place it down carefully.
+Managing his wheelchair isn't easy, but it's something you've learned how to handle.
+You duck into the back of the van and unbuckle the straps holding his chair in place.
+Carefully rolling him out of the vehicle, you check all of his tubes are still inserted properly.
+Everything feel okay? Anything loose at all?
+No. I'm alright. Thank you.
+You shut everything behind you, lock the van, and move forward.
+You push CC up to the entrance to the trail.
+Alright, CC. You can open your optics now.
+Bond... Falls... Trailhead?
+We're... we're going to go see a...
+A waterfall, yes. At the end of this trail.
+Oh. Oh my. I didn't think...
+He coughs harshly.
+I never thought I'd get to see one.
+That's a little silly, CC.
+Well...
+...you know how my systems have been acting lately.
+The late night water changes...
+The pipe repairs...
+I thought...
+I've been planning this since we left Aperture, CC.
+I'm... sorry it's taken me so long to get us here.
+It took me a while to find off-road wheels that would fit your chair.
+I didn't even know you changed them.
+Regardless. I... thank you.
+I'm quite excited.
+Birds are chirping. The sky is clear. The trail is empty.
+CC's wheels roll across the dirt path quietly.
+Love...
+Yes?
+Today's a beautiful day, isn't it?
+Yes. It is.
+Everyday is beautiful with you.
+I could say the same about you, CC.
+The two of you proceed along the trail in silence for a while.
+Did you ever... want a different name?
+What do you mean?
+Well... "CC" is just an acronym for your alias, isn't it?
+Not your actual name.
+Well, yes, but...
+...I don't know. I guess I never thought of it.
+The researchers who came in to check on me, to refit my tubes, to... worsen what already hurt me...
+They always just called me "Cancer Core."
+Miss Esther was the first to call me CC.
+And you.
+You've never called me Cancer Core.
+I...
+CC coughs, then sighs.
+I'm sorry. I feel so weak.
+We're almost there.
+I don't think I'd want to be called anything other than yours.
+CC...
+I love you.
+
+I'm so happy. I...
+It's so beautiful outside.
+Everything is so much better out here than down there.
+And the world is so full of...
+Things I'd never imagined.
+Eventually, the two of you round the trail and hear -
+- just around the corner -
+- the first sounds of falling water.
+Is... is that...?
+That's the sound a waterfall makes.
+Oh.
+I...
+It sounds incredible.
+It's nothing like the water inside me. I...
+Just wait until you see it, CC.
+Through the trees, you see it -
+Bond Falls.
+100 feet wide, 50 feet tall, cascading down several layers of rock -
+Water flows through every crevice, every pebbled surface, every tiny little crack...
+Emptying out into the Ontonagon River.
+Here it is, CC.
+Bond Falls.
+My first... my first real waterfall.
+It's even more incredible in real life.
+It's... haha... it's huge!
+It's so loud, so powerful, it...
+CC closes his optic and coughs. You hear the mechanics inside him whirl.
+CC, are you -
+It's so beautiful. I...
+This has been my dream ever since I discovered what a waterfall was.
+When I heard the researchers talking to each other...
+One of them said he was going with his partner to see Niagra Falls.
+I-I just had to know more, so I scoured the few databases I had access to, I...
+I ran those images, that text over and over again through my head.
+I-I never thought...
+I would actually see one. I...
+I...
+Love...
+CC...
+Do you feel it?
+Feel...
+My time. It's...
+The gears inside him whir gently, slowly, harmonizing with the waterfall before you.
+This is difficult to ask, but...
+Can you...
+Can you free me from these tubes?
+Take me off this chair?
+CC, that'll kill you.
+Haha, yes. Yes it will, but...
+I feel it. Internally. My kill code.
+A failsafe Aperture put into place...
+...so the experiment could eventually be put to an end.
+They've gotten no new data...
+So they've sent the code.
+I-Isn't there something I can do? I could break back into the facility, try to...
+No. Love, I...
+I'm in heaven right now.
+The love of my life beside me...
+A place I've always dreamed of...
+A sky as blue as the walls I used to spend every waking moment staring at.
+I'm so happy.
+And... it's time.
+I...
+I understand.
+Please help me.
+I will.
+One by one, you detach the tubes that hold CC in place on his chair.
+You hear the pistons slow and the gentle hum of his mechanics quiet down.
+Carefully, lovingly, you pick him up off his chair and lay him in the water.
+It feels so... cold.
+It's wonderful. I...
+I haven't felt the air through my circuits since I was activated.
+The first water-powered core... that's what they said when I was turned on, you know?
+Haha. If only I knew that I'd pass surrounded by the very thing that kept me living...
+But it's different.
+The tubes... they're suffocating.
+Constant pressure on my chassis.
+But now... I feel so free. Like I could fly.
+He sighs.
+I love you.
+None of this would've been possible without you.
+I would've died in that terrible room.
+I never would've seen the sky.
+I never would've felt the grass.
+...
+I'm sorry.
+I wish I could stay.
+Please don't apologize.
+Haha... alright.
+I just have one last request, love.
+Leave me here... when I pass, yes?
+In the river.
+I feel like I belong here.
+Of course.
+CC looks up one last time.
+I'm so lucky.
+You always look so beautiful when you're worried, love.
+Gently, and almost as if he was never there at all...
+CC is gone.
+You kiss him one last time, pick him up, and carry him to the center of the river.
+And with one careful release...
+He disappears from your vision, caught beneath the waves.
 You wake with a start. Red lights fill your vision, and a grating alarm plays, almost as like it's inside your head.
 Emergency detected. Automatic wake-up sequence initiated.
 Please gather all vital equipment and proceed to the nearest surface elevator.
@@ -1208,6 +1409,180 @@ I'm sure things will be just fine with you here, Doctor.
 Agreed. You're smart.
 And pretty.
 Haha. Thank you, guys.
+The passenger seat is quite loud.
+Louder than the radio sometimes.
+The three little cores that you took under your wing a month ago rarely stop talking.
+No. You're just straight-up wrong.. Coco Chanel's influence in the 1920s was undeniable.
+No need to be rude, Rie. I just think Patou's work was better.
+She has a point, though, Gore. Jean Patou was not nearly as influential as Chanel was.
+No, she's correct. Chanel's work was certainly more influential.
+That's not the issue I'm having here.
+I am just stating, in my personal opinion, that Patou's work was more...
+More what?
+...exciting.
+Oh, if I had hands, Gore, you'd...
+Can you two stop fighting?
+Agreed. You've been talking about this back and forth for the past two and a half hours.
+I apologize.
+Sorry.
+I know the three of you love your fashion, but it gets exhausting sometimes...
+Sorry, Doc.
+Yes. We're sorry.
+I forgive you two. Thank you, Greg, for helping.
+No problem!
+Speaking of the past two hours -
+Are we almost there yet? This ride's taking a LONG time...
+Patience. We'll get there shortly.
+Where are we going, anyways?
+You'll see.
+The past month has been interesting.
+You still aren't entirely sure where you stand on your relationship with these three, but...
+Exploring it has been exciting.
+They had split up the name "Gregory" into three separate monikers -
+Greg, Gore, and Rie.
+It would incredibly smart if it wasn't just the tiniest bit silly.
+There's also been a few complications with the separation -
+Oh, Doc, you might wanna pull over.
+I believe Greg's about to go to sleep again.
+Jeez, you guys are weak...
+Alright. One second.
+You pull over to the side of the road and pull out the charger attached to your car.
+You've had to hotwire your vehicle for longer trips.
+Their lower processing power causes them to shut down more often.
+In addition, you had to make your very own adapter - Aperture's charging ports aren't really manufactured to standard.
+You plug Greg in and pull back onto the road.
+Let him sleep. We'll be there soon anyway.
+Welcome, lady and gentlemen...
+...to Grand Haven.
+Damn!
+This is a quaint little town.
+Greg! Wake up!!
+I'M UP! I'M UP! I -
+Oh wow... where are we?
+Grand Haven.
+This is my hometown. Where I'm from.
+What, are we meeting your parents?
+Hah, that's a good one.
+Not quite. You'll see what we're here for eventually.
+Right now, we need to find our hotel.
+You enter into the hotel room you've bought out for the next few days -
+It's small, and nothing special, but it'll house the four of you for a while.
+Oh wow! This room is so cute!
+This is very thoughtful of you.
+I call the right side.
+You breath a sigh of relief and set the three cores down on the bed next to you.
+This is where we'll be staying the next few nights, so get comfortable.
+Are we all gonna be squeezing together on this bed?
+I doubt the three of us could fit comfortably.
+You two are so negative! This'll be fun.
+Frankly, I'm happy for any new experience.
+Every experience is new for us, dumbass.
+Why are you so loud, Rie?
+No, I'm happy for anything new, too.
+I'm excited.
+Even if I have to be around you two the whole time...
+You love us.
+I don't believe the act she puts on anymore.
+Me neither.
+Ughh...
+You laugh.
+The three of you...
+You're certainly a handful.
+Honestly, I love it.
+I -
+Oh, Gore's falling asleep.
+I think he has the right idea.
+Let's go to bed. I'll show you what we came here for tomorrow.
+Deal?
+Deal.
+I am getting pretty tired...
+You get up off the bed to plug the three of them in.
+You find an outlet near the bed that'll serve well.
+After laying one of the bed's blankets down in front of it, you carefully set the three down.
+
+You lean down and kiss each of them, one at a time.
+Heh... too bad they weren't awake for that.
+Oh, shush.
+Goodnight, you three.
+Mmm... goodnight.
+You wake up gently and turn over to look down at the three cores beside you.
+Oh. Good morning.
+They're still sleeping?
+I believe so. Rie was awake a little earlier, but I think she wasn't fully powered yet.
+You might want to get some more rest. The three of you need as much of it as you can get.
+I'm well aware. What about you?
+I'm going to go get some breakfast. I'll wake you three up when I get back.
+You guys are so loud...
+Oh, sorry, Rie.
+I'll be back in a bit, you two.
+Copy that.
+You go downstairs to get some complimentary breakfast.
+Briefly, you look outside the doors of the hotel -
+Grand Haven. Where you're from.
+It's been ages since you've been back, but you figured...
+If you want to show them the beach, this is the place to do it.
+You go back upstairs.
+You're back!
+Oh, now you're all awake.
+I told them to get some more rest, but they wouldn't listen.
+Oh, whatever. I'm perfectly fine with the charge I have.
+Alright. Let's get going then, shall we?
+Oh, I'm so excited!
+What do you two think? Where are we going?
+Can you quiet down, Greg? We just woke up...
+Logically, we're going somewhere we've never been.
+Oh, I love new things.
+You scoop the three cores up and into your bag, and leave the hotel room.
+Alright. We're here. Are you three ready?
+Am I ever!
+Yes, I'm ready.
+Can we hurry this up?
+You pull the three cores out of your bag - and reveal the beach.
+Woah... what is this place?
+I think it's pretty obvious...
+We're at the beach.
+Wow...
+Agreed.
+Eh. It's fine.
+Rie...
+Okay, okay. It's pretty cool.
+This is incredible.
+You know, I think I read about this in one of Aperture's records.
+If this is the ocean, why can I see a shoreline on the other side?
+It's not the ocean. We're on Lake Michigan.
+W-Well. It's nothing special, but...
+Rie.
+Haha, okay, you got me, Gore.
+This is beautiful.
+I'm so happy I'm here right now.
+This is the best day ever.
+I agree. This is excellent.
+I...
+Rie turns to you.
+I-I'm sorry if I've seemed negative lately. I really am...
+I really am grateful.
+I...
+I love you.
+Awww, Rie.
+She finally admits it.
+Same goes for me. I love you, Doctor. Thanks for taking us out here.
+This was a great idea.
+
+I-I know things have been weird... getting adjusted to this.
+I appreciate you all being patient with me...
+...while I figured out my feelings.
+Of course. It only makes sense.
+The relationship the four of us have...
+It's a little different, that's for sure.
+I wouldn't trade you all, or this moment, for the world.
+Who knew you were such a sap under that hard shell?
+I had a feeling.
+You laugh.
+It's hard not to.
+You look out across the waves.
+There's still some things to figure out...
+Some hurdles to overcome...
+But you have a feeling things will be alright.
 Temperatures are expected to be in the high 80s today, with little to no clouds...
 It's a perfect day to get out there and explore!
 Sounds like we picked the right time for our vacation.
@@ -1448,7 +1823,6 @@ I suppose this is what we get for taking our vacation on a holiday weekend...
 Thankfully, Kris' size gives the two of you quite a bit of space.
 Can I know where we're going yet?
 No. We're almost there, anyway.
-You're so stubborn.
 You used to stare at a screen for 12 hours a day. Where's that patience now?
 Kris mumbles to himself, but doesn't say anything more.
 Eventually, the train reaches the station you're looking for.
@@ -1528,12 +1902,358 @@ I'm well aware.
 Haha... you're interesting, that's for sure.
 If that brought us together, though...
 I'm all the happier for it.
+The radio's playing.
+The sun is shining.
+There's not a cloud in the sky.
+It's a perfect day for a ball game.
+And today, in just two hours, our very own Detroit Tigers will hit off against the Milwaukee Brewers...
+We're expecting another loss for our boys, but we'll have to wait and see how things turn out.
+They don't sound very optimistic.
+From what I've heard, the Tigers aren't the best team.
+Oh man, though, am I excited!
+My first real game!
+And nearby, no less.
+I'm glad we didn't have to drive too far.
+You know, this is my first baseball game in ages.
+I think the last time I went to see a baseball game was... 1981.
+Jeez, it really has been a while.
+Well, if you need me to remind ya of anything, just let me know!
+You know, this is my first baseball game ever.
+In person, at least.
+Jeez, you've never seen one before?
+There's a first time for everything, then!
+...
+You know... I left that card you got me behind.
+Back at Aperture.
+Ah, the Jose Canseco one?
+It's no biggie. It was only really special 'cuz it was the first one I'd ever gotten.
+Getting out of that place... these last couple weeks with you...
+That's the real prize, y'know.
+Now that I can relate to.
+The stadium's packed.
+You clutch your backpack close to your chest and squeeze into your two seats in the back.
+Thankfully, it looks like the seats beside you are fairly empty.
+You lean over to your bag and whisper into it.
+Looks like it'll be safe to take you out in just a little bit.
+Alright, Doc, but hurry, yeah?
+It's hot as hell in here!
+Oh, shush. You can handle it a little longer.
+Ugh...
+It's a beautiful day. The sky is clear and, for once, the grass is actually green.
+You decided to skip out on front-row tickets.
+It was difficult enough getting Rob through the front gates...
+His small size gives him some leeway - from a distance, you could even mistake him for a weirdly-colored basketball -
+- but he still looks quite strange regardless, and the last thing you need is some curious stranger asking where he came from.
+And why he talks so much.
+You won't be able to yell this time around.
+I can't make any guarantees, y'know.
+That's why I got us seats away from everyone else.
+Ah, you anticipated this, didya?
+Of course I did.
+I think I know you well enough by now.
+Yeah... you're right, hah.
+You look around you carefully.
+Alright... I think it's safe to take you out now.
+You ready?
+Boy, am I.
+You pull Rob out of your bag cautiously.
+He looks around excitedly.
+Holy cow! This place is huge!
+It looks so much bigger in person!
+Oh wow. I can't believe I'm here right now, Doc.
+So far from that dumb little gym I used to spend my whole life in...
+I'm right in the middle of it now! Ha!
+The stadiums I've seen so many times through those stupid screens... right in front of me!
+This is wild!
+A-And the players - hah! They're... there!
+I knew you'd love this.
+Not as much as I love you for bringing me here.
+Seriously, Doc.
+None of this woulda been possible without ya, y'know.
+Getting outta that place...
+Hell, even getting out from under that damn TV...
+And seeing all this?
+That's all on you.
+I love ya. Serious.
+
+Hah. I know.
+'Bout time you reciprocate!
+I knew my unbeatable charm would get to ya eventually.
+Welcome, baseball fans!
+Today's game is between the Milwaukee Brewers and our very own Detroit Tigers!
+Let's have a good game, folks!
+Looks like it's starting, Rob.
+Hell yeah! LET'S GO TIGERS!
+You laugh.
+Rob looks away from you sheepishly.
+Sorry. I know you said no yelling.
+Ah, I really don't care.
+I'll just pretend I'm the one yelling if anyone looks.
+You're funny.
+You're one to talk.
+The game's exciting.
+The Tigers take a surprising lead over the Brewers - something neither of you saw coming -
+- and apparently, something the announcer didn't see coming, either.
+What an upset! Lou Whitaker hits a home run!
+The crowd goes wild.
+Rob included.
+HELL YEAH! GREAT HIT!
+Aww, this is awesome!! Best day of my life!
+It's definitely up there for me as well.
+It ain't at the top?
+No. That spot goes to the day you confessed to me.
+Hah... don't make me blush, Doc.
+Don't be ridiculous. You can't blush.
+Mmm. Got me there.
+Don't make me... overheat.
+I don't make any promises, Rob.
+And the bases are loaded! This might be it, folks - can the Tigers take this one home?
+Oh man, I'm on the edge of my seat.
+This is so much more exciting in person.
+The bases being "loaded" - remind me what that means again?
+The bases being "loaded" - what does that mean?
+Ah, it's just slang for when all three bases have a player on 'em.
+Essentially, it means the other team is screwed! Hah!
+If the next player up to bat hits a home run, they get a whole load of points 'cuz everyone goes to the home plate.
+One of my favorite parts of baseball.
+Honestly, I like baseball more than football...
+Personal preference, 'course, but...
+You know, I never hear you talk like this.
+Whaddaya mean?
+Going off on these little tangents. It's cute.
+All I used to hear was you yelling at the TV.
+Still hear that sometimes in our living room, but... it's different.
+I really hope that doesn't bother you too much, Doc.
+I just get so pumped while the game's on, I...
+I like having you in the house, Rob.
+I enjoy your presence.
+I want you with me.
+I...
+Well. For once, Doc, you've left me speechless.
+What an achievement.
+The sun's beginning to set.
+With the game over, the two of you decided to end the day with a walk through the park before heading home.
+Rob looks content.
+I can't believe they actually won. That was crazy.
+Definitely exciting.
+Crickets chirp gently in the distance.
+The tree branches sway in the wind...
+It's a beautiful summer night, but...
+Rob is strangely quiet.
+Rob?
+Hmm?
+Ah, sorry. Did I doze off again?
+No, I'm sorry. I didn't mean to wake you.
+Mmm... Doc, can you lay me down in the grass?
+I wanna look up at that sky again.
+Feels like I can never get enough of that thing...
+Of course, Rob.
+Ahh... that feels so nice.
+I'm surprised you can even feel the grass under your chassis.
+It ain't "feeling" like how most humans define it, but...
+I've got some sensation.
+Glad they didn't install those pain receptors in me, though...
+Some cores get that. Sounded horrible.
+This broken handle and optic of mine would prolly hurt like hell if I had those things.
+...
+Man, today was just perfect.
+I couldn't imagine anything better than bein' out here with you right now.
+I had no idea what I was missing down in Aperture...
+Screw Celine. I should've been lookin' for a human sooner, huh?
+Haha. I think we got a little lucky.
+Tell me about it! Who woulda thought a little core like me would have such a beautiful human for a partner...
+I'm the lucky one here, Doc.
+God...
+You're beautiful.
+Thanks for bringin' me out here.
+This was everything I coulda hoped for...
+And more.
+You sigh.
+Another day, another dollar.
+And today isn't any different.
+But that's not the part of your day you most look forward to, anymore...
+You turn the key in your lock and open the door.
+I'm home.
+There's no response, though that's nothing new.
+He tends to be quieter recently - lots of thinking to do.
+You put down your bag, take off your shoes, and round the corner.
+Hey, Ryland.
+Ah! Sorry, I, uh...
+I didn't hear you come in.
+Any new developments today?
+I had a bit of a breakthrough...
+Nothin' spectacular, but it's better than nothing.
+Oh yeah? What was it?
+I remembered my original job. Y'know, what I was before I was cut from the system.
+That's not "spectacular" to you?! That's huge!
+Hah... I guess.
+Well? What was your job?
+If you don't mind telling, of course.
+I was a... a maintenance technician, funny 'nough.
+Lower system stuff, though. Pipes and water systems...
+Makin' sure there wasn't any cracks, y'know?
+Sounds rough.
+Y-Yeah, I think that mighta had somethin' to do with... how I got to... that point.
+Ryland, you don't have to talk about that if you -
+Nah, nah. It's fine. It... helps. To talk about it.
+Reminds me how far I've come.
+That's good.
+You sit down next to him.
+Life's been slow since the two of you escaped Aperture.
+It was tough at first -
+The lack of Aperture-brand lighter fluid made Ryland's recovery difficult.
+He'd only recently stopped having withdrawal symptoms.
+You look down at him.
+How are you feeling? Anything internally?
+Mmm... not that I can tell. No new systems breaks, if that's what you're askin'.
+Can't believe you still remember all that training...
+I was in Manufacturing for, what, nine months?
+I built so many cores down there.
+You're honestly surprised I know them inside and out?
+Hah... guess not.
+You know... you've really changed.
+You've grown so much, Ryland.
+And it's only been two months.
+Ha! Imagine how much more you got ahead of ya to deal with...
+I think I'm ready.
+The two of you sit on the couch in silence for a bit.
+You've gotten used to the rhythmic clanking of Ryland's internals -
+A little rougher than the average Aperture core, but a sign that he's still running, nonetheless.
+It's reassuring.
+And a little soothing at night.
+...
+...
+Ain't it a little weird sometimes?
+What?
+You... and me. Y'know. Human and robot.
+Whaddaya tell people at work? "My boyfriend"?
+I just say my "partner."
+And what about when they ask what I look like?
+I tell them the truth.
+Or... a version of it.
+Is it really a lie to tell them you've got coffee-colored eyes and a few scars on your body?
+I mean... kinda. Optics and metal patch plates, but...
+I guess it's kinda the same, huh?
+
+You lean down over him and place one gentle kiss on his chassis.
+Doc! Oh, man.
+Glad you waited to do that, haha...
+I wasn't exactly the cleanest when we first met.
+You're warm.
+Hah. Yeah, I'm aware.
+...
+...
+Do you want to go out to the balcony?
+Yeah. I think I'd like that.
+Let me go grab a drink and we'll go out together.
+The sun is still nicely over the horizon -
+- but not so far that it's too bright out.
+It's a perfect summer afternoon.
+Ain't it beautiful out here?
+It sure is.
+...
+Do you wanna play our little game?
+Mmm... sure.
+Alright.
+What's your name?
+Ryland.
+Activation year?
+Uhh...
+1973.
+That's what you said last time, too. That's good.
+Activation month?
+Ugh, that's a tough one.
+J... J something...
+January?
+Last time you said June.
+Well, we've narrowed it down to a J month, at least.
+Any progress is good.
+You're a sweetheart, y'know?
+It's prolly tough. Taking care of me an' all.
+You're right. It's not always the most... easy thing, but...
+It's worth it. For you.
+The two of you sit in silence for a bit, looking out over the balcony.
+Your apartment is located in a very nice part of Adrian.
+Summers thankfully don't get too hot in Michigan, which lets you enjoy the balcony more often.
+Much to Ryland's delight.
+Occasionally, he'll even ask you to leave him out there for a few hours...
+...just to watch the sky.
+Hey...
+What's up?
+This is gonna sound like it came from nowhere...
+You tend to come up with some pretty crazy things.
+Whatever it is, I probably won't be surprised.
+Hah... you really do know me pretty well, huh?
+...
+Do you think... there's a robot heaven?
+Dang. That really did come from nowhere.
+I-I've just been thinkin' about the other robots back at Aperture...
+They definitely didn't all make it out from that, y'know.
+I mean... CC's the prime example, but...
+
+That's... good.
+I hope they're happy up there.
+Me too.
+Hah. You're prolly right.
+Still... wonder what happens when our systems shut down...
+Me either.
+I guess it doesn't really matter, huh?
+What do you mean?
+I mean. As long as I'm with you, I'd rather enjoy the time I have, y'know?
+Can't get to stressin' about all that.
+I agree.
+I-I remember - well, not many details 'bout it, but I remember - they told me about android hell.
+Where ya go if you fail.
+I thought I'd be sent there for sure eventually.
+Why?
+Well, I... hah...
+I was breakin' into rooms, stealin' products from the company...
+I wasn't workin' at all. I mean...
+I can see why you might've thought that.
+I think... no matter what happens when I shut down...
+I'll be happy.
+Even if there is no robot heaven...
+This has gotta be pretty close, yeah?
+You're sweet.
+You're one to talk.
+I just remembered something else.
+What's that?
+My alias.
+Y'know... how CC was Cancer Core, that Kris fellow was the Business Core...
+Really?
+Yeah. Hah. You're gonna laugh when you hear it.
+Maybe, maybe not.
+Introspection Core.
+That was my title.
+At least, it was when I was first activated.
+That makes a lot of things click.
+They started callin' me the Alcoholic Core instead like, I dunno, 4 years ago?
+And it kinda stuck...
+I didn't expect all this philosophy from you when we first met, but...
+I don't mind it.
+I'm glad.
+You're really somethin' special.
+I knew that when we first met, y'know?
+Something about you...
+You're pretty special yourself, Ryland.
+I love it when you say my name like that.
+I-I love you.
+
+Finally said it, huh?
+Took ya long enough!
+Haha, yeah, yeah.
+I don't think I'd mind that at all.
+The two of you watch as the sun sets in the distance.
+Ryland still has a long way to go, but...
+Progress is progress, regardless.
+And he seems a lot happier.
+And you're a lot happier, too.
 You make it to your room, change into your bedclothes, and prepare to sleep.
 Tomorrow's the last day of the week, and maintenance doesn't work on the weekends, other than being on-call.
 You're excited for your first day off, though a little curious what you'll do if you can't leave the campus.
 Before you know it, you're fast asleep.
 You wake with a start.
-You think you were dreaming, but that's not possible in stasis.
+You think you were dreaming... what about, though, you have no clue.
 You get up and check your wardrobe. What should you wear for Casual Friday?
 
 You put on a regular old t-shirt and blue jeans, and head out the door to work.
@@ -2179,7 +2899,7 @@ You figure you learned more about botany today than you ever did in your schooli
 CC's conversations can get very deep. It gave you a lot to think about.
 You're exhausted from your shift today, much more than usual. But it feels good.
 You wonder if maybe you should've done something different today, or asked Miss Esther to come with you despite management's wishes.
-Regardless, you need your rest for tomorrow's shift. You change out of your work attire and lay down for stasis.
+Regardless, you need your rest for tomorrow's shift. You change out of your work attire and lay down for bed.
 You wake up at 08:00 as usual, get dressed, and head out the door.
 Miss Esther greets you at the door.
 Hello, Doctor!
@@ -2391,8 +3111,10 @@ Will do. Thank you, Miss Esther.
 You arrive at your new quarters. They're humble, really only meant to house you while you sleep and no more.
 You sigh.
 What a weird first day...
-You drop off your bag and lay down on your bed, which will wake you up in the morning.
-You wonder if this thing actually makes sleep more efficient or not.
+You drop off your bag and lay down on your bed.
+Aperture Science Sleep-End Device - ACTIVE.
+You jump.
+Oh... just an alarm clock. Of course.
 With that, you gently close your eyes.
 You gently wake up and look at the clock. It's 07:30 on the dot.
 Groaning, you get up and head towards your office.
@@ -2629,7 +3351,7 @@ How will it be "different"?
 I'll let you know tomorrow. For now, get some rest.
 You make your way to your quarters. After organizing your paperwork, you lay down in your bed.
 Before you fall asleep, you wonder what Miss Esther meant by tomorrow being "different".
-You wake up, slowly but surely, and turn to the clock. 08:00, again.
+You wake up, slowly but surely, and turn to the clock. 07:30, again.
 Work in manufacturing doesn't begin until 11, and it's going to take a bit to get used to this new schedule.
 You get up and go towards your office.
 Miss Esther is here on time today, and greets you happily.
@@ -4073,7 +4795,7 @@ I'll see you tomorrow, Doctor.
 Rest well, Miss Esther.
 You enter your room once more.
 
-You lay down in your bed.
+You lay down and close your eyes.
 Tomorrow's a big day.
 You wake up at 07:30, groggy and tired. Not a good start to what's probably going to be a long shift.
 Almost done with this week...
@@ -5176,7 +5898,7 @@ Wow.
 The algae glow a vibrant blue-green light, unlike anything you've ever seen.
 I mean, I'm sure you've seen things glow before, but... this is different, yes?
 Pyrodinium bahamense. That's their binomial name.
-But a lot of us just refer to them as their superclass.
+But a lot of us just refer to them by their superclass.
 I personally think using their full name can be important...
 They're on loan to us from Marine Studies. We generally don't carry much sea life in Botany.
 It's a rare treat.
@@ -5315,7 +6037,7 @@ You decide to stay in.
 You read, sleep a little, and go through your paperwork a few times.
 It's generally fairly boring.
 Eventually, the time comes to go to bed.
-You set the wakeup time for 11:00, and lay down in your bed.
+You set the wakeup time for 11:00, and lay down.
 You wake up to a knocking on your door.
 Disruption detected. Automatic waking sequence initiated.
 You groan and lean over. The clock reads 09:43.
@@ -5456,7 +6178,7 @@ Um... goodbye.
 And she's gone, as quickly as she came.
 Did she really only come to give you that warning?
 You feel a chill run down your spine.
-You shake it off and think about going back into stasis...
+You shake it off and think about going back to bed...
 ...but for some reason, it just looks so... uncomfortable.
 Instead, you decide to try to focus your mind on other things.
 You read, sift through your paperwork... not a lot to do when you're holed up in your room like this.
