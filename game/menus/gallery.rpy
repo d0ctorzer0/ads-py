@@ -69,6 +69,9 @@ screen galleryh():
             imagebutton idle "characters/heath/heath cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
         if persistent.hc3 == True:
             imagebutton idle "characters/heath/heath cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
+        if persistent.hc4 == True:
+            imagebutton idle "characters/heath/heath cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 760 ypos 480
+
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryh"), Show("galleryk"), SetVariable("selected_char", "kris")
@@ -239,3 +242,8 @@ screen fullcutscene5():
     modal True
     add "characters/[selected_char]/[selected_char] cutscene 5.png"
     imagebutton idle "gui/back.png" action Hide("fullcutscene5", transition=gallswitch)
+
+screen fullcutscene6():
+    modal True
+    add "characters/[selected_char]/[selected_char] cutscene 6.png"
+    imagebutton idle "gui/back.png" action Hide("fullcutscene6", transition=gallswitch)
