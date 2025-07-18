@@ -1,30 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/endings/daythirteen.rpy", line 239, in script
-    show gore sus
-Exception: Image 'gore' does not accept attributes 'sus'.
+  File "renpy/common/00start.rpy", line 216, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 551, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 551, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 565, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/endings/daythirteen.rpy", line 239, in script
-    show gore sus
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1124, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1087, in show_imspec
-    renpy.config.show(name,
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\displayexports.py", line 477, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 249, in _duplicate
-    args.extraneous()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 109, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'gore' does not accept attributes 'sus'.
+  File "renpy/common/00start.rpy", line 216, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 551, in script
+    python hide:
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1184, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 551, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 565, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\loadsave.py", line 838, in load
+    log.unfreeze(roots, label="_after_load")
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\rollback.py", line 1135, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\rollback.py", line 930, in rollback
+    self.load_failed()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\rollback.py", line 848, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
-Aperture Dating Simulator 0.7.0alpha
-Mon Jul 14 15:39:24 2025
+Aperture Dating Simulator 1.0.0.alpha
+Thu Jul 17 21:28:07 2025

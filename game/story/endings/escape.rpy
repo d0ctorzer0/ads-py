@@ -824,7 +824,7 @@ label leave_cc:
     ry "{color=#fff}It's so bright out here..."
     ry "{color=#fff}I can barely see a th- oh my..."
 
-    scene unknown cutscene 3 with dissolve
+    scene unknown cutscene 4 with dissolve
     python:
         if persistent.uc4 == False:
             persistent.cutscenes_seen += 1
@@ -1193,7 +1193,7 @@ label escape_gregory:
     g3 "{color=#fff}Would you two quit whining?"
     gall "{color=#fff}Oh my god..."
 
-    scene greg cutscene 4 with dissolve
+    scene gregory cutscene 4 with dissolve
     python:
         if persistent.gc4 == False:
             persistent.cutscenes_seen += 1

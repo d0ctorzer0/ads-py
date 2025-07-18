@@ -193,7 +193,7 @@ label savegreg:
     mc "Gregory!"
     $ cutscenetextbox = True
     show screen cuttextbox
-    scene greg cutscene 3 with fade
+    scene gregory cutscene 3 with fade
     show flash
     python:
         if persistent.gc3 == False:

@@ -412,7 +412,7 @@ label gregday11:
     $ gotconfession = True
     $ cutscenechoice = True
     show screen cuttextbox
-    scene greg cutscene 3 with fade
+    scene gregory cutscene 2 with fade
     $ cutscenetextbox = True
     python:
         if persistent.gc2 == False:
@@ -563,7 +563,7 @@ label unknownday11:
     $ gotconfession = True
     $ cutscenechoice = True
     show screen cuttextbox
-    scene unknown cutscene 3 with fade
+    scene unknown cutscene 2 with fade
     $ cutscenetextbox = True
     python:
         if persistent.uc2 == False:

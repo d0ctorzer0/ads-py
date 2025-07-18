@@ -39,6 +39,8 @@ screen galleryk():
             imagebutton idle "characters/kris/kris cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
         if persistent.kc4 == True:
             imagebutton idle "characters/kris/kris cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 760 ypos 480
+        if persistent.kc5 == True:
+            imagebutton idle "characters/kris/kris cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 300 ypos 744
         
     vbox:
         style_prefix "tabs"
@@ -198,6 +200,8 @@ screen galleryu():
     fixed:
         if persistent.uc1 == True:
             imagebutton idle "characters/unknown/unknown cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
+        if persistent.uc2 == True:
+            imagebutton idle "characters/unknown/unknown cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
 
     vbox:
         style_prefix "tabs"
@@ -230,3 +234,8 @@ screen fullcutscene4():
     modal True
     add "characters/[selected_char]/[selected_char] cutscene 4.png"
     imagebutton idle "gui/back.png" action Hide("fullcutscene4", transition=gallswitch)
+
+screen fullcutscene5():
+    modal True
+    add "characters/[selected_char]/[selected_char] cutscene 5.png"
+    imagebutton idle "gui/back.png" action Hide("fullcutscene5", transition=gallswitch)
