@@ -1,42 +1,64 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "renpy/common/00start.rpy", line 216, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 551, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 551, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 565, in _execute_python_hide
-    renpy.load(renpy.session["_reload_slot"])
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+While processing text tag {/size} in 'Developer/Artist/Writer:\n{font=Arimo.ttf}{b}———————————{/b}{/font}\nAshleyanna Rivers\n\nBackground Artists:\n{font=Arimo.ttf}{b}—————————{/b}{/font}\nAlyx Shipman\nHazel Thompson\nDustin Oakley\nEvelyn Gallaher\n\nVoice Actors:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nAshleyanna Rivers {size=25}as Miss Esther{/size}\nTyler Banning {size=25}as Kris{/size}\nCassidy Hancock {size=25}as Heath{/size}\nIsaiah Phommavong {size=25}as Aspen{/size}\nTeetad Govitviwat {size=25}as CC{/size}\nBraeden Dugger {size=25}as Rob{/size}\nJohn Wharton {size=25}as Gregory{/size}\nBrian Vecci as ???{/size}\nMason Dugger {size=25}as additional voices{/size}\nIzzy Woody {size=25}as additional voices{/size}'.:
+Exception: '/size' closes a text tag that isn't open.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 216, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 551, in script
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
     python hide:
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 834, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1184, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 551, in <module>
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
     python hide:
-  File "renpy/common/00keymap.rpy", line 565, in _execute_python_hide
-    renpy.load(renpy.session["_reload_slot"])
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\loadsave.py", line 838, in load
-    log.unfreeze(roots, label="_after_load")
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\rollback.py", line 1135, in unfreeze
-    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\rollback.py", line 930, in rollback
-    self.load_failed()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\rollback.py", line 848, in load_failed
-    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2882, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 1384, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\transition.py", line 384, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 755, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 2614, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 738, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 1284, in segment
+    raise Exception("%r closes a text tag that isn't open." % text)
+Exception: '/size' closes a text tag that isn't open.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
 Aperture Dating Simulator 1.0.0.alpha
-Thu Jul 17 21:28:07 2025
+Fri Jul 18 14:19:59 2025

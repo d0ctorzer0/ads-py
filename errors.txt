@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/gregorytrue.rpy", line 222: expected statement.
-    at bounce
-             ^
+File "game/menus/credits.rpy", line 10: expected a keyword argument or child statement.
+    "{size=70}WRITER/DEVELOPER/ARTIST\n{size=60}Ashleyanna Rivers"
+    ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Mon Jul 14 21:03:00 2025
+Fri Jul 18 14:10:04 2025
