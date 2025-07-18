@@ -58,7 +58,7 @@ screen disable_Lmouse():
 
 # Thanks Mo for absolutely DESTROYING my time and sanity because I have worked SIX FUCKING HOURS ON THIS
 label battle: # AND GUESS WHAT? IT STILL DOESN'T WORK
-    scene grey with fade # Edit: IT FUCKING WORKS LESGOOOOOO
+    show esther idle with fade # Edit: IT FUCKING WORKS LESGOOOOOO
     stop music
     stop music1
     play music boss
@@ -174,7 +174,7 @@ label cmdinput:
         jump cmdinput
 
 label cmddelete:
-    show white with vpunch
+    show esther idle with vpunch
     python:
         ap_count -= 2
         cmdexecuted = True
@@ -190,7 +190,7 @@ label cmdyield:
         ap_count -= 1
         yldrandomizer = renpy.random.randint(1, 100)
     if yldrandomizer > 25:
-        show white with vpunch
+        show esther idle with vpunch
         $ esther_stunned = True
         "YIELD COMMAND EXECUTED. CORE STUNNED FOR ONE (1) CYCLE."
         jump cmdinput
@@ -236,7 +236,7 @@ label esthermove:
         "Bug"
 
 label es_move1:
-    show white with hpunch
+    show esther idle with hpunch
     "LASER ACTIVATED. PLEASE STAND BACK."
     show laser 
     pause 0.4
@@ -248,7 +248,7 @@ label es_move1:
     jump cmdinput
 
 label es_move2:
-    show white with hpunch
+    show esther idle with hpunch
     "FLOODING PROTOCOL ACTIVATED. PLEASE REACH HIGHER GROUND."
     $ esdmgrandomizer = renpy.random.randint(2, 3)
     $ mc_health -= esdmgrandomizer
@@ -277,7 +277,7 @@ label esthertalk1:
     "YOU: \"Why are you doing this, Miss Esther?\n    What do you have to gain?\""
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
-    show white with hpunch
+    show esther idle with hpunch
     $ es_health -= 3
     hide screen esther_print with easeouttop
     jump cmdinput
@@ -286,7 +286,7 @@ label esthertalk2:
     "YOU: \"What happened to the previous employee? Were you behind that?\""
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
-    show white with hpunch
+    show esther idle with hpunch
     $ es_health -= 3
     hide screen esther_print with easeouttop
     jump cmdinput
@@ -295,7 +295,7 @@ label esthertalk3:
     "YOU: \"I can't believe this, Miss Esther. All this time, you were planning this?\""
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
-    show white with hpunch
+    show esther idle with hpunch
     $ es_health -= 3
     hide screen esther_print with easeouttop
     jump cmdinput

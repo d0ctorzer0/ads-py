@@ -71,6 +71,18 @@ image laser:
     pause .05
     #total time = 0.4
 
+image esther idle:
+    "gui/boss/esther/idle_1.png"
+    pause .5
+    "gui/boss/esther/idle_2.png"
+    pause .5
+    "gui/boss/esther/idle_3.png"
+    pause .5
+    "gui/boss/esther/idle_4.png"
+    pause .5
+    "gui/boss/esther/idle_5.png"
+    pause .5
+    repeat
 
 image flash:
     "#b3000070"
