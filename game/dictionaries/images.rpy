@@ -71,6 +71,9 @@ image laser:
     pause .05
     #total time = 0.4
 
+
+# ESTHER BOSS IMAGES #################################
+
 image esther idle:
     "gui/boss/esther/idle_1.png"
     pause .5
@@ -83,6 +86,46 @@ image esther idle:
     "gui/boss/esther/idle_5.png"
     pause .5
     repeat
+
+image esther snob:
+    "gui/boss/esther/snob_1.png"
+    pause .5
+    "gui/boss/esther/snob_2.png"
+    pause .5
+    "gui/boss/esther/snob_3.png"
+    pause .5
+    "gui/boss/esther/snob_4.png"
+    pause .5
+    "gui/boss/esther/snob_5.png"
+    pause .5
+    repeat
+
+image esther stun:
+    "gui/boss/esther/stun_1.png"
+    pause .5
+    "gui/boss/esther/stun_2.png"
+    pause .5
+    "gui/boss/esther/stun_3.png"
+    pause .5
+    "gui/boss/esther/stun_4.png"
+    pause .5
+    "gui/boss/esther/stun_3.png"
+    pause .5
+    "gui/boss/esther/stun_2.png"
+    pause .5
+    repeat
+
+image esther up:
+    "gui/boss/esther/esther up.png"
+
+image esther down:
+    "gui/boss/esther/esther down.png"
+
+image esther downleft:
+    "gui/boss/esther/esther downleft.png"
+
+image esther squint:
+    "gui/boss/esther/esther squint.png"
 
 image flash:
     "#b3000070"

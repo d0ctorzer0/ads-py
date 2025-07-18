@@ -86,6 +86,13 @@ label cmdinput:
         jump END_mcdeath
     if not es_health > 0:
         jump battleend
+    
+    if mc_health < 10 and esther_stunned == False:
+        show esther snob
+    elif esther_stunned == True:
+        show esther stun
+    else:
+        show esther idle
 
     python:
         if ap_count > 2:
@@ -148,7 +155,7 @@ label cmdinput:
                 jump cmdinput
 
     elif cmd == "print": # Print
-        if ap_count >= 1 and times_talked < 3 and printthisround == False :
+        if ap_count >= 1 and times_talked < 3 and printthisround == False and esther_stunned == False:
             "PRINT COMMAND SUCCESSFUL."
             $ times_talked += 1
             $ cmdexecuted = True
@@ -174,7 +181,13 @@ label cmdinput:
         jump cmdinput
 
 label cmddelete:
-    show esther idle with vpunch
+    show esther up with vpunch
+    if mc_health < 10 and esther_stunned == False:
+        show esther snob
+    elif esther_stunned == True:
+        show esther stun
+    else:
+        show esther idle
     python:
         ap_count -= 2
         cmdexecuted = True
@@ -190,7 +203,7 @@ label cmdyield:
         ap_count -= 1
         yldrandomizer = renpy.random.randint(1, 100)
     if yldrandomizer > 25:
-        show esther idle with vpunch
+        show esther stun with vpunch
         $ esther_stunned = True
         "YIELD COMMAND EXECUTED. CORE STUNNED FOR ONE (1) CYCLE."
         jump cmdinput
@@ -236,7 +249,11 @@ label esthermove:
         "Bug"
 
 label es_move1:
-    show esther idle with hpunch
+    show esther squint with hpunch
+    if mc_health < 10:
+        show esther snob
+    else:
+        show esther idle
     "LASER ACTIVATED. PLEASE STAND BACK."
     show laser 
     pause 0.4
@@ -277,8 +294,12 @@ label esthertalk1:
     "YOU: \"Why are you doing this, Miss Esther?\n    What do you have to gain?\""
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
-    show esther idle with hpunch
+    show esther down with hpunch
     $ es_health -= 3
+    if mc_health < 10:
+        show esther snob
+    else:
+        show esther idle
     hide screen esther_print with easeouttop
     jump cmdinput
 
@@ -286,8 +307,12 @@ label esthertalk2:
     "YOU: \"What happened to the previous employee? Were you behind that?\""
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
-    show esther idle with hpunch
+    show esther down with hpunch
     $ es_health -= 3
+    if mc_health < 10:
+        show esther snob
+    else:
+        show esther idle
     hide screen esther_print with easeouttop
     jump cmdinput
 
@@ -295,8 +320,12 @@ label esthertalk3:
     "YOU: \"I can't believe this, Miss Esther. All this time, you were planning this?\""
     show screen esther_print with easeintop
     $ renpy.pause(7.0, hard=True)
-    show esther idle with hpunch
+    show esther down with hpunch
     $ es_health -= 3
+    if mc_health < 10:
+        show esther snob
+    else:
+        show esther idle
     hide screen esther_print with easeouttop
     jump cmdinput
 
