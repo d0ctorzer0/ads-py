@@ -58,6 +58,7 @@ screen disable_Lmouse():
 
 # Thanks Mo for absolutely DESTROYING my time and sanity because I have worked SIX FUCKING HOURS ON THIS
 label battle: # AND GUESS WHAT? IT STILL DOESN'T WORK
+    scene black
     show esther idle with fade # Edit: IT FUCKING WORKS LESGOOOOOO
     stop music
     stop music1

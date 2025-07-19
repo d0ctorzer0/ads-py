@@ -769,7 +769,7 @@ label robday3:
 
     mc "Yes, that's right."
 
-    r "Well, that's perfect. Great time to get those muscles to work, now!"
+    r "Well, that's perfect. Great time to get those muscles to work!"
     
     menu:
         extend ""

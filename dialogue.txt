@@ -1440,7 +1440,7 @@ You still aren't entirely sure where you stand on your relationship with these t
 Exploring it has been exciting.
 They had split up the name "Gregory" into three separate monikers -
 Greg, Gore, and Rie.
-It would incredibly smart if it wasn't just the tiniest bit silly.
+It would be incredibly smart if it wasn't just the tiniest bit silly.
 There's also been a few complications with the separation -
 Oh, Doc, you might wanna pull over.
 I believe Greg's about to go to sleep again.
@@ -1470,7 +1470,7 @@ It's small, and nothing special, but it'll house the four of you for a while.
 Oh wow! This room is so cute!
 This is very thoughtful of you.
 I call the right side.
-You breath a sigh of relief and set the three cores down on the bed next to you.
+You breathe a sigh of relief and set the three cores down on the bed next to you.
 This is where we'll be staying the next few nights, so get comfortable.
 Are we all gonna be squeezing together on this bed?
 I doubt the three of us could fit comfortably.
@@ -3621,7 +3621,7 @@ Sorry, sorry, Doc. The game gets me excited. You should know this by now.
 No worries.
 I saw the message from Essie. You chose to supervise me today, huh?
 Yes, that's right.
-Well, that's perfect. Great time to get those muscles to work, now!
+Well, that's perfect. Great time to get those muscles to work!
 
 I'm surprised you even know the name of one of the machines.
 Most of the doctors here don't care.

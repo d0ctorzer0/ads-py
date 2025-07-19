@@ -115,7 +115,7 @@ label enddecide_aceorunlikable:
     mc "What does that mean for me, then?"
 
     show e annoy
-    e "Well, I hate to say, but you'll be on your way back down to Maintenance today."
+    e "Well, I hate to say, but you'll be on your way back down to Manufacturing today."
     show e 
     e "I know it's very short notice, and I'm truly sorry about that, but..."
     e "I'm just following what upper management is telling me."
