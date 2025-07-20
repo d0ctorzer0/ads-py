@@ -34,7 +34,7 @@ screen email9():
         text "from: Miss Esther"
     vbox:
         style_prefix "eml"
-        text "Hello Doctor,\n\nI figured you might be confused about \"Casual Friday\" here in maintenance,\nas I'm fairly sure manufacturing doesn't engage in the practice.\n\nEssentially, tomorrow, there is no need to wear your uniform. You can\nwear whatever \"surface clothes\" your heart desires, as long as they follow\nthese guidelines:\n\n> No cropped or low-cut tops. Stomach and chest covered.\n> No ripped or torn pants.\n> No Black Mesa paraphernalia.\n> No logos/companies that promote drug/alcohol consumption.\n"
+        text "Hello Doctor,\n\nI figured you might be confused about \"Casual Friday\" here in Maintenance,\nas I'm fairly sure Manufacturing doesn't engage in the practice.\n\nEssentially, tomorrow, there is no need to wear your uniform. You can\nwear whatever \"surface clothes\" your heart desires, as long as they follow\nthese guidelines:\n\n> No cropped or low-cut tops. Stomach and chest covered.\n> No ripped or torn pants.\n> No Black Mesa paraphernalia.\n> No logos/companies that promote drug/alcohol consumption.\n"
     use affectionprogress
     vbox:
         style_prefix "emlback"
@@ -79,7 +79,7 @@ screen email11():
         text "from: Management"
     vbox:
         style_prefix "eml"
-        text "ATTENTION ALL EMPLOYEES,\n\nIt has been brought to our attention that an email regarding a top-secret \nproject may have accidentally been sent to many low-level human\nemployees, particularly in manufacturing. This was unintended and you\nare required to forget said email's existence if you have received it.\n\nIn addition, all associates who received the email are eligible to win up to\n$150 if they choose to undergo a quick and easy memory-erasure\nprocedure.\n\nThank you,\nManagement"
+        text "ATTENTION ALL EMPLOYEES,\n\nIt has been brought to our attention that an email regarding a top-secret \nproject may have accidentally been sent to many low-level human\nemployees, particularly in Manufacturing. This was unintended and you\nare required to forget said email's existence if you have received it.\n\nIn addition, all associates who received the email are eligible to win up to\n$150 if they choose to undergo a quick and easy memory-erasure\nprocedure.\n\nThank you,\nManagement"
 
     use affectionprogress
     vbox:

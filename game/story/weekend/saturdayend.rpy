@@ -524,7 +524,7 @@ label satend_cc:
     show c look
     c "Miss Esther is kind, but... I've never had any of the human scientists show me as much grace as you have."
     c "It is truly unfortunate that you will only be here one more week."
-    mc "I agree. I've really enjoyed my time in maintenance."
+    mc "I agree. I've really enjoyed my time in Maintenance."
     show c
     c "Doctor, please... will you stay a little longer?"
     show c look

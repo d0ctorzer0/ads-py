@@ -4,7 +4,7 @@ label day5:
     with fade
 
     n "You make it to your room, change into your bedclothes, and prepare to sleep."
-    n "Tomorrow's the last day of the week, and maintenance doesn't work on the weekends, other than being on-call."
+    n "Tomorrow's the last day of the week, and Maintenance doesn't work on the weekends, other than being on-call."
     n "You're excited for your first day off, though a little curious what you'll do if you can't leave the campus."
     n "Before you know it, you're fast asleep."
 
@@ -460,7 +460,7 @@ label offendaspen5:
     if romance_points["Aspen"] <= 0:
         $ positive["Aspen"] = False
         show a look
-        a "You're a lot like the previous maintenance employee..."
+        a "You're a lot like the previous Maintenance employee..."
         a "He didn't care much for botany, either."
         a "It's alright, though. It's not for everyone."
 
@@ -507,7 +507,7 @@ label ccday5:
     elif askestherday2 == False and esther_affection >= 4:
         n "You turn to her."
 
-        mc "So... have you always worked in maintenance?"
+        mc "So... have you always worked in Maintenance?"
 
         show e annoy
         e "Mmm... no. I was a research assistant in the Testing department, when it was still at its peak."

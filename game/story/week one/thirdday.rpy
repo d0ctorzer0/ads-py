@@ -19,7 +19,7 @@ label day3:
     scene mcroom day with fade
 
     n "You wake up, slowly but surely, and turn to the clock. 07:30, again." 
-    n "Work in manufacturing doesn't begin until 11, and it's going to take a bit to get used to this new schedule."
+    n "Work in Manufacturing doesn't begin until 11, and it's going to take a bit to get used to this new schedule."
     n "You get up and go towards your office."
 
     scene office
