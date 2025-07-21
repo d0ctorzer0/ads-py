@@ -18,7 +18,7 @@ screen email1():
         text "from: Miss Esther"
     vbox:
         style_prefix "eml"
-        text "Congratulations on completing your first day in Maintenance. I wish to\nextend a formal thank you for your work today.\n\nI know that maintenance is not your first choice and that you'd much\nrather be working your regular position. In light of this, you should\nbe happy to hear that management only needs you here for about two\nweeks before the permanent replacement starts.\n\nYour temporary quarters will be in Section 7, Room 14. The code is 1986.\n\nRest well. I will see you tomorrow.\n\nRegards,\nMiss Esther"
+        text "Congratulations on completing your first day in Maintenance. I wish to\nextend a formal thank you for your work today.\n\nI know that maintenance is not your first choice and that you'd much\nrather be working your regular position. In light of this, you should\nbe happy to hear that Management only needs you here for about two\nweeks before the permanent replacement starts.\n\nYour temporary quarters will be in Section 7, Room 14. The code is 1986.\n\nRest well. I will see you tomorrow.\n\nRegards,\nMiss Esther"
     use affectionprogress
     vbox:
         style_prefix "emlback"

@@ -99,7 +99,7 @@ label day10choice:
             if positive["Aspen"] == False or romance_points["Aspen"] <= 5:
                 $ aspenchooseagain = True
                 show e annoy
-                e "I'm afraid Aspen contacted HR and asked that you not oversee him today."
+                e "I'm afraid Aspen contacted HR and asked that you not oversee them today."
                 show e
                 e "You'll have to choose again."
                 jump day10choice
