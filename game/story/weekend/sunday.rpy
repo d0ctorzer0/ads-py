@@ -100,7 +100,7 @@ label day7esther:
     show e
     e "Great! We're almost there."
 
-    scene tempcafe with fade
+    scene cafe with fade
     n "You walk into the cafeteria. There's actually quite a few people in here."
     n "There's no other cores besides Miss Esther, although that's to be expected with the mostly human fare."
 

@@ -34,11 +34,11 @@ screen galleryk():
         if persistent.kc1 == True:
             imagebutton idle "characters/kris/kris cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.kc2 == True:
-            imagebutton idle "characters/kris/kris cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
+            imagebutton idle "characters/kris/kris cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
         if persistent.kc3 == True:
             imagebutton idle "characters/kris/kris cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
         if persistent.kc4 == True:
-            imagebutton idle "characters/kris/kris cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 760 ypos 480
+            imagebutton idle "characters/kris/kris cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
         if persistent.kc5 == True:
             imagebutton idle "characters/kris/kris cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 300 ypos 744
         
@@ -66,12 +66,15 @@ screen galleryh():
         if persistent.hc1 == True:
             imagebutton idle "characters/heath/heath cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.hc2 == True:
-            imagebutton idle "characters/heath/heath cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
+            imagebutton idle "characters/heath/heath cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
         if persistent.hc3 == True:
             imagebutton idle "characters/heath/heath cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
         if persistent.hc4 == True:
-            imagebutton idle "characters/heath/heath cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 760 ypos 480
-
+            imagebutton idle "characters/heath/heath cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
+        if persistent.hc5 == True:
+            imagebutton idle "characters/heath/heath cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 300 ypos 744
+        if persistent.hc5 == True:
+            imagebutton idle "characters/heath/heath cutscene 6.png" action Show("fullcutscene6", transition=gallswitch) at gallery_size xpos 750 ypos 744
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryh"), Show("galleryk"), SetVariable("selected_char", "kris")
@@ -96,7 +99,7 @@ screen gallerya():
         if persistent.ac1 == True:
             imagebutton idle "characters/aspen/aspen cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.ac2 == True:
-            imagebutton idle "characters/aspen/aspen cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
+            imagebutton idle "characters/aspen/aspen cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
         if persistent.ac3 == True:
             imagebutton idle "characters/aspen/aspen cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
 
@@ -124,7 +127,7 @@ screen galleryc():
         if persistent.cc1 == True:
             imagebutton idle "characters/cc/cc cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.cc2 == True:
-            imagebutton idle "characters/cc/cc cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
+            imagebutton idle "characters/cc/cc cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
         if persistent.cc3 == True:
             imagebutton idle "characters/cc/cc cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
     
@@ -152,7 +155,7 @@ screen galleryr():
         if persistent.rc1 == True:
             imagebutton idle "characters/rob/rob cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.rc2 == True:
-            imagebutton idle "characters/rob/rob cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
+            imagebutton idle "characters/rob/rob cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
 
     vbox:
         style_prefix "tabs"
@@ -178,7 +181,7 @@ screen galleryg():
         if persistent.gc1 == True:
             imagebutton idle "characters/gregory/gregory cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.gc2 == True:
-            imagebutton idle "characters/gregory/gregory cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
+            imagebutton idle "characters/gregory/gregory cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
 
     vbox:
         style_prefix "tabs"
@@ -204,7 +207,7 @@ screen galleryu():
         if persistent.uc1 == True:
             imagebutton idle "characters/unknown/unknown cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.uc2 == True:
-            imagebutton idle "characters/unknown/unknown cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 760 ypos 216
+            imagebutton idle "characters/unknown/unknown cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
 
     vbox:
         style_prefix "tabs"

@@ -368,16 +368,17 @@ label satend_rob:
 
     n "You knock."
 
-    r "Uh, sorry, we're closed!! The sign?? Hello?"
+    r "Uh, sorry? We're closed? The sign - hello??"
 
     mc "Rob, it's me."
 
-    r "Agh!! Doctor! One sec, one sec..."
+    r "Ah - agh!! Doctor! One sec, one sec..."
 
     n "There's a bit of light crashing before you hear the whirring of a door lock."
     r "Should be open now, come on in!"
 
     n "You open the door and step in."
+    scene robtemproom with fade
     n "Just like you thought, the faint light you saw from outside the window was, in fact, the TV."
 
     show r with easeinright
@@ -443,7 +444,7 @@ label satend_rob:
     r "{color=#fff}Now you're getting into it, Doc."
     r "{color=#fff}Never thought you'd be one to yell."
     mccut "{color=#fff}What can I say? You got me pumped up."
-    r "{color=#fff}Hahaha! I'm so glad. Thanks for joinin' me tonight."
+    r "{color=#fff}Hah! I'm so glad. Thanks for joinin' me tonight."
     r "{color=#fff}You really didn't have to, but..."
     r "{color=#fff}S'been a long time since I last had some proper company."
     r "{color=#fff}So I appreciate it."

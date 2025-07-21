@@ -107,7 +107,7 @@ label satcafe:
             persistent.visited["cafe"] = True
         achievement.progress("ach_explore", persistent.places_visited)
         achievement.sync()
-    scene tempcafe with fade
+    scene cafe with fade
     n "You enter the cafeteria. You haven't actually been in here yet."
     n "Even though Miss Esther mentioned it to you on your first day, you've been surviving off old protein bars and granola..."
     n "It doesn't look like this place has much better."
@@ -929,7 +929,7 @@ label satrobpos:
     show r
     $ inv_rob = True
     r "Hey... you wouldn't wanna join me for that game, would ya?"
-    r "I probably got a chair 'round here somewhere..."
+    r "I got a chair 'round here somewhere..."
     show r angry
     r "You've seen me yell at the screen all week - now's your chance to join!"
     menu:
@@ -956,14 +956,14 @@ label satrobpos_pos:
     show r angry
     r "Now I hate to do this, but I don't want you distracting the other people here, so..."
     show r
-    r "Hop on a machine or head on out."
+    r "Hop on a machine or head out."
 
     mc "Ah, yeah. I have other stuff to do, so I think I'll pass, haha."
 
     r "Ah, no worries. Catch ya tonight, right?"
     show r angry
-    r "Hahaha. Get it? Catch?"
-    r "Speaking of -"
+    r "Hah. Get it? Catch?"
+    r "Speaking of which -"
     show r yell
     r "CATCH IT! CATCH THE BALL! COME ONNNN, COMMIT, COMMIT!"
 
@@ -978,9 +978,9 @@ label satrobpos_neg:
 
     show r angry
     r "My ex said the saaame exact thing before she started CHEATING on me..."
-    r "{i}\"Can't come home tonight honey, I've got plans...\"{/i}"
+    r "{i}\"Can't come home tonight honey, I've got plans...\"{/i} YEAH CELINE??"
     show r yell
-    r "YEAH CELINE?? PLANS WITH JEREMY, HUH?? SCREW YOU, WOMAN!"
+    r "PLANS WITH JASON, HUH?? SCREW YOU, WOMAN!"
     r "EVERYTHING I DID FOR YOU, AND WHAT DO I GET?"
 
     n "You back out of the gym carefully, leaving him to his ranting."
@@ -1004,7 +1004,7 @@ label satrobneg:
     mc "I think I'll just leave, then."
 
     show r angry
-    r "Pfft. Don't blame me when you wither away at 40!!"
+    r "Don't blame me when you wither away at 40!!"
 
     n "You back out of the gym before Rob gets any angrier."
 

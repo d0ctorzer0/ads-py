@@ -981,7 +981,7 @@ images\relaxationcenter.png
 images\relaxationcenterdoor.png
 images\robtemproom.png
 images\stairs.png
-images\tempcafe.png
+images\cafe.png
 images\temphall.png
 images\textboxtest.png
 images\unknowntemproom.png

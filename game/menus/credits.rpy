@@ -18,7 +18,7 @@ screen credits1:
 screen credits2:
     style_prefix 'cred'
     fixed:
-        text "{size=55}VOICE ACTORS\n\n{size=50}Ashleyanna Rivers{size=40} as Miss Esther\n{size=50}Tyler Banning{size=40} as Kris\n{size=50}Cassidy Hancock{size=40} as Heath\n{size=50}Isaiah Phommavong{size=40} as Aspen\n{size=50}Teetad Govitviwat{size=40} as CC\n{size=50}Braeden Dugger{size=40} as Rob\n{size=50}John Wharton{size=40} as Gregory\n{size=50}Brian Vecci{size=40} as ???\n\n{size=50}Izzy Woody{size=40} as additional voices\n{size=50}Mason Dugger{size=40} as additional voices\n" ypos 220
+        text "{size=55}VOICE ACTORS\n\n{size=50}Ashleyanna Rivers{size=40} as Miss Esther\n{size=50}Tyler Banning{size=40} as Kris\n{size=50}Cassidy Hancock{size=40} as Heath\n{size=50}Isaiah Phommavong{size=40} as Aspen\n{size=50}Teetad Govitviwat{size=40} as CC\n{size=50}Braeden Dugger{size=40} as Rob\n{size=50}John Wharton{size=40} as Gregory\n{size=50}Brian Vecci{size=40} as ???\n\n{size=50}Izzy Woody{size=40} as additional voices\n{size=50}Caz Dugger{size=40} as additional voices\n" ypos 220
 
 screen credits3:
     style_prefix 'cred'

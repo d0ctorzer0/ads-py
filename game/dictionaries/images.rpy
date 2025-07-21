@@ -6,6 +6,7 @@ default secretchance = "night"
 image mcroom nightchance = "[persistent.bgtype]mcroom [secretchance].png"
 
 image krisroom = "[persistent.bgtype]krisroom.png"
+image krisroom noscreen = "[persistent.bgtype]krisroom noscreen.png"
 image heathroom = "[persistent.bgtype]heathroom.png"
 image ccroom = "[persistent.bgtype]ccroom.png"
 image lounge = "[persistent.bgtype]lounge.png"
@@ -15,6 +16,9 @@ image mcroom day = "[persistent.bgtype]mcroom day.png"
 image mcroom night = "[persistent.bgtype]mcroom night.png"
 image stairs = "[persistent.bgtype]stairs.png"
 image closet = "[persistent.bgtype]closet.png"
+image hall hell = "[persistent.bgtype]hall hell.png"
+image krisroom hell = "[persistent.bgtype]krisroom hell.png"
+image ccroom hell = "[persistent.bgtype]ccroom hell.png"
 
 image neuro:
     "gui/boss/neuro/n_1.png"

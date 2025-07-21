@@ -641,7 +641,7 @@ label robday4cont:
     r "Don't know if it was you who put in the order, but thanks if so."
 
     show r
-    r "Oh, one second."
+    r "One second."
     show r yell
     r "WHAT THE HELL IS YOUR PROBLEM? MOVE, DAVID, MOVE!"
 

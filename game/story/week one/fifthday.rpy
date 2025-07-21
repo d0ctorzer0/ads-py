@@ -89,7 +89,7 @@ label day5:
     jump krisday5
 
 label krisday5:
-    scene krisroom with fade
+    scene krisroom noscreen with fade
     $ audio_crossFade(2, "music/two.ogg")
 
     n "You enter the conference room to find things much calmer than yesterday."
@@ -802,9 +802,9 @@ label robday5:
 
     show r close with easeinright
     show r at bounce
-    r "Oh! Shit! Essie!"
+    r "OH! SHIT!"
     show r angry
-    r "Sorry, I... uh."
+    r "Essie, sorry, I... uh."
 
     hide r with easeoutright
     show e shock with easeinright
@@ -835,9 +835,9 @@ label robday5:
 label offendrob5:
     show r yell
     r "Not doing my job?!"
-    r "All I do is sit here and watch the TV all day!"
+    r "All I do is sit here and watch the TV all day anyway!"
     show r angry
-    r "What \"job\" do I even do?! Hahaha..."
+    r "What \"job\" do I even do?!"
     show r yell
     r "I swear!! I'm alone in here all day, no one comes into this goddamn gym, and -"
     hide r with easeoutright
@@ -878,8 +878,8 @@ label offendrob5:
 
 label impressrob5:
     r "Ahh, yeah. I suppose I shouldn't have dozed off like that."
-    r "It just gets real boring, y'know? Hardly anyone comes in here."
-    r "And they've recently started shutting off my electricity on Fridays for meetings, so I don't got any TV at the moment."
+    r "It just gets real boring, y'know? Hardly anyone comes in here..."
+    r "And I don't got any TV at the moment."
 
     mc "Yeah, I understand."
     mc "But I have to report this if it happens again."
@@ -896,7 +896,7 @@ label impressrob5:
         show r
         r "Doc, listen..."
         r "You've been takin' me seriously. Not a lot of other doctors do that."
-        r "And you've been nice. On top of that. So... thanks, yeah?"
+        r "And you've been nice. So... thanks, yeah?"
         
         mc "No prob, Rob." # LMAO
     elif romance_points["Rob"] <= 0:

@@ -225,8 +225,8 @@ label END_aspentrue:
         a "Would you prefer I call you John?"
     elif name.lower() == 'jeremy':
         a "Would you prefer I call you Jeremy?"
-    elif name.lower() == 'mason':
-        a "Would you prefer I call you Mason?"
+    elif name.lower() == 'Caz':
+        a "Would you prefer I call you Caz?"
     elif name.lower() == 'izzy':
         a "Would you prefer I call you Izzy?"
     else:

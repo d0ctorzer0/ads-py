@@ -26,7 +26,7 @@ label day13:
 
     n "You get up, quickly grab your essentials, and burst out of your room."
 
-    scene hall with fade
+    scene hall hell with fade
     show flash
 
     mc "What the hell is happening?!"
@@ -372,7 +372,7 @@ label saverob:
     mccut "{color=#fff}Oh my god."
 
     hide screen cuttextbox
-    scene ccroom with fade
+    scene ccroom hell with fade
     show flash
     $ cutscenetextbox = False
     window auto
@@ -498,7 +498,7 @@ label saveccunknown:
     n "{color=#fff}You plug the canister on the back into CC's ports and lock them in place."
 
     hide screen cuttextbox
-    scene ccroom with fade
+    scene ccroom hell with fade
     show flash
     $ cutscenetextbox = False
     window auto
@@ -677,7 +677,7 @@ label savekris:
     if lock_kris == False:
         jump nokris
     window auto
-    scene krisroom with fade
+    scene krisroom hell with fade
     show flash
     n "You push your way into Kris' conference room."
     n "It's a little difficult to get through the jammed door, but you make it in."
@@ -715,7 +715,7 @@ label savekris:
     n "{color=#fff}...and drops off his rail."
     window auto
     hide screen cuttextbox
-    scene krisroom with fade
+    scene krisroom hell with fade
     show flash
     $ cutscenetextbox = False
     show k look offrail with easeinbottom
