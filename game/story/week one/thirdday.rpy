@@ -226,13 +226,13 @@ label krisday3good:
         scene krisroom with fade
         show k
         $ cutscenetextbox = False
+        if persistent.advcap == True:
+            "{i}The screen fades back to normal."
         jump krisday3goodpt2
     else:
         jump krisday3goodpt2
 
 label krisday3goodpt2:
-    if persistent.advcap == True:
-        "{i}The screen fades back to normal."
     k "But that's neither here nor there. I'm satisfied enough with the work I do, regardless of how inconsequential it is."
 
     mc "I see."
