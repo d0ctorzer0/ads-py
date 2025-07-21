@@ -19,7 +19,7 @@ label day3:
     scene mcroom day with fade
 
     n "You wake up, slowly but surely, and turn to the clock. 07:30, again." 
-    n "Work in manufacturing doesn't begin until 11, and it's going to take a bit to get used to this new schedule."
+    n "Work in Manufacturing doesn't begin until 11, and it's going to take a bit to get used to this new schedule."
     n "You get up and go towards your office."
 
     scene office
@@ -226,13 +226,13 @@ label krisday3good:
         scene krisroom with fade
         show k
         $ cutscenetextbox = False
+        if persistent.advcap == True:
+            "{i}The screen fades back to normal."
         jump krisday3goodpt2
     else:
         jump krisday3goodpt2
 
 label krisday3goodpt2:
-    if persistent.advcap == True:
-        "{i}The screen fades back to normal."
     k "But that's neither here nor there. I'm satisfied enough with the work I do, regardless of how inconsequential it is."
 
     mc "I see."

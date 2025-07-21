@@ -213,7 +213,7 @@ label END_heathtrue:
         achievement.progress("ach_picture", persistent.cutscenes_seen)
         achievement.sync()
     n "{color=#fff}Heath closes her optic and slowly opens her shell -"
-    n "{color=#fff}- Something you didn't know was possible, even with all your time in manufacturing."
+    n "{color=#fff}- Something you didn't know was possible, even with all your time in Manufacturing."
     n "{color=#fff}What follows is perhaps the most beautiful display of colors you've ever seen from an Aperture product."
     h "{color=#fff}I can't use this trick usually."
     h "{color=#fff}It kills me. Basically."

@@ -265,7 +265,7 @@ label satkrispos:
     k "Oh my, Doctor, you caught me off-guard."
 
     show k
-    k "What are you doing here? Doesn't maintenance have weekends off?"
+    k "What are you doing here? Doesn't Maintenance have weekends off?"
 
     mc "Yes, we do. I just thought I'd come visit you."
 
@@ -708,7 +708,7 @@ label satgreg_pos:
     mc "My free time?"
     mc "I don't really have a lot of it..."
     mc "After work, I guess I just go right to bed."
-    g "Doesn't maintenance only get off work at 4, though?"
+    g "Doesn't Maintenance only get off work at 4, though?"
     g "That's still lots of time to do other stuff!"
 
     mc "I guess. I never really thought about it."

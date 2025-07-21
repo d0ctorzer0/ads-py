@@ -166,7 +166,7 @@ label END_unlikable:
     n "You hated that."
     mc "Personality cores are so annoying..."
     n "Maybe it's that, or maybe {i}you're{/i} the problem."
-    n "Regardless, you can't wait to get back down to manufacturing..."
+    n "Regardless, you can't wait to get back down to Manufacturing..."
     n "...where the cores don't talk back to you."
 
     n "Credits will go here when they're ready."
@@ -227,7 +227,7 @@ label battleskip:
 
 label day12end:
     n "You take a deep breath. The room is a mess of papers and burn marks on the walls."
-    n "How you're going to explain this to management, you have no idea."
+    n "How you're going to explain this to Management, you have no idea."
     n "Still shaking, you gather what's left of your paperwork from off the floor."
     n "You look at the clock."
     n "It would be useless to try to finish your shift as normal now - it's nearly 16:00."

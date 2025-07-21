@@ -55,7 +55,7 @@ screen email2_9():
         text "from: Len"
     vbox:
         style_prefix "eml"
-        text "Hey! Hope you're doing alright up there in maintenance, lol. David won't\nshut up about how much harder his job is now that you're doing\nsomething else for once.\n\nI know you only got a couple more days left up there, so don't give up\nyet! Things are almost back to normal! We miss you down here. Hope you\nhaven't forgotten us yet, LMAO\n\nStay cool. Chill. Whatever adjective you like. Just don't die.\n\nSee ya,\nLen"
+        text "Hey! Hope you're doing alright up there in Maintenance, lol. David won't\nshut up about how much harder his job is now that you're doing\nsomething else for once.\n\nI know you only got a couple more days left up there, so don't give up\nyet! Things are almost back to normal! We miss you down here. Hope you\nhaven't forgotten us yet, LMAO\n\nStay cool. Chill. Whatever adjective you like. Just don't die.\n\nSee ya,\nLen"
     use affectionprogress
     vbox:
         style_prefix "emlback"

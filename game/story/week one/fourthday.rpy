@@ -316,7 +316,7 @@ label estherday4:
     mc "What do you mean?"
 
     show e shock
-    e "I understand your... regular routine is a lot more extensive than maintenance."
+    e "I understand your... regular routine is a lot more extensive than Maintenance."
 
     show e
     mc "That's true. Manufacturing is difficult."
@@ -336,7 +336,7 @@ label estherday4:
             show e laugh
             e "Well, that's great!"
             show e
-            e "I'm glad you've found a... place for you in maintenance, even if it's for a short time."
+            e "I'm glad you've found a... place for you in Maintenance, even if it's for a short time."
             jump aspenday4
 
         "I don't really feel like it's much different, though.":

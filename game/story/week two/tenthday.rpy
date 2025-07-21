@@ -99,7 +99,7 @@ label day10choice:
             if positive["Aspen"] == False or romance_points["Aspen"] <= 5:
                 $ aspenchooseagain = True
                 show e annoy
-                e "I'm afraid Aspen contacted HR and asked that you not oversee him today."
+                e "I'm afraid Aspen contacted HR and asked that you not oversee them today."
                 show e
                 e "You'll have to choose again."
                 jump day10choice
@@ -206,7 +206,7 @@ label krisconfession:
     k "{color=#fff}Well. Now I know."
     k "{color=#fff}I've... really been enjoying your company lately, Doctor, and I..."
     k "{color=#fff}Don't want it to end. Anytime soon."
-    k "{color=#fff}Your time in maintenance may be coming to an end, but..."
+    k "{color=#fff}Your time in Maintenance may be coming to an end, but..."
     k "{color=#fff}I hope our relationship won't."
     menu:
         extend ""
@@ -392,7 +392,7 @@ label heathday10:
     h "{color=#fff}And so - with this letter - I ask you one simple question, Doctor..."
     h "{color=#fff}Ahem."
     h "{color=#fff}I've enjoyed my time with you... performing, talking, showing off, of course..."
-    h "{color=#fff}...and I know, soon, you'll have to leave to go back to maintenance."
+    h "{color=#fff}...and I know, soon, you'll have to leave to go back to Manufacturing."
     h "{color=#fff}My question is... um..."
     h "{color=#fff}...will you please keep coming by to see me, Doctor?"
     h "{color=#fff}I have so many shows I can put on for you, so many things I want to tell you... I..."
@@ -804,7 +804,7 @@ label ccday10:
     c "{color=#fff}Doctor, you have been so kind to me over the past week and a half, and I..."
     c "{color=#fff}I've never felt anything like this before."
     c "{color=#fff}I feel... energized. Like I'm truly living, like... there's a light at the end of my tunnel."
-    c "{color=#fff}Please, Doctor. When your time in maintenance ends, I hope our time together won't."
+    c "{color=#fff}Please, Doctor. When your time in Maintenance ends, I hope our time together won't."
     c "{color=#fff}Please stay by me."
     menu:
         extend ""
