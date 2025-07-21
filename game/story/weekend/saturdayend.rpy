@@ -201,6 +201,8 @@ label satend_heath:
         achievement.progress("ach_picture", persistent.cutscenes_seen)
         achievement.sync()
     show screen cuttextbox
+    if persistent.advcap == True:
+        "{i}{color=#fff}The scene fades to Heath on the stage, the view framed by dark blue curtains."
     "{color=#fff}She approaches the microphone, and a spotlight comes up on her."
     h "{color=#fff}Hello, Aperture! I'm glad to be on this stage once more!"
     h "{color=#fff}Say - I was just in the cafeteria the other day, and - just so you know - I'm allergic to peanuts."
@@ -301,6 +303,8 @@ label satend_aspen:
             persistent.ac2 = True
         achievement.progress("ach_picture", persistent.cutscenes_seen)
         achievement.sync()
+    if persistent.advcap == True:
+        "{i}{color=#fff}The scene fades to Aspen looking down at the algae. Motes of colored light drift up into the air, illuminating them."
     acg "{color=#fff}I mean, I'm sure you've seen things glow before, but... this is different, yes?"
     acg "{color=#fff}{i}Pyrodinium bahamense{/i}. That's their binomial name."
     acg "{color=#fff}But a lot of us just refer to them by their superclass."
