@@ -503,7 +503,7 @@ label escape_aspen:
 
 
 label escape_ccunknown:
-    scene hall with fade
+    scene hall hell with fade
     show flash
     stop fire
     n "They're heavy. Heavier than you thought they would be."

@@ -130,6 +130,8 @@ screen galleryc():
             imagebutton idle "characters/cc/cc cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
         if persistent.cc3 == True:
             imagebutton idle "characters/cc/cc cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
+        if persistent.cc4 == True:
+            imagebutton idle "characters/cc/cc cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
     
     vbox:
         style_prefix "tabs"
@@ -156,6 +158,8 @@ screen galleryr():
             imagebutton idle "characters/rob/rob cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.rc2 == True:
             imagebutton idle "characters/rob/rob cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
+        if persistent.rc3 == True:
+            imagebutton idle "characters/rob/rob cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
 
     vbox:
         style_prefix "tabs"
@@ -208,6 +212,8 @@ screen galleryu():
             imagebutton idle "characters/unknown/unknown cutscene 1.png" action Show("fullcutscene1", transition=gallswitch) at gallery_size xpos 300 ypos 216
         if persistent.uc2 == True:
             imagebutton idle "characters/unknown/unknown cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
+        if persistent.uc3 == True:
+            imagebutton idle "characters/unknown/unknown cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
 
     vbox:
         style_prefix "tabs"
