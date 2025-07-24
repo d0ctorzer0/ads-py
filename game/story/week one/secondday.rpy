@@ -268,6 +268,10 @@ label krisday2cont:
 
     n "You check Kris off your list and head out."
     hide screen secretbendy
+    python:
+        if persistent.foundbendy == True:
+            achievement.grant("ach_insurance")
+            achievement.sync()
     jump heathday2
 
 label heathday2:
