@@ -402,35 +402,35 @@ label escape_aspen:
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
 
-    a "{color=#fff}The sky! The grass! The... oh, {i}Pinus strobus...{/i}"
-    a "{color=#fff}It's all so bright... and so green... and so beautiful!"
+    acg "{color=#fff}The sky! The grass! The... oh, {i}Pinus strobus...{/i}"
+    acg "{color=#fff}It's all so bright... and so green... and so beautiful!"
 
     n "{color=#fff}...Aspen has never seen the surface."
 
-    a "{color=#fff}Wow, this is incredible! I can't..."
-    a "{color=#fff}Doctor, can you set me down in the grass?"
+    acg "{color=#fff}Wow, this is incredible! I can't..."
+    acg "{color=#fff}Doctor, can you set me down in the grass?"
 
     n "{color=#fff}You lay Aspen down in front of you. They look up and around themselves in wonder."
 
-    a "{color=#fff}These - these are {i}Taraxacum officinale{/i}, aren't they? Dandelions!"
-    a "{color=#fff}They're so plentiful. And so yellow."
-    a "{color=#fff}And... oh, it's all so wonderful. I..."
+    acg "{color=#fff}These - these are {i}Taraxacum officinale{/i}, aren't they? Dandelions!"
+    acg "{color=#fff}They're so plentiful. And so yellow."
+    acg "{color=#fff}And... oh, it's all so wonderful. I..."
 
     n "{color=#fff}Aspen turns to look up at you."
 
-    a "{color=#fff}You gave me this opportunity, Doctor."
-    a "{color=#fff}You almost got yourself... killed... all for me. You..."
-    a "{color=#fff}You came to save me, even though it was flooding. You rushed me through fires and..."
-    a "{color=#fff}And because of that, I get to see this."
-    a "{color=#fff}Y-You..."
-    a "{color=#fff}I think I... I think I love you, Doctor."
-    a "{color=#fff}A-And I know that's a little strange to hear from a core like me, haha, so I understand if you..."
+    acg "{color=#fff}You gave me this opportunity, Doctor."
+    acg "{color=#fff}You almost got yourself... killed... all for me. You..."
+    acg "{color=#fff}You came to save me, even though it was flooding. You rushed me through fires and..."
+    acg "{color=#fff}And because of that, I get to see this."
+    acg "{color=#fff}Y-You..."
+    acg "{color=#fff}I think I... I think I love you, Doctor."
+    acg "{color=#fff}A-And I know that's a little strange to hear from a core like me, haha, so I understand if you..."
     
     n "{color=#fff}They sigh."
 
-    a "{color=#fff}I hope you'll feel the same. One day."
+    acg "{color=#fff}I hope you'll feel the same. One day."
 
-    mc "{color=#fff}I think I've already started to, Aspen."
+    mccut "{color=#fff}I think I've already started to, Aspen."
 
     hide screen cuttextbox
     scene black with fade
@@ -652,7 +652,7 @@ label leave_unknown:
     c "{color=#fff}I don't expect reciprocation. Deep down, I guess a part of me hopes..."
     c "{color=#fff}...you'll feel the same one day."
 
-    mc "{color=#fff}I think I might, CC."
+    mccut "{color=#fff}I think I might, CC."
 
     hide screen cuttextbox
     scene black with fade

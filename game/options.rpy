@@ -50,6 +50,7 @@ define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
+define config.default_voice_volume = 1.25
 define config.main_menu_music = "audio/music/officeambience.ogg"
 
 ## Transitions #################################################################
