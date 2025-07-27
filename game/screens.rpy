@@ -99,7 +99,7 @@ style frame:
 
 ## secret bendy :3
 screen secretbendy(): # here's where the new ACH_INSURANCE achievement should be granted - when this button is clicked!
-    imagebutton idle "images/bendy.png" xpos 1080 ypos 520 action Play("sound", "sfx/notif.ogg"), Function(achievement.grant("ach_insurance"))
+    imagebutton idle "images/bendy.png" xpos 1080 ypos 520 action Play("sound", "sfx/notif.ogg"), Function(achievement.grant, "ach_insurance")
 
 style cutscene:
     ypos 100
