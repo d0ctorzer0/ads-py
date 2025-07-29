@@ -1,0 +1,2 @@
+behind door: lowpass fliter 1800 frequency
+limiter filter 2-3 times

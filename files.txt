@@ -72,6 +72,8 @@ audio\sfx\paperopen.ogg
 audio\sfx\paperopen2.ogg
 audio\sfx\paperopen3.ogg
 audio\voice\.ogg
+audio\voice\DONOTTOUCHANYTHINGONTHISGODDAMNSCREEN.ogg
+audio\voice\DONTTELLTHEMABOUTTHEGAME-volumewarning.ogg
 audio\voice\aspenday1_14892403.ogg
 audio\voice\aspenday1_3b07c297.ogg
 audio\voice\aspenday1_9c30be1a.ogg
@@ -136,22 +138,98 @@ audio\voice\bertha_6497f91a.ogg
 audio\voice\bertha_71b1dcab.ogg
 audio\voice\bertha_85952ece.ogg
 audio\voice\bertha_f5d5e59a.ogg
+audio\voice\ccchoice_118adec5.ogg
 audio\voice\ccchoice_536c573a.ogg
 audio\voice\ccday1_256bf332.ogg
 audio\voice\ccday1_32925f87.ogg
+audio\voice\ccday1_37dcbd49.ogg
+audio\voice\ccday1_393dad57.ogg
+audio\voice\ccday1_4afc4728.ogg
+audio\voice\ccday1_502b8f3a.ogg
 audio\voice\ccday1_5261e58b.ogg
+audio\voice\ccday1_59ff7109.ogg
 audio\voice\ccday1_6fe6dd4c.ogg
+audio\voice\ccday1_7a212197.ogg
 audio\voice\ccday1_932ea6b5.ogg
+audio\voice\ccday1_a08179b7.ogg
+audio\voice\ccday1_a876e033.ogg
 audio\voice\ccday1_de837d77.ogg
+audio\voice\ccday2_0d65b07f.ogg
+audio\voice\ccday2_3361a938.ogg
+audio\voice\ccday2_a4120ac9.ogg
+audio\voice\cclaugh.ogg
 audio\voice\cctest.ogg
 audio\voice\cctest2.ogg
 audio\voice\croquet.ogg
 audio\voice\day1_6fe6dd4c.ogg
+audio\voice\day3_6c7f73a1.ogg
+audio\voice\fernadette.ogg
 audio\voice\gregday1_1cca56d5.ogg
+audio\voice\gregday1_56a13674.ogg
 audio\voice\gregday1_67cdfd4b.ogg
 audio\voice\gregday1_73c5b29c.ogg
 audio\voice\gregday1_7803a2f9.ogg
+audio\voice\gregday1_9f264114.ogg
+audio\voice\gregday1_adcd6d16.ogg
+audio\voice\gregday1_baa76e79.ogg
+audio\voice\gregday1_d194390b.ogg
 audio\voice\gregday1_db34cc7b.ogg
+audio\voice\hearth.ogg
+audio\voice\heathbreathingambience.ogg
+audio\voice\heathday1_118adec5.ogg
+audio\voice\heathday1_2ca7c326.ogg
+audio\voice\heathday1_3f72909c.ogg
+audio\voice\heathday1_4ada54f8.ogg
+audio\voice\heathday1_60194d6a.ogg
+audio\voice\heathday1_71664aaa.ogg
+audio\voice\heathday1_71c5515d.ogg
+audio\voice\heathday1_73d763aa.ogg
+audio\voice\heathday1_87c4c869.ogg
+audio\voice\heathday1_991aa62c.ogg
+audio\voice\heathday1_ad7de6ef.ogg
+audio\voice\heathday1_b71b006e.ogg
+audio\voice\heathday1_ee223459.ogg
+audio\voice\heathday1cont_07f3e555.ogg
+audio\voice\heathday1cont_28dc7bf1.ogg
+audio\voice\heathday2_05527828.ogg
+audio\voice\heathday2_095528e5.ogg
+audio\voice\heathday2_6a3d42ac.ogg
+audio\voice\heathday2_713b8cd4.ogg
+audio\voice\heathday2_778e0a22.ogg
+audio\voice\heathday2_cfa15bc1.ogg
+audio\voice\heathday3_10348b1c.ogg
+audio\voice\heathday3_2ff5280e.ogg
+audio\voice\heathday3_3b6edc72.ogg
+audio\voice\heathday3_8960a6be.ogg
+audio\voice\heathday3_ae27fe09.ogg
+audio\voice\heathday3_b61dc4de.ogg
+audio\voice\heathday3_cc4e9f48.ogg
+audio\voice\heathday3bad_269b2a6f.ogg
+audio\voice\heathday3bad_318ec354.ogg
+audio\voice\heathday3bad_d14216c9.ogg
+audio\voice\heathday3good_0dfe28ff.ogg
+audio\voice\heathday3good_190f9e93.ogg
+audio\voice\heathday3good_227eb657.ogg
+audio\voice\heathday3good_5fe728d2.ogg
+audio\voice\heathday3good_a05b9dd3.ogg
+audio\voice\heathday3good_aeaa5ef4.ogg
+audio\voice\heathday3good_d43df995.ogg
+audio\voice\heathday3good_dc7bbbab.ogg
+audio\voice\heathday3good_f1d2bcda.ogg
+audio\voice\heathday3good_fb3c5e7c.ogg
+audio\voice\heathday3goodpt2_0001e292.ogg
+audio\voice\heathday4_1b420553.ogg
+audio\voice\heathday4_44923123.ogg
+audio\voice\heathday4_a6880368.ogg
+audio\voice\heathday4cont_1d016f48.ogg
+audio\voice\heathday4cont_9f0f1d20.ogg
+audio\voice\heathday4cont_d4e74331.ogg
+audio\voice\heathday4cont_e92e98a5.ogg
+audio\voice\heathday5_6c340ce8.ogg
+audio\voice\heathday5_aa736aa6.ogg
+audio\voice\heathday5_e6f58326.ogg
+audio\voice\hesther.ogg
+audio\voice\ihateyourvoiceacting.ogg
 audio\voice\impressaspen2_8d0aee3b.ogg
 audio\voice\impressaspen2_a82b56f1.ogg
 audio\voice\impressaspen2_d3e06655.ogg
@@ -170,15 +248,39 @@ audio\voice\impressaspen_0676f6a3.ogg
 audio\voice\impressaspen_2bbc3817.ogg
 audio\voice\impressaspen_b7999766.ogg
 audio\voice\impressaspen_ef98637d.ogg
+audio\voice\impresscc2_0ebe16c1.ogg
+audio\voice\impresscc2_64837e18.ogg
+audio\voice\impresscc2_76594d79.ogg
 audio\voice\impresscc_5404ffac.ogg
 audio\voice\impresscc_57e91a79.ogg
 audio\voice\impresscc_59087957.ogg
 audio\voice\impresscc_7f3d75e1.ogg
 audio\voice\impresscc_be581996.ogg
+audio\voice\impresscc_f1a7f70f.ogg
 audio\voice\impressgreg_7fde089e.ogg
 audio\voice\impressgreg_810c0fef.ogg
 audio\voice\impressgreg_a9d899de.ogg
 audio\voice\impressgreg_b505ac3b.ogg
+audio\voice\impressheath2_40b38f63.ogg
+audio\voice\impressheath2_7468c35b.ogg
+audio\voice\impressheath2_996b20bb.ogg
+audio\voice\impressheath2_b82e6686.ogg
+audio\voice\impressheath2_eff02ca5.ogg
+audio\voice\impressheath4_88dd642a.ogg
+audio\voice\impressheath4_e563f085.ogg
+audio\voice\impressheath5_03574a19.ogg
+audio\voice\impressheath5_2b6a5b60.ogg
+audio\voice\impressheath5_2d4c9671.ogg
+audio\voice\impressheath5_4fa858af.ogg
+audio\voice\impressheath5_6df34212.ogg
+audio\voice\impressheath5_7d88896d.ogg
+audio\voice\impressheath5_a2d719fd.ogg
+audio\voice\impressheath5_d6ee76af.ogg
+audio\voice\impressheath_296632df.ogg
+audio\voice\impressheath_5ee7f4e8.ogg
+audio\voice\impressheath_79e1fb1b.ogg
+audio\voice\impressheath_961c0400.ogg
+audio\voice\impressheath_e5656e5e.ogg
 audio\voice\impresskris2_1fd0d615.ogg
 audio\voice\impresskris2_238064cd.ogg
 audio\voice\impresskris2_b4ee6028.ogg
@@ -199,6 +301,7 @@ audio\voice\impresskris5_b44cee5f.ogg
 audio\voice\impresskris5_b651b2be.ogg
 audio\voice\impresskris5_b73b40a6.ogg
 audio\voice\impresskris5_c5a203ca.ogg
+audio\voice\impresskris_016f0d1f.ogg
 audio\voice\impresskris_1ee72656.ogg
 audio\voice\impresskris_6da14e6d.ogg
 audio\voice\impresskris_a082dea2.ogg
@@ -222,17 +325,37 @@ audio\voice\impressrob5_b882a11e.ogg
 audio\voice\impressrob5_d0d29287.ogg
 audio\voice\impressrob5_e1cb191a.ogg
 audio\voice\impressrob5_f5981436.ogg
+audio\voice\impressrob_292a825a.ogg
 audio\voice\impressrob_4a021fc2.ogg
 audio\voice\impressrob_808b22fe.ogg
-audio\voice\impressrob_a95d8969.ogg
 audio\voice\impressrob_ced6f0a2.ogg
+audio\voice\impressunknown_4d99088f.ogg
+audio\voice\impressunknown_9f044804.ogg
+audio\voice\impressunknown_ad5f0579.ogg
+audio\voice\impressunknown_b468eaef.ogg
+audio\voice\impressunknown_d4f79369.ogg
+audio\voice\impressunknown_db7d11b7.ogg
+audio\voice\introcont_03aabb8c.ogg
+audio\voice\introcont_0b500977.ogg
+audio\voice\introcont_1bebbd48.ogg
+audio\voice\introcont_34ce3b31.ogg
+audio\voice\introcont_3513a6cb.ogg
+audio\voice\introcont_3fef1a02.ogg
+audio\voice\introcont_4a888559.ogg
+audio\voice\introcont_81b658e7.ogg
+audio\voice\introcont_8ad72d4a.ogg
 audio\voice\ithoughtiwasstupid.ogg
+audio\voice\iwasoverhere.ogg
 audio\voice\krisday1_232a1a4c.ogg
+audio\voice\krisday1_235f75d9.ogg
 audio\voice\krisday1_33802e79.ogg
 audio\voice\krisday1_43c264a4.ogg
 audio\voice\krisday1_6dbb1315.ogg
 audio\voice\krisday1_9ea3c1cd.ogg
+audio\voice\krisday1_b03913ea.ogg
 audio\voice\krisday1_dd95ff12.ogg
+audio\voice\krisday1_f0dfe4ca.ogg
+audio\voice\krisday1cont_11961c80.ogg
 audio\voice\krisday1cont_adaf5510.ogg
 audio\voice\krisday2_70330d25.ogg
 audio\voice\krisday2_f3cab885.ogg
@@ -281,7 +404,19 @@ audio\voice\krisday5_66cf67d0.ogg
 audio\voice\krisday5_873a38e9.ogg
 audio\voice\krisday5_8936551b.ogg
 audio\voice\krisday5_cb78f746.ogg
+audio\voice\lesbiansloveaspen.ogg
 audio\voice\magentic.ogg
+audio\voice\missing_2fcd1245.ogg
+audio\voice\missing_37cfd2f3.ogg
+audio\voice\missing_46534f15.ogg
+audio\voice\missing_59afe5dd.ogg
+audio\voice\missing_a86ebd79.ogg
+audio\voice\nameselect_0b98c8b9.ogg
+audio\voice\neutralheath5_622b01e3.ogg
+audio\voice\neutralheath5_640dfd40.ogg
+audio\voice\neutralheath5_8dad79cc.ogg
+audio\voice\neutralheath5_bd49b490.ogg
+audio\voice\neutralheath_31959347.ogg
 audio\voice\neutralkris5_2c8a0c9a.ogg
 audio\voice\neutralkris5_4f47189e.ogg
 audio\voice\neutralkris5_dbde87dd.ogg
@@ -309,12 +444,27 @@ audio\voice\offendaspen5_9ce5fac1.ogg
 audio\voice\offendaspen5_adcf6574.ogg
 audio\voice\offendaspen_b27abfdc.ogg
 audio\voice\offendaspen_fa37e50e.ogg
+audio\voice\offendcc_35faa24e.ogg
 audio\voice\offendcc_742b88ca.ogg
 audio\voice\offendcc_a49ac419.ogg
 audio\voice\offendgreg_0bb79fc5.ogg
 audio\voice\offendgreg_1edc39c5.ogg
 audio\voice\offendgreg_7fde089e.ogg
 audio\voice\offendgreg_a482574d.ogg
+audio\voice\offendheath2_2936b415.ogg
+audio\voice\offendheath2_a29d3a46.ogg
+audio\voice\offendheath2_eb5e10c0.ogg
+audio\voice\offendheath4_00bdbed0.ogg
+audio\voice\offendheath4_7e4cb6f4.ogg
+audio\voice\offendheath5_2fa90b25.ogg
+audio\voice\offendheath5_36ee0ad6.ogg
+audio\voice\offendheath5_84fed376.ogg
+audio\voice\offendheath5_87f16056.ogg
+audio\voice\offendheath5_e239563c.ogg
+audio\voice\offendheath5_e85fc91f.ogg
+audio\voice\offendheath5_ff852c66.ogg
+audio\voice\offendheath_086e6f2a.ogg
+audio\voice\offendheath_150e7b38.ogg
 audio\voice\offendkris2_1fb0d347.ogg
 audio\voice\offendkris2_89aaaf38.ogg
 audio\voice\offendkris2_d0647c12.ogg
@@ -330,6 +480,7 @@ audio\voice\offendkris5_d0c4bafa.ogg
 audio\voice\offendkris5_d9088c7b.ogg
 audio\voice\offendkris5_eebb43bb.ogg
 audio\voice\offendkris_e2aa89b8.ogg
+audio\voice\offendkris_e438e11d.ogg
 audio\voice\offendkris_f483fdb4.ogg
 audio\voice\offendkris_fdf8c4bd.ogg
 audio\voice\offendrob2_0ac88dab.ogg
@@ -351,9 +502,15 @@ audio\voice\offendrob5_b803b9fa.ogg
 audio\voice\offendrob5_b882a11e.ogg
 audio\voice\offendrob5_b895ec65.ogg
 audio\voice\offendrob5_f5981436.ogg
+audio\voice\offendrob_3405488f.ogg
 audio\voice\offendrob_42a92fd9.ogg
 audio\voice\offendrob_58eaaf1c.ogg
 audio\voice\offendrob_7e0ea074.ogg
+audio\voice\offendrob_8f1cdaf5.ogg
+audio\voice\offendunknown_2f760377.ogg
+audio\voice\offendunknown_4bffa6e8.ogg
+audio\voice\offendunknown_9827dcbc.ogg
+audio\voice\offendunknown_bfe06d59.ogg
 audio\voice\rday3bad_156de58e.ogg
 audio\voice\rday3bad_41793fef.ogg
 audio\voice\rday3bad_499500af.ogg
@@ -370,6 +527,7 @@ audio\voice\rday3good_d12f2221.ogg
 audio\voice\rday3good_e11b772e.ogg
 audio\voice\rday3good_fe14674d.ogg
 audio\voice\rday3goodpt2_5fd8cbdf.ogg
+audio\voice\restrainhim.ogg
 audio\voice\robday1_21801f37.ogg
 audio\voice\robday1_4405ac0e.ogg
 audio\voice\robday1_69042b05.ogg
@@ -377,9 +535,16 @@ audio\voice\robday1_6a10e16d.ogg
 audio\voice\robday1_6f064768.ogg
 audio\voice\robday1_7547e8c1.ogg
 audio\voice\robday1_88a62195.ogg
+audio\voice\robday1_a05f46c3.ogg
 audio\voice\robday1_afff1e3d.ogg
 audio\voice\robday1_b0a17905.ogg
 audio\voice\robday1_e82d9398.ogg
+audio\voice\robday1_e87ecea0.ogg
+audio\voice\robday1cont_26dba6ad.ogg
+audio\voice\robday1cont_3d599283.ogg
+audio\voice\robday1cont_6ce92e73.ogg
+audio\voice\robday1cont_7c40cf1f.ogg
+audio\voice\robday1cont_9978009c.ogg
 audio\voice\robday2_607e5712.ogg
 audio\voice\robday2_9ae00ef3.ogg
 audio\voice\robday2_cdd940b4.ogg
@@ -466,6 +631,26 @@ audio\voice\satend_aspen_deb0b7f5.ogg
 audio\voice\satend_aspen_e730c216.ogg
 audio\voice\satend_aspen_eb003a08.ogg
 audio\voice\satend_aspen_f170fb6d.ogg
+audio\voice\satend_heath_0f9ed24f.ogg
+audio\voice\satend_heath_21d963e2.ogg
+audio\voice\satend_heath_2ecb7634.ogg
+audio\voice\satend_heath_3bae6d33.ogg
+audio\voice\satend_heath_481f7e48.ogg
+audio\voice\satend_heath_4d39a10e.ogg
+audio\voice\satend_heath_5f56c549.ogg
+audio\voice\satend_heath_7467c01a.ogg
+audio\voice\satend_heath_7a3291bf.ogg
+audio\voice\satend_heath_7ec031d4.ogg
+audio\voice\satend_heath_7ed9b454.ogg
+audio\voice\satend_heath_808167d0.ogg
+audio\voice\satend_heath_96289133.ogg
+audio\voice\satend_heath_afc2cbf4.ogg
+audio\voice\satend_heath_b1616288.ogg
+audio\voice\satend_heath_d635bce9.ogg
+audio\voice\satend_heath_df5548fc.ogg
+audio\voice\satend_heath_ef13f332.ogg
+audio\voice\satend_heath_f082080f.ogg
+audio\voice\satend_heath_fbfd8ba4.ogg
 audio\voice\satend_kris_03f20896.ogg
 audio\voice\satend_kris_10befafb.ogg
 audio\voice\satend_kris_164c8512.ogg
@@ -534,6 +719,58 @@ audio\voice\satend_rob_ec46b6e7.ogg
 audio\voice\satend_rob_f88bdaee.ogg
 audio\voice\satend_rob_f9a847e8.ogg
 audio\voice\satend_rob_f9e0e114.ogg
+audio\voice\satgreg_2b627e53.ogg
+audio\voice\satgreg_34392e26.ogg
+audio\voice\satgreg_402f53ca.ogg
+audio\voice\satgreg_49957a58.ogg
+audio\voice\satgreg_54d3070c.ogg
+audio\voice\satgreg_661a34c3.ogg
+audio\voice\satgreg_79df7a78.ogg
+audio\voice\satgreg_8bbf44eb.ogg
+audio\voice\satgreg_8c8aef31.ogg
+audio\voice\satgreg_d19ff1fc.ogg
+audio\voice\satgreg_e15072e3.ogg
+audio\voice\satgreg_e599ee07.ogg
+audio\voice\satgreg_e939d67b.ogg
+audio\voice\satgreg_e9c48d52.ogg
+audio\voice\satgreg_fad5bd49.ogg
+audio\voice\satgreg_pos_111433b7.ogg
+audio\voice\satgreg_pos_1a7c04f3.ogg
+audio\voice\satgreg_pos_1f45e539.ogg
+audio\voice\satgreg_pos_3eafe1ab.ogg
+audio\voice\satgreg_pos_4c1d9f9c.ogg
+audio\voice\satgreg_pos_4d5d8898.ogg
+audio\voice\satgreg_pos_4e34fc7c.ogg
+audio\voice\satgreg_pos_52f9f78a.ogg
+audio\voice\satgreg_pos_5bed112d.ogg
+audio\voice\satgreg_pos_70ceb183.ogg
+audio\voice\satgreg_pos_7578c992.ogg
+audio\voice\satgreg_pos_851dcf6f.ogg
+audio\voice\satgreg_pos_8c73f5bf.ogg
+audio\voice\satgreg_pos_c4233356.ogg
+audio\voice\satgreg_pos_c6fa5dd0.ogg
+audio\voice\satgreg_pos_cd5c9b1d.ogg
+audio\voice\satgreg_pos_d835e0c8.ogg
+audio\voice\satgreg_pos_dc8415cc.ogg
+audio\voice\satgreg_pos_dea9389a.ogg
+audio\voice\satgreg_pos_fe0b510e.ogg
+audio\voice\satheathneg_24695550.ogg
+audio\voice\satheathneg_d4b48746.ogg
+audio\voice\satheathneg_fae3a683.ogg
+audio\voice\satheathpos_05df0a74.ogg
+audio\voice\satheathpos_1e7b5de7.ogg
+audio\voice\satheathpos_2ccbfad5.ogg
+audio\voice\satheathpos_3219b30d.ogg
+audio\voice\satheathpos_3f0326b6.ogg
+audio\voice\satheathpos_50a0dd0f.ogg
+audio\voice\satheathpos_625d75b7.ogg
+audio\voice\satheathpos_9e71e685.ogg
+audio\voice\satheathpos_b43eee47.ogg
+audio\voice\satheathpos_ca54a073.ogg
+audio\voice\satheathpos_neg_1401f7b0.ogg
+audio\voice\satheathpos_neg_69c8f7e2.ogg
+audio\voice\satheathpos_pos_1401f7b0.ogg
+audio\voice\satheathpos_pos_ce15fdb5.ogg
 audio\voice\satkrisneg_517c14b1.ogg
 audio\voice\satkrisneg_86415622.ogg
 audio\voice\satkrisneg_e2f38e4f.ogg
@@ -591,6 +828,28 @@ audio\voice\satrobpos_pos_bf615d41.ogg
 audio\voice\satrobpos_pos_ddf504b7.ogg
 audio\voice\satrobpos_pos_fa70fad3.ogg
 audio\voice\stretchy.ogg
+audio\voice\unknownday1_0312791e.ogg
+audio\voice\unknownday1_065369b7.ogg
+audio\voice\unknownday1_3533aab1.ogg
+audio\voice\unknownday1_4cbb80de.ogg
+audio\voice\unknownday1_69319bf1.ogg
+audio\voice\unknownday1_6e0ca5a9.ogg
+audio\voice\unknownday1_97324982.ogg
+audio\voice\unknownday1_9aa339d7.ogg
+audio\voice\unknownday1_a5f8a620.ogg
+audio\voice\unknownday1_a6e1665c.ogg
+audio\voice\unknownday1_a7ab0e5d.ogg
+audio\voice\unknownday1_abe73de8.ogg
+audio\voice\unknownday1_b72a8f25.ogg
+audio\voice\unknownday1_bc178b7b.ogg
+audio\voice\unknownday1_c15f4617.ogg
+audio\voice\unknownday1cont_0da016a1.ogg
+audio\voice\unknownday1cont_30c9fba3.ogg
+audio\voice\unknownday1cont_38ff1c8c.ogg
+audio\voice\unknownday1cont_66cc0736.ogg
+audio\voice\unknownday1cont_8aa7cda0.ogg
+audio\voice\unknownday1cont_9b5ef901.ogg
+audio\voice\unknownday1cont_d337c283.ogg
 audio\voice - Copy\cctest.ogg
 audio\voice - Copy\cctest2.ogg
 audio\voice - Copy\croquet.ogg
@@ -1219,6 +1478,8 @@ images\characters\aspen\aspen blush.png
 images\characters\aspen\aspen cutscene 1.png
 images\characters\aspen\aspen cutscene 2.png
 images\characters\aspen\aspen cutscene 3.png
+images\characters\aspen\aspen cutscene 4.png
+images\characters\aspen\aspen cutscene 5.png
 images\characters\cc\c annoy offrail.png
 images\characters\cc\c close offrail.png
 images\characters\cc\c close.png
@@ -1230,6 +1491,7 @@ images\characters\cc\cc cutscene 1.png
 images\characters\cc\cc cutscene 2.png
 images\characters\cc\cc cutscene 3.png
 images\characters\cc\cc cutscene 4.png
+images\characters\cc\cc cutscene 5.png
 images\characters\esther\e annoy.png
 images\characters\esther\e close.png
 images\characters\esther\e laugh.png
@@ -1250,6 +1512,7 @@ images\characters\gregory\g offrail.png
 images\characters\gregory\g.png
 images\characters\gregory\gregory cutscene 1.png
 images\characters\gregory\gregory cutscene 2.png
+images\characters\gregory\gregory cutscene 3.png
 images\characters\gregory\offrail seperate\gore close.png
 images\characters\gregory\offrail seperate\gore look.png
 images\characters\gregory\offrail seperate\gore.png
@@ -1306,6 +1569,7 @@ images\characters\rob\rob blush.png
 images\characters\rob\rob cutscene 1.png
 images\characters\rob\rob cutscene 2.png
 images\characters\rob\rob cutscene 3.png
+images\characters\rob\rob cutscene 4.png
 images\characters\unknown\ry flirt.png
 images\characters\unknown\ry happy.png
 images\characters\unknown\ry look.png

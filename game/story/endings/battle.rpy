@@ -222,6 +222,7 @@ label estherturn:
     "CYCLE ENDED. CORE EXECUTING COUNTER-COMMANDS."
     if es_turn % 2 == 0:
         show screen esther_speak with easeintop
+        voice f"voice/talk_{es_turn}.ogg" # DO NOT REMOVE THE F! or should i say... dont... stop the f???
 
     $ renpy.pause(1.0, hard=True)
     if esther_stunned == False:
@@ -255,6 +256,7 @@ label es_move1:
         show esther snob
     else:
         show esther idle
+    voice sustain
     "LASER ACTIVATED. PLEASE STAND BACK."
     show laser 
     pause 0.4
@@ -267,6 +269,7 @@ label es_move1:
 
 label es_move2:
     show esther idle with hpunch
+    voice sustain
     "FLOODING PROTOCOL ACTIVATED. PLEASE REACH HIGHER GROUND."
     $ esdmgrandomizer = renpy.random.randint(2, 3)
     $ mc_health -= esdmgrandomizer
@@ -275,12 +278,14 @@ label es_move2:
     jump cmdinput
 
 label es_move3:
+    voice sustain
     "CORE_SYSTEM_PASS. CORE CYCLE ENDED. RESTARTING."
     hide screen esther_speak with easeouttop
     $ renpy.pause(1.0, hard=True)
     jump cmdinput
 
 label es_move4:
+    voice sustain
     "NEUROTOXIC PROTOCOL ACTIVATED. PLEASE ATTACH GAS MASK."
     show neuro
     pause 1.5
@@ -294,7 +299,8 @@ label es_move4:
 label esthertalk1:
     "YOU: \"Why are you doing this, Miss Esther?\n    What do you have to gain?\""
     show screen esther_print with easeintop
-    $ renpy.pause(7.0, hard=True)
+    voice "voice/print1.ogg"
+    $ renpy.pause(13.0, hard=True)
     show esther down with hpunch
     $ es_health -= 3
     if mc_health < 10:
@@ -307,7 +313,8 @@ label esthertalk1:
 label esthertalk2:
     "YOU: \"What happened to the previous employee? Were you behind that?\""
     show screen esther_print with easeintop
-    $ renpy.pause(7.0, hard=True)
+    voice "voice/print2.ogg"
+    $ renpy.pause(16.0, hard=True)
     show esther down with hpunch
     $ es_health -= 3
     if mc_health < 10:
@@ -320,7 +327,8 @@ label esthertalk2:
 label esthertalk3:
     "YOU: \"I can't believe this, Miss Esther. All this time, you were planning this?\""
     show screen esther_print with easeintop
-    $ renpy.pause(7.0, hard=True)
+    voice "voice/print3.ogg"
+    $ renpy.pause(12.0, hard=True)
     show esther down with hpunch
     $ es_health -= 3
     if mc_health < 10:

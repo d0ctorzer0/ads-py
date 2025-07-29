@@ -279,7 +279,7 @@ label heathday2:
 
     mc "Does she actually think what she does is \"magic\"?"
 
-    e "I have no clue. I'm not particularly interested in... uh..."
+    e "I have no clue. I'm not very interested in... uh..."
     e "...getting to know any of them."
 
     mc "Why not?"
@@ -301,7 +301,7 @@ label heathday2:
     h "Now... choose a card... any card..."
 
     show h
-    h "Well, any card that I have on me, preferably, but..."
+    h "Well, any card that I {i}have{/i}, preferably, but..."
 
     jump heathmenuday2
 
@@ -341,7 +341,7 @@ label offendheath2:
 label impressheath2:
 
     show h laugh
-    h "Is {b}THIS{/b} your card?"
+    h "A-HA! Is {b}THIS{/b} your card?"
 
     n "She pulls out exactly what you thought of - the three of clubs."
 

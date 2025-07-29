@@ -187,8 +187,8 @@ label battleskip:
     e "I can't, Doctor. I..."
     show e look
     e "You've been so kind to me. More than anyone before you."
-    e "My programming is screaming at me..."
-    e "To not let you do this. To not let you go."
+    e "My programming is screaming at me, to..."
+    e "...not let you do this. To not let you go."
     show e laugh
     e "Y-You know, if Aperture finds out I'm letting you get away with this, they'll..."
     show e look

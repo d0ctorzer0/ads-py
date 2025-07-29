@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/menus/credits.rpy", line 10: expected a keyword argument or child statement.
-    "{size=70}WRITER/DEVELOPER/ARTIST\n{size=60}Ashleyanna Rivers"
-    ^
+File "game/story/endings/battle.rpy", line 225: expected end of line
+    voice sustain "voice/talk_2.ogg"
+                  ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Fri Jul 18 14:10:04 2025
+Tue Jul 29 14:22:12 2025

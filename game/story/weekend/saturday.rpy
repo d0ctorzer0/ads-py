@@ -402,20 +402,18 @@ label satheath:
 
 label satheathpos:
     show h
-    h "Ahh! Doctor!! Sorry, sorry, uh... one sec."
+    h "Ahh! Doctor!! Sorry, sorry, uh... one sec, I was..."
 
     n "She's \"breathing\" very heavily."
 
     show h sad
-    h "I was... in a rush... to get back, I was down at the lounge... signing up for tonight, but I..."
-    h "...don't... wanna miss... giving a performance in here."
+    h "In a rush... to get back, I was down at the lounge... signing up for tonight, but I don't..."
+    h "...wanna miss... giving a performance in here."
 
     mc "Tonight? What's tonight?"
 
     show h
-    h "Oh!"
-    show h sad
-    h "Sorry. I've caught my breath, now."
+    h "Oh, sorry. I've caught my breath, now."
     show h laugh
     h "You haven't heard? Once a month, they do an open-mic at the lounge downstairs."
 
@@ -657,8 +655,6 @@ label satgreg:
         extend ""
         "I think I'll pass.":
             $ romance_points["Greg"] -= 3
-            show g look
-            g "Aww, that's a shame. But I guess it's not for everyone."
         "Maybe just... an orange juice?":
             $ romance_points["Greg"] += 3
             bar "The greenhouse doesn't grow oranges. Is apple juice okay?"
@@ -729,7 +725,7 @@ label satgreg_pos:
     mc "That's great, Gregory."
 
     show g aaa
-    g "Oh - wait a minute -"
+    g "Oh - wait just a minute -"
     if romance_points["Greg"] >= 8:
         $ cutscenetextbox = True
         show screen cuttextbox
@@ -1015,7 +1011,7 @@ label satunknown:
     python:
         v_unknown = True
         cores_visited += 1
-    scene bioroom with fade
+    scene hall with fade
     n "You walk down one of the residential block's halls."
     n "The coordinates that core sent you for his \"place\" lead to the end of this hallway."
     n "You reach a door that looks like it's been abandoned for who-knows-how-long."

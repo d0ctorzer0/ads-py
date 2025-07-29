@@ -218,7 +218,7 @@ label heathday4:
 
 label impressheath4:
     show h laugh
-    h "Why yes! Yes I am! And I'm not ready yet, haha. So..."
+    h "Why yes! Yes I am! And I'm not ready, haha, so..."
 
     mc "So you need us to wait."
 
@@ -229,7 +229,7 @@ label impressheath4:
     show e annoy with easeinright
     e "Heath, we do have a tight schedule."
     e "We don't have a lot of time to wait."
-    hide e with easeinright
+    hide e with easeoutright
 
     jump heathday4cont
 

@@ -438,7 +438,7 @@ label heathday1cont:
     with easeoutright
     show e
     with easeinright
-    e "We'll have to take a shortcut to the next location, as it's a bit far up."
+    e "It'll be a while til we reach our next location, as it's a bit far up."
 
     n "Next on your clipboard is an \"ASPEN\"."
 
@@ -464,7 +464,7 @@ label unknownday1:
     mc "We have a residential section? Like, housing?"
     
     e "As I'm sure you're well aware, many of our staff resides on-campus in case of an emergency."
-    e "We'll pass through that area on our route, so you'll see it in a bit."
+    e "We'll pass that area on our route, so you'll see it in a bit."
     e "You'll also be assigned a room tonight. Maintenance staff is always on-call."
 
     n "You groan."
@@ -475,7 +475,7 @@ label unknownday1:
     mc "Sorry, hunting?"
 
     show e
-    e "Why yes. Don't humans have to hunt for their food?"
+    e "Why yes. Don't humans have to hunt for their food on the surface?"
 
     mc "That was... hundreds of years ago. We have slaughterhouses and processing plants now."
 
@@ -623,7 +623,7 @@ label unknownday1cont:
     n "She continues to rant about botany's importance to Aperture as you approach an unusually well-lit room."
     n "Once you reach the entrance to the greenhouse, Miss Esther stops you."
 
-    e "Due to the fragile nature of our greenery, I must remain here. Only approved spheres may go past this point, and I am not one."
+    e "Due to the fragile nature of our greenery, I must remain here. Only approved employees may go past this point, and I am not one."
 
     menu:
         extend ""
@@ -743,7 +743,7 @@ label aspenday1cont:
     show e
     show e
     with easeinright
-    e "Glad to see you're back. We should move along - that... {i}encounter{/i} earlier put us behind schedule."
+    e "Glad to see you're back. We should move along - that... {i}encounter{/i} earlier put us behind schedule." #missing line
 
     n "You glance down. Next on your list is something simply labeled \"CC\"."
 
@@ -841,7 +841,7 @@ label ccday1:
 
     mc "That's... that's it? No job to do, no task to maintain? I'm just making sure he's suffering?"
 
-    e "Yes."
+    e "Yes." #missing line
 
     jump ccchoice
 

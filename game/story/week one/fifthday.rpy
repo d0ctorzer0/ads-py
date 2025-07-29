@@ -533,7 +533,7 @@ label ccday5:
     $ audio_crossFade(2, "music/eight.ogg")
 
     show u upset with easeinright
-    u "I ain't doin' anything wrong, here, am I?"
+    u "I ain't doin' nuthin' wrong, here, am I?"
     hide u with easeoutright
 
     show c close with easeinright
@@ -541,7 +541,7 @@ label ccday5:
     hide c with easeoutright
 
     show u with easeinright
-    u "But the Doc's in here. And her little friend."
+    u "But the Doc's in here. And their little friend."
 
     show e b annoy at bounce
     e "Who are you calling \"little\"?!"
