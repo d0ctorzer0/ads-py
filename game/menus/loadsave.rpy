@@ -10,6 +10,7 @@ screen load():
     tag menu
 
     use file_slots(_("Load"))
+    $ preferences.afm_enable = False
 
 define gui.slot_button_text_selected_hover_color = gui.hover_color
 define config.thumbnail_width = 585
