@@ -7,6 +7,7 @@ label start:
     play music one
 
     $ terminaltext = False
+    $ preferences.afm_enable = False
 
     if renpy.is_skipping() == False:
         show screen daytransition
