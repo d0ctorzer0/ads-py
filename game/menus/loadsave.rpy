@@ -10,7 +10,6 @@ screen load():
     tag menu
 
     use file_slots(_("Load"))
-    $ preferences.afm_enable = False
 
 define gui.slot_button_text_selected_hover_color = gui.hover_color
 define config.thumbnail_width = 585
@@ -52,7 +51,7 @@ screen file_slots():
                 key "save_delete" action FileDelete(slot)
             
             vbox spacing 5:
-                imagebutton idle "gui/loadbutton2.png" action FileLoad(slot) xpos 580 ypos 80 #use setvariable here for autoforward bug
+                imagebutton idle "gui/loadbutton2.png" action SetVariable("preferences.afm_enable", False) FileLoad(slot) xpos 580 ypos 80 
             
             vbox spacing 5:
                 imagebutton idle "gui/savedelete.png" action FileDelete(slot) at delete_tilt xpos -125 ypos 165
