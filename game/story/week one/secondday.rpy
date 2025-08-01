@@ -428,8 +428,7 @@ label whatswrong:
 
     show e annoy
     e "...y'know, the best of the best."
-    e "Then the 70's hit. And the funds started running low."
-    e "And..."
+    e "Then the 70's hit. And the funds started running low, and..."
 
     show e
     e "Oh look, we're here. Go on in, now. I'm sure Aspen needs a check-up."
@@ -641,7 +640,7 @@ label ccday2cont:
     n "No sign of that strange figure from yesterday, thankfully."
 
     show e with easeinright
-    e "Time for our last stop of the day."
+    e "Time for the last stop of the day."
 
     mc "It feels like this route's gone a lot quicker than yesterday's."
 

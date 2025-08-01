@@ -123,7 +123,7 @@ label krisday3:
 
     show e annoy
     e "Really? That egotistic idiot?"
-    e "I suppose it doesn't matter who you pick, as long as I can log it properly."
+    e "I suppose it doesn't matter who you pick, as long as I can log iT."
 
     show e
     e "I'll put it in my database that you'll be supervising Kris today. Do you remember the way to the conference room?"

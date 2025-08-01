@@ -650,9 +650,6 @@ label robday4cont:
 
     if ball == False:
         mc "I have no idea what that means."
-        show e b annoy at bounce
-        e "Neither do I."
-        hide e b annoy
     
     mc "Everything's alright in here then? Nothing else causing any problems?"
 
