@@ -51,7 +51,7 @@ screen file_slots():
                 key "save_delete" action FileDelete(slot)
             
             vbox spacing 5:
-                imagebutton idle "gui/loadbutton2.png" action SetVariable("preferences.afm_enable", False) FileLoad(slot) xpos 580 ypos 80 
+                imagebutton idle "gui/loadbutton2.png" action SetVariable("preferences.afm_enable", False), FileLoad(slot) xpos 580 ypos 80 
             
             vbox spacing 5:
                 imagebutton idle "gui/savedelete.png" action FileDelete(slot) at delete_tilt xpos -125 ypos 165

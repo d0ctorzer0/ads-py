@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/battle.rpy", line 225: expected end of line
-    voice sustain "voice/talk_2.ogg"
-                  ^
+File "game/menus/loadsave.rpy", line 54: 'FileLoad' is not a keyword argument or valid child of the imagebutton statement.
+    imagebutton idle "gui/loadbutton2.png" action SetVariable("preferences.afm_enable", False) FileLoad(slot) xpos 580 ypos 80 
+                                                                                                       ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Tue Jul 29 14:22:12 2025
+Sun Aug  3 22:07:37 2025

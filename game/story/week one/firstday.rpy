@@ -797,7 +797,7 @@ label ccday1:
     n "The core slowly opens its optic and turns to face you. It looks... tired, somehow."
 
     voice "voice/cctest2.ogg"
-    cu "Oh. This one's new, isn't it?"
+    cu "Oh. This one's... new."
 
     hide c
     with easeoutright
