@@ -176,7 +176,7 @@ label satend_heath:
     n "After a short while, an employee enters through the curtains."
 
     cw "Welcome, Aperture employees!"
-    cw "Just a reminder that if you are here and {i}aren't{/i} an Aperture employee, we do have cause to escort you and/or erase your memory of this facility."
+    cw "Just a reminder that if you are here and {i}aren't{/i} an Aperture employee, we do have cause to escort you and erase your memory of this facility."
     cw "Anyways!"
     cw "Today is the Saturday open mic, and we have several performers here, some new, some returning."
     cw "Please sit back and relax, if you can, and enjoy!"

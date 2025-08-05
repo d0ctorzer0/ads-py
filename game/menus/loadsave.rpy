@@ -46,7 +46,7 @@ screen file_slots():
                 background None
                 action FileAction(slot)
 
-                add FileScreenshot(slot) xalign 0.5
+                add FileScreenshot(slot)
 
                 key "save_delete" action FileDelete(slot)
             

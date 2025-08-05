@@ -744,7 +744,6 @@ label aspenday1cont:
     show e
     show e
     with easeinright
-    e "Glad to see you're back. We should move along - that... {i}encounter{/i} earlier put us behind schedule." #missing line
 
     n "You glance down. Next on your list is something simply labeled \"CC\"."
 

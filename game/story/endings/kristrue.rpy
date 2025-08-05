@@ -25,7 +25,7 @@ label END_kristrue:
     n "You enter."
     scene nyc hotel front with fade 
     mc "I have a reservation for one for [name]."
-    dc "Ah yes, I see you right here. Give me just a second..."
+    dc "Ah yes, I see you right here. Give me just a sec..."
     n "After some brief formalities, the desk clerk hands you your room key."
     dc "Checkout time is 11am on the 5th. If you need an extension, just call the front desk."
     mc "Thank you."

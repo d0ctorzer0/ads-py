@@ -531,8 +531,6 @@ label ccday4cont:
 
         mc "Yes. You will."
 
-        show c
-        c "Good."
         hide c with easeoutright
     
     n "You both leave CC behind and exit the room."

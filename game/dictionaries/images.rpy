@@ -5,6 +5,7 @@
 default secretchance = "night" 
 image mcroom nightchance = "[persistent.bgtype]mcroom [secretchance].png"
 
+image office = "[persistent.bgtype]office.png"
 image krisroom = "[persistent.bgtype]krisroom.png"
 image krisroom noscreen = "[persistent.bgtype]krisroom noscreen.png"
 image heathroom = "[persistent.bgtype]heathroom.png"

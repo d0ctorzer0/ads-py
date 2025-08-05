@@ -563,6 +563,7 @@ label satccpos:
     c "Doctor... perhaps, could you come back tonight? I may have something for you."
     c "But I need time alone to prepare it."
     menu:
+        extend ""
         "I'll see if I can stop by, CC.":
             $ romance_points["CC"] += 2
             jump satccpos_pos

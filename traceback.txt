@@ -1,21 +1,41 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing text tag {/size} in 'Developer/Artist/Writer:\n{font=Arimo.ttf}{b}———————————{/b}{/font}\nAshleyanna Rivers\n\nBackground Artists:\n{font=Arimo.ttf}{b}—————————{/b}{/font}\nAlyx Shipman\nHazel Thompson\nDustin Oakley\nEvelyn Gallaher\n\nVoice Actors:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nAshleyanna Rivers {size=25}as Miss Esther{/size}\nTyler Banning {size=25}as Kris{/size}\nCassidy Hancock {size=25}as Heath{/size}\nIsaiah Phommavong {size=25}as Aspen{/size}\nTeetad Govitviwat {size=25}as CC{/size}\nBraeden Dugger {size=25}as Rob{/size}\nJohn Wharton {size=25}as Gregory{/size}\nBrian Vecci as ???{/size}\nCaz Dugger {size=25}as additional voices{/size}\nIzzy Woody {size=25}as additional voices{/size}'.:
-Exception: '/size' closes a text tag that isn't open.
+While running game code:
+  File "game/story/weekend/sunday.rpy", line 30, in script
+    n "You wake up to a knocking on your door."
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots():
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots():
+  File "game/menus/loadsave.rpy", line 33, in execute
+    vbox spacing -30:
+  File "game/menus/loadsave.rpy", line 39, in execute
+    for i in range(2):
+  File "game/menus/loadsave.rpy", line 42, in execute
+    button:
+  File "game/menus/loadsave.rpy", line 49, in execute
+    add ccroom(slot) xalign 0.5
+  File "game/menus/loadsave.rpy", line 49, in <module>
+    add ccroom(slot) xalign 0.5
+NameError: name 'ccroom' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 834, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1184, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
+  File "game/story/weekend/sunday.rpy", line 30, in script
+    n "You wake up to a knocking on your door."
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1470, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1117, in do_display
+    display_say(who,
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 814, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ui.py", line 301, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
@@ -30,10 +50,6 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\transition.py", line 384, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
@@ -42,23 +58,40 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 755, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\movetransition.py", line 383, in render
+    old_r = renpy.display.render.render(self.old, width, height, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\transform.py", line 1056, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 994, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 427, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 2184, in render
+    cr = renpy.display.render.render(self.child, w, h, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 2614, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 738, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\text\text.py", line 1284, in segment
-    raise Exception("%r closes a text tag that isn't open." % text)
-Exception: '/size' closes a text tag that isn't open.
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 752, in render
+    self.update()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots():
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots():
+  File "game/menus/loadsave.rpy", line 33, in execute
+    vbox spacing -30:
+  File "game/menus/loadsave.rpy", line 39, in execute
+    for i in range(2):
+  File "game/menus/loadsave.rpy", line 42, in execute
+    button:
+  File "game/menus/loadsave.rpy", line 49, in execute
+    add ccroom(slot) xalign 0.5
+  File "game/menus/loadsave.rpy", line 49, in <module>
+    add ccroom(slot) xalign 0.5
+NameError: name 'ccroom' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
-Aperture Dating Simulator 1.0.0.alpha
-Fri Jul 18 14:19:59 2025
+Aperture Dating Simulator 1.2.0.alpha
+Mon Aug  4 10:30:31 2025

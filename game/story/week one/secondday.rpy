@@ -604,7 +604,7 @@ label ccday2:
 
 label impresscc2:
     show c look
-    c "I appreciate the offer, Doctor, but there's really nothing for me."
+    c "I appreciate the offer, Doctor, but there's nothing really for me."
 
     show c
     c "You could unplug me. That would kill me faster."

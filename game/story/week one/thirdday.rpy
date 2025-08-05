@@ -625,8 +625,8 @@ label ccday3:
     c "Haha... you chose to supervise me today?"
 
     show c
-    c "Well then..."
-    c "You're going to be very bored."
+    c "Well then, you're..."
+    c "...going to be very bored."
 
     menu:
         extend ""
@@ -645,8 +645,8 @@ label ccday3good:
 
     show c
     c "Haha. That's silly."
-    c "But it's..."
-    c "...more than the last doctor said."
+    c "But..."
+    c "...it's more than the last doctor said."
     c "You know, you woke me up from my dream."
 
     mc "You can dream?"

@@ -616,7 +616,7 @@ label ccanduresolve:
     c "I sympathize, sir, I really do, but this is technically a research area."
     show c
     c "You can't just go rolling into every room you see."
-    c "Aspen told me you've rammed into the greenhouse door before as well."
+    c "Aspen told me you've rammed into their greenhouse door before as well."
 
     show e b annoy at bounce
     e "Oh, so this is a {i}recurring{/i} problem?"
@@ -751,7 +751,7 @@ label ccend5:
         c "I'm not sure what the issue is, but..."
         c "It seems you don't like me very much, Doctor."
         show c
-        c "That's alright though. That's a common occurrence."
+        c "That's alright though. Seems that's a common occurrence."
 
         mc "CC -"
 

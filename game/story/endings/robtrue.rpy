@@ -115,9 +115,7 @@ label END_robtrue:
             show r look offrail
             r "I knew my unbeatable charm would get to ya eventually."
     show r offrail
-    ann "Welcome, baseball fans!"
-    ann "Today's game is between the Milwaukee Brewers and our very own Detroit Tigers!"
-    ann "Let's have a good game, folks!"
+    ann "Welcome, baseball fans! Today's game is between the Milwaukee Brewers and our very own Detroit Tigers! Let's have a good game, folks!"
     mc "Looks like it's starting, Rob."
     r "Hell yeah! LET'S GO TIGERS!"
     n "You laugh."

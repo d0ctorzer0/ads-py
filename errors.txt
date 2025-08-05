@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/menus/loadsave.rpy", line 54: 'FileLoad' is not a keyword argument or valid child of the imagebutton statement.
-    imagebutton idle "gui/loadbutton2.png" action SetVariable("preferences.afm_enable", False) FileLoad(slot) xpos 580 ypos 80 
-                                                                                                       ^
+File "game/menus/loadsave.rpy", line 51: reached end of line when expecting ':'.
+    elif daynum == "2"
+                      ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sun Aug  3 22:07:37 2025
+Mon Aug  4 10:45:33 2025
