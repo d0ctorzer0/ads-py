@@ -1184,20 +1184,20 @@ screen confirm(message, yes_action, no_action):
                 text_style "notif"
                 action no_action
                 xpos 750 ypos 600
-    
-    style_prefix "notif"
-    add "gui/options/black.png"
-    add "gui/overlay/quit_popup.png" yalign .5 xalign .5 zoom 1.2
+    if message == "Are you sure you want to quit?":
+        style_prefix "notif"
+        add "gui/options/black.png"
+        add "gui/overlay/quit_popup.png" yalign .5 xalign .5 zoom 1.2
 
-    hbox:
-        textbutton "Yes, I'm sure.":
-            text_style "notif" 
-            action yes_action
-            xpos 600 ypos 640
-        textbutton "No, go back.":
-            text_style "notif"
-            action no_action
-            xpos 900 ypos 640
+        hbox:
+            textbutton "Yes, I'm sure.":
+                text_style "notif" 
+                action yes_action
+                xpos 600 ypos 640
+            textbutton "No, go back.":
+                text_style "notif"
+                action no_action
+                xpos 900 ypos 640
 
 
 #style confirm_frame is gui_frame
