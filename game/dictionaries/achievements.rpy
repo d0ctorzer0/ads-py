@@ -2,7 +2,7 @@ init python:
     achievement.register("ach_explore", stat_max=6)
     achievement.register("ach_ultrobo", stat_max=7)
     achievement.register("ach_seenitall", stat_max=18)
-    achievement.register("ach_picture", stat_max=43) # Massive W for drawing 43 cutscenes wtf
+    achievement.register("ach_picture", stat_max=42) # Massive W for drawing 43 cutscenes wtf
 
 default persistent.ach_biwta = True
 default persistent.ach_explore = True

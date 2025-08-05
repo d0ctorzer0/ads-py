@@ -542,7 +542,7 @@ label robday4:
     n "The gym isn't too far from CC's room, thankfully, and you make it there in no time."
     n "Miss Esther is strangely quiet. And she was so chipper this morning..."
 
-    scene robtemproom with fade
+    scene robroom with fade
     $ audio_crossFade(2, "music/seven.ogg")
 
     show r with easeinright

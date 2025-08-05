@@ -977,7 +977,7 @@ label robday10:
 
     mc "I do. Thank you, Miss Esther."
 
-    scene robtemproom with fade
+    scene robroom with fade
     $ audio_crossFade(2, "music/six.ogg")
     
     show r with easeinright
@@ -1039,7 +1039,7 @@ label robday10:
 label robacceptance:
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene robtemproom with fade
+    scene robroom with fade
     $ cutscenetextbox = False
     show r close with easeinright
     r "Now that you and I are {i}\"official\"..."
@@ -1125,7 +1125,7 @@ label robacceptance:
 label robrejection:
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene robtemproom with fade
+    scene robroom with fade
     $ cutscenetextbox = False
     show r close with easeinright
     r "Ah, no, Doc, it's alright."

@@ -1443,7 +1443,7 @@ images\pmcroom secret.png
 images\pstairs.png
 images\relaxationcenter.png
 images\relaxationcenterdoor.png
-images\robtemproom.png
+images\robroom.png
 images\stairs.png
 images\tempcafe.png
 images\temphall.png

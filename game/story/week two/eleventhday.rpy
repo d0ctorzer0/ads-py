@@ -982,7 +982,7 @@ label robday11:
 
     mc "Maybe she'll have sent me an email explaining her absence tonight."
 
-    scene robtemproom with fade
+    scene robroom with fade
     $ audio_crossFade(2, "music/six.ogg")
     show r yell with easeinright
     n "Once again, Rob is yelling at the TV above him."

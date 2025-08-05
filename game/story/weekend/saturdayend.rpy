@@ -365,7 +365,7 @@ label satend_aspen:
 
 label satend_rob:
     play music six
-    scene bioroom with fade
+    scene door3 cool with fade
     n "You approach the door to the gym. It's mostly dark through the window, although you can see a faint light through the frosted glass."
     n "On the door is a sign that says \"CLOSED FOR REPAIRS\"."
     mc "Yeah, right."
@@ -382,7 +382,7 @@ label satend_rob:
     r "Should be open now, come on in!"
 
     n "You open the door and step in."
-    scene robtemproom with fade
+    scene robroom with fade
     n "Just like you thought, the faint light you saw from outside the window was, in fact, the TV."
 
     show r with easeinright
@@ -453,7 +453,7 @@ label satend_rob:
     r "{color=#fff}S'been a long time since I last had some proper company."
     r "{color=#fff}So I appreciate it."
     hide screen cuttextbox
-    scene robtemproom with fade
+    scene robroom with fade
     show r with easeinright
     $ cutscenetextbox = False
 
@@ -494,7 +494,7 @@ label satend_rob:
 
 label satend_cc:
     play music five
-    scene bioroom with fade
+    scene door1 warm with fade
     n "You approach CC's door. It's quiet. You knock."
     mc "CC, it's me."
     c "Doctor. Come in, please."

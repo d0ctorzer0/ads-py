@@ -147,7 +147,7 @@ label biology:
             persistent.visited["biology"] = True
         achievement.progress("ach_explore", persistent.places_visited)
         achievement.sync() 
-    scene bioroom with fade
+    scene door3 with fade
     n "You come up to the door to Biology."
     n "It's right across the hallway from the greenhouse."
     n "Though you're not allowed in, there's a window on the door you can look through."
@@ -167,7 +167,7 @@ label wheatleycameo:
             persistent.visited["wheatley"] = True
         achievement.progress("ach_explore", persistent.places_visited)
         achievement.sync() 
-    scene door2 with fade
+    scene door2 cool with fade
     n "You come up to the large door that reads \"AUTHORIZED PERSONNEL ONLY\"."
     n "From what you've heard, this is where they keep test subjects in stasis."
     n "You open the door."
@@ -225,7 +225,7 @@ label recovery:
             persistent.visited["recovery"] = True
         achievement.progress("ach_explore", persistent.places_visited)
         achievement.sync() 
-    scene bioroom with fade
+    scene door3 with fade
     n "You come up to the door that reads \"STASIS RECOVERY BAY\" on a plaque next to it."
     n "Not wanting to disturb anything that might be happening inside, you peer through the window."
     n "There's two doctors standing next to a woman with black hair in a ponytail."
@@ -620,8 +620,8 @@ label satgreg:
     python:
         v_greg = True
         cores_visited += 1
-    scene hall with fade
-    n "You approach the sliding door with the label \"EMPLOYEE LOUNGE\"."
+    scene door1 warm with fade
+    n "You approach the door with a label on the side - \"EMPLOYEE LOUNGE\"."
     n "This door looks much different from the others - newer, and the label isn't as large."
     n "Gregory said he'd be in here."
     n "You enter."
@@ -894,7 +894,7 @@ label satrob:
     python:
         v_rob = True
         cores_visited += 1
-    scene robtemproom with fade
+    scene robroom with fade
     n "You enter into the gym. There's actually people in here today, one on the treadmill and one on the rowing machine."
 
     show r with easeinright
@@ -1012,7 +1012,7 @@ label satunknown:
     python:
         v_unknown = True
         cores_visited += 1
-    scene hall with fade
+    scene door1 cool with fade
     n "You walk down one of the residential block's halls."
     n "The coordinates that core sent you for his \"place\" lead to the end of this hallway."
     n "You reach a door that looks like it's been abandoned for who-knows-how-long."

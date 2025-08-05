@@ -783,7 +783,7 @@ label robday5:
 
     n "You open the door carefully."
 
-    scene robtemproom with fade
+    scene robroom with fade
     $ audio_crossFade(2, "music/six.ogg")
     show r close with easeinright
     n "Rob is sound asleep at his desk."

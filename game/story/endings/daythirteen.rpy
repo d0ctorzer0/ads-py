@@ -72,7 +72,7 @@ label emmap:
 
 label unknownmissing:
     $ emv_unknown = True
-    scene bioroom with fade
+    scene door1 dark with fade
     show flash
     window auto
     
@@ -96,7 +96,7 @@ label saveaspen:
         jump noaspen
     window auto
     $ emv_aspen = True
-    scene bioroom with fade
+    scene door3 dark with fade
     show flash
     n "You approach the door to the greenhouse."
     n "You peer into the window. It looks like it's flooding, and the sprinklers are on..."
@@ -166,7 +166,7 @@ label saveaspen:
 label noaspen:
     window auto
     $ emv_aspen = True
-    scene bioroom with fade
+    scene door3 dark with fade
     show flash
     n "You approach the door to the greenhouse."
     n "You can't get it open - it's jammed."
@@ -184,7 +184,7 @@ label savegreg:
     
     if lock_gregory == False:
         jump nogreg
-    show bioroom with fade
+    show door1 dark with fade
     show flash
     window auto
     n "You approach the door to the lounge to find a frightening sight."
@@ -299,7 +299,7 @@ label savegreg:
 
 label nogreg:
     $ emv_greg = True
-    scene bioroom with fade
+    scene door1 dark with fade
     show flash
     window auto
     n "You run up to the door leading to the lounge. One of your coworkers greets you."
@@ -332,7 +332,7 @@ label saverob:
     
     if lock_rob == False:
         jump norob
-    scene robtemproom with fade
+    scene robroom with fade
     show flash
     window show
     n "You push the door open into the gym. There's a fire near one of the machines in the back."
@@ -401,7 +401,7 @@ label saverob:
 
 label norob:
     $ emv_rob = True
-    scene robtemproom with fade
+    scene robroom with fade
     show flash
     window auto
     n "You push the door open into the gym. There's a fire near one of the machines in the back."
@@ -419,7 +419,7 @@ label saveccunknown:
     
     if lock_cc == False and lock_unknown == False:
         jump nocc
-    scene bioroom with fade
+    scene door1 warm with fade
     show flash
     window auto
     $ renpy.sound.play("sfx/fire.ogg", channel='fire', loop=True)
@@ -551,7 +551,7 @@ label saveccunknown:
 
 label nocc:
     $ emv_cc = True
-    scene bioroom with fade
+    scene door1 warm with fade
     show flash
     window auto
     $ renpy.sound.play("sfx/fire.ogg", channel='fire', loop=True)
@@ -742,7 +742,7 @@ label savekris:
 
 label nokris:
     $ emv_kris = True
-    scene krisroom with fade
+    scene krisroom hell with fade
     show flash
     window auto
     n "You push your way into Kris' conference room."

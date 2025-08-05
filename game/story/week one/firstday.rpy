@@ -1014,7 +1014,7 @@ label robday1:
     show e
     n "Still left with more questions than answers, you follow Miss Esther."
 
-    scene robtemproom with fade
+    scene robroom with fade
     $ audio_crossFade(2, "music/six.ogg")
     n "Eventually, you approach a door with \"GYM\" written on it. Not a sign of any other human employees, though."
     n "You open the door to see a core behind a desk, red pupil twitching as it watches a TV screen above it."

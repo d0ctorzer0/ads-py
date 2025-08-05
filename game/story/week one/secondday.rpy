@@ -652,7 +652,7 @@ label ccday2cont:
     jump robday2
 
 label robday2:
-    scene robtemproom with fade
+    scene robroom with fade
     $ audio_crossFade(2, "music/six.ogg")
     show r with easeinright
     r "Welcome back, welcome back, doctor. Interested in a run on the treadmill today?"

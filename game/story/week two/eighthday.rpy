@@ -787,7 +787,7 @@ label robday8:
     n "It makes her hard to read."
     n "You approach the gym door without any interruptions."
 
-    scene robtemproom with fade
+    scene robroom with fade
     $ audio_crossFade(2, "music/six.ogg")
     show r with easeinright
     if positive["Rob"]:

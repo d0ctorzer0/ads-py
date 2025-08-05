@@ -734,7 +734,7 @@ label robday3:
     show e annoy
     e "His full name. He prefers to go by Rob, though, so... don't tell him I told you."
 
-    scene robtemproom with fade
+    scene robroom with fade
     show r yell with easeinright
     $ audio_crossFade(2, "music/six.ogg")
 
@@ -827,7 +827,7 @@ label rday3good:
         mccut "{color=#fff}I'm... trying."
 
         r "{color=#fff}Don't overwork yourself."
-        scene robtemproom with fade
+        scene robroom with fade
         $ cutscenetextbox = False
         hide screen cuttextbox
         show r with easeinright

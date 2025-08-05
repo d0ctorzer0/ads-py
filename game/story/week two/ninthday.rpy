@@ -764,7 +764,7 @@ label robday9:
     show e annoy with easeinright
     e "I do hope I won't have a reason to yell at him today..."
     
-    scene robtemproom with fade
+    scene robroom with fade
     $ audio_crossFade(2, "music/six.ogg")
     show r yell with easeinright
     r "Go go go go GO GO GO GO GO!! COME ON..."
