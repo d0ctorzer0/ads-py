@@ -354,9 +354,11 @@ label END_mcdeath:
     $ config.rollback_enabled = False
     stop music fadeout 2.0
     show screen esther_win with easeintop
+    voice "voice/fool_1.ogg"
     $ renpy.pause(2.0, hard=True)
     hide screen esther_win
     show screen esther_win2 with easeintop
+    voice "voice/fool_2.ogg"
     $ renpy.pause(4.0, hard=True)
     hide screen esther_win2 with easeouttop
     show screen creditsfadeout with fade
