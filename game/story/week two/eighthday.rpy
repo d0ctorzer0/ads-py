@@ -185,7 +185,7 @@ label n_krisday8:
     e "You'll be well aware when we're late, Kris."
     hide e b
 
-    k "And Miss Esther. Good morning to you."
+    k "And Miss Esther. Good morning to you, too."
 
     mc "I see your screen is back to being online."
 

@@ -168,7 +168,7 @@ label krisconfession:
     k "Why yes. I do enjoy your company, you know."
     k "I wouldn't be... treating you like I have recently, if I didn't."
     show k look
-    k "Apologies, Doctor. I'm a little anxious today."
+    k "...I'm a little anxious today."
 
     mc "You're okay, Kris."
 
@@ -264,8 +264,8 @@ label krisacceptance:
     show k
     k "I'm not sure of the brand - frankly, I believe Aperture may have made the model, cheap and in-house."
     show k angry
-    k "Cave would do {i}anything{/i} to save even a penny in the years before his death..."
-    k "So it makes sense employee rewards were cut back, as well."
+    k "Mr. Johnson would do {i}anything{/i} to save even a penny in the years before his death..."
+    k "So it makes sense employee rewards were cut back..."
     show k
     k "I'm surprised I even recieved anything in the first place, haha."
     k "And now it's in your hands."
@@ -343,7 +343,7 @@ label krisrejection:
     show k
     k "Ah, yes. Thank you for your time, Doctor."
     show k flirt
-    k "And... I apologize. For earlier."
+    k "And... for earlier."
 
     mc "It's okay, Kris."
     n "You finish your checklist quickly and leave the conference room, and Kris, behind."

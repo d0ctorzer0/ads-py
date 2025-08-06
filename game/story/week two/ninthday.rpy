@@ -133,10 +133,10 @@ label p_krisday9neutral:
 label p_krisday9positive:
     show k
     k "Ah. Ahem. Thank you, Doctor."
-    k "It's most likely because I polished my chassis last night, but..."
+    k "It's most likely because I polished my chassis last night, but... umm..."
 
     show k flirt
-    k "Um. You should be going. I know you have plenty to do today."
+    k "You should be going. I know you have plenty to do today."
 
     if romance_points["Kris"] >= 13:
         k "I... hope I see you tomorrow."
@@ -152,7 +152,7 @@ label n_krisday9:
     mc "I'm glad things are going well. That's good to hear."
 
     show k flirt
-    k "Thank god, right? Now you don't have to check off a different box than usual."
+    k "Thank Aperture, right? Now you don't have to check off a different box than usual."
     show k angry
     k "Such an exhausting task."
 
