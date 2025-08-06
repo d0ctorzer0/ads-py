@@ -400,6 +400,12 @@ label END_heartless:
     hide screen main
     show screen cuttextbox
     scene esther death with fade
+    python:
+        if persistent.edeath == False:
+            persistent.cutscenes_seen += 1
+            persistent.edeath = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     hide screen creditsfadeout with fade
     e "{color=#fff}Doctor... you will... regret this."
     e "{color=#fff}I don't think your {sc}{color=#fff}lover{/sc} will be very happy about this... development."
@@ -435,6 +441,12 @@ label continuegame:
     hide screen main
     show screen cuttextbox
     scene esther lose with fade
+    python:
+        if persistent.elose == False:
+            persistent.cutscenes_seen += 1
+            persistent.elose = True
+        achievement.progress("ach_picture", persistent.cutscenes_seen)
+        achievement.sync()
     hide screen creditsfadeout with fade
     # show screen pref_open # enables pause menu
     e "{color=#fff}Doctor? I'm..."
