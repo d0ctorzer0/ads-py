@@ -398,7 +398,7 @@ label satend_rob:
     r "That man loved anything with \"science\" in it..."
     r "Another reason barely anyone comes in here. Everyone's too obsessed with science thanks to that brute."
 
-    mc "Well, not everyone. I'm more interested in engineering than whatever they do up in testing."
+    mc "Well, not everyone. I'm more interested in engineering than whatever they do up in Testing."
 
     show r
     r "Prolly why you and I get along so well."
