@@ -434,7 +434,7 @@ label gregday11:
     g "{color=#fff}Well, Doctor... we... have constantly been running into you, and... you treat me - uh, us so well."
     g "{color=#fff}No one's done that for us before."
     g "{color=#fff}I don't want you to think we're weird, or awkward, but..."
-    g "{color=#fff}Can you give me a chance? To be closer to you?"
+    g "{color=#fff}Can you give us a chance? To be closer to you?"
 
     menu:
         extend ""
@@ -467,8 +467,8 @@ label gregacceptance:
     mc "I'd like to know regardless."
 
     show g nocoat
-    g "I - the one with the yellow eye - I do most of the talking. And appearing, of course."
-    g "The one right below me - it does a lot of the thinking. Since we're really small physically, we don't have as much processing power..."
+    g "The one with the yellow eye - that's me. I do most of the talking. And appearing, of course."
+    g "That one right below me - it does a lot of the thinking. Since we're really small physically, we don't have as much processing power..."
     show g nocoataaa
     g "We gotta divide our jobs, y'know?"
 
@@ -478,7 +478,7 @@ label gregacceptance:
     g "It controls the movement - the cart we're on, and our handles, our eyes..."
 
     show g nocoatlook
-    g "But we can't be separated. From what I know. We'd be incomplete, we'd..."
+    g "But we can't be separated. From what I know, we'd be incomplete, we'd..."
     g "We wouldn't be fully functional."
 
     mc "That sounds hard, Gregory."

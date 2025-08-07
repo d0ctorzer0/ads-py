@@ -473,7 +473,7 @@ label gregday8:
 
 label impressgreg8:
     show g look
-    g "Aha, yes, it is, uh... thanks."
+    g "Aha, yes, it is, does, uh... thanks!"
     g "I didn't have many meetings to set up today, so I got to clock out early."
     show g
     g "But hey! I got to run into you because of it, so, uh..."
