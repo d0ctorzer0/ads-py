@@ -83,7 +83,7 @@ label satoffice:
             persistent.visited["office"] = True
         achievement.progress("ach_explore", persistent.places_visited)
         achievement.sync()
-    scene hall with fade
+    scene door3 no outoforder with fade
     $ audio_crossFade(1, "music/eleven.ogg") 
     n "You come up to the office door."
     n "You try to open it, but it's locked."
@@ -147,7 +147,7 @@ label biology:
             persistent.visited["biology"] = True
         achievement.progress("ach_explore", persistent.places_visited)
         achievement.sync() 
-    scene door3 with fade
+    scene door3 cool with fade
     n "You come up to the door to Biology."
     n "It's right across the hallway from the greenhouse."
     n "Though you're not allowed in, there's a window on the door you can look through."
@@ -225,8 +225,8 @@ label recovery:
             persistent.visited["recovery"] = True
         achievement.progress("ach_explore", persistent.places_visited)
         achievement.sync() 
-    scene door3 with fade
-    n "You come up to the door that reads \"STASIS RECOVERY BAY\" on a plaque next to it."
+    scene door3 warm with fade
+    n "You come up to the door that reads \"STASIS RECOVERY BAY\" on a small plaque next to it."
     n "Not wanting to disturb anything that might be happening inside, you peer through the window."
     n "There's two doctors standing next to a woman with black hair in a ponytail."
     n "They're talking to her. She isn't responding."

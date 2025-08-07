@@ -575,7 +575,7 @@ label nocc:
 label saveheath:
     if lock_heath == False:
         jump noheath
-    scene heathroom with fade
+    scene heathroom hell with fade
     show flash
     window auto
     n "You enter the break room."
@@ -626,7 +626,7 @@ label saveheath:
     n "{color=#fff}Heath takes a deep breath..."
     n "{color=#fff}...and jumps off her rail, into your coat."
     hide screen cuttextbox
-    scene heathroom with fade
+    scene heathroom hell with fade
     show flash
     $ cutscenetextbox = False
     show h look offrail with easeinbottom
@@ -658,7 +658,7 @@ label saveheath:
 
 label noheath:
     $ emv_heath = True
-    scene heathroom with fade
+    scene heathroom hell with fade
     show flash
     window auto
     n "You enter the break room."

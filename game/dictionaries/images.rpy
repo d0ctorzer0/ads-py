@@ -20,6 +20,7 @@ image closet = "[persistent.bgtype]closet.png"
 image hall hell = "[persistent.bgtype]hall hell.png"
 image krisroom hell = "[persistent.bgtype]krisroom hell.png"
 image ccroom hell = "[persistent.bgtype]ccroom hell.png"
+image heathroom hell = "[persistent.bgtype]heathroom hell.png"
 
 image door1 warm = "[persistent.bgtype]door1 warm.png"
 image door1 cool = "[persistent.bgtype]door1 cool.png"
@@ -27,6 +28,11 @@ image door1 dark = "[persistent.bgtype]door1 dark.png"
 
 image door2 = "[persistent.bgtype]door2.png"
 image door2 cool = "[persistent.bgtype]door2 cool.png"
+
+image door3 warm = "[persistent.bgtype]door3 warm.png"
+image door3 no outoforder = "[persistent.bgtype]door3 no outoforder.png"
+image door3 cool = "[persistent.bgtype]door3 cool.png"
+image door3 dark = "[persistent.bgtype]door3 dark.png"
 
 image neuro:
     "gui/boss/neuro/n_1.png"
