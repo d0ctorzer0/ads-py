@@ -301,7 +301,7 @@ label p_heathday9:
     show h
     h "You're always my best audience, Doctor."
     if romance_points["Heath"] >= 15:
-        h "Now, I know you have places to be - but hear me out for one second!"
+        h "I know you have places to be - but hear me out for one second!"
         h "You have your one-on-one shift tomorrow, yeah?"
         show h
         h "If you choose me, I have a very special show to put on for you!"

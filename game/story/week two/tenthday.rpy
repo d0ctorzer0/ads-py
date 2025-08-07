@@ -361,7 +361,7 @@ label heathday10:
 
     h "Welcome, ladies and gentlemen..."
     h "Or... well, I guess it's just you, Doctor..."
-    h "...to Heath, the Magic Core's, grandest show yet!"
+    h "...to {i}the Magic Core's{/i}, grandest show yet!"
 
     n "The curtains part slightly and Heath comes rolling out on her management rail."
 

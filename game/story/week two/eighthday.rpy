@@ -288,7 +288,7 @@ label p_heathday8neutral:
     h "Hahaha! I'm so glad, Doctor."
 
     show h
-    h "And Miss Esther? You seemed so worried!"
+    h "And Miss Esther? You seemed worried!"
 
     show e b annoy at bounce
     e "Yes. Worried I'd be stuck with even more paperwork tonight..."
