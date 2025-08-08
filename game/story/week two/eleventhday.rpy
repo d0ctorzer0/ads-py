@@ -665,7 +665,7 @@ label aspenday11:
 
     n "Eventually, you reach Aspen's door. You open it carefully."
 
-    scene aspentemproom with fade
+    scene aspenroom with fade
     $ audio_crossFade(2, "music/four.ogg")
     show a with easeinright
     a "Doctor! You're late today..."
@@ -1137,5 +1137,3 @@ label day11end:
     n "With no one to process it, you aren't sure what to do with it..."
 
     jump e11first
-
-    #webhook test2

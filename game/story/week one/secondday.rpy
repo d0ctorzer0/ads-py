@@ -437,7 +437,7 @@ label whatswrong:
 
 label aspenday2:
 
-    scene aspentemproom with fade
+    scene aspenroom with fade
     $ audio_crossFade(2, "music/four.ogg")
     n "Once again, you are taken aback by the sheer number of plants in the greenhouse."
 

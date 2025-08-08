@@ -643,7 +643,7 @@ label unknownday1cont:
     
 label aspenday1:
 
-    show aspentemproom
+    show aspenroom
     with fade
     $ audio_crossFade(2, "music/four.ogg")
 

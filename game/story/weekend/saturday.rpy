@@ -770,7 +770,7 @@ label sataspen:
     python:
         v_aspen = True
         cores_visited += 1
-    scene aspentemproom with fade
+    scene aspenroom with fade
     n "You enter into the greenhouse with caution, making sure no other employees are here to yell at you."
     n "The lights are back to normal, thankfully, and most of the plants look fine."
 

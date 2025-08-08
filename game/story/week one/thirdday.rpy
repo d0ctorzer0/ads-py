@@ -443,7 +443,7 @@ label aspenday3:
 
     e "Good. Off you go!"
 
-    scene aspentemproom
+    scene aspenroom
     with fade
     $ audio_crossFade(2, "music/four.ogg")
 
@@ -541,7 +541,7 @@ label aspenday3good:
 
         n "{color=#fff}You suddenly realize how close you are to Aspen. They realize, too."
 
-        scene aspentemproom with fade
+        scene aspenroom with fade
         show a look with easeinright
         hide screen cuttextbox
         $ cutscenetextbox = False

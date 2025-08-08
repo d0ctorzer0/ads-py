@@ -1378,7 +1378,7 @@ gui\slider\vertical_idle_thumb.png
 images\.DS_Store
 images\apt balcony.png
 images\apt one.png
-images\aspentemproom.png
+images\aspenroom.png
 images\bendy.png
 images\bioroom.png
 images\bond entrance.png

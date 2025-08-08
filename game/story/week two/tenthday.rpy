@@ -541,7 +541,7 @@ label aspenday10:
 
     e "Have a good shift!"
 
-    scene aspentemproom with fade
+    scene aspenroom with fade
     $ audio_crossFade(2, "music/four.ogg")
     n "You enter the greenhouse and are immediately greeted by Aspen."
     show a look with easeinright
@@ -602,7 +602,7 @@ label aspenday10:
 label aspenacceptance:
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene aspentemproom with fade
+    scene aspenroom with fade
     $ cutscenetextbox = False
     show a look with easeinright
     mc "This cactus is beautiful, Aspen. Thank you."
@@ -689,9 +689,9 @@ label aspenacceptance:
 label aspenrejection:
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene aspentemproom with fade
+    scene aspenroom with fade
     $ cutscenetextbox = False
-    scene aspentemproom with fade
+    scene aspenroom with fade
     show a look with easeinright
     a "O-Oh. I'm sorry for assuming, Doctor, I..."
     a "That's on me."

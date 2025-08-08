@@ -379,7 +379,7 @@ label aspenday5:
 
     e "We're here now. Go on in."
 
-    scene aspentemproom with fade
+    scene aspenroom with fade
     $ audio_crossFade(2, "music/four.ogg")
 
     show a look with easeinright

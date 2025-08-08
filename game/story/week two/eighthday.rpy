@@ -524,7 +524,7 @@ label aspenday8:
     show e
     e "Go on now, Doctor. I'll be waiting for you."
 
-    scene aspentemproom with fade
+    scene aspenroom with fade
     $ audio_crossFade(2, "music/four.ogg")
     n "You enter the greenhouse once more. Nothing seems out of the ordinary."
     n "Aspen is turned away from you, watering in the back left corner."
@@ -545,12 +545,12 @@ label p_aspenday8:
 
     show a look
     a "Check it out - chrysanthemums!"
-    a "{i}Chrysanthemum × morifolium.{/i} Or, y'know, just... chrysanthemums. Florist's daisy."
+    a "{i}Chrysanthemum × morifolium.{/i} Or, y'know, just... florist's daisy."
 
     mc "Oh my."
 
     show a
-    a "They're testing micropropogation on them right now... thankfully, a pretty harmless procedure."
+    a "They're testing micropropogation. Thankfully, a pretty harmless procedure."
     a "So they're doing really good at the moment."
 
     show a look
@@ -588,8 +588,8 @@ label p_aspenday8positive:
     a "Yep! All of that!"
 
     show a look
-    a "So you should, uh... get going. I think I need to..."
-    a "...go dunk myself in the aqueduct."
+    a "So you should, uh... get going. I think I need to go..."
+    a "...dunk myself in the aqueduct."
 
     hide a with easeoutright
     n "You laugh and leave the greenhouse behind."

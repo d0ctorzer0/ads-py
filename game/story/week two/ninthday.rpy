@@ -438,7 +438,7 @@ label aspenday9:
 
     n "You enter the greenhouse."
 
-    scene aspentemproom with fade
+    scene aspenroom with fade
     $ audio_crossFade(2, "music/four.ogg")
 
     n "Everything seems to be normal from the outside."
@@ -463,7 +463,7 @@ label p_aspenday9:
     a "Great! Everything's going smooth. The chrysanthemums I showed you yesterday are blooming even bigger than before."
     show a look
     a "You know, chrysanthemums are used in tea sometimes, and it's generally believed it has several health benefits..."
-    a "In addition, they can reduce air pollution in some cases! In small amounts, of course, but..."
+    a "In addition, they can reduce air pollution in some cases!"
     show a laugh
     a "Oh shoot, I'm rambling again, aren't I?"
     show a
@@ -486,9 +486,9 @@ label p_aspenday9positive:
         a "Aha... that's twice in a row now, you've said... something..."
         a "...like that."
     elif priority["Aspen"] < 2:
-        a "Doctor, I..."
-        a "Well, um, uh..."
-        a "...thank you."
+        a "Doctor, uh..."
+        a "Well, uh..."
+        a "...uh, thank you."
     
     if romance_points["Aspen"] >= 15:
         show a

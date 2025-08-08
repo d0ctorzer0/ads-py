@@ -134,7 +134,7 @@ label saveaspen:
 
     hide screen cuttextbox
     window auto
-    scene aspentemproom with fade
+    scene aspenroom with fade
     show flash
     $ cutscenetextbox = False
     show a look offrail with easeinbottom

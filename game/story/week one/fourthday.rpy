@@ -349,7 +349,7 @@ label aspenday4:
     e "I'll wait out here as usual."
     e "Go ahead."
 
-    scene aspentemproom with fade
+    scene aspenroom with fade
     $ audio_crossFade(2, "music/four.ogg")
     show a laugh with easeinright
 
