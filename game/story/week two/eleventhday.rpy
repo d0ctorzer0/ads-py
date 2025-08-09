@@ -668,12 +668,7 @@ label aspenday11:
     scene aspenroom with fade
     $ audio_crossFade(2, "music/four.ogg")
     show a with easeinright
-    a "Doctor! You're late today..."
-
-    mc "Yeah. Miss Esther didn't show up, so I didn't really know what I was supposed to do."
-
-    show a look
-    a "Strange..."
+    mc "Hey, Aspen."
 
     if positive["Aspen"]:
         if lock_aspen == True:
@@ -700,7 +695,7 @@ label romanceaspenday11:
     mc "Huh."
 
     show a laugh
-    a "They usually sound even more beautiful when you're here."
+    a "They usually even sound more beautiful when you're here."
     a "They tend to like the same things I do! Haha... uh..."
     show a look
     a "But yeah. Nothing."
