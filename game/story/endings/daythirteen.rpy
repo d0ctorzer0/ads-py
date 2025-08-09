@@ -134,7 +134,7 @@ label saveaspen:
 
     hide screen cuttextbox
     window auto
-    scene aspenroom with fade
+    scene aspenroom night with fade
     show flash
     $ cutscenetextbox = False
     show a look offrail with easeinbottom
@@ -332,10 +332,10 @@ label saverob:
     
     if lock_rob == False:
         jump norob
-    scene robroom with fade
+    scene robroom hell with fade
     show flash
     window show
-    n "You push the door open into the gym. There's a fire near one of the machines in the back."
+    n "You push the door open into the gym. There's fire everywhere."
     n "All the TVs are flashing a warning signal - except for one."
 
     mc "Oh my god - Rob!!"
@@ -401,10 +401,10 @@ label saverob:
 
 label norob:
     $ emv_rob = True
-    scene robroom with fade
+    scene robroom hell with fade
     show flash
     window auto
-    n "You push the door open into the gym. There's a fire near one of the machines in the back."
+    n "You push the door open into the gym. There's fire everywhere. One of the ellipticals is flipped over somehow."
     n "All the TVs are flashing a warning signal."
     n "Rob is nowhere to be found."
 

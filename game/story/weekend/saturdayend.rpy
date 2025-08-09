@@ -268,7 +268,7 @@ label satend_heath:
 
 label satend_aspen:
     play music four
-    scene aspenroom with fade
+    scene aspenroom night with fade
     n "You enter into the greenhouse, which much darker inside than usual."
     n "It's almost dead-silent - no hissing of sprinklers or whirring of Aspen's management rail."
     n "It's a little terrifying."
@@ -314,7 +314,7 @@ label satend_aspen:
     acg "{color=#fff}I'm glad you're here."
 
     mccut "{color=#fff}Aspen, this... is beautiful."
-    scene aspenroom with fade
+    scene aspenroom night with fade
     show a look with easeinright
     hide screen cuttextbox
     $ cutscenetextbox = False
