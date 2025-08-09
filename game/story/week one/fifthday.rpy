@@ -2,7 +2,7 @@ label day5:
     play music fourteen
     scene mcroom night
     with fade
-
+ 
     n "You make it to your room, change into your bedclothes, and prepare to sleep."
     n "Tomorrow's the last day of the week, and Maintenance doesn't work on the weekends, other than being on-call."
     n "You're excited for your first day off, though a little curious what you'll do if you can't leave the campus."

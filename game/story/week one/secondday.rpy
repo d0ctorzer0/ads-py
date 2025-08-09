@@ -664,7 +664,7 @@ label robday2:
     r "He's kind of crazy, not gonna lie."
 
     show e b at bounce
-    e "Working in neurology will do that do a person."
+    e "Working in Neurology will do that to a person."
     hide e b
 
     r "I am having some trouble with my equipment, though. Rowing machine's busted."
