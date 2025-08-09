@@ -1,7 +1,6 @@
 Identifier	Character	Dialogue	Filename	Line Number	Ren'Py Script
 6c0c3176		Kinetic Text Tags Ren'Py Module 2021 Daniel Westfall <SoDaRa2595@gmail.com>	game/kinetic_text_tags.rpy	1	"[what]"
 8689f4cd		http://twitter.com/sodara9 I'd appreciate being given credit if you do end up using it! :D Would really make my day to know I helped some people out! Really hope this can help the community create some really neat ways to spice up their dialogue! http://opensource.org/licenses/mit-license.php Github: https://github.com/SoDaRa/Kinetic-Text-Tags itch.io: https://wattson.itch.io/kinetic-text-tags Forum Post: https://lemmasoft.renai.us/forums/viewtopic.php?f=51&t=60527&sid=75b4eb1aa5212a33cbfe9b0354e5376b	game/kinetic_text_tags.rpy	1	"[what]"
-<<<<<<< HEAD
 day7_214d5d3c	n	You enter back into your room and lay down in your bed.	game/story/weekend/sunday.rpy	4	n "[what]"
 day7_a8d8a61b	n	You set the wakeup time for 11:00, and lay down.	game/story/weekend/sunday.rpy	5	n "[what]"
 day6stayend_6031efbf	n	You decide to stay in.	game/story/weekend/sunday.rpy	11	n "[what]"
@@ -153,7 +152,6 @@ day7alone_15002951	n	You shake it off and think about going back to bed...	game/
 day7alone_1ff24074	n	...but for some reason, it just looks so... uncomfortable.	game/story/weekend/sunday.rpy	338	n "[what]"
 day7alone_e36a7a7a	n	Instead, you decide to try to focus your mind on other things.	game/story/weekend/sunday.rpy	340	n "[what]"
 day7alone_883b6382	n	You read, sift through your paperwork... not a lot to do when you're holed up in your room like this.	game/story/weekend/sunday.rpy	341	n "[what]"
-=======
 END_aspentrue_d3f35b76	n	The car is quiet - just the way the two of you like it.	game/story/endings/aspentrue.rpy	14	n "[what]"
 END_aspentrue_4f98bb5d	n	The radio's off.	game/story/endings/aspentrue.rpy	15	n "[what]"
 END_aspentrue_4683c6ff	n	The only sounds are the gentle whirring of the car engine and the wind passing by the windows.	game/story/endings/aspentrue.rpy	16	n "[what]"
@@ -2361,7 +2359,7 @@ END_unknowntrue_a8f08b2a	ry	I-I love you.	game/story/endings/unknowntrue.rpy	253
 END_unknowntrue_11fdb519_2	extend		game/story/endings/unknowntrue.rpy	255	extend "[what]" nointeract
 END_unknowntrue_5e8b7212	ry	Finally said it, huh?	game/story/endings/unknowntrue.rpy	257	ry "[what]"
 END_unknowntrue_2daf2530	ry	Took ya long enough!	game/story/endings/unknowntrue.rpy	258	ry "[what]"
-END_unknowntrue_82a9a7d5	mc	Haha, yeah, yeah.	game/story/endings/unknowntrue.rpy	259	mc "[what]"
+END_unknowntrue_82a9a7d5	mc	Haha, yemkmkkah, yeah.	game/story/endings/unknowntrue.rpy	259	mc "[what]"
 END_unknowntrue_b6e4c5e7	ry	I don't think I'd mind that at all.	game/story/endings/unknowntrue.rpy	261	ry "[what]"
 END_unknowntrue_35963d79	n	The two of you watch as the sun sets in the distance.	game/story/endings/unknowntrue.rpy	262	n "[what]"
 END_unknowntrue_553f172e	n	Ryland still has a long way to go, but...	game/story/endings/unknowntrue.rpy	263	n "[what]"
@@ -5855,7 +5853,6 @@ satunknownneg_82473562	u	Yes but 'nuthin. Scram. I don't wanna see your face any
 satunknownneg_0bd6e24b	mc	Uh -	game/story/weekend/saturday.rpy	1161	mc "[what]"
 satunknownneg_7b95de35	n	He slides the door back down in your face.	game/story/weekend/saturday.rpy	1164	n "[what]"
 satunknownneg_68dd9542	mc	Guess that was a waste of time.	game/story/weekend/saturday.rpy	1166	mc "[what]"
->>>>>>> 68603d39bca9c825af4c438f4df392c59d8f787c
 satend_4e311563	n	It's getting late. What's your plans for tonight?	game/story/weekend/saturdayend.rpy	3	n "[what]"
 satend_mc_a18d46ad	n	You decide to just head in for the night.	game/story/weekend/saturdayend.rpy	27	n "[what]"
 satend_mc_ed43398c	n	It was fun to explore the facility, though.	game/story/weekend/saturdayend.rpy	28	n "[what]"
