@@ -5,8 +5,8 @@ renpy.alpha renpy.texture
 renpy.texture renpy.texture
 renpy.geometry renpy.texture
 renpy.texture
-renpy.blur renpy.geometry
 renpy.alpha renpy.geometry renpy.texture
+renpy.blur renpy.geometry
 renpy.geometry renpy.solid
 renpy.solid
 renpy.alpha renpy.solid

@@ -774,8 +774,6 @@ label p_aspenday11:
 
     mc "I'll see you tomorrow, Aspen."
 
-    a "Same to you."
-
     n "You finish your checklist on Aspen and leave the room."
 
     jump ccday11
