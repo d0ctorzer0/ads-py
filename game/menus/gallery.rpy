@@ -73,7 +73,7 @@ screen galleryh():
             imagebutton idle "characters/heath/heath cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
         if persistent.hc5 == True:
             imagebutton idle "characters/heath/heath cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 300 ypos 744
-        if persistent.hc5 == True:
+        if persistent.hc6 == True:
             imagebutton idle "characters/heath/heath cutscene 6.png" action Show("fullcutscene6", transition=gallswitch) at gallery_size xpos 750 ypos 744
     vbox:
         style_prefix "tabs"
@@ -138,7 +138,9 @@ screen galleryc():
             imagebutton idle "characters/cc/cc cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
         if persistent.cc5 == True:
             imagebutton idle "characters/cc/cc cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 300 ypos 744
-        
+        if persistent.cc6 == True:
+            imagebutton idle "characters/cc/cc cutscene 6.png" action Show("fullcutscene6", transition=gallswitch) at gallery_size xpos 750 ypos 744
+    
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryc"), Show("galleryk"), SetVariable("selected_char", "kris")
@@ -168,6 +170,8 @@ screen galleryr():
             imagebutton idle "characters/rob/rob cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
         if persistent.rc4 == True:
             imagebutton idle "characters/rob/rob cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
+        if persistent.rc5 == True:
+            imagebutton idle "characters/rob/rob cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 750 ypos 744
 
     vbox:
         style_prefix "tabs"
@@ -196,7 +200,7 @@ screen galleryg():
             imagebutton idle "characters/gregory/gregory cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
         if persistent.gc3 == True:
             imagebutton idle "characters/gregory/gregory cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
-
+        
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryg"), Show("galleryk"), SetVariable("selected_char", "kris")
