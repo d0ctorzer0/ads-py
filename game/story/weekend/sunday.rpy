@@ -306,8 +306,7 @@ label day7alone:
     e "Please listen carefully."
 
     mc "Uh... yes. I'm listening."
-
-    e "I came here to tell you..."
+    
     e "Do not get too close to the cores in your section."
     e "It is against your contract to form strong relationships with them."
     e "Of course, friendly banter, speaking outside of working hours... that is fine."
