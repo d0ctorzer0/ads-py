@@ -223,7 +223,7 @@ label impressunknown9:
 
     if romance_points["???"] >= 13:
         show u look
-        u "Ah, yeah, sorry, should prolly get out of your way, but..."
+        u "Ah, yeah, sorry, should prolly get out of your way now, but..."
         show u
         u "Hey Doc, if you see me later, I got something important to tell ya, alright?"
         show u look
@@ -237,7 +237,7 @@ label impressunknown9:
 
     elif romance_points["???"] <= 12:
         show u look
-        u "Ah, yeah, sorry, should prolly get out of your way."
+        u "Ah, yeah, sorry, should prolly get out of your way now."
         show u
         u "I'll catch ya later, Doc."
         hide u with easeoutright

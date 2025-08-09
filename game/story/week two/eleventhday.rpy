@@ -556,7 +556,7 @@ label unknownday11:
     mc "You... sound better, too."
 
     show u c look
-    u "Well, it ain't easy... I still got a lot of pain in my chassis, and... y'know..."
+    u "Well, it ain't easy... I still got a lot of pain in my chassis, y'know..."
     u "I'm tryin' to be better."
     u "'Cuz, well, Doc..."
 
