@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 renpy.alpha renpy.solid
 renpy.ftl
 renpy.solid
@@ -12,3 +13,19 @@ renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
 renpy.alpha renpy.geometry renpy.solid
 renpy.texture renpy.texture
 renpy.alpha renpy.geometry renpy.texture
+=======
+renpy.alpha renpy.geometry renpy.texture
+renpy.alpha renpy.solid
+renpy.solid
+renpy.texture renpy.texture
+renpy.texture
+renpy.ftl
+renpy.alpha renpy.texture
+renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
+renpy.dissolve renpy.dissolve
+renpy.geometry renpy.solid
+renpy.geometry renpy.texture
+renpy.alpha renpy.geometry renpy.solid
+renpy.dissolve renpy.geometry
+renpy.blur renpy.geometry
+>>>>>>> 68603d39bca9c825af4c438f4df392c59d8f787c
