@@ -6,7 +6,7 @@ label day12:
     scene mcroom night with fade
     mc "Nothing from Miss Esther..."
     mc "Oh well. I guess I'll see her tomorrow."
-    mc "Maybe..."
+    mc "Maybe..." 
 
     n "You throw down your paperwork, exhausted, and fall into your bed."
 

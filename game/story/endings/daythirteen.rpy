@@ -480,7 +480,7 @@ label saveccunknown:
         mccut "{color=#fff}Neither of you have hands. I'm your only hope."
 
         u "{color=#fff}But..."
-        u "{color=#fff}Ugh. You're right, as usual. C'mere. But be careful - if ya got hurt, I wouldn't forgive myself."
+        u "{color=#fff}Ugh. You're right, as usual. C'mere. Be careful - if ya got hurt, I wouldn't forgive myself."
     
     n "{color=#fff}You approach the two of them carefully."
     n "{color=#fff}With gentle manuvering, you successfully detach CC from both his tubes and his management rails."
@@ -538,7 +538,7 @@ label saveccunknown:
         u "Good catch."
 
     mc "Anyone got any escape plans? The elevators are probably a no-go."
-    u "It... won't be easy, with CC's chair and all, but... I do know one way."
+    u "It... won't be easy, with CC's chair and all... but I do know one way."
     u "Behind the break room, there's a set of stairs... I see people come down that way sometimes, but not often."
     u "It's not a very well-known exit. Prolly our best bet."
 
