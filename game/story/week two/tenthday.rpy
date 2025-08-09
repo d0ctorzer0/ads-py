@@ -560,12 +560,13 @@ label aspenday10:
     show a
     n "They sigh."
     show a laugh
-    a "I've got to get this over with someday, haha... and I'm running out of time to."
+    a "I've gotta get over this someday..."
+    a "And I'm running out of time to."
 
     mc "What are you talking about?"
 
     show a look
-    a "Umm..."
+    a "Uhh..."
 
     $ gotconfession = True
     $ cutscenechoice = True
@@ -578,22 +579,22 @@ label aspenday10:
             persistent.ac3 = True
         achievement.progress("ach_picture", persistent.cutscenes_seen)
         achievement.sync()
-    a "{color=#fff}This cactus... it's for you."
-    a "{color=#fff}I know you're probably tired of my botany facts, but..."
-    a "{color=#fff}This is a Scarlet Ball Cactus - {i}parodia haselbergii{/i}."
-    a "{color=#fff}S-She's easy to care for, as most cacti are..."
-    a "{color=#fff}...but she reminds me of... you and I."
-    a "{color=#fff}I'm the prickly, hard-to-reach, defensive thorns, but..."
-    a "{color=#fff}You're these beautiful flowers o-on top, bringing light to my darkness."
-    a "{color=#fff}I'm really sorry if this is me being too... forward, but, Doctor..."
-    a "{color=#fff}I-I really like you. A lot. You've brought more to my life than anyone has... than any{i}thing{/i} has, and I -"
-    a "{color=#fff}I hope you accept this token of affection from me, and I..."
-    a "{color=#fff}When you leave, I truly hope you don't forget me."
+    acg "{color=#fff}This cactus is for you."
+    acg "{color=#fff}...You're probably tired of my botany facts, but..."
+    acg "{color=#fff}This is a Scarlet Ball Cactus - {i}parodia haselbergii{/i}."
+    acg "{color=#fff}S-She's easy to care for, as most cacti are..."
+    acg "{color=#fff}...but she reminds me of... you and I."
+    acg "{color=#fff}I'm the prickly, hard-to-reach, defensive thorns, but..."
+    acg "{color=#fff}You're these beautiful flowers o-on top, bringing light to my darkness."
+    acg "{color=#fff}I'm really sorry if this is me being too... forward, but, Doctor..."
+    acg "{color=#fff}I-I really like you. A lot. You've brought more to my life than anyone has... than any{i}thing{/i} has, and I -"
+    acg "{color=#fff}I hope you accept this token of affection from me, and I..."
+    acg "{color=#fff}When you leave, I truly hope you don't forget me."
     menu:
         extend ""
         "I'd never forget you, Aspen.":
             $ lock_aspen = True
-            a "{color=#fff}You... oh, Doctor, I..."
+            a "{color=#fff}Oh, Doctor, I..."
             a "{color=#fff}Goodness. You're something, alright."
             jump aspenacceptance
         "I can't accept this. I'm sorry.":
@@ -611,13 +612,13 @@ label aspenacceptance:
     show a
     a "What are you going to name her?"
     menu:
-        extend ""
+        extend "" 
         "Gertrude.":
-            $ cactusname = "Gertrude"
+            pass
         "Beatrice.":
-            $ cactusname = "Beatrice"
+            pass
         "Emily.":
-            $ cactusname = "Emily"
+            pass
     
     a "That's a great name!"
     show a look

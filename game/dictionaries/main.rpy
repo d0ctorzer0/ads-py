@@ -56,7 +56,6 @@ default askforg = False
 default giveccpicture = False
 default cctv = False
 default knowabtwaterfall = False
-default cactusname = ""
 default battle = False
 default aspenknowabtbertha = False
 

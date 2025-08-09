@@ -486,7 +486,7 @@ label p_aspenday9positive:
         a "Aha... that's twice in a row now, you've said... something..."
         a "...like that."
     elif priority["Aspen"] < 2:
-        a "Doctor, uh..."
+        a "Doctor, I..."
         a "Well, uh..."
         a "...uh, thank you."
     
@@ -562,8 +562,6 @@ label n_aspenday9:
     a "You've got nothing to worry about, Doctor! Haha. So you can go."
 
     mc "Uh... alright."
-
-    a "Have a good day!"
 
     n "You hesitantly check Aspen off your list and leave the greenhouse."
 
