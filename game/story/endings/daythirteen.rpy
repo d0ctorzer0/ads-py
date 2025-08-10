@@ -635,7 +635,7 @@ label saveheath:
 
     mc "You're plenty magic without your supplies, Heath."
 
-    h "You certainly make me feel that way, regardless..."
+    h "You certainly make me feel that way, haha..."
 
     mc "Let's get out of here."
     mc "I'm not sure they'll let me out with you in the surface elevators..."
