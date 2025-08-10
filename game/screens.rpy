@@ -1555,19 +1555,26 @@ style emlback_button_text:
     hover_color "#fff"
     size 30
 
+style daydisplay_text:
+    font "terminal-grotesque.ttf"
+    color "#c2c1cf"
+    size 49
+    xpos 1555
+    ypos 205
+
 style emlback_button:
     xpos 1325
-    ypos 940
+    ypos 100
 
 style nextday_button:
-    xpos 1680
-    ypos 130
+    xpos 1600
+    ypos 125
 
 style nextday_button_text:
     font "terminal-grotesque.ttf"
     color "#6d6c80"
     hover_color "#fff"
-    size 40
+    size 48
 
 ## DAY TRANSITION
 

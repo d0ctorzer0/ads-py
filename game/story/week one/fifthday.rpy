@@ -11,7 +11,7 @@ label day5:
     scene black
     with fade
     $ daynum = "5"
-    $ dayday = "Friday!"
+    $ dayday = "Friday"
 
     if renpy.is_skipping() == False:
         show screen daytransition

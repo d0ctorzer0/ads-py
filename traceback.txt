@@ -1,97 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/story/weekend/sunday.rpy", line 30, in script
-    n "You wake up to a knocking on your door."
-  File "game/menus/loadsave.rpy", line 24, in execute
-    screen file_slots():
-  File "game/menus/loadsave.rpy", line 24, in execute
-    screen file_slots():
-  File "game/menus/loadsave.rpy", line 33, in execute
-    vbox spacing -30:
-  File "game/menus/loadsave.rpy", line 39, in execute
-    for i in range(2):
-  File "game/menus/loadsave.rpy", line 42, in execute
-    button:
-  File "game/menus/loadsave.rpy", line 49, in execute
-    add ccroom(slot) xalign 0.5
-  File "game/menus/loadsave.rpy", line 49, in <module>
-    add ccroom(slot) xalign 0.5
-NameError: name 'ccroom' is not defined
+After initialization, but before game start.
+  File "game/story/week one/firstdayemail.rpy", line 1, in prepare_screen
+    screen emailday1():
+  File "game/story/week one/firstdayemail.rpy", line 1, in prepare
+    screen emailday1():
+Exception: A screen named emaildaydisplay does not exist.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/weekend/sunday.rpy", line 30, in script
-    n "You wake up to a knocking on your door."
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
-    Say.execute(self)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1470, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1117, in do_display
-    display_say(who,
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 814, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2882, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 1384, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\movetransition.py", line 383, in render
-    old_r = renpy.display.render.render(self.old, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\transform.py", line 1056, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 994, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 427, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 2184, in render
-    cr = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 752, in render
-    self.update()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 700, in update
-    self.screen.function(**self.scope)
-  File "game/menus/loadsave.rpy", line 24, in execute
-    screen file_slots():
-  File "game/menus/loadsave.rpy", line 24, in execute
-    screen file_slots():
-  File "game/menus/loadsave.rpy", line 33, in execute
-    vbox spacing -30:
-  File "game/menus/loadsave.rpy", line 39, in execute
-    for i in range(2):
-  File "game/menus/loadsave.rpy", line 42, in execute
-    button:
-  File "game/menus/loadsave.rpy", line 49, in execute
-    add ccroom(slot) xalign 0.5
-  File "game/menus/loadsave.rpy", line 49, in <module>
-    add ccroom(slot) xalign 0.5
-NameError: name 'ccroom' is not defined
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 652, in main
+    run(restart)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 1027, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/story/week one/firstdayemail.rpy", line 1, in prepare_screen
+    screen emailday1():
+  File "game/story/week one/firstdayemail.rpy", line 1, in prepare
+    screen emailday1():
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\sl2\slast.py", line 2030, in prepare
+    raise Exception("A screen named {} does not exist.".format(self.target))
+Exception: A screen named emaildaydisplay does not exist.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
-Aperture Dating Simulator 1.2.0.alpha
-Mon Aug  4 10:30:31 2025
+Aperture Dating Simulator 1.0.5.beta
+Sun Aug 10 00:51:40 2025

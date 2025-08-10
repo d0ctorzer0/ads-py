@@ -25,7 +25,7 @@ screen emailday9():
     # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         textbutton "    from: {color=#db35a9}Miss Esther{/color}\n        One-on-One Observation                                                             " action Jump("emailone_9")
-        textbutton "    from: Len\n        Miss ya down here!!                                                                      " action Jump("emailtwo_9")
+        textbutton "    from: Olive Merritt\n        Miss ya down here!!                                                                      " action Jump("emailtwo_9")
     vbox:
         style_prefix "nextday"
         textbutton "NEXT DAY >>" action Jump("day10")
@@ -52,10 +52,10 @@ screen email2_9():
         text "Miss ya down here!!"
     vbox:
         style_prefix "emlfrom"
-        text "from: Len"
+        text "from: Olive Merritt"
     vbox:
         style_prefix "eml"
-        text "Hey! Hope you're doing alright up there in Maintenance, lol. David won't\nshut up about how much harder his job is now that you're doing\nsomething else for once.\n\nI know you only got a couple more days left up there, so don't give up\nyet! Things are almost back to normal! We miss you down here. Hope you\nhaven't forgotten us yet, LMAO\n\nStay cool. Chill. Whatever adjective you like. Just don't die.\n\nSee ya,\nLen"
+        text "Hey! Hope you're doing alright up there in Maintenance! David won't\nshut up about how much harder his job is now that you're doing\nsomething else for once.\n\nI know you only got a couple more days left up there, so don't give up\nyet! Things are almost back to normal! We miss you down here. Hope you\nhaven't forgotten us yet, haha!\n\nStay cool. Chill. Whatever adjective you like. Just don't die. \nThat's an order!\n\nSee ya,\nOlive"
     use affectionprogress
     vbox:
         style_prefix "emlback"

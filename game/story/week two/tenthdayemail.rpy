@@ -6,6 +6,7 @@ screen emailday10():
         style_prefix "nextday"
         textbutton "NEXT DAY >>" action Jump("day11")
     use affectionprogress
+    
 
 label e10first:
     stop music

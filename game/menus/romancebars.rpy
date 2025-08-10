@@ -7,6 +7,9 @@ style cbbar_text:
     outlines [ (4, "#000", absolute(0), absolute(0)) ]
 
 screen affectionprogress():
+    style_prefix "daydisplay"
+    text "[dayday!u]\n{color=#585766}[name]"
+
     bar:
         value romance_points["Kris"]
         range 30

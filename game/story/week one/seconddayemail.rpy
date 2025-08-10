@@ -51,7 +51,7 @@ screen email6():
         text "from: HR"
     vbox:
         style_prefix "eml"
-        text "REFERRAL BONUSES ARE NOW AVAILABLE!\n\nDue to the recent decrease of healthy employees here at Aperture, we\nhave decided to enact our very own employee referral program.\n\nHere at Aperture, we are always looking for top scientists and\nresearchers to join our team. Any employee may submit a referral form\nto HR, excluding:\n\n> Any and all HR employees\n> Any and all employees engaged in the hiring process\n> Upper-level management\n\nThis is to ensure our referral process remains unbiased and scientific."
+        text "REFERRAL BONUSES ARE NOW AVAILABLE!\n\nDue to the recent decrease of healthy employees here at Aperture, we\nhave decided to enact our very own employee referral program.\n\nHere at Aperture, we are always looking for top scientists and\nresearchers to join our team. Any employee may submit a referral form\nto HR, excluding:\n\n> Any and all HR employees\n> Any and all employees engaged in the hiring process\n> Upper-level management\n"
     use affectionprogress
     vbox:
         style_prefix "emlback"
@@ -66,7 +66,7 @@ screen email6pt2():
         text "from: HR"
     vbox:
         style_prefix "eml"
-        text "Employees whose referral is selected will be eligible to recieve up\nto $200. We will NOT, under ANY CIRCUMSTANCES, accept any former\nBlack Mesa employees.\n\nPlease send an email to PEB regarding any questions or referral\nsubmissions.\n\nThank you,\nHR"
+        text "This is to ensure our referral process remains unbiased and scientific.\n\nEmployees whose referral is selected will be eligible to recieve up\nto $200. We will NOT, under ANY CIRCUMSTANCES, accept any former\nBlack Mesa employees.\n\nPlease send an email to PEB regarding any questions or referral\nsubmissions.\n\nThank you,\nHR"
 # hi if ur reading my code heres a bit of lore... PEB here is supposed to be the party escort bot, the core that dragged chell back in the portal\portal 2 universe
     use affectionprogress
     vbox:
