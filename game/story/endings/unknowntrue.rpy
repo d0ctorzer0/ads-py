@@ -39,9 +39,9 @@ label END_unknowntrue:
     mc "Well? What was your job?"
     mc "If you don't mind telling, of course."
     show ry flirt
-    ry "I was a... a maintenance technician, funny 'nough."
+    ry "I was... a maintenance technician, funny 'nough."
     ry "Lower system stuff, though. Pipes and water systems..."
-    ry "Makin' sure there wasn't any cracks, y'know?"
+    ry "Makin' sure there weren't any cracks, y'know?"
     mc "Sounds rough."
     show ry sus
     ry "Y-Yeah, I think that mighta had somethin' to do with... how I got to... {i}that{/i} point."
@@ -205,7 +205,7 @@ label END_unknowntrue:
     show ry sus
     ry "I thought I'd be sent there for sure eventually."
     mc "Why?"
-    ry "Well, I... hah..."
+    ry "Well, hah..."
     show ry look
     ry "I was breakin' into rooms, stealin' products from the company..."
     ry "I wasn't workin' at all. I mean..."

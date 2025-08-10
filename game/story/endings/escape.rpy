@@ -822,7 +822,7 @@ label leave_cc:
     scene white with blindplayer
 
     ry "{color=#fff}It's so bright out here..."
-    ry "{color=#fff}I can barely see a th- oh my..."
+    ry "{color=#fff}I can barely see a- oh my..."
 
     scene unknown cutscene 4 with dissolve
     python:
@@ -835,12 +835,12 @@ label leave_cc:
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     ry "{color=#fff}What the..."
     ry "{color=#fff}This is insane. I've been hiding away in a closet my whole life?!"
-    ry "{color=#fff}This... this was above me? All this time?!"
+    ry "{color=#fff}This was above me? All this time?!"
     ry "{color=#fff}Haha! Wow!"
 
     n "{color=#fff}...for all he knows, Ryland has never seen the surface."
 
-    ry "{color=#fff}This fresh air through my circuits, it's like... it's better than any drink I've had."
+    ry "{color=#fff}This fresh air through my circuits, it's like... better than any drink I've had."
     ry "{color=#fff}If only... CC could've seen this."
     ry "{color=#fff}But..."
 
@@ -848,8 +848,8 @@ label leave_cc:
 
     ry "{color=#fff}I'm glad you're here."
     ry "{color=#fff}You... hah, Doc, you risked your life for us both."
-    ry "{color=#fff}Not just me, but CC, too. And..."
-    ry "{color=#fff}I can't thank you enough."
+    ry "{color=#fff}Not just for me, but CC, too."
+    ry "{color=#fff}And I... can't thank you enough."
     ry "{color=#fff}You're really somethin' else."
     ry "{color=#fff}And I might love that."
     ry "{color=#fff}I know I ain't been the best to you. I know I've been a flirt, and I've been annoying..."
@@ -876,7 +876,7 @@ label leave_cc:
 
     mc "Hell yeah."
 
-    ry "Honestly, me too. I may be tryna quit, but I sometimes wish I wasn't, hah."
+    ry "Honestly, me too. I may be tryna quit, but sometimes I wish I wasn't."
 
     mc "I don't think I ever told you how much that means to me."
     mc "That you would try to... get yourself clean for me."
