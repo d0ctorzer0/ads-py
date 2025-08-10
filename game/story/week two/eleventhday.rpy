@@ -760,7 +760,7 @@ label p_aspenday11:
     mc "I can imagine the stress of maintaining these plants could get to someone."
 
     show a look
-    a "Sometimes, yeah. But I enjoy it regardless."
+    a "Sometimes, yeah. But I... I enjoy it regardless."
 
     mc "That's good, Aspen."
     show a look

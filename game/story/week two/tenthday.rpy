@@ -622,7 +622,7 @@ label aspenacceptance:
     
     a "That's a great name!"
     show a look
-    a "Anyways, Doctor, I-I'm glad you've been... accepting of me, and - my awkward confession here."
+    a "Anyways, Doctor, I'm glad you've been accepting of me, and my... awkward confession here."
 
     mc "It wasn't awkward. It was cute."
 
@@ -639,7 +639,7 @@ label aspenacceptance:
 
     a "{i}Heliotropium arborescens{/i} has been my most recent study - the garden heliotrope."
     show a look
-    a "It has these beautiful purple flowers that smell like vanilla... or so I'm told. I can't really smell them myself."
+    a "It has these beautiful flowers that smell like vanilla... or so I'm told. I can't really smell them myself."
     show a
     a "And it's poisonous! That's one thing I love about the plant world..."
     show a laugh
@@ -696,7 +696,7 @@ label aspenrejection:
     show a look with easeinright
     a "O-Oh. I'm sorry for assuming, Doctor, I..."
     a "That's on me."
-    a "I hope we can stay... friends."
+    a "I hope we can stay... friends?"
 
     mc "Of course we can, you're alright."
 
