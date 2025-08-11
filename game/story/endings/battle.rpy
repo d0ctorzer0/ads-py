@@ -182,7 +182,10 @@ label cmdinput:
         jump cmdinput
 
 label cmddelete:
-    show esther up with vpunch
+    if persistent.screenshake == True:
+        show esther up with vpunch
+    else:
+        show esther up
     if mc_health < 10 and esther_stunned == False:
         show esther snob
     elif esther_stunned == True:
@@ -204,7 +207,10 @@ label cmdyield:
         ap_count -= 1
         yldrandomizer = renpy.random.randint(1, 100)
     if yldrandomizer > 25:
-        show esther stun with vpunch
+        if persistent.screenshake == True:
+            show esther stun with vpunch
+        else:
+            show esther stun
         $ esther_stunned = True
         "YIELD COMMAND EXECUTED. CORE STUNNED FOR ONE (1) CYCLE."
         jump cmdinput
@@ -251,7 +257,10 @@ label esthermove:
         "Bug"
 
 label es_move1:
-    show esther squint with hpunch
+    if persistent.screenshake == True:
+        show esther squint with hpunch
+    else:
+        show esther squint
     if mc_health < 10:
         show esther snob
     else:
@@ -268,7 +277,10 @@ label es_move1:
     jump cmdinput
 
 label es_move2:
-    show esther idle with hpunch
+    if persistent.screenshake == True:
+        show esther idle with hpunch
+    else:
+        show esther idle
     voice sustain
     "FLOODING PROTOCOL ACTIVATED. PLEASE REACH HIGHER GROUND."
     $ esdmgrandomizer = renpy.random.randint(2, 3)
@@ -301,7 +313,10 @@ label esthertalk1:
     show screen esther_print with easeintop
     voice "voice/print1.ogg"
     $ renpy.pause(13.0, hard=True)
-    show esther down with hpunch
+    if persistent.screenshake == True:
+        show esther down with hpunch
+    else:
+        show esther down
     $ es_health -= 3
     if mc_health < 10:
         show esther snob
@@ -315,7 +330,10 @@ label esthertalk2:
     show screen esther_print with easeintop
     voice "voice/print2.ogg"
     $ renpy.pause(16.0, hard=True)
-    show esther down with hpunch
+    if persistent.screenshake == True:
+        show esther down with hpunch
+    else:
+        show esther down
     $ es_health -= 3
     if mc_health < 10:
         show esther snob
@@ -329,7 +347,10 @@ label esthertalk3:
     show screen esther_print with easeintop
     voice "voice/print3.ogg"
     $ renpy.pause(12.0, hard=True)
-    show esther down with hpunch
+    if persistent.screenshake == True:
+        show esther down with hpunch
+    else:
+        show esther down
     $ es_health -= 3
     if mc_health < 10:
         show esther snob
