@@ -2,25 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/story/week one/fifthdayemail.rpy", line 11: expected statement.
-    use emaildaydisplay
-                       ^
-
-File "game/story/week one/fifthdayemail.rpy", line 24: expected statement.
-    use emaildaydisplay
-                       ^
-
-File "game/story/week one/fifthdayemail.rpy", line 40: expected statement.
-    use emaildaydisplay
-                       ^
-
-File "game/story/week one/fifthdayemail.rpy", line 56: expected statement.
-    use emaildaydisplay
-                       ^
-
-File "game/story/week one/fifthdayemail.rpy", line 72: expected statement.
-    use emaildaydisplay
-                       ^
+File "game/story/endings/battle.rpy", line 315: unexpected EOF while parsing
+    renpy.pause(13.0, hard=True)\
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sun Aug 10 01:08:22 2025
+Sun Aug 10 20:05:25 2025

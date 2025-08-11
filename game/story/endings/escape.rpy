@@ -2,7 +2,8 @@ define blindplayer = Fade(0.1, 0.0, 0.5, color="#fff")
 
 label escape_kris:
     scene stairs with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     show k sus offrail with easeinbottom
     n "Overly-snobby core in hand, you approach the stairs to the surface."
 
@@ -167,7 +168,8 @@ label escape_kris:
 
 label escape_heath:
     scene stairs with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     show h offrail with easeinbottom
     h "Aha! I knew it!"
     h "Told ya so, Doctor!"
@@ -339,7 +341,8 @@ label escape_heath:
 
 label escape_aspen:
     scene stairs with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     show a offrail with easeinbottom
     a "H-Here it is."
     a "I'm not sure we're supposed to use these -"
@@ -504,7 +507,8 @@ label escape_aspen:
 
 label escape_ccunknown:
     scene hall hell with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     stop fire
     n "They're heavy. Heavier than you thought they would be."
     if lock_cc == True:
@@ -524,7 +528,8 @@ label leave_unknown:
 
     n "You push forward slowly. Eventually, you finally reach the stairs."
     scene stairs with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     mc "Alright. We're... we're here."
     mc "Okay. How are we gonna get you up, CC?"
 
@@ -730,7 +735,8 @@ label leave_cc:
 
     n "You push forward slowly. Eventually, you finally reach the stairs."
     scene stairs with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     mc "Alright. We're... we're here."
     mc "Okay. How are we gonna get you two up?"
 
@@ -925,7 +931,8 @@ label leave_cc:
 
 label escape_rob:
     scene stairs with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     show r offrail with easeinbottom
     r "Alright, Doc. Here she is."
     r "Those are some long stairs. Think ya got the leg strength for it?"
@@ -1094,7 +1101,8 @@ label escape_rob:
 
 label escape_gregory:
     scene stairs with fade
-    show flash with None
+    if persistent.flash == True:
+        show flash with None
     show gre
     show gore
     show rie happy

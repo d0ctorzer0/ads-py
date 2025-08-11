@@ -14,7 +14,8 @@ label day13:
         play music "sfx/alarm.ogg"
 
     scene mcroom day with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     window auto
 
     n "You wake with a start. Red lights fill your vision, and a grating alarm plays, almost as like it's inside your head."
@@ -27,7 +28,8 @@ label day13:
     n "You get up, quickly grab your essentials, and burst out of your room."
 
     scene hall hell with fade
-    show flash
+    if persistent.flash == True:
+        show flash
 
     mc "What the hell is happening?!"
 
@@ -59,7 +61,8 @@ label day13:
 
 label emmap:
     window hide
-    show flash
+    if persistent.flash == True:
+        show flash
     scene black with dissolve
     $ renpy.pause(1.0, hard=True)
     scene emmapbg with dissolve
@@ -73,7 +76,8 @@ label emmap:
 label unknownmissing:
     $ emv_unknown = True
     scene door1 dark with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     window auto
     
     n "You approach the room where what's-his-name usually is."
@@ -97,7 +101,8 @@ label saveaspen:
     window auto
     $ emv_aspen = True
     scene door3 dark with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     n "You approach the door to the greenhouse."
     n "You peer into the window. It looks like it's flooding, and the sprinklers are on..."
     n "And Aspen is on the ground."
@@ -108,7 +113,8 @@ label saveaspen:
     $ cutscenetextbox = True
     show screen cuttextbox
     scene aspen cutscene 4 with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     python:
         if persistent.ac4 == False:
             persistent.cutscenes_seen += 1
@@ -135,7 +141,8 @@ label saveaspen:
     hide screen cuttextbox
     window auto
     scene aspenroom night with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     $ cutscenetextbox = False
     show a look offrail with easeinbottom
 
@@ -167,7 +174,8 @@ label noaspen:
     window auto
     $ emv_aspen = True
     scene door3 dark with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     n "You approach the door to the greenhouse."
     n "You can't get it open - it's jammed."
     n "You peer into the window. It looks like it's flooding, and the sprinklers are on..."
@@ -185,7 +193,8 @@ label savegreg:
     if lock_gregory == False:
         jump nogreg
     show door1 dark with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     window auto
     n "You approach the door to the lounge to find a frightening sight."
     n "Gregory's caught on the door - it seems like it's jammed shut on his trench coat."
@@ -194,7 +203,8 @@ label savegreg:
     $ cutscenetextbox = True
     show screen cuttextbox
     scene gregory cutscene 3 with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     python:
         if persistent.gc3 == False:
             persistent.cutscenes_seen += 1
@@ -233,7 +243,8 @@ label savegreg:
     hide screen cuttextbox
     window auto
     scene hall with fade
-    show flash with None
+    if persistent.flash == True:
+        show flash with None
     $ cutscenetextbox = False
     show gre look
     show gore look
@@ -300,7 +311,8 @@ label savegreg:
 label nogreg:
     $ emv_greg = True
     scene door1 dark with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     window auto
     n "You run up to the door leading to the lounge. One of your coworkers greets you."
 
@@ -333,7 +345,8 @@ label saverob:
     if lock_rob == False:
         jump norob
     scene robroom hell with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     window show
     n "You push the door open into the gym. There's fire everywhere."
     n "All the TVs are flashing a warning signal - except for one."
@@ -343,7 +356,8 @@ label saverob:
     $ cutscenetextbox = True
     show screen cuttextbox
     scene rob cutscene 4 with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     python:
         if persistent.rc4 == False:
             persistent.cutscenes_seen += 1
@@ -373,7 +387,8 @@ label saverob:
 
     hide screen cuttextbox
     scene gym with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     $ cutscenetextbox = False
     window auto
     show r offrail with easeinbottom
@@ -402,7 +417,8 @@ label saverob:
 label norob:
     $ emv_rob = True
     scene robroom hell with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     window auto
     n "You push the door open into the gym. There's fire everywhere. One of the ellipticals is flipped over somehow."
     n "All the TVs are flashing a warning signal."
@@ -420,7 +436,8 @@ label saveccunknown:
     if lock_cc == False and lock_unknown == False:
         jump nocc
     scene door1 warm with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     window auto
     $ renpy.sound.play("sfx/fire.ogg", channel='fire', loop=True)
     n "You approach the door to CC's room. You hear fire from inside."
@@ -439,7 +456,8 @@ label saveccunknown:
     $ cutscenetextbox = True
     show screen cuttextbox
     scene cc cutscene 4 with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     python:
         if persistent.cc4 == False:
             persistent.cutscenes_seen += 1
@@ -499,7 +517,8 @@ label saveccunknown:
 
     hide screen cuttextbox
     scene ccroom hell with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     $ cutscenetextbox = False
     window auto
     show u c with easeinright
@@ -552,7 +571,8 @@ label saveccunknown:
 label nocc:
     $ emv_cc = True
     scene door1 warm with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     window auto
     $ renpy.sound.play("sfx/fire.ogg", channel='fire', loop=True)
     n "You approach the door to CC's room. You hear fire from inside."
@@ -576,7 +596,8 @@ label saveheath:
     if lock_heath == False:
         jump noheath
     scene heathroom hell with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     window auto
     n "You enter the break room."
     n "The stage is concave, and the curtains are on fire."
@@ -587,7 +608,8 @@ label saveheath:
     $ cutscenetextbox = True
     show screen cuttextbox
     scene heath cutscene 4 with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     python:
         if persistent.hc4 == False:
             persistent.cutscenes_seen += 1
@@ -627,7 +649,8 @@ label saveheath:
     n "{color=#fff}...and jumps off her rail, into your coat."
     hide screen cuttextbox
     scene heathroom hell with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     $ cutscenetextbox = False
     show h look offrail with easeinbottom
 
@@ -659,7 +682,8 @@ label saveheath:
 label noheath:
     $ emv_heath = True
     scene heathroom hell with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     window auto
     n "You enter the break room."
     n "The stage is concave, and the curtains are on fire."
@@ -678,7 +702,8 @@ label savekris:
         jump nokris
     window auto
     scene krisroom hell with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     n "You push your way into Kris' conference room."
     n "It's a little difficult to get through the jammed door, but you make it in."
     n "The stock market screen is on fire."
@@ -688,7 +713,8 @@ label savekris:
     $ cutscenetextbox = True
     show screen cuttextbox
     scene kris cutscene 4 with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     python:
         if persistent.kc4 == False:
             persistent.cutscenes_seen += 1
@@ -716,7 +742,8 @@ label savekris:
     window auto
     hide screen cuttextbox
     scene krisroom hell with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     $ cutscenetextbox = False
     show k look offrail with easeinbottom
     n "You quickly catch him. He looks up at where he came from, worriedly."
@@ -743,7 +770,8 @@ label savekris:
 label nokris:
     $ emv_kris = True
     scene krisroom hell with fade
-    show flash
+    if persistent.flash == True:
+        show flash
     window auto
     n "You push your way into Kris' conference room."
     n "It's a little difficult to get through the jammed door, but you make it in."
