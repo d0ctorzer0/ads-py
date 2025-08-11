@@ -400,7 +400,7 @@ label aspenday5:
 
     n "Aspen is rushing from specimen to specimen as they speak to you, frantically checking their work."
 
-    a "I'm afraid it was too late. And now I'm just doing clean-up before night shift gets here..."
+    a "I'm afraid it was too late. And now I'm just doing clean-up before the night shift gets here..."
 
     menu:
         extend ""

@@ -27,10 +27,10 @@ label END_heathtrue:
     show h look offrail with easeinbottom
     h "Magic capital of the..."
     show h offrail
-    h "OH MY GOD YOU DIDN'T!"
+    h "HOLY HOWARD THURSTON YOU DIDN'T!"
     mc "I did."
-    h "Oh my god oh my god oh my god!!"
-    h "I'm so excited! I can't believe!"
+    h "Oh my Copperfield!!"
+    h "I'm so excited! I can't believe it!"
     show h sad offrail
     show heath blush with Dissolve(0.05)
     h "Oh wow. You're so sweet."
@@ -75,7 +75,7 @@ label END_heathtrue:
     mc "Ah, yes. You're right."
     n "You place the cooler down on the bed and open the lid. Water vapor spills out."
     show h offrail with easeinbottom
-    h "What can I say? I'm a smokeshow no matter where I am."
+    h "What can I say? I'm a smokeshow no matter where I go."
     mc "Oh, stop."
     h "This is a nice place. Very cozy. Nothing like where we came from, haha!"
     mc "Our apartment isn't cozy?"
@@ -223,9 +223,9 @@ label END_heathtrue:
     h "{color=#fff}I love making people smile."
     mc "{color=#fff}You've made me smile everyday since we left that place, Heath."
     mc "{color=#fff}I'm sorry I couldn't -"
-    h "{color=#fff}You couldn't have done anything if you tried."
+    h "{color=#fff}There's nothing you could have done anyway."
     h "{color=#fff}You know better than anyone that robotics can't last forever -"
-    h "{color=#fff}Especially not when you overclock them."
+    h "{color=#fff}Especially when you overclock them."
     h "{color=#fff}I love you."
     h "{color=#fff}And the little time I had with you..."
     h "{color=#fff}It was the best time of my life."

@@ -268,7 +268,7 @@ label escape_heath:
 
     h "{color=#fff}I'm pretty sure I'm in love with you."
     h "{color=#fff}You're just so... wow."
-    h "{color=#fff}Went out of your way to save me instead of just saving yourself..."
+    h "{color=#fff}You went out of your way to save me instead of just saving yourself..."
     h "{color=#fff}Honestly, you say I put myself in danger, but you're one to talk!"
     h "{color=#fff}I-I know it's quite early, and we still have to get to know each other, Doctor..."
     h "{color=#fff}But I... I want you to love me too, one day."
@@ -309,7 +309,7 @@ label escape_heath:
 
     h "I know."
     h "..."
-    h "...I'm worried, Doc. Aperture's not going to come looking for me, are they?"
+    h "...I'm worried, Doctor. Aperture's not going to come looking for me, are they?"
 
     mc "Doubtful. I don't think they really care what happens to you guys now..."
     mc "But even if they did, I'd be here to protect you."
