@@ -41,7 +41,8 @@ screen galleryk():
             imagebutton idle "characters/kris/kris cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
         if persistent.kc5 == True:
             imagebutton idle "characters/kris/kris cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 300 ypos 744
-        
+        if persistent.kc6 == True:
+            imagebutton idle "characters/kris/kris cutscene 6.png" action Show("fullcutscene6", transition=gallswitch) at gallery_size xpos 750 ypos 744
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action NullAction()
@@ -50,7 +51,7 @@ screen galleryk():
         textbutton "CC" xpos 924 ypos -14 action Hide("galleryk"), Show("galleryc"), SetVariable("selected_char", "cc")
         textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryk"), Show("galleryr"), SetVariable("selected_char", "rob")
         textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryk"), Show("galleryg"), SetVariable("selected_char", "gregory")
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryk"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "          " xpos 1460 ypos -160 action Hide("galleryk"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryh():
     modal True
@@ -83,7 +84,7 @@ screen galleryh():
         textbutton "CC" xpos 924 ypos -14 action Hide("galleryh"), Show("galleryc"), SetVariable("selected_char", "cc")
         textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryh"), Show("galleryr"), SetVariable("selected_char", "rob")
         textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryh"), Show("galleryg"), SetVariable("selected_char", "gregory")
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryh"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "          " xpos 1460 ypos -160 action Hide("galleryh"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen gallerya():
     modal True
@@ -106,7 +107,9 @@ screen gallerya():
             imagebutton idle "characters/aspen/aspen cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
         if persistent.ac5 == True:
             imagebutton idle "characters/aspen/aspen cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 300 ypos 744
-        
+        if persistent.ac6 == True:
+            imagebutton idle "characters/aspen/aspen cutscene 6.png" action Show("fullcutscene6", transition=gallswitch) at gallery_size xpos 750 ypos 744
+    
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action Hide("gallerya"), Show("galleryk"), SetVariable("selected_char", "kris")
@@ -115,7 +118,7 @@ screen gallerya():
         textbutton "CC" xpos 924 ypos -14 action Hide("gallerya"), Show("galleryc"), SetVariable("selected_char", "cc")
         textbutton "ROB" xpos 1100 ypos -63 action Hide("gallerya"), Show("galleryr"), SetVariable("selected_char", "rob")
         textbutton "GREG" xpos 1265 ypos -112 action Hide("gallerya"), Show("galleryg"), SetVariable("selected_char", "gregory")
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("gallerya"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "          " xpos 1460 ypos -160 action Hide("gallerya"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryc():
     modal True
@@ -149,7 +152,7 @@ screen galleryc():
         textbutton "CC" xpos 924 ypos -14 action NullAction()
         textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryc"), Show("galleryr"), SetVariable("selected_char", "rob")
         textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryc"), Show("galleryg"), SetVariable("selected_char", "gregory")
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryc"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "          " xpos 1460 ypos -160 action Hide("galleryc"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryr():
     modal True
@@ -171,7 +174,7 @@ screen galleryr():
         if persistent.rc4 == True:
             imagebutton idle "characters/rob/rob cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
         if persistent.rc5 == True:
-            imagebutton idle "characters/rob/rob cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 750 ypos 744
+            imagebutton idle "characters/rob/rob cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 300 ypos 744
 
     vbox:
         style_prefix "tabs"
@@ -181,7 +184,7 @@ screen galleryr():
         textbutton "CC" xpos 924 ypos -14 action Hide("galleryr"), Show("galleryc"), SetVariable("selected_char", "cc")
         textbutton "ROB" xpos 1100 ypos -63 action NullAction()
         textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryr"), Show("galleryg"), SetVariable("selected_char", "gregory")
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryr"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "          " xpos 1460 ypos -160 action Hide("galleryr"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryg():
     modal True
@@ -202,7 +205,9 @@ screen galleryg():
             imagebutton idle "characters/gregory/gregory cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
         if persistent.gc4 == True:
             imagebutton idle "characters/gregory/gregory cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
-    
+        if persistent.gc5 == True:
+            imagebutton idle "characters/gregory/gregory cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 300 ypos 744
+
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryg"), Show("galleryk"), SetVariable("selected_char", "kris")
@@ -211,7 +216,7 @@ screen galleryg():
         textbutton "CC" xpos 924 ypos -14 action Hide("galleryg"), Show("galleryc"), SetVariable("selected_char", "cc")
         textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryg"), Show("galleryr"), SetVariable("selected_char", "rob")
         textbutton "GREG" xpos 1265 ypos -112 action NullAction()
-        textbutton "xxx" xpos 1460 ypos -160 action Hide("galleryg"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "          " xpos 1460 ypos -160 action Hide("galleryg"), Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryu():
     modal True
@@ -239,7 +244,7 @@ screen galleryu():
         textbutton "CC" xpos 924 ypos -14 action Hide("galleryu"), Show("galleryc"), SetVariable("selected_char", "cc")
         textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryu"), Show("galleryr"), SetVariable("selected_char", "rob")
         textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryu"), Show("galleryg"), SetVariable("selected_char", "gregory")
-        textbutton "xxx" xpos 1460 ypos -160 action NullAction()
+        textbutton "          " xpos 1460 ypos -160 action NullAction()
 
 
 

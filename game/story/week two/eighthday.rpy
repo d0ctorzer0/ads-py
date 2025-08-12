@@ -703,7 +703,7 @@ label p_ccday8:
     mc "Is there anything you need? Anything I can help with?"
 
     show c close
-    c "Not that I can think of, no. I always appreciate your concern, though."
+    c "Not that I can think of, no. I appreciate your concern, though."
     show c
     c "You make me feel like I'm not just an experiment anymore."
 
@@ -721,15 +721,15 @@ label p_ccday8:
 label p_ccday8positive:
     show c look
     c "I... oh."
-    c "Doctor, you're... too kind to me, haha."
+    c "Doctor, you're... too kind to me."
     show c close
     c "Thank you."
-    c "You... should be going, now. More check-ins to do, yes?"
+    c "Um, you... should be going, now. More check-ins to do, yes?"
     show e b at bounce
     e "Thank you, CC."
     hide e b
     show c
-    c "Doctor... please come and see me tomorrow."
+    c "...please come and see me tomorrow."
 
     mc "I will."
 

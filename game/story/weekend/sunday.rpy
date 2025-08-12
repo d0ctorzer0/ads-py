@@ -176,7 +176,7 @@ label day7esther:
     mc "Uh..."
     mc "Yes. I understand, Miss Esther."
 
-    play music twelve
+    play music thirteen
     show e
     hide screen vignette with vigswitch
     e "Great! I'm glad we got that sorted out."
@@ -306,7 +306,7 @@ label day7alone:
     e "Please listen carefully."
 
     mc "Uh... yes. I'm listening."
-    
+
     e "Do not get too close to the cores in your section."
     e "It is against your contract to form strong relationships with them."
     e "Of course, friendly banter, speaking outside of working hours... that is fine."

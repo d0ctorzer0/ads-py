@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/battle.rpy", line 315: unexpected EOF while parsing
-    renpy.pause(13.0, hard=True)\
+File "game/menus/gallery.rpy", line 219: 'xposs' is not a keyword argument or valid child of the textbutton statement.
+    textbutton "xxx" xposs 1460 ypos -160 action Hide("galleryg"), Show("galleryu"), SetVariable("selected_char", "unknown")
+                          ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sun Aug 10 20:05:25 2025
+Tue Aug 12 00:26:39 2025
