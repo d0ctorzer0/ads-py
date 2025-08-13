@@ -743,12 +743,12 @@ label p_ccday8neutral:
     show c close
     c "Even if you're only here for one more week, I will remember your kindness."
     show c
-    c "You should go, now. I think I need rest."
+    c "You should go, now. I think I need some rest."
 
     mc "Yes. Of course. Have a good day, CC."
 
     show c close
-    c "Thank you."
+    c "You as well."
 
     n "You check CC off your list and leave the room with Miss Esther."
 
@@ -761,11 +761,11 @@ label n_ccday8:
 
     mc "Yes, that's correct."
 
-    c "Well, as I just mentioned, I'm still sick. Very much so."
+    c "Well, as I just mentioned, I'm still sick, I assure you. Very much so."
     show c close
     c "No matter how much I rest, it doesn't get any better..."
     show c
-    c "Of course, I know it won't, but..."
+    c "Of course, I know it shouldn't, but..."
 
     show e b at bounce
     e "I'm sorry, CC."

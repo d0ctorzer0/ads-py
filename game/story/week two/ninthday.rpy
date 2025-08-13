@@ -644,7 +644,7 @@ label p_ccday9:
 label p_ccday9positive:
     show c look
     c "Mmm. Thank you, Doctor."
-    c "I know. I appreciate that."
+    c "I know. I appreciate that. Genuinely."
     show c close
     c "Honestly, how I feel is up and down on the best of days..."
     show c
@@ -660,9 +660,9 @@ label p_ccday9positive:
     $ renpy.pause(1.0, hard=True)
     show c
     c "Forgive me. That came... out of nowhere."
-    c "I am sorry, Doctor."
+    c "A-Apologies, Doctor."
 
-    mc "Don't be, CC. It's alright."
+    mc "Don't apologize, CC. It's alright."
 
     show e b at bounce
     e "Doctor, we should be leaving - CC needs his rest."
@@ -697,7 +697,7 @@ label p_ccday9neutral:
 
     show c close
     c "Everything's as it should be in here, though."
-    c "I'm worse than usual - that's the only change."
+    c "I'm worse than usual, of course. That's the only change."
     show c look
     c "Should be good for your paperwork though, yes?"
     show c
