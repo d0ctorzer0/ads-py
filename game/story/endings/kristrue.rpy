@@ -66,7 +66,7 @@ label END_kristrue:
     k "Where are you taking me, anyway?"
     mc "Like I said, that's a secret."
     show k look offrail
-    k "You're no fun."
+    k "Oh, you're no fun."
     mc "You know, we'll have to be careful out there, Kris."
     mc "I may have been able to buff off that Aperture logo you had on you, but you're still pretty high-tech property."
     show k offrail
@@ -137,7 +137,7 @@ label END_kristrue:
 
     scene black with fade
     "The trains are busy once more."
-    k "I suppose this is what we get for taking our vacation on a holiday weekend..."
+    k "I suppose this is what we get for taking our vacation on a weekend..."
     "Thankfully, Kris' size gives the two of you quite a bit of space."
     k "Can I know where we're going yet?"
     mc "No. We're almost there, anyway."
@@ -152,9 +152,9 @@ label END_kristrue:
     show k sus offrail with easeinbottom
     k "You wouldn't -"
     show k offrail
-    k "You wouldn't -{fast} oh, you did."
+    k "{fast}- oh, you did."
     k "This is... this is Wall Street, isn't it?"
-    k "The heart of all things financial."
+    k "The heart of all things finance."
     mc "You bet it is."
     show k look offrail
     show kris blush with Dissolve(0.05)
@@ -163,7 +163,7 @@ label END_kristrue:
     hide kris blush
     show k offrail
     n "You walk down the street slowly, letting Kris twist in your arm to see everything around him."
-    k "I've only ever seen the stock from afar."
+    k "I've only ever seen the stock market from afar."
     show k sus offrail
     k "It feels so... so strange to be here, so far from Aperture, so far from that screen I dedicated so much of my life to..."
     show k look offrail
@@ -183,7 +183,7 @@ label END_kristrue:
     mc "I'm not messing with you, Kris."
     show k offrail
     mc "It took some string pulling and a little bit of cash, but I managed to get us a sneak peek inside."
-    k "You're just one surprise after another."
+    k "You're just one surprise after the other."
     show k happy offrail
     k "God, I love you."
     scene nyc trade with fade
@@ -259,7 +259,7 @@ label END_kristrue2:
     k "{color=#fff}Can't help it... my attitude's deep in my programming."
     k "{color=#fff}You don't seem to mind it, though."
     mc "{color=#fff}I like a man who's confident."
-    k "{color=#fff}I'm not a man."
+    k "{color=#fff}I'm not really a man."
     mc "{color=#fff}I'm well aware."
     k "{color=#fff}Haha... you're interesting, that's for sure."
     k "{color=#fff}If that brought us together, though..."
