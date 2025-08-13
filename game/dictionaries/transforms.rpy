@@ -30,6 +30,14 @@ transform daydiss:
 transform gallery_size:
     zoom 0.21
 
+transform egal_size1:
+    zoom 0.37
+    rotate -8
+
+transform egal_size2:
+    zoom 0.37
+    rotate 9
+
 transform example_size:
     zoom 0.12
 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/menus/gallery.rpy", line 219: 'xposs' is not a keyword argument or valid child of the textbutton statement.
-    textbutton "xxx" xposs 1460 ypos -160 action Hide("galleryg"), Show("galleryu"), SetVariable("selected_char", "unknown")
-                          ^
+File "game/menus/gallery.rpy", line 44: keyword argument 'style_prefix' appears more than once in a screen statement.
+    style_prefix "tabs"
+                ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Tue Aug 12 00:26:39 2025
+Wed Aug 13 13:50:28 2025

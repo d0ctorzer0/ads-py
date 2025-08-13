@@ -20,11 +20,54 @@ style tabs_button_text:
     hover_color "#000000"
     size 35
 
+style tabs_text:
+    font "chawp.ttf"
+    color "#130909"
+    size 35
+
+screen gallerye():
+    modal True
+    tag gallery
+    imagebutton idle "gui/back.png" action Hide("gallerye", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
+
+    imagebutton idle "gui/gallery/gallery.png" focus_mask True action Show("galleryk")
+    add "gui/gallery/redfile.png"
+
+    if persistent.elose == False:
+        add "gui/gallery/area1.png"
+    else:
+        imagebutton idle "characters/esther/esther lose.png" at egal_size1 xpos 320 ypos 100 action Show("fullelose", transition=gallswitch)
+        add "gui/gallery/tape1.png"
+
+    if persistent.edeath == False:
+        add "gui/gallery/area2.png"
+    else:
+        imagebutton idle "characters/esther/esther death.png" at egal_size2 xpos 820 ypos 350 action Show("fulledeath", transition=gallswitch)
+        add "gui/gallery/tape2.png"
+    
+    fixed:
+        style_prefix "tabs"
+        text "M. ESTHER" xpos 362 ypos 142
+
+screen fulledeath():
+    modal True
+    add "characters/esther/esther death.png"
+    imagebutton idle "gui/back.png" action Hide("fulledeath", transition=gallswitch)
+
+screen fullelose():
+    modal True
+    add "characters/esther/esther lose.png"
+    imagebutton idle "gui/back.png" action Hide("fullelose", transition=gallswitch)
+
 screen galleryk():
     modal True
+    tag gallery
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryk", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
+    if persistent.elose == True or persistent.edeath == True:
+        imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
+ 
     if persistent.kgunlock == False:
         add "gui/gallery/krislocked.png"
     else:
@@ -46,17 +89,21 @@ screen galleryk():
     vbox:
         style_prefix "tabs"
         textbutton "KRIS" xpos 364 ypos 130 action NullAction()
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryk"), Show("galleryh"), SetVariable("selected_char", "heath")
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryk"), Show("gallerya"), SetVariable("selected_char", "aspen")
-        textbutton "CC" xpos 924 ypos -14 action Hide("galleryk"), Show("galleryc"), SetVariable("selected_char", "cc")
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryk"), Show("galleryr"), SetVariable("selected_char", "rob")
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryk"), Show("galleryg"), SetVariable("selected_char", "gregory")
-        textbutton "          " xpos 1460 ypos -160 action Hide("galleryk"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "HEATH" xpos 535 ypos 84 action Show("galleryh"), SetVariable("selected_char", "heath")
+        textbutton "ASPEN" xpos 717 ypos 34 action Show("gallerya"), SetVariable("selected_char", "aspen")
+        textbutton "CC" xpos 924 ypos -14 action Show("galleryc"), SetVariable("selected_char", "cc")
+        textbutton "ROB" xpos 1100 ypos -63 action Show("galleryr"), SetVariable("selected_char", "rob")
+        textbutton "GREG" xpos 1265 ypos -112 action Show("galleryg"), SetVariable("selected_char", "gregory")
+        textbutton "          " xpos 1460 ypos -160 action Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryh():
+    tag gallery
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryh", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
+
+    if persistent.elose == True or persistent.edeath == True:
+        imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.hgunlock == False:
         add "gui/gallery/heathlocked.png"
@@ -78,18 +125,22 @@ screen galleryh():
             imagebutton idle "characters/heath/heath cutscene 6.png" action Show("fullcutscene6", transition=gallswitch) at gallery_size xpos 750 ypos 744
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryh"), Show("galleryk"), SetVariable("selected_char", "kris")
+        textbutton "KRIS" xpos 364 ypos 130 action Show("galleryk"), SetVariable("selected_char", "kris")
         textbutton "HEATH" xpos 535 ypos 84 action NullAction()
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryh"), Show("gallerya"), SetVariable("selected_char", "aspen")
-        textbutton "CC" xpos 924 ypos -14 action Hide("galleryh"), Show("galleryc"), SetVariable("selected_char", "cc")
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryh"), Show("galleryr"), SetVariable("selected_char", "rob")
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryh"), Show("galleryg"), SetVariable("selected_char", "gregory")
-        textbutton "          " xpos 1460 ypos -160 action Hide("galleryh"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "ASPEN" xpos 717 ypos 34 action Show("gallerya"), SetVariable("selected_char", "aspen")
+        textbutton "CC" xpos 924 ypos -14 action Show("galleryc"), SetVariable("selected_char", "cc")
+        textbutton "ROB" xpos 1100 ypos -63 action Show("galleryr"), SetVariable("selected_char", "rob")
+        textbutton "GREG" xpos 1265 ypos -112 action Show("galleryg"), SetVariable("selected_char", "gregory")
+        textbutton "          " xpos 1460 ypos -160 action Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen gallerya():
+    tag gallery
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("gallerya", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
+
+    if persistent.elose == True or persistent.edeath == True:
+        imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.agunlock == False:
         add "gui/gallery/aspenlocked.png"
@@ -112,18 +163,22 @@ screen gallerya():
     
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("gallerya"), Show("galleryk"), SetVariable("selected_char", "kris")
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("gallerya"), Show("galleryh"), SetVariable("selected_char", "heath")
+        textbutton "KRIS" xpos 364 ypos 130 action Show("galleryk"), SetVariable("selected_char", "kris")
+        textbutton "HEATH" xpos 535 ypos 84 action Show("galleryh"), SetVariable("selected_char", "heath")
         textbutton "ASPEN" xpos 717 ypos 34 action NullAction()
-        textbutton "CC" xpos 924 ypos -14 action Hide("gallerya"), Show("galleryc"), SetVariable("selected_char", "cc")
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("gallerya"), Show("galleryr"), SetVariable("selected_char", "rob")
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("gallerya"), Show("galleryg"), SetVariable("selected_char", "gregory")
-        textbutton "          " xpos 1460 ypos -160 action Hide("gallerya"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "CC" xpos 924 ypos -14 action Show("galleryc"), SetVariable("selected_char", "cc")
+        textbutton "ROB" xpos 1100 ypos -63 action Show("galleryr"), SetVariable("selected_char", "rob")
+        textbutton "GREG" xpos 1265 ypos -112 action Show("galleryg"), SetVariable("selected_char", "gregory")
+        textbutton "          " xpos 1460 ypos -160 action Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryc():
+    tag gallery
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryc", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
+
+    if persistent.elose == True or persistent.edeath == True:
+        imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.cgunlock == False:
         add "gui/gallery/cclocked.png"
@@ -146,18 +201,22 @@ screen galleryc():
     
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryc"), Show("galleryk"), SetVariable("selected_char", "kris")
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryc"), Show("galleryh"), SetVariable("selected_char", "heath")
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryc"), Show("gallerya"), SetVariable("selected_char", "aspen")
+        textbutton "KRIS" xpos 364 ypos 130 action Show("galleryk"), SetVariable("selected_char", "kris")
+        textbutton "HEATH" xpos 535 ypos 84 action Show("galleryh"), SetVariable("selected_char", "heath")
+        textbutton "ASPEN" xpos 717 ypos 34 action Show("gallerya"), SetVariable("selected_char", "aspen")
         textbutton "CC" xpos 924 ypos -14 action NullAction()
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryc"), Show("galleryr"), SetVariable("selected_char", "rob")
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryc"), Show("galleryg"), SetVariable("selected_char", "gregory")
-        textbutton "          " xpos 1460 ypos -160 action Hide("galleryc"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "ROB" xpos 1100 ypos -63 action Show("galleryr"), SetVariable("selected_char", "rob")
+        textbutton "GREG" xpos 1265 ypos -112 action Show("galleryg"), SetVariable("selected_char", "gregory")
+        textbutton "          " xpos 1460 ypos -160 action Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryr():
+    tag gallery
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryr", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
+
+    if persistent.elose == True or persistent.edeath == True:
+        imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.rgunlock == False:
         add "gui/gallery/roblocked.png"
@@ -175,21 +234,27 @@ screen galleryr():
             imagebutton idle "characters/rob/rob cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
         if persistent.rc5 == True:
             imagebutton idle "characters/rob/rob cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 300 ypos 744
-
+        if persistent.rc6 == True:
+            imagebutton idle "characters/rob/rob cutscene 6.png" action Show("fullcutscene6", transition=gallswitch) at gallery_size xpos 750 ypos 744
+        
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryr"), Show("galleryk"), SetVariable("selected_char", "kris")
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryr"), Show("galleryh"), SetVariable("selected_char", "heath")
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryr"), Show("gallerya"), SetVariable("selected_char", "aspen")
-        textbutton "CC" xpos 924 ypos -14 action Hide("galleryr"), Show("galleryc"), SetVariable("selected_char", "cc")
+        textbutton "KRIS" xpos 364 ypos 130 action Show("galleryk"), SetVariable("selected_char", "kris")
+        textbutton "HEATH" xpos 535 ypos 84 action Show("galleryh"), SetVariable("selected_char", "heath")
+        textbutton "ASPEN" xpos 717 ypos 34 action Show("gallerya"), SetVariable("selected_char", "aspen")
+        textbutton "CC" xpos 924 ypos -14 action Show("galleryc"), SetVariable("selected_char", "cc")
         textbutton "ROB" xpos 1100 ypos -63 action NullAction()
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryr"), Show("galleryg"), SetVariable("selected_char", "gregory")
-        textbutton "          " xpos 1460 ypos -160 action Hide("galleryr"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "GREG" xpos 1265 ypos -112 action Show("galleryg"), SetVariable("selected_char", "gregory")
+        textbutton "          " xpos 1460 ypos -160 action Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryg():
+    tag gallery
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryg", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
+
+    if persistent.elose == True or persistent.edeath == True:
+        imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.ggunlock == False:
         add "gui/gallery/gregorylocked.png"
@@ -210,19 +275,23 @@ screen galleryg():
 
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryg"), Show("galleryk"), SetVariable("selected_char", "kris")
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryg"), Show("galleryh"), SetVariable("selected_char", "heath")
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryg"), Show("gallerya"), SetVariable("selected_char", "aspen")
-        textbutton "CC" xpos 924 ypos -14 action Hide("galleryg"), Show("galleryc"), SetVariable("selected_char", "cc")
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryg"), Show("galleryr"), SetVariable("selected_char", "rob")
+        textbutton "KRIS" xpos 364 ypos 130 action Show("galleryk"), SetVariable("selected_char", "kris")
+        textbutton "HEATH" xpos 535 ypos 84 action Show("galleryh"), SetVariable("selected_char", "heath")
+        textbutton "ASPEN" xpos 717 ypos 34 action Show("gallerya"), SetVariable("selected_char", "aspen")
+        textbutton "CC" xpos 924 ypos -14 action Show("galleryc"), SetVariable("selected_char", "cc")
+        textbutton "ROB" xpos 1100 ypos -63 action Show("galleryr"), SetVariable("selected_char", "rob")
         textbutton "GREG" xpos 1265 ypos -112 action NullAction()
-        textbutton "          " xpos 1460 ypos -160 action Hide("galleryg"), Show("galleryu"), SetVariable("selected_char", "unknown")
+        textbutton "          " xpos 1460 ypos -160 action Show("galleryu"), SetVariable("selected_char", "unknown")
 
 screen galleryu():
+    tag gallery
     modal True
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryu", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
+    if persistent.elose == True or persistent.edeath == True:
+        imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
+        
     if persistent.ugunlock == False:
         add "gui/gallery/unknownlocked.png"
     else:
@@ -238,12 +307,12 @@ screen galleryu():
 
     vbox:
         style_prefix "tabs"
-        textbutton "KRIS" xpos 364 ypos 130 action Hide("galleryu"), Show("galleryk"), SetVariable("selected_char", "kris")
-        textbutton "HEATH" xpos 535 ypos 84 action Hide("galleryu"), Show("galleryh"), SetVariable("selected_char", "heath")
-        textbutton "ASPEN" xpos 717 ypos 34 action Hide("galleryu"), Show("gallerya"), SetVariable("selected_char", "aspen")
-        textbutton "CC" xpos 924 ypos -14 action Hide("galleryu"), Show("galleryc"), SetVariable("selected_char", "cc")
-        textbutton "ROB" xpos 1100 ypos -63 action Hide("galleryu"), Show("galleryr"), SetVariable("selected_char", "rob")
-        textbutton "GREG" xpos 1265 ypos -112 action Hide("galleryu"), Show("galleryg"), SetVariable("selected_char", "gregory")
+        textbutton "KRIS" xpos 364 ypos 130 action Show("galleryk"), SetVariable("selected_char", "kris")
+        textbutton "HEATH" xpos 535 ypos 84 action Show("galleryh"), SetVariable("selected_char", "heath")
+        textbutton "ASPEN" xpos 717 ypos 34 action Show("gallerya"), SetVariable("selected_char", "aspen")
+        textbutton "CC" xpos 924 ypos -14 action Show("galleryc"), SetVariable("selected_char", "cc")
+        textbutton "ROB" xpos 1100 ypos -63 action Show("galleryr"), SetVariable("selected_char", "rob")
+        textbutton "GREG" xpos 1265 ypos -112 action Show("galleryg"), SetVariable("selected_char", "gregory")
         textbutton "          " xpos 1460 ypos -160 action NullAction()
 
 
