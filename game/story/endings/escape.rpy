@@ -131,7 +131,7 @@ label escape_kris:
 
     mc "Ha, ha."
 
-    k "You should rest, Doctor. It's getting late."
+    k "You should rest. It's getting late."
 
     mc "Thank you, Kris."
 
