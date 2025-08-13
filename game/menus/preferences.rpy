@@ -267,4 +267,4 @@ screen aboutcredits():
 
     text "Music:\n{font=Arimo.ttf}{b}————{/b}{/font}\nTaisiya Pushkar\nDylan Turner\nWilson Hiatt\nDestructo20\n\nPlaytesters:\n{font=Arimo.ttf}{b}——————{/b}{/font}\nRussell Fridkin\ncaitgirl02\nthecreatorlynne\nifthenunless\nMorality9\nBembWasHere\nLuke Moretti\n\nSpecial Thanks:\n{font=Arimo.ttf}{b}———————{/b}{/font}\nPortal Mapping and Modding\nSalt Lake City Public Library\nHLMV++ developers" xpos 600
 
-    text "Assets:\n{font=Arimo.ttf}{b}————{/b}{/font}\n" xpos 1100
+    text "Background Assets:\n{font=Arimo.ttf}{b}—————————{/b}{/font}\nP2CE Engine\nPortal 2\nTeam Fortress 2\nLeft 4 Dead 2\nThe Stanley Parable\nINFRA\nCSGO\nHalf-Life 2 (including episodes)\nPortal Revolution\nHazel Thompson\nAlyx “Lenship2” Shipman\nWar the Nuclear Shill\nValla Chan/Allison Ghost\nNovember" xpos 1100

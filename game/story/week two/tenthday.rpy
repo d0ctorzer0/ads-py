@@ -773,14 +773,14 @@ label ccday10:
 
     n "He turns to face you."
     show c look
-    c "I have something very important to tell you."
+    c "I have something... um, very important to tell you."
 
     mc "Oh. Alright."
 
     show c
     
-    c "I'm going to phrase it in a particular way, however, as I'm..."
-    c "...not sure I have the words otherwise."
+    c "I'm going to phrase it in a particular way, however..."
+    c "...as I'm not sure I have the words otherwise."
 
     $ gotconfession = True
     $ cutscenechoice = True
@@ -804,7 +804,7 @@ label ccday10:
     c "{color=#fff}I..."
     c "{color=#fff}Doctor, you have been so kind to me over the past week and a half, and I..."
     c "{color=#fff}I've never felt anything like this before."
-    c "{color=#fff}I feel... energized. Like I'm truly living, like... there's a light at the end of my tunnel."
+    c "{color=#fff}I feel... energized. Like I'm truly living... like there's a light at the end of my tunnel."
     c "{color=#fff}Please, Doctor. When your time in Maintenance ends, I hope our time together won't."
     c "{color=#fff}Please stay by me."
     menu:
@@ -814,7 +814,6 @@ label ccday10:
             c "{color=#fff}Oh. I..."
             c "{color=#fff}You..."
             n "{color=#fff}He sighs."
-            c "{color=#fff}Thank you, Doctor."
             jump ccacceptance
         "This is lovely, but...":
             mc "{color=#fff}...I don't think I can accept this, CC. I'm sorry."
@@ -826,16 +825,14 @@ label ccacceptance:
     scene ccroom with fade
     $ cutscenetextbox = False
     show c look with easeinright
-    c "I honestly didn't expect you to... say yes."
+    c "Thank you, Doctor, I... honestly didn't expect you to... say yes."
     show c
-    c "Not only am I a robot, not only am I stuck in this godforsaken room..."
-    c "But I'm so horribly sick."
     c "I hope you aren't simply taking pity on me, Doctor."
 
     mc "Not at all, CC. I do truly enjoy your company."
     
     show c close
-    c "Thank you."
+    c "Thank you. Truly."
 
     show c
     n "Your shift continues on slowly. You and CC chat gently, pausing occasionally to let him rest."
