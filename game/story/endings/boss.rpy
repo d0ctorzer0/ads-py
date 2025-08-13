@@ -222,6 +222,9 @@ label battleskip:
     n "You decide it's probably best to just lay down for a bit."
     n "You certainly have a lot to think about."
 
+    $ achievement.grant("ach_armor")
+    $ achievement.sync()
+    
     scene mcroom day with fade
     jump day12endcont
 

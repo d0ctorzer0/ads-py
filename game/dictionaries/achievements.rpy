@@ -25,6 +25,7 @@ default persistent.ach_amoh = True # Don't romance anyone
 default persistent.ach_ohno = True # Die (Woo!)
 default persistent.ach_heartless = True # Kill Miss Esther (You MONSTER.)
 default persistent.ach_unlikeable = True # Antisocial
+default persistent.ach_armor = True # MISS ESTHER SECRET DIALOGUE!!!
 
 # Endings
 
@@ -78,8 +79,3 @@ default persistent.endings_got = {
     "ace" : False,
     "unlikeable" : False,
 }
-
-# Implemented:
-# Good: Kris, Heath, Aspen, CC, ???
-# True: Kris
-# BIWTA, explore, heartless, unionize, ohno
