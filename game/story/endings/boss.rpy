@@ -181,6 +181,10 @@ label END_unlikable:
     $ MainMenu(confirm=False)()
 
 label battleskip:
+
+    $ achievement.grant("ach_armor")
+    $ achievement.sync()
+
     show e look
     e "I-I..."
     show e close
@@ -221,9 +225,6 @@ label battleskip:
     n "Would Aperture care?"
     n "You decide it's probably best to just lay down for a bit."
     n "You certainly have a lot to think about."
-
-    $ achievement.grant("ach_armor")
-    $ achievement.sync()
     
     scene mcroom day with fade
     jump day12endcont
