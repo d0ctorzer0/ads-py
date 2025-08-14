@@ -86,7 +86,7 @@ label END_heathtrue:
     h "But without it -"
     show h offrail
     show heath blush with Dissolve(0.05)
-    h "I would've never met you. And that would've been a shame."
+    h "I never would've met you. And that would've been a shame."
     show h look offrail
     h "S-Sorry."
     hide heath blush
