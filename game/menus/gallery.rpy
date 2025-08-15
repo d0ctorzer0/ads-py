@@ -304,6 +304,10 @@ screen galleryu():
             imagebutton idle "characters/unknown/unknown cutscene 2.png" action Show("fullcutscene2", transition=gallswitch) at gallery_size xpos 750 ypos 216
         if persistent.uc3 == True:
             imagebutton idle "characters/unknown/unknown cutscene 3.png" action Show("fullcutscene3", transition=gallswitch) at gallery_size xpos 300 ypos 480
+        if persistent.uc4 == True:
+            imagebutton idle "characters/unknown/unknown cutscene 4.png" action Show("fullcutscene4", transition=gallswitch) at gallery_size xpos 750 ypos 480
+        if persistent.uc5 == True:
+            imagebutton idle "characters/unknown/unknown cutscene 5.png" action Show("fullcutscene5", transition=gallswitch) at gallery_size xpos 300 ypos 744
 
     vbox:
         style_prefix "tabs"

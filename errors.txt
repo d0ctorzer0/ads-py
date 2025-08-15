@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/menus/gallery.rpy", line 44: keyword argument 'style_prefix' appears more than once in a screen statement.
-    style_prefix "tabs"
-                ^
+File "game/dictionaries/images.rpy", line 156: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "#b3000070"
+    ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Wed Aug 13 13:50:28 2025
+Thu Aug 14 21:05:54 2025

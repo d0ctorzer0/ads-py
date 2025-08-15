@@ -861,7 +861,7 @@ label leave_cc:
     ry "{color=#fff}I know I ain't been the best to you. I know I've been a flirt, and I've been annoying..."
     ry "{color=#fff}But I hope you'll love me back. One day. If I try hard enough."
 
-    mc "{color=#fff}I think... it'll take time, Ryland. But I might."
+    mccut "{color=#fff}I think... it'll take time, Ryland. But I might."
 
     hide screen cuttextbox
     scene black with fade

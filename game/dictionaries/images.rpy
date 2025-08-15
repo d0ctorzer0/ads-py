@@ -23,6 +23,7 @@ image hall hell = "[persistent.bgtype]hall hell.png"
 image krisroom hell = "[persistent.bgtype]krisroom hell.png"
 image ccroom hell = "[persistent.bgtype]ccroom hell.png"
 image heathroom hell = "[persistent.bgtype]heathroom hell.png"
+image aspenroom hell = "[persistent.bgtype]aspenroom hell.png"
 image robroom hell = "[persistent.bgtype]robroom hell.png"
 
 image door1 warm = "[persistent.bgtype]door1 warm.png"
@@ -36,6 +37,8 @@ image door3 warm = "[persistent.bgtype]door3 warm.png"
 image door3 no outoforder = "[persistent.bgtype]door3 no outoforder.png"
 image door3 cool = "[persistent.bgtype]door3 cool.png"
 image door3 dark = "[persistent.bgtype]door3 dark.png"
+
+image relaxationcenter = "[persistent.bgtype]relaxationcenter.png"
 
 image neuro:
     "gui/boss/neuro/n_1.png"
@@ -148,10 +151,16 @@ image esther downleft:
 image esther squint:
     "gui/boss/esther/esther squint.png"
 
-image flash:
+image flashTrue:
     "#b3000070"
     alpha 0.0
     linear .45 alpha 0.5
     pause 0.55     
     linear .45 alpha 0.0
     repeat
+
+image flashFalse:
+    "#00000000"
+    alpha 0.0
+
+image flash = "flash[persistent.flash]"

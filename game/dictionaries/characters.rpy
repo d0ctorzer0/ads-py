@@ -16,6 +16,7 @@ define h = Character(_("Heath"), color="#7f30e0")
 
 define u = Character(_("???"), color="#725e42")
 define ry = Character(_("Ryland"), color="#725e42")
+define rycut = Character(_("Ryland"), color="#725e42", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 
 define a = Character(_("Aspen"), color="#1c710b")
 define acg = Character(("Aspen"), color="#1c710b", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
