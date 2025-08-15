@@ -833,7 +833,7 @@ label p_robday8:
     mc "Oh - Heath asked me to tell you to turn your TV down."
 
     show r angry
-    r "She can hear it from all the way over there?"
+    r "She can hear it all the way over there?"
     r "Yikes. She must hate me, haha."
 
     show r close
@@ -872,7 +872,7 @@ label p_robday8positive:
     show r angry
     r "Ah, uh, thank you, Doc. Kind of you to say that."
     show r
-    r "Even though I ain't really a man at all, but..."
+    r "Even though I ain't really a man and all that, but..."
     r "I'm pickin' up what you're puttin' down."
 
     show e b annoy at bounce
@@ -892,7 +892,7 @@ label p_robday8positive:
     r "If there's anything else I can do for you..."
 
     show r angry
-    r "...you just let me know."
+    r "...just let me know."
 
     mc "Will do."
 
@@ -932,7 +932,7 @@ label n_robday8:
     mc "Oh - Heath did ask me to tell you to turn your TV down."
 
     show r angry
-    r "She can hear it from all the way over there?"
+    r "She can hear it all the way from down there?"
     r "Yikes. She must hate me, haha. That makes two of ya, I suppose."
 
     show r close

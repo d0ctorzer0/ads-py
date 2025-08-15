@@ -986,7 +986,7 @@ label robday11:
     r "Jeez..."
 
     show r at bounce
-    r "Oh! Doc. Sorry, didn't hear ya come in."
+    r "Oh! Doc. Sorry, didn't see ya come in."
     r "I wasn't even sure you were gonna show at all! You're awfully late."
     show r angry
     r "Say, where's Miss Esther?"

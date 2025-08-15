@@ -1,316 +1,42 @@
-2025-08-15 03:29:15 UTC
-Windows-10-10.0.26100
-Ren'Py 8.3.6.25022803
+2025-08-15 07:01:51 UTC
+macOS-11.6-arm64-arm-64bit
+Ren'Py 8.3.7.25031702
 
-Early init took 0.38s
-Loading error handling took 0.06s
-Loading script took 0.85s
-Loading save slot metadata took 0.12s
+Early init took 0.05s
+Loading error handling took 0.03s
+Loading script took 0.17s
+Loading save slot metadata took 0.05s
 Loading persistent took 0.00s
-Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
-Running init code took 0.30s
-Loading analysis data took 0.03s
+Running init code took 0.04s
+Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.08s
+Reloading save slot metadata took 0.03s
 Index archives took 0.00s
-Dump and make backups took 0.10s
+Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.12s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.40s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.09s
+Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.06s
+Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.16s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
-Running _start took 0.00s
-Interface start took 0.41s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 555.97'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 256.92s
-Loading error handling took 0.06s
-Loading script took 0.70s
-Loading save slot metadata took 0.11s
-Loading persistent took 0.00s
-Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
-Running init code took 0.15s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.08s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\seven\\AppData\\Roaming/RenPy/backups\\core':
-Dump and make backups took 0.11s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.15s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.38s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.05s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.27s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 555.97'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1453.50s
-Loading error handling took 0.05s
-Loading script took 0.59s
-Loading save slot metadata took 0.14s
-Loading persistent took 0.00s
-Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
-Running init code took 0.19s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.08s
-Index archives took 0.00s
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.17s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.39s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.00s
-Load screen analysis took 0.07s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.15s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.28s
+Interface start took 0.39s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 1440, 900)
 swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 555.97'
+Windowed mode.
+Vendor: "b'Apple'"
+Renderer: b'Apple M1'
+Version: b'2.1 Metal - 71.7.1'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1556.81s
-Loading error handling took 0.06s
-Loading script took 0.62s
-Loading save slot metadata took 0.13s
-Loading persistent took 0.00s
-Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
-Running init code took 0.18s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.08s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\seven\\AppData\\Roaming/RenPy/backups\\core':
-Dump and make backups took 0.19s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.20s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.41s
-Cleaning stores took 0.00s
-Init translation took 0.11s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.08s
-Prepare screens took 0.22s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 555.97'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1577.50s
-Loading error handling took 0.04s
-Loading script took 0.52s
-Loading save slot metadata took 0.13s
-Loading persistent took 0.01s
-Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
-Running init code took 0.17s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.08s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\seven\\AppData\\Roaming/RenPy/backups\\core':
-Dump and make backups took 0.11s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.14s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.31s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.09s
-Prepare screens took 0.17s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.20s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 555.97'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1599.37s
-Loading error handling took 0.03s
-Loading script took 0.43s
-Loading save slot metadata took 0.10s
-Loading persistent took 0.00s
-Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
-Running init code took 0.13s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.06s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\seven\\AppData\\Roaming/RenPy/backups\\core':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.12s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.29s
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.05s
-Prepare screens took 0.16s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.20s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 555.97'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1615.52s
-Loading error handling took 0.04s
-Loading script took 0.55s
-Loading save slot metadata took 0.13s
-Loading persistent took 0.01s
-Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
-Running init code took 0.19s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.11s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\seven\\AppData\\Roaming/RenPy/backups\\core':
-Dump and make backups took 0.10s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.15s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.73s
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.05s
-Prepare screens took 0.17s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 555.97'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.08s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.01s
-Traceback (most recent call last):
-  File "renpy/common/00console.rpy", line 739, in run
-    renpy.python.py_exec(code)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1197, in py_exec
-    exec(py_compile(source, 'exec'), store, locals)
-  File "<none>", line 1, in <module>
-NameError: name 'Truew' is not defined

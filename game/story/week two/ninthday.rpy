@@ -765,7 +765,7 @@ label robday9:
     scene robroom with fade
     $ audio_crossFade(2, "music/six.ogg")
     show r yell with easeinright
-    r "Go go go go GO GO GO GO GO!! COME ON..."
+    r "Go go go go GO GO GO!! COME ON..."
     n "You wait patiently."
     r "GOAL!! YEAH, HAHAHA!"
     show r
@@ -863,7 +863,7 @@ label n_robday9:
     show r close
     r "Oh no, it's the end of your shift, huh..."
     show r angry
-    r "Well, an employee is bound to come in here any time now, so... haha..."
+    r "Well, an employee is bound to come in here any time now... haha..."
     r "Y'all should prolly get going."
 
     mc "Alright then."

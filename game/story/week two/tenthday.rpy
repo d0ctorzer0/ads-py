@@ -979,8 +979,8 @@ label robday10:
     $ audio_crossFade(2, "music/six.ogg")
     
     show r with easeinright
-    r "Doctor! It's good to see you again."
-    r "Glad you chose me for your one-on-one - I promise I won't be too much of an annoyance, haha."
+    r "Doctor! It's good to see you."
+    r "Glad you chose me for your one-on-one - I promise I won't be too much of an annoyance."
     r "Or I'll try. No guarantees, actually."
 
     mc "Hey Rob. Good to see you alive and active."
@@ -990,7 +990,7 @@ label robday10:
     show r
     r "So - come to work out, or..."
     show r close
-    r "Actually... there's something I gotta tell ya first, Doc."
+    r "Actually, no... there's something I gotta tell ya first, Doc."
 
     mc "Really?"
 
@@ -1029,7 +1029,7 @@ label robday10:
         "You're funny. I'd love to.":
             $ lock_rob = True
             r "{color=#fff}Hell yeah! You're the best, Doc."
-            r "{color=#fff}Haha... thank you."
+            r "{color=#fff}And... thank you."
             jump robacceptance
         "I don't think I can accept this.":
             jump robrejection
@@ -1040,7 +1040,7 @@ label robacceptance:
     scene robroom with fade
     $ cutscenetextbox = False
     show r close with easeinright
-    r "Now that you and I are {i}\"official\"..."
+    r "Now that you and me are {i}\"official\"..."
     show r
     r "You should prolly know some more about me. And my ex, I guess."
 
