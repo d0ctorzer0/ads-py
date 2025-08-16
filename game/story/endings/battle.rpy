@@ -186,6 +186,7 @@ label cmddelete:
         show esther up with vpunch
     else:
         show esther up
+        $ renpy.pause(0.2, hard=True)
     if mc_health < 10 and esther_stunned == False:
         show esther snob
     elif esther_stunned == True:
@@ -317,6 +318,7 @@ label esthertalk1:
         show esther down with hpunch
     else:
         show esther down
+        $ renpy.pause(0.2, hard=True)
     $ es_health -= 3
     if mc_health < 10:
         show esther snob
@@ -334,6 +336,7 @@ label esthertalk2:
         show esther down with hpunch
     else:
         show esther down
+        $ renpy.pause(0.2, hard=True)
     $ es_health -= 3
     if mc_health < 10:
         show esther snob
@@ -351,6 +354,7 @@ label esthertalk3:
         show esther down with hpunch
     else:
         show esther down
+        $ renpy.pause(0.2, hard=True)
     $ es_health -= 3
     if mc_health < 10:
         show esther snob
