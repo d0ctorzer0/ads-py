@@ -267,7 +267,7 @@ label krisacceptance:
     k "Mr. Johnson would do {i}anything{/i} to save even a penny in the years before his death..."
     k "So it makes sense employee rewards were cut back..."
     show k
-    k "I'm surprised I even recieved anything in the first place, haha."
+    k "I'm surprised I even received anything in the first place, haha."
     k "And now it's in your hands."
 
     mc "I'll treat it well, Kris."
@@ -333,7 +333,7 @@ label krisrejection:
     k "Cave would do {i}anything{/i} to save even a penny in the years before his death..."
     k "So it makes sense employee rewards were cut back, as well."
     show k look
-    k "I'm surprised I even recieved anything in the first place, haha."
+    k "I'm surprised I even received anything in the first place, haha."
 
     n "Eventually, the time comes for you to leave."
     

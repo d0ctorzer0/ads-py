@@ -85,7 +85,7 @@ screen email7cc():
         text "from: CC"
     vbox:
         style_prefix "eml"
-        text "Hello Doctor.\n\nI wanted to thank you for visiting me today. Though you could have\nchosen any other core in your section, you chose me, and I'm flattered,\nespecially considering how boring I must have been for you.\n\nI hope you do not consider me a fool - I do realize the reason for your\npick is most likely the easy-going shift you recieved in turn. Regardless,\nI am very glad you chose to stop in.\n\nThank you.\n\nRest well,\nCC"
+        text "Hello Doctor.\n\nI wanted to thank you for visiting me today. Though you could have\nchosen any other core in your section, you chose me, and I'm flattered,\nespecially considering how boring I must have been for you.\n\nI hope you do not consider me a fool - I do realize the reason for your\npick is most likely the easy-going shift you received in turn. Regardless,\nI am very glad you chose to stop in.\n\nThank you.\n\nRest well,\nCC"
     use affectionprogress
     
     vbox:
