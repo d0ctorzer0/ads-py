@@ -384,7 +384,7 @@ label saverob:
     n "You pick his broken handle up off the floor."
 
     show r look offrail
-    r "Eh... I don't need that, hah. I got you here. That's all I need."
+    r "Eh... I don't need that, hah. I got you here, and that's all I need."
 
     mc "No, right now you need to get out of here. But that's sweet of you."
     mc "We can't take the surface elevators - I'm almost positive they won't let you up with me."

@@ -996,7 +996,7 @@ label escape_rob:
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     r "{color=#fff}This is insane. Did you know about this? The sky? And... oh, the clouds, goddamn!"
-    r "{color=#fff}Hah! I've only seen this stuff through a screen!"
+    r "{color=#fff}I've only seen this stuff through a screen!"
 
     n "{color=#fff}...Rob's never seen the surface."
 
@@ -1005,7 +1005,7 @@ label escape_rob:
     r "{color=#fff}...or lungs, in your case."
     r "{color=#fff}It's so much better than that stuffy mess of a gym..."
 
-    mc "{color=#fff}I told you so."
+    mccut "{color=#fff}I told you so."
 
     r "{color=#fff}You sure did! Haha!"
     r "{color=#fff}God... I can't believe we made it out of there."
@@ -1015,7 +1015,7 @@ label escape_rob:
     r "{color=#fff}I can't believe you {i}got{/i} me out of there, I... hah... I can't thank you enough, Doc."
     r "{color=#fff}Wow. You're real pretty in this light."
 
-    mc "{color=#fff}Thank you."
+    mccut "{color=#fff}Thank you."
 
     r "{color=#fff}You've got such a... glow around you, Doc. And I don't want to leave it."
     r "{color=#fff}I think I love ya. As silly as that sounds."
@@ -1023,7 +1023,7 @@ label escape_rob:
     r "{color=#fff}I'm just hopin' you'll give me a chance."
     r "{color=#fff}I mean... I'm sure we'll have plenty of time now, right?"
 
-    mc "{color=#fff}Haha. That we will."
+    mccut "{color=#fff}Haha. That we will."
 
     hide screen cuttextbox
     scene black with fade
