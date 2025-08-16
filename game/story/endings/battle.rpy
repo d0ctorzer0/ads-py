@@ -235,6 +235,7 @@ label estherturn:
     if esther_stunned == False:
         jump esthermove
     elif esther_stunned == True:
+        voice sustain
         "CORE UNABLE TO EXECUTE COMMANDS. RESTARTING CYCLE."
         $ esther_stunned = False
         $ renpy.pause(1.0, hard=True)
