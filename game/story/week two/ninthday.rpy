@@ -837,8 +837,6 @@ label p_robday9:
                 $ romance_points["Rob"] += 3
                 $ priority["Rob"] += 1
                 hide e with easeoutright
-                show r with easeinright
-                r "Will do."
             "I'll see you later, Rob.":
                 $ romance_points["Rob"] -= 3
                 $ priority["Rob"] -= 1
