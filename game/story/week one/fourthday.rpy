@@ -30,7 +30,7 @@ label day4:
 
     scene mcroom day with fade
 
-    n "You wake up at 08:00 as usual, get dressed, and head out the door."
+    n "You wake up at 07:30 as usual, get dressed, and head out the door."
 
     scene office with fade
     $ audio_crossFade(2, "music/one.ogg")

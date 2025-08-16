@@ -169,7 +169,7 @@ label cmdinput:
             if times_talked == 3:
                 jump esthertalk3
         else:
-            "PRINT COMMAND FAILED. CORE UNABLE TO RECIEVE TEXT STRING."
+            "PRINT COMMAND FAILED. CORE UNABLE TO RECEIVE   TEXT STRING."
             jump cmdinput
 
     elif cmd == "return": # Return
