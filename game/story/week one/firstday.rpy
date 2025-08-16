@@ -13,6 +13,8 @@ label start:
         show screen daytransition
         $ renpy.pause(2.0, hard=True)
 
+    $ renpy.block_rollback()
+
     $ renpy.set_style_preference("text", "basic")
     scene office
     with fade
