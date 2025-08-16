@@ -788,7 +788,6 @@ label ccday1:
     with easeinright
     if persistent.advcap == True:
         "{i}CC enters the frame. His chassis is dusty, and he has several tubes coming out of his sides. His accent colors are an indigo-blue hue. He looks incredibly tired."
-    voice "voice/cctest.ogg"
     cu "Oh, what's the use? The diagnosis will be the same, regardless."
 
     show e b sad at bounce
@@ -797,7 +796,6 @@ label ccday1:
     show c
     n "The core slowly opens its optic and turns to face you. It looks... tired, somehow."
 
-    voice "voice/cctest2.ogg"
     cu "Oh. This one's... new."
 
     hide c
