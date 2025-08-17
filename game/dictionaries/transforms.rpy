@@ -53,6 +53,9 @@ transform notemove:
         ypos 570
         ease 0.2 ypos 700
 
+transform twoseventy:
+    rotate 270
+
 define gentleswitch = { "master" : Dissolve(0.2) }
 define vigswitch = Dissolve(0.1)
 define gallswitch = Dissolve(0.3)

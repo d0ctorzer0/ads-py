@@ -42,7 +42,7 @@ label splashscreen:
 # define config.mouse['default'] = [ ( "gui/cursor.png", 0, 0) ]
 
 define cutscenetextbox = False
-define _game_menu_screen = "pausemenu"
+define _game_menu_screen = None
 default savequestionpopup = False
 
 #SPECIAL DEFAULTS

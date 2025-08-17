@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/dictionaries/images.rpy", line 156: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "#b3000070"
-    ^
+File "game/story/endings/battle.rpy", line 59: 'rotate' is not a keyword argument or valid child of the text statement.
+    text "[name]" xpos 1573 ypos 371 rotate 90
+                                           ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Thu Aug 14 21:05:54 2025
+Sun Aug 17 16:36:21 2025

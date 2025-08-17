@@ -21,6 +21,12 @@ init python: # this is the code that determines what font and color to use for t
     renpy.register_style_preference("text", "battle", style.say_dialogue, "color", "#aaa")
     renpy.register_style_preference("text", "battle", style.say_dialogue, "xsize", 1200)
 
+style bossbars_text:
+    font "terminal-grotesque.ttf"
+    color "#f0f0f0"
+    size 35
+    outlines [ (4, "#000", absolute(0), absolute(0)) ]
+
 screen main():
     imagebutton:
         auto "gui/boss/%s_note.png" xpos 1300 ypos 570 at notemove
@@ -45,20 +51,25 @@ screen main():
         xpos 1822
         ypos 630
         xysize (60,430)
+    if persistent.colorblind == True:
+        fixed:
+            style_prefix "bossbars"
+            text "[name]" xpos 1663 ypos 900 at twoseventy
+            text "Miss Esther" xpos 1757 ypos 875 at twoseventy
     if ap_count == 2:
         add "gui/boss/bot_ap.png"
         add "gui/boss/top_ap.png"
     elif ap_count == 1:
         add "gui/boss/bot_ap.png"
-    key "K_LALT" action Show("tutorial", transition=dissolve)
-    key "K_RALT" action Show("tutorial", transition=dissolve)
+    key "K_LALT" action Show("tutorial", transition=Dissolve(0.2))
+    key "K_RALT" action Show("tutorial", transition=Dissolve(0.2))
 
 screen tutorial:
     add "gui/options/black.png"
     add "gui/boss/tutorial.png"
-    dismiss action Hide("tutorial", transition=dissolve)
-    key "K_RALT" action Hide("tutorial", transition=dissolve)
-    key "K_LALT" action Hide("tutorial", transition=dissolve)
+    dismiss action Hide("tutorial", transition=Dissolve(0.2))
+    key "K_RALT" action Hide("tutorial", transition=Dissolve(0.2))
+    key "K_LALT" action Hide("tutorial", transition=Dissolve(0.2))
 
 # disables all mouse input so player can't skip through cutscenes
 screen disable_Lmouse():
@@ -92,8 +103,7 @@ label battle: # AND GUESS WHAT? IT STILL DOESN'T WORK
     "WELCOME TO APERTURE SCIENCE CORE CONTROL CENTER (ASC3)"
 
     "BOOTING{cps=1}..."
-    "BOOT SUCCESSFUL. PRESS [[ ALT ] VIEW INTERFACE INFORMATION."
-    $ renpy.pause(2.0, hard=True)
+    "BOOT SUCCESSFUL. {cps=15}\nPRESS [[ ALT ] TO VIEW INTERFACE INFORMATION."
     
     hide screen disable_Lmouse
 
@@ -259,12 +269,16 @@ label estherturn:
 
 label esthermove:
     $ es_move = renpy.random.randint(1, 4)
+    $ lowerchance = renpy.random.randint(1, 2)
     if es_move == 1:
         jump es_move1
     elif es_move == 2:
         jump es_move2
     elif es_move == 3:
-        jump es_move3
+        if lowerchance == 1:
+            jump esthermove
+        else:
+            jump es_move3
     elif es_move == 4:
         if mc_poisoned == True:
             jump esthermove
@@ -287,7 +301,7 @@ label es_move1:
     show laser 
     pause 0.4
     hide laser
-    $ esdmgrandomizer = renpy.random.randint(2, 3)
+    $ esdmgrandomizer = renpy.random.randint(3, 5)
     $ mc_health -= esdmgrandomizer
     hide screen esther_speak with easeouttop
     $ renpy.pause(1.0, hard=True)
@@ -300,7 +314,7 @@ label es_move2:
         show esther idle
     voice sustain
     "FLOODING PROTOCOL ACTIVATED. PLEASE REACH HIGHER GROUND."
-    $ esdmgrandomizer = renpy.random.randint(2, 3)
+    $ esdmgrandomizer = renpy.random.randint(3, 5)
     $ mc_health -= esdmgrandomizer
     hide screen esther_speak with easeouttop
     $ renpy.pause(1.0, hard=True)
