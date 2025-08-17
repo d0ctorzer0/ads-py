@@ -41,6 +41,18 @@ transform egal_size2:
 transform example_size:
     zoom 0.12
 
+transform notemove:
+    on hover:
+        xpos 1300
+
+        ypos 700
+        ease 0.2 ypos 570
+    on idle:
+        xpos 1300
+
+        ypos 570
+        ease 0.2 ypos 700
+
 define gentleswitch = { "master" : Dissolve(0.2) }
 define vigswitch = Dissolve(0.1)
 define gallswitch = Dissolve(0.3)

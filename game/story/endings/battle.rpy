@@ -22,6 +22,9 @@ init python: # this is the code that determines what font and color to use for t
     renpy.register_style_preference("text", "battle", style.say_dialogue, "xsize", 1200)
 
 screen main():
+    imagebutton:
+        auto "gui/boss/%s_note.png" xpos 1300 ypos 570 at notemove
+        action NullAction()
     add "gui/boss/terminal.png"
     add "gui/boss/health.png"
     bar:
@@ -47,6 +50,15 @@ screen main():
         add "gui/boss/top_ap.png"
     elif ap_count == 1:
         add "gui/boss/bot_ap.png"
+    key "K_LALT" action Show("tutorial", transition=dissolve)
+    key "K_RALT" action Show("tutorial", transition=dissolve)
+
+screen tutorial:
+    add "gui/options/black.png"
+    add "gui/boss/tutorial.png"
+    dismiss action Hide("tutorial", transition=dissolve)
+    key "K_RALT" action Hide("tutorial", transition=dissolve)
+    key "K_LALT" action Hide("tutorial", transition=dissolve)
 
 # disables all mouse input so player can't skip through cutscenes
 screen disable_Lmouse():
@@ -80,7 +92,10 @@ label battle: # AND GUESS WHAT? IT STILL DOESN'T WORK
     "WELCOME TO APERTURE SCIENCE CORE CONTROL CENTER (ASC3)"
 
     "BOOTING{cps=1}..."
-    "BOOT SUCCESSFUL"
+    "BOOT SUCCESSFUL. PRESS [[ ALT ] VIEW INTERFACE INFORMATION."
+    $ renpy.pause(2.0, hard=True)
+    
+    hide screen disable_Lmouse
 
 label cmdinput:
     if not mc_health > 0:
