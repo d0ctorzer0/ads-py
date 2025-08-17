@@ -995,33 +995,33 @@ label escape_rob:
         achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
-    r "{color=#fff}This is insane. Did you know about this? The sky? And... oh, the clouds, goddamn!"
-    r "{color=#fff}I've only seen this stuff through a screen!"
+    rw "{color=#fff}This is insane. Did you know about this? The sky? And... oh, the clouds, goddamn!"
+    rw "{color=#fff}I've only seen this stuff through a screen!"
 
     n "{color=#fff}...Rob's never seen the surface."
 
-    r "{color=#fff}This is crazy! It's all real - real grass, real blue and green and..."
-    r "{color=#fff}Oh, feel that fresh air through your circuits!"
-    r "{color=#fff}...or lungs, in your case."
-    r "{color=#fff}It's so much better than that stuffy mess of a gym..."
+    rw "{color=#fff}This is crazy! It's all real - real grass, real blue and green and..."
+    rw "{color=#fff}Oh, feel that fresh air through your circuits!"
+    rw "{color=#fff}...or lungs, in your case."
+    rw "{color=#fff}It's so much better than that stuffy mess of a gym..."
 
     mccut "{color=#fff}I told you so."
 
-    r "{color=#fff}You sure did! Haha!"
-    r "{color=#fff}God... I can't believe we made it out of there."
+    rw "{color=#fff}You sure did! Haha!"
+    rw "{color=#fff}God... I can't believe we made it out of there."
 
     n "{color=#fff}He turns to look at you."
 
-    r "{color=#fff}I can't believe you {i}got{/i} me out of there, I... hah... I can't thank you enough, Doc."
-    r "{color=#fff}Wow. You're real pretty in this light."
+    rw "{color=#fff}I can't believe you {i}got{/i} me out of there, I... hah... I can't thank you enough, Doc."
+    rw "{color=#fff}Wow. You're real pretty in this light."
 
     mccut "{color=#fff}Thank you."
 
-    r "{color=#fff}You've got such a... glow around you, Doc. And I don't want to leave it."
-    r "{color=#fff}I think I love ya. As silly as that sounds."
-    r "{color=#fff}And I KNOW, I {i}know{/i}, alright, we ain't known each other long..."
-    r "{color=#fff}I'm just hopin' you'll give me a chance."
-    r "{color=#fff}I mean... I'm sure we'll have plenty of time now, right?"
+    rw "{color=#fff}You've got such a... glow around you, Doc. And I don't want to leave it."
+    rw "{color=#fff}I think I love ya. As silly as that sounds."
+    rw "{color=#fff}And I KNOW, I {i}know{/i}, alright, we ain't known each other long..."
+    rw "{color=#fff}I'm just hopin' you'll give me a chance."
+    rw "{color=#fff}I mean... I'm sure we'll have plenty of time now, right?"
 
     mccut "{color=#fff}Haha. That we will."
 

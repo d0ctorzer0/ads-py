@@ -455,15 +455,15 @@ label saveccunknown:
     if cctv == True:
         mccut "{color=#fff}Is that the CCTV? The one I took from your room?"
         
-        u "{color=#fff}Uh - yeah. I broke into the office and stole it back from ya. Sorry, Doc."
-        u "{color=#fff}Figured out after some snooping around that it used to be used for transporting CC around."
+        uw "{color=#fff}Uh - yeah. I broke into the office and stole it back from ya. Sorry, Doc."
+        uw "{color=#fff}Figured out after some snooping around that it used to be used for transporting CC around."
 
         c "{color=#fff}He's right. I-I had no idea it was with him this whole time, haha..."
     elif cctv == False:
         mccut "{color=#fff}What is that thing?"
 
-        u "{color=#fff}It's the... uh, CCTV. Cancer Core Transportation Vehicle, or somethin' like that."
-        u "{color=#fff}Used to be used for hauling CC around campus. Guess it got stuffed into my old closet a while back."
+        uw "{color=#fff}It's the... uh, CCTV. Cancer Core Transportation Vehicle, or somethin' like that."
+        uw "{color=#fff}Used to be used for hauling CC around campus. Guess it got stuffed into my old closet a while back."
 
         c "{color=#fff}I'm glad it was left with you and not thrown in an incinerator..."
     
@@ -476,11 +476,11 @@ label saveccunknown:
         c "{color=#fff}I..."
         c "{color=#fff}Okay. I trust you. But please... be careful. I wouldn't want anything to happen to you."
     if lock_unknown:
-        u "{color=#fff}You better not, Doc. It's dangerous. The whole place could come crashing down any minute."
+        uw "{color=#fff}You better not, Doc. It's dangerous. The whole place could come crashing down any minute."
         mccut "{color=#fff}Neither of you have hands. I'm your only hope."
 
-        u "{color=#fff}But..."
-        u "{color=#fff}Ugh. You're right, as usual. C'mere. Be careful - if ya got hurt, I wouldn't forgive myself."
+        uw "{color=#fff}But..."
+        uw "{color=#fff}Ugh. You're right, as usual. C'mere. Be careful - if ya got hurt, I wouldn't forgive myself."
     
     n "{color=#fff}You approach the two of them carefully."
     n "{color=#fff}With gentle manuvering, you successfully detach CC from both his tubes and his management rails."
@@ -492,7 +492,7 @@ label saveccunknown:
         c "{color=#fff}You should handle me like that more often, haha..."
         n "{color=#fff}The other core looks at CC with a smirk."
     if lock_unknown:
-        u "{color=#fff}Wish you were handlin' {i}me{/i} like that, haha..."
+        uw "{color=#fff}Wish you were handlin' {i}me{/i} like that, haha..."
         n "{color=#fff}CC looks at him with a suspicious smile of sorts."
     
     n "{color=#fff}You plug the canister on the back into CC's ports and lock them in place."
