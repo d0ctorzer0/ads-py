@@ -668,7 +668,7 @@ label robday2:
     hide e b
 
     r "I am having some trouble with my equipment, though. Rowing machine's busted."
-    r "Come to think of it, it was prolly busted yesterday and I just forgot to mention it."
+    r "Come to think of it, it was prolly busted yesterday and I forgot to mention it."
 
     menu:
         extend ""

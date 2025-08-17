@@ -620,7 +620,7 @@ label unknownday1cont:
     n "She scoffs."
 
     show e annoy
-    e "We test more than robots here, thank you very much. Botany is just as much science as any other path."
+    e "We test more than just robots here, thank you very much. Botany is just as much science as any other path."
 
     show e
     n "She continues to rant about botany's importance to Aperture as you approach an unusually well-lit room."
@@ -1129,7 +1129,7 @@ label robday1cont:
     n "As you and Miss Esther proceed back to the offices, she congratulates you on a job well-done."
 
     show e with easeinright
-    e "Despite all the interruptions, you made it through your whole route. And in record time, too."
+    e "Despite all the interruptions, you made it through your route. And in record time, too."
 
     mc "Certainly an interesting cast of characters."
 

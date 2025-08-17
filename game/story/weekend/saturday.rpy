@@ -262,7 +262,7 @@ label satkris:
         jump satkrisneg
 
 label satkrispos:
-    k "Oh my, Doctor, you caught me off-guard."
+    k "Oh, Doctor, you caught me off-guard."
 
     show k
     k "What are you doing here? Doesn't Maintenance have weekends off?"
@@ -378,11 +378,11 @@ label satheath:
         cores_visited += 1
     scene heathroom with fade
     n "You enter into Section C8's break room. An actual human greets you this time."
-    cw "Oh, you're that new temp, right?"
+    cw "Oh, uh, you're that new temp, right?"
 
     mc "Uh... yes, that's me."
 
-    cw "Cool. Heath's around here somewhere. She's on your route, right?"
+    cw "Cool. Uh, Heath's around here somewhere. She's on your route, right?"
 
     mc "Yeah."
 
@@ -658,7 +658,7 @@ label satgreg:
             $ romance_points["Greg"] -= 3
         "Maybe just... an orange juice?":
             $ romance_points["Greg"] += 3
-            bar "The greenhouse doesn't grow oranges. Is apple juice okay?"
+            bar "Uh, the greenhouse doesn't grow oranges. Is apple juice okay?"
             mc "Yes, that's fine."
         "Screw it. Can you make a Cosmo?":
             $ romance_points["Greg"] += 3
@@ -716,7 +716,7 @@ label satgreg_pos:
     g "I guess I like sports a little. Rob tells me a lot about them, and they seem interesting enough."
     show g
     g "Have you seen Heath's magic tricks? I like those too. Real impressive."
-    g "I guess I'm kinda just a people person. In a way. Not to say I'm... people. But."
+    g "I guess I'm kinda just a people person. In a way. Not that I'm... people. But."
     show g look
     g "I just... really like getting to know everyone here in Aperture."
     show g
@@ -738,7 +738,7 @@ label satgreg_pos:
             achievement.progress("ach_picture", persistent.cutscenes_seen)
             achievement.sync()
         n "{color=#fff}Gregory looks down and begins speaking softly."
-        g "{color=#fff}No, I need you to go closer!!"
+        g "{color=#fff}No, I need to go closer!!"
         g "{color=#fff}Less left, more right! Come on!"
         g "{color=#fff}T-They're looking at us, we need to {i}move!{/i}"
         g "{color=#fff}I'm so sorry Doctor, can you give me just a minute?"

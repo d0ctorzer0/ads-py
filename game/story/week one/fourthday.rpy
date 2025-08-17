@@ -558,7 +558,7 @@ label robday4:
 
     hide g with easeoutright
     show r with easeinright
-    r "Greg here's one-a-my best friends. He's technically not part of recreation, but who cares?"
+    r "Greg here's one-a-my best friends. He's technically not a part of recreation, but who cares?"
     show r angry
     r "He also thinks he's one personality core even though he's actually three of 'em."
     show r
@@ -568,7 +568,7 @@ label robday4:
 
     g "I-I-I don't know what he's talking about. I am {i}one{/i} personality core."
     show g look
-    g "Haha... who goes around... pretending to be three cores in one?"
+    g "Who goes around... pretending to be three cores in one?"
     show g aaa
     g "That's ridiculous! Right?"
 
@@ -606,7 +606,7 @@ label impressgreg:
     n "Suddenly, Gregory's... \"legs\" wobble."
 
     show g aaa at bounce
-    g "Oh! I need to, uh, go. I think I'm... malfunctioning."
+    g "Oh! I need to, uh, go. I think I'm, uh... malfunctioning."
 
     jump robday4cont
 
@@ -621,7 +621,7 @@ label offendgreg:
     n "Suddenly, Gregory's... \"legs\" wobble."
 
     show g aaa at bounce
-    g "Oh! I need to, uh, go. I think I'm... malfunctioning."
+    g "Oh! I need to, uh, go. I think I'm, uh... malfunctioning."
 
     jump robday4cont
 

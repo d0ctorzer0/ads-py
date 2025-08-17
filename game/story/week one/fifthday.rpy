@@ -157,7 +157,7 @@ label impresskris5:
         k "Uh, before you leave, Doctor..."
         k "You've been very kind to me this week. I'd just like to... extend my gratitude to you."
         show k
-        k "The man who worked your position before you, he..."
+        k "The man who worked your position before, he..."
         show k angry
         k "Was not as... gentle as you are."
 
@@ -816,7 +816,7 @@ label robday5:
     show r yell with easeinright
     r "Look! Look, I'm sorry, Essie. It gets boring as hell in here sometimes..."
     show r angry
-    r "And I got no games to watch on Fridays 'cuz they redirect my electricity to hold meetings upstairs!"
+    r "And I got no games to watch on Fridays 'cuz they redirect all my electricity to hold meetings upstairs!"
     r "So I fell asleep. What's the big deal?"
 
     menu:
