@@ -44,7 +44,7 @@ label END_cctrue:
     cc "We're... we're going to go see a..."
     mc "A waterfall, yes. At the end of this trail."
     show c happy offrail
-    cc "Oh. Oh my. I didn't think..."
+    cc "Oh. Oh my. I didn't..."
     show c close offrail
     n "He coughs harshly."
     show c offrail

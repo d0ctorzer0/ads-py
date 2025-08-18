@@ -1,17 +1,17 @@
-renpy.solid
-renpy.blur renpy.geometry
-renpy.alpha renpy.geometry renpy.texture
 renpy.dissolve renpy.geometry
-renpy.alpha renpy.geometry renpy.solid
+renpy.solid
 renpy.dissolve renpy.dissolve
-renpy.texture
-=======
-renpy.texture renpy.texture
-renpy.ftl
->>>>>>> Stashed changes
-renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
+renpy.alpha renpy.geometry renpy.texture
 renpy.geometry renpy.texture
-<<<<<<< Updated upstream
+renpy.ftl
+renpy.blur renpy.geometry
+>>>>>>> Stashed changes
 renpy.alpha renpy.texture
+renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
+<<<<<<< Updated upstream
+=======
+renpy.alpha renpy.geometry renpy.solid
 renpy.geometry renpy.solid
+renpy.texture renpy.texture
+renpy.texture
 renpy.alpha renpy.solid

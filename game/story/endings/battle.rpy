@@ -221,7 +221,7 @@ label cmddelete:
     python:
         ap_count -= 2
         cmdexecuted = True
-        dmgrandomizer = renpy.random.randint(3, 4)
+        dmgrandomizer = renpy.random.randint(4, 5)
         es_health -= dmgrandomizer
     "DELETE COMMAND EXECUTED."
     $ renpy.pause(1.0, hard=True)
@@ -375,7 +375,7 @@ label esthertalk3:
     "YOU: \"I can't believe this, Miss Esther. All this time, you were planning this?\""
     show screen esther_print with easeintop
     voice "voice/print3.ogg"
-    $ renpy.pause(12.0, hard=True)
+    $ renpy.pause(12.5, hard=True)
     if persistent.screenshake == True:
         show esther downright with hpunch
     else:
