@@ -196,39 +196,39 @@ label END_aspentrue:
     show a offrail with easeinbottom
     mc "You know, you haven't called me Doctor since we left."
     if name.lower() == 'dr. rowan':
-        a "Would you prefer I call you Rowan?"
+        a "Would you prefer I call you... Rowan?"
     elif name.lower() == 'dr. cait':
-        a "Would you prefer I call you Cait?"
+        a "Would you prefer I call you... Cait?"
     elif name.lower() == 'ross':
-        a "Would you prefer I call you Ross?"
+        a "Would you prefer I call you... Ross?"
     elif name.lower() == 'avery':
-        a "Would you prefer I call you Avery?"
+        a "Would you prefer I call you... Avery?"
     elif name.lower() == 'hazel':
-        a "Would you prefer I call you Hazel?"
+        a "Would you prefer I call you... Hazel?"
     elif name.lower() == 'len':
-        a "Would you prefer I call you Len?"
-    elif name.lower() == 'evely':
-        a "Would you prefer I call you Evely?"
+        a "Would you prefer I call you... Len?"
+    elif name.lower() == 'evelyn':
+        a "Would you prefer I call you... Evelyn?"
     elif name.lower() == 'lynne':
-        a "Would you prefer I call you Lynne?"
+        a "Would you prefer I call you... Lynne?"
     elif name.lower() == 'mo':
-        a "Would you prefer I call you Mo?"
+        a "Would you prefer I call you... Mo?"
     elif name.lower() == 'bemb':
-        a "Would you prefer I call you Bemb?"
+        a "Would you prefer I call you... Bemb?"
     elif name.lower() == 'unny':
-        a "Would you prefer I call you Unny?"
+        a "Would you prefer I call you... Unny?"
     elif name.lower() == 'cass':
-        a "Would you prefer I call you Cass?"
+        a "Would you prefer I call you... Cass?"
     elif name.lower() == 'tyler':
-        a "Would you prefer I call you Tyler?"
+        a "Would you prefer I call you... Tyler?"
     elif name.lower() == 'john':
-        a "Would you prefer I call you John?"
+        a "Would you prefer I call you... John?"
     elif name.lower() == 'brian':
-        a "Would you prefer I call you Brian?"
+        a "Would you prefer I call you... Brian?"
     elif name.lower() == 'caz':
-        a "Would you prefer I call you Caz?"
+        a "Would you prefer I call you... Caz?"
     elif name.lower() == 'izzy':
-        a "Would you prefer I call you Izzy?"
+        a "Would you prefer I call you... Izzy?"
     else:
         jump END_aspentrue2
     n "You laugh."
