@@ -15,7 +15,7 @@ define k = Character(_("Kris"), color="#25a68c" )
 define h = Character(_("Heath"), color="#7f30e0")
 
 define u = Character(_("???"), color="#725e42")
-define uw = Character(_("???"), color="#725e42", who_outlines=[(4, "#ffffff", absolute(0), absolute(0))])
+define ucg = Character(_("???"), color="#725e42", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 define ry = Character(_("Ryland"), color="#725e42")
 define rycut = Character(_("Ryland"), color="#725e42", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 
@@ -39,7 +39,6 @@ define gall = Character(_("Gregory (all)"), color="#8c6f57")
 
 define r = Character(_("Rob"), color="#8a0d0d")
 define rcg = Character(("Rob"), color="#8a0d0d", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
-define rw = Character(("Rob"), color="#8a0d0d", who_outlines=[(4, "#ffffff", absolute(0), absolute(0))])
 
 define wu = Character(_("???"), color="#009aab")
 define w = Character(_("Wheatley"), color="#009aab")
