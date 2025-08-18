@@ -115,9 +115,9 @@ label saveaspen:
             persistent.ac4 = True
         achievement.progress("ach_picture", persistent.cutscenes_seen)
         achievement.sync()
-    n "{color=#fff}Instantly, you're soaked to the bone. Shaking off the cold, you look down to see Aspen off their management rail."
+    n "{color=#fff}Instantly, you're soaked to the bone. Shaking off the cold, you look down to see Aspen has fallen off their management rail."
 
-    a "{color=#fff}Doctor! Oh, I'm so happy to see you! The... the management rail got slippery, and I fell off, I..."
+    a "{color=#fff}Doctor! Oh, I'm so happy to see you!"
     a "{color=#fff}What's going on out there?"
 
     mccut "{color=#fff}I'm not really sure, but they're evacuating everyone."
