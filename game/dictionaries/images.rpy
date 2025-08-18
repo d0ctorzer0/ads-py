@@ -98,7 +98,7 @@ image laser:
 
 # ESTHER BOSS IMAGES #################################
 
-image esther idle:
+image esther idle old:
     "gui/boss/esther/idle_1.png"
     pause .5
     "gui/boss/esther/idle_2.png"
@@ -111,7 +111,34 @@ image esther idle:
     pause .5
     repeat
 
-image esther snob:
+image esther idle:
+    "gui/boss/esther/i1.png"
+    pause .35
+    "gui/boss/esther/i3.png"
+    pause .35
+    "gui/boss/esther/i5.png"
+    pause .35
+    "gui/boss/esther/i7.png"
+    pause .35
+    "gui/boss/esther/i9.png"
+    pause .35
+    "gui/boss/esther/i11.png"
+    pause .35
+    "gui/boss/esther/i13.png"
+    pause .35
+    "gui/boss/esther/i15.png"
+    pause .35
+    "gui/boss/esther/i17.png"
+    pause .35
+    "gui/boss/esther/i19.png"
+    pause .35
+    "gui/boss/esther/i21.png"
+    pause .35
+    "gui/boss/esther/i23.png"
+    pause .35
+    repeat
+
+image esther snob old:
     "gui/boss/esther/snob_1.png"
     pause .5
     "gui/boss/esther/snob_2.png"
@@ -124,7 +151,44 @@ image esther snob:
     pause .5
     repeat
 
-image esther stun:
+image esther snob:
+    "gui/boss/esther/s1.png"
+    pause .35
+    "gui/boss/esther/s2.png"
+    pause .35
+    "gui/boss/esther/s3.png"
+    pause .35
+    "gui/boss/esther/s4.png"
+    pause .35
+    "gui/boss/esther/s5.png"
+    pause .35
+    "gui/boss/esther/s6.png"
+    pause .35
+    "gui/boss/esther/s7.png"
+    pause .35
+    "gui/boss/esther/s8.png"
+    pause .35
+    "gui/boss/esther/s9.png"
+    pause .35
+    "gui/boss/esther/s10.png"
+    pause .35
+    "gui/boss/esther/s11.png"
+    pause .35
+    "gui/boss/esther/s12.png"
+    pause .35
+    "gui/boss/esther/s13.png"
+    pause .35
+    "gui/boss/esther/s14.png"
+    pause .35
+    "gui/boss/esther/s15.png"
+    pause .35
+    "gui/boss/esther/s16.png"
+    pause .35
+    "gui/boss/esther/s17.png"
+    pause .35
+    repeat
+
+image esther stun old:
     "gui/boss/esther/stun_1.png"
     pause .5
     "gui/boss/esther/stun_2.png"
@@ -139,14 +203,28 @@ image esther stun:
     pause .5
     repeat
 
+image esther stun:
+    "gui/boss/esther/y1.png"
+    pause .35
+    "gui/boss/esther/y2.png"
+    pause .35
+    "gui/boss/esther/y3.png"
+    pause .35
+    "gui/boss/esther/y4.png"
+    pause .35
+    "gui/boss/esther/y5.png"
+    pause .35
+    "gui/boss/esther/y6.png"
+    pause .35
+    "gui/boss/esther/y7.png"
+    pause .35
+    repeat
+
 image esther up:
     "gui/boss/esther/esther up.png"
 
-image esther down:
-    "gui/boss/esther/esther down.png"
-
-image esther downleft:
-    "gui/boss/esther/esther downleft.png"
+image esther downright:
+    "gui/boss/esther/esther downright.png"
 
 image esther squint:
     "gui/boss/esther/esther squint.png"

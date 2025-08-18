@@ -345,9 +345,9 @@ label esthertalk1:
     voice "voice/print1.ogg"
     $ renpy.pause(13.0, hard=True)
     if persistent.screenshake == True:
-        show esther down with hpunch
+        show esther downright with hpunch
     else:
-        show esther down
+        show esther downright
         $ renpy.pause(0.2, hard=True)
     $ es_health -= 3
     if mc_health < 10:
@@ -363,9 +363,9 @@ label esthertalk2:
     voice "voice/print2.ogg"
     $ renpy.pause(16.0, hard=True)
     if persistent.screenshake == True:
-        show esther down with hpunch
+        show esther downright with hpunch
     else:
-        show esther down
+        show esther downright
         $ renpy.pause(0.2, hard=True)
     $ es_health -= 3
     if mc_health < 10:
@@ -381,9 +381,9 @@ label esthertalk3:
     voice "voice/print3.ogg"
     $ renpy.pause(12.0, hard=True)
     if persistent.screenshake == True:
-        show esther down with hpunch
+        show esther downright with hpunch
     else:
-        show esther down
+        show esther downright
         $ renpy.pause(0.2, hard=True)
     $ es_health -= 3
     if mc_health < 10:
@@ -519,8 +519,8 @@ label continuegame:
     e "{color=#fff}You will not see me again. Goodbye."
     hide screen cuttextbox
     $ battle = False
-    window show
-    scene office with fade
+    window auto
+    scene black with fade
     $ cutscenetextbox = False
     $ achievement.grant("ach_unionize")
     $ achievement.sync()

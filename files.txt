@@ -1120,8 +1120,8 @@ gui\boss\speakingbox_8.png
 gui\boss\terminal.png
 gui\boss\terminalcombo.png
 gui\boss\top_ap.png
-gui\boss\esther\esther down.png
-gui\boss\esther\esther downleft.png
+gui\boss\esther\esther downright.png
+gui\boss\esther\esther downrightleft.png
 gui\boss\esther\esther squint.png
 gui\boss\esther\esther up.png
 gui\boss\esther\idle_1.png
