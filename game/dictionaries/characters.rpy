@@ -30,12 +30,16 @@ define ccg = Character(("Cancer Core"), color="#1140a4", who_outlines=[(4, "#000
 define gu = Character(_("???"), color="#c9ae16")
 define g = Character(_("Gregory"), color="#c9ae16")
 define g1 = Character(_("Gregory (top)"), color="#c9ae16")
+define g1cg = Character(_("Gregory (top)"), color="#c9ae16", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 define g1e = Character(_("Greg"), color="#c9ae16")
 define g2 = Character(_("Gregory (middle)"), color="#da5e34")
+define g2cg = Character(_("Gregory (middle)"), color="#da5e34", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 define g2e = Character(_("Gore"), color="#da5e34") # as in... al gore... haha...
 define g3 = Character(_("Gregory (bottom)"), color="#b93c3c")
+define g3cg = Character(_("Gregory (bottom)"), color="#b93c3c", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 define g3e = Character(_("Rie"), color="#b93c3c")
 define gall = Character(_("Gregory (all)"), color="#8c6f57")
+define gallcg = Character(_("Gregory (all)"), color="#8c6f57", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 
 define r = Character(_("Rob"), color="#8a0d0d")
 define rcg = Character(("Rob"), color="#8a0d0d", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
