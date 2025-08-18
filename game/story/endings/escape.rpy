@@ -344,10 +344,10 @@ label escape_aspen:
     if persistent.flash == True:
         show flash
     show a offrail with easeinbottom
-    a "H-Here it is."
+    a "Here it is."
     a "I'm not sure we're supposed to use these -"
     a "Actually, we're probably definitely not supposed to use these, haha."
-    a "B-But I don't think we have any other choice, so..."
+    a "But I don't think we have any other choice, so..."
 
     mc "No. We really don't."
 
@@ -379,7 +379,7 @@ label escape_aspen:
     show a look offrail
     a "I think I'm ready, then."
     show a offrail
-    a "I... I can't wait to see what real grass looks like."
+    a "I can't wait to see what real grass looks like."
 
     n "Steeling yourself, you hold tighter onto Aspen and begin the ascent."
 
@@ -416,18 +416,18 @@ label escape_aspen:
     n "{color=#fff}You lay Aspen down in front of you. They look up and around themselves in wonder."
 
     acg "{color=#fff}These - these are {i}Taraxacum officinale{/i}, aren't they? Dandelions!"
-    acg "{color=#fff}They're so plentiful. And so yellow."
-    acg "{color=#fff}And... oh, it's all so wonderful. I..."
+    acg "{color=#fff}They're so plentiful. And so yellow, and..."
+    acg "{color=#fff}Oh, it's all so wonderful. I..."
 
     n "{color=#fff}Aspen turns to look up at you."
 
     acg "{color=#fff}You gave me this opportunity, Doctor."
     acg "{color=#fff}You almost got yourself... killed... all for me. You..."
-    acg "{color=#fff}You came to save me, even though it was flooding. You rushed me through fires and..."
-    acg "{color=#fff}And because of that, I get to see this."
-    acg "{color=#fff}Y-You..."
+    acg "{color=#fff}You even came to save... me. Even though it was flooding."
+    acg "{color=#fff}You rushed through fires and... all because of that, I get to see this."
+    acg "{color=#fff}You..."
     acg "{color=#fff}I think I... I think I love you, Doctor."
-    acg "{color=#fff}A-And I know that's a little strange to hear from a core like me, haha, so I understand if you..."
+    acg "{color=#fff}And... I know that's a little strange to hear from a core like me, so I understand if you..."
     
     n "{color=#fff}They sigh."
 
@@ -473,8 +473,8 @@ label escape_aspen:
     mc "Frankly, I don't think they care what happens."
 
     a "That... makes me feel a little better, I suppose."
-    a "What are we supposed to do now though?"
-    a "Both of us are out a job..."
+    a "What are we supposed to do... now, though?"
+    a "Both of us are out of a job..."
 
     mc "I'll find another one."
     mc "We'll just have to... figure it out, I guess."

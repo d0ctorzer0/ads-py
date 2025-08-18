@@ -122,7 +122,7 @@ label saveaspen:
 
     mccut "{color=#fff}I'm not really sure, but they're evacuating everyone."
 
-    a "{color=#fff}Wh... why didn't my coworkers come back for me, then?"
+    a "{color=#fff}Why didn't... my coworkers come back for me, then?"
 
     mccut "{color=#fff}I think... I think they're only evacuating human employees."
 
@@ -130,7 +130,7 @@ label saveaspen:
 
     mccut "{color=#fff}That's not important right now, though. This room is flooding and soon enough we won't be able to get this door open."
 
-    a "{color=#fff}Y-You're right, Doctor. We should get out of here."
+    a "{color=#fff}You're right, Doctor. W-We should get out of here."
 
     hide screen cuttextbox
     window auto
@@ -141,13 +141,13 @@ label saveaspen:
 
     n "You grab Aspen by the handles and lift them up to you. They're slippery."
 
-    a "O-Oh, I didn't expect you to... haha... oh my."
+    a "Oh, I didn't expect you to... haha... oh my."
 
     mc "Do you know a way out other than the surface elevators?"
 
     show a offrail
 
-    a "There's a set of stairs right behind the greenhouse - it's how they bring in fresh samples."
+    a "There's a set of stairs right behind the greenhouse - it's how they bring fresh samples in."
     a "It's only used in rare cases though so it's not in the best condition, but..."
 
     mc "Doesn't matter. It's our only chance. Let's go."

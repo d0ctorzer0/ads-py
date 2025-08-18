@@ -1,10 +1,10 @@
-2025-08-18 06:20:33 UTC
+2025-08-18 08:38:40 UTC
 macOS-11.6-arm64-arm-64bit
 Ren'Py 8.3.7.25031702
 
-Early init took 0.06s
+Early init took 0.05s
 Loading error handling took 0.03s
-Loading script took 0.15s
+Loading script took 0.18s
 Loading save slot metadata took 0.06s
 Loading persistent took 0.00s
 Running init code took 0.04s
@@ -15,7 +15,7 @@ Index archives took 0.00s
 Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.04s
+Initial gc took 0.06s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
@@ -28,7 +28,7 @@ Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.35s
+Interface start took 1.16s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -40,3 +40,9 @@ Version: b'2.1 Metal - 71.7.1'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
 Maximum texture size: 4096x4096
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
+Can't find a place to rollback to. Not rolling back.
