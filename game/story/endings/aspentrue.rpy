@@ -197,8 +197,8 @@ label END_aspentrue:
     mc "You know, you haven't called me Doctor since we left."
     if name.lower() == 'dr. rowan':
         a "Would you prefer I call you Rowan?"
-    elif name.lower() == 'lily':
-        a "Would you prefer I call you Lily?"
+    elif name.lower() == 'dr. cait':
+        a "Would you prefer I call you Cait?"
     elif name.lower() == 'ross':
         a "Would you prefer I call you Ross?"
     elif name.lower() == 'avery':
@@ -223,8 +223,8 @@ label END_aspentrue:
         a "Would you prefer I call you Tyler?"
     elif name.lower() == 'john':
         a "Would you prefer I call you John?"
-    elif name.lower() == 'jeremy':
-        a "Would you prefer I call you Jeremy?"
+    elif name.lower() == 'brian':
+        a "Would you prefer I call you Brian?"
     elif name.lower() == 'caz':
         a "Would you prefer I call you Caz?"
     elif name.lower() == 'izzy':
