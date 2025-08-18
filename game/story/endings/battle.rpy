@@ -269,16 +269,12 @@ label estherturn:
 
 label esthermove:
     $ es_move = renpy.random.randint(1, 4)
-    $ lowerchance = renpy.random.randint(1, 2)
     if es_move == 1:
         jump es_move1
     elif es_move == 2:
         jump es_move2
     elif es_move == 3:
-        if lowerchance == 1:
-            jump esthermove
-        else:
-            jump es_move3
+        jump es_move3
     elif es_move == 4:
         if mc_poisoned == True:
             jump esthermove
@@ -314,7 +310,7 @@ label es_move2:
         show esther idle
     voice sustain
     "FLOODING PROTOCOL ACTIVATED. PLEASE REACH HIGHER GROUND."
-    $ esdmgrandomizer = renpy.random.randint(3, 4)
+    $ esdmgrandomizer = renpy.random.randint(1, 3)
     $ mc_health -= esdmgrandomizer
     hide screen esther_speak with easeouttop
     $ renpy.pause(1.0, hard=True)
