@@ -210,7 +210,6 @@ label END_gregtrue:
     g1e "Oh, I'm so excited!"
     g1e "What do you two think? Where are we going?"
     show rie close
-    g3e "Can you quiet down, Greg? We just woke up..."
     show gore look
     g2e "Logically, we're going somewhere we've never been."
     show gre
