@@ -147,6 +147,12 @@ label END_ace:
     n "You're glad you got to meet so many... interesting personalities."
     n "You'll definitely be back to visit."
 
+    window hide
+    stop music fadeout 2.0
+    stop music1 fadeout 2.0
+    show screen creditsfadeout with fade
+    $ renpy.pause(2.0, hard=True)
+    hide screen creditsfadeout
     python:
         if persistent.endings_got["ace"] == False:
             persistent.endings_count += 1
@@ -168,6 +174,13 @@ label END_unlikable:
     n "Maybe it's that, or maybe {i}you're{/i} the problem."
     n "Regardless, you can't wait to get back down to Manufacturing..."
     n "...where the cores don't talk back to you."
+
+    stop music fadeout 2.0
+    stop music1 fadeout 2.0
+    window hide
+    show screen creditsfadeout with fade
+    $ renpy.pause(2.0, hard=True)
+    hide screen creditsfadeout
 
     python:
         if persistent.endings_got["unlikeable"] == False:
