@@ -125,8 +125,7 @@ label END_cctrue:
     n "- the first sounds of falling water."
     cc "Is... is that...?"
     mc "That's the sound a waterfall makes."
-    cc "Oh."
-    cc "I..."
+    cc "Oh. I..."
     cc "It sounds incredible."
     cc "It's nothing like the water inside me. I..."
     mc "Just wait until you see it, CC."
@@ -143,8 +142,8 @@ label END_cctrue:
     mc "Here it is, CC."
     mc "Bond Falls."
     show c happy offrail with easeinright
-    cc "My first... my first real waterfall."
-    cc "It's even more incredible in real life."
+    cc "My first... my first real waterfall, it's..."
+    cc "...even more incredible in real life."
     cc "It's... haha... it's huge!"
     cc "It's so loud, so powerful, it..."
     show c close offrail
@@ -162,7 +161,7 @@ label END_cctrue:
     cc "I-I never thought..."
     cc "I would actually {i}see{/i} one. I..."
     show c offrail
-    cc "I..."
+    cc "..."
     show c annoy offrail
     cc "Love..."
     mc "CC..."
@@ -180,11 +179,10 @@ label END_cctrue:
     show c annoy offrail
     cc "Haha, yes. Yes it will, but..."
     cc "I feel it. Internally. My kill code."
-    cc "A failsafe Aperture put into place..."
+    cc "A failsafe Aperture put into place so the... experiment could eventually be put to an end."
     show c close offrail
-    cc "...so the experiment could eventually be put to an end."
-    cc "They've gotten no new data..."
-    cc "So they've sent the code."
+    cc "They've gotten no new data, so..."
+    cc "...they've sent the code."
     mc "I-Isn't there something I can do? I could break back into the facility, try to..."
     show c offrail
     cc "No. Love, I..."
@@ -219,11 +217,11 @@ label END_cctrue:
     cc "{color=#fff}It's wonderful. I..."
     cc "{color=#fff}I haven't felt the air through my circuits since I was activated."
     cc "{color=#fff}The first water-powered core... that's what they said when I was turned on, you know?"
-    cc "{color=#fff}Haha. If only I knew that I'd pass surrounded by the very thing that kept me living..."
-    cc "{color=#fff}But it's different."
+    cc "{color=#fff}Haha. If only they knew that I'd pass away surrounded by the very thing that kept me living..."
+    cc "{color=#fff}But.. this is different."
     cc "{color=#fff}The tubes... they're suffocating."
     cc "{color=#fff}Constant pressure on my chassis."
-    cc "{color=#fff}But now... I feel so free. Like I could fly."
+    cc "{color=#fff}But... now I feel so free. Like I could fly."
     n "{color=#fff}He sighs."
     cc "{color=#fff}I love you."
     cc "{color=#fff}None of this would've been possible without you."

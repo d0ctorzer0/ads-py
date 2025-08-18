@@ -679,7 +679,7 @@ label leave_unknown:
     c "{color=#fff}I think I'm in love with you, Doctor."
     c "{color=#fff}And I know that's a little weird to hear from... a core such as myself. A robot. But..."
     c "{color=#fff}I don't expect reciprocation. Deep down, I guess a part of me hopes..."
-    c "{color=#fff}...you'll feel the same one day."
+    c "{color=#fff}...you'll feel the same way one day."
 
     mccut "{color=#fff}I think I might, CC."
 
@@ -703,8 +703,9 @@ label leave_unknown:
 
     mc "CC?"
 
-    c "I'm... I'm here, Doctor."
-    c "I'm sorry. I'm just exhausted. And... in awe, still."
+    c "I'm... I'm here, Doctor, I'm..."
+    c "Sorry. I'm just exhausted. And... in awe, still."
+    c "And... processing what we just went through. Who I just lost."
     c "Forgive me."
 
     mc "Don't apologize. It's a lot to take in at once."
