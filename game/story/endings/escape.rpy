@@ -164,6 +164,14 @@ label escape_kris:
         $ renpy.movie_cutscene("ENDCREDIT_kris.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Kris"] >= 29:
+        python:
+            if persistent.endings_got["krisgood"] == False:
+                persistent.endings_count += 1
+                persistent.endings_got["krisgood"] = True
+            achievement.progress("ach_seenitall", persistent.endings_count)
+            achievement.sync()
+            achievement.grant("ach_krisgood")
+            achievement.sync()
         jump END_kristrue
 
 label escape_heath:
@@ -337,6 +345,14 @@ label escape_heath:
         $ renpy.movie_cutscene("ENDCREDIT_heath.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Heath"] >= 29:
+        python:
+            if persistent.endings_got["heathgood"] == False:
+                persistent.endings_count += 1
+                persistent.endings_got["heathgood"] = True
+            achievement.progress("ach_seenitall", persistent.endings_count)
+            achievement.sync()
+            achievement.grant("ach_heathgood")
+            achievement.sync()
         jump END_heathtrue
 
 label escape_aspen:
@@ -502,6 +518,14 @@ label escape_aspen:
         $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Aspen"] >= 28:
+        python:
+            if persistent.endings_got["aspengood"] == False:
+                persistent.endings_count += 1
+                persistent.endings_got["aspengood"] = True
+            achievement.progress("ach_seenitall", persistent.endings_count)
+            achievement.sync()
+            achievement.grant("ach_aspengood")
+            achievement.sync()
         jump END_aspentrue
 
 
@@ -723,6 +747,14 @@ label leave_unknown:
         $ renpy.movie_cutscene("ENDCREDIT_cc.webm")
         $ MainMenu(confirm=False)()
     if romance_points["CC"] >= 30:
+        python:
+            if persistent.endings_got["ccgood"] == False:
+                persistent.endings_count += 1
+                persistent.endings_got["ccgood"] = True
+            achievement.progress("ach_seenitall", persistent.endings_count)
+            achievement.sync()
+            achievement.grant("ach_ccgood")
+            achievement.sync()
         jump END_cctrue
 
 label leave_cc:
@@ -927,6 +959,14 @@ label leave_cc:
         $ renpy.movie_cutscene("ENDCREDIT_unknown.webm")
         $ MainMenu(confirm=False)()
     if romance_points["???"] >= 15:
+        python:
+            if persistent.endings_got["unknowngood"] == False:
+                persistent.endings_count += 1
+                persistent.endings_got["unknowngood"] = True
+            achievement.progress("ach_seenitall", persistent.endings_count)
+            achievement.sync()
+            achievement.grant("ach_unknowngood")
+            achievement.sync()
         jump END_unknowntrue    
 
 label escape_rob:
@@ -1097,6 +1137,14 @@ label escape_rob:
         $ renpy.movie_cutscene("ENDCREDIT_rob.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Rob"] >= 29:
+        python:
+            if persistent.endings_got["robgood"] == False:
+                persistent.endings_count += 1
+                persistent.endings_got["robgood"] = True
+            achievement.progress("ach_seenitall", persistent.endings_count)
+            achievement.sync()
+            achievement.grant("ach_robgood")
+            achievement.sync()
         jump END_robtrue  
 
 label escape_gregory:
@@ -1318,4 +1366,12 @@ label escape_gregory:
         $ renpy.movie_cutscene("ENDCREDIT_greg.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Greg"] >= 21:
+        python:
+            if persistent.endings_got["greggood"] == False:
+                persistent.endings_count += 1
+                persistent.endings_got["greggood"] = True
+            achievement.progress("ach_seenitall", persistent.endings_count)
+            achievement.sync()
+            achievement.grant("ach_greggood")
+            achievement.sync()
         jump END_gregtrue  
