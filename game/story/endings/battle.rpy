@@ -221,7 +221,7 @@ label cmddelete:
     python:
         ap_count -= 2
         cmdexecuted = True
-        dmgrandomizer = renpy.random.randint(3, 5)
+        dmgrandomizer = renpy.random.randint(3, 4)
         es_health -= dmgrandomizer
     "DELETE COMMAND EXECUTED."
     $ renpy.pause(1.0, hard=True)
@@ -301,7 +301,7 @@ label es_move1:
     show laser 
     pause 0.4
     hide laser
-    $ esdmgrandomizer = renpy.random.randint(3, 5)
+    $ esdmgrandomizer = renpy.random.randint(3, 4)
     $ mc_health -= esdmgrandomizer
     hide screen esther_speak with easeouttop
     $ renpy.pause(1.0, hard=True)
@@ -314,7 +314,7 @@ label es_move2:
         show esther idle
     voice sustain
     "FLOODING PROTOCOL ACTIVATED. PLEASE REACH HIGHER GROUND."
-    $ esdmgrandomizer = renpy.random.randint(3, 5)
+    $ esdmgrandomizer = renpy.random.randint(3, 4)
     $ mc_health -= esdmgrandomizer
     hide screen esther_speak with easeouttop
     $ renpy.pause(1.0, hard=True)
