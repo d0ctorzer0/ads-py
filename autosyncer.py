@@ -2,7 +2,6 @@ import os
 
 #
 # AUTOSYNCER (Hell yeah!)
-# Devised by Russell's infinite genius.
 #
 # Instructions:
 # - Copy dialogue.tab into old.tab
