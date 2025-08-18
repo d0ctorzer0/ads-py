@@ -278,5 +278,5 @@ label END_unknowntrue:
         achievement.sync()
         achievement.grant("ach_unknowntrue")
         achievement.sync()
-    $ renpy.movie_cutscene("ENDCREDIT_ccunknown.webm")
+    $ renpy.movie_cutscene("ENDCREDIT_unknown.webm")
     $ MainMenu(confirm=False)()

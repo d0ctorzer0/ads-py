@@ -262,5 +262,5 @@ label END_cctrue:
         achievement.sync()
         achievement.grant("ach_cctrue")
         achievement.sync()
-    $ renpy.movie_cutscene("ENDCREDIT_ccunknown.webm")
+    $ renpy.movie_cutscene("ENDCREDIT_cc.webm")
     $ MainMenu(confirm=False)()

@@ -147,7 +147,6 @@ label END_ace:
     n "You're glad you got to meet so many... interesting personalities."
     n "You'll definitely be back to visit."
 
-    n "Credits will go here when they're ready."
     python:
         if persistent.endings_got["ace"] == False:
             persistent.endings_count += 1
@@ -156,6 +155,7 @@ label END_ace:
         achievement.sync()
         achievement.grant("ach_amoh")
         achievement.sync() 
+    $ renpy.movie_cutscene("ENDCREDIT_ace.webm")
     $ MainMenu(confirm=False)()
 
 label END_unlikable:
@@ -169,7 +169,6 @@ label END_unlikable:
     n "Regardless, you can't wait to get back down to Manufacturing..."
     n "...where the cores don't talk back to you."
 
-    n "Credits will go here when they're ready."
     python:
         if persistent.endings_got["unlikeable"] == False:
             persistent.endings_count += 1
@@ -178,6 +177,8 @@ label END_unlikable:
         achievement.sync()
         achievement.grant("ach_unlikeable")
         achievement.sync() 
+    
+    $ renpy.movie_cutscene("ENDCREDIT_unlikable.webm")
     $ MainMenu(confirm=False)()
 
 label battleskip:

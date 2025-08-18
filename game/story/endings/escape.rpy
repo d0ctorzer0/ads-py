@@ -720,7 +720,7 @@ label leave_unknown:
             achievement.sync()
             achievement.grant("ach_ccgood")
             achievement.sync()
-        $ renpy.movie_cutscene("ENDCREDIT_ccunknown.webm")
+        $ renpy.movie_cutscene("ENDCREDIT_cc.webm")
         $ MainMenu(confirm=False)()
     if romance_points["CC"] >= 30:
         jump END_cctrue
@@ -924,7 +924,7 @@ label leave_cc:
             achievement.sync()
             achievement.grant("ach_unknowngood")
             achievement.sync()
-        $ renpy.movie_cutscene("ENDCREDIT_ccunknown.webm")
+        $ renpy.movie_cutscene("ENDCREDIT_unknown.webm")
         $ MainMenu(confirm=False)()
     if romance_points["???"] >= 15:
         jump END_unknowntrue    
