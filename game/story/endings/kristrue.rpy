@@ -174,7 +174,7 @@ label END_kristrue:
     n "American flags decorate the top, and four golden words adorn its face: NEW YORK STOCK EXCHANGE."
     show k happy offrail
     k "This is it! Haha, this is {i}the{/i} building, this - oh, wow."
-    k "One of the oldest and largest stock exchanges in the world! And I'm right here outside it."
+    k "One of the oldest and largest stock exchanges in the world! And I'm right here outside of it."
     mc "You're really gonna love the next bit, then."
     show k sus offrail
     k "W-What do you mean?"

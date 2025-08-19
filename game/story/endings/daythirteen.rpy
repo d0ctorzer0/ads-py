@@ -18,7 +18,7 @@ label day13:
     window auto
 
     n "You wake with a start. Red lights fill your vision, and a grating alarm plays, almost as like it's inside your head."
-    ac "Emergency detected. Automatic wake-up sequence initiated."
+    ac "Emergency detected. Automatic waking sequence initiated."
     ac "Please gather all vital equipment and proceed to the nearest surface elevator."
     ac "Surface elevator nearest SECTION 7, CHAMBER 14: [[ INFORMATION UNKNOWN ]"
 
@@ -698,7 +698,7 @@ label savekris:
     k "{color=#fff}Doctor! Thank god you're here, I..."
     k "{color=#fff}I don't know what's going on. I got to work, started doing my normal thing -"    
     k "{color=#fff}You know what?! I bet I was right! This is it! The \"Operation ACRI\" that's happening right now -"
-    k "{color=#fff}That's how they're getting rid of us, Doctor! I was right! I told you, I..."
+    k "{color=#fff}That's- that's how they're getting rid of us, Doctor! I was right! I told you, I..."
 
     mccut "{color=#fff}Kris, that isn't important right now."
     mccut "{color=#fff}We need to get you out of here."

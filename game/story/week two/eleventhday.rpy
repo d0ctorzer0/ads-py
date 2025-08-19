@@ -871,7 +871,7 @@ label romanceccday11:
     c "I only wish I could say the same about myself."
     
     show c close
-    c "Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence, but - you should be going, now."
+    c "Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence. You should be going, now."
 
     show c
     mc "Yes, CC, you're right. I'll see you tomorrow?"
@@ -928,7 +928,7 @@ label p_ccday11:
     c "I only wish I could say the same about myself."
     
     show c close
-    c "Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence, but - you should be going, now."
+    c "Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence. You should be going, now."
 
     show c
     mc "Yes, CC, you're right. I'll see you tomorrow."
@@ -1058,7 +1058,7 @@ label p_robday11:
 
     show r angry
     r "Picking up, actually. Which is fine."
-    r "It ain't the best 'cuz I can't yell as much, but it's better than being in here alone all day."
+    r "It ain't the best, I can't yell as much, but it's better than being in here alone all day."
 
     mc "That's good, then."
     mc "Aren't you glad people are finally using these machines?"

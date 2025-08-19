@@ -45,7 +45,7 @@ label escape_kris:
 
     k "I..."
     show k sus offrail
-    k "Y-You're right. We should... stop stalling now. It's a... a waste of resources."
+    k "Y-You're right. We should... stop stalling now. It's a... uh... a waste of resources."
 
     n "Clutching Kris tightly under your arm, you begin the ascent up the stairs."
 

@@ -100,7 +100,7 @@ label krisday4:
             jump impresskris4
         "(Let him think.)":
             $ romance_points["Kris"] += 1
-            k "I've reported it to finanical already, left a note that it may have been a mistake, or something in Testing..."
+            k "I've reported it to Financial already, left a note that it may have been a mistake, or something in Testing..."
             show k
             k "I've... done everything I have to. I've done my job."
             k "I'm not sure why I'm still panicking."
@@ -130,7 +130,7 @@ label impresskris4:
     else:
         mc "That's interesting. Can you solve it?"
 
-        k "It's not my JOB to solve it. My job is to WATCH the stock, nothing more, and report to Finanical when it drops below a certain threshold."
+        k "It's not my JOB to solve it. My job is to WATCH the stock, nothing more, and report to Financial when it drops below a certain threshold."
         k "I've already reported it."
 
         mc "Then you've done all you can, yes?"
