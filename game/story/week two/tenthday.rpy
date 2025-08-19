@@ -594,8 +594,8 @@ label aspenday10:
         extend ""
         "I'd never forget you, Aspen.":
             $ lock_aspen = True
-            a "{color=#fff}Oh, Doctor, I..."
-            a "{color=#fff}Goodness. You're something, alright."
+            acg "{color=#fff}Oh, Doctor, I..."
+            acg "{color=#fff}Goodness. You're something, alright."
             jump aspenacceptance
         "I can't accept this. I'm sorry.":
             jump aspenrejection
