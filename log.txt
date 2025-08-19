@@ -1,8 +1,8 @@
-2025-08-19 06:43:03 UTC
+2025-08-19 09:11:25 UTC
 macOS-11.6-arm64-arm-64bit
 Ren'Py 8.3.7.25031702
 
-Early init took 0.05s
+Early init took 0.06s
 Loading error handling took 0.04s
 Loading script took 0.19s
 Loading save slot metadata took 0.06s
@@ -15,20 +15,20 @@ Index archives took 0.00s
 Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.03s
+Initial gc took 0.06s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.03s
+Load screen analysis took 0.04s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.05s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.39s
+Interface start took 0.50s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
