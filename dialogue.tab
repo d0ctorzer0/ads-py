@@ -5464,7 +5464,7 @@ ccday1_a317b416		CC enters the frame. His chassis is dusty, and he has several t
 ccday1_c0f534df	cu	Oh, what's the use? The diagnosis will be the same, regardless.	game/story/week one/firstday.rpy	791	cu "[what]"
 ccday1_a876e033	e	Yes, I know.	game/story/week one/firstday.rpy	794	e "[what]"
 ccday1_4de279a5	n	The core slowly opens its optic and turns to face you. It looks... tired, somehow.	game/story/week one/firstday.rpy	797	n "[what]"
-ccday1_38a460cf	cu	Oh. This one's... new.	game/story/week one/firstday.rpy	799	cu "[what]"
+ccday1_c8d95c69	cu	Oh. This one's... new, isn't it?	game/story/week one/firstday.rpy	799	cu "[what]"
 ccday1_502b8f3a	e	Yes. This is the new temp.	game/story/week one/firstday.rpy	805	e "[what]"
 ccday1_d0442d5d	mc	What's wrong with you?	game/story/week one/firstday.rpy	811	mc "[what]"
 ccday1_5261e58b	cu	What's wrong with me?	game/story/week one/firstday.rpy	813	cu "[what]"

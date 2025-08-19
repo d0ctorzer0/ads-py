@@ -796,7 +796,7 @@ label ccday1:
     show c
     n "The core slowly opens its optic and turns to face you. It looks... tired, somehow."
 
-    cu "Oh. This one's... new."
+    cu "Oh. This one's... new, isn't it?"
 
     hide c
     with easeoutright
