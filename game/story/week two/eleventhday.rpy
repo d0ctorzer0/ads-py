@@ -112,7 +112,7 @@ label romancekrisday11:
     show k flirt
     k "Miss Esther may not be here to usher you along, but you must stay disciplined."
     show k angry
-    k "You do have paperwork to turn in still, after all."
+    k "You do have paperwork to turn in, after all."
 
     mc "You're right."
     
@@ -150,7 +150,7 @@ label p_krisday11:
     show k flirt
     k "Miss Esther may not be here to usher you along, but you must stay disciplined."
     show k angry
-    k "You do have paperwork to turn in still, after all."
+    k "You do have paperwork to turn in, after all."
 
     mc "You're right."
 

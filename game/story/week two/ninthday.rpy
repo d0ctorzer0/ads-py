@@ -93,8 +93,8 @@ label p_krisday9:
         k "Doctor, I know you have your one-on-one supervising shift tomorrow, and..."
         show k flirt
         k "...well, I know I can't ask you to choose me, but..."
-        k "It would be well in your interest to supervise me tomorrow."
-        k "That's all I'll say."
+        k "It would be well within your interest to supervise me tomorrow."
+        k "That's all I can say."
         show e b annoy at bounce
         e "Kris... what are you saying?"
         hide e b 
@@ -357,7 +357,7 @@ label p_heathday9positive:
 
 label p_heathday9neutral:
     show h sad
-    h "Ah, true. He really didn't care much for me, haha."
+    h "Ah, true. He really didn't care for me much, haha."
     show h
     h "Which is why I'm glad you're here! If only temporarily."
     h "Now - Miss Esther's giving me that look, Doc... y'know, the \"shut up before I yell at you\" look?"
@@ -531,7 +531,7 @@ label p_aspenday9neutral:
     a "Thank you, thank you, Doctor."
     a "I knew you'd understand."
     show a look
-    a "But yes, uh... you have nothing to worry about."
+    a "But, uh... you have nothing to worry about."
 
     mc "That's good."
     mc "I should probably be on my way, then - Miss Esther's waiting for me."
@@ -752,7 +752,7 @@ label robday9:
     e "Oh thank god. Our route's almost done."
     e "I am so ready to crash into my... charging... port."
     show e laugh
-    e "...I guess that phrase doesn't really make sense if I don't have a bed, huh?"
+    e "...I guess that phrase doesn't really make sense if I don't have a bed, hm?"
     show e annoy
     e "Anyways. Let's be on our way. Quickly now."
 

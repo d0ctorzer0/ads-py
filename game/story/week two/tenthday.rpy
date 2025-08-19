@@ -153,7 +153,7 @@ label krisconfession:
     mc "Uh... hello, Kris."
 
     show k
-    k "I'm glad you chose to supervise me today. I was... nervous. You wouldn't."
+    k "I'm glad you chose to supervise me today. I was... nervous that you wouldn't."
 
     mc "Ha. You. Nervous."
 
@@ -226,7 +226,7 @@ label krisacceptance:
     show k look with easeinright
     k "Well then. Ahem."
     show k
-    k "Doctor, now that we're... closer..."
+    k "Now that we're... closer..."
     k "I suppose you might want to know some things about me."
     show k flirt
     k "I'm ashamed to admit it, but I do stretch the truth sometimes in terms of my monetary success..."
@@ -290,7 +290,7 @@ label krisacceptance:
             show k angry at bounce
             k "Doctor!"
             show k flirt
-            k "W-Well then. Yes, you should be going, I..."
+            k "W-Well then, I- Yes, you should be going, I..."
             show k
             k "Ahem. Have a good night."
             mc "You too, Kris."

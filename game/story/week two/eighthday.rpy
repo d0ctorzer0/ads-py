@@ -96,7 +96,7 @@ label p_krisday8:
     hide e b
 
     show k
-    k "Oh, do not worry. I will."
+    k "Oh, don't worry. I will."
 
     menu:
         extend ""
@@ -112,7 +112,7 @@ label p_krisday8:
 label p_krisday8neutral:
     show k angry
     k "Yes... I did not appreciate the glitch last week that caused my panic."
-    k "I spoke to Financial about it and they assured me that it shouldn't happen again, but..."
+    k "I spoke to Financial about it and they assured me that it wouldn't happen again, but..."
     k "I doubt their truthfulness."
 
     mc "Why's that?"
@@ -252,7 +252,7 @@ label heathday8:
 
     show h
     h "You thought I was {i}actually{/i} stuck?"
-    h "The GREAT AND AMAZING Heath would NEVER find herself in a predicament she couldn't escape from..."
+    h "The GREAT AND AMAZING Heath would NEVER find herself in a predicament that she couldn't escape from..."
     show h laugh
     h "Lowly knives cannot contain me!"
 
@@ -473,7 +473,7 @@ label gregday8:
 
 label impressgreg8:
     show g look
-    g "Aha, yes, it is, does, uh... thanks!"
+    g "Aha, yes, it does, uh... thanks!"
     g "I didn't have many meetings to set up today, so I got to clock out early."
     show g
     g "But hey! I got to run into you because of it, so, uh..."
@@ -555,7 +555,7 @@ label p_aspenday8:
 
     show a look
     a "They {i}should{/i} have bloomed earlier, but things get weird underground."
-    a "I'm not sure how half of them still bloom at the right time of year anymore."
+    a "I'm not sure how half of them still bloom at the right time of the year anymore."
 
     show a laugh
     a "Regardless - aren't they beautiful?"
