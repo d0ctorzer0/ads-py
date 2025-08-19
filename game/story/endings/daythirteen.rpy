@@ -372,7 +372,7 @@ label saverob:
     mccut "{color=#fff}Oh my god."
 
     hide screen cuttextbox
-    scene gym with fade
+    scene robroom hell with fade
     show flash
     $ cutscenetextbox = False
     window auto
