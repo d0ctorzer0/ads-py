@@ -58,8 +58,6 @@ default persistent.ach_seenitall = True # Get all 18 endings
 default persistent.ach_picture = True # Get Every Single Cutscene
 default persistent.cutscenes_seen = 0
 
-default persistent.endings_count = 0
-default persistent.endings_truecount = 0
 default persistent.endings_got = {
     "kristrue" : False,
     "krisgood" : False,
@@ -79,4 +77,14 @@ default persistent.endings_got = {
     "heartless" : False,
     "ace" : False,
     "unlikeable" : False,
+}
+
+default persistent.true_endings_got = {
+    "kris" : False,
+    "heath" : False,
+    "aspen" : False,
+    "cc" : False,
+    "rob" : False,
+    "greg" : False,
+    "unknown" : False,
 }
