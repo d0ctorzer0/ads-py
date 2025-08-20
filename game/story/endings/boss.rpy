@@ -180,9 +180,9 @@ label END_unlikable:
     hide screen creditsfadeout
 
     python:
-        persistent.endings_got["unlikeable"] = True
+        persistent.endings_got["unlikable"] = True
         achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
-        achievement.grant("ach_unlikeable")
+        achievement.grant("ach_unlikable")
         achievement.sync() 
     
     $ renpy.movie_cutscene("ENDCREDIT_unlikable.webm")

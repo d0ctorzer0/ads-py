@@ -24,7 +24,7 @@ default persistent.ach_unionize = True # Spare Miss Esther
 default persistent.ach_amoh = True # Don't romance anyone
 default persistent.ach_ohno = True # Die (Woo!)
 default persistent.ach_heartless = True # Kill Miss Esther (You MONSTER.)
-default persistent.ach_unlikeable = True # Antisocial
+default persistent.ach_unlikable = True # Antisocial
 default persistent.ach_armor = True # MISS ESTHER SECRET DIALOGUE!!!
 
 # Endings
@@ -76,7 +76,7 @@ default persistent.endings_got = {
     "die" : False,
     "heartless" : False,
     "ace" : False,
-    "unlikeable" : False,
+    "unlikable" : False,
 }
 
 default persistent.true_endings_got = {
