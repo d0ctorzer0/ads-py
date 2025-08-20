@@ -59,6 +59,7 @@ default persistent.ach_picture = True # Get Every Single Cutscene
 default persistent.cutscenes_seen = 0
 
 default persistent.endings_count = 0
+default persistent.endings_truecount = 0
 default persistent.endings_got = {
     "kristrue" : False,
     "krisgood" : False,

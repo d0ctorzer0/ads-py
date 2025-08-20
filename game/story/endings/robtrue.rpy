@@ -252,6 +252,9 @@ label END_robtrue:
         if persistent.endings_got["robtrue"] == False:
             persistent.endings_count += 1
             persistent.endings_got["robtrue"] = True
+            persistent.endings_truecount += 1
+            achievement.progress("ach_ultrobo", persistent.endings_truecount)
+            achievement.sync()
         achievement.progress("ach_seenitall", persistent.endings_count)
         achievement.sync()
         achievement.grant("ach_robtrue")
