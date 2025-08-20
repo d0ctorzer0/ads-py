@@ -286,11 +286,10 @@ label END_aspentrue2:
     $ renpy.pause(2.0, hard=True)
     hide screen creditsfadeout
     python:
-        if persistent.endings_got["aspentrue"] == False:
-            persistent.endings_count += 1
-            persistent.endings_got["aspentrue"] = True
-        achievement.progress("ach_seenitall", persistent.endings_count)
-        achievement.sync()
+        persistent.endings_got["aspentrue"] = True
+        persistent.true_endings_got["aspen"] = True
+        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+        achievement.progress("ach_ultrobo", sum(persistent.true_endings_got.values()))
         achievement.grant("ach_aspentrue")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")

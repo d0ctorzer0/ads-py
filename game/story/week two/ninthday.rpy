@@ -771,9 +771,9 @@ label robday9:
     show r
     r "Oh, Doc. Didn't see you there."
 
-    if romance_points["Rob"] == 0:
+    if positive["Rob"]:
         jump p_robday9
-    if romance_points["Rob"] == -1:
+    else:
         jump n_robday9
 
 label p_robday9:

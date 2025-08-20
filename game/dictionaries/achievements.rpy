@@ -24,7 +24,7 @@ default persistent.ach_unionize = True # Spare Miss Esther
 default persistent.ach_amoh = True # Don't romance anyone
 default persistent.ach_ohno = True # Die (Woo!)
 default persistent.ach_heartless = True # Kill Miss Esther (You MONSTER.)
-default persistent.ach_unlikeable = True # Antisocial
+default persistent.ach_unlikable = True # Antisocial
 default persistent.ach_armor = True # MISS ESTHER SECRET DIALOGUE!!!
 
 # Endings
@@ -58,7 +58,6 @@ default persistent.ach_seenitall = True # Get all 18 endings
 default persistent.ach_picture = True # Get Every Single Cutscene
 default persistent.cutscenes_seen = 0
 
-default persistent.endings_count = 0
 default persistent.endings_got = {
     "kristrue" : False,
     "krisgood" : False,
@@ -77,5 +76,15 @@ default persistent.endings_got = {
     "die" : False,
     "heartless" : False,
     "ace" : False,
-    "unlikeable" : False,
+    "unlikable" : False,
+}
+
+default persistent.true_endings_got = {
+    "kris" : False,
+    "heath" : False,
+    "aspen" : False,
+    "cc" : False,
+    "rob" : False,
+    "greg" : False,
+    "unknown" : False,
 }

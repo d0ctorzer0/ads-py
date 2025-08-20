@@ -248,11 +248,10 @@ label END_heathtrue:
     $ renpy.pause(2.0, hard=True)
     hide screen creditsfadeout
     python:
-        if persistent.endings_got["heathtrue"] == False:
-            persistent.endings_count += 1
-            persistent.endings_got["heathtrue"] = True
-        achievement.progress("ach_seenitall", persistent.endings_count)
-        achievement.sync()
+        persistent.endings_got["heathtrue"] = True
+        persistent.true_endings_got["heath"] = True
+        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+        achievement.progress("ach_ultrobo", sum(persistent.true_endings_got.values()))
         achievement.grant("ach_heathtrue")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_heath.webm")

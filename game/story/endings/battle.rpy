@@ -415,13 +415,10 @@ label END_mcdeath:
     show screen creditsfadeout with fade
     $ renpy.pause(3.0, hard=True)
     python:
-        if persistent.endings_got["die"] == False:
-            persistent.endings_count += 1
-            persistent.endings_got["die"] = True
-        achievement.progress("ach_seenitall", persistent.endings_count)
-        achievement.sync()
+        persistent.endings_got["die"] = True
+        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
         achievement.grant("ach_ohno")
-        achievement.sync() 
+        achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_mcdeath.webm")
     $ config.allow_skipping = True
     hide screen disable_Lmouse
@@ -467,11 +464,8 @@ label END_heartless:
     e "{color=#fff}...drive you..."
     e "{color=#fff}...mad."
     python:
-        if persistent.endings_got["heartless"] == False:
-            persistent.endings_count += 1
-            persistent.endings_got["heartless"] = True
-        achievement.progress("ach_seenitall", persistent.endings_count)
-        achievement.sync()
+        persistent.endings_got["heartless"] = True
+        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
         achievement.grant("ach_heartless")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_esdeath.webm")

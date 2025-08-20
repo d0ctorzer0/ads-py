@@ -302,11 +302,10 @@ label END_gregtrue:
     $ renpy.pause(2.0, hard=True)
     hide screen creditsfadeout
     python:
-        if persistent.endings_got["gregtrue"] == False:
-            persistent.endings_count += 1
-            persistent.endings_got["gregtrue"] = True
-        achievement.progress("ach_seenitall", persistent.endings_count)
-        achievement.sync()
+        persistent.endings_got["gregtrue"] = True
+        persistent.true_endings_got["greg"] = True
+        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+        achievement.progress("ach_ultrobo", sum(persistent.true_endings_got.values()))
         achievement.grant("ach_gregtrue")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_greg.webm")
