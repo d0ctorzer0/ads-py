@@ -2,7 +2,7 @@ screen emailday11():
     vbox:
         style_prefix "emailbtns"
         textbutton "    from: Dr. McCoy\n        Transferring Back                                                                        " action Jump("emailone_11")
-        textbutton "    from: HR\n        \"RETIREMENT\" ANNOUNCEMENT                                 " action Jump("emailtwo_11")
+        textbutton "    from: HR\n        \"RETIREMENT\" ANNOUNCEMENT                                                   " action Jump("emailtwo_11")
     vbox:
         style_prefix "nextday"
         textbutton "NEXT DAY >>" action Jump("day12")

@@ -821,9 +821,7 @@ label leave_cc:
     hide c with easeoutright
     n "You begin the ascent, quickly carrying Ryland up step by step."
     n "It's not easy, and the stairs seem to go on forever... but eventually, you're already halfway up."
-    n "Suddenly, you hear CC call out from behind you -"
-
-    c "Doctor! Hurry! They're -"
+    n "Suddenly, you hear voices call out from behind you -"
 
     vc "HEY! There's still one over here - what do you want me to do with it?"
     vc2 "Orders are to just throw them in the incinerator now. Boss says it's not worth the hassle."

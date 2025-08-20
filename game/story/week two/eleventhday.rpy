@@ -7,7 +7,7 @@ label day11:
     elif lock_heath:
         mc "I wonder where Heath got that dove from... haha."
     elif lock_aspen:
-        n "You place the cactus Aspen gave you, [cactusname], beside your \"bed\"."
+        n "You place the cactus Aspen gave you beside your \"bed\"."
         n "The flowers look as bright as ever."
     elif lock_cc:
         mc "I never expected CC to recite poetry to me..."

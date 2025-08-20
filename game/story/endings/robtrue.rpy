@@ -151,7 +151,7 @@ label END_robtrue:
     r "Mmm. Got me there."
     r "Don't make me... overheat."
     mc "I don't make any promises, Rob."
-    ann "And the bases are loaded! This might be it, folks - can the Tigers take this one home?"
+    n "The announcer says something about the bases being... \"loaded.\""
     r "Oh man, I'm on the edge of my seat."
     r "This is so much more exciting in person."
 

@@ -302,22 +302,11 @@ label nogreg:
     scene door1 dark with fade
     show flash
     window auto
-    n "You run up to the door leading to the lounge. One of your coworkers greets you."
+    n "You run up to the door leading to the lounge. The door is open slightly."
 
-    cw "What are you doing here?! There's no -"
-    cw "You... you should be going. The nearest exit elevator is by the relaxation center."
-
-    mc "What about the lounge?"
-
-    cw "It - ugh, the roof caved in."
-
-    mc "Is everyone okay?"
-
-    cw "No clue. I'm pretty sure the evacuation was successful, but..."
-    cw "It doesn't - it doesn't matter. You need to get out of here."
-
-    mc "I'm just -"
-    mc "Okay. Okay, thank you."
+    n "You peer inside - there's no one. No bartender, no patrons, and no Gregory."
+    n "The lounge looks, surprisingly, relatively unharmed."
+    mc "Hopefully they all evacuated safely..."
 
     n "You quickly leave the lounge behind."
 
