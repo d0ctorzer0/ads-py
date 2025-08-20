@@ -587,7 +587,7 @@ label aspenday10:
     acg "{color=#fff}I'm the prickly, hard-to-reach, defensive thorns, but..."
     acg "{color=#fff}You're these beautiful flowers o-on top, bringing light to my darkness."
     acg "{color=#fff}I'm really sorry if this is me being too... forward, but, Doctor..."
-    acg "{color=#fff}I-I really like you. A lot. You've brought more to my life than anyone has... than any{i}thing{/i} has, and I -"
+    acg "{color=#fff}I-I really like you. A lot. You've brought more to my life than anyone has... than any{i}thing{/i} has."
     acg "{color=#fff}I hope you accept this token of affection from me, and I..."
     acg "{color=#fff}When you leave, I truly hope you don't forget me."
     menu:
