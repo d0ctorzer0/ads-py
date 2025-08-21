@@ -81,7 +81,8 @@ label satoffice:
         if persistent.visited["office"] == False:
             persistent.places_visited += 1
             persistent.visited["office"] = True
-        achievement.progress("ach_explore", persistent.places_visited)
+        if persistent.places_visited == 6:
+            achievement.grant("ach_explore")
         achievement.sync()
     scene door3 no outoforder with fade
     $ audio_crossFade(1, "music/eleven.ogg") 
@@ -105,7 +106,8 @@ label satcafe:
         if persistent.visited["cafe"] == False:
             persistent.places_visited += 1
             persistent.visited["cafe"] = True
-        achievement.progress("ach_explore", persistent.places_visited)
+        if persistent.places_visited == 6:
+            achievement.grant("ach_explore")
         achievement.sync()
     scene cafe with fade
     n "You enter the cafeteria. You haven't actually been in here yet."
@@ -145,7 +147,8 @@ label biology:
         if persistent.visited["biology"] == False:
             persistent.places_visited += 1
             persistent.visited["biology"] = True
-        achievement.progress("ach_explore", persistent.places_visited)
+        if persistent.places_visited == 6:
+            achievement.grant("ach_explore")
         achievement.sync() 
     scene door3 cool with fade
     n "You come up to the door to Biology."
@@ -165,7 +168,8 @@ label wheatleycameo:
         if persistent.visited["wheatley"] == False:
             persistent.places_visited += 1
             persistent.visited["wheatley"] = True
-        achievement.progress("ach_explore", persistent.places_visited)
+        if persistent.places_visited == 6:
+            achievement.grant("ach_explore")
         achievement.sync() 
     scene door2 cool with fade
     n "You come up to the large door that reads \"AUTHORIZED PERSONNEL ONLY\"."
@@ -205,7 +209,8 @@ label manufacture:
         if persistent.visited["manufacture"] == False:
             persistent.places_visited += 1
             persistent.visited["manufacture"] = True
-        achievement.progress("ach_explore", persistent.places_visited)
+        if persistent.places_visited == 6:
+            achievement.grant("ach_explore")
         achievement.sync() 
     scene door2 with fade
     n "You come up to the door that you assume leads to your old workplace."
@@ -223,7 +228,8 @@ label recovery:
         if persistent.visited["recovery"] == False:
             persistent.places_visited += 1
             persistent.visited["recovery"] = True
-        achievement.progress("ach_explore", persistent.places_visited)
+        if persistent.places_visited == 6:
+            achievement.grant("ach_explore")
         achievement.sync() 
     scene door3 warm with fade
     n "You come up to the door that reads \"STASIS RECOVERY BAY\" on a small plaque next to it."
@@ -735,8 +741,9 @@ label satgreg_pos:
             if persistent.gc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.gc1 = True
-            achievement.progress("ach_picture", persistent.cutscenes_seen)
-            achievement.sync()
+            if persistent.cutscenes_seen == 41:
+                achievement.grant("ach_picture")
+                achievement.sync()
         n "{color=#fff}Gregory looks down and begins speaking softly."
         g "{color=#fff}No, I need to go closer!!"
         g "{color=#fff}Less left, more right! Come on!"
@@ -1107,8 +1114,9 @@ label satunknownpos:
             if persistent.uc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.uc1 = True
-            achievement.progress("ach_picture", persistent.cutscenes_seen)
-            achievement.sync()
+            if persistent.cutscenes_seen == 41:
+                achievement.grant("ach_picture")
+                achievement.sync()
         u "{color=#fff}Well... yeah. Back when I was... cleaner, and I... remembered my name..."
         u "{color=#fff}I didn't use it at all..."
         u "{color=#fff}I... miss those days sometimes."        

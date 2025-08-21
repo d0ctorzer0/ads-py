@@ -155,7 +155,8 @@ label END_ace:
     hide screen creditsfadeout
     python:
         persistent.endings_got["ace"] = True
-        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
         achievement.grant("ach_amoh")
         achievement.sync() 
     $ renpy.movie_cutscene("ENDCREDIT_ace.webm")
@@ -181,7 +182,8 @@ label END_unlikable:
 
     python:
         persistent.endings_got["unlikable"] = True
-        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
         achievement.grant("ach_unlikable")
         achievement.sync() 
     

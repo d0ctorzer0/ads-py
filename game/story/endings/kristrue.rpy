@@ -247,8 +247,9 @@ label END_kristrue2:
         if persistent.kc6 == False:
             persistent.cutscenes_seen += 1
             persistent.kc6 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     k "{color=#fff}I'm still getting used to... not being... down there, you know."
     k "{color=#fff}It's still strange sometimes."
     k "{color=#fff}Not waking up in a charging port..."
@@ -272,8 +273,10 @@ label END_kristrue2:
     python:
         persistent.endings_got["kristrue"] = True
         persistent.true_endings_got["kris"] = True
-        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
-        achievement.progress("ach_ultrobo", sum(persistent.true_endings_got.values()))
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
+        if sum(persistent.true_endings_got.values()) == 7:
+            achievement.grant("ach_ultrobo")
         achievement.grant("ach_kristrue")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_kris.webm")

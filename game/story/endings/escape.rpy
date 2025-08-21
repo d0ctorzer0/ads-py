@@ -66,8 +66,9 @@ label escape_kris:
         if persistent.kc5 == False:
             persistent.cutscenes_seen += 1
             persistent.kc5 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
 
@@ -156,7 +157,8 @@ label escape_kris:
         hide screen creditsfadeout
         python:
             persistent.endings_got["krisgood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_krisgood")
             achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_kris.webm")
@@ -164,7 +166,8 @@ label escape_kris:
     if romance_points["Kris"] >= 29:
         python:
             persistent.endings_got["krisgood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_krisgood")
             achievement.sync()
         jump END_kristrue
@@ -242,8 +245,9 @@ label escape_heath:
         if persistent.hc5 == False:
             persistent.cutscenes_seen += 1
             persistent.hc5 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
 
@@ -332,7 +336,8 @@ label escape_heath:
         hide screen creditsfadeout
         python:
             persistent.endings_got["heathgood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_heathgood")
             achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_heath.webm")
@@ -340,7 +345,8 @@ label escape_heath:
     if romance_points["Heath"] >= 29:
         python:
             persistent.endings_got["heathgood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_heathgood")
             achievement.sync()
         jump END_heathtrue
@@ -406,8 +412,9 @@ label escape_aspen:
         if persistent.ac5 == False:
             persistent.cutscenes_seen += 1
             persistent.ac5 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
 
@@ -500,7 +507,8 @@ label escape_aspen:
         hide screen creditsfadeout
         python:
             persistent.endings_got["aspengood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_aspengood")
             achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")
@@ -508,7 +516,8 @@ label escape_aspen:
     if romance_points["Aspen"] >= 28:
         python:
             persistent.endings_got["aspengood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_aspengood")
             achievement.sync()
         jump END_aspentrue
@@ -641,8 +650,9 @@ label leave_unknown:
         if persistent.cc5 == False:
             persistent.cutscenes_seen += 1
             persistent.cc5 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     c "{color=#fff}This is... incredible. Everything's so vibrant and bright and..."
@@ -725,7 +735,8 @@ label leave_unknown:
         hide screen creditsfadeout
         python:
             persistent.endings_got["ccgood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_ccgood")
             achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_cc.webm")
@@ -733,7 +744,8 @@ label leave_unknown:
     if romance_points["CC"] >= 30:
         python:
             persistent.endings_got["ccgood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_ccgood")
             achievement.sync()
         jump END_cctrue
@@ -846,8 +858,9 @@ label leave_cc:
         if persistent.uc4 == False:
             persistent.cutscenes_seen += 1
             persistent.uc4 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     ry "{color=#fff}What the..."
@@ -929,7 +942,8 @@ label leave_cc:
         hide screen creditsfadeout
         python:
             persistent.endings_got["unknowngood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_unknowngood")
             achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_unknown.webm")
@@ -937,7 +951,8 @@ label leave_cc:
     if romance_points["???"] >= 15:
         python:
             persistent.endings_got["unknowngood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_unknowngood")
             achievement.sync()
         jump END_unknowntrue    
@@ -1007,8 +1022,9 @@ label escape_rob:
         if persistent.rc5 == False:
             persistent.cutscenes_seen += 1
             persistent.rc5 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     
@@ -1109,7 +1125,8 @@ label escape_rob:
         hide screen creditsfadeout
         python:
             persistent.endings_got["robgood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_robgood")
             achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_rob.webm")
@@ -1117,7 +1134,8 @@ label escape_rob:
     if romance_points["Rob"] >= 29:
         python:
             persistent.endings_got["robgood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_robgood")
             achievement.sync()
         jump END_robtrue  
@@ -1229,8 +1247,9 @@ label escape_gregory:
         if persistent.gc4 == False:
             persistent.cutscenes_seen += 1
             persistent.gc4 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     g1cg "{color=#fff}Guys! Oh my god, look at how vibrant the sky is!"
@@ -1333,7 +1352,8 @@ label escape_gregory:
         hide screen creditsfadeout
         python:
             persistent.endings_got["greggood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_greggood")
             achievement.sync()
         $ renpy.movie_cutscene("ENDCREDIT_greg.webm")
@@ -1341,7 +1361,8 @@ label escape_gregory:
     if romance_points["Greg"] >= 21:
         python:
             persistent.endings_got["greggood"] = True
-            achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+            if sum(persistent.endings_got.values()) == 18:
+                achievement.grant("ach_seenitall")
             achievement.grant("ach_greggood")
             achievement.sync()
         jump END_gregtrue  

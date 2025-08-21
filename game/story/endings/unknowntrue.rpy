@@ -226,8 +226,9 @@ label END_unknowntrue:
         if persistent.uc5 == False:
             persistent.cutscenes_seen += 1
             persistent.uc5 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     ry "{color=#fff}I just remembered something else."
     mccut "{color=#fff}What's that?"
     ry "{color=#fff}My alias."
@@ -273,8 +274,10 @@ label END_unknowntrue:
     python:
         persistent.endings_got["unknowntrue"] = True
         persistent.true_endings_got["unknown"] = True
-        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
-        achievement.progress("ach_ultrobo", sum(persistent.true_endings_got.values()))
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
+        if sum(persistent.true_endings_got.values()) == 7:
+            achievement.grant("ach_ultrobo")
         achievement.grant("ach_unknowntrue")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_unknown.webm")

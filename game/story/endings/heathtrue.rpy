@@ -210,8 +210,9 @@ label END_heathtrue:
         if persistent.hc6 == False:
             persistent.cutscenes_seen += 1
             persistent.hc6 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     n "{color=#fff}Heath closes her optic and slowly opens her shell -"
     n "{color=#fff}- Something you didn't know was possible, even with all your time in Manufacturing."
     n "{color=#fff}What follows is perhaps the most beautiful display of colors you've ever seen from an Aperture product."
@@ -250,8 +251,10 @@ label END_heathtrue:
     python:
         persistent.endings_got["heathtrue"] = True
         persistent.true_endings_got["heath"] = True
-        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
-        achievement.progress("ach_ultrobo", sum(persistent.true_endings_got.values()))
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
+        if sum(persistent.true_endings_got.values()) == 7:
+            achievement.grant("ach_ultrobo")
         achievement.grant("ach_heathtrue")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_heath.webm")

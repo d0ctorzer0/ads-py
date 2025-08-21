@@ -253,8 +253,9 @@ label END_gregtrue:
         if persistent.gc5 == False:
             persistent.cutscenes_seen += 1
             persistent.gc5 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     g2ecg "{color=#fff}This is incredible."
     g1ecg "{color=#fff}You know, I think I read about this in one of Aperture's records."
     g3ecg "{color=#fff}If this is the ocean, why can I see a shoreline on the other side?"
@@ -306,8 +307,10 @@ label END_gregtrue:
     python:
         persistent.endings_got["gregtrue"] = True
         persistent.true_endings_got["greg"] = True
-        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
-        achievement.progress("ach_ultrobo", sum(persistent.true_endings_got.values()))
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
+        if sum(persistent.true_endings_got.values()) == 7:
+            achievement.grant("ach_ultrobo")
         achievement.grant("ach_gregtrue")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_greg.webm")

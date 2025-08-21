@@ -211,8 +211,9 @@ label END_cctrue:
         if persistent.cc6 == False:
             persistent.cutscenes_seen += 1
             persistent.cc6 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     cc "{color=#fff}It feels so... cold."
     cc "{color=#fff}It's wonderful. I..."
     cc "{color=#fff}I haven't felt the air through my circuits since I was activated."
@@ -255,8 +256,10 @@ label END_cctrue:
     python:
         persistent.endings_got["cctrue"] = True
         persistent.true_endings_got["cc"] = True
-        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
-        achievement.progress("ach_ultrobo", sum(persistent.true_endings_got.values()))
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
+        if sum(persistent.true_endings_got.values()) == 7:
+            achievement.grant("ach_ultrobo")
         achievement.grant("ach_cctrue")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_cc.webm")

@@ -116,8 +116,9 @@ label saveaspen:
         if persistent.ac4 == False:
             persistent.cutscenes_seen += 1
             persistent.ac4 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     n "{color=#fff}Instantly, you're soaked to the bone. Shaking off the cold, you look down to see Aspen has fallen off their management rail."
 
     a "{color=#fff}Doctor! Oh, I'm so happy to see you!"
@@ -202,8 +203,9 @@ label savegreg:
         if persistent.gc3 == False:
             persistent.cutscenes_seen += 1
             persistent.gc3 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     g "{color=#fff}O-Oh, Doctor! Can you - oh my god, can you help me?! Please!"
 
     mccut "{color=#fff}Where are you caught on?"
@@ -340,8 +342,9 @@ label saverob:
         if persistent.rc4 == False:
             persistent.cutscenes_seen += 1
             persistent.rc4 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     n "{color=#fff}Rob has fallen off his management rail, trapped under the TV that used to be hung up behind him."
     n "{color=#fff}One of his handles is broken off and his eye is twitching."
 
@@ -437,8 +440,9 @@ label saveccunknown:
             persistent.cutscenes_seen += 1
             persistent.cc4 = True
             persistent.uc3 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     c "{color=#fff}Doctor..."
     n "{color=#fff}As soon as you enter, you're met with a very peculiar sight."
     n "{color=#fff}Multiple walls are on fire and all of CC's monitoring systems are off."
@@ -584,8 +588,9 @@ label saveheath:
         if persistent.hc4 == False:
             persistent.cutscenes_seen += 1
             persistent.hc4 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     h "{color=#fff}Oh... Doctor..."
     h "{color=#fff}I-I... my magic supplies, my... livelihood, it's..."
 
@@ -685,8 +690,9 @@ label savekris:
         if persistent.kc4 == False:
             persistent.cutscenes_seen += 1
             persistent.kc4 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     k "{color=#fff}Doctor! Thank god you're here, I..."
     k "{color=#fff}I don't know what's going on. I got to work, started doing my normal thing -"    
     k "{color=#fff}You know what?! I bet I was right! This is it! The \"Operation ACRI\" that's happening right now -"

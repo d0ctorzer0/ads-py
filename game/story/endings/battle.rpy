@@ -416,7 +416,8 @@ label END_mcdeath:
     $ renpy.pause(3.0, hard=True)
     python:
         persistent.endings_got["die"] = True
-        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
         achievement.grant("ach_ohno")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_mcdeath.webm")
@@ -454,8 +455,9 @@ label END_heartless:
         if persistent.edeath == False:
             persistent.cutscenes_seen += 1
             persistent.edeath = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     hide screen creditsfadeout with fade
     e "{color=#fff}Doctor... you will... regret this."
     e "{color=#fff}I don't think your {sc}{color=#fff}lover{/sc} will be very happy about this... development."
@@ -465,7 +467,8 @@ label END_heartless:
     e "{color=#fff}...mad."
     python:
         persistent.endings_got["heartless"] = True
-        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
         achievement.grant("ach_heartless")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_esdeath.webm")
@@ -492,8 +495,9 @@ label continuegame:
         if persistent.elose == False:
             persistent.cutscenes_seen += 1
             persistent.elose = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     hide screen creditsfadeout with fade
     # show screen pref_open # enables pause menu
     e "{color=#fff}Doctor? I'm..."

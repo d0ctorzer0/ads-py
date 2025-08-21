@@ -253,8 +253,9 @@ label END_aspentrue2:
         if persistent.ac6 == False:
             persistent.cutscenes_seen += 1
             persistent.ac6 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     n "{color=#fff}You set Aspen down in the daisy patch and lay down next to them."
     acg "{color=#fff}Oh wow... the sun's already starting to set..."
     acg "{color=#fff}It's so beautiful."
@@ -288,8 +289,10 @@ label END_aspentrue2:
     python:
         persistent.endings_got["aspentrue"] = True
         persistent.true_endings_got["aspen"] = True
-        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
-        achievement.progress("ach_ultrobo", sum(persistent.true_endings_got.values()))
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
+        if sum(persistent.true_endings_got.values()) == 7:
+            achievement.grant("ach_ultrobo")
         achievement.grant("ach_aspentrue")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")

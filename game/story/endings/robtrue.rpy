@@ -224,8 +224,9 @@ label END_robtrue:
         if persistent.rc6 == False:
             persistent.cutscenes_seen += 1
             persistent.rc6 = True
-        achievement.progress("ach_picture", persistent.cutscenes_seen)
-        achievement.sync()
+        if persistent.cutscenes_seen == 41:
+            achievement.grant("ach_picture")
+            achievement.sync()
     rcg "{color=#fff}Ahh... that feels so nice."
     mc "{color=#fff}I'm surprised you can even feel the grass under your chassis."
     rcg "{color=#fff}It ain't \"feeling\" like how most humans define it, but..."
@@ -254,8 +255,10 @@ label END_robtrue:
     python:
         persistent.endings_got["robtrue"] = True
         persistent.true_endings_got["rob"] = True
-        achievement.progress("ach_seenitall", sum(persistent.endings_got.values()))
-        achievement.progress("ach_ultrobo", sum(persistent.true_endings_got.values()))
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
+        if sum(persistent.true_endings_got.values()) == 7:
+            achievement.grant("ach_ultrobo")
         achievement.grant("ach_robtrue")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_rob.webm")
