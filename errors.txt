@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/battle.rpy", line 59: 'rotate' is not a keyword argument or valid child of the text statement.
-    text "[name]" xpos 1573 ypos 371 rotate 90
-                                           ^
+File "game/menus/loadsave.rpy", line 26: 'FileTakeScreenshot' is not a keyword argument or valid child of the screen statement.
+    FileTakeScreenshot()
+                      ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sun Aug 17 16:36:21 2025
+Wed Aug 20 19:03:37 2025

@@ -14,7 +14,7 @@ label start:
         $ renpy.pause(2.0, hard=True)
 
     $ renpy.block_rollback()
-
+    $ ssid = "moff"
     $ renpy.set_style_preference("text", "basic")
     scene office
     with fade
@@ -309,6 +309,7 @@ label heathday1:
     scene heathroom with fade
     $ audio_crossFade(2, "music/three.ogg")
     show e with easeinright
+    $ ssid = "h"
     n "Miss Esther guides you into the next room, which holds a small stage with a closed curtain. Behind the drapes, you can hear crashing, banging, and..."
 
     hide e

@@ -84,7 +84,7 @@ screen savequestion:
     hbox:
         textbutton "Yes, save my game.":
             text_style "notif" 
-            action Show("file_slots", transition=easeinbottom), Play("sound", "sfx/paperopen3.ogg"), Hide("savequestion", transition=fade)
+            action FileTakeScreenshot(), Show("file_slots", transition=easeinbottom), Play("sound", "sfx/paperopen3.ogg"), Hide("savequestion", transition=fade)
             xpos 600 ypos 640
         textbutton "I like the risk.":
             text_style "notif"

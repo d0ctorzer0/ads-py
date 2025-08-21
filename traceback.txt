@@ -1,28 +1,102 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\seven\\Downloads\\rnpy\\core\\game\\saves\\persistent'
+While running game code:
+  File "game/story/week one/firstday.rpy", line 24, in script
+    n "You sigh. Another day, another dollar. But today's gonna be different."
+  File "game/story/week one/firstday.rpy", line 24, in script
+    n "You sigh. Another day, another dollar. But today's gonna be different."
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots(): # i KNOW this is not efficient OKAY i KNOW this is cobbled together VERY HASTILY okAY I'M AWARE
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots(): # i KNOW this is not efficient OKAY i KNOW this is cobbled together VERY HASTILY okAY I'M AWARE
+  File "game/menus/loadsave.rpy", line 34, in execute
+    fixed:
+  File "game/menus/loadsave.rpy", line 46, in execute
+    if FileSlot(1, empty=True):
+  File "game/menus/loadsave.rpy", line 46, in <module>
+    if FileSlot(1, empty=True):
+NameError: name 'FileSlot' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\bootstrap.py", line 359, in bootstrap
     renpy.main.main()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 666, in main
-    renpy.persistent.update(True)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\persistent.py", line 434, in update
-    save()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\persistent.py", line 456, in save
-    renpy.loadsave.location.save_persistent(compressed)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\savelocation.py", line 622, in save_persistent
-    l.save_persistent(data)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\savelocation.py", line 430, in save_persistent
-    safe_rename(fn_new, fn)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\loadsave.py", line 303, in safe_rename
-    os.unlink(new)
-PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\seven\\Downloads\\rnpy\\core\\game\\saves\\persistent'
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 652, in main
+    run(restart)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\execution.py", line 958, in run_context
+    context.run()
+  File "game/story/week one/firstday.rpy", line 24, in script
+    n "You sigh. Another day, another dollar. But today's gonna be different."
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "game/story/week one/firstday.rpy", line 24, in script
+    n "You sigh. Another day, another dollar. But today's gonna be different."
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1470, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1117, in do_display
+    display_say(who,
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 814, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2882, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 1384, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\movetransition.py", line 383, in render
+    old_r = renpy.display.render.render(self.old, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\transform.py", line 1056, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 994, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 427, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 2184, in render
+    cr = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 752, in render
+    self.update()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots(): # i KNOW this is not efficient OKAY i KNOW this is cobbled together VERY HASTILY okAY I'M AWARE
+  File "game/menus/loadsave.rpy", line 24, in execute
+    screen file_slots(): # i KNOW this is not efficient OKAY i KNOW this is cobbled together VERY HASTILY okAY I'M AWARE
+  File "game/menus/loadsave.rpy", line 34, in execute
+    fixed:
+  File "game/menus/loadsave.rpy", line 46, in execute
+    if FileSlot(1, empty=True):
+  File "game/menus/loadsave.rpy", line 46, in <module>
+    if FileSlot(1, empty=True):
+NameError: name 'FileSlot' is not defined
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
-Aperture Dating Simulator 1.1.3.beta
-Mon Aug 18 10:25:30 2025
+Aperture Dating Simulator 1.2.5.beta
+Wed Aug 20 19:08:06 2025
