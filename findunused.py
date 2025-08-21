@@ -3,6 +3,7 @@ from os.path import isfile
 
 #
 # UNUSED FILE FINDER
+# Lists files that are in audio but aren't called in dialogue.tab
 #
 # Instructions:
 # - Update dialogue.tab
@@ -21,5 +22,7 @@ with open("dialogue.tab") as file:
 
 for file in filenames:
     id = file.split('.')[0]
-    if id not in usedfiles and "_" in id: # _ filters out blooper lines
+    if id not in usedfiles:
+        if "_" not in id: continue # _ filters out blooper lines
+        if "talk_" in id or "fool_" in id or "win_" in id: continue
         print(id)
