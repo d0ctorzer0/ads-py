@@ -708,7 +708,10 @@ label ccday5cont:
 
     menu:
         extend ""
-        "What heartless bastard wrote this goddamn report, anyway?":
+        "What heartless {k=-5}————{/k} wrote this {k=-5}————{/k} report, anyway?" if persistent.streammode == True:
+            $ romance_points["CC"] += 3
+            jump impresscc5
+        "What heartless bastard wrote this goddamn report, anyway?" if persistent.streammode == False:
             $ romance_points["CC"] += 3
             jump impresscc5
         "They're not going to be happy about this one, then?":
@@ -719,7 +722,10 @@ label impresscc5:
     show c
     c "Haha... excuse my language, but..."
     show c look # cc gets agitated here
-    c "Aperture bastards, that's who."
+    if persistent.streammode == True:
+        c "Aperture {k=-5}————{/k}, that's who."
+    else:
+        c "Aperture bastards, that's who."
     show c
     c "Can't leave well enough alone..."
     c "Test, test, test, that's all they do..."
