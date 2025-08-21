@@ -46,5 +46,10 @@ all "damn it" mc lines in escape //
 BASTARD: (This one's new!)
 impresscc5_e89cd7f1 // (impresscc5_10f14cdf is the censored line)
 
+DUMBASS: (These are also new!)
+END_gregtrue_caeea3fa // (censored: END_gregtrue_c230e78e)
+escape_gregory_88a6ab5a // (censored: escape_gregory_ca9b852d)
+p_robday8_e6019596 // (censored: p_robday8_e5a61348)
+
 28 swears
 21

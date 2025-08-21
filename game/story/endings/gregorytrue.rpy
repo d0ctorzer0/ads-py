@@ -109,7 +109,10 @@ label END_gregtrue:
     show gre look
     g1e "Frankly, I'm happy for any new experience."
     show rie angry
-    g3e "Every experience is new for us, dumbass."
+    if persistent.streammode == True:
+        g3e "Every experience is new for us, {k=-5}————{/k}."
+    else:
+        g3e "Every experience is new for us, dumbass."
     show gore close
     g2e "Why are you {i}so loud,{/i} Rie?"
     show rie happy

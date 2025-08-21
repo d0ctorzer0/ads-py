@@ -1321,7 +1321,10 @@ label escape_gregory:
     mc "Yeah?"
 
     g2 "What's next?"
-    g3 "We reach the city, dumbass."
+    if persistent.streammode == True:
+        g3 "We reach the city, {k=-5}————{/k}."
+    else:
+        g3 "We reach the city, dumbass."
     g1 "Well yeah. I think he's asking {i}what then?{/i}"
 
     mc "Who knows. First things first, I get a new job. And then..."

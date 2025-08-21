@@ -812,7 +812,10 @@ label p_robday8:
 
     r "Yep! All good, as per -"
     show r yell
-    r "ARE YOU KIDDING ME? WHY WOULD YOU DO THAT?! DUMBASS!!"
+    if persistent.streammode == True:
+        r "ARE YOU KIDDING ME? WHY WOULD YOU DO THAT?! {k=-5}————{/k}!!"
+    else:
+        r "ARE YOU KIDDING ME? WHY WOULD YOU DO THAT?! DUMBASS!!"
     show r
     r "...as per usual, yeah."
 
