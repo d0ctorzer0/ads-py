@@ -295,7 +295,7 @@ label esthershootdown:
 
 label day7alone:
     show e shock
-    e "Ah no, I understand. So sorry to bother you, Doctor."
+    e "Ah no, I understand. Sorry to bother you, Doctor."
     e "I'll let you be, but..."
     show e annoy
     show screen vignette with vigswitch
