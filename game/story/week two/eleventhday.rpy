@@ -546,7 +546,10 @@ label unknownday11:
 
     show u c look
     u "Yep! It's me. I know, I look a little different..."
-    u "I finally got off my ass and went down to repair to go get fixed."
+    if persistent.streammode == True:
+        u "I finally got off my {k=-5}——{/k} and went down to repair to go get fixed."
+    else:
+        u "I finally got off my ass and went down to repair to go get fixed."
 
     show u c 
     u "They almost refused me service! Hah."
@@ -981,7 +984,10 @@ label robday11:
     n "Once again, Rob is yelling at the TV above him."
 
     r "OH, YOU'VE {i}GOT{/i} TO BE KIDDING ME. AM I THE ONLY SMART ONE HERE?"
-    r "FOR ONCE IN YOUR GODDAMN LIFE, COACH, COULD YOU MAKE A GOOD CALL?"
+    if persistent.streammode == True:
+        r "FOR ONCE IN YOUR {k=-5}————{/k} LIFE, COACH, COULD YOU MAKE A GOOD CALL?"
+    else:
+        r "FOR ONCE IN YOUR GODDAMN LIFE, COACH, COULD YOU MAKE A GOOD CALL?"
     show r close
     r "Jeez..."
 
@@ -1031,7 +1037,10 @@ label romancerobday11:
     r "I know!"
 
     show r yell
-    r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!"
+    if persistent.streammode == True:
+        r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR {k=-5}————{/k} HANDS, RUN WITH IT!"
+    else:
+        r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!"
     show r
     r "Oh shoot! It's almost 4, Doc!"
 
@@ -1067,7 +1076,10 @@ label p_robday11:
     r "Yeah! Course I am, but -"
 
     show r yell
-    r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!"
+    if persistent.streammode == True:
+        r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR {k=-5}————{/k} HANDS, RUN WITH IT!"
+    else:
+        r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!"
     show r
     r "Oh shoot! It's almost 4, Doc!"
 
@@ -1099,7 +1111,10 @@ label n_robday11:
     mc "Are you alright? You're pretty short with me today, I -"
 
     show r yell
-    r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!"
+    if persistent.streammode == True:
+        r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR {k=-5}————{/k} HANDS, RUN WITH IT!"
+    else:
+        r "HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!"
     show r
     r "Oh shoot! It's almost 4, Doc!"
 

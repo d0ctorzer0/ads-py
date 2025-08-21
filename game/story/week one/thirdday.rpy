@@ -742,7 +742,10 @@ label robday3:
 
     n "You enter the gym and immediately spot Rob yelling at the screen in front of him."
 
-    r "CAN'T RUN TO SAVE YOUR GODDAMN LIFE! COME ON!!"
+    if persistent.streammode == True:
+        r "CAN'T RUN TO SAVE YOUR {k=-5}————{/k} LIFE! COME ON!!"
+    else:
+        r "CAN'T RUN TO SAVE YOUR GODDAMN LIFE! COME ON!!"
 
     mc "Um... Rob?"
 

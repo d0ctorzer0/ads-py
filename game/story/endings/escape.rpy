@@ -117,7 +117,8 @@ label escape_kris:
     n "No one notices you, thankfully."
     n "Your home city isn't far away from here, but it's by no means a short walk. Plus, you left your car in the parking garage..."
 
-    mc "Damn it."
+    if persistent.streammode == False:
+        mc "Damn it."
 
     n "Eventually, night comes, and you need to rest."
     n "You stop near a hidden clearing just a few miles away from the city limits."
@@ -286,7 +287,8 @@ label escape_heath:
     n "Heath is heavy, and you're exhausted from the adrenaline rush..."
     n "And, stupidly, you'd left your car at the complex."
 
-    mc "Damn it."
+    if persistent.streammode == False:
+        mc "Damn it."
 
     n "Eventually, you reach a clearing just outside the city limits, and decide to rest for a bit."
     
@@ -447,7 +449,8 @@ label escape_aspen:
     n "The trek from the facility to the neighboring city is a long one."
     n "You regret that you left your car behind."
 
-    mc "Damn it."
+    if persistent.streammode == False:
+        mc "Damn it."
 
     n "As you're pushing through the forest alongside the road, Aspen points out specimens they recognize."
 
@@ -674,7 +677,8 @@ label leave_unknown:
     n "The rough terrain probably doesn't help."
     n "You regret that you hadn't thought to get your car out of the complex."
 
-    mc "Damn it..."
+    if persistent.streammode == False:
+        mc "Damn it..."
 
     n "Eventually, you reach a peaceful clearing just on the outskirts of the big city."
     n "Out of breath, you lay down in the grass."
@@ -992,7 +996,10 @@ label escape_rob:
     $ renpy.music.queue("music/outside.ogg", clear_queue=False)
     scene white with blindplayer
 
-    r "{color=#fff}What the - why's it so goddamn bright out here?!"
+    if persistent.streammode == True:
+        r "{color=#fff}What the - why's it so {k=-5}————{/k} bright out here?!"
+    else:
+        r "{color=#fff}What the - why's it so goddamn bright out here?!"
     r "{color=#fff}Oh... holy cow..."
 
     scene rob cutscene 5 with dissolve
@@ -1004,7 +1011,11 @@ label escape_rob:
         achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
-    rcg "{color=#fff}This is insane. Did you know about this? The sky? And... oh, the clouds, goddamn!"
+    
+    if persistent.streammode == True:
+        rcg "{color=#fff}This is insane. Did you know about this? The sky? And... oh, the clouds, {k=-5}————{/k}!"
+    else:
+        rcg "{color=#fff}This is insane. Did you know about this? The sky? And... oh, the clouds, goddamn!"
     rcg "{color=#fff}I've only seen this stuff through a screen!"
 
     n "{color=#fff}...Rob's never seen the surface."
@@ -1046,7 +1057,8 @@ label escape_rob:
 
     n "The run is difficult, but Rob's encouragement does wonders."
     n "You still regret that you left your car at the complex."
-    mc "Damn it!"
+    if persistent.streammode == False:
+        mc "Damn it!"
     r "Alright, I think we're far 'nough away from the complex. Let's take a rest... uh, here."
 
     n "The two of you reach a clearing just on the outskirts of the city."
@@ -1261,7 +1273,8 @@ label escape_gregory:
     n "It's still a long jog, though."
     n "You regret that you left your car back at the complex."
 
-    mc "Damn..."
+    if persistent.streammode == False:
+        mc "Damn..."
 
     g1 "Doctor - you should probably rest for a bit."
     g2 "It's dangerous to push yourself too hard."

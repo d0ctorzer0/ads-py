@@ -67,7 +67,9 @@ label END_gregtrue:
     show gore
     show rie happy
     with easeinbottom
-    g3e "Damn!"
+    
+    if persistent.streammode == False:
+        g3e "Damn!"
     g2e "This is a quaint little town."
     show rie angry
     g3e "Greg! Wake up!!"

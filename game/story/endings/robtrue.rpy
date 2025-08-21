@@ -100,7 +100,10 @@ label END_robtrue:
     r "Seriously, Doc."
     r "None of this woulda been possible without ya, y'know."
     r "Getting outta that place..."
-    r "Hell, even getting out from under that damn TV..."
+    if persistent.streammode == True:
+        r "Hell, even getting out from under that {k=-5}——{/k} TV..."
+    else:
+        r "Hell, even getting out from under that damn TV..."
     r "And seeing all this?"
     show r offrail
     r "That's all on you."

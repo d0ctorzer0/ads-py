@@ -4,7 +4,7 @@ default persistent.colorblind = False
 default persistent.flash = True
 
 default persistent.advcap = False
-default persistent.narrator = False
+default persistent.streammode = False
 
 default persistent.fullscreen = True
 
@@ -53,7 +53,7 @@ screen pref_audio():
     # checkboxes
     hbox:
         imagebutton idle "gui/options/check_[persistent.advcap].png" xpos 388 ypos 685 action ToggleVariable("persistent.advcap") at ab_tilt
-        imagebutton idle "gui/options/check_[persistent.narrator].png" xpos 290 ypos 838 action ToggleVariable("persistent.narrator"), Preference("self voicing", "toggle") at ab_tilt
+        imagebutton idle "gui/options/check_[persistent.streammode].png" xpos 290 ypos 838 action ToggleVariable("persistent.streammode") at ab_tilt
 
 
 

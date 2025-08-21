@@ -22,7 +22,10 @@ label day13:
     ac "Please gather all vital equipment and proceed to the nearest surface elevator."
     ac "Surface elevator nearest SECTION 7, CHAMBER 14: [[ INFORMATION UNKNOWN ]"
 
-    mc "Shit. Shit shit shit. Oh my god."
+    if persistent.streammode == True:
+        mc "What the... oh my god."
+    else:
+        mc "Shit. Shit shit shit. Oh my god."
 
     n "You get up, quickly grab your essentials, and burst out of your room."
 

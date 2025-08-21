@@ -392,7 +392,7 @@ label heathday10:
     h "{color=#fff}And so - with this letter - I ask you one simple question, Doctor..."
     h "{color=#fff}Ahem."
     h "{color=#fff}I've enjoyed my time with you... performing, talking, showing off, of course..."
-    h "{color=#fff}...and I know, soon, you'll have to leave to go back to Manufacturing."
+    h "{color=#fff}...and I know, soon, you'll have to leave..."
     h "{color=#fff}My question is... um..."
     h "{color=#fff}...will you please keep coming by to see me, Doctor?"
     h "{color=#fff}I have so many shows I can put on for you, so many things I want to tell you... I..."
@@ -711,7 +711,7 @@ label aspenrejection:
 
     a "{i}Heliotropium arborescens{/i} has been my most recent study - the garden heliotrope."
     show a look
-    a "It has these beautiful purple flowers that smell like vanilla... or so I'm told. I can't really smell them myself."
+    a "It has these beautiful flowers that smell like vanilla... or so I'm told. I can't really smell them myself."
     show a
     a "And it's poisonous! That's one thing I love about the plant world..."
     show a laugh
@@ -1057,8 +1057,10 @@ label robacceptance:
     show r yell
     r "WHAT'S THE BIG IDEA? ARE YOU STUPID? WHY ARE YOU NOT RUNNING?!"
     show r
-    r "- AND, to top it ALL OFF, that bitch fuckin' cheated on me."
-
+    if persistent.streammode == True:
+        r "- AND, to top it ALL OFF, that {k=-5}——{/k} {k=-5}———{/k} cheated on me."
+    else:
+        r "- AND, to top it ALL OFF, that bitch fuckin' cheated on me."
     mc "That's terrible."
 
     show r angry
@@ -1147,7 +1149,10 @@ label robrejection:
     show r yell
     r "WHAT'S THE BIG IDEA? ARE YOU STUPID? WHY ARE YOU NOT RUNNING?!"
     show r
-    r "- AND, to top it ALL OFF, that bitch fuckin' cheated on me."
+    if persistent.streammode == True:
+        r "- AND, to top it ALL OFF, that {k=-5}——{/k} {k=-5}———{/k} cheated on me."
+    else:
+        r "- AND, to top it ALL OFF, that bitch fuckin' cheated on me."
 
     mc "That's terrible."
 

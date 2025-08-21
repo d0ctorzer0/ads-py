@@ -1,0 +1,47 @@
+FUCK:
+robacceptance_163ad6f8 //
+robrejection_163ad6f8 //
+ 
+SHIT:
+heathday1_991aa62c //
+robday4cont_a0cb4790 //
+robday5_44b1511d //
+neutralrob5_8cf54b53 //
+day13_f6cf0f31 //
+
+if persistent.streammode == False:
+{k=-5}————{/k}
+
+BITCH:
+robacceptance_163ad6f8 //
+robrejection_163ad6f8 //
+
+ASS:
+ccanduleave_3aa2d4bd //
+robday5_430e1955 //
+unknownday11_959fb94d //
+
+ASSHOLE:
+impressrob2_ff9f2cee //
+
+GODDAMN:
+heathday1_2ca7c326 //
+robday1_4405ac0e //
+robday1_88a62195 //
+robday3_5902130b //
+robday11_d56f75ec //
+romancerobday11_7f77c842 //
+p_robday11_7f77c842 //
+n_robday11_7f77c842 //
+escape_rob_57563d3d //
+escape_rob_e5b75fdd //
+offendrob5_b803b9fa //
+
+DAMN:
+END_gregtrue_a291ee4a //
+END_robtrue_5907e784 //
+impressrob2_56c876bf //
+all "damn it" mc lines in escape //
+
+28 swears
+21

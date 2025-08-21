@@ -690,7 +690,10 @@ label impressrob2:
     n "Rob suddenly looks at the screen above him."
 
     show r yell
-    r "AH, DAMN YOU! LOST THE BALL AGAIN?"
+    if persistent.streammode == True:
+        r "AH, {k=-5}——{/k} YOU! LOST THE BALL AGAIN?"
+    else:
+        r "AH, DAMN YOU! LOST THE BALL AGAIN?"
 
     show r angry
     mc "You really like sports, don't you?"
@@ -699,7 +702,8 @@ label impressrob2:
     r "Uh, ahem, yeah. They keep me occupied."
     r "Kinda need it with how lonely it gets in here."
     r "Even when I {i}do{/i} get visitors, they hardly ever talk to me..."
-    r "Assholes."
+    if persistent.streammode == False:
+        r "Assholes."
 
     show e b annoy at bounce
     e "Doctor, we really ought to be going."

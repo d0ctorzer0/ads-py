@@ -137,20 +137,20 @@ screen emailrep2():
         text "from: Financial"
     vbox:
         style_prefix "eml"
-        text "{font=bulletin.ttf}{size=30}ASPC FINANCIAL REPORT - MONTH OF MAY\n\n+-------------------------------------------+\n| Date  | Core ID |     Service      |  Cost  |\n+-------------------------------------------+\n| 06/02 | C9-AN4  | Handles          | $3.5k  |\n| 06/05 | B6-QY6  | Framework Update | $9.8k  |\n| 06/09 | D8-PB3  | Coolant          | $4.2k  |\n| 06/09 | W6-BA5  | Optics Repair    | $40.2k |\n| 06/14 | U3-TO1  | Encoding Fix     | $24.3k |\n| 06/15 | T1-HB4  | Chassis Repair   | $6.2k  |\n| 06/26 | E9-YZ8  | Handles          | $3.6k  |\n| 06/27 | C7-JB9  | General Repair   | $18.7k |\n| 06/30 | C8-XA3  | Miscellaneous    | $10.7k |\n+-------------------------------------------+"
+        text "{font=bulletin.ttf}{size=30}ASPC FINANCIAL REPORT - MONTH OF MAY\n\n+-------------------------------------------+\n| Date  | Core ID |     Service      |  Cost  |\n+-------------------------------------------+\n| 05/02 | C9-AN4  | Handles          | $3.5k  |\n| 05/05 | B6-QY6  | Framework Update | $9.8k  |\n| 05/09 | D8-PB3  | Coolant          | $4.2k  |\n| 05/09 | W6-BA5  | Optics Repair    | $40.2k |\n| 05/14 | U3-TO1  | Encoding Fix     | $24.3k |\n| 05/15 | T1-HB4  | Chassis Repair   | $6.2k  |\n| 05/26 | E9-YZ8  | Handles          | $3.6k  |\n| 05/27 | C7-JB9  | General Repair   | $18.7k |\n| 05/30 | C8-XA3  | Miscellaneous    | $10.7k |\n+-------------------------------------------+"
         
 # +-------+---------+------------------+--------+\n
 # | Date  | Core ID |     Service      |  Cost  |\n
 # +-------+---------+------------------+--------+\n
-# | 06/02 | C9-AN4  | Handles          | $3.5k  |\n
-# | 06/05 | B6-QY6  | Framework Update | $9.8k  |\n
-# | 06/09 | D8-PB3  | Coolant          | $4.2k  |\n
-# | 06/09 | W6-BA5  | Optics Repair    | $5.2k  |\n
-# | 06/14 | U3-TO1  | Encoding Fix     | $24.3k |\n
-# | 06/15 | T1-HB4  | Chassis Repair   | $6.2k  |\n
-# | 06/26 | E9-YZ8  | Handles          | $3.6k  |\n
-# | 06/27 | C7-JB9 (this is gregory :3) | General Repair   | $18.7k |\n
-# | 06/30 | C8-XA3 (this is miss esther :3) | Miscellaneous    | $10.7k |\n
+# | 05/02 | C9-AN4  | Handles          | $3.5k  |\n
+# | 05/05 | B6-QY6  | Framework Update | $9.8k  |\n
+# | 05/09 | D8-PB3  | Coolant          | $4.2k  |\n
+# | 05/09 | W6-BA5  | Optics Repair    | $5.2k  |\n
+# | 05/14 | U3-TO1  | Encoding Fix     | $24.3k |\n
+# | 05/15 | T1-HB4  | Chassis Repair   | $6.2k  |\n
+# | 05/26 | E9-YZ8  | Handles          | $3.6k  |\n
+# | 05/27 | C7-JB9 (this is gregory :3) | General Repair   | $18.7k |\n
+# | 05/30 | C8-XA3 (this is miss esther :3) | Miscellaneous    | $10.7k |\n
 # +-------+---------+------------------+--------+
 
 

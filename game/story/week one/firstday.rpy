@@ -315,7 +315,10 @@ label heathday1:
     hide e
     with easeoutright
 
-    h "Where is that goddamn rabbit?!"
+    if persistent.streammode == True:
+        h "Where is that {k=-5}————{/k} rabbit?!"
+    else:
+        h "Where is that goddamn rabbit?!"
 
     n "The unmistakable voice of a personality core."
 
@@ -324,7 +327,10 @@ label heathday1:
 
     e "Heath? Heath! It's time for your check-in."
 
-    h "Ah, shit. I'm on my way. One second. Is the human here yet?"
+    if persistent.streammode == True:
+        h "Ah, {k=-5}——{/k}. I'm on my way. One second. Is the human here yet?"
+    else:
+        h "Ah, shit. I'm on my way. One second. Is the human here yet?"
 
     show e annoy
     e "Yes."
@@ -1031,7 +1037,10 @@ label robday1:
     show r angry
     r "Sorry, with you in a sec."
     show r yell
-    r "THROW THE GODDAMN BALL, WHAT ARE YOU WAITING FOR?!"
+    if persistent.streammode == True:
+        r "THROW THE {k=-5}————{/k} BALL, WHAT ARE YOU WAITING FOR?!"
+    else:
+        r "THROW THE GODDAMN BALL, WHAT ARE YOU WAITING FOR?!"
     $ persistent.rgunlock = True
 
     hide r with easeoutright
@@ -1042,7 +1051,10 @@ label robday1:
     show r angry with easeinright
     r "Yes, yes, Essie. One sec."
     show r yell
-    r "AHH, DAMN IT!! CAN'T YOU DO ONE GODDAMN THING RIGHT?"
+    if persistent.streammode == True:
+        r "AHH, {k=-5}——{/k} IT!! CAN'T YOU DO ONE {k=-5}————{/k} THING RIGHT?"
+    else:
+        r "AHH, DAMN IT!! CAN'T YOU DO ONE GODDAMN THING RIGHT?"
 
     show r angry
     n "The core shakes his chassis."

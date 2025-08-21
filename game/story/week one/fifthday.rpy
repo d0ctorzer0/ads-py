@@ -572,7 +572,10 @@ label ccanduleave:
 
     u "Fine, fine, I'm leavin'."
     show u
-    u "None of you even give a rat's ass about me..."
+    if persistent.streammode == True:
+        u "None of you even give a rat's {k=-5}——{/k} about me..."
+    else:
+        u "None of you even give a rat's ass about me..."
 
     show e b annoy at bounce
     e "Obviously."
@@ -797,12 +800,19 @@ label robday5:
 
     hide r with easeoutright
     show e shock with easeinright
-    e "ROB! WAKE YOUR SORRY ASS UP!"
+
+    if persistent.streammode == True:
+        e "ROB! WAKE YOUR SORRY {k=-5}——{/k} UP!"
+    else:
+        e "ROB! WAKE YOUR SORRY ASS UP!"
     hide e with easeoutright
 
     show r close with easeinright
     show r at bounce
-    r "OH! SHIT!"
+    if persistent.streammode == True:
+        r "OH! {k=-5}——{/k}!"
+    else:
+        r "OH! SHIT!"
     show r angry
     r "Essie, sorry, I... uh."
 
@@ -839,7 +849,10 @@ label offendrob5:
     show r angry
     r "What \"job\" do I even do?!"
     show r yell
-    r "I swear!! I'm alone in here all day, no one comes into this goddamn gym, and -"
+    if persistent.streammode == True:
+        r "I swear!! I'm alone in here all day, no one comes into this {k=-5}————{/k} gym, and -"
+    else:
+        r "I swear!! I'm alone in here all day, no one comes into this goddamn gym, and -"
     hide r with easeoutright
 
     show e shock with easeinright
@@ -939,7 +952,10 @@ label neutralrob5:
         $ positive["Rob"] = False
         show r
         r "Doc, listen."
-        r "It seems you don't really care for me, or the gym, or any of that shit."
+        if persistent.streammode == True:
+            r "It seems you don't really care for me, or the gym, or any of that {k=-5}——{/k}."
+        else:
+            r "It seems you don't really care for me, or the gym, or any of that shit."
         r "That's alright, but... don't think I don't know that, yeah?"
 
         mc "Yeah. Got it."

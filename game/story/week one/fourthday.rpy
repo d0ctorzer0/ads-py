@@ -644,7 +644,10 @@ label robday4cont:
     r "WHAT THE HELL IS YOUR PROBLEM? MOVE, DAVID, MOVE!"
 
     show r
-    r "Sorry. He's a shitty receiver. Would be much better if they put him in literally any other position..."
+    if persistent.streammode == True:
+        r "Sorry. He's a {k=-5}———{/k} receiver. Would be much better if they put him in literally any other position..."
+    else:
+        r "Sorry. He's a shitty receiver. Would be much better if they put him in literally any other position..."
 
     if ball == False:
         mc "I have no idea what that means."
