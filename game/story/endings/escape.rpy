@@ -719,7 +719,7 @@ label leave_unknown:
     mc "This must be hard for you."
 
     c "It is. And I'm a little scared how I'm going to... well, you understand."
-    c "Without Aperture's resources, I'm not sure how much longer I'll live."
+    c "Without Aperture's resources, I'm not sure how much longer I'll have."
 
     mc "I'll do anything to help you, CC."
     mc "You'll be okay."
