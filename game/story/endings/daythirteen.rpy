@@ -206,31 +206,31 @@ label savegreg:
         if persistent.cutscenes_seen == 41:
             achievement.grant("ach_picture")
             achievement.sync()
-    g "{color=#fff}O-Oh, Doctor! Can you - oh my god, can you help me?! Please!"
+    gcg "{color=#fff}O-Oh, Doctor! Can you - oh my god, can you help me?! Please!"
 
     mccut "{color=#fff}Where are you caught on?"
 
-    g "{color=#fff}The... the door's jammed shut."
-    g "{color=#fff}I was trying to get everyone else out first, but the servos failed while I was leaving..."
-    g "{color=#fff}My coat is caught in the door."
+    gcg "{color=#fff}The... the door's jammed shut."
+    gcg "{color=#fff}I was trying to get everyone else out first, but the servos failed while I was leaving..."
+    gcg "{color=#fff}My coat is caught in the door."
 
     mccut "{color=#fff}We might have to take the coat off, then."
 
-    g "{color=#fff}B-But - what if someone sees?! You're the only person I've ever told, I -"
+    gcg "{color=#fff}B-But - what if someone sees?! You're the only person I've ever told, I -"
 
     mccut "{color=#fff}Everyone else is gone. They're evacuating."
 
-    g "{color=#fff}I..."
+    gcg "{color=#fff}I..."
 
     mccut "{color=#fff}We don't have much time."
 
-    g "{color=#fff}O-Okay. I trust you, Doctor."
+    gcg "{color=#fff}O-Okay. I trust you, Doctor."
 
     n "{color=#fff}You attempt to unbutton the trench coat to free them, but it's very tight."
     
     mccut "{color=#fff}I think the only way to free you is to rip this off."
 
-    g "{color=#fff}My favorite coat..."
+    gcg "{color=#fff}My favorite coat..."
 
     n "{color=#fff}With all your strength, you grab the coat's fabric and rip it off them."
     n "{color=#fff}Gregory comes cascading down - and when they land..."

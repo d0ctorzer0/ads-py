@@ -29,6 +29,7 @@ define ccg = Character(("Cancer Core"), color="#1140a4", who_outlines=[(4, "#000
 
 define gu = Character(_("???"), color="#c9ae16")
 define g = Character(_("Gregory"), color="#c9ae16")
+define gcg = Character(_("Gregory"), color="#c9ae16", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 define g1 = Character(_("Gregory (top)"), color="#c9ae16")
 define g1cg = Character(_("Gregory (top)"), color="#c9ae16", who_outlines=[(4, "#000000", absolute(0), absolute(0))])
 define g1e = Character(_("Greg"), color="#c9ae16")
