@@ -837,7 +837,7 @@ label p_robday8:
 
     show r angry
     r "She can hear it all the way over there?"
-    r "Yikes. She must hate me, haha."
+    r "Yikes. She must hate me, huh?"
 
     show r close
     r "Ah, I gotcha. I'll turn it down. My bad."
@@ -936,7 +936,7 @@ label n_robday8:
 
     show r angry
     r "She can hear it all the way from down there?"
-    r "Yikes. She must hate me, haha. That makes two of ya, I suppose."
+    r "Yikes. She must hate me, huh? That makes two of ya, I suppose."
 
     show r close
     r "I'll turn it down. She's got nothing to worry about."
