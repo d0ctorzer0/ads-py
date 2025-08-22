@@ -388,8 +388,8 @@ label gregday11:
     mc "Gregory? What are you doing down here?"
 
     show g look
-    g "I was just on my way to see Kris - there's a... a meeting in his conference room. They ran out of space upstairs."
-    g "So I have to go get it ready."
+    g "I was just on my way to see Kris - there's a... a meeting in his conference room."
+    g "They ran out of space upstairs. So I have to go get it ready."
 
     show g
     g "But..."

@@ -536,7 +536,7 @@ label aspenday3good:
         a "{color=#fff}This is Penelope. She's an \"Adiantum\" - a maidenhair fern."
         a "{color=#fff}She's extremely tempermental. Doesn't listen to anyone but me."
         a "{color=#fff}I swear, if any other greenhouse employee tries to water her or test on her, she'll throw a fit."
-        a "{color=#fff}Haha, not literally, of course. She'll just wilt. But she's my favourite."
+        a "{color=#fff}Haha, not literally, of course. She'll just wilt. But she's my favorite."
 
         mccut "{color=#fff}She's beautiful."
 

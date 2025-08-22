@@ -99,7 +99,7 @@ label END_aspentrue:
     show a left offrail
     a "I was so, so tired."
     a "Thanks to you, though, I get to enjoy this freely..."
-    a "And I get to spend time with my favourite human ever."
+    a "And I get to spend my time with my favorite human ever."
     mc "You're so sweet, Aspen."
     show a look offrail
     show aspen blush with Dissolve(0.05)
