@@ -79,13 +79,3 @@ default persistent.endings_got = {
     "ace" : False,
     "unlikable" : False,
 }
-
-default persistent.true_endings_got = {
-    "kris" : False,
-    "heath" : False,
-    "aspen" : False,
-    "cc" : False,
-    "rob" : False,
-    "greg" : False,
-    "unknown" : False,
-}

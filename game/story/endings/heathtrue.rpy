@@ -250,10 +250,9 @@ label END_heathtrue:
     hide screen creditsfadeout
     python:
         persistent.endings_got["heathtrue"] = True
-        persistent.true_endings_got["heath"] = True
         if sum(persistent.endings_got.values()) == 18:
             achievement.grant("ach_seenitall")
-        if sum(persistent.true_endings_got.values()) == 7:
+        if persistent.endings_got["kristrue"] and persistent.endings_got["heathtrue"] and persistent.endings_got["aspentrue"] and persistent.endings_got["cctrue"] and persistent.endings_got["robtrue"] and persistent.endings_got["gregtrue"] and persistent.endings_got["unknowntrue"]:
             achievement.grant("ach_ultrobo")
         achievement.grant("ach_heathtrue")
         achievement.sync()
