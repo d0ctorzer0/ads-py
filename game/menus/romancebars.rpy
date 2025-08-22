@@ -68,7 +68,7 @@ screen affectionprogress():
         xysize (347,51)
     bar:
         value esther_affection
-        range 13
+        range 15
         left_bar "bars/ebar.png"
         right_bar "bars/bbar.png"
         xpos 1573
@@ -86,3 +86,5 @@ screen affectionprogress():
             text "Gregory" xpos 1573 ypos 771
             text "???" xpos 1573 ypos 851
             text "Miss Esther" xpos 1573 ypos 931
+    else:
+        add "gui/icons.png"

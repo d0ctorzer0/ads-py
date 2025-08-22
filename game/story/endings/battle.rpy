@@ -54,7 +54,7 @@ screen main():
     if persistent.colorblind == True:
         fixed:
             style_prefix "bossbars"
-            text "[name]" xpos 1663 ypos 900 at twoseventy
+            text "You" xpos 1703 ypos 985 at twoseventy
             text "Miss Esther" xpos 1757 ypos 875 at twoseventy
     if ap_count == 2:
         add "gui/boss/bot_ap.png"

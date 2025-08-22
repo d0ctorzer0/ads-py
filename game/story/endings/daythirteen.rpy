@@ -678,8 +678,7 @@ label savekris:
     show flash
     n "You push your way into Kris' conference room."
     n "It's a little difficult to get through the jammed door, but you make it in."
-    n "The stock market screen is on fire."
-    n "Literally."
+    n "The stock market projector is flashing a blue screen."
 
     mc "Kris!"
     $ cutscenetextbox = True
@@ -745,7 +744,7 @@ label nokris:
     window auto
     n "You push your way into Kris' conference room."
     n "It's a little difficult to get through the jammed door, but you make it in."
-    n "Kris isn't here, though. The screen is turned off, too."
+    n "Kris isn't here, though. The stock market graph is instead showing a blue screen."
     n "The management rail is less dusty - seems it's been used recently."
 
     mc "That's good - he probably got out okay."
