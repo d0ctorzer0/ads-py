@@ -50,6 +50,7 @@ default ssid = "moff"
 default plant = False
 default ball = False
 default picture = False
+default cactusname = ""
 default spades = True
 default emailfromunknownday2 = False
 default askforu = False

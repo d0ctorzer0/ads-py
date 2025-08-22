@@ -310,7 +310,7 @@ label satend_aspen:
         "{i}{color=#fff}The scene fades to Aspen looking down at the algae. Motes of colored light drift up into the air, illuminating them."
     acg "{color=#fff}I mean, I'm sure you've seen things glow before, but... this is different, yes?"
     acg "{color=#fff}{i}Pyrodinium bahamense{/i}. That's their binomial name."
-    acg "{color=#fff}But a lot of us just refer to them by their superclass."
+    acg "{color=#fff}But a lot of us just refer to them as their superclass."
     acg "{color=#fff}I personally think using their full name can be important..."
     acg "{color=#fff}They're on loan to us from Marine Studies. We generally don't carry much sea life in Botany."
     acg "{color=#fff}It's a rare treat."

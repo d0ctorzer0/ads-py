@@ -708,7 +708,7 @@ label ccday5cont:
 
     menu:
         extend ""
-        "What heartless {k=-5}————{/k} wrote this {k=-5}————{/k} report, anyway?" if persistent.streammode == True:
+        "What heartless {k=-5}———{/k} wrote this {k=-5}————{/k} report, anyway?" if persistent.streammode == True:
             $ romance_points["CC"] += 3
             jump impresscc5
         "What heartless bastard wrote this goddamn report, anyway?" if persistent.streammode == False:

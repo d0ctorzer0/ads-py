@@ -1517,9 +1517,9 @@ define bubble.expand_area = {
 style emailbtns_button:
     xpos 0.03
     ypos 120
-    bottom_padding 70
     background "images/email screen/test.png"
     hover_background "images/email screen/test2.png"
+    bottom_padding 70
 
 style emailbtns_button_text:
     font "terminal-grotesque.ttf"

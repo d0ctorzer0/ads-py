@@ -2,7 +2,7 @@ screen emailday8():
     vbox:
         style_prefix "emailbtns"
         textbutton "    from: HR\n        MANDATORY TRAINING                                                                " action Jump("emailone_8")
-        textbutton "    from: Aperture News Now\n        Are YOU Smarter Than A Test Subject? >>                                 " action Jump("emailtwo_8")
+        textbutton "    from: Aperture News Now\n        Are YOU Smarter Than A Test Subject? >>                                      " action Jump("emailtwo_8")
         if romance_points["Greg"] >= 10:
             textbutton "    from: {color=#c9ae16}Gregory{/color}\n        good to see you again                                                                       " action Jump("emailthree_8")
     vbox:

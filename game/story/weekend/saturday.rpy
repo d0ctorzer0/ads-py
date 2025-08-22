@@ -556,7 +556,7 @@ label satccpos:
     mc "And you have no idea where they might have taken it?"
 
     show c close
-    c "Oh, it's probably somewhere in the area. Perhaps in a storage unit, locked away..."
+    c "Oh, it's probably somewhere in the area. Perhaps in a storage closet, locked away..."
     show c
     c "But yes, I'm not entirely certain."
 

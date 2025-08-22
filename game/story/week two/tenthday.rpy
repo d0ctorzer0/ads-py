@@ -617,10 +617,13 @@ label aspenacceptance:
     menu:
         extend "" 
         "Gertrude.":
+            $ cactusname = "Gertrude"
             pass
         "Beatrice.":
+            $ cactusname = "Beatrice"
             pass
         "Emily.":
+            $ cactusname = "Emily"
             pass
     
     a "That's a great name!"
@@ -952,7 +955,7 @@ label ccrejection:
     mc "Oh, CC... I'm so sorry."
 
     show c look
-    c "That's why I needed you to know how I felt."
+    c "That's why I needed you to know how I felt about you."
     c "Before I pass."
 
     mc "You mean {i}if{/i} you pass."

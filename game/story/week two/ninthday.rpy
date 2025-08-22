@@ -157,7 +157,7 @@ label n_krisday9:
     k "Such an exhausting task."
 
     show e b annoy at bounce
-    e "Now, Kris, just because I'm tired -"
+    e "Kris..."
     hide e b 
 
     show k

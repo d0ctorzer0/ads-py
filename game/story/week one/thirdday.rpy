@@ -369,7 +369,7 @@ label heathday3good:
                 achievement.sync()
         n "{color=#fff}You're stunned by what you see -"
         n "{color=#fff} - a hidden-away, wooden room, lined with fairy lights, shelves stocked with magic paraphenalia."
-        h "{color=#fff}Tada!! This is my magic room. It's where I keep all the stuff I use to perform my tricks."
+        h "{color=#fff}Tada!! This is my magical emporium. It's where I keep all the stuff I use to perform my tricks."
 
         mccut "{color=#fff}Wow, Heath. I can't believe this. It's amazing."
 

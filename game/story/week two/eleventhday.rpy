@@ -7,12 +7,12 @@ label day11:
     elif lock_heath:
         mc "I wonder where Heath got that dove from... haha."
     elif lock_aspen:
-        n "You place the cactus Aspen gave you beside your \"bed\"."
+        n "You place the cactus Aspen gave you, [cactusname], beside your bed"
         n "The flowers look as bright as ever."
     elif lock_cc:
         mc "I never expected CC to recite poetry to me..."
     elif lock_rob:
-        n "You place your Topps baseball card by your \"bed\"."
+        n "You place your Topps baseball card by your bed."
         mc "It's honestly a little shocking he would give this to me... haha."
     else:
         n "A fairly... normal day, all things considered."

@@ -20,7 +20,7 @@ screen affectionprogress():
         xysize (347,51)
     bar:
         value romance_points["Heath"]
-        range 31
+        range 30
         left_bar "bars/hbar.png"
         right_bar "bars/bbar.png"
         xpos 1573
