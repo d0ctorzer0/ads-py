@@ -15,7 +15,7 @@ label END_gregtrue:
     n "Louder than the radio sometimes."
     n "The three little cores that you took under your wing a month ago rarely stop talking."
 
-    g3e "No. You're just straight-up wrong.. Coco Chanel's influence in the 1920s was undeniable."
+    g3e "No. You're just straight-up wrong. Coco Chanel's influence in the 1920s was undeniable."
     g2e "No need to be rude, Rie. I just think Patou's work was {i}better.{/i}"
     g1e "She has a point, though, Gore. Jean Patou was not nearly as influential as Chanel was."
     g2e "No, she's correct. Chanel's work was certainly more influential."
@@ -261,7 +261,7 @@ label END_gregtrue:
             achievement.sync()
     g2ecg "{color=#fff}This is incredible."
     g1ecg "{color=#fff}You know, I think I read about this in one of Aperture's records."
-    g3ecg "{color=#fff}If this is the ocean, why can I see a shoreline on the other side?"
+    g3ecg "{color=#fff}If this is the ocean, why can I see the shoreline on the other side?"
     mc "{color=#fff}It's not the ocean. We're on Lake Michigan."
     g3ecg "{color=#fff}W-Well. It's nothing special, but..."
     g2ecg "{color=#fff}Rie."
@@ -278,7 +278,7 @@ label END_gregtrue:
     g3ecg "{color=#fff}I love you."
     g1ecg "{color=#fff}Awww, Rie."
     g2ecg "{color=#fff}She finally admits it."
-    g1ecg "{color=#fff}Same goes for me. I love you, Doctor. Thanks for taking us out here."
+    g1ecg "{color=#fff}Same goes for me. I love you, Doctor. Thank you for taking us out here."
     g2ecg "{color=#fff}This was a great idea."
     menu:
         extend ""
