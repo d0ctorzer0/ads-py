@@ -1210,17 +1210,12 @@ label unlikableday10:
     c "Hello, Doctor."
 
     mc "Hi, CC."
-    c "As I'm sure you're well aware, I asked not to see you today."
-    c "I suppose Miss Esther had no other choice."
-
-    mc "That's correct."
+    mc "I apologize. I know you asked not to see me today. Miss Esther had no other choice."
+    mc "I'll be quiet as to not bother you."
 
     show c close
-    c "Unfortunate."
+    c "Mmm. Thank you."
     show c
-    c "Please, show me some grace - I'd like silence."
-
-    mc "Okay."
 
     n "The shift goes by slowly, but nothing bad happens."
     n "Generally CC stays quiet, only mumbling to himself every now and then."
@@ -1228,11 +1223,9 @@ label unlikableday10:
     n "Eventually, 16:00 comes along."
 
     show c close
-    c "Thank you for the quiet shift, Doctor."
-    show c
     c "Have a good day."
 
-    mc "Will do."
+    mc "I'll try."
 
     n "You finish your checklist and leave the room."
 
