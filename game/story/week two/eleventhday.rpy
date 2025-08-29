@@ -31,7 +31,7 @@ label day11:
     scene mcroom day
     with fade
 
-    n "You wake up at 7:30, more ready for the day than ever."
+    n "You wake up at 07:30, more ready for the day than ever."
     mc "Only two more days..."
     n "You grab your paperwork, get dressed, and leave your chambers."
 

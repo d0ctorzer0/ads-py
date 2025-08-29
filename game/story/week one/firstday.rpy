@@ -20,7 +20,7 @@ label start:
     with fade
 
     if persistent.advcap == True:
-        "{i}DAY 1 - MONDAY. Soft lo-fi music begins to play. The scene opens on a bleak white office, with a big window on the left lighting the room."
+        "{i}DAY 1 - MONDAY. Soft lo-fi music begins to play. The scene opens on a bleak gray office, with a big window on the left lighting the room."
     n "You sigh. Another day, another dollar. But today's gonna be different."
     n "An issue in another department has forced you to take over another employee's position for a few days."
     
@@ -463,7 +463,7 @@ label unknownday1:
     show e
     with easeinright
     if persistent.advcap == True:
-        "{i}The scene fades to a white hallway."
+        "{i}The scene fades to a dull gray-and-blue hallway."
     n "Miss Esther guides you to the next area, following you closely on her management rail."
 
     e "Section C8 is mostly a recreational area."
@@ -1026,7 +1026,7 @@ label robday1:
     n "Eventually, you approach a door with \"GYM\" written on it. Not a sign of any other human employees, though."
     n "You open the door to see a core behind a desk, red pupil twitching as it watches a TV screen above it."
     if persistent.advcap == True:
-        n "{i}The room looks like your average gym - several machines and dumbells line the walls. Multiple TV screens hang above the machines."
+        n "{i}The room looks like your average gym - several machines line the walls, with a rack of dumbbells in the center. Multiple TV screens hang above the machines."
     show r yell with easeinright
     r "GO! GO!! What are you DOING?! THROW IT!!"
 
