@@ -100,6 +100,7 @@ label END_unknowntrue:
     ry "I guess it's kinda the same, huh?"
     hide ryland blush
     show ry sus
+    $ cutscenechoice = False
     menu:
         extend ""
         "(Kiss him.)":

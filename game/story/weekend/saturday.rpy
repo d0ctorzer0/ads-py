@@ -216,7 +216,7 @@ label manufacture:
     n "You come up to the door that you assume leads to your old workplace."
     n "You don't recognize this entrance, but your office in Manufacturing was on the west side."
     n "What Miss Esther said yesterday is probably correct - Manufacturing is really just that large."
-    n "You try to open the door, but it's locked shut for the weekend. No windows to peer into, etiher."
+    n "You try to open the door, but it's locked shut for the weekend. No windows to peer into, either."
     n "Dejected, you leave Manufacturing behind."
 
     jump wander
