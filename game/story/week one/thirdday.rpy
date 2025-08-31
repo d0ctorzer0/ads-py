@@ -909,7 +909,7 @@ label day3end:
         e "That's great to hear. I'll take the data you collected and you can head out for the night."
         e "Like I said, it's a simple shift!"
 
-        n "You hand your clipboard over Miss Esther. What an interesting day..."
+        n "You hand your clipboard over to Miss Esther. What an interesting day..."
 
         jump e3first
     
