@@ -741,7 +741,7 @@ label satgreg_pos:
             if persistent.gc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.gc1 = True
-            if persistent.cutscenes_seen == 41:
+            if persistent.cutscenes_seen == 44:
                 achievement.grant("ach_picture")
                 achievement.sync()
         n "{color=#fff}Gregory looks down and begins speaking softly."
@@ -1114,7 +1114,7 @@ label satunknownpos:
             if persistent.uc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.uc1 = True
-            if persistent.cutscenes_seen == 41:
+            if persistent.cutscenes_seen == 44:
                 achievement.grant("ach_picture")
                 achievement.sync()
         u "{color=#fff}Well... yeah. Back when I was... cleaner, and I... remembered my name..."

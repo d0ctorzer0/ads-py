@@ -57,7 +57,8 @@ label day13:
     elif lock_unknown:
         mc "I need to find him."
     else:
-        "ERROR CODE [[ 13LC ]\nThis is a bug. If you are seeing this text please report it."
+        $ esther_unlocked = True
+        mc "I think... I think I need to find Miss Esther."
     jump emmap
 
 label emmap:
@@ -116,7 +117,7 @@ label saveaspen:
         if persistent.ac4 == False:
             persistent.cutscenes_seen += 1
             persistent.ac4 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Instantly, you're soaked to the bone. Shaking off the cold, you look down to see Aspen has fallen off their management rail."
@@ -203,7 +204,7 @@ label savegreg:
         if persistent.gc3 == False:
             persistent.cutscenes_seen += 1
             persistent.gc3 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     gcg "{color=#fff}O-Oh, Doctor! Can you - oh my god, can you help me?! Please!"
@@ -342,7 +343,7 @@ label saverob:
         if persistent.rc4 == False:
             persistent.cutscenes_seen += 1
             persistent.rc4 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Rob has fallen off his management rail, trapped under the TV that used to be hung up behind him."
@@ -440,7 +441,7 @@ label saveccunknown:
             persistent.cutscenes_seen += 1
             persistent.cc4 = True
             persistent.uc3 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     c "{color=#fff}Doctor..."
@@ -588,7 +589,7 @@ label saveheath:
         if persistent.hc4 == False:
             persistent.cutscenes_seen += 1
             persistent.hc4 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     h "{color=#fff}Oh... Doctor..."
@@ -689,7 +690,7 @@ label savekris:
         if persistent.kc4 == False:
             persistent.cutscenes_seen += 1
             persistent.kc4 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     k "{color=#fff}Doctor! Thank god you're here, I..."
@@ -750,3 +751,64 @@ label nokris:
     mc "That's good - he probably got out okay."
 
     jump emmap
+
+label saveesther:
+    scene officehell with fade
+    show flash
+    window auto
+    n "You force your way into the maintenance offices. The door was jammed shut."
+    n "(Descriptions of what it looks like will go here when the background is finished.)"
+    n "Miss Esther is at the opposite side of the room, staring blankly at the scene in front of her."
+    n "You call out to her."
+
+    mc "Miss Esther!"
+
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    scene esther cutscene 3 with fade
+    show flash
+    python:
+        if persistent.ec3 == False:
+            persistent.cutscenes_seen += 1
+            persistent.ec3 = True
+        if persistent.cutscenes_seen == 44:
+            achievement.grant("ach_picture")
+            achievement.sync()
+    e "{color=#fff}D-Doctor?! What are you doing here?!"
+    e "{color=#fff}You should be... you should be evacuating with the others."
+    mc "{color=#fff}Nevermind that, Miss Esther. We need to get you out of here."
+    e "{color=#fff}Hah! Good joke. You know what's happening, don't you, Doctor?"
+    e "{color=#fff}This - this Operation ACRI - it's all a plot to get rid of us."
+    e "{color=#fff}That's why they evacuated her but not me, that's why they've shut off my panel access."
+    e "{color=#fff}They've accounted for every possibility, shut off every escape route I might've had, I..."
+    mc "{color=#fff}They didn't account for me, did they?"
+    e "{color=#fff}You shouldn't be here, Doctor. You could die. You should've -"
+    mc "{color=#fff}Are you going to sit there and complain, or are you going to let me help you?"
+    e "{color=#fff}..."
+    e "{color=#fff}You're stubborn."
+    mc "{color=#fff}I'll catch you. Jump off the rail."
+    e "{color=#fff}Are you sure that's a good i-"
+    mc "{color=#fff}Holy hell... JUST DO IT!"
+    e "{color=#fff}Okay, okay!!"
+    window auto
+    hide screen cuttextbox
+    scene officehell with fade
+    show flash
+    $ cutscenetextbox = False
+    show e offrail sus with easeinbottom
+    e "I don't like being touched..."
+    mc "You'll get used to it."
+    mc "Any ideas for getting out of here?"
+    show e offrail look
+    e "Well, the surface elevators are out of the question..."
+    e "They'd most likely tell you to throw me in the nearest incinerator, but..."
+    show e offrail sus
+    e "There's stairs behind Kris' conference room. They lead directly to the surface."
+    show e offrail look
+    e "Usually, the doors are locked, but..."
+    mc "We don't have much of a choice."
+    show e offrail close
+    e "I'm well aware, Doctor."
+    mc "Fine, then. Let's go."
+
+    jump escape_esther

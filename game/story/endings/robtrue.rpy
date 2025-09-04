@@ -224,7 +224,7 @@ label END_robtrue:
         if persistent.rc6 == False:
             persistent.cutscenes_seen += 1
             persistent.rc6 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     rcg "{color=#fff}Ahh... that feels so nice."

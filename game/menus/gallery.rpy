@@ -33,13 +33,13 @@ screen gallerye():
     imagebutton idle "gui/gallery/gallery.png" focus_mask True action Show("galleryk")
     add "gui/gallery/redfile.png"
 
-    if persistent.elose == False:
+    if persistent.ec1 == False:
         add "gui/gallery/area1.png"
     else:
         imagebutton idle "characters/esther/esther lose.png" at egal_size1 xpos 320 ypos 100 action Show("fullelose", transition=gallswitch)
         add "gui/gallery/tape1.png"
 
-    if persistent.edeath == False:
+    if persistent.ec2 == False:
         add "gui/gallery/area2.png"
     else:
         imagebutton idle "characters/esther/esther death.png" at egal_size2 xpos 820 ypos 350 action Show("fulledeath", transition=gallswitch)
@@ -65,7 +65,7 @@ screen galleryk():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryk", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.elose == True or persistent.edeath == True:
+    if persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
  
     if persistent.kgunlock == False:
@@ -102,7 +102,7 @@ screen galleryh():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryh", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.elose == True or persistent.edeath == True:
+    if persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.hgunlock == False:
@@ -139,7 +139,7 @@ screen gallerya():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("gallerya", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.elose == True or persistent.edeath == True:
+    if persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.agunlock == False:
@@ -177,7 +177,7 @@ screen galleryc():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryc", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.elose == True or persistent.edeath == True:
+    if persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.cgunlock == False:
@@ -215,7 +215,7 @@ screen galleryr():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryr", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.elose == True or persistent.edeath == True:
+    if persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.rgunlock == False:
@@ -253,7 +253,7 @@ screen galleryg():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryg", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.elose == True or persistent.edeath == True:
+    if persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.ggunlock == False:
@@ -289,7 +289,7 @@ screen galleryu():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryu", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.elose == True or persistent.edeath == True:
+    if persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
         
     if persistent.ugunlock == False:

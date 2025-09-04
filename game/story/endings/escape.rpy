@@ -66,7 +66,7 @@ label escape_kris:
         if persistent.kc5 == False:
             persistent.cutscenes_seen += 1
             persistent.kc5 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -245,7 +245,7 @@ label escape_heath:
         if persistent.hc5 == False:
             persistent.cutscenes_seen += 1
             persistent.hc5 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -412,7 +412,7 @@ label escape_aspen:
         if persistent.ac5 == False:
             persistent.cutscenes_seen += 1
             persistent.ac5 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -650,7 +650,7 @@ label leave_unknown:
         if persistent.cc5 == False:
             persistent.cutscenes_seen += 1
             persistent.cc5 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -858,7 +858,7 @@ label leave_cc:
         if persistent.uc4 == False:
             persistent.cutscenes_seen += 1
             persistent.uc4 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -1022,7 +1022,7 @@ label escape_rob:
         if persistent.rc5 == False:
             persistent.cutscenes_seen += 1
             persistent.rc5 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -1247,7 +1247,7 @@ label escape_gregory:
         if persistent.gc4 == False:
             persistent.cutscenes_seen += 1
             persistent.gc4 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -1368,4 +1368,149 @@ label escape_gregory:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_greggood")
             achievement.sync()
-        jump END_gregtrue  
+        jump END_gregtrue 
+
+label escape_esther:
+    scene stairs with fade
+    if persistent.flash == True:
+        show flash
+    show e offrail with easeinbottom
+    e "Aha! Here it is! Stairs to the surface, I..."
+    show e offrail shock
+    e "Is... is that... sunlight? At the top?"
+    e "The doors are... {i}open!"
+    mc "You said they're usually locked, right?"
+    show e offrail sus
+    e "Usually, yes, but..."
+    show e offrail look
+    e "Looks like they're... not... this time."
+    mc "Miss Esther? Is something wrong?"
+    show e offrail close
+    n "She sighs."
+    e "I... well..."
+    stop music fadeout 3.0
+    show e offrail look
+    e "I've never been to the surface."
+    e "Personality constructs... {i}we{/i}... usually aren't permitted."
+    show e offrail close
+    e "And I... don't know what to expect up there."
+    show e offrail sus
+    e "I'm used to Aperture, Doctor. I'm used to being connected to the panel systems, I'm used to being in charge of Section C8, I'm..."
+    e "Even though Testing played a big part in my... early activation days, I've... grown..."
+    show e offrail look
+    e "F-Fond of working with... the others."
+    show e offrail close
+    e "A-And now I don't know if they're safe, and I... I've lost any connection I had to them, and..."
+    show e offrail shock
+    e "I-I'm scared, I..."
+    show e offrail close
+    e "I thought I was finally making {i}progress.{/i}"
+    show e offrail
+    e "Hell, Kris had invited me to the lounge yesterday, and... he {i}hates{/i} me. Or... so I thought."
+    show e offrail look
+    e "Now that they're gone, what... what will I do? What's even up there for me?"
+    show e offrail sus
+    mc "I understand, Miss Esther. That... that must be tough."
+    mc "But you have me here. I'm going to get you out of here, and..."
+    mc "You'll have plenty of opportunities on the surface that you can't get down here."
+    mc "I can't guarantee it'll be easy, or quick..."
+    mc "But you've shown me that you're strong."
+    mc "I think you'll do just fine up there."
+    show e offrail close
+    e "O-Okay, Doctor. I trust you, I..."
+    show e offrail
+    e "It's a little ridiculous to talk about this now, when the facility's falling apart, isn't it?"
+    show e offrail close
+    n "She sighs."
+    show e offrail
+    e "Let's go."
+
+    hide flash
+    scene black with fade
+    $ renpy.pause(2.0, hard=True)
+    $ cutscenetextbox = True
+    show screen cuttextbox
+    $ renpy.music.play("music/outsidereveal.ogg")
+    $ renpy.music.queue("music/outside.ogg", clear_queue=False)
+    scene white with blindplayer
+
+    e "{color=#fff}O-Oh my god, I can... barely see a thing..."
+    e "{color=#fff}I... oh, {i}my.{/i}"
+
+    scene esther cutscene 4 with dissolve
+    python:
+        if persistent.ec4 == False:
+            persistent.cutscenes_seen += 1
+            persistent.ec4 = True
+        if persistent.cutscenes_seen == 44:
+            achievement.grant("ach_picture")
+            achievement.sync()
+
+    n "{color=#fff}Your vision is blinded by the bright light of the outside world."
+    n "{color=#fff}It's only been about two weeks since you were last outside, but..."
+    
+    e "{color=#fff}This is... nothing like the rest of Aperture."
+    e "{color=#fff}It's so bright, so full of color, so..."
+
+    n "{color=#fff}...Miss Esther has never seen the surface."
+
+    e "{color=#fff}It's incredible!"
+    e "{color=#fff}All those white-paneled walls and perfectly-placed tiling... could {i}never{/i} compare to this."
+    e "{color=#fff}I... wow."
+    e "{color=#fff}..."
+    e "{color=#fff}Doctor..."
+    e "{color=#fff}Why'd you come back for me?"
+    e "{color=#fff}I-I've done nothing for you in the past two weeks but... boss you around and..."
+    e "{color=#fff}Well, you know."
+    e "{color=#fff}You could've just saved yourself, but... you came all the way to the offices, not even knowing if I was there, I..."
+    e "{color=#fff}You risked so much. And for what?"
+    e "{color=#fff}For me?"
+    e "{color=#fff}You know better than anyone how much I... struggle to connect with others, and how..."
+    e "{color=#fff}I'm not the... {i}kindest{/i} robot out there."
+    e "{color=#fff}It's in my programming."
+    e "{color=#fff}I've always thought..."
+    mc "{color=#fff}I don't know, Miss Esther. You..."
+    mc "{color=#fff}You've been kind to me. And... when I woke up, and the alarms were going off, I..."
+    e "{color=#fff}I suppose making enemies out of my most possible friends doesn't help me much in the long run..."
+    e "{color=#fff}..."
+    e "{color=#fff}Thank you."
+    e "{color=#fff}You're... too kind to me."
+    e "{color=#fff}We should go now. Before they find us."
+
+    hide screen cuttextbox
+    scene black with fade
+    $ cutscenetextbox = False
+    n "You clutch Miss Esther tightly to your hip and start running."
+    n "She's heavier than average core weight, somehow."
+    n "You don't dare look back."
+    n "Dodging bushes and trees, you run alongside the road leading away from the facility, keeping just far enough away to not be spotted."
+    n "Eventually, you reach a clearing just outside the neighboring city."
+    e "Doctor - stop. You need to rest."
+    e "It won't do you any good to keep running. I think we're far enough away, regardless."
+    mc "You're... you're right, Miss Esther. As usual."
+    e "Hah. Don't give me too much credit."
+
+    n "You sit down against a tree and lay Miss Esther beside you."
+
+    e "Being... outside... is so strange."
+    e "The closest I ever got was the surface tracks."
+    e "I was stationed there only 3 months before they scrapped the program."
+    e "Turns out sweeping dead leaves and scrubbing moss out of testing tracks is expensive."
+    e "Who would've thought?"
+
+    mc "So you've seen the surface before, then?"
+    e "Seen it? Yes. But I was never permitted outside the observation rooms, which were completely enclosed."
+    e "So this... is new."
+    e "..."
+    mc "..."
+    e "Thank you, again, Doctor."
+    e "I don't know what awaits us in the future, but..."
+    e "I'm glad to have someone as... understanding as you in my life."
+
+    mc "Actual gratitude? From you?"
+
+    e "Rare, I know. Don't get used to it."
+
+    n "ENDTEST - MORE DIALOGUE TO COME. Thank you for testing."
+
+    $ MainMenu(confirm=False)()

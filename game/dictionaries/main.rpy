@@ -125,8 +125,11 @@ default persistent.uc3 = persistent.cc4
 default persistent.uc4 = False
 default persistent.uc5 = False
 
-default persistent.edeath = False
-default persistent.elose = False
+default persistent.ec1 = False
+default persistent.ec2 = False
+default persistent.ec3 = False
+default persistent.ec4 = False
+default persistent.ec5 = False
 
 #DAY 3 - "with [blank] day 3"
 default wkd3 = False

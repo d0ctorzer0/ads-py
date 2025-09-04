@@ -253,7 +253,7 @@ label END_aspentrue2:
         if persistent.ac6 == False:
             persistent.cutscenes_seen += 1
             persistent.ac6 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}You set Aspen down in the daisy patch and lay down next to them."

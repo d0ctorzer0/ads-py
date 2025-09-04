@@ -6,6 +6,7 @@ default emv_greg = False
 default emv_rob = False
 default emv_aspen = False
 default emv_unknown = False
+default esther_unlocked = False
 
 # screens
 
@@ -28,6 +29,9 @@ screen emergencymap():
         
         if emv_kris == False:
             hotspot (1116, 383, 236, 140) action Hide("emergencymap", transition=dissolve), Jump("savekris")
+
+        if esther_unlocked == True:
+            hotspot (1453, 569, 219, 319) action Hide("emergencymap", transition=dissolve), Jump("saveesther")
         
         #arrows
         hotspot (436, 166, 82, 92) action Hide("emergencymap"), Show("emergencymapup", transition=dissolve)
@@ -44,7 +48,9 @@ screen emergencymap():
         image "gui/em_map/breakroomblocked.png"
     if emv_kris == True:
         image "gui/em_map/conferenceblocked.png"
-
+    if esther_unlocked == False:
+        image "gui/em_map/maintenanceblocked.png"
+    
 screen emergencymapup():
     imagemap:
         idle "gui/em_map/uppersect.png"

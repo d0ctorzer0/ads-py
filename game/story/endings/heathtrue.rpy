@@ -210,7 +210,7 @@ label END_heathtrue:
         if persistent.hc6 == False:
             persistent.cutscenes_seen += 1
             persistent.hc6 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Heath closes her optic and slowly opens her shell -"

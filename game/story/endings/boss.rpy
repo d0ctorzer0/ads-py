@@ -93,7 +93,7 @@ screen savequestion:
 
 label enddecide_aceorunlikable:
     $ audio_crossFade(2, "music/one.ogg")
-    if gotconfession:
+    if gotconfession == True:
         $ aceending = True
     else:
         $ unlikableending = True
@@ -126,15 +126,61 @@ label enddecide_aceorunlikable:
 
     show e shock
     e "Oh! That must be her! Sorry, Doctor, but I need you to leave now."
-    if aceending == True:
+    if persistent.ec1 == True and persistent.ec2 == True and esther_affection >= 10 and aceending == True:
+        jump estherend_begin
+    elif aceending == True:
         jump END_ace
-    if unlikableending == True:
+    elif unlikableending == True:
         jump END_unlikable
+
+label estherend_begin:
+    show e
+    e "It was a pleasure to work with you. Truly one of the best employees I've had in a while."
+    mc "Thank you, Miss Esther. I... enjoyed working with you as well."
+    e "You should still have one more night in your given room due to the sudden change."
+    show e shock
+    e "I'll... miss you. You'll be back to visit, yes?"
+    mc "Of course I will."
+    show e
+    e "Wonderful."
+    e "I... hope to see you soon, Doctor."
+    scene hall with fade
+    n "You enter back out into the hall."
+    n "Despite the... romantic connotation of the cores you encountered, it was fairly uneventful."
+    n "Your outlook is bright."
+    n "You're glad you got to meet so many interesting personalities."
+    n "You'll definitely be back to visit."
+
+    # give ace achievement even if they get this ending first
+    python:
+        persistent.endings_got["ace"] = True
+        if sum(persistent.endings_got.values()) == 18:
+            achievement.grant("ach_seenitall")
+        achievement.grant("ach_amoh")
+        achievement.sync()
+
+    play music fourteen
+    scene mcroom day with fade
+    n "You enter back in to your soon-to-be-former room."
+
+    mc "Miss Esther said I had one more night in here..."
+    mc "I should probably get packing."
+
+    scene mcroom night with dissolve
+
+    n "Before you know it, it's night."
+    n "Your bags are packed, your paperwork is filed, your emails are sent..."
+    n "And you're ready to go back to Manufacturing on Monday."
+
+    mc "Boy, do I have the story to tell them..."
+
+    n "You lay down one last time."
+
+    jump day13
 
 label END_ace:
     show e
     e "It was a pleasure to work with you. Truly one of the best employees I've had in a while."
-    show e shock
     e "I'll... miss you. You'll be back to visit, yes?"
     mc "I'll certainly try, Miss Esther."
     show e
@@ -158,9 +204,9 @@ label END_ace:
         if sum(persistent.endings_got.values()) == 18:
             achievement.grant("ach_seenitall")
         achievement.grant("ach_amoh")
-        achievement.sync() 
-    $ renpy.movie_cutscene("ENDCREDIT_ace.webm")
-    $ MainMenu(confirm=False)()
+        achievement.sync()
+        renpy.movie_cutscene("ENDCREDIT_ace.webm")
+        MainMenu(confirm=False)()
 
 label END_unlikable:
     show e

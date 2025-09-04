@@ -209,7 +209,7 @@ label krisday3good:
             if persistent.kc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.kc1 = True
-            if persistent.cutscenes_seen == 41:
+            if persistent.cutscenes_seen == 44:
                 achievement.grant("ach_picture")
                 achievement.sync()
         if persistent.advcap == True:
@@ -364,7 +364,7 @@ label heathday3good:
             if persistent.hc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.hc1 = True
-            if persistent.cutscenes_seen == 41:
+            if persistent.cutscenes_seen == 44:
                 achievement.grant("ach_picture")
                 achievement.sync()
         n "{color=#fff}You're stunned by what you see -"
@@ -528,7 +528,7 @@ label aspenday3good:
             if persistent.ac1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.ac1 = True
-            if persistent.cutscenes_seen == 41:
+            if persistent.cutscenes_seen == 44:
                 achievement.grant("ach_picture")
                 achievement.sync()
         if persistent.advcap == True:
@@ -667,7 +667,7 @@ label ccday3good:
             if persistent.cc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.cc1 = True
-            if persistent.cutscenes_seen == 41:
+            if persistent.cutscenes_seen == 44:
                 achievement.grant("ach_picture")
                 achievement.sync()
         if persistent.advcap == True:
@@ -816,7 +816,7 @@ label rday3good:
             if persistent.rc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.rc1 = True
-            if persistent.cutscenes_seen == 41:
+            if persistent.cutscenes_seen == 44:
                 achievement.grant("ach_picture")
                 achievement.sync()
         if persistent.advcap == True:

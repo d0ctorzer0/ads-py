@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/menus/loadsave.rpy", line 26: 'FileTakeScreenshot' is not a keyword argument or valid child of the screen statement.
-    FileTakeScreenshot()
-                      ^
+File "game/story/endings/emergencymap.rpy", line 33: imagemap expects a non-empty block.
+    if esther_unlocked == True:
+                               ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Wed Aug 20 19:03:37 2025
+Thu Sep  4 11:37:36 2025

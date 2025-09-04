@@ -1,84 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-Exception: DynamicImage 'gui/phone/slider/horizontal_[prefix_]thumb.png': could not find image. ('gui/phone/slider/horizontal_idle_thumb.png', 'gui/phone/slider/horizontal_thumb.png')
+  File "game/story/endings/daythirteen.rpy", line 756, in script
+    scene office hell
+Exception: Image 'office' does not accept attributes 'hell'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/ast.py", line 834, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/python.py", line 1187, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/core.py", line 2218, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/core.py", line 2882, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/core.py", line 1384, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/movetransition.py", line 383, in render
-    old_r = renpy.display.render.render(self.old, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/transform.py", line 1056, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 994, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 427, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/layout.py", line 2184, in render
-    cr = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/screen.py", line 755, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/layout.py", line 1171, in render
-    surf = render(d, width - x, rh, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/transform.py", line 1056, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 994, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 427, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/behavior.py", line 2378, in render
-    thumb = render(self.style.thumb, thumb_dim, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/image.py", line 772, in render
-    self.find_target()
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/image.py", line 683, in find_target
-    raise Exception(error)
-Exception: DynamicImage 'gui/phone/slider/horizontal_[prefix_]thumb.png': could not find image. ('gui/phone/slider/horizontal_idle_thumb.png', 'gui/phone/slider/horizontal_thumb.png')
+  File "game/story/endings/daythirteen.rpy", line 756, in script
+    scene office hell
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1258, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1087, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\image.py", line 722, in _duplicate
+    args.extraneous()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'office' does not accept attributes 'hell'.
 
-macOS-11.6-arm64-arm-64bit arm64
-Ren'Py 8.3.7.25031702
-Aperture Dating Simulator 1.0.0
-Fri Aug 29 18:14:42 2025
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.6.25022803
+Aperture Dating Simulator 1.0.7
+Thu Sep  4 12:57:07 2025

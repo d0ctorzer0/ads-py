@@ -418,7 +418,7 @@ label gregday11:
         if persistent.gc2 == False:
             persistent.cutscenes_seen += 1
             persistent.gc2 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Gregory moves his bottom handle slightly, unbuttoning his trench coat. It falls to the ground."
@@ -573,7 +573,7 @@ label unknownday11:
         if persistent.uc2 == False:
             persistent.cutscenes_seen += 1
             persistent.uc2 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync() 
     u "{color=#fff}I really wanted to prove to ya that I'm more than what I look like."

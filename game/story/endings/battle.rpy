@@ -452,10 +452,10 @@ label END_heartless:
     show screen cuttextbox
     scene esther death with fade
     python:
-        if persistent.edeath == False:
+        if persistent.ec2 == False:
             persistent.cutscenes_seen += 1
-            persistent.edeath = True
-        if persistent.cutscenes_seen == 41:
+            persistent.ec2 = True
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     hide screen creditsfadeout with fade
@@ -492,10 +492,10 @@ label continuegame:
     show screen cuttextbox
     scene esther lose with fade
     python:
-        if persistent.elose == False:
+        if persistent.ec1 == False:
             persistent.cutscenes_seen += 1
-            persistent.elose = True
-        if persistent.cutscenes_seen == 41:
+            persistent.ec1 = True
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     hide screen creditsfadeout with fade

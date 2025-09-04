@@ -256,7 +256,7 @@ label END_gregtrue:
         if persistent.gc5 == False:
             persistent.cutscenes_seen += 1
             persistent.gc5 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     g2ecg "{color=#fff}This is incredible."

@@ -194,7 +194,7 @@ label krisconfession:
         if persistent.kc3 == False:
             persistent.cutscenes_seen += 1
             persistent.kc3 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     if persistent.advcap == True:
@@ -382,7 +382,7 @@ label heathday10:
         if persistent.hc3 == False:
             persistent.cutscenes_seen += 1
             persistent.hc3 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     "{color=#fff}With a sudden explosion of sparkle and feathers, a dove emerges from Heath's chassis."
@@ -579,7 +579,7 @@ label aspenday10:
         if persistent.ac3 == False:
             persistent.cutscenes_seen += 1
             persistent.ac3 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     acg "{color=#fff}This cactus is for you."
@@ -797,7 +797,7 @@ label ccday10:
         if persistent.cc3 == False:
             persistent.cutscenes_seen += 1
             persistent.cc3 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     c "{color=#fff}I wore apathy like armor..."
@@ -1015,7 +1015,7 @@ label robday10:
         if persistent.rc3 == False:
             persistent.cutscenes_seen += 1
             persistent.rc3 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     r "{color=#fff}This is my most prized possession - it's an authentic 1988 Topps baseball card."

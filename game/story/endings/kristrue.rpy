@@ -247,7 +247,7 @@ label END_kristrue2:
         if persistent.kc6 == False:
             persistent.cutscenes_seen += 1
             persistent.kc6 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     k "{color=#fff}I'm still getting used to... not being... down there, you know."

@@ -227,7 +227,7 @@ label END_unknowntrue:
         if persistent.uc5 == False:
             persistent.cutscenes_seen += 1
             persistent.uc5 = True
-        if persistent.cutscenes_seen == 41:
+        if persistent.cutscenes_seen == 44:
             achievement.grant("ach_picture")
             achievement.sync()
     ry "{color=#fff}I just remembered something else."
