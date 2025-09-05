@@ -298,13 +298,33 @@ label END_esthertrue:
     mc "Now that's something I never thought I'd do."
 
     scene black with fade
+    scene black with fade
+
+    $ daynum = "???"
+    $ dayday = "Section C8"
+
+    if renpy.is_skipping() == False:
+        show screen truedaytransition
+        $ renpy.pause(2.0, hard=True)
+    
+    eold "Hello. I'm Es-"
+    e "Ahem. {i}Miss{/i} Esther. I'll be your supervisor here in Maintenance for the foreseeable future."
+    e "You're... Thomas, correct?"
+    e "{cps=15}I hope we can be..."
+    e "I hope we can be...{fast} {i}good friends.{/i}"
+
+    scene es trail with Dissolve (0.5)
+    show e offrail with easeinbottom
 
     mc "Alright, Miss Esther. We're almost at the summit."
+
+    show e offrail sus
     e "The summit?"
     e "Where are you {i}taking{/i} me?"
     mc "Just you wait."
 
     scene black with fade
+
     scene es overlook with fade
     show e offrail shock with easeinbottom
     n "Finally, you reach the summit, exhausted."
@@ -362,18 +382,6 @@ label END_esthertrue:
     scene black with fade
     $ cutscenetextbox = False
     $ renpy.pause(2.0, hard=True)
-
-    $ daynum = "???"
-    $ dayday = "Section C8"
-
-    if renpy.is_skipping() == False:
-        show screen truedaytransition
-        $ renpy.pause(2.0, hard=True)
-    
-    eold "Hello. I'll be your supervisor for the foreseeable future."
-    eold "You're... Thomas, correct?"
-    eold "{cps=15}I hope we can be..."
-    eold "I hope we can be...{fast} {i}good friends.{/i}"
 
     stop music fadeout 2.0
     window hide
