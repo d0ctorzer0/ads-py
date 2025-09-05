@@ -117,7 +117,7 @@ label saveaspen:
         if persistent.ac4 == False:
             persistent.cutscenes_seen += 1
             persistent.ac4 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Instantly, you're soaked to the bone. Shaking off the cold, you look down to see Aspen has fallen off their management rail."
@@ -204,7 +204,7 @@ label savegreg:
         if persistent.gc3 == False:
             persistent.cutscenes_seen += 1
             persistent.gc3 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     gcg "{color=#fff}O-Oh, Doctor! Can you - oh my god, can you help me?! Please!"
@@ -343,7 +343,7 @@ label saverob:
         if persistent.rc4 == False:
             persistent.cutscenes_seen += 1
             persistent.rc4 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Rob has fallen off his management rail, trapped under the TV that used to be hung up behind him."
@@ -441,7 +441,7 @@ label saveccunknown:
             persistent.cutscenes_seen += 1
             persistent.cc4 = True
             persistent.uc3 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     c "{color=#fff}Doctor..."
@@ -589,7 +589,7 @@ label saveheath:
         if persistent.hc4 == False:
             persistent.cutscenes_seen += 1
             persistent.hc4 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     h "{color=#fff}Oh... Doctor..."
@@ -690,7 +690,7 @@ label savekris:
         if persistent.kc4 == False:
             persistent.cutscenes_seen += 1
             persistent.kc4 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     k "{color=#fff}Doctor! Thank god you're here, I..."
@@ -771,7 +771,7 @@ label saveesther:
         if persistent.ec3 == False:
             persistent.cutscenes_seen += 1
             persistent.ec3 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     e "{color=#fff}D-Doctor?! What are you doing here?!"

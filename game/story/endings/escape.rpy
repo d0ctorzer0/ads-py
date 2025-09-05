@@ -66,7 +66,7 @@ label escape_kris:
         if persistent.kc5 == False:
             persistent.cutscenes_seen += 1
             persistent.kc5 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -157,7 +157,7 @@ label escape_kris:
         hide screen creditsfadeout
         python:
             persistent.endings_got["krisgood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_krisgood")
             achievement.sync()
@@ -166,7 +166,7 @@ label escape_kris:
     if romance_points["Kris"] >= 29:
         python:
             persistent.endings_got["krisgood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_krisgood")
             achievement.sync()
@@ -245,7 +245,7 @@ label escape_heath:
         if persistent.hc5 == False:
             persistent.cutscenes_seen += 1
             persistent.hc5 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -336,7 +336,7 @@ label escape_heath:
         hide screen creditsfadeout
         python:
             persistent.endings_got["heathgood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_heathgood")
             achievement.sync()
@@ -345,7 +345,7 @@ label escape_heath:
     if romance_points["Heath"] >= 29:
         python:
             persistent.endings_got["heathgood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_heathgood")
             achievement.sync()
@@ -412,7 +412,7 @@ label escape_aspen:
         if persistent.ac5 == False:
             persistent.cutscenes_seen += 1
             persistent.ac5 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -507,7 +507,7 @@ label escape_aspen:
         hide screen creditsfadeout
         python:
             persistent.endings_got["aspengood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_aspengood")
             achievement.sync()
@@ -516,7 +516,7 @@ label escape_aspen:
     if romance_points["Aspen"] >= 28:
         python:
             persistent.endings_got["aspengood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_aspengood")
             achievement.sync()
@@ -650,7 +650,7 @@ label leave_unknown:
         if persistent.cc5 == False:
             persistent.cutscenes_seen += 1
             persistent.cc5 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -735,7 +735,7 @@ label leave_unknown:
         hide screen creditsfadeout
         python:
             persistent.endings_got["ccgood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_ccgood")
             achievement.sync()
@@ -744,7 +744,7 @@ label leave_unknown:
     if romance_points["CC"] >= 30:
         python:
             persistent.endings_got["ccgood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_ccgood")
             achievement.sync()
@@ -858,7 +858,7 @@ label leave_cc:
         if persistent.uc4 == False:
             persistent.cutscenes_seen += 1
             persistent.uc4 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -942,7 +942,7 @@ label leave_cc:
         hide screen creditsfadeout
         python:
             persistent.endings_got["unknowngood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_unknowngood")
             achievement.sync()
@@ -951,7 +951,7 @@ label leave_cc:
     if romance_points["???"] >= 15:
         python:
             persistent.endings_got["unknowngood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_unknowngood")
             achievement.sync()
@@ -1022,7 +1022,7 @@ label escape_rob:
         if persistent.rc5 == False:
             persistent.cutscenes_seen += 1
             persistent.rc5 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -1125,7 +1125,7 @@ label escape_rob:
         hide screen creditsfadeout
         python:
             persistent.endings_got["robgood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_robgood")
             achievement.sync()
@@ -1134,7 +1134,7 @@ label escape_rob:
     if romance_points["Rob"] >= 29:
         python:
             persistent.endings_got["robgood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_robgood")
             achievement.sync()
@@ -1247,7 +1247,7 @@ label escape_gregory:
         if persistent.gc4 == False:
             persistent.cutscenes_seen += 1
             persistent.gc4 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
@@ -1355,7 +1355,7 @@ label escape_gregory:
         hide screen creditsfadeout
         python:
             persistent.endings_got["greggood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_greggood")
             achievement.sync()
@@ -1364,7 +1364,7 @@ label escape_gregory:
     if romance_points["Greg"] >= 21:
         python:
             persistent.endings_got["greggood"] = True
-            if sum(persistent.endings_got.values()) == 18:
+            if sum(persistent.endings_got.values()) == ending_count:
                 achievement.grant("ach_seenitall")
             achievement.grant("ach_greggood")
             achievement.sync()
@@ -1442,7 +1442,7 @@ label escape_esther:
         if persistent.ec4 == False:
             persistent.cutscenes_seen += 1
             persistent.ec4 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
 

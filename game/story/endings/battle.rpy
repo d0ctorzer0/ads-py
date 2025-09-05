@@ -416,7 +416,7 @@ label END_mcdeath:
     $ renpy.pause(3.0, hard=True)
     python:
         persistent.endings_got["die"] = True
-        if sum(persistent.endings_got.values()) == 18:
+        if sum(persistent.endings_got.values()) == ending_count:
             achievement.grant("ach_seenitall")
         achievement.grant("ach_ohno")
         achievement.sync()
@@ -455,7 +455,7 @@ label END_heartless:
         if persistent.ec2 == False:
             persistent.cutscenes_seen += 1
             persistent.ec2 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     hide screen creditsfadeout with fade
@@ -467,7 +467,7 @@ label END_heartless:
     e "{color=#fff}...mad."
     python:
         persistent.endings_got["heartless"] = True
-        if sum(persistent.endings_got.values()) == 18:
+        if sum(persistent.endings_got.values()) == ending_count:
             achievement.grant("ach_seenitall")
         achievement.grant("ach_heartless")
         achievement.sync()
@@ -495,7 +495,7 @@ label continuegame:
         if persistent.ec1 == False:
             persistent.cutscenes_seen += 1
             persistent.ec1 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     hide screen creditsfadeout with fade

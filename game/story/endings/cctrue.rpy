@@ -211,7 +211,7 @@ label END_cctrue:
         if persistent.cc6 == False:
             persistent.cutscenes_seen += 1
             persistent.cc6 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     cc "{color=#fff}It feels so... cold."
@@ -255,7 +255,7 @@ label END_cctrue:
     hide screen creditsfadeout
     python:
         persistent.endings_got["cctrue"] = True
-        if sum(persistent.endings_got.values()) == 18:
+        if sum(persistent.endings_got.values()) == ending_count:
             achievement.grant("ach_seenitall")
         if persistent.endings_got["kristrue"] and persistent.endings_got["heathtrue"] and persistent.endings_got["aspentrue"] and persistent.endings_got["cctrue"] and persistent.endings_got["robtrue"] and persistent.endings_got["gregtrue"] and persistent.endings_got["unknowntrue"]:
             achievement.grant("ach_ultrobo")

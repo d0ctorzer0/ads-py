@@ -85,7 +85,7 @@ label satend_kris:
         if persistent.kc2 == False:
             persistent.cutscenes_seen += 1
             persistent.kc2 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     if persistent.advcap == True:
@@ -199,7 +199,7 @@ label satend_heath:
         if persistent.hc2 == False:
             persistent.cutscenes_seen += 1
             persistent.hc2 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     show screen cuttextbox
@@ -303,7 +303,7 @@ label satend_aspen:
         if persistent.ac2 == False:
             persistent.cutscenes_seen += 1
             persistent.ac2 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     if persistent.advcap == True:
@@ -443,7 +443,7 @@ label satend_rob:
         if persistent.rc2 == False:
             persistent.cutscenes_seen += 1
             persistent.rc2 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     show screen cuttextbox
@@ -510,7 +510,7 @@ label satend_cc:
         if persistent.cc2 == False:
             persistent.cutscenes_seen += 1
             persistent.cc2 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     n "{color=#fff}CC greets you with a raised optic. In between his chassis and his handlebars is a bouquet of red roses."

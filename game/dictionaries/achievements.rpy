@@ -1,9 +1,5 @@
-# I think the fix works. If it doesn't, well, here's the failsafe!
-# init python:
-#     achievement.register("ach_explore", stat_max=6)
-#     achievement.register("ach_ultrobo", stat_max=7)
-#     achievement.register("ach_seenitall", stat_max=18)
-#     achievement.register("ach_picture", stat_max=41) # Massive W for drawing 41 cutscenes wtf (I've changed this text like 5 times)
+default ending_count = 18
+default cutscene_count = 44 # Massive W for drawing 44 cutscenes wtf (I've changed this text like 6 times)
 
 default persistent.ach_biwta = True
 default persistent.ach_explore = True

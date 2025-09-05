@@ -227,7 +227,7 @@ label END_unknowntrue:
         if persistent.uc5 == False:
             persistent.cutscenes_seen += 1
             persistent.uc5 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     ry "{color=#fff}I just remembered something else."
@@ -274,7 +274,7 @@ label END_unknowntrue:
     hide screen creditsfadeout
     python:
         persistent.endings_got["unknowntrue"] = True
-        if sum(persistent.endings_got.values()) == 18:
+        if sum(persistent.endings_got.values()) == ending_count:
             achievement.grant("ach_seenitall")
         if persistent.endings_got["kristrue"] and persistent.endings_got["heathtrue"] and persistent.endings_got["aspentrue"] and persistent.endings_got["cctrue"] and persistent.endings_got["robtrue"] and persistent.endings_got["gregtrue"] and persistent.endings_got["unknowntrue"]:
             achievement.grant("ach_ultrobo")
