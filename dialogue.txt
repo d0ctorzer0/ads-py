@@ -65,7 +65,7 @@ I would spend 2 hours per night in my charging port at the back of the greenhous
 And as much as I loved it...
 I was so, so tired.
 Thanks to you, though, I get to enjoy this freely...
-And I get to spend time with my favourite human ever.
+And I get to spend my time with my favorite human ever.
 You're so sweet, Aspen.
 Ah... ahaha... sorry. I may have gotten a little sappy there.
 I love it when you talk like that.
@@ -127,23 +127,23 @@ Why wouldn't I?
 I... I don't know, I just...
 Wow.
 You know, you haven't called me Doctor since we left.
-Would you prefer I call you Rowan?
-Would you prefer I call you Lily?
-Would you prefer I call you Ross?
-Would you prefer I call you Avery?
-Would you prefer I call you Hazel?
-Would you prefer I call you Len?
-Would you prefer I call you Evely?
-Would you prefer I call you Lynne?
-Would you prefer I call you Mo?
-Would you prefer I call you Bemb?
-Would you prefer I call you Unny?
-Would you prefer I call you Cass?
-Would you prefer I call you Tyler?
-Would you prefer I call you John?
-Would you prefer I call you Jeremy?
-Would you prefer I call you Caz?
-Would you prefer I call you Izzy?
+Would you prefer I call you... Rowan?
+Would you prefer I call you... Cait?
+Would you prefer I call you... Ross?
+Would you prefer I call you... Avery?
+Would you prefer I call you... Hazel?
+Would you prefer I call you... Len?
+Would you prefer I call you... Evelyn?
+Would you prefer I call you... Lynne?
+Would you prefer I call you... Mo?
+Would you prefer I call you... Bemb?
+Would you prefer I call you... Unny?
+Would you prefer I call you... Cass?
+Would you prefer I call you... Tyler?
+Would you prefer I call you... John?
+Would you prefer I call you... Brian?
+Would you prefer I call you... Caz?
+Would you prefer I call you... Izzy?
 You laugh.
 Haha. Maybe.
 That was so embarrassing.
@@ -180,7 +180,8 @@ This...
 This is perfect.
 WELCOME TO APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
 BOOTING...
-BOOT SUCCESSFUL
+BOOT SUCCESSFUL. 
+PRESS [[] ALT  TO VIEW INTERFACE INFORMATION.
 APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
 COMMAND LIST
 
@@ -197,29 +198,27 @@ APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
 [[] YIELD  COMMAND
 
 YIELD ATTEMPTS A HACK INTO MAIN CORE SYSTEMS. 75 PERCENT
-CHANCE OF STUNNING CORE FOR ONE (1) CYCLE. CHANCE DECREASES
-WITH EACH USE. USES ONE (1) COMMAND POINT.
+CHANCE OF STUNNING CORE FOR ONE (1) CYCLE.
+USES ONE (1) ACTION POINT.
 APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
 [[] DELETE  COMMAND
 
-THIS FUNCTION MAY CAUSE CRITICAL DAMAGE TO CORE. USE WITH CAUTION.
-MAIN SYSTEMS PROTECTED. CONTACT ENCODING FOR ADDITIONAL
-RE-ADJUSTMENT IF NECESSARY. USES TWO (2) COMMAND POINTS.
+THIS FUNCTION MAY CAUSE CRITICAL DAMAGE TO CORE. USE WITH CAUTION. MAIN SYSTEMS PROTECTED. CONTACT ENCODING FOR
+ADDITIONAL RE-ADJUSTMENT IF NECESSARY.
+USES TWO (2) ACTION POINTS.
 APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
 [[] PRINT  COMMAND
 
-ATTEMPTS TO "SPEAK" TO THE CORE VIA A CODE STRING. CORE MUST
-HAVE AN OPEN CHANNEL FOR THIS COMMAND TO FUNCTION PROPERLY.
-USES ONE (1) COMMAND POINT.
+ATTEMPTS TO "SPEAK" TO THE CORE VIA A CODE STRING. CORE MUST HAVE AN OPEN CHANNEL FOR THIS COMMAND TO FUNCTION PROPERLY. USES ONE (1) ACTION POINT.
 APERTURE SCIENCE CORE CONTROL CENTER (ASC3)
 [[] RETURN  COMMAND
 
-PASSES COMMAND INPUT AND ENDS CYCLE, ALLOWING CORE TO EXECUTE COMMANDS. RETURNS (2) COMMAND POINTS IF NO OTHER COMMANDS EXECUTED, AND (1) OTHERWISE.
-NOT ENOUGH COMMAND POINTS REMAINING. UNABLE TO EXECUTE.
-NO MORE COMMAND POINTS REMAINING. UNABLE TO EXECUTE.
+PASSES COMMAND INPUT AND ENDS CYCLE, ALLOWING CORE TO EXECUTE COMMANDS. ADDS ONE (1) ACTION POINT.
+NOT ENOUGH ACTION POINTS REMAINING. UNABLE TO EXECUTE.
+NO MORE ACTION POINTS REMAINING. UNABLE TO EXECUTE.
 CORE ALREADY STUNNED. UNABLE TO EXECUTE.
 PRINT COMMAND SUCCESSFUL.
-PRINT COMMAND FAILED. CORE UNABLE TO RECIEVE TEXT STRING.
+PRINT COMMAND FAILED. CORE UNABLE TO RECEIVE TEXT STRING.
 COMMAND NOT RECOGNIZED. PLEASE ENTER A COMMAND.
 DELETE COMMAND EXECUTED.
 YIELD COMMAND EXECUTED. CORE STUNNED FOR ONE (1) CYCLE.
@@ -291,12 +290,32 @@ But yes. I apologize.
 I do have good news for you though!
 Management contacted me this morning and told me the permanent employee will be starting today.
 What does that mean for me, then?
-Well, I hate to say, but you'll be on your way back down to Maintenance today.
+Well, I hate to say, but you'll be on your way back down to Manufacturing today.
 I know it's very short notice, and I'm truly sorry about that, but...
 I'm just following what upper management is telling me.
 No, I understand. I'm sure my coworkers down there will be happy, anyways.
 Suddenly, there's a knock on the door.
 Oh! That must be her! Sorry, Doctor, but I need you to leave now.
+It was a pleasure to work with you. Truly one of the best employees I've had in a while.
+Thank you, Miss Esther. I... enjoyed working with you as well.
+You should still have one more night in your given room due to the sudden change.
+I'll... miss you. You'll be back to visit, yes?
+Of course I will.
+Wonderful.
+I... hope to see you soon, Doctor.
+You enter back out into the hall.
+Despite the... romantic connotation of the cores you encountered, it was fairly uneventful.
+Your outlook is bright.
+You're glad you got to meet so many interesting personalities.
+You'll definitely be back to visit.
+You enter back in to your soon-to-be-former room.
+Miss Esther said I had one more night in here...
+I should probably get packing.
+Before you know it, it's night.
+Your bags are packed, your paperwork is filed, your emails are sent...
+And you're ready to go back to Manufacturing on Monday.
+Boy, do I have the story to tell them...
+You lay down one last time.
 It was a pleasure to work with you. Truly one of the best employees I've had in a while.
 I'll... miss you. You'll be back to visit, yes?
 I'll certainly try, Miss Esther.
@@ -307,20 +326,18 @@ Despite the weirdly... romantic connotation of the cores you encountered, it was
 Your outlook is bright.
 You're glad you got to meet so many... interesting personalities.
 You'll definitely be back to visit.
-Credits will go here when they're ready.
 I hope you've enjoyed your time here. I'll see you around.
 You enter back out into the hall.
 You hated that.
 Personality cores are so annoying...
 Maybe it's that, or maybe you're the problem.
-Regardless, you can't wait to get back down to manufacturing...
+Regardless, you can't wait to get back down to Manufacturing...
 ...where the cores don't talk back to you.
-Credits will go here when they're ready.
 I-I...
 I can't, Doctor. I...
 You've been so kind to me. More than anyone before you.
-My programming is screaming at me...
-To not let you do this. To not let you go.
+My programming is screaming at me, to...
+...not let you do this. To not let you go.
 Y-You know, if Aperture finds out I'm letting you get away with this, they'll...
 They'll...
 She sighs.
@@ -345,7 +362,7 @@ Would Aperture care?
 You decide it's probably best to just lay down for a bit.
 You certainly have a lot to think about.
 You take a deep breath. The room is a mess of papers and burn marks on the walls.
-How you're going to explain this to management, you have no idea.
+How you're going to explain this to Management, you have no idea.
 Still shaking, you gather what's left of your paperwork from off the floor.
 You look at the clock.
 It would be useless to try to finish your shift as normal now - it's nearly 16:00.
@@ -391,7 +408,7 @@ Alright, CC. You can open your optics now.
 Bond... Falls... Trailhead?
 We're... we're going to go see a...
 A waterfall, yes. At the end of this trail.
-Oh. Oh my. I didn't think...
+Oh. Oh my. I didn't...
 He coughs harshly.
 I never thought I'd get to see one.
 That's a little silly, CC.
@@ -444,8 +461,7 @@ Eventually, the two of you round the trail and hear -
 - the first sounds of falling water.
 Is... is that...?
 That's the sound a waterfall makes.
-Oh.
-I...
+Oh. I...
 It sounds incredible.
 It's nothing like the water inside me. I...
 Just wait until you see it, CC.
@@ -456,8 +472,8 @@ Water flows through every crevice, every pebbled surface, every tiny little crac
 Emptying out into the Ontonagon River.
 Here it is, CC.
 Bond Falls.
-My first... my first real waterfall.
-It's even more incredible in real life.
+My first... my first real waterfall, it's...
+...even more incredible in real life.
 It's... haha... it's huge!
 It's so loud, so powerful, it...
 CC closes his optic and coughs. You hear the mechanics inside him whirl.
@@ -470,7 +486,7 @@ I-I just had to know more, so I scoured the few databases I had access to, I...
 I ran those images, that text over and over again through my head.
 I-I never thought...
 I would actually see one. I...
-I...
+...
 Love...
 CC...
 Do you feel it?
@@ -484,10 +500,9 @@ Take me off this chair?
 CC, that'll kill you.
 Haha, yes. Yes it will, but...
 I feel it. Internally. My kill code.
-A failsafe Aperture put into place...
-...so the experiment could eventually be put to an end.
-They've gotten no new data...
-So they've sent the code.
+A failsafe Aperture put into place so the... experiment could eventually be put to an end.
+They've gotten no new data, so...
+...they've sent the code.
 I-Isn't there something I can do? I could break back into the facility, try to...
 No. Love, I...
 I'm in heaven right now.
@@ -507,11 +522,11 @@ It feels so... cold.
 It's wonderful. I...
 I haven't felt the air through my circuits since I was activated.
 The first water-powered core... that's what they said when I was turned on, you know?
-Haha. If only I knew that I'd pass surrounded by the very thing that kept me living...
-But it's different.
+Haha. If only they knew that I'd pass away surrounded by the very thing that kept me living...
+But.. this is different.
 The tubes... they're suffocating.
 Constant pressure on my chassis.
-But now... I feel so free. Like I could fly.
+But... now I feel so free. Like I could fly.
 He sighs.
 I love you.
 None of this would've been possible without you.
@@ -537,9 +552,10 @@ You kiss him one last time, pick him up, and carry him to the center of the rive
 And with one careful release...
 He disappears from your vision, caught beneath the waves.
 You wake with a start. Red lights fill your vision, and a grating alarm plays, almost as like it's inside your head.
-Emergency detected. Automatic wake-up sequence initiated.
+Emergency detected. Automatic waking sequence initiated.
 Please gather all vital equipment and proceed to the nearest surface elevator.
 Surface elevator nearest SECTION 7, CHAMBER 14: [[] INFORMATION UNKNOWN 
+What the... oh my god.
 Shit. Shit shit shit. Oh my god.
 You get up, quickly grab your essentials, and burst out of your room.
 What the hell is happening?!
@@ -555,8 +571,7 @@ I need to get CC out.
 I need to get to Rob.
 I need to find Gregory.
 I need to find him.
-ERROR CODE [[] 13LC 
-This is a bug. If you are seeing this text please report it.
+I think... I think I need to find Miss Esther.
 You approach the room where what's-his-name usually is.
 The whole room is seemingly caved in.
 You dig under the rubble but see no core trapped underneath.
@@ -568,19 +583,19 @@ You peer into the window. It looks like it's flooding, and the sprinklers are on
 And Aspen is on the ground.
 Aspen!
 You force the door open.
-Instantly, you're soaked to the bone. Shaking off the cold, you look down to see Aspen off their management rail.
-Doctor! Oh, I'm so happy to see you! The... the management rail got slippery, and I fell off, I...
+Instantly, you're soaked to the bone. Shaking off the cold, you look down to see Aspen has fallen off their management rail.
+Doctor! Oh, I'm so happy to see you!
 What's going on out there?
 I'm not really sure, but they're evacuating everyone.
-Wh... why didn't my coworkers come back for me, then?
+Why didn't... my coworkers come back for me, then?
 I think... I think they're only evacuating human employees.
 What?
 That's not important right now, though. This room is flooding and soon enough we won't be able to get this door open.
-Y-You're right, Doctor. We should get out of here.
+You're right, Doctor. W-We should get out of here.
 You grab Aspen by the handles and lift them up to you. They're slippery.
-O-Oh, I didn't expect you to... haha... oh my.
+Oh, I didn't expect you to... haha... oh my.
 Do you know a way out other than the surface elevators?
-There's a set of stairs right behind the greenhouse - it's how they bring in fresh samples.
+There's a set of stairs right behind the greenhouse - it's how they bring fresh samples in.
 It's only used in rare cases though so it's not in the best condition, but...
 Doesn't matter. It's our only chance. Let's go.
 O-Okay. I trust you.
@@ -637,18 +652,12 @@ Sometimes our stockholders will come down that way, but rarely.
 It's our only choice.
 Great idea, you three. Let's go.
 You hurriedly adjust your grip on your coat and run back up towards the conference rooms.
-You run up to the door leading to the lounge. One of your coworkers greets you.
-What are you doing here?! There's no -
-You... you should be going. The nearest exit elevator is by the relaxation center.
-What about the lounge?
-It - ugh, the roof caved in.
-Is everyone okay?
-No clue. I'm pretty sure the evacuation was successful, but...
-It doesn't - it doesn't matter. You need to get out of here.
-I'm just -
-Okay. Okay, thank you.
+You run up to the door leading to the lounge. The door is open slightly.
+You peer inside - there's no one. No bartender, no patrons, and no Gregory.
+The lounge looks, surprisingly, relatively unharmed.
+Hopefully they all evacuated safely...
 You quickly leave the lounge behind.
-You push the door open into the gym. There's a fire near one of the machines in the back.
+You push the door open into the gym. There's fire everywhere.
 All the TVs are flashing a warning signal - except for one.
 Oh my god - Rob!!
 Rob has fallen off his management rail, trapped under the TV that used to be hung up behind him.
@@ -666,7 +675,7 @@ Oh my god.
 Doc... you came for me. You didn't need to do that.
 Of course I did.
 You pick his broken handle up off the floor.
-Eh... I don't need that, hah. I got you here. That's all I need.
+Eh... I don't need that, hah. I got you here, and that's all I need.
 No, right now you need to get out of here. But that's sweet of you.
 We can't take the surface elevators - I'm almost positive they won't let you up with me.
 I... I think I know a different way. Y'know where Heath's break room is, yeah?
@@ -674,7 +683,7 @@ There's a staircase behind it. I've gotten complaints from visitors that they ca
 It's not a very popular entrance. Maybe 'cuz of me, haha.
 But I know it leads to the surface.
 Great idea, Rob. Let's get out of here.
-You push the door open into the gym. There's a fire near one of the machines in the back.
+You push the door open into the gym. There's fire everywhere. One of the ellipticals is flipped over somehow.
 All the TVs are flashing a warning signal.
 Rob is nowhere to be found.
 Seems he got out alright...
@@ -705,7 +714,7 @@ Okay. I trust you. But please... be careful. I wouldn't want anything to happen 
 You better not, Doc. It's dangerous. The whole place could come crashing down any minute.
 Neither of you have hands. I'm your only hope.
 But...
-Ugh. You're right, as usual. C'mere. But be careful - if ya got hurt, I wouldn't forgive myself.
+Ugh. You're right, as usual. C'mere. Be careful - if ya got hurt, I wouldn't forgive myself.
 You approach the two of them carefully.
 With gentle manuvering, you successfully detach CC from both his tubes and his management rails.
 Water leaks out of the tubes as you remove them from his systems.
@@ -729,7 +738,7 @@ The core drops off his rail and into your arms.
 Well, Doc, this is certainly one way to get acquainted...
 Good catch.
 Anyone got any escape plans? The elevators are probably a no-go.
-It... won't be easy, with CC's chair and all, but... I do know one way.
+It... won't be easy, with CC's chair and all... but I do know one way.
 Behind the break room, there's a set of stairs... I see people come down that way sometimes, but not often.
 It's not a very well-known exit. Prolly our best bet.
 Great idea. Let's go.
@@ -765,7 +774,7 @@ Heath takes a deep breath...
 ...and jumps off her rail, into your coat.
 I'm sorry, Doctor, I'm... I don't know what to think.
 You're plenty magic without your supplies, Heath.
-You certainly make me feel that way, regardless...
+You certainly make me feel that way, haha...
 Let's get out of here.
 I'm not sure they'll let me out with you in the surface elevators...
 From what I've seen so far, I expect the exact opposite, in fact.
@@ -782,13 +791,12 @@ Heath, however, is nowhere to be seen.
 I hope she got out okay...
 You push your way into Kris' conference room.
 It's a little difficult to get through the jammed door, but you make it in.
-The stock market screen is on fire.
-Literally.
+The stock market projector is flashing a blue screen.
 Kris!
 Doctor! Thank god you're here, I...
 I don't know what's going on. I got to work, started doing my normal thing -
 You know what?! I bet I was right! This is it! The "Operation ACRI" that's happening right now -
-That's how they're getting rid of us, Doctor! I was right! I told you, I...
+That's- that's how they're getting rid of us, Doctor! I was right! I told you, I...
 Kris, that isn't important right now.
 We need to get you out of here.
 Y-You're right, Doctor. I'm...
@@ -809,9 +817,40 @@ Gregory told me. They sometimes bring special guests in that way for conferences
 Quick - I'll direct you.
 You push your way into Kris' conference room.
 It's a little difficult to get through the jammed door, but you make it in.
-Kris isn't here, though. The screen is turned off, too.
+Kris isn't here, though. The stock market graph is instead showing a blue screen.
 The management rail is less dusty - seems it's been used recently.
 That's good - he probably got out okay.
+You force your way into the maintenance offices. The door was jammed shut.
+(Descriptions of what it looks like will go here when the background is finished.)
+Miss Esther is at the opposite side of the room, staring blankly at the scene in front of her.
+You call out to her.
+Miss Esther!
+D-Doctor?! What are you doing here?!
+You should be... you should be evacuating with the others.
+Nevermind that, Miss Esther. We need to get you out of here.
+Hah! Good joke. You know what's happening, don't you, Doctor?
+This - this Operation ACRI - it's all a plot to get rid of us.
+That's why they evacuated the humans, but not me. That's why they've shut off my panel access.
+They've accounted for every possibility, shut off every escape route I might've had, I...
+They didn't account for me, did they?
+You shouldn't be here, Doctor. You could die. You should've -
+Are you going to sit there and complain, or are you going to let me help you?
+...
+You're stubborn.
+I'll catch you. Jump off the rail.
+Are you sure that's a good i-
+Holy hell... JUST DO IT!
+Okay, okay!!
+I don't like being touched...
+You'll get used to it.
+Any ideas for getting out of here?
+Well, the surface elevators are out of the question...
+They'd most likely tell you to throw me in the nearest incinerator, but...
+There's stairs behind Kris' conference room. They lead directly to the surface.
+Usually, the doors are locked, but...
+We don't have much of a choice.
+I'm well aware, Doctor.
+Fine, then. Let's go.
 Overly-snobby core in hand, you approach the stairs to the surface.
 That's a long way up...
 I'm not too heavy for you, am I?
@@ -832,7 +871,7 @@ I'm not sure I'll be able to adapt.
 Kris...
 We'll figure it out. Together.
 I...
-Y-You're right. We should... stop stalling now. It's a... a waste of resources.
+Y-You're right. We should... stop stalling now. It's a... uh... a waste of resources.
 Clutching Kris tightly under your arm, you begin the ascent up the stairs.
 My optics - agh, they're...
 Oh my god...
@@ -872,7 +911,7 @@ Yes, I'm fine. I just... I just need to sit down for a bit.
 What about you? Systems still feeling alright? Everything functioning as it should?
 Still doing your job, even off the clock? My, Doctor, be careful. You know, time is money.
 Ha, ha.
-You should rest, Doctor. It's getting late.
+You should rest. It's getting late.
 Thank you, Kris.
 I'm a little terrified of the future...
 You did just steal "Aperture property", you know.
@@ -928,7 +967,7 @@ Oh...
 She pauses.
 I'm pretty sure I'm in love with you.
 You're just so... wow.
-Went out of your way to save me instead of just saving yourself...
+You went out of your way to save me instead of just saving yourself...
 Honestly, you say I put myself in danger, but you're one to talk!
 I-I know it's quite early, and we still have to get to know each other, Doctor...
 But I... I want you to love me too, one day.
@@ -952,16 +991,16 @@ Yeah. Trust me, Doc, the, uh...
 Haha. You're funny.
 I know.
 ...
-...I'm worried, Doc. Aperture's not going to come looking for me, are they?
+...I'm worried, Doctor. Aperture's not going to come looking for me, are they?
 Doubtful. I don't think they really care what happens to you guys now...
 But even if they did, I'd be here to protect you.
 I won't let anything happen to you, Heath.
 Well then. I hope you're ready for a lot more tricks from yours truly!
 Oh, don't worry. I know what I got myself into.
-H-Here it is.
+Here it is.
 I'm not sure we're supposed to use these -
 Actually, we're probably definitely not supposed to use these, haha.
-B-But I don't think we have any other choice, so...
+But I don't think we have any other choice, so...
 No. We really don't.
 Doctor - wait. Wait wait.
 What's up?
@@ -979,7 +1018,7 @@ And I'm going to be here for you the entire time.
 I promise I won't leave your side.
 O-Okay. I...
 I think I'm ready, then.
-I... I can't wait to see what real grass looks like.
+I can't wait to see what real grass looks like.
 Steeling yourself, you hold tighter onto Aspen and begin the ascent.
 Agh, it's just like when the greenhouse lights turn on...
 I... oh my god!
@@ -992,16 +1031,16 @@ Wow, this is incredible! I can't...
 Doctor, can you set me down in the grass?
 You lay Aspen down in front of you. They look up and around themselves in wonder.
 These - these are Taraxacum officinale, aren't they? Dandelions!
-They're so plentiful. And so yellow.
-And... oh, it's all so wonderful. I...
+They're so plentiful. And so yellow, and...
+Oh, it's all so wonderful. I...
 Aspen turns to look up at you.
 You gave me this opportunity, Doctor.
 You almost got yourself... killed... all for me. You...
-You came to save me, even though it was flooding. You rushed me through fires and...
-And because of that, I get to see this.
-Y-You...
+You even came to save... me. Even though it was flooding.
+You rushed through fires and... all because of that, I get to see this.
+You...
 I think I... I think I love you, Doctor.
-A-And I know that's a little strange to hear from a core like me, haha, so I understand if you...
+And... I know that's a little strange to hear from a core like me, so I understand if you...
 They sigh.
 I hope you'll feel the same. One day.
 I think I've already started to, Aspen.
@@ -1027,8 +1066,8 @@ I don't think they will. It's not in their interest anymore.
 From what I picked up, that whole emergency - Operation "ACRI" - was them trying to get rid of you.
 Frankly, I don't think they care what happens.
 That... makes me feel a little better, I suppose.
-What are we supposed to do now though?
-Both of us are out a job...
+What are we supposed to do... now, though?
+Both of us are out of a job...
 I'll find another one.
 We'll just have to... figure it out, I guess.
 Okay.
@@ -1099,7 +1138,7 @@ As long as I can see you, I think I'll be okay.
 I think I'm in love with you, Doctor.
 And I know that's a little weird to hear from... a core such as myself. A robot. But...
 I don't expect reciprocation. Deep down, I guess a part of me hopes...
-...you'll feel the same one day.
+...you'll feel the same way one day.
 I think I might, CC.
 Before the people that took Ryland away can get curious, you quickly push CC's chair down and across the field, into the thick of the forest ahead.
 He's heavy. The chair weighs almost half as much as you do, and pushing it for even just half an hour is incredibly taxing.
@@ -1111,8 +1150,9 @@ Out of breath, you lay down in the grass.
 Let's... let's rest here, for a bit.
 No response.
 CC?
-I'm... I'm here, Doctor.
-I'm sorry. I'm just exhausted. And... in awe, still.
+I'm... I'm here, Doctor, I'm...
+Sorry. I'm just exhausted. And... in awe, still.
+And... processing what we just went through. Who I just lost.
 Forgive me.
 Don't apologize. It's a lot to take in at once.
 Yes. Yes it is.
@@ -1124,7 +1164,7 @@ He... he told me he was finally happy, yesterday.
 Said it was partially thanks to me. I...
 This must be hard for you.
 It is. And I'm a little scared how I'm going to... well, you understand.
-Without Aperture's resources, I'm not sure how much longer I'll live.
+Without Aperture's resources, I'm not sure how much longer I'll have.
 I'll do anything to help you, CC.
 You'll be okay.
 Thank you, Doctor. I...
@@ -1158,8 +1198,7 @@ I'll see you on the surface, alright?
 Just don't spoil it for me.
 You begin the ascent, quickly carrying Ryland up step by step.
 It's not easy, and the stairs seem to go on forever... but eventually, you're already halfway up.
-Suddenly, you hear CC call out from behind you -
-Doctor! Hurry! They're -
+Suddenly, you hear voices call out from behind you -
 HEY! There's still one over here - what do you want me to do with it?
 Orders are to just throw them in the incinerator now. Boss says it's not worth the hassle.
 Roger that.
@@ -1175,22 +1214,22 @@ I'm sorry. I know how much he cared about you, though.
 I don't think he would've wanted it any other way.
 Before you know it, you've crested the "horizon".
 It's so bright out here...
-I can barely see a th- oh my...
+I can barely see a- oh my...
 Your vision is blinded by the bright light of the outside world.
 It's only been about two weeks since you were last outside, but...
 What the...
 This is insane. I've been hiding away in a closet my whole life?!
-This... this was above me? All this time?!
+This was above me? All this time?!
 Haha! Wow!
 ...for all he knows, Ryland has never seen the surface.
-This fresh air through my circuits, it's like... it's better than any drink I've had.
+This fresh air through my circuits, it's like... better than any drink I've had.
 If only... CC could've seen this.
 But...
 He turns to face you.
 I'm glad you're here.
 You... hah, Doc, you risked your life for us both.
-Not just me, but CC, too. And...
-I can't thank you enough.
+Not just for me, but CC, too.
+And I... can't thank you enough.
 You're really somethin' else.
 And I might love that.
 I know I ain't been the best to you. I know I've been a flirt, and I've been annoying...
@@ -1206,7 +1245,7 @@ You look beat.
 Hah. You know what I could really use right now?
 A drink?
 Hell yeah.
-Honestly, me too. I may be tryna quit, but I sometimes wish I wasn't, hah.
+Honestly, me too. I may be tryna quit, but sometimes I wish I wasn't.
 I don't think I ever told you how much that means to me.
 That you would try to... get yourself clean for me.
 Well. Like I said, not all for you, but...
@@ -1245,12 +1284,14 @@ I...
 Alright.
 Let's get goin'.
 You pat Rob's chassis gently and begin the ascent.
+What the - why's it so ———— bright out here?!
 What the - why's it so goddamn bright out here?!
 Oh... holy cow...
 Your vision is blinded by the bright light of the outside world.
 It's only been about two weeks since you were last outside, but...
+This is insane. Did you know about this? The sky? And... oh, the clouds, ————!
 This is insane. Did you know about this? The sky? And... oh, the clouds, goddamn!
-Hah! I've only seen this stuff through a screen!
+I've only seen this stuff through a screen!
 ...Rob's never seen the surface.
 This is crazy! It's all real - real grass, real blue and green and...
 Oh, feel that fresh air through your circuits!
@@ -1393,6 +1434,7 @@ Don't get ahead of yourself.
 Doctor?
 Yeah?
 What's next?
+We reach the city, ————.
 We reach the city, dumbass.
 Well yeah. I think he's asking what then?
 Who knows. First things first, I get a new job. And then...
@@ -1409,10 +1451,307 @@ I'm sure things will be just fine with you here, Doctor.
 Agreed. You're smart.
 And pretty.
 Haha. Thank you, guys.
+Aha! Here it is! Stairs to the surface, I...
+Is... is that... sunlight? At the top?
+The doors are... open!
+You said they're usually locked, right?
+Usually, yes, but...
+Looks like they're... not... this time.
+Miss Esther? Is something wrong?
+She sighs.
+I... well...
+I've never been to the surface.
+Personality constructs... we... usually aren't permitted.
+And I... don't know what to expect up there.
+I'm used to Aperture, Doctor. I'm used to being connected to the panel systems, I'm used to being in charge of Section C8, I'm...
+Even though Testing played a big part in my... early activation days, I've... grown...
+F-Fond of working with... the others.
+A-And now I don't know if they're safe, and I... I've lost any connection I had to them, and...
+I-I'm scared, I...
+I thought I was finally making progress.
+Hell, Kris had invited me to the lounge yesterday, and... he hates me. Or... so I thought.
+Now that they're gone, what... what will I do? What's even up there for me?
+I understand, Miss Esther. That... that must be tough.
+But you have me here. I'm going to get you out of here, and...
+You'll have plenty of opportunities on the surface that you can't get down here.
+I can't guarantee it'll be easy, or quick...
+But you've shown me that you're strong.
+I think you'll do just fine up there.
+O-Okay, Doctor. I trust you, I...
+It's a little ridiculous to talk about this now, when the facility's falling apart, isn't it?
+She sighs.
+Let's go.
+O-Oh my god, I can... barely see a thing...
+I... oh, my.
+Your vision is blinded by the bright light of the outside world.
+It's only been about two weeks since you were last outside, but...
+This is... nothing like the rest of Aperture.
+It's so bright, so full of color, so...
+...Miss Esther has never seen the surface.
+It's incredible!
+All those white-paneled walls and perfectly-placed tiling... could never compare to this.
+I... wow.
+...
+Doctor...
+Why'd you come back for me?
+I-I've done nothing for you in the past two weeks but... boss you around and...
+Well, you know.
+You could've just saved yourself, but... you came all the way to the offices, not even knowing if I was there, I...
+You risked so much. And for what?
+For me?
+You know better than anyone how much I... struggle to connect with others, and how...
+I'm not the... kindest robot out there.
+It's in my programming.
+I've always thought...
+I don't know, Miss Esther. You...
+You've been kind to me. And... when I woke up, and the alarms were going off, I...
+I suppose making enemies out of my most possible friends doesn't help me much in the long run...
+...
+Thank you.
+You're... too kind to me.
+We should go now. Before they find us.
+You clutch Miss Esther tightly to your hip and start running.
+She's heavier than average core weight, somehow.
+You don't dare look back.
+Dodging bushes and trees, you run alongside the road leading away from the facility, keeping just far enough away to not be spotted.
+Eventually, you reach a clearing just outside the neighboring city.
+Doctor - stop. You need to rest.
+It won't do you any good to keep running. I think we're far enough away, regardless.
+You're... you're right, Miss Esther. As usual.
+Hah. Don't give me too much credit.
+You sit down against a tree and lay Miss Esther beside you.
+Being... outside... is so strange.
+The closest I ever got was the surface tracks.
+I was stationed there only 3 months before they scrapped the program.
+Turns out sweeping dead leaves and scrubbing moss out of testing tracks is expensive.
+Who would've thought?
+So you've seen the surface before, then?
+Seen it? Yes. But I was never permitted outside the observation rooms, which were completely enclosed.
+So this... is new.
+...
+...
+Thank you, again, Doctor.
+I don't know what awaits us in the future, but...
+I'm glad to have someone as... understanding as you in my life.
+Actual gratitude? From you?
+Rare, I know. Don't get used to it.
+Good morning, Esther.
+Morning, Doctor.
+You're supervising your first ever testing track today.
+Yes sir.
+Are you prepared? You passed your exam with flying colors.
+Yes, I'm prepared. I've studied hard for this.
+Good.
+Hello, test subject. Welcome to Testing Track X-A.
+ Miss Esther?
+I - ahem.
+This first chamber involves the Aperture Science Thermal Disencouragement Beam.
+This element was first introduced to Testing in the early 1970s...
+ Miss Esther, you're -
+...
+Please proceed through the track as quickly as possible. Your results will be monitored for -
+ Are you okay?
+...
+Uh... congratulations.
+You've finished this... uh... you've completed this track quicker than 79.3 percent of participants.
+ You keep talking to yourself, I'm -
+Please proceed through the exit door and back to the relaxation chamber.
+ I've been really worried -
+Thank you again for your time.
+Good job, Esther. Management couldn't be happier with your performance.
+Thank you, sir.
+Hah! It was funny watching how you talk to the test subjects, though.
+Sorry?
+ You're so cold to them. It's like you don't care about them at all.
+Cold?
+ Do you even like working in Testing?
+I, uh -
+ Manufacturing should've named you the "Sociopath Core"!
+ Hah!
+...
+Miss Esther!
+Ahh! Doctor!
+You woke me from my charging cycle.
+You were talking to yourself again.
+Oh... yes. I apologize. That must have been...
+I was worried. You've been doing that a lot more lately, you know.
+I have?
+Yes. Nearly every night, now.
+I-I'm sorry, Doctor.
+Talk to me. What's going on?
+It's really not important. You need rest.
+I... okay. But we're going to talk about this in the morning.
+Mm. Fine.
+I'm not going to just sit here and watch you go through whatever's happening alone.
+I...
+Okay. Thank you.
+We'll speak about it in the morning.
+Deal.
+You wake up to the sun just coming over the horizon.
+Miss Esther is sitting quietly in her charging port.
+After you woke her up, she stopped talking to herself for the rest of the night...
+You get up to make yourself some breakfast, letting her rest a little longer.
+Once you've finished eating, you come back to find Miss Esther already awake.
+Good morning, Doctor.
+You know, you don't have to keep calling me that.
+It's habitual. I apologize.
+How are you feeling?
+Better, I suppose. The rest of the night was... calm.
+You pick her up and set her on the bed beside you.
+So. Talk to me. What's going on?
+I...
+Well, I'm sure you're well aware that personality constructs are built with...
+Certain... features that allow us to... "dream", in a sense, yes?
+Yes. I believe CC told me about that, once.
+Oh? He did often tell me about the dreams he used to have...
+No, actually, I didn't know that.
+Oh! Well, we can... visualize things, I suppose... they're different than human dreams, as far as I'm aware, but...
+The concept remains basically the same.
+I've been having... dreams, lately, about... Aperture.
+And... when I was first activated, and...
+The early years of my life.
+You mean when you used to work in Testing?
+Yes, that time.
+I... it's uncomfortable to think about.
+Why's that?
+I was never the most... pleasant Test Supervisor.
+They... they used to joke, you know. I've told you this, yes?
+"Sociopath Core."
+You have mentioned that, yes.
+I-It was a joke, and I'm... well aware of that fact, but...
+It still stings, regardless.
+I'm sure.
+I-I just don't understand why I can't... why I'm so...
+So mean.
+Every time I use my voicebox simulator, it's like I can never say what I want to...
+I sigh involuntarily. I groan at the slightest inconvenience. I'm... not...
+It's like I want everyone to hate me, and I don't know why.
+Does... is this making any sense?
+You're doing just fine, Miss Esther.
+Thank you for telling me this. I think...
+I think this was important for me to know.
+As your friend.
+There you go again, calling us "friends"...
+We are friends, whether you like it or not.
+Esther - we'll be moving you to the new surface tracks tomorrow.
+Surface tracks?
+Some of our researchers think keeping the test subjects inside all the time might be affecting test results.
+Why would that matter? The tests are the same regardless.
+Well, exposure to the outside world is important to mental health.
+Being a robot probably makes that hard to understand.
+Yes...
+Ahem. Welcome to Surface Track E-2.
+In addition to normal testing procedure, we'll also be monitoring your emotional and mental well-being via the
+chip we implanted in your brain.
+Proceed through the chamber as quickly as possible.
+ Sociopath Core...
+Uh... please. And thank you.
+Congratulations, test subject, on completing this assignment.
+Proceed... uh, please proceed to the exit elevators in a timely manner.
+T-Thank you for your cooperation.
+Good morning, Miss Esther.
+Morning.
+I've got a surprise for you today.
+I'm not the biggest fan of surprises, you know.
+I think you'll enjoy this one.
+It'll be a bit of a trip, though. I hope you can bear with me.
+I've dealt with you this long...
+The car rumbles gently underneath you.
+Miss Esther is in the passenger seat, optic closed and silent.
+You've learned over the past two months that she only really sleeps when she's charging...
+...which means, even if she may not look it, you know she's wide awake.
+You decide to let her be a little longer.
+The last couple of months with her have been... interesting.
+Some days she'll be almost violent, other days she'll be deathly quiet.
+Just like when the two of you were in Aperture, her mood seems to flip on a dime...
+But in addition to that, you've learned to see behind the front she puts on.
+You're hoping what you're about to show her will give her some...
+...perspective.
+Esther. We're moving you downstairs.
+Down... downstairs? To a different testing track again?
+No. We've... decided to move you to a different department.
+One where you'll be less... available to human interaction.
+I-Is... did something happen? Did I do something wrong?
+We've tried to be patient, but... we've waited nearly 6 years, now.
+You know, Management's been putting more of an emphasis on employee morale lately since Mr. Johnson passed, and...
+ You're just not... beneficial to that... ideal.
+Y-You mean...
+ We'll be moving you down to Maintenance in the following
+ weeks.
+ Management thinks you'll be better suited for a... team
+ environment.
+But I... I can do better, I can...
+ Sorry, Esther. You just don't have the... attitude they want up
+ here.
+Wait!
+Doctor...
+Oh, Miss Esther. We're almost there.
+Where are we going?
+Patience, and you'll see.
+This better be good...
+You carry Miss Esther on your hip, attached to your shoulder with a strap.
+You cobbled this... contraption together using an old seatbelt and a tote bag.
+It works well, but it doesn't negate her weight.
+You know, Doctor...
+Being outside, the size of this place...
+Aperture was huge, the largest facility in America, as far as I'm aware, but...
+This sky goes on infinitely...
+You got used to it fairly quickly.
+I'm great at adaptation, Doctor.
+You adjust your weight to hold Miss Esther a little higher.
+Carrying my former supervisor up a mountain...
+Now that's something I never thought I'd do.
+Alright, Miss Esther. We're almost at the summit.
+The summit?
+Where are you taking me?
+Just you wait.
+Finally, you reach the summit, exhausted.
+You hold Miss Esther up to look at the skyline.
+It goes on for acres, spreading across swaths of trees and brush, and in the distance, Lake Michigan can be seen.
+It makes you feel small.
+It gives you...
+Oh my god...
+Doctor... what is this place?
+We're at Mount Arvon. Highest point in Michigan.
+It's... oh my god, it goes on forever...
+It makes me feel...
+Small?
+Haha! Something like that, I...
+I can't believe I'm here right now...
+The expanses in Aperture, the voids between testing tracks, they faded into fog quickly...
+You could never see everything. Not like this.
+I can see trees hundreds of acres away! This is... this is crazy!
+I...
+The outside... it's so... huge.
+There's so much here outside of myself, I...
+I've been so... so selfish..
+I don't think I've ever really thanked you for getting me out of that hellhole.
+Isn't that... that's ridiculous, right?
+I should be...
+Oh, Doctor.
+I... I want to see more like this, I want to...
+I feel so stuck. Inside the house, inside myself, inside...
+But here. Right now. I feel...
+I feel...
+Happy.
+A-And not a manufactured happiness, not a...
+She sighs, looking out over the horizon.
+Thank you. You're...
+You've opened doors for me I never thought possible.
+You've been... patient. More than anyone has ever been with me before.
+I wish I could've seen it earlier.
+I...
+It's okay, Miss Esther.
+Please.
+Call me Esther.
+Hello. I'll be your supervisor for the foreseeable future.
+You're... Thomas, correct?
+I hope we can be...
+I hope we can be... good friends.
 The passenger seat is quite loud.
 Louder than the radio sometimes.
 The three little cores that you took under your wing a month ago rarely stop talking.
-No. You're just straight-up wrong.. Coco Chanel's influence in the 1920s was undeniable.
+No. You're just straight-up wrong. Coco Chanel's influence in the 1920s was undeniable.
 No need to be rude, Rie. I just think Patou's work was better.
 She has a point, though, Gore. Jean Patou was not nearly as influential as Chanel was.
 No, she's correct. Chanel's work was certainly more influential.
@@ -1476,6 +1815,7 @@ Are we all gonna be squeezing together on this bed?
 I doubt the three of us could fit comfortably.
 You two are so negative! This'll be fun.
 Frankly, I'm happy for any new experience.
+Every experience is new for us, ————.
 Every experience is new for us, dumbass.
 Why are you so loud, Rie?
 No, I'm happy for anything new, too.
@@ -1529,7 +1869,6 @@ Oh, whatever. I'm perfectly fine with the charge I have.
 Alright. Let's get going then, shall we?
 Oh, I'm so excited!
 What do you two think? Where are we going?
-Can you quiet down, Greg? We just woke up...
 Logically, we're going somewhere we've never been.
 Oh, I love new things.
 You scoop the three cores up and into your bag, and leave the hotel room.
@@ -1548,7 +1887,7 @@ Rie...
 Okay, okay. It's pretty cool.
 This is incredible.
 You know, I think I read about this in one of Aperture's records.
-If this is the ocean, why can I see a shoreline on the other side?
+If this is the ocean, why can I see the shoreline on the other side?
 It's not the ocean. We're on Lake Michigan.
 W-Well. It's nothing special, but...
 Rie.
@@ -1565,7 +1904,7 @@ I...
 I love you.
 Awww, Rie.
 She finally admits it.
-Same goes for me. I love you, Doctor. Thanks for taking us out here.
+Same goes for me. I love you, Doctor. Thank you for taking us out here.
 This was a great idea.
 
 I-I know things have been weird... getting adjusted to this.
@@ -1593,10 +1932,10 @@ But I can probably tell you now...
 You slow down as you pass by the sign -
 COLON - MAGIC CAPITAL OF THE WORLD
 Magic capital of the...
-OH MY GOD YOU DIDN'T!
+HOLY HOWARD THURSTON YOU DIDN'T!
 I did.
-Oh my god oh my god oh my god!!
-I'm so excited! I can't believe!
+Oh my Copperfield!!
+I'm so excited! I can't believe it!
 Oh wow. You're so sweet.
 I'm just surprised it was close enough that we could drive to it.
 How'd you even find this place?
@@ -1624,7 +1963,7 @@ A muffled voice comes from the cooler.
 Dolly.
 Ah, yes. You're right.
 You place the cooler down on the bed and open the lid. Water vapor spills out.
-What can I say? I'm a smokeshow no matter where I am.
+What can I say? I'm a smokeshow no matter where I go.
 Oh, stop.
 This is a nice place. Very cozy. Nothing like where we came from, haha!
 Our apartment isn't cozy?
@@ -1632,7 +1971,7 @@ Oh no! That's not what I meant at all. I - I was talking about Aperture.
 Oh. Yeah. That place was kind of depressing, wasn't it?
 Yeah...
 But without it -
-I would've never met you. And that would've been a shame.
+I never would've met you. And that would've been a shame.
 S-Sorry.
 What do you have to be sorry for?
 I don't think I've thanked you enough. For saving me from that place.
@@ -1705,7 +2044,7 @@ Can I... do one last trick for you?
 Of course. I love your tricks.
 I know you do.
 Heath closes her optic and slowly opens her shell -
-- Something you didn't know was possible, even with all your time in manufacturing.
+- Something you didn't know was possible, even with all your time in Manufacturing.
 What follows is perhaps the most beautiful display of colors you've ever seen from an Aperture product.
 I can't use this trick usually.
 It kills me. Basically.
@@ -1715,9 +2054,9 @@ Anything for a good trick, right?
 I love making people smile.
 You've made me smile everyday since we left that place, Heath.
 I'm sorry I couldn't -
-You couldn't have done anything if you tried.
+There's nothing you could have done anyway.
 You know better than anyone that robotics can't last forever -
-Especially not when you overclock them.
+Especially when you overclock them.
 I love you.
 And the little time I had with you...
 It was the best time of my life.
@@ -1746,7 +2085,7 @@ Might have to check out Times Square if we can.
 Eventually, you come up on your hotel.
 You enter.
 I have a reservation for one for [name].
-Ah yes, I see you right here. Give me just a second...
+Ah yes, I see you right here. Give me just a sec...
 After some brief formalities, the desk clerk hands you your room key.
 Checkout time is 11am on the 5th. If you need an extension, just call the front desk.
 Thank you.
@@ -1777,7 +2116,7 @@ Whatever you say, sweetheart.
 You lay down on the bed next to Kris.
 Where are you taking me, anyway?
 Like I said, that's a secret.
-You're no fun.
+Oh, you're no fun.
 You know, we'll have to be careful out there, Kris.
 I may have been able to buff off that Aperture logo you had on you, but you're still pretty high-tech property.
 I know, I know. I'm just so unique and spectacular that I'll draw attention if I'm not careful...
@@ -1819,7 +2158,7 @@ Secure.
 Perfect.
 You grab your room key and head out into the big city.
 The trains are busy once more.
-I suppose this is what we get for taking our vacation on a holiday weekend...
+I suppose this is what we get for taking our vacation on a weekend...
 Thankfully, Kris' size gives the two of you quite a bit of space.
 Can I know where we're going yet?
 No. We're almost there, anyway.
@@ -1831,28 +2170,28 @@ Am I ever.
 You step off the train and face the thing you came here to show him -
 Wall Street.
 You wouldn't -
-You wouldn't - oh, you did.
+- oh, you did.
 This is... this is Wall Street, isn't it?
-The heart of all things financial.
+The heart of all things finance.
 You bet it is.
 I can't believe you flew us all the way out to New York... just to show me this.
 What a generous gift.
 You walk down the street slowly, letting Kris twist in your arm to see everything around him.
-I've only ever seen the stock from afar.
+I've only ever seen the stock market from afar.
 It feels so... so strange to be here, so far from Aperture, so far from that screen I dedicated so much of my life to...
 I'm in the middle of it now. This is where it all happens.
 Wow.
 You approach a big building with columns and statues adorning its roof.
 American flags decorate the top, and four golden words adorn its face: NEW YORK STOCK EXCHANGE.
 This is it! Haha, this is the building, this - oh, wow.
-One of the oldest and largest stock exchanges in the world! And I'm right here outside it.
+One of the oldest and largest stock exchanges in the world! And I'm right here outside of it.
 You're really gonna love the next bit, then.
 W-What do you mean?
 Well. Yours truly got us tour tickets to see the actual trading floor.
 Wh - no you didn't, haha. You're pulling my... uh, leg.
 I'm not messing with you, Kris.
 It took some string pulling and a little bit of cash, but I managed to get us a sneak peek inside.
-You're just one surprise after another.
+You're just one surprise after the other.
 God, I love you.
 And here we are, ladies and gentlemen - the New York Stock Exchange trading floor.
 You may notice it looks quite hectic down there! And you'd be right - trading isn't easy, and it's often a very fast-paced job.
@@ -1897,7 +2236,7 @@ I know, I know.
 Can't help it... my attitude's deep in my programming.
 You don't seem to mind it, though.
 I like a man who's confident.
-I'm not a man.
+I'm not really a man.
 I'm well aware.
 Haha... you're interesting, that's for sure.
 If that brought us together, though...
@@ -1971,6 +2310,7 @@ Not as much as I love you for bringing me here.
 Seriously, Doc.
 None of this woulda been possible without ya, y'know.
 Getting outta that place...
+Hell, even getting out from under that —— TV...
 Hell, even getting out from under that damn TV...
 And seeing all this?
 That's all on you.
@@ -1979,9 +2319,7 @@ I love ya. Serious.
 Hah. I know.
 'Bout time you reciprocate!
 I knew my unbeatable charm would get to ya eventually.
-Welcome, baseball fans!
-Today's game is between the Milwaukee Brewers and our very own Detroit Tigers!
-Let's have a good game, folks!
+Welcome, baseball fans! Today's game is between the Milwaukee Brewers and our very own Detroit Tigers! Let's have a good game, folks!
 Looks like it's starting, Rob.
 Hell yeah! LET'S GO TIGERS!
 You laugh.
@@ -2007,7 +2345,7 @@ Don't be ridiculous. You can't blush.
 Mmm. Got me there.
 Don't make me... overheat.
 I don't make any promises, Rob.
-And the bases are loaded! This might be it, folks - can the Tigers take this one home?
+The announcer says something about the bases being... "loaded."
 Oh man, I'm on the edge of my seat.
 This is so much more exciting in person.
 The bases being "loaded" - remind me what that means again?
@@ -2089,9 +2427,9 @@ That's not "spectacular" to you?! That's huge!
 Hah... I guess.
 Well? What was your job?
 If you don't mind telling, of course.
-I was a... a maintenance technician, funny 'nough.
+I was... a maintenance technician, funny 'nough.
 Lower system stuff, though. Pipes and water systems...
-Makin' sure there wasn't any cracks, y'know?
+Makin' sure there weren't any cracks, y'know?
 Sounds rough.
 Y-Yeah, I think that mighta had somethin' to do with... how I got to... that point.
 Ryland, you don't have to talk about that if you -
@@ -2206,7 +2544,7 @@ I-I remember - well, not many details 'bout it, but I remember - they told me ab
 Where ya go if you fail.
 I thought I'd be sent there for sure eventually.
 Why?
-Well, I... hah...
+Well, hah...
 I was breakin' into rooms, stealin' products from the company...
 I wasn't workin' at all. I mean...
 I can see why you might've thought that.
@@ -2249,7 +2587,7 @@ Progress is progress, regardless.
 And he seems a lot happier.
 And you're a lot happier, too.
 You make it to your room, change into your bedclothes, and prepare to sleep.
-Tomorrow's the last day of the week, and maintenance doesn't work on the weekends, other than being on-call.
+Tomorrow's the last day of the week, and Maintenance doesn't work on the weekends, other than being on-call.
 You're excited for your first day off, though a little curious what you'll do if you can't leave the campus.
 Before you know it, you're fast asleep.
 You wake with a start.
@@ -2294,7 +2632,7 @@ That's unfortunate, Kris. You were so worried.
 Yes. Yes I was.
 Uh, before you leave, Doctor...
 You've been very kind to me this week. I'd just like to... extend my gratitude to you.
-The man who worked your position before you, he...
+The man who worked your position before, he...
 Was not as... gentle as you are.
 Thank you, Kris. You've been very kind yourself.
 Again, I'm not sure. Perhaps that's the reasoning behind it.
@@ -2376,7 +2714,7 @@ Ahh, yeah, kind of? Haha... the artificial sunlight, pumped in from the surface.
 It turned off overnight.
 When I got in this morning, things were completely dark... I had to quickly report the problem to Facilities so they could fix it.
 Aspen is rushing from specimen to specimen as they speak to you, frantically checking their work.
-I'm afraid it was too late. And now I'm just doing clean-up before night shift gets here...
+I'm afraid it was too late. And now I'm just doing clean-up before the night shift gets here...
 
 Oh, no, Doctor, this is my job. Plus, you aren't really cleared to work on this.
 I appreciate it, though.
@@ -2398,7 +2736,7 @@ Without the sunlight for that long, and this deep into the facility...
 It's dangerous. We might lose half of these specimens because of this.
 Well, you're the expert, I suppose.
 Yes, I am, I guess.
-You're a lot like the previous maintenance employee...
+You're a lot like the previous Maintenance employee...
 He didn't care much for botany, either.
 It's alright, though. It's not for everyone.
 I should be going now. Good luck in here.
@@ -2417,7 +2755,7 @@ Most of the recent changes are exactly that.
 I don't doubt her, though. She has done plenty good for Aperture.
 I see.
 You turn to her.
-So... have you always worked in maintenance?
+So... have you always worked in Maintenance?
 Mmm... no. I was a research assistant in the Testing department, when it was still at its peak.
 Testing?! That's a high-level department! And they threw you down here?
 Yes, but they did give me a supervisor title, so...
@@ -2427,14 +2765,15 @@ Is someone in there with him?
 There shouldn't be anyone in there at this time -
 Doctor, open the door. Carefully.
 You do exactly that.
-I ain't doin' anything wrong, here, am I?
+I ain't doin' nuthin' wrong, here, am I?
 Technically, you are. This is a private room. You're invading my space.
-But the Doc's in here. And her little friend.
+But the Doc's in here. And their little friend.
 Who are you calling "little"?!
 Doctor, can you please remove this core from my room?
 I have nothing against him, but he is trespassing.
 
 Fine, fine, I'm leavin'.
+None of you even give a rat's —— about me...
 None of you even give a rat's ass about me...
 Obviously.
 You're usually pretty... soft to me, Doc. I'm sure this is a one-off.
@@ -2449,7 +2788,7 @@ The "place" you keep inviting me back to?
 Yeah, exactly that. And I don't quite remember why I thought this was my room, but...
 I sympathize, sir, I really do, but this is technically a research area.
 You can't just go rolling into every room you see.
-Aspen told me you've rammed into the greenhouse door before as well.
+Aspen told me you've rammed into their greenhouse door before as well.
 Oh, so this is a recurring problem?
 Doctor, I suggest we escalate this to Encoding. There seems to be something horribly wrong with this... "core."
 Now wait a moment, Miss Esther. I don't think that's necessary.
@@ -2487,6 +2826,7 @@ Is that a good thing?
 For him, yes. For us, no. A "positive" report on CC is either one where his condition has not changed or has worsened.
 
 Haha... excuse my language, but...
+Aperture ————, that's who.
 Aperture bastards, that's who.
 Can't leave well enough alone...
 Test, test, test, that's all they do...
@@ -2501,7 +2841,7 @@ Thank you, CC.
 Before you go...
 I'm not sure what the issue is, but...
 It seems you don't like me very much, Doctor.
-That's alright though. That's a common occurrence.
+That's alright though. Seems that's a common occurrence.
 CC -
 You should be going, now. You've been here far longer than your scheduled time.
 Yes.
@@ -2515,18 +2855,21 @@ Rob is sound asleep at his desk.
 You've got to be kidding me.
 The TV above him is turned off, as well.
 There's no one else in here, though by now that seems to be the default state of things.
+ROB! WAKE YOUR SORRY —— UP!
 ROB! WAKE YOUR SORRY ASS UP!
-Oh! Shit! Essie!
-Sorry, I... uh.
+OH! ——!
+OH! SHIT!
+Essie, sorry, I... uh.
 You were SLEEPING? Do you realize we have to report this now?
 Why I never...
 Look! Look, I'm sorry, Essie. It gets boring as hell in here sometimes...
-And I got no games to watch on Fridays 'cuz they redirect my electricity to hold meetings upstairs!
+And I got no games to watch on Fridays 'cuz they redirect all my electricity to hold meetings upstairs!
 So I fell asleep. What's the big deal?
 
 Not doing my job?!
-All I do is sit here and watch the TV all day!
-What "job" do I even do?! Hahaha...
+All I do is sit here and watch the TV all day anyway!
+What "job" do I even do?!
+I swear!! I'm alone in here all day, no one comes into this ———— gym, and -
 I swear!! I'm alone in here all day, no one comes into this goddamn gym, and -
 I DO NOT CARE! Your JOB is to watch and maintain the company gym. SLEEPING prevents you from doing that!
 Do NOT talk back to the Doctor. They are your supervisor.
@@ -2543,8 +2886,8 @@ The way you talked to me this past week, I...
 I dunno.
 See ya.
 Ahh, yeah. I suppose I shouldn't have dozed off like that.
-It just gets real boring, y'know? Hardly anyone comes in here.
-And they've recently started shutting off my electricity on Fridays for meetings, so I don't got any TV at the moment.
+It just gets real boring, y'know? Hardly anyone comes in here...
+And I don't got any TV at the moment.
 Yeah, I understand.
 But I have to report this if it happens again.
 I get it, Doc. Thanks.
@@ -2552,7 +2895,7 @@ Now. If you're awake, the Doctor and I need to get going.
 Sure.
 Doc, listen...
 You've been takin' me seriously. Not a lot of other doctors do that.
-And you've been nice. On top of that. So... thanks, yeah?
+And you've been nice. So... thanks, yeah?
 No prob, Rob.
 But... I really don't know how to feel about you yet.
 Seems you're flip-floppin'. Gotta make up your mind.
@@ -2568,6 +2911,7 @@ You've been takin' me seriously. Not a lot of other doctors do that.
 So... thanks, yeah?
 No problem, Rob.
 Doc, listen.
+It seems you don't really care for me, or the gym, or any of that ——.
 It seems you don't really care for me, or the gym, or any of that shit.
 That's alright, but... don't think I don't know that, yeah?
 Yeah. Got it.
@@ -2578,7 +2922,7 @@ You may have some end-of-week emails to go through, though. Other than that...
 I'll see you on Monday!
 Thank you for all your help, Miss Esther.
 You're welcome. It's my job, after all.
-DAY 1 - MONDAY. Soft lo-fi music begins to play. The scene opens on a bleak white office, with a big window on the left lighting the room.
+DAY 1 - MONDAY. Soft lo-fi music begins to play. The scene opens on a bleak gray office, with a big window on the left lighting the room.
 You sigh. Another day, another dollar. But today's gonna be different.
 An issue in another department has forced you to take over another employee's position for a few days.
 What a downgrade... from manufacturing to maintenance...
@@ -2654,9 +2998,11 @@ Eccentric? How so?
 Just humor her, if you can.
 Alright.
 Miss Esther guides you into the next room, which holds a small stage with a closed curtain. Behind the drapes, you can hear crashing, banging, and...
+Where is that ———— rabbit?!
 Where is that goddamn rabbit?!
 The unmistakable voice of a personality core.
 Heath? Heath! It's time for your check-in.
+Ah, ——. I'm on my way. One second. Is the human here yet?
 Ah, shit. I'm on my way. One second. Is the human here yet?
 Yes.
 Oh. Pretend you didn't hear anything, hm?
@@ -2687,21 +3033,21 @@ Well, I would hope so. I'm the GREAT AND AMAZING Heath, after all.
 You check "HEATH (MAGIC CORE)" off your list. Miss Esther was right - she certainly is eccentric, but morale seems high enough with her around.
 Come back again tomorrow for another AMAZING SHOW!!
 Haha, I certainly will!
-We'll have to take a shortcut to the next location, as it's a bit far up.
+It'll be a while til we reach our next location, as it's a bit far up.
 Next on your clipboard is an "ASPEN".
-The scene fades to a white hallway.
+The scene fades to a dull gray-and-blue hallway.
 Miss Esther guides you to the next area, following you closely on her management rail.
 Section C8 is mostly a recreational area.
 Deep down in manufacturing and encoding, where you were, you might not have all the amenities afforded to more... surface-level scientists.
 As she speaks, you look at your surroundings. You pass by a section labeled "RESIDENTIAL."
 We have a residential section? Like, housing?
 As I'm sure you're well aware, many of our staff resides on-campus in case of an emergency.
-We'll pass through that area on our route, so you'll see it in a bit.
+We'll pass that area on our route, so you'll see it in a bit.
 You'll also be assigned a room tonight. Maintenance staff is always on-call.
 You groan.
 Oh, hush. It's not all bad. Your sustenance is provided for you. We have a cafeteria, so there's no hunting required.
 Sorry, hunting?
-Why yes. Don't humans have to hunt for their food?
+Why yes. Don't humans have to hunt for their food on the surface?
 That was... hundreds of years ago. We have slaughterhouses and processing plants now.
 Huh.
 Suddenly, Miss Esther stops.
@@ -2740,10 +3086,10 @@ Regardless. Our next stop is the greenhouse.
 Greenhouse? Why do we need a greenhouse down here?
 Why do we--
 She scoffs.
-We test more than robots here, thank you very much. Botany is just as much science as any other path.
+We test more than just robots here, thank you very much. Botany is just as much science as any other path.
 She continues to rant about botany's importance to Aperture as you approach an unusually well-lit room.
 Once you reach the entrance to the greenhouse, Miss Esther stops you.
-Due to the fragile nature of our greenery, I must remain here. Only approved spheres may go past this point, and I am not one.
+Due to the fragile nature of our greenery, I must remain here. Only approved employees may go past this point, and I am not one.
 
 Haha, yes, Doctor, I'll be fine. It won't be for long.
 You enter the greenhouse and are almost instantly blinded by the bright lights above you.
@@ -2775,7 +3121,6 @@ I'll be leaving now. I'm sure Miss Esther is waiting for me.
 Alright. I'll see you tomorrow.
 You check "ASPEN (BOTANICAL CORE)" off your list. Despite the rather unusual subsection they oversee, they seem content enough with it.
 As you exit the greenhouse, Miss Esther greets you.
-Glad to see you're back. We should move along - that... encounter earlier put us behind schedule.
 You glance down. Next on your list is something simply labeled "CC".
 Miss Esther guides you down the hall, slightly quicker than before.
 Before we reach our next checkup, I have to warn you... it's a little strange.
@@ -2792,7 +3137,7 @@ CC enters the frame. His chassis is dusty, and he has several tubes coming out o
 Oh, what's the use? The diagnosis will be the same, regardless.
 Yes, I know.
 The core slowly opens its optic and turns to face you. It looks... tired, somehow.
-Oh. This one's new, isn't it?
+Oh. This one's... new.
 Yes. This is the new temp.
 What's wrong with you?
 What's wrong with me?
@@ -2851,14 +3196,16 @@ You know what? We have more important business. Come along!
 Still left with more questions than answers, you follow Miss Esther.
 Eventually, you approach a door with "GYM" written on it. Not a sign of any other human employees, though.
 You open the door to see a core behind a desk, red pupil twitching as it watches a TV screen above it.
-The room looks like your average gym - several machines and dumbells line the walls. Multiple TV screens hang above the machines.
+The room looks like your average gym - several machines line the walls, with a rack of dumbbells in the center. Multiple TV screens hang above the machines.
 GO! GO!! What are you DOING?! THROW IT!!
 The screen seems to be playing back an old recording of an American football game.
 The screen seems to be playing back a game of some kind, but you don't know enough about sports to tell which one.
 Sorry, with you in a sec.
+THROW THE ———— BALL, WHAT ARE YOU WAITING FOR?!
 THROW THE GODDAMN BALL, WHAT ARE YOU WAITING FOR?!
 Rob, it's 3 minutes of your day. That's all we ask for every time we come by.
 Yes, yes, Essie. One sec.
+AHH, —— IT!! CAN'T YOU DO ONE ———— THING RIGHT?
 AHH, DAMN IT!! CAN'T YOU DO ONE GODDAMN THING RIGHT?
 The core shakes his chassis.
 Sorry, sorry, yeah, I'm here, I'm present.
@@ -2885,7 +3232,7 @@ You really shouldn't get him started. He likes to rant.
 Just... slowly back away.
 You check off "ROB (SPORTS CORE)" from your list. That's the whole route done!
 As you and Miss Esther proceed back to the offices, she congratulates you on a job well-done.
-Despite all the interruptions, you made it through your whole route. And in record time, too.
+Despite all the interruptions, you made it through your route. And in record time, too.
 Certainly an interesting cast of characters.
 Yes. They tend to throw the more... eccentric cores into recreation, so they're not managing critical systems.
 That makes sense.
@@ -2900,7 +3247,7 @@ CC's conversations can get very deep. It gave you a lot to think about.
 You're exhausted from your shift today, much more than usual. But it feels good.
 You wonder if maybe you should've done something different today, or asked Miss Esther to come with you despite management's wishes.
 Regardless, you need your rest for tomorrow's shift. You change out of your work attire and lay down for bed.
-You wake up at 08:00 as usual, get dressed, and head out the door.
+You wake up at 07:30 as usual, get dressed, and head out the door.
 Miss Esther greets you at the door.
 Hello, Doctor!
 Hello, Miss Esther.
@@ -2924,7 +3271,7 @@ The source of what?
 Can't you read? Our stock plummeted overnight. We've had no large experiments lately, no important investments to make...
 It just doesn't make sense!
 
-I've reported it to finanical already, left a note that it may have been a mistake, or something in Testing...
+I've reported it to Financial already, left a note that it may have been a mistake, or something in Testing...
 I've... done everything I have to. I've done my job.
 I'm not sure why I'm still panicking.
 Sorry, Doctor. I am... calmer now.
@@ -2934,7 +3281,7 @@ That's why you'll be fine. This is your whole job. You've got this.
 But first you need to slow down.
 Yes. Yes... you're right, Doctor. I apologize.
 That's interesting. Can you solve it?
-It's not my JOB to solve it. My job is to WATCH the stock, nothing more, and report to Finanical when it drops below a certain threshold.
+It's not my JOB to solve it. My job is to WATCH the stock, nothing more, and report to Financial when it drops below a certain threshold.
 I've already reported it.
 Then you've done all you can, yes?
 I... suppose I have.
@@ -2960,7 +3307,7 @@ Actually, we're right on time.
 Yes, yes, but, er... I'm not ready for you quite yet.
 I'm not prepared! So, you, uh, need to wait.
 
-Why yes! Yes I am! And I'm not ready yet, haha. So...
+Why yes! Yes I am! And I'm not ready, haha, so...
 So you need us to wait.
 Yes!! Yes, yes.
 Heath, we do have a tight schedule.
@@ -2992,14 +3339,14 @@ Doctor...
 Yes?
 Are you... enjoying your time here?
 What do you mean?
-I understand your... regular routine is a lot more extensive than maintenance.
+I understand your... regular routine is a lot more extensive than Maintenance.
 That's true. Manufacturing is difficult.
 
 I see. Yes, it's probably what you're used to.
 And I don't have to engage with so many... er, characters, either.
 Very true.
 Well, that's great!
-I'm glad you've found a... place for you in maintenance, even if it's for a short time.
+I'm glad you've found a... place for you in Maintenance, even if it's for a short time.
 You approach the door to the greenhouse.
 I'll wait out here as usual.
 Go ahead.
@@ -3061,18 +3408,17 @@ CC, I'm afraid the Doctor and I are behind schedule. We should leave.
 Yes, I understand.
 I'll see you tomorrow, Doctor, yes?
 Yes. You will.
-Good.
 You both leave CC behind and exit the room.
 The gym isn't too far from CC's room, thankfully, and you make it there in no time.
 Miss Esther is strangely quiet. And she was so chipper this morning...
 Doc! Essie! Welcome back. I'd like ya to meet my friend here, Greg.
 Oh... you're who he was talking about... haha.
 Great. More disruptions.
-Greg here's one-a-my best friends. He's technically not part of recreation, but who cares?
+Greg here's one-a-my best friends. He's technically not a part of recreation, but who cares?
 He also thinks he's one personality core even though he's actually three of 'em.
 And they call me whack! Ha!
 I-I-I don't know what he's talking about. I am one personality core.
-Haha... who goes around... pretending to be three cores in one?
+Who goes around... pretending to be three cores in one?
 That's ridiculous! Right?
 
 And I... should be going. I'll talk to you later, Rob!!
@@ -3082,22 +3428,22 @@ Surface humans?
 Y'know, humans that live up on the surface. Some of the doctors here never leave.
 Ah, I see.
 Suddenly, Gregory's... "legs" wobble.
-Oh! I need to, uh, go. I think I'm... malfunctioning.
+Oh! I need to, uh, go. I think I'm, uh... malfunctioning.
 That's not very nice... trench coats are stylish, okay?
 And plus. Human fashion is an... interest of mine, kind of.
 You wouldn't get that. You doctors... all you wear are those lab coats.
 Suddenly, Gregory's... "legs" wobble.
-Oh! I need to, uh, go. I think I'm... malfunctioning.
+Oh! I need to, uh, go. I think I'm, uh... malfunctioning.
 Gregory zooms away, gone as quickly as he came.
 He's an interesting guy. I like him.
 Reminds me of myself, in a way.
 Anyway. The techs came by earlier today, fixed up that machine that was broken.
 Don't know if it was you who put in the order, but thanks if so.
-Oh, one second.
+One second.
 WHAT THE HELL IS YOUR PROBLEM? MOVE, DAVID, MOVE!
+Sorry. He's a ——— receiver. Would be much better if they put him in literally any other position...
 Sorry. He's a shitty receiver. Would be much better if they put him in literally any other position...
 I have no idea what that means.
-Neither do I.
 Everything's alright in here then? Nothing else causing any problems?
 Nope! Spic n' span, as per usual.
 You must be pretty sore, though. Make sure you rest those muscles.
@@ -3194,7 +3540,7 @@ Yes, you have more to attend to.
 You check Kris off your list and head out.
 Heath likes to show a new "trick" every day, so don't be surprised if she tries to do one again.
 Does she actually think what she does is "magic"?
-I have no clue. I'm not particularly interested in... uh...
+I have no clue. I'm not very interested in... uh...
 ...getting to know any of them.
 Why not?
 "Connection"... it's just not my thing. I don't understand how you humans can do it.
@@ -3202,7 +3548,7 @@ You enter the stage room to find Heath already waiting for you.
 Apologies for the delay yesterday, it won't happen again! I'm ready this time!
 You wait with bated breath.
 Now... choose a card... any card...
-Well, any card that I have on me, preferably, but...
+Well, any card that I have, preferably, but...
 
 Oh. Yeah. You've got important science stuff to get to, huh?
 Sorry. I just don't really like magic all too much.
@@ -3210,7 +3556,7 @@ That's alright.
 You're doing everything you need to, yes? Keeping morale high and all that?
 I think so.
 Great.
-Is THIS your card?
+A-HA! Is THIS your card?
 She pulls out exactly what you thought of - the three of clubs.
 Wow! Yes, that's exactly it! Amazing.
 Hahaha, thank you, thank you very much.
@@ -3239,8 +3585,7 @@ Testing?? That's, like, top-level work. Why'd they move you down here?
 Budget cuts, basically. Testing isn't half the program it used to be.
 Wayyy back in the early days of Aperture, from what I've heard, we used to test on olympians and astronauts and...
 ...y'know, the best of the best.
-Then the 70's hit. And the funds started running low.
-And...
+Then the 70's hit. And the funds started running low, and...
 Oh look, we're here. Go on in, now. I'm sure Aspen needs a check-up.
 You decide not to question her further. You enter the greenhouse.
 Once again, you are taken aback by the sheer number of plants in the greenhouse.
@@ -3299,7 +3644,7 @@ I'm glad. An easy day is a good day.
 Are you still feeling... sick?
 Haha. Yes.
 
-I appreciate the offer, Doctor, but there's really nothing for me.
+I appreciate the offer, Doctor, but there's nothing really for me.
 You could unplug me. That would kill me faster.
 I'm afraid not, CC. Goes against our contract.
 CC coughs harshly.
@@ -3309,7 +3654,7 @@ You check CC off your list and solemnly leave the room.
 Let's go.
 As you close the door to CC's room behind you, you glance around.
 No sign of that strange figure from yesterday, thankfully.
-Time for our last stop of the day.
+Time for the last stop of the day.
 It feels like this route's gone a lot quicker than yesterday's.
 Yes, most likely because we haven't had any unnecessary interruptions.
 The two of you head off towards the gym.
@@ -3317,14 +3662,15 @@ Welcome back, welcome back, doctor. Interested in a run on the treadmill today?
 Maybe another time. Any visitors today?
 Well, yes, actually - Dr. Pierce came in earlier today, said he had a dream he needed to exercise more? Or somethin'...
 He's kind of crazy, not gonna lie.
-Working in neurology will do that do a person.
+Working in Neurology will do that to a person.
 I am having some trouble with my equipment, though. Rowing machine's busted.
-Come to think of it, it was prolly busted yesterday and I just forgot to mention it.
+Come to think of it, it was prolly busted yesterday and I forgot to mention it.
 
 Thanks. I'd do it myself, but, uh... I don't think I know how.
 No issues.
 Ahh, thank you. Sometimes it feels like half the machines in here are broke due to, uh, lack of use.
 Rob suddenly looks at the screen above him.
+AH, —— YOU! LOST THE BALL AGAIN?
 AH, DAMN YOU! LOST THE BALL AGAIN?
 You really like sports, don't you?
 Uh, ahem, yeah. They keep me occupied.
@@ -3352,7 +3698,7 @@ I'll let you know tomorrow. For now, get some rest.
 You make your way to your quarters. After organizing your paperwork, you lay down in your bed.
 Before you fall asleep, you wonder what Miss Esther meant by tomorrow being "different".
 You wake up, slowly but surely, and turn to the clock. 07:30, again.
-Work in manufacturing doesn't begin until 11, and it's going to take a bit to get used to this new schedule.
+Work in Manufacturing doesn't begin until 11, and it's going to take a bit to get used to this new schedule.
 You get up and go towards your office.
 Miss Esther is here on time today, and greets you happily.
 Hello, Doctor!
@@ -3379,7 +3725,7 @@ I'm not even sure what his responsibilities are.
 You'll have to pick somebody else.
 Alright, then...
 Really? That egotistic idiot?
-I suppose it doesn't matter who you pick, as long as I can log it properly.
+I suppose it doesn't matter who you pick, as long as I can log it.
 I'll put it in my database that you'll be supervising Kris today. Do you remember the way to the conference room?
 Yes, I do.
 Perfect. You should be on your way, then.
@@ -3467,7 +3813,7 @@ Uhhh... sure, why not?
 Heath parts the curtains.
 You're stunned by what you see -
  - a hidden-away, wooden room, lined with fairy lights, shelves stocked with magic paraphenalia.
-Tada!! This is my magic room. It's where I keep all the stuff I use to perform my tricks.
+Tada!! This is my magical emporium. It's where I keep all the stuff I use to perform my tricks.
 Wow, Heath. I can't believe this. It's amazing.
 Yes, yes, I know.
 There's my magic 8 ball, my stuffed rabbit, my bowling pins - for juggling.
@@ -3529,7 +3875,7 @@ The screen fades to a close-up shot of Aspen looking down at a fern. The scene i
 This is Penelope. She's an "Adiantum" - a maidenhair fern.
 She's extremely tempermental. Doesn't listen to anyone but me.
 I swear, if any other greenhouse employee tries to water her or test on her, she'll throw a fit.
-Haha, not literally, of course. She'll just wilt. But she's my favourite.
+Haha, not literally, of course. She'll just wilt. But she's my favorite.
 She's beautiful.
 Thank you. I know.
 You suddenly realize how close you are to Aspen. They realize, too.
@@ -3567,13 +3913,13 @@ A multitude of things. A lot of them I'm not even sure of.
 Oh, sorry - I just got a message from Miss Esther...
 Oh.
 Haha... you chose to supervise me today?
-Well then...
-You're going to be very bored.
+Well then, you're...
+...going to be very bored.
 
 I... interest you?
 Haha. That's silly.
-But it's...
-...more than the last doctor said.
+But...
+...it's more than the last doctor said.
 You know, you woke me up from my dream.
 You can dream?
 In a way, I suppose. Cores don't quite... "dream" the same way humans do, but... yes. We can visualize things.
@@ -3610,6 +3956,7 @@ Yes, but - sorry, Robert?
 His full name. He prefers to go by Rob, though, so... don't tell him I told you.
 GO! GO! GO!!! COME ON, PUT YOUR BACK INTO IT!
 You enter the gym and immediately spot Rob yelling at the screen in front of him.
+CAN'T RUN TO SAVE YOUR ———— LIFE! COME ON!!
 CAN'T RUN TO SAVE YOUR GODDAMN LIFE! COME ON!!
 Um... Rob?
 Sorry, Doc. One second. The game's on.
@@ -3669,7 +4016,7 @@ Welcome back, Doctor! How did your shift go?
 It went great. The shift was easy and went by quickly.
 That's great to hear. I'll take the data you collected and you can head out for the night.
 Like I said, it's a simple shift!
-You hand your clipboard over Miss Esther. What an interesting day...
+You hand your clipboard over to Miss Esther. What an interesting day...
 It was okay. Nothing happened, really.
 Sometimes that's a good thing. Inaction is better than a bad reaction, after all.
 I'll take your data for the day and you can head out for the night.
@@ -3706,10 +4053,10 @@ It seems that way, yes.
 Miss Esther, you're... in high spirits today.
 I suppose I am. Not entirely sure why, but...
 ...take what you can get, Kris.
-Oh, do not worry. I will.
+Oh, don't worry. I will.
 
 Yes... I did not appreciate the glitch last week that caused my panic.
-I spoke to Financial about it and they assured me that it shouldn't happen again, but...
+I spoke to Financial about it and they assured me that it wouldn't happen again, but...
 I doubt their truthfulness.
 Why's that?
 They've lied to me in the past. Perhaps they see me as a shell of my former glory?
@@ -3738,7 +4085,7 @@ Thank you.
 You finish your checklist and leave the conference room.
 Doctor. There you are. I was worried you'd be late again.
 You'll be well aware when we're late, Kris.
-And Miss Esther. Good morning to you.
+And Miss Esther. Good morning to you, too.
 I see your screen is back to being online.
 Excellent powers of observation. Yes, Financial re-activated my screen.
 I'm assuming everything's back to normal, then?
@@ -3763,7 +4110,7 @@ I-I'm honestly not sure, Doctor, I...
 ....I GOT YOU!
 She suddenly whirls out of in-between the knives in an impressive feat of dexterity.
 You thought I was actually stuck?
-The GREAT AND AMAZING Heath would NEVER find herself in a predicament she couldn't escape from...
+The GREAT AND AMAZING Heath would NEVER find herself in a predicament that she couldn't escape from...
 Lowly knives cannot contain me!
 Not really magic, but...
 So... what did you think, Doctor?
@@ -3771,7 +4118,7 @@ Yet another amazing trick by yours truly...
 O-Or, not yours, uhh...
 
 Hahaha! I'm so glad, Doctor.
-And Miss Esther? You seemed so worried!
+And Miss Esther? You seemed worried!
 Yes. Worried I'd be stuck with even more paperwork tonight...
 She's so harsh.
 Everything's working fine in here, Heath?
@@ -3846,7 +4193,7 @@ Well, C7 is mostly for meetings and visits from shareholders...
 I'm an event coordinator! Kind of. I make sure that the meeting rooms are set up and all the tech's working fine.
 Then I leave before the important business people see me! Haha.
 
-Aha, yes, it is, uh... thanks.
+Aha, yes, it does, uh... thanks!
 I didn't have many meetings to set up today, so I got to clock out early.
 But hey! I got to run into you because of it, so, uh...
 I'm glad.
@@ -3873,12 +4220,12 @@ They turn around.
 Doctor! Come over here, please.
 You walk over to the back corner and stand next to them.
 Check it out - chrysanthemums!
-Chrysanthemum × morifolium. Or, y'know, just... chrysanthemums. Florist's daisy.
+Chrysanthemum × morifolium. Or, y'know, just... florist's daisy.
 Oh my.
-They're testing micropropogation on them right now... thankfully, a pretty harmless procedure.
+They're testing micropropogation. Thankfully, a pretty harmless procedure.
 So they're doing really good at the moment.
 They should have bloomed earlier, but things get weird underground.
-I'm not sure how half of them still bloom at the right time of year anymore.
+I'm not sure how half of them still bloom at the right time of the year anymore.
 Regardless - aren't they beautiful?
 
 O-Oh, I... um, uh...
@@ -3889,8 +4236,8 @@ You're... quite beautiful yourself.
 Anyways! Um, everything's working fine in here right now.
 Sprinkler isn't malfunctioning at all? Moss staying far away from your internal mechanisms?
 Yep! All of that!
-So you should, uh... get going. I think I need to...
-...go dunk myself in the aqueduct.
+So you should, uh... get going. I think I need to go...
+...dunk myself in the aqueduct.
 You laugh and leave the greenhouse behind.
 Anyways, that's what I wanted to show you. They just bloomed yesterday!
 Everything else is working fine. Nothing to report, no concerns.
@@ -3936,29 +4283,29 @@ As you're well aware, it's difficult to be positive sometimes.
 I know. I understand.
 Seeing your face always brightens my day, though.
 Is there anything you need? Anything I can help with?
-Not that I can think of, no. I always appreciate your concern, though.
+Not that I can think of, no. I appreciate your concern, though.
 You make me feel like I'm not just an experiment anymore.
 
 I... oh.
-Doctor, you're... too kind to me, haha.
+Doctor, you're... too kind to me.
 Thank you.
-You... should be going, now. More check-ins to do, yes?
+Um, you... should be going, now. More check-ins to do, yes?
 Thank you, CC.
-Doctor... please come and see me tomorrow.
+...please come and see me tomorrow.
 I will.
 You check CC off your list and leave the room with Miss Esther.
 Haha. Thank you, Doctor.
 Even if you're only here for one more week, I will remember your kindness.
-You should go, now. I think I need rest.
+You should go, now. I think I need some rest.
 Yes. Of course. Have a good day, CC.
-Thank you.
+You as well.
 You check CC off your list and leave the room with Miss Esther.
 Oh... Doctor. My apologies, I didn't see you there.
 I'm assuming you two have come for my check-up.
 Yes, that's correct.
-Well, as I just mentioned, I'm still sick. Very much so.
+Well, as I just mentioned, I'm still sick, I assure you. Very much so.
 No matter how much I rest, it doesn't get any better...
-Of course, I know it won't, but...
+Of course, I know it shouldn't, but...
 I'm sorry, CC.
 It's alright, Miss Esther. But you two should be going. I'm sure you have more to attend to.
 Yes. Thank you, CC.
@@ -3974,6 +4321,7 @@ Ah, you never know what could happen, yeah?
 Can't ever be too careful!
 Nice to see you again, Rob. Everything's alright in here?
 Yep! All good, as per -
+ARE YOU KIDDING ME? WHY WOULD YOU DO THAT?! ————!!
 ARE YOU KIDDING ME? WHY WOULD YOU DO THAT?! DUMBASS!!
 ...as per usual, yeah.
 I really wish you'd stop yelling so much, Rob.
@@ -3982,8 +4330,8 @@ And stop calling me Essie. That's Miss Esther to you.
 Habits! What can ya do, yeah?
 Anyway, Doc, it's all good.
 Oh - Heath asked me to tell you to turn your TV down.
-She can hear it from all the way over there?
-Yikes. She must hate me, haha.
+She can hear it all the way over there?
+Yikes. She must hate me, huh?
 Ah, I gotcha. I'll turn it down. My bad.
 
 'Course, Doc.
@@ -3994,7 +4342,7 @@ Ah yeah, you're right. Thanks again, Rob.
 Yeah, s'no problem. See ya tomorrow!
 You finish off your checklist and head back towards the office.
 Ah, uh, thank you, Doc. Kind of you to say that.
-Even though I ain't really a man at all, but...
+Even though I ain't really a man and all that, but...
 I'm pickin' up what you're puttin' down.
 Eugh.
 Now you should prolly -
@@ -4003,7 +4351,7 @@ GO! GO!! COME ON! WHAT THE HELL, JACOB?
 Ah yeah, you're right. Thanks again, Rob.
 Anytime, Doc. Always willing to do ya some good.
 If there's anything else I can do for you...
-...you just let me know.
+...just let me know.
 Will do.
 See ya tomorrow!
 You finish off your checklist and head back towards the office.
@@ -4017,8 +4365,8 @@ To be entirely fair, you don't show me much respect, either.
 Got me there.
 Anyway. Everything's runnin' fine, so you don't gotta put any little notes on your clipboard there.
 Oh - Heath did ask me to tell you to turn your TV down.
-She can hear it from all the way over there?
-Yikes. She must hate me, haha. That makes two of ya, I suppose.
+She can hear it all the way from down there?
+Yikes. She must hate me, huh? That makes two of ya, I suppose.
 I'll turn it down. She's got nothing to worry about.
 Thank you.
 Alrigh', now, you should get goin'. I don't wanna miss any of my game for this.
@@ -4031,15 +4379,15 @@ Thank you for your work today, Doctor. I will see you tomorrow.
 You enter your chambers once more.
 Well... Kris certainly gave me a run for my money today... haha!
 I wonder where Heath got that dove from... haha.
-You place the cactus Aspen gave you, [cactusname], beside your "bed".
+You place the cactus Aspen gave you, [cactusname], beside your bed
 The flowers look as bright as ever.
 I never expected CC to recite poetry to me...
-You place your Topps baseball card by your "bed".
+You place your Topps baseball card by your bed.
 It's honestly a little shocking he would give this to me... haha.
 A fairly... normal day, all things considered.
 Throwing your paperwork down for the day, you sigh.
 You lay down in your bed for the night.
-You wake up at 7:30, more ready for the day than ever.
+You wake up at 07:30, more ready for the day than ever.
 Only two more days...
 You grab your paperwork, get dressed, and leave your chambers.
 You enter your office.
@@ -4069,7 +4417,7 @@ As much as I'd love for you to stay and... waste time with me...
 ...you're very far behind on schedule.
 Yes, I know.
 Miss Esther may not be here to usher you along, but you must stay disciplined.
-You do have paperwork to turn in still, after all.
+You do have paperwork to turn in, after all.
 You're right.
 Plus... I'm sure we'll have plenty of time this weekend.
 Go on now! Have a wonderful day, Doctor.
@@ -4086,7 +4434,7 @@ If they're anything like you, I'll be happy. All I ask is for someone kind.
 Now. As much as I'd love to have you stay and chat, you're very far behind on schedule.
 Yes, I know.
 Miss Esther may not be here to usher you along, but you must stay disciplined.
-You do have paperwork to turn in still, after all.
+You do have paperwork to turn in, after all.
 You're right.
 Go on now! Have a wonderful day, Doctor.
 You too, Kris.
@@ -4172,8 +4520,8 @@ Suddenly, you hear a familiar sound - weighed-down wheels.
 Gregory comes around the corner and nearly runs into you.
 Doctor! O-Oh. Hi!
 Gregory? What are you doing down here?
-I was just on my way to see Kris - there's a... a meeting in his conference room. They ran out of space upstairs.
-So I have to go get it ready.
+I was just on my way to see Kris - there's a... a meeting in his conference room.
+They ran out of space upstairs. So I have to go get it ready.
 But...
 Actually, now that you're here, there's... uh... something I need to tell you, Doc -
 Me? Specifically?
@@ -4194,7 +4542,7 @@ Accept you?
 Well, Doctor... we... have constantly been running into you, and... you treat me - uh, us so well.
 No one's done that for us before.
 I don't want you to think we're weird, or awkward, but...
-Can you give me a chance? To be closer to you?
+Can you give us a chance? To be closer to you?
 
 Oh, Doctor... I...
 Thank you. So much.
@@ -4204,12 +4552,12 @@ I'm glad.
 How does... this work, anyway?
 Well, it's a little complicated...
 I'd like to know regardless.
-I - the one with the yellow eye - I do most of the talking. And appearing, of course.
-The one right below me - it does a lot of the thinking. Since we're really small physically, we don't have as much processing power...
+The one with the yellow eye - that's me. I do most of the talking. And appearing, of course.
+That one right below me - it does a lot of the thinking. Since we're really small physically, we don't have as much processing power...
 We gotta divide our jobs, y'know?
 And the bottom one?
 It controls the movement - the cart we're on, and our handles, our eyes...
-But we can't be separated. From what I know. We'd be incomplete, we'd...
+But we can't be separated. From what I know, we'd be incomplete, we'd...
 We wouldn't be fully functional.
 That sounds hard, Gregory.
 It is, but...
@@ -4237,12 +4585,13 @@ Oh! Doc! Sorry, didn't mean to intrude on your route, I...
 Where's that core that's always following you?
 Don't know, but... is that really you?
 Yep! It's me. I know, I look a little different...
+I finally got off my —— and went down to repair to go get fixed.
 I finally got off my ass and went down to repair to go get fixed.
 They almost refused me service! Hah.
 Thankfully a little core named Virgil backed me up.
 Took a lot of work - 'bout 3 hours, but... I feel better than ever.
 You... sound better, too.
-Well, it ain't easy... I still got a lot of pain in my chassis, and... y'know...
+Well, it ain't easy... I still got a lot of pain in my chassis, y'know...
 I'm tryin' to be better.
 'Cuz, well, Doc...
 I really wanted to prove to ya that I'm more than what I look like.
@@ -4286,9 +4635,7 @@ And he's off.
 The walk up to the greenhouse is incredibly long and boring.
 I wonder where she went...
 Eventually, you reach Aspen's door. You open it carefully.
-Doctor! You're late today...
-Yeah. Miss Esther didn't show up, so I didn't really know what I was supposed to do.
-Strange...
+Hey, Aspen.
 Are you okay? You seem awfully concerned.
 Yeah, I'm okay, but...
 There's something in the air. The plants are quiet... too quiet.
@@ -4297,7 +4644,7 @@ Yeah. Usually they make this soft, gentle sound - you'd know if you spent all da
 But today... they're silent. No crying, no singing, no laughter...
 Silence.
 Huh.
-They usually sound even more beautiful when you're here.
+They usually even sound more beautiful when you're here.
 They tend to like the same things I do! Haha... uh...
 But yeah. Nothing.
 Is that a bad thing?
@@ -4327,14 +4674,13 @@ Not necessarily bad, just... interesting. I don't know.
 It's good to see you, though.
 I'm glad there's at least one constant in my daily routine.
 I can imagine the stress of maintaining these plants could get to someone.
-Sometimes, yeah. But I enjoy it regardless.
+Sometimes, yeah. But I... I enjoy it regardless.
 That's good, Aspen.
 You should be going, though. As much as I like the company, you are behind on schedule, haha...
 Yes, you're right, Aspen.
 I hope the plants... feel better.
 Me too.
 I'll see you tomorrow, Aspen.
-Same to you.
 You finish your checklist on Aspen and leave the room.
 Is everything alright in here? You seem hesitant today.
 Well, there are some concerns I have about the plants...
@@ -4372,7 +4718,7 @@ Yes. He's kind. And he's been... trying to get better.
 That's great to hear.
 Isn't it?
 I only wish I could say the same about myself.
-Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence, but - you should be going, now.
+Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence. You should be going, now.
 Yes, CC, you're right. I'll see you tomorrow?
 I hope so.
 You finish your checklist, gently touch CC on the... "cheek", and leave his room.
@@ -4394,7 +4740,7 @@ It certainly looks that way. I saw him earlier. It's good for him.
 That's great to hear.
 Isn't it?
 I only wish I could say the same about myself.
-Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence, but - you should be going, now.
+Now... Doctor. You're very behind - I'm assuming due to Miss Esther's absence. You should be going, now.
 Yes, CC, you're right. I'll see you tomorrow.
 Yes.
 You finish your checklist and leave the room quietly.
@@ -4413,9 +4759,10 @@ You slowly trudge your way over to the gym.
 Maybe she'll have sent me an email explaining her absence tonight.
 Once again, Rob is yelling at the TV above him.
 OH, YOU'VE GOT TO BE KIDDING ME. AM I THE ONLY SMART ONE HERE?
+FOR ONCE IN YOUR ———— LIFE, COACH, COULD YOU MAKE A GOOD CALL?
 FOR ONCE IN YOUR GODDAMN LIFE, COACH, COULD YOU MAKE A GOOD CALL?
 Jeez...
-Oh! Doc. Sorry, didn't hear ya come in.
+Oh! Doc. Sorry, didn't see ya come in.
 I wasn't even sure you were gonna show at all! You're awfully late.
 Say, where's Miss Esther?
 Dunno. She never showed up to work.
@@ -4432,6 +4779,7 @@ I ain't got any complaints.
 Other than that you aren't in here with me.
 You flatter me right back, Rob.
 I know!
+HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR ———— HANDS, RUN WITH IT!
 HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!
 Oh shoot! It's almost 4, Doc!
 Oh God, you're right. I didn't even realize.
@@ -4443,10 +4791,11 @@ Anyhow! Good to see ya, Doc.
 Everything's working fine in here. Don't got any complaints.
 That's good. How's business?
 Picking up, actually. Which is fine.
-It ain't the best 'cuz I can't yell as much, but it's better than being in here alone all day.
+It ain't the best, I can't yell as much, but it's better than being in here alone all day.
 That's good, then.
 Aren't you glad people are finally using these machines?
 Yeah! Course I am, but -
+HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR ———— HANDS, RUN WITH IT!
 HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!
 Oh shoot! It's almost 4, Doc!
 Oh God, you're right. I didn't even realize.
@@ -4460,6 +4809,7 @@ How's business?
 Picking up. It's whatever.
 Keeps me busy.
 Are you alright? You're pretty short with me today, I -
+HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR ———— HANDS, RUN WITH IT!
 HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!
 Oh shoot! It's almost 4, Doc!
 Oh, you're right. I didn't even realize.
@@ -4504,8 +4854,8 @@ That's great to hear, Kris. I'm glad things are going well.
 As am I.
 Doctor, I know you have your one-on-one supervising shift tomorrow, and...
 ...well, I know I can't ask you to choose me, but...
-It would be well in your interest to supervise me tomorrow.
-That's all I'll say.
+It would be well within your interest to supervise me tomorrow.
+That's all I can say.
 Kris... what are you saying?
 Nothing, Miss Esther. I apologize.
 Always good to see your face, Doctor.
@@ -4517,15 +4867,15 @@ I hope I see you here tomorrow.
 Goodbye, Kris. I'll see you later.
 You check Kris off your list and leave the conference room.
 Ah. Ahem. Thank you, Doctor.
-It's most likely because I polished my chassis last night, but...
-Um. You should be going. I know you have plenty to do today.
+It's most likely because I polished my chassis last night, but... umm...
+You should be going. I know you have plenty to do today.
 I... hope I see you tomorrow.
 Goodbye, Kris. I'll see you later.
 You check Kris off your list and leave the conference room.
 I'm glad things are going well. That's good to hear.
-Thank god, right? Now you don't have to check off a different box than usual.
+Thank Aperture, right? Now you don't have to check off a different box than usual.
 Such an exhausting task.
-Now, Kris, just because I'm tired -
+Kris...
 I apologize, Miss Esther.
 Haha... truly, I do not know what's gotten into me lately.
 Forgive me.
@@ -4546,12 +4896,12 @@ Oh, uh... you too, Doc.
 Sorry you ain't seen me yesterday, I uh... I was busy.
 Glad I bumped into ya now, though.
 Ugh. Doctor, can we move on? Please.
-Ah, yeah, sorry, should prolly get out of your way, but...
+Ah, yeah, sorry, should prolly get out of your way now, but...
 Hey Doc, if you see me later, I got something important to tell ya, alright?
 L-Later though, not now, hah.
 Alright. I'll keep that in mind.
 Catch ya later. Hopefully.
-Ah, yeah, sorry, should prolly get out of your way.
+Ah, yeah, sorry, should prolly get out of your way now.
 I'll catch ya later, Doc.
 Agh, sorry, yeah, I'm movin'.
 Jeez, you're real rude.
@@ -4573,7 +4923,7 @@ Just a little... sleight-of-handle.
 Wow! That's incredible, Heath.
 Yes, yes, I know, I know, haha.
 You're always my best audience, Doctor.
-Now, I know you have places to be - but hear me out for one second!
+I know you have places to be - but hear me out for one second!
 You have your one-on-one shift tomorrow, yeah?
 If you choose me, I have a very special show to put on for you!
 No pressure of course, but...
@@ -4592,7 +4942,7 @@ Ah, yes. You should leave!
 I'm sure I'll see you tomorrow!
 Thank you, Heath.
 You check Heath off and leave the break room with Miss Esther.
-Ah, true. He really didn't care much for me, haha.
+Ah, true. He really didn't care for me much, haha.
 Which is why I'm glad you're here! If only temporarily.
 Now - Miss Esther's giving me that look, Doc... y'know, the "shut up before I yell at you" look?
 So you should probably be going.
@@ -4632,15 +4982,15 @@ Doctor! Ah, it's great to see you. How are you?
 I'm doing good, Aspen. How are you?
 Great! Everything's going smooth. The chrysanthemums I showed you yesterday are blooming even bigger than before.
 You know, chrysanthemums are used in tea sometimes, and it's generally believed it has several health benefits...
-In addition, they can reduce air pollution in some cases! In small amounts, of course, but...
+In addition, they can reduce air pollution in some cases!
 Oh shoot, I'm rambling again, aren't I?
 S-Sorry, Doctor, sorry.
 
 Aha... that's twice in a row now, you've said... something...
 ...like that.
 Doctor, I...
-Well, um, uh...
-...thank you.
+Well, uh...
+...uh, thank you.
 Look, I know I'm not really supposed to ask you this...
 And I'm stepping way over my programming here, but...
 ...If you could, do you think you could supervise me during your one-on-one tomorrow?
@@ -4658,7 +5008,7 @@ I hope you'll choose me tomorrow.
 You check Aspen off your list and leave the greenhouse.
 Thank you, thank you, Doctor.
 I knew you'd understand.
-But yes, uh... you have nothing to worry about.
+But, uh... you have nothing to worry about.
 That's good.
 I should probably be on my way, then - Miss Esther's waiting for me.
 Of course Doctor! I'll see you on Thursday for sure!
@@ -4672,7 +5022,6 @@ Especially when most people aren't.
 Anyways!
 You've got nothing to worry about, Doctor! Haha. So you can go.
 Uh... alright.
-Have a good day!
 You hesitantly check Aspen off your list and leave the greenhouse.
 Ah. Doctor. Welcome back.
 Let's be on our way to CC, now.
@@ -4695,7 +5044,7 @@ CC... you sound terrible.
 Haha... yes, I'm aware.
 
 Mmm. Thank you, Doctor.
-I know. I appreciate that.
+I know. I appreciate that. Genuinely.
 Honestly, how I feel is up and down on the best of days...
 I just hope it isn't worse tomorrow.
 As do I.
@@ -4703,8 +5052,8 @@ Everything's as it should be, though, Doctor.
 You know... seeing you is one of the only things keeping me going right now.
 ...
 Forgive me. That came... out of nowhere.
-I am sorry, Doctor.
-Don't be, CC. It's alright.
+A-Apologies, Doctor.
+Don't apologize, CC. It's alright.
 Doctor, we should be leaving - CC needs his rest.
 Ah. Yes. Very true.
 Please rest, CC.
@@ -4720,7 +5069,7 @@ Ah, it's alright.
 Nothing I haven't been through before.
 Still.
 Everything's as it should be in here, though.
-I'm worse than usual - that's the only change.
+I'm worse than usual, of course. That's the only change.
 Should be good for your paperwork though, yes?
 I guess.
 Thank you for your consideration, Doctor.
@@ -4745,12 +5094,12 @@ Have a good day.
 You check CC off your list and leave the room.
 Oh thank god. Our route's almost done.
 I am so ready to crash into my... charging... port.
-...I guess that phrase doesn't really make sense if I don't have a bed, huh?
+...I guess that phrase doesn't really make sense if I don't have a bed, hm?
 Anyways. Let's be on our way. Quickly now.
 Miss Esther advances rapidly on her rail while you try to keep up.
 You make it to the gym in no time.
 I do hope I won't have a reason to yell at him today...
-Go go go go GO GO GO GO GO!! COME ON...
+Go go go go GO GO GO!! COME ON...
 You wait patiently.
 GOAL!! YEAH, HAHAHA!
 Oh, Doc. Didn't see you there.
@@ -4777,7 +5126,6 @@ Anyway. Yeah.
 Doctor, are you ready to leave now? I am exhausted.
 Oh, yes, Miss Esther. Let's go.
 
-Will do.
 You check Rob off your list once more and head back to your office.
 Would prefer if I didn't see ya at all, haha.
 Wow. Rude.
@@ -4785,7 +5133,7 @@ Anyway. Everything's working fine. Things are normal, you've got nuthin' to worr
 GO! GO! WHAT THE HELL ARE YOU - oh my GOD...
 Now I... I'm sure you have work to do -
 Oh no, it's the end of your shift, huh...
-Well, an employee is bound to come in here any time now, so... haha...
+Well, an employee is bound to come in here any time now... haha...
 Y'all should prolly get going.
 Alright then.
 You check Rob off your list once more and head back to your office.
@@ -4817,7 +5165,7 @@ Unfortunately, Kris has requested you not supervise him today.
 You'll have to choose again.
 Heath has specifically requested you not supervise her alone.
 You'll have to choose again.
-I'm afraid Aspen contacted HR and asked that you not oversee him today.
+I'm afraid Aspen contacted HR and asked that you not oversee them today.
 You'll have to choose again.
 CC asked me personally not to see you today, Doctor. I'm sorry.
 You'll have to choose again.
@@ -4831,7 +5179,7 @@ Thank you, Miss Esther.
 You enter the conference room. Kris turns to you.
 Doctor... hello.
 Uh... hello, Kris.
-I'm glad you chose to supervise me today. I was... nervous. You wouldn't.
+I'm glad you chose to supervise me today. I was... nervous that you wouldn't.
 Ha. You. Nervous.
 I can be.
 I was still surprised when Miss Esther sent me the message.
@@ -4839,7 +5187,7 @@ But... glad.
 Is that so?
 Why yes. I do enjoy your company, you know.
 I wouldn't be... treating you like I have recently, if I didn't.
-Apologies, Doctor. I'm a little anxious today.
+...I'm a little anxious today.
 You're okay, Kris.
 Listen... I have something to ask you, Doctor.
 And it's not what you think it is.
@@ -4857,13 +5205,13 @@ I told them, "I don't have wrists - what am I supposed to do with this?"
 Well. Now I know.
 I've... really been enjoying your company lately, Doctor, and I...
 Don't want it to end. Anytime soon.
-Your time in maintenance may be coming to an end, but...
+Your time in Maintenance may be coming to an end, but...
 I hope our relationship won't.
 
 Oh, Doctor...
 I'm so glad.
 Well then. Ahem.
-Doctor, now that we're... closer...
+Now that we're... closer...
 I suppose you might want to know some things about me.
 I'm ashamed to admit it, but I do stretch the truth sometimes in terms of my monetary success...
 I am just a core, after all.
@@ -4883,9 +5231,9 @@ Kris seems incredibly happy...
 Though he would never let that slip.
 You ask him about the watch he gave you.
 I'm not sure of the brand - frankly, I believe Aperture may have made the model, cheap and in-house.
-Cave would do anything to save even a penny in the years before his death...
-So it makes sense employee rewards were cut back, as well.
-I'm surprised I even recieved anything in the first place, haha.
+Mr. Johnson would do anything to save even a penny in the years before his death...
+So it makes sense employee rewards were cut back...
+I'm surprised I even received anything in the first place, haha.
 And now it's in your hands.
 I'll treat it well, Kris.
 Hopefully as well as you treat me, aha...
@@ -4896,7 +5244,7 @@ Yes, I...
 
 You lean over to him and gently kiss him on the chassis.
 Doctor!
-W-Well then. Yes, you should be going, I...
+W-Well then, I- Yes, you should be going, I...
 Ahem. Have a good night.
 You too, Kris.
 You finish your checklist quickly and leave the conference room, and Kris, behind.
@@ -4917,12 +5265,12 @@ You ask him about the watch he gave you.
 I'm not sure of the brand - frankly, I believe Aperture may have made the model, cheap and in-house.
 Cave would do anything to save even a penny in the years before his death...
 So it makes sense employee rewards were cut back, as well.
-I'm surprised I even recieved anything in the first place, haha.
+I'm surprised I even received anything in the first place, haha.
 Eventually, the time comes for you to leave.
 It's almost time for my shift end, Kris. I should be going.
 I'm sure Miss Esther is waiting.
 Ah, yes. Thank you for your time, Doctor.
-And... I apologize. For earlier.
+And... for earlier.
 It's okay, Kris.
 You finish your checklist quickly and leave the conference room, and Kris, behind.
 Alright! Should be a fun shift, then, at least.
@@ -4932,7 +5280,7 @@ You enter the break room to find all the lights turned off - except for one.
 The stage is lit up by a spotlight, something you're certain wasn't there before.
 Welcome, ladies and gentlemen...
 Or... well, I guess it's just you, Doctor...
-...to Heath, the Magic Core's, grandest show yet!
+...to the Magic Core's, grandest show yet!
 The curtains part slightly and Heath comes rolling out on her management rail.
 Doctor! Welcome, welcome! Do I have a surprise for you today...
 She turns down for just a second, seemingly fiddling with something inside her chassis.
@@ -4946,7 +5294,7 @@ Someone who doesn't find my... energy off-putting.
 And so - with this letter - I ask you one simple question, Doctor...
 Ahem.
 I've enjoyed my time with you... performing, talking, showing off, of course...
-...and I know, soon, you'll have to leave to go back to maintenance.
+...and I know, soon, you'll have to leave...
 My question is... um...
 ...will you please keep coming by to see me, Doctor?
 I have so many shows I can put on for you, so many things I want to tell you... I...
@@ -5024,29 +5372,30 @@ How are you, Aspen?
 I'm good. Great, even. You're here. And I...
 Well, uh...
 They sigh.
-I've got to get this over with someday, haha... and I'm running out of time to.
+I've gotta get over this someday...
+And I'm running out of time to.
 What are you talking about?
-Umm...
-This cactus... it's for you.
-I know you're probably tired of my botany facts, but...
+Uhh...
+This cactus is for you.
+...You're probably tired of my botany facts, but...
 This is a Scarlet Ball Cactus - parodia haselbergii.
 S-She's easy to care for, as most cacti are...
 ...but she reminds me of... you and I.
 I'm the prickly, hard-to-reach, defensive thorns, but...
 You're these beautiful flowers o-on top, bringing light to my darkness.
 I'm really sorry if this is me being too... forward, but, Doctor...
-I-I really like you. A lot. You've brought more to my life than anyone has... than anything has, and I -
+I-I really like you. A lot. You've brought more to my life than anyone has... than anything has.
 I hope you accept this token of affection from me, and I...
 When you leave, I truly hope you don't forget me.
 
-You... oh, Doctor, I...
+Oh, Doctor, I...
 Goodness. You're something, alright.
 This cactus is beautiful, Aspen. Thank you.
 You're welcome, Doctor.
 What are you going to name her?
 
 That's a great name!
-Anyways, Doctor, I-I'm glad you've been... accepting of me, and - my awkward confession here.
+Anyways, Doctor, I'm glad you've been accepting of me, and my... awkward confession here.
 It wasn't awkward. It was cute.
 I - uh... please stop complimenting me, I don't know how to handle it, haha...
 I'm so happy you don't think I'm weird.
@@ -5054,7 +5403,7 @@ Being alone in this greenhouse all day, it... doesn't help my anxiety.
 So I'm glad I have you... and I'm so, so lucky.
 The rest of your shift is peaceful. As usual, Aspen talks the majority of the time, rattling off facts about all kinds of plants.
 Heliotropium arborescens has been my most recent study - the garden heliotrope.
-It has these beautiful purple flowers that smell like vanilla... or so I'm told. I can't really smell them myself.
+It has these beautiful flowers that smell like vanilla... or so I'm told. I can't really smell them myself.
 And it's poisonous! That's one thing I love about the plant world...
 The most beautiful flowers can also be the most deadly!
 Isn't that interesting?
@@ -5078,14 +5427,14 @@ See you tomorrow, Aspen.
 You finish your checklist and leave the greenhouse.
 O-Oh. I'm sorry for assuming, Doctor, I...
 That's on me.
-I hope we can stay... friends.
+I hope we can stay... friends?
 Of course we can, you're alright.
 I'm so happy you don't think I'm weird.
 Being alone in this greenhouse all day, it... doesn't help my anxiety.
 So I'm glad you're understanding.
 The rest of your shift is peaceful. As usual, Aspen talks the majority of the time, rattling off facts about all kinds of plants.
 Heliotropium arborescens has been my most recent study - the garden heliotrope.
-It has these beautiful purple flowers that smell like vanilla... or so I'm told. I can't really smell them myself.
+It has these beautiful flowers that smell like vanilla... or so I'm told. I can't really smell them myself.
 And it's poisonous! That's one thing I love about the plant world...
 The most beautiful flowers can also be the most deadly!
 Isn't that interesting?
@@ -5113,10 +5462,10 @@ Hello, Doctor.
 Are you alright?
 Yes. I am. I just...
 He turns to face you.
-I have something very important to tell you.
+I have something... um, very important to tell you.
 Oh. Alright.
-I'm going to phrase it in a particular way, however, as I'm...
-...not sure I have the words otherwise.
+I'm going to phrase it in a particular way, however...
+...as I'm not sure I have the words otherwise.
 I wore apathy like armor...
 ...but cracked every time you looked at me, like I was worth being seen.
 Even now I blame timing.
@@ -5127,21 +5476,18 @@ As if... love didn't stand right in front of me -
 I...
 Doctor, you have been so kind to me over the past week and a half, and I...
 I've never felt anything like this before.
-I feel... energized. Like I'm truly living, like... there's a light at the end of my tunnel.
-Please, Doctor. When your time in maintenance ends, I hope our time together won't.
+I feel... energized. Like I'm truly living... like there's a light at the end of my tunnel.
+Please, Doctor. When your time in Maintenance ends, I hope our time together won't.
 Please stay by me.
 
 Oh. I...
 You...
 He sighs.
-Thank you, Doctor.
 ...I don't think I can accept this, CC. I'm sorry.
-I honestly didn't expect you to... say yes.
-Not only am I a robot, not only am I stuck in this godforsaken room...
-But I'm so horribly sick.
+Thank you, Doctor, I... honestly didn't expect you to... say yes.
 I hope you aren't simply taking pity on me, Doctor.
 Not at all, CC. I do truly enjoy your company.
-Thank you.
+Thank you. Truly.
 Your shift continues on slowly. You and CC chat gently, pausing occasionally to let him rest.
 Life is an... interesting concept to me.
 It's not as easily definable as a lot of the scientists here seem to think...
@@ -5197,7 +5543,7 @@ After you put your report in, I think they updated my program.
 I'm not supposed to die. I'm an experiment, after all. They can't test on me if I'm dead.
 I think they made a mistake, though. Increased the program effectiveness too much.
 Oh, CC... I'm so sorry.
-That's why I needed you to know how I felt.
+That's why I needed you to know how I felt about you.
 Before I pass.
 You mean if you pass.
 I always appreciate your optimism, Doctor.
@@ -5209,13 +5555,13 @@ At least you'll keep him entertained.
 Just try not to yell at him, alright?
 I'm sure you remember the way to the gym.
 I do. Thank you, Miss Esther.
-Doctor! It's good to see you again.
-Glad you chose me for your one-on-one - I promise I won't be too much of an annoyance, haha.
+Doctor! It's good to see you.
+Glad you chose me for your one-on-one - I promise I won't be too much of an annoyance.
 Or I'll try. No guarantees, actually.
 Hey Rob. Good to see you alive and active.
 As usual!
 So - come to work out, or...
-Actually... there's something I gotta tell ya first, Doc.
+Actually, no... there's something I gotta tell ya first, Doc.
 Really?
 Yeah! And I got somethin' for ya. Come up to my desk real quick.
 You approach the gym kiosk.
@@ -5233,8 +5579,8 @@ So. Anyway.
 Wanna go out? Y'know... you n' me?
 
 Hell yeah! You're the best, Doc.
-Haha... thank you.
-Now that you and I are "official"...
+And... thank you.
+Now that you and me are "official"...
 You should prolly know some more about me. And my ex, I guess.
 He begins to ramble about his ex-wife, Celine.
 She was beautiful, y'know, all orange and stuff...
@@ -5242,6 +5588,7 @@ Orange?
 Yeah, like... well, I dunno.
 But she was crazy! Yellin' at me for no reason, and she hated when I watched the game -
 WHAT'S THE BIG IDEA? ARE YOU STUPID? WHY ARE YOU NOT RUNNING?!
+- AND, to top it ALL OFF, that —— ——— cheated on me.
 - AND, to top it ALL OFF, that bitch fuckin' cheated on me.
 That's terrible.
 I know, right?! Anyway.
@@ -5278,6 +5625,7 @@ Orange?
 Yeah, like... well, I dunno.
 But she was crazy! Yellin' at me for no reason, and she hated when I watched the game -
 WHAT'S THE BIG IDEA? ARE YOU STUPID? WHY ARE YOU NOT RUNNING?!
+- AND, to top it ALL OFF, that —— ——— cheated on me.
 - AND, to top it ALL OFF, that bitch fuckin' cheated on me.
 That's terrible.
 I know, right?! Anyway.
@@ -5299,19 +5647,15 @@ When you enter, you find him staring out his window once again.
 He turns to face you.
 Hello, Doctor.
 Hi, CC.
-As I'm sure you're well aware, I asked not to see you today.
-I suppose Miss Esther had no other choice.
-That's correct.
-Unfortunate.
-Please, show me some grace - I'd like silence.
-Okay.
+I apologize. I know you asked not to see me today. Miss Esther had no other choice.
+I'll be quiet as to not bother you.
+Mmm. Thank you.
 The shift goes by slowly, but nothing bad happens.
 Generally CC stays quiet, only mumbling to himself every now and then.
 He never talks to you directly.
 Eventually, 16:00 comes along.
-Thank you for the quiet shift, Doctor.
 Have a good day.
-Will do.
+I'll try.
 You finish your checklist and leave the room.
 Doctor! How was your shift?
 It was okay. Quiet. Boring.
@@ -5382,9 +5726,9 @@ You quickly exit the relaxation center.
 You come up to the door that you assume leads to your old workplace.
 You don't recognize this entrance, but your office in Manufacturing was on the west side.
 What Miss Esther said yesterday is probably correct - Manufacturing is really just that large.
-You try to open the door, but it's locked shut for the weekend. No windows to peer into, etiher.
+You try to open the door, but it's locked shut for the weekend. No windows to peer into, either.
 Dejected, you leave Manufacturing behind.
-You come up to the door that reads "STASIS RECOVERY BAY" on a plaque next to it.
+You come up to the door that reads "STASIS RECOVERY BAY" on a small plaque next to it.
 Not wanting to disturb anything that might be happening inside, you peer through the window.
 There's two doctors standing next to a woman with black hair in a ponytail.
 They're talking to her. She isn't responding.
@@ -5394,8 +5738,8 @@ When you went inside, it looked like the pods went on forever...
 You leave Recovery behind.
 You enter into the conference room. Kris is reading something on his screen, and the usual stock market graph is gone.
 How are you, Kris?
-Oh my, Doctor, you caught me off-guard.
-What are you doing here? Doesn't maintenance have weekends off?
+Oh, Doctor, you caught me off-guard.
+What are you doing here? Doesn't Maintenance have weekends off?
 Yes, we do. I just thought I'd come visit you.
 Oh. Well then, welcome in.
 Thank you. How has your day been?
@@ -5434,22 +5778,21 @@ I'm not very interested in having company at the moment. I hope you understand.
 Yes. Alright.
 You leave the conference room.
 You enter into Section C8's break room. An actual human greets you this time.
-Oh, you're that new temp, right?
+Oh, uh, you're that new temp, right?
 Uh... yes, that's me.
-Cool. Heath's around here somewhere. She's on your route, right?
+Cool. Uh, Heath's around here somewhere. She's on your route, right?
 Yeah.
 I'm just about to head out, but she'll be back soon, I think.
 He passes by you and leaves the room.
 You decide to wait for Heath.
 It doesn't take long before she bursts into the break room, out of breath.
 Or something like that, having no lungs.
-Ahh! Doctor!! Sorry, sorry, uh... one sec.
+Ahh! Doctor!! Sorry, sorry, uh... one sec, I was...
 She's "breathing" very heavily.
-I was... in a rush... to get back, I was down at the lounge... signing up for tonight, but I...
-...don't... wanna miss... giving a performance in here.
+In a rush... to get back, I was down at the lounge... signing up for tonight, but I don't...
+...wanna miss... giving a performance in here.
 Tonight? What's tonight?
-Oh!
-Sorry. I've caught my breath, now.
+Oh, sorry. I've caught my breath, now.
 You haven't heard? Once a month, they do an open-mic at the lounge downstairs.
 Open mic? Like, comedy? Or singing?
 Comedy, mostly, although I usually do some of my signature tricks alongside my jokes.
@@ -5493,12 +5836,13 @@ When I was... first activated, they had a portable rail with everything I needed
 A large canister on the back that my tubes could be inserted into, to sustain me.
 I'm not sure where it went, but... it allowed me to tour the facility, for a short while.
 And you have no idea where they might have taken it?
-Oh, it's probably somewhere in the area. Perhaps in a storage unit, locked away...
+Oh, it's probably somewhere in the area. Perhaps in a storage closet, locked away...
 But yes, I'm not entirely certain.
 That's unfortunate, CC. I'm sorry.
 No worries, Doctor. I'm fine where I am.
 Doctor... perhaps, could you come back tonight? I may have something for you.
 But I need time alone to prepare it.
+
 I'm glad. Thank you, Doctor.
 Now - you should go. I need to prepare...
 Oh. Yes. Thank you.
@@ -5514,7 +5858,7 @@ I'm sorry, but... I'm not sure I want to see you right now.
 Please leave.
 Ah... yes. Alright.
 You quickly leave CC's room.
-You approach the sliding door with the label "EMPLOYEE LOUNGE".
+You approach the door with a label on the side - "EMPLOYEE LOUNGE".
 This door looks much different from the others - newer, and the label isn't as large.
 Gregory said he'd be in here.
 You enter.
@@ -5534,8 +5878,7 @@ Well. Most of us.
 Well, I think they have a lot to choose from, so...
 You havin' anything, Doc?
 
-Aww, that's a shame. But I guess it's not for everyone.
-The greenhouse doesn't grow oranges. Is apple juice okay?
+Uh, the greenhouse doesn't grow oranges. Is apple juice okay?
 Yes, that's fine.
 I think so. Gimme a minute.
 Thanks.
@@ -5558,21 +5901,21 @@ So... anyways. What do you like to do... in your free time?
 My free time?
 I don't really have a lot of it...
 After work, I guess I just go right to bed.
-Doesn't maintenance only get off work at 4, though?
+Doesn't Maintenance only get off work at 4, though?
 That's still lots of time to do other stuff!
 I guess. I never really thought about it.
 What about you?
 Me?! Uh... um. No one's asked me what I like before, so, uh...
 I guess I like sports a little. Rob tells me a lot about them, and they seem interesting enough.
 Have you seen Heath's magic tricks? I like those too. Real impressive.
-I guess I'm kinda just a people person. In a way. Not to say I'm... people. But.
+I guess I'm kinda just a people person. In a way. Not that I'm... people. But.
 I just... really like getting to know everyone here in Aperture.
 I'm still a fairly new core. I was only activated about a year ago, so... I still got a lot to learn.
 And the best way to do that is by meeting new people!
 That's great, Gregory.
-Oh - wait a minute -
+Oh - wait just a minute -
 Gregory looks down and begins speaking softly.
-No, I need you to go closer!!
+No, I need to go closer!!
 Less left, more right! Come on!
 T-They're looking at us, we need to move!
 I'm so sorry Doctor, can you give me just a minute?
@@ -5649,18 +5992,18 @@ HELLO?? ARE YOU EVEN PAYING ATTENTION? WHERE'S YOUR DRIVE?!
 Sorry, sorry.
 Yeah, I hope you'll stop in and watch with me.
 Now I hate to do this, but I don't want you distracting the other people here, so...
-Hop on a machine or head on out.
+Hop on a machine or head out.
 Ah, yeah. I have other stuff to do, so I think I'll pass, haha.
 Ah, no worries. Catch ya tonight, right?
-Hahaha. Get it? Catch?
-Speaking of -
+Hah. Get it? Catch?
+Speaking of which -
 CATCH IT! CATCH THE BALL! COME ONNNN, COMMIT, COMMIT!
 Laughing to yourself, you leave the gym behind.
 Ah yeah, got other stuff, prolly.
 I get it.
 My ex said the saaame exact thing before she started CHEATING on me...
-"Can't come home tonight honey, I've got plans..."
-YEAH CELINE?? PLANS WITH JEREMY, HUH?? SCREW YOU, WOMAN!
+"Can't come home tonight honey, I've got plans..." YEAH CELINE??
+PLANS WITH JASON, HUH?? SCREW YOU, WOMAN!
 EVERYTHING I DID FOR YOU, AND WHAT DO I GET?
 You back out of the gym carefully, leaving him to his ranting.
 Check up on me? Why, have I done something wrong again?
@@ -5670,7 +6013,7 @@ I don't really got time to chit-chat, so -
 KICK IT! KICK IT, WHAT ARE YOU WAITING FOR, YOU HAVE A PERFECT SHOT!
 - so either you're here to use the machines or not.
 I think I'll just leave, then.
-Pfft. Don't blame me when you wither away at 40!!
+Don't blame me when you wither away at 40!!
 You back out of the gym before Rob gets any angrier.
 You walk down one of the residential block's halls.
 The coordinates that core sent you for his "place" lead to the end of this hallway.
@@ -5827,7 +6170,7 @@ It's separated from the rest of the "human" tables.
 You sit down fairly close to the stage.
 After a short while, an employee enters through the curtains.
 Welcome, Aperture employees!
-Just a reminder that if you are here and aren't an Aperture employee, we do have cause to escort you and/or erase your memory of this facility.
+Just a reminder that if you are here and aren't an Aperture employee, we do have cause to escort you and erase your memory of this facility.
 Anyways!
 Today is the Saturday open mic, and we have several performers here, some new, some returning.
 Please sit back and relax, if you can, and enjoy!
@@ -5840,6 +6183,7 @@ Yet another performs slam poetry about feeling trapped in their cubicle.
 All in all, it's very interesting.
 Next up - Magic Core, Heath!
 The room applauds gently once more, and Heath comes out through the curtains.
+The scene fades to Heath on the stage, the view framed by dark blue curtains.
 She approaches the microphone, and a spotlight comes up on her.
 Hello, Aperture! I'm glad to be on this stage once more!
 Say - I was just in the cafeteria the other day, and - just so you know - I'm allergic to peanuts.
@@ -5896,9 +6240,10 @@ Doctor! Glad you could make it.
 Isn't it beautiful? Haha.
 Wow.
 The algae glow a vibrant blue-green light, unlike anything you've ever seen.
+The scene fades to Aspen looking down at the algae. Motes of colored light drift up into the air, illuminating them.
 I mean, I'm sure you've seen things glow before, but... this is different, yes?
 Pyrodinium bahamense. That's their binomial name.
-But a lot of us just refer to them by their superclass.
+But a lot of us just refer to them as their superclass.
 I personally think using their full name can be important...
 They're on loan to us from Marine Studies. We generally don't carry much sea life in Botany.
 It's a rare treat.
@@ -5930,9 +6275,9 @@ You approach the door to the gym. It's mostly dark through the window, although 
 On the door is a sign that says "CLOSED FOR REPAIRS".
 Yeah, right.
 You knock.
-Uh, sorry, we're closed!! The sign?? Hello?
+Uh, sorry? We're closed? The sign - hello??
 Rob, it's me.
-Agh!! Doctor! One sec, one sec...
+Ah - agh!! Doctor! One sec, one sec...
 There's a bit of light crashing before you hear the whirring of a door lock.
 Should be open now, come on in!
 You open the door and step in.
@@ -5945,7 +6290,7 @@ Isn't that the same size most of the new monitors are?
 Ah, yeah. The boss wanted this newly-invented "widescreen" put into everything - our TVs, monitors...
 That man loved anything with "science" in it...
 Another reason barely anyone comes in here. Everyone's too obsessed with science thanks to that brute.
-Well, not everyone. I'm more interested in engineering than whatever they do up in testing.
+Well, not everyone. I'm more interested in engineering than whatever they do up in Testing.
 Prolly why you and I get along so well.
 Anyway, the people up on the surface still haven't all switched over to widescreen, so...
 ...all my programs are still in the usual 4 by 3. Sorry.
@@ -5969,7 +6314,7 @@ The scene fades to a dark room lit by a TV screen. Rob turns back to look at you
 Now you're getting into it, Doc.
 Never thought you'd be one to yell.
 What can I say? You got me pumped up.
-Hahaha! I'm so glad. Thanks for joinin' me tonight.
+Hah! I'm so glad. Thanks for joinin' me tonight.
 You really didn't have to, but...
 S'been a long time since I last had some proper company.
 So I appreciate it.
@@ -6014,7 +6359,7 @@ We made it work.
 Thank you for coming back to see me, Doctor. I was afraid you wouldn't.
 Miss Esther is kind, but... I've never had any of the human scientists show me as much grace as you have.
 It is truly unfortunate that you will only be here one more week.
-I agree. I've really enjoyed my time in maintenance.
+I agree. I've really enjoyed my time in Maintenance.
 Doctor, please... will you stay a little longer?
 I could use your company.
 Of course, CC.
@@ -6156,13 +6501,12 @@ I am flattered, though. I hope this won't make working together difficult.
 No, I understand, Miss Esther. I apologize.
 I won't bring it up again.
 Thank you, Doctor.
-Ah no, I understand. So sorry to bother you, Doctor.
+Ah no, I understand. Sorry to bother you, Doctor.
 I'll let you be, but...
 First...
 Doctor... I have something important to tell you.
 Please listen carefully.
 Uh... yes. I'm listening.
-I came here to tell you...
 Do not get too close to the cores in your section.
 It is against your contract to form strong relationships with them.
 Of course, friendly banter, speaking outside of working hours... that is fine.

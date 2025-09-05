@@ -779,7 +779,7 @@ label saveesther:
     mc "{color=#fff}Nevermind that, Miss Esther. We need to get you out of here."
     e "{color=#fff}Hah! Good joke. You know what's happening, don't you, Doctor?"
     e "{color=#fff}This - this Operation ACRI - it's all a plot to get rid of us."
-    e "{color=#fff}That's why they evacuated her but not me, that's why they've shut off my panel access."
+    e "{color=#fff}That's why they evacuated the humans, but not me. That's why they've shut off my panel access."
     e "{color=#fff}They've accounted for every possibility, shut off every escape route I might've had, I..."
     mc "{color=#fff}They didn't account for me, did they?"
     e "{color=#fff}You shouldn't be here, Doctor. You could die. You should've -"

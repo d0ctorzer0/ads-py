@@ -1469,8 +1469,8 @@ label escape_esther:
     e "{color=#fff}I'm not the... {i}kindest{/i} robot out there."
     e "{color=#fff}It's in my programming."
     e "{color=#fff}I've always thought..."
-    mc "{color=#fff}I don't know, Miss Esther. You..."
-    mc "{color=#fff}You've been kind to me. And... when I woke up, and the alarms were going off, I..."
+    mccut "{color=#fff}I don't know, Miss Esther. You..."
+    mccut "{color=#fff}You've been kind to me. And... when I woke up, and the alarms were going off, I..."
     e "{color=#fff}I suppose making enemies out of my most possible friends doesn't help me much in the long run..."
     e "{color=#fff}..."
     e "{color=#fff}Thank you."
@@ -1511,6 +1511,6 @@ label escape_esther:
 
     e "Rare, I know. Don't get used to it."
 
-    n "ENDTEST - MORE DIALOGUE TO COME. Thank you for testing."
+    stop music fadeout 2.0
 
-    $ MainMenu(confirm=False)()
+    jump END_esthertrue

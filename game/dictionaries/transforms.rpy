@@ -1,3 +1,18 @@
+init python:
+    renpy.register_textshader("noise", variables="""
+        varying vec2 v_tex_coord;
+        uniform float u_noise;
+        uniform sampler2D tex0;
+        uniform vec4 u_random;
+    """, vertex_300="""
+    """, fragment_300="""
+        float noisefrag = fract(sin(dot(v_tex_coord + u_random.r, vec2(452, u_random.r))) * 7726);
+        vec4 chaos = texture2D(tex0, v_tex_coord + noisefrag * 1);
+        chaos = texture2D(tex0, v_tex_coord + noisefrag * u_noise);
+        gl_FragColor = chaos;
+    """,
+        u_noise=0.005)
+
 transform bounce:
     linear 0.05 yoffset -10
     linear 0.05 yoffset 0

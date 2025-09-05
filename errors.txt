@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/emergencymap.rpy", line 33: imagemap expects a non-empty block.
-    if esther_unlocked == True:
-                               ^
+File "game/story/endings/esthertrue.rpy", line 27: expected statement.
+    "{font="fonts/lumberjack.otf"}Miss Esther, you're -"
+                 ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Thu Sep  4 11:37:36 2025
+Fri Sep  5 08:52:52 2025

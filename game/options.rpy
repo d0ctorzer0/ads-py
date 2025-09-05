@@ -13,7 +13,7 @@
 ## The _() surrounding the string marks it as eligible for translation.
 
 define config.name = _("Aperture Dating Simulator")
-
+define config.default_textshader = 'typewriter'
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "1.1.0pt"
+define config.version = "1.1.5pt"
 
 define gui.show_version = False
 ## Text that is placed on the game's about screen. Place the text between the

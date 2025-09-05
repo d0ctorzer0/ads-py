@@ -55,4 +55,19 @@ screen truedaytransition():
         text "[dayday]"
         xalign 0.5
         yalign 0.6
-        #at daydiss  
+        #at daydiss
+
+screen esdaytransition():
+    timer 2.0 action Hide("esdaytransition")
+    add "gui/black.png" #at daydiss
+    vbox:
+        style_prefix "truetitle"
+        text "[daynum]"
+        xalign 0.5
+        yalign 0.5
+        #at daydiss
+    vbox:
+        style_prefix "truesubtitle"
+        text "[dayday]"
+        xalign 0.5
+        yalign 0.6  
