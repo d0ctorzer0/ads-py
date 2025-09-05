@@ -307,6 +307,11 @@ label END_esthertrue:
         show screen truedaytransition
         $ renpy.pause(2.0, hard=True)
     
+    dr "Here you are, Esther. Section C8. You'll be in charge of this place for a while."
+    dr "The maintenance employee will be here shortly. Make sure to introduce yourself."
+    drs1 "{shader=noise:0.015}Oh, and... try not to make any new enemies."
+    eold "Yeah..."
+    scene black with fade
     eold "Hello. I'm Es-"
     e "Ahem. {i}Miss{/i} Esther. I'll be your supervisor here in Maintenance for the foreseeable future."
     e "You're... Thomas, correct?"
