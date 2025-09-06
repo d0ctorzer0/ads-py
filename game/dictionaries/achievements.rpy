@@ -47,6 +47,8 @@ default persistent.ach_greggood = True
 default persistent.ach_unknowntrue = True
 default persistent.ach_unknowngood = True
 
+default persistent.ach_true = True
+
 # Completionist achievements
 
 default persistent.ach_ultrobo = True # Tryhard the game
@@ -74,4 +76,5 @@ default persistent.endings_got = {
     "heartless" : False,
     "ace" : False,
     "unlikable" : False,
+    "true": False,
 }
