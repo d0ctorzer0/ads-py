@@ -346,7 +346,7 @@ label END_esthertrue:
         if persistent.ec5 == False:
             persistent.cutscenes_seen += 1
             persistent.ec5 = True
-        if persistent.cutscenes_seen == 44:
+        if persistent.cutscenes_seen == cutscene_count:
             achievement.grant("ach_picture")
             achievement.sync()
     e "{color=#fff}Doctor... what {i}is{/i } this place?"
@@ -395,7 +395,7 @@ label END_esthertrue:
     hide screen creditsfadeout
     python:
         persistent.endings_got["true"] = True
-        if sum(persistent.endings_got.values()) == 18:
+        if sum(persistent.endings_got.values()) == ending_count:
             achievement.grant("ach_seenitall")
         achievement.grant("ach_true")
         achievement.sync()

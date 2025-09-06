@@ -1,4 +1,4 @@
-default ending_count = 18
+default ending_count = 19
 default cutscene_count = 44 # Massive W for drawing 44 cutscenes wtf (I've changed this text like 6 times)
 
 default persistent.ach_biwta = True
