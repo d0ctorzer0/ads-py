@@ -49,6 +49,30 @@ screen gallerye():
         style_prefix "tabs"
         text "M. ESTHER" xpos 362 ypos 142
 
+screen galleryefull():
+    modal True
+    tag gallery
+    imagebutton idle "gui/back.png" action Hide("galleryefull", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
+
+    imagebutton idle "gui/gallery/gallery.png" focus_mask True action Show("galleryk")
+    add "gui/gallery/pinkfile.png"
+
+    fixed:
+        if persistent.ec1 == True:
+            imagebutton idle "characters/esther/esther lose.png" action Show("fullelose", transition=gallswitch) at gallery_size xpos 300 ypos 216
+        if persistent.ec2 == True:
+            imagebutton idle "characters/esther/esther death.png" action Show("fulledeath", transition=gallswitch) at gallery_size xpos 750 ypos 216
+        if persistent.ec3 == True:
+            imagebutton idle "characters/esther/esther cutscene 3.png" action Show("fulle3", transition=gallswitch) at gallery_size xpos 300 ypos 480
+        if persistent.ec4 == True:
+            imagebutton idle "characters/esther/esther cutscene 4.png" action Show("fulle4", transition=gallswitch) at gallery_size xpos 750 ypos 480
+        if persistent.ec5 == True:
+            imagebutton idle "characters/esther/esther cutscene 5.png" action Show("fulle5", transition=gallswitch) at gallery_size xpos 300 ypos 744
+    
+    fixed:
+        style_prefix "tabs"
+        text "M. ESTHER" xpos 362 ypos 142
+
 screen fulledeath():
     modal True
     add "characters/esther/esther death.png"
@@ -59,13 +83,35 @@ screen fullelose():
     add "characters/esther/esther lose.png"
     imagebutton idle "gui/back.png" action Hide("fullelose", transition=gallswitch)
 
+#yes i know i could just add a selectedchar variable for miss esther but im lazy <3
+screen fulle3():
+    modal True
+    add "characters/esther/esther cutscene 3.png"
+    imagebutton idle "gui/back.png" action Hide("fulle3", transition=gallswitch)
+
+screen fulle4():
+    modal True
+    add "characters/esther/esther cutscene 4.png"
+    imagebutton idle "gui/back.png" action Hide("fulle4", transition=gallswitch)
+
+screen fulle5():
+    modal True
+    add "characters/esther/esther cutscene 5.png"
+    imagebutton idle "gui/back.png" action Hide("fulle5", transition=gallswitch)
+
+####################################################
+# MAIN GALLERY
+####################################################
+
 screen galleryk():
     modal True
     tag gallery
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryk", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.ec1 == True or persistent.ec2 == True:
+    if persistent.ec3 == True:
+        imagebutton idle "gui/gallery/classifiedpink.png" focus_mask True action Show("galleryefull")
+    elif persistent.ec1 == True or persistent.ec2 == True and persistent.ec3 == False:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
  
     if persistent.kgunlock == False:
@@ -102,7 +148,9 @@ screen galleryh():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryh", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.ec1 == True or persistent.ec2 == True:
+    if persistent.ec3 == True:
+        imagebutton idle "gui/gallery/classifiedpink.png" focus_mask True action Show("galleryefull")
+    elif persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.hgunlock == False:
@@ -139,7 +187,9 @@ screen gallerya():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("gallerya", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.ec1 == True or persistent.ec2 == True:
+    if persistent.ec3 == True:
+        imagebutton idle "gui/gallery/classifiedpink.png" focus_mask True action Show("galleryefull")
+    elif persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.agunlock == False:
@@ -177,7 +227,11 @@ screen galleryc():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryc", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.ec1 == True or persistent.ec2 == True:
+    if persistent.ec3 == True:
+        imagebutton idle "gui/gallery/classifiedpink.png" focus_mask True action Show("galleryefull")
+    elif persistent.ec3 == True:
+        imagebutton idle "gui/gallery/classifiedpink.png" focus_mask True action Show("galleryefull")
+    elif persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.cgunlock == False:
@@ -215,7 +269,9 @@ screen galleryr():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryr", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.ec1 == True or persistent.ec2 == True:
+    if persistent.ec3 == True:
+        imagebutton idle "gui/gallery/classifiedpink.png" focus_mask True action Show("galleryefull")
+    elif persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.rgunlock == False:
@@ -253,7 +309,9 @@ screen galleryg():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryg", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.ec1 == True or persistent.ec2 == True:
+    if persistent.ec3 == True:
+        imagebutton idle "gui/gallery/classifiedpink.png" focus_mask True action Show("galleryefull")
+    elif persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
 
     if persistent.ggunlock == False:
@@ -289,7 +347,9 @@ screen galleryu():
     style_prefix "file"
     imagebutton idle "gui/back.png" action Hide("galleryu", transition=easeoutbottom), Play("sound", "sfx/paperclose.ogg")
 
-    if persistent.ec1 == True or persistent.ec2 == True:
+    if persistent.ec3 == True:
+        imagebutton idle "gui/gallery/classifiedpink.png" focus_mask True action Show("galleryefull")
+    elif persistent.ec1 == True or persistent.ec2 == True:
         imagebutton idle "gui/gallery/classified.png" focus_mask True action Show("gallerye")
         
     if persistent.ugunlock == False:

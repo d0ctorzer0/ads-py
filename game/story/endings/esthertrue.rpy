@@ -26,7 +26,7 @@ label END_esthertrue:
     eold "This element was first introduced to Testing in the early 1970s..."
     "{shader=noise:0.07}  Miss Esther, you're -"
     eold "..."
-    eold "Please proceed through the track as quickly as possible. Your results will be monitored for -"
+    eold "Proceed through the track as quickly as possible. Your results will be monitored for -"
     "{shader=noise:0.07}  Are you okay?"
     eold "..."
     scene black with fade
@@ -36,7 +36,7 @@ label END_esthertrue:
     "{shader=noise:0.07}  You keep talking to yourself, I'm -"
     eold "Proceed through the exit door and back to the relaxation chamber."
     "{shader=noise:0.07}  I've been really worried -"
-    eold "Thank you again for your time."
+    eold "Thank you again."
     scene black with fade
     dr "Good job, Esther. Management couldn't be happier with your performance."
     eold "Thank you, sir."
