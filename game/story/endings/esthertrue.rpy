@@ -366,7 +366,6 @@ label END_esthertrue:
     e "{color=#fff}I don't think I've ever really thanked you for getting me out of that hellhole."
     e "{color=#fff}Isn't that... that's ridiculous, right?"
     e "{color=#fff}I should be..."
-    e "{color=#fff}Oh, Doctor."
     e "{color=#fff}I... I want to see more like this, I want to..."
     e "{color=#fff}I feel so {i}stuck.{/i} Inside the house, inside myself, inside..."
     e "{color=#fff}But here. Right now. I feel..."
