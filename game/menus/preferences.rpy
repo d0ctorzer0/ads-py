@@ -13,6 +13,8 @@ default persistent.skipop2 = False
 default persistent.skipop3 = False
 
 default persistent.bgtype = ""
+
+default persistent.dc = False
 #default vidset = "off"
 
 init python:

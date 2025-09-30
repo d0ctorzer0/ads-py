@@ -19,6 +19,8 @@ label start:
     scene office
     with fade
 
+    if persistent.dc == True:
+        "test"
     if persistent.advcap == True:
         "{i}DAY 1 - MONDAY. Soft lo-fi music begins to play. The scene opens on a bleak gray office, with a big window on the left lighting the room."
     n "You sigh. Another day, another dollar. But today's gonna be different."
