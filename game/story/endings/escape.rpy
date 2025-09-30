@@ -1375,7 +1375,6 @@ label escape_esther:
     if persistent.flash == True:
         show flash
     show e offrail with easeinbottom
-    e "Aha! Here it is! Stairs to the surface, I..."
     show e offrail shock
     e "Is... is that... sunlight? At the top?"
     e "The doors are... {i}open!"
