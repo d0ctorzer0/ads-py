@@ -1374,8 +1374,7 @@ label escape_esther:
     scene stairs with fade
     if persistent.flash == True:
         show flash
-    show e offrail with easeinbottom
-    show e offrail shock
+    show e offrail shock with easeinbottom
     e "Is... is that... sunlight? At the top?"
     e "The doors are... {i}open!"
     mc "You said they're usually locked, right?"
@@ -1395,9 +1394,9 @@ label escape_esther:
     e "And I... don't know what to expect up there."
     show e offrail sus
     e "I'm used to Aperture, Doctor. I'm used to being connected to the panel systems, I'm used to being in charge of Section C8, I'm..."
-    e "Even though Testing played a big part in my... early activation days, I've... grown..."
+    e "Even though Testing played a big part in... most of my life, I've..."
     show e offrail look
-    e "F-Fond of working with... the others."
+    e "Fond of... working with... the others."
     show e offrail close
     e "A-And now I don't know if they're safe, and I... I've lost any connection I had to them, and..."
     show e offrail shock
@@ -1466,7 +1465,7 @@ label escape_esther:
     e "{color=#fff}For me?"
     e "{color=#fff}You know better than anyone how much I... struggle to connect with others, and how..."
     e "{color=#fff}I'm not the... {i}kindest{/i} robot out there."
-    e "{color=#fff}It's in my programming."
+    e "{color=#fff}I-It's in my programming."
     e "{color=#fff}I've always thought..."
     mccut "{color=#fff}I don't know, Miss Esther. You..."
     mccut "{color=#fff}You've been kind to me. And... when I woke up, and the alarms were going off, I..."
