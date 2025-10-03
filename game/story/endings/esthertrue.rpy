@@ -123,9 +123,9 @@ label END_esthertrue:
         e "Oh! Well, we can... visualize things, I suppose... they're different than human dreams, as far as I'm aware, but..."
         e "The concept remains basically the same."
     show e offrail look
-    e "I've been having... {i}dreams,{/i} lately, about... Aperture."
-    e "And... when I was first activated, and..."
-    e "The early years of my life."
+    e "I've been having... {i}dreams,{/i} lately, about... Aperture, and -"
+    e "When I was first activated, and..."
+    e "The... earlier... years of my life."
     mc "You mean when you used to work in Testing?"
     show e offrail
     e "Yes, that time."
@@ -186,11 +186,11 @@ label END_esthertrue:
     eold "Ahem. Welcome to Surface Track E-2."
     eold "In addition to normal testing procedure, we'll also be monitoring your emotional and mental well-being via the\nchip we implanted in your brain."
     eold "Proceed through the chamber as quickly as possible."
-    drs2 "{shader=noise:0.05} Sociopath Core..."
+    drs2 "{shader=noise:0.05}Sociopath Core..."
     eold "Uh... please. And thank you."
     scene black with fade
 
-    eold "Congratulations, test subject, on completing this assignment."
+    eold "Congratulations, test subject, on, uh, completing this assignment."
     eold "Proceed... uh, {i}please{/i} proceed to the exit elevators in a timely manner."
     eold "T-Thank you for your cooperation."
 
@@ -307,9 +307,9 @@ label END_esthertrue:
         show screen truedaytransition
         $ renpy.pause(2.0, hard=True)
     
-    dr "Here you are, Esther. Section C8. You'll be in charge of this place for a while."
+    dr "Here you are, Esther. Section C8. You'll be in charge of the place for a while."
     dr "The maintenance employee will be here shortly. Make sure to introduce yourself."
-    drs1 "{shader=noise:0.015}Oh, and... try not to make any new enemies."
+    drs1 "{shader=noise:0.015} Oh, and... try not to make any new enemies."
     eold "Yeah..."
     scene black with fade
     eold "Hello. I'm Es-"
@@ -355,14 +355,14 @@ label END_esthertrue:
     e "{color=#fff}It makes me feel..."
     mccut "{color=#fff}Small?"
     e "{color=#fff}Haha! Something like that, I..."
-    e "{color=#fff}I can't believe I'm here right now..."
+    e "{color=#fff}I can't believe I'm here right now!"
     e "{color=#fff}The expanses in Aperture, the voids between testing tracks, they faded into fog quickly..."
     e "{color=#fff}You could never see everything. Not like this."
-    e "{color=#fff}I can see trees hundreds of acres away! This is... this is crazy!"
+    e "{color=#fff}I can see trees hundreds of acres away! The lake all the way across the forest! This is... this is crazy!"
     e "{color=#fff}I..."
     e "{color=#fff}The outside... it's so... {i}huge.{/i}"
     e "{color=#fff}There's so much here outside of myself, I..."
-    e "{color=#fff}I've been so... so {i}selfish.{/i}."
+    e "{color=#fff}I've been so... so {i}selfish{/i}..."
     e "{color=#fff}I don't think I've ever really thanked you for getting me out of that hellhole."
     e "{color=#fff}Isn't that... that's ridiculous, right?"
     e "{color=#fff}I should be..."
