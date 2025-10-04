@@ -413,48 +413,54 @@ screen main_menu():
     vbox:
         style_prefix "navigation"
 
-        xalign 0.9
-        yalign 0.1
 
         spacing gui.navigation_spacing
 
         if main_menu and mm2 == False:
 
-            imagebutton idle "gui/mmbtn.png" action Start() at tilted:
-                ypos 140
-                xpos 180
+            imagemap:
+                auto "gui/mm_%s.png"
 
-            imagebutton idle "gui/mmbtn.png" action Show("file_slots", transition=easeinbottom), Play("sound", "sfx/paperopen3.ogg") at tilted:
-                ypos -80
-                xpos 130
+                imagebutton:
+                    auto "gui/mmbtns/ng_%s.png"
+                    focus_mask True
+                    action Start()
+                
+                imagebutton:
+                    auto "gui/mmbtns/lg_%s.png"
+                    focus_mask True
+                    action Show("file_slots", transition=easeinbottom), Play("sound", "sfx/paperopen3.ogg")
+                
+                imagebutton:
+                    auto "gui/mmbtns/op_%s.png"
+                    focus_mask True
+                    action Show("pref_audio", transition=easeinbottom), Play("sound", "sfx/paperopen2.ogg")
 
-            imagebutton idle "gui/mmbtn.png" action Show("pref_audio", transition=easeinbottom), Play("sound", "sfx/paperopen2.ogg") at tilted:
-                ypos -300
-                xpos 80
-
-            imagebutton idle "gui/stickybutton.png" action SetVariable("mm2", True):
-                ypos -575
-                xpos -52
-                focus_mask True
+                imagebutton idle "gui/stickybutton.png" action SetVariable("mm2", True):
+                    focus_mask True
     
         elif main_menu and mm2 == True:
 
-            imagebutton idle "gui/mmbtn.png" action Show("aboutmenu", transition=easeinbottom), Play("sound", "sfx/paperopen2.ogg") at tilted2: #about
-                ypos 250
-                xpos -60
+            imagemap:
+                auto "gui/mm2_%s.png"
 
-            imagebutton idle "gui/mmbtn.png" action Show("galleryk", transition=easeinbottom), Play("sound", "sfx/paperopen.ogg"), SetVariable("selected_char", "kris") at tilted2: #gallery
-                ypos 50
-                xpos -30
+                imagebutton:
+                    auto "gui/mmbtns/ab_%s.png"
+                    focus_mask True
+                    action Show("aboutmenu", transition=easeinbottom), Play("sound", "sfx/paperopen2.ogg")
+                
+                imagebutton:
+                    auto "gui/mmbtns/gl_%s.png"
+                    focus_mask True
+                    action Show("galleryk", transition=easeinbottom), Play("sound", "sfx/paperopen.ogg"), SetVariable("selected_char", "kris")
+                
+                imagebutton:
+                    auto "gui/mmbtns/qt_%s.png"
+                    focus_mask True
+                    action Quit(confirm=True)
 
-            imagebutton idle "gui/mmbtn.png" action Quit(confirm=True) at tilted2: #quit
-                ypos -150
-                xpos 0
-
-            imagebutton idle "gui/stickybutton2.png" action SetVariable("mm2", False): #sticky note
-                ypos -755
-                xpos 80
-                focus_mask True
+                imagebutton idle "gui/stickybutton2.png" action SetVariable("mm2", False):
+                    focus_mask True
 
         else:
             style_prefix "pausemenu"

@@ -88,8 +88,8 @@ define gui.title_text_size = 75
 
 ## The images used for the main and game menus.
 ## Also controls sticky note switching
-define gui.main_menu_background = "gui/mm.png"
-define gui.main_menu_background2 = "gui/mmtwo.png"
+define gui.main_menu_background = "gui/mm_idle.png"
+define gui.main_menu_background2 = "gui/mm2_idle.png"
 define gui.game_menu_background = "gui/game_menu.png"
 
 

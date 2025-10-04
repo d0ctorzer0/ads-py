@@ -1058,7 +1058,7 @@ gui\loadbutton2.png
 gui\loadscreen.png
 gui\main_menu.png
 gui\main_menuTEST.png
-gui\mm.png
+gui\mm_idle.png
 gui\mmbtn.png
 gui\mmbutton.png
 gui\mmtitle.png
@@ -1273,11 +1273,11 @@ gui\overlay\ow_popup.png
 gui\overlay\popup.png
 gui\overlay\quit_popup.png
 gui\overlay\save_popup.png
-gui\pause\hover_pause_mm.png
+gui\pause\hover_pause_mm_idle.png
 gui\pause\hover_pause_options.png
 gui\pause\hover_pause_quit.png
 gui\pause\hover_pause_sl.png
-gui\pause\idle_pause_mm.png
+gui\pause\idle_pause_mm_idle.png
 gui\pause\idle_pause_options.png
 gui\pause\idle_pause_quit.png
 gui\pause\idle_pause_sl.png

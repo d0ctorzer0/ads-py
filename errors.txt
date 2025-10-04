@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/esthertrue.rpy", line 27: expected statement.
-    "{font="fonts/lumberjack.otf"}Miss Esther, you're -"
-                 ^
+File "game/screens.rpy", line 455: 'Show' is not a keyword argument or valid child of the imagebutton statement.
+    Show("galleryk", transition=easeinbottom), Play("sound", "sfx/paperopen.ogg"), SetVariable("selected_char", "kris")
+        ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Fri Sep  5 08:52:52 2025
+Sat Oct  4 11:02:21 2025
