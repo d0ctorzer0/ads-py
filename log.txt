@@ -1,37 +1,157 @@
-2025-10-04 20:28:19 UTC
+2025-10-05 09:01:22 UTC
 Windows-10-10.0.26100
 Ren'Py 8.3.6.25022803
 
-Early init took 0.64s
-Loading error handling took 0.09s
-Loading script took 1.27s
-Loading save slot metadata took 0.18s
+Early init took 2.07s
+Loading error handling took 0.15s
+Loading script took 2.54s
+Loading save slot metadata took 0.55s
 Loading persistent took 0.00s
 Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
-Running init code took 0.40s
+Running init code took 0.52s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.44s
+Index archives took 0.00s
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.54s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.11s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.22s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 555.97'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/story/week one/firstday.rpy", line 26, in script
+    n "You sigh. Another day, another dollar. But today's gonna be different."
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1470, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 1117, in do_display
+    display_say(who,
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\character.py", line 814, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2882, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 1384, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\movetransition.py", line 383, in render
+    old_r = renpy.display.render.render(self.old, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\transform.py", line 1056, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 994, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 427, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\layout.py", line 2184, in render
+    cr = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 752, in render
+    self.update()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/menus/preferences.rpy", line 193, in execute
+    screen pausemenu():
+  File "game/menus/preferences.rpy", line 193, in execute
+    screen pausemenu():
+  File "game/menus/preferences.rpy", line 200, in execute
+    imagebutton auto "gui/pause/%s_pause_mm_idle.png" action Play("sound", "sfx/notif.ogg"), Show("mmnotif") focus_mask True xpos 55
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ui.py", line 975, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ui.py", line 969, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto='gui/pause/%s_pause_mm_idle.png').
+
+While running game code:
+  File "game/story/week one/firstday.rpy", line 26, in script
+    n "You sigh. Another day, another dollar. But today's gonna be different."
+  File "game/menus/preferences.rpy", line 193, in execute
+    screen pausemenu():
+  File "game/menus/preferences.rpy", line 193, in execute
+    screen pausemenu():
+  File "game/menus/preferences.rpy", line 200, in execute
+    imagebutton auto "gui/pause/%s_pause_mm_idle.png" action Play("sound", "sfx/notif.ogg"), Show("mmnotif") focus_mask True xpos 55
+Exception: Imagebutton does not have a idle image. (auto='gui/pause/%s_pause_mm_idle.png').
+Resetting cache.
+Early init took 125.19s
+Loading error handling took 0.08s
+Loading script took 0.76s
+Loading save slot metadata took 0.16s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.26s
 Loading analysis data took 0.04s
 Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.10s
+Reloading save slot metadata took 0.12s
 Index archives took 0.00s
-Dump and make backups took 0.12s
+Backing up script files to 'C:\\Users\\seven\\AppData\\Roaming/RenPy/backups\\core':
+Dump and make backups took 0.25s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.15s
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.51s
+Creating interface object took 0.53s
 Cleaning stores took 0.00s
-Init translation took 0.10s
+Init translation took 0.11s
 Build styles took 0.01s
-Load screen analysis took 0.08s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.23s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.09s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.07s
+Prepare screens took 0.30s
+Save pyanalysis. took 0.07s
+Save bytecode. took 0.05s
 Running _start took 0.00s
-Interface start took 0.39s
+Interface start took 0.34s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -44,9 +164,9 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
-Init translation took 0.00s
+Init translation took 0.01s
 Build styles took 0.01s
-Load screen analysis took 0.08s
+Load screen analysis took 0.10s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
