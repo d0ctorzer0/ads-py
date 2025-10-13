@@ -753,11 +753,12 @@ label nokris:
     jump emmap
 
 label saveesther:
-    scene officehell with fade
+    scene office hell with fade
     show flash
     window auto
     n "You force your way into the maintenance offices. The door was jammed shut."
-    n "(Descriptions of what it looks like will go here when the background is finished.)"
+    n "The ceiling is caved in, and the entire room is on fire."
+    n "It's a little sad to see your office reduced to such a state."
     n "Miss Esther is at the opposite side of the room, staring blankly at the scene in front of her."
     n "You call out to her."
 
@@ -792,7 +793,7 @@ label saveesther:
     e "{color=#fff}Okay, okay!!"
     window auto
     hide screen cuttextbox
-    scene officehell with fade
+    scene office hell with fade
     show flash
     $ cutscenetextbox = False
     show e offrail sus with easeinbottom

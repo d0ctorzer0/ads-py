@@ -25,6 +25,7 @@ image ccroom hell = "[persistent.bgtype]ccroom hell.png"
 image heathroom hell = "[persistent.bgtype]heathroom hell.png"
 image aspenroom hell = "[persistent.bgtype]aspenroom hell.png"
 image robroom hell = "[persistent.bgtype]robroom hell.png"
+image office hell = "[persistent.bgtype]office hell.png"
 
 image door1 warm = "[persistent.bgtype]door1 warm.png"
 image door1 cool = "[persistent.bgtype]door1 cool.png"

@@ -18,7 +18,7 @@ label END_esthertrue:
     dr "Are you prepared? You passed your exam with flying colors."
     eold "Yes, I'm prepared. I've studied hard for this."
     dr "Good."
-    scene es test3 with fade
+    scene es test1 with fade
     eold "Hello, test subject. Welcome to Testing Track X-A."
     "{shader=noise:0.07}  Miss Esther?"
     eold "I - ahem."
@@ -30,7 +30,7 @@ label END_esthertrue:
     "{shader=noise:0.07}  Are you okay?"
     eold "..."
     scene black with fade
-    scene es test3 with fade
+    scene es test1 with fade
     eold "Uh... congratulations."
     eold "You've finished this... uh... you've completed this track quicker than 79.3 percent of participants."
     "{shader=noise:0.07}  You keep talking to yourself, I'm -"
@@ -182,17 +182,21 @@ label END_esthertrue:
     dr "{shader=noise:0.005}Being a robot probably makes that hard to understand."
     eold "Yes..."
 
-    scene black with fade
+    scene es test2 with fade
+    play music "sfx/birds.ogg" fadein 1.0
     eold "Ahem. Welcome to Surface Track E-2."
     eold "In addition to normal testing procedure, we'll also be monitoring your emotional and mental well-being via the\nchip we implanted in your brain."
     eold "Proceed through the chamber as quickly as possible."
-    drs2 "{shader=noise:0.05}Sociopath Core..."
+    drs2 "{shader=noise:0.05} Sociopath Core..." # i dont like the voice here so it'll be removed, this is not a bug
     eold "Uh... please. And thank you."
     scene black with fade
 
+    scene es test2 with fade
     eold "Congratulations, test subject, on, uh, completing this assignment."
     eold "Proceed... uh, {i}please{/i} proceed to the exit elevators in a timely manner."
     eold "T-Thank you for your cooperation."
+
+    stop music fadeout 2.0
 
     window auto
     scene black
