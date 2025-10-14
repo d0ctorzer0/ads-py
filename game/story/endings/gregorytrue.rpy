@@ -9,7 +9,7 @@ label END_gregtrue:
         show screen truedaytransition
         $ renpy.pause(2.0, hard=True)
     
-    scene black with fade
+    scene det car with fade
     play music deathtoaperture
     n "The passenger seat is quite loud."
     n "Louder than the radio sometimes."

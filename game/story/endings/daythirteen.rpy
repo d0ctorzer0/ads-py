@@ -238,7 +238,7 @@ label savegreg:
 
     hide screen cuttextbox
     window auto
-    scene hall with fade
+    scene hall hell with fade
     show flash with None
     $ cutscenetextbox = False
     show gre look

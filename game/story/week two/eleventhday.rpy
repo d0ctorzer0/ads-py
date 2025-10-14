@@ -523,7 +523,7 @@ label gregrejection:
     show g look
     g "Well... this certainly got awkward quick."
     show g aaa
-    g "On second thought, I should probably leave. I..."
+    g "On second thought, I should probably leave."
     g "I'll see you later, Doc!"
 
     hide g with easeoutright

@@ -331,8 +331,8 @@ label krisrejection:
     show k
     k "I'm not sure of the brand - frankly, I believe Aperture may have made the model, cheap and in-house."
     show k angry
-    k "Cave would do {i}anything{/i} to save even a penny in the years before his death..."
-    k "So it makes sense employee rewards were cut back, as well."
+    k "Mr. Johnson would do {i}anything{/i} to save even a penny in the years before his death..."
+    k "So it makes sense employee rewards were cut back."
     show k look
     k "I'm surprised I even received anything in the first place, haha."
 
@@ -342,7 +342,7 @@ label krisrejection:
     mc "I'm sure Miss Esther is waiting."
 
     show k
-    k "Ah, yes. Thank you for your time, Doctor."
+    k "Thank you for your time, Doctor."
     show k flirt
     k "And... for earlier."
 
@@ -455,7 +455,7 @@ label heathacceptance:
 
     h "Oh, and don't worry about the letter, haha. They were just props! Nothing in the letter."
     show h sad
-    h "The dove, though... don't know where she went..."
+    h "The dove, though... don't know where she went to..."
 
     show h
     n "The rest of your shift is exciting. Heath's natural charm makes the initial awkwardness fade away fast."
@@ -511,7 +511,7 @@ label heathrejection:
     h "No! No need to explain! You're alright, I understand!"
     h "Oh, and don't worry about the letter, haha. They were just props! Nothing in the letter."
     show h sad
-    h "The dove, though... don't know where she went..."
+    h "The dove, though... don't know where she went to..."
 
     show h
     n "The rest of your shift is pretty normal, all things considered."
@@ -643,7 +643,7 @@ label aspenacceptance:
     show a
     n "The rest of your shift is peaceful. As usual, Aspen talks the majority of the time, rattling off facts about all kinds of plants."
 
-    a "{i}Heliotropium arborescens{/i} has been my most recent study - the garden heliotrope."
+    a "{i}Heliotropium arborescens{/i} has been most of my recent study - the garden heliotrope."
     show a look
     a "It has these beautiful flowers that smell like vanilla... or so I'm told. I can't really smell them myself."
     show a
@@ -715,7 +715,7 @@ label aspenrejection:
     show a
     n "The rest of your shift is peaceful. As usual, Aspen talks the majority of the time, rattling off facts about all kinds of plants."
 
-    a "{i}Heliotropium arborescens{/i} has been my most recent study - the garden heliotrope."
+    a "{i}Heliotropium arborescens{/i} has been most of my recent study - the garden heliotrope."
     show a look
     a "It has these beautiful flowers that smell like vanilla... or so I'm told. I can't really smell them myself."
     show a
@@ -1141,7 +1141,7 @@ label robrejection:
     show r angry
     r "I'm aware I'm not for everyone!"
     show r
-    r "Hell, that's why I have an ex-wife! Ha!"
+    r "Hell, that's why I have an ex-wife!"
     show r angry
     r "Speakin' of..."
     n "He begins to ramble about his ex-wife, Celine."
