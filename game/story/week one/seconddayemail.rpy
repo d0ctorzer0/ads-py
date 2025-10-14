@@ -66,7 +66,7 @@ screen email6pt2():
         text "from: HR"
     vbox:
         style_prefix "eml"
-        text "This is to ensure our referral process remains unbiased and scientific.\n\nEmployees whose referral is selected will be eligible to received up\nto $200. We will NOT, under ANY CIRCUMSTANCES, accept any former\nBlack Mesa employees.\n\nPlease send an email to PEB regarding any questions or referral\nsubmissions.\n\nThank you,\nHR"
+        text "This is to ensure our referral process remains unbiased and scientific.\n\nEmployees whose referral is selected will be eligible to receive up\nto $200. We will NOT, under ANY CIRCUMSTANCES, accept any former\nBlack Mesa employees.\n\nPlease send an email to PEB regarding any questions or referral\nsubmissions.\n\nThank you,\nHR"
 # hi if ur reading my code heres a bit of lore... PEB here is supposed to be the party escort bot, the core that dragged chell back in the portal\portal 2 universe
     use affectionprogress
     vbox:

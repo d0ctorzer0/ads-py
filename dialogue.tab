@@ -6460,7 +6460,7 @@ ccday2cont_1375a699	e	Time for the last stop of the day.	game/story/week one/sec
 ccday2cont_ad2b3d21	mc	It feels like this route's gone a lot quicker than yesterday's.	game/story/week one/secondday.rpy	645	mc "[what]"
 ccday2cont_2aa24b91	e	Yes, most likely because we haven't had any unnecessary interruptions.	game/story/week one/secondday.rpy	648	e "[what]"
 ccday2cont_8920dea1	n	The two of you head off towards the gym.	game/story/week one/secondday.rpy	650	n "[what]"
-robday2_d596065a	r	Welcome back, welcome back, doctor. Interested in a run on the treadmill today?	game/story/week one/secondday.rpy	658	r "[what]"
+robday2_472ea388	r	Welcome back, welcome back, Doctor. Interested in a run on the treadmill today?	game/story/week one/secondday.rpy	658	r "[what]"
 robday2_415a56cc	mc	Maybe another time. Any visitors today?	game/story/week one/secondday.rpy	660	mc "[what]"
 robday2_e4692f46	r	Well, yes, actually - Dr. Pierce came in earlier today, said he had a dream he needed to exercise more? Or somethin'...	game/story/week one/secondday.rpy	662	r "[what]"
 robday2_607e5712	r	He's kind of crazy, not gonna lie.	game/story/week one/secondday.rpy	664	r "[what]"

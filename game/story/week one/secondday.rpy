@@ -655,7 +655,7 @@ label robday2:
     scene robroom with fade
     $ audio_crossFade(2, "music/six.ogg")
     show r with easeinright
-    r "Welcome back, welcome back, doctor. Interested in a run on the treadmill today?"
+    r "Welcome back, welcome back, Doctor. Interested in a run on the treadmill today?"
 
     mc "Maybe another time. Any visitors today?"
 
