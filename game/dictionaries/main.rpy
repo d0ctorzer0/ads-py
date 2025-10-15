@@ -9,14 +9,8 @@ init python:
 
 init:
     $ config.keymap['help'].remove('K_F1')
-    # key "K_LEFT" action NullAction()
-    # key "KP_LEFT" action NullAction()
-    # $ config.key "K_RIGHT" action NullAction()
-    # $ config.key "KP_RIGHT" action NullAction()
-    # $ config.key "K_UP" action NullAction()
-    # $ config.key "KP_UP" action NullAction()
-    # $ config.key "K_DOWN" action NullAction()
-    # $ config.key "KP_DOWN" action NullAction()
+    $ config.keymap['game_menu'].remove('K_ESCAPE')
+    $ config.keymap['game_menu'].remove('mouseup_3')
 
 screen disable_arrows(): #disable arrow keys
     key "K_RIGHT" action NullAction()
