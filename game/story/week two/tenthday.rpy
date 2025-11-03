@@ -40,7 +40,7 @@ label day10:
     e "Yes, much better, haha. Not as tired, for sure!"
     show e
     e "Alright - you know the drill. Today's the one-on-one observation day."
-    if not positive["Kris"] and not positive["Heath"] and not positive["Aspen"] and not positive["CC"] and not positive["Rob"]:
+    if (positive["Kris"] == False or romance_points["Kris"] <= 5) and (positive["Heath"] == False or romance_points["Heath"] <= 5) and (positive["Aspen"] == False or romance_points["Aspen"] <= 5) and (positive["CC"] == False or romance_points["CC"] <= 5) and (positive["Rob"] == False or romance_points["Rob"] <= 5):
         show e annoy
         e "Unfortunately, every single one of the cores under our section has specifically requested -"
         e "- either to me, or to HR -"
@@ -107,7 +107,7 @@ label day10choice:
                 $ romance_points["Aspen"] += 3
                 jump aspenday10
         "CC." if ccchooseagain == False:
-            if positive["CC"] == False:
+            if positive["CC"] == False or romance_points["CC"] <= 5:
                 $ ccchooseagain = True
                 show e annoy
                 e "CC asked me personally not to see you today, Doctor. I'm sorry."
