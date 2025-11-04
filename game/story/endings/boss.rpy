@@ -137,13 +137,11 @@ label estherend_begin:
     show e
     e "It was a pleasure to work with you. Truly one of the best employees I've had in a while."
     mc "Thank you, Miss Esther. I... enjoyed working with you as well."
-    e "You should still have one more night in your given room due to the sudden change."
     show e shock
     e "I'll... miss you. You'll be back to visit, yes?"
     mc "Of course I will."
     show e
     e "Wonderful."
-    e "I... hope to see you soon, Doctor."
     scene hall with fade
     n "You enter back out into the hall."
     n "Despite the... romantic connotation of the cores you encountered, it was fairly uneventful."
