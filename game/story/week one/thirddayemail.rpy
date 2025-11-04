@@ -18,7 +18,7 @@ screen emailday3():
     # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         #textbutton "    from: {color=#c9ae16}Gregory{/color}\n        an invite?                                                                                   " action Jump("emaileight")
-        textbutton "    from: [[ BLOCKED ]\n        [[ HIGH SCAM LIKELIHOOD ]                                                           " action Jump("e3")
+        textbutton "    from: [[ BLOCKED ]\n        [[ HIGH SCAM LIKELIHOOD ]                                                           " action Jump("emailscam")
         textbutton "    from: Financial\n        FWD: Core Maintenance Cost Report                                                           " action Jump("emailreport")
     vbox:
         style_prefix "nextday"
@@ -138,7 +138,39 @@ screen emailrep2():
     vbox:
         style_prefix "eml"
         text "{font=bulletin.ttf}{size=30}ASPC FINANCIAL REPORT - MONTH OF MAY\n\n+-------------------------------------------+\n| Date  | Core ID |     Service      |  Cost  |\n+-------------------------------------------+\n| 05/02 | C9-AN4  | Handles          | $3.5k  |\n| 05/05 | B6-QY6  | Framework Update | $9.8k  |\n| 05/09 | D8-PB3  | Coolant          | $4.2k  |\n| 05/09 | W6-BA5  | Optics Repair    | $40.2k |\n| 05/14 | U3-TO1  | Encoding Fix     | $24.3k |\n| 05/15 | T1-HB4  | Chassis Repair   | $6.2k  |\n| 05/26 | E9-YZ8  | Handles          | $3.6k  |\n| 05/27 | C7-JB9  | General Repair   | $18.7k |\n| 05/30 | C8-XA3  | Miscellaneous    | $10.7k |\n+-------------------------------------------+"
-        
+
+screen emailscamtext():
+    vbox:
+        style_prefix "emltitle"
+        text "[[ HIGH SCAM LIKELIHOOD ]"
+    vbox:
+        style_prefix "emlfrom"
+        text "from: [[ BLOCKED ]"
+    vbox:
+        style_prefix "eml"
+        text "\"Want a BIG Processing Unit?\"\nExperience the results you've always wanted with a MASSIVE scientific\nbreakthrough: Our Engineer-Approved Upgrade Will Actually Expand,\nLengthen And Enlarge Your Processing Unit. 100% GUARANTEED!\nIf YOU want to massively enlarge your processing unit and experience big\ngains in only weeks, this may be the most important email you'll ever read.\n\nHere's why:\nCertified Real Electronics has helped THOUSANDS of robots cope with\nand conquer serious memory issues. These painful problems include small\nprocessing unit size and poor self-image, as well as lack of storage.\nTo help these robots, our dedicated team of researchers has developed\nan amazing upgrade called KPS. Certified Real Electronics has carefully\ntested this unique new product so that it is fully"
+    use affectionprogress
+    
+    vbox:
+        style_prefix "emlback"
+        textbutton "next >>>" action Jump("emailscam2")
+
+screen emailscamtext2():
+    vbox:
+        style_prefix "emltitle"
+        text "[[ HIGH SCAM LIKELIHOOD ]"
+    vbox:
+        style_prefix "emlfrom"
+        text "from: [[ BLOCKED ]"
+    vbox:
+        style_prefix "eml"
+        text "engineer-approved. And it is 100% guaranteed to WORK! We are now\noffering KPS in easy install form to robots everywhere. Our research\nteam invites you now to experience this miracle for yourself.\n\nImagine for a moment how you will feel:\nYou'll radiate confidence and success whenever you enter a charging hub,\nand other robots will look at you with real envy.\n\n\"Is My Processing Unit Growth PERMANENT?\"\nYES! Take KPS, become to the perfect size, and you can even stop\ninstalling new upgrades.\n\nORDER KPS TODAY!\n{a=https://store.steampowered.com/app/3738640/Portal_Divinity/}CLICK HERE"
+    use affectionprogress
+    
+    vbox:
+        style_prefix "emlback"
+        textbutton "<<< back" action Jump("e3")
+
 # +-------+---------+------------------+--------+\n
 # | Date  | Core ID |     Service      |  Cost  |\n
 # +-------+---------+------------------+--------+\n
@@ -207,3 +239,11 @@ label emailreport:
 label emailreport2:
     scene blankemail
     call screen emailrep2
+
+label emailscam:
+    scene blankemail
+    call screen emailscamtext
+
+label emailscam2:
+    scene blankemail
+    call screen emailscamtext2

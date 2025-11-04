@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 455: 'Show' is not a keyword argument or valid child of the imagebutton statement.
-    Show("galleryk", transition=easeinbottom), Play("sound", "sfx/paperopen.ogg"), SetVariable("selected_char", "kris")
+File "game/screens.rpy", line 1250: 'size' is not a keyword argument or valid child of the hbox statement.
+    size 30
         ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sat Oct  4 11:02:21 2025
+Mon Nov  3 20:14:08 2025

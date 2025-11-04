@@ -1228,6 +1228,11 @@ style confirm_button:
 style confirm_button_text:
     properties gui.text_properties("confirm_button")
 
+style skip_text:
+    color "#fff"
+    font "fonts/terminal-grotesque.ttf"
+    size 50
+
 
 ## Skip indicator screen #######################################################
 ##
@@ -1237,9 +1242,18 @@ style confirm_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#skip-indicator
 
 screen skip_indicator():
+    style_prefix "skip"
+    hbox:
+            xpos 10
+            ypos 10
+            spacing 6
 
-    zorder 100
-    add "gui/skip.png"
+            text "Resuming" at delayed_blink(0.1, 1.0) size 30
+            text "dating" at delayed_blink(0.2, 1.0) size 30
+            text "shortly" at delayed_blink(0.3, 1.0) size 30
+            text "." at delayed_blink(0.4, 1.0) size 30
+            text "." at delayed_blink(0.5, 1.0) size 30
+            text "." at delayed_blink(0.6, 1.0) size 30
 
 
 ## This transform is used to blink the arrows one after another.
