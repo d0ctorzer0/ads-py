@@ -212,7 +212,7 @@ label unknownday9:
 label impressunknown9:
     show u look
     u "Oh, uh... you too, Doc."
-    u "Sorry you ain't seen me yesterday, I uh... I was busy."
+    u "Sorry you ain't seen me since yesterday, I uh... I was busy."
 
     show u
     u "Glad I bumped into ya now, though."
