@@ -4510,7 +4510,7 @@ p_robday11_0f70f469	r	HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR ———— HAN
 p_robday11_7f77c842	r	HEY! CAN'T YOU FOCUS? THE BALL IS IN YOUR GODDAMN HANDS, RUN WITH IT!	game/story/week two/eleventhday.rpy	1084	r "[what]"
 p_robday11_9148a7a5	r	Oh shoot! It's almost 4, Doc!	game/story/week two/eleventhday.rpy	1086	r "[what]"
 p_robday11_9a53c6d7	mc	Oh God, you're right. I didn't even realize.	game/story/week two/eleventhday.rpy	1088	mc "[what]"
-p_robday11_094c4b48	r	You should get goin'. Don't want you to get in trouble for going over.	game/story/week two/eleventhday.rpy	1091	r "[what]"
+p_robday11_4b9c1de7	r	You should get goin'. Don't want to get in trouble for going over.	game/story/week two/eleventhday.rpy	1091	r "[what]"
 p_robday11_1bf60051	mc	Of course.	game/story/week two/eleventhday.rpy	1093	mc "[what]"
 p_robday11_c9df8396	r	See ya tomorrow, Doc.	game/story/week two/eleventhday.rpy	1096	r "[what]"
 p_robday11_1a17b271	n	You finally finish your checklist and head back out to your office.	game/story/week two/eleventhday.rpy	1098	n "[what]"

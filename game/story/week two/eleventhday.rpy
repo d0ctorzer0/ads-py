@@ -1088,7 +1088,7 @@ label p_robday11:
     mc "Oh God, you're right. I didn't even realize."
 
     show r angry
-    r "You should get goin'. Don't want you to get in trouble for going over."
+    r "You should get goin'. Don't want to get in trouble for going over."
 
     mc "Of course."
 
