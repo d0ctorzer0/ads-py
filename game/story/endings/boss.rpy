@@ -152,8 +152,6 @@ label estherend_begin:
     # give ace achievement even if they get this ending first
     python:
         persistent.endings_got["ace"] = True
-        if sum(persistent.endings_got.values()) == ending_count:
-            achievement.grant("ach_seenitall")
         achievement.grant("ach_amoh")
         achievement.sync()
 
@@ -238,6 +236,9 @@ label battleskip:
 
     $ achievement.grant("ach_armor")
     $ achievement.sync()
+    $ persistent.ach_armor = True
+    $ ach_name = "armor"
+    show screen ach_popup with easeinbottom
 
     show e look
     e "I-I..."

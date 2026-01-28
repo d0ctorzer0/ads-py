@@ -211,9 +211,13 @@ label END_cctrue:
         if persistent.cc6 == False:
             persistent.cutscenes_seen += 1
             persistent.cc6 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     cc "{color=#fff}It feels so... cold."
     cc "{color=#fff}It's wonderful. I..."
     cc "{color=#fff}I haven't felt the air through my circuits since I was activated."

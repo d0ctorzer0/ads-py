@@ -210,9 +210,13 @@ label END_heathtrue:
         if persistent.hc6 == False:
             persistent.cutscenes_seen += 1
             persistent.hc6 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     n "{color=#fff}Heath closes her optic and slowly opens her shell -"
     n "{color=#fff}- Something you didn't know was possible, even with all your time in Manufacturing."
     n "{color=#fff}What follows is perhaps the most beautiful display of colors you've ever seen from an Aperture product."

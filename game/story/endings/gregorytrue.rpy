@@ -256,9 +256,13 @@ label END_gregtrue:
         if persistent.gc5 == False:
             persistent.cutscenes_seen += 1
             persistent.gc5 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     g2ecg "{color=#fff}This is incredible."
     g1ecg "{color=#fff}You know, I think I read about this in one of Aperture's records."
     g3ecg "{color=#fff}If this is the ocean, why can I see the shoreline on the other side?"

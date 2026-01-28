@@ -227,9 +227,13 @@ label END_unknowntrue:
         if persistent.uc5 == False:
             persistent.cutscenes_seen += 1
             persistent.uc5 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     ry "{color=#fff}I just remembered something else."
     mccut "{color=#fff}What's that?"
     ry "{color=#fff}My alias."

@@ -350,9 +350,13 @@ label END_esthertrue:
         if persistent.ec5 == False:
             persistent.cutscenes_seen += 1
             persistent.ec5 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     e "{color=#fff}Doctor... what {i}is{/i } this place?"
     mccut "{color=#fff}We're at Mount Arvon. Highest point in Michigan."
     e "{color=#fff}It's... oh my god, it goes on forever..."

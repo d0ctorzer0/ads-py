@@ -247,9 +247,13 @@ label END_kristrue2:
         if persistent.kc6 == False:
             persistent.cutscenes_seen += 1
             persistent.kc6 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     k "{color=#fff}I'm still getting used to... not being... down there, you know."
     k "{color=#fff}It's still strange sometimes."
     k "{color=#fff}Not waking up in a charging port..."

@@ -224,9 +224,13 @@ label END_robtrue:
         if persistent.rc6 == False:
             persistent.cutscenes_seen += 1
             persistent.rc6 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     rcg "{color=#fff}Ahh... that feels so nice."
     mc "{color=#fff}I'm surprised you can even feel the grass under your chassis."
     rcg "{color=#fff}It ain't \"feeling\" like how most humans define it, but..."
