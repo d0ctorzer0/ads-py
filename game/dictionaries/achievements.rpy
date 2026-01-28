@@ -1,11 +1,11 @@
 default ending_count = 19
 default cutscene_count = 44 # Massive W for drawing 44 cutscenes wtf (I've changed this text like 6 times)
 
-default persistent.ach_biwta = True
-default persistent.ach_explore = True
+default persistent.ach_biwta = False
+default persistent.ach_explore = False
 
-default persistent.ach_closet = True
-default persistent.ach_insurance = True
+default persistent.ach_closet = False
+default persistent.ach_insurance = False
 
 default persistent.places_visited = 0
 default persistent.visited = {
@@ -17,44 +17,44 @@ default persistent.visited = {
     "recovery" : False,
 }
 
-default persistent.ach_unionize = True # Spare Miss Esther
-default persistent.ach_amoh = True # Don't romance anyone
-default persistent.ach_ohno = True # Die (Woo!)
-default persistent.ach_heartless = True # Kill Miss Esther (You MONSTER.)
-default persistent.ach_unlikable = True # Antisocial
-default persistent.ach_armor = True # MISS ESTHER SECRET DIALOGUE!!!
+default persistent.ach_unionize = False # Spare Miss Esther
+default persistent.ach_amoh = False # Don't romance anyone
+default persistent.ach_ohno = False # Die (Woo!)
+default persistent.ach_heartless = False # Kill Miss Esther (You MONSTER.)
+default persistent.ach_unlikable = False # Antisocial
+default persistent.ach_armor = False # MISS ESTHER SECRET DIALOGUE!!!
 
 # Endings
 
-default persistent.ach_kristrue = True
-default persistent.ach_krisgood = True
+default persistent.ach_kristrue = False
+default persistent.ach_krisgood = False
 
-default persistent.ach_heathtrue = True
-default persistent.ach_heathgood = True
+default persistent.ach_heathtrue = False
+default persistent.ach_heathgood = False
 
-default persistent.ach_aspentrue = True
-default persistent.ach_aspengood = True
+default persistent.ach_aspentrue = False
+default persistent.ach_aspengood = False
 
-default persistent.ach_cctrue = True
-default persistent.ach_ccgood = True
+default persistent.ach_cctrue = False
+default persistent.ach_ccgood = False
 
-default persistent.ach_robtrue = True
-default persistent.ach_robgood = True
+default persistent.ach_robtrue = False
+default persistent.ach_robgood = False
 
-default persistent.ach_gregtrue = True
-default persistent.ach_greggood = True
+default persistent.ach_gregtrue = False
+default persistent.ach_greggood = False
 
-default persistent.ach_unknowntrue = True
-default persistent.ach_unknowngood = True
+default persistent.ach_unknowntrue = False
+default persistent.ach_unknowngood = False
 
-default persistent.ach_true = True
+default persistent.ach_true = False
 
 # Completionist achievements
 
-default persistent.ach_ultrobo = True # Tryhard the game
-default persistent.ach_seenitall = True # Get all 18 endings
+default persistent.ach_ultrobo = False # Tryhard the game
+default persistent.ach_seenitall = False # Get all 18 endings
 
-default persistent.ach_picture = True # Get Every Single Cutscene
+default persistent.ach_picture = False # Get Every Single Cutscene
 default persistent.cutscenes_seen = 0
 
 default persistent.endings_got = {
@@ -76,5 +76,5 @@ default persistent.endings_got = {
     "heartless" : False,
     "ace" : False,
     "unlikable" : False,
-    "true": False,
+    "False": False,
 }

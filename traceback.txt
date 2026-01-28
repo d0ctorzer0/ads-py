@@ -1,28 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/week one/thirddayemail.rpy", line 245, in script
-    call screen emailscamtext
-ScriptError: could not find label 'emailscamtext2'.
+  File "game/story/weekend/saturday.rpy", line 79, in script
+    python:
+  File "game/story/weekend/saturday.rpy", line 81, in <module>
+    if persistent.visited["office"] == False:
+TypeError: 'bool' object is not subscriptable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 652, in main
-    run(restart)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 148, in run
-    renpy.execution.run_context(True)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\execution.py", line 958, in run_context
-    context.run()
-  File "game/story/week one/thirddayemail.rpy", line 245, in script
-    call screen emailscamtext
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'emailscamtext2'.
+  File "game/story/weekend/saturday.rpy", line 79, in script
+    python:
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1184, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/story/weekend/saturday.rpy", line 81, in <module>
+    if persistent.visited["office"] == False:
+TypeError: 'bool' object is not subscriptable
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
 Aperture Dating Simulator 1.1.0
-Mon Nov  3 20:59:31 2025
+Tue Jan 27 19:53:19 2026

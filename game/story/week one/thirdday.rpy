@@ -209,9 +209,13 @@ label krisday3good:
             if persistent.kc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.kc1 = True
-            if persistent.cutscenes_seen == cutscene_count:
+        if persistent.cutscenes_seen == cutscene_count:
+            python:
                 achievement.grant("ach_picture")
                 achievement.sync()
+                persistent.ach_picture = True
+                ach_name = "picture"
+            show screen ach_popup with easeinbottom
         if persistent.advcap == True:
             "{color=#fff}{i}The scene fades to Kris looking down solemnly."
         k "{color=#fff}I'm stubborn for that reason."
@@ -364,9 +368,13 @@ label heathday3good:
             if persistent.hc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.hc1 = True
-            if persistent.cutscenes_seen == cutscene_count:
+        if persistent.cutscenes_seen == cutscene_count:
+            python:
                 achievement.grant("ach_picture")
                 achievement.sync()
+                persistent.ach_picture = True
+                ach_name = "picture"
+            show screen ach_popup with easeinbottom
         n "{color=#fff}You're stunned by what you see -"
         n "{color=#fff} - a hidden-away, wooden room, lined with fairy lights, shelves stocked with magic paraphenalia."
         h "{color=#fff}Tada!! This is my magical emporium. It's where I keep all the stuff I use to perform my tricks."
@@ -528,9 +536,13 @@ label aspenday3good:
             if persistent.ac1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.ac1 = True
-            if persistent.cutscenes_seen == cutscene_count:
+        if persistent.cutscenes_seen == cutscene_count:
+            python:
                 achievement.grant("ach_picture")
                 achievement.sync()
+                persistent.ach_picture = True
+                ach_name = "picture"
+            show screen ach_popup with easeinbottom
         if persistent.advcap == True:
             "{i}{color=#fff}The screen fades to a close-up shot of Aspen looking down at a fern. The scene is softly lit and is mostly dark."
         a "{color=#fff}This is Penelope. She's an \"Adiantum\" - a maidenhair fern."
@@ -667,9 +679,13 @@ label ccday3good:
             if persistent.cc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.cc1 = True
-            if persistent.cutscenes_seen == cutscene_count:
+        if persistent.cutscenes_seen == cutscene_count:
+            python:
                 achievement.grant("ach_picture")
                 achievement.sync()
+                persistent.ach_picture = True
+                ach_name = "picture"
+            show screen ach_popup with easeinbottom
         if persistent.advcap == True:
             "{i}{color=#fff}The scene fades to CC looking down solemnly. He's back-lit by his window. In the foreground, you can see the computers that monitor his health."
         ccg "{color=#fff}Well... it's a little embarrassing."
@@ -816,9 +832,13 @@ label rday3good:
             if persistent.rc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.rc1 = True
-            if persistent.cutscenes_seen == cutscene_count:
+        if persistent.cutscenes_seen == cutscene_count:
+            python:
                 achievement.grant("ach_picture")
                 achievement.sync()
+                persistent.ach_picture = True
+                ach_name = "picture"
+            show screen ach_popup with easeinbottom
         if persistent.advcap == True:
             "{i}{color=#fff}The scene fades to Rob looking down at you, \"HANG IN THERE!\" poster and TV screen behind him."
         r "{color=#fff}Alright, hop on, let's get started."

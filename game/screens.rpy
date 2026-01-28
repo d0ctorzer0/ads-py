@@ -196,6 +196,7 @@ style say_dialogue:
 
     adjust_spacing False
 
+
 ## Input screen ################################################################
 ##
 ## This screen is used to display renpy.input. The prompt parameter is used to
@@ -481,6 +482,18 @@ screen main_menu():
 
             text "[config.version]":
                 style "main_menu_version"
+    
+    add "gui/achieveshadow.png":
+        at transform:
+            yoffset 300
+            easein 0.5 yoffset 0
+
+    imagebutton auto "gui/achieve_%s.png":
+        action Show("achievements", transition=easeinbottom), Play("sound", "sfx/paperopen.ogg")
+        focus_mask True
+        at transform:
+            yoffset 300
+            easein 0.5 yoffset 0
 
 
 style main_menu_frame is empty

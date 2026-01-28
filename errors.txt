@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1250: 'size' is not a keyword argument or valid child of the hbox statement.
-    size 30
-        ^
+File "game/dictionaries/achievements.rpy", line 18: invalid syntax
+    }:dict[str,bool]
+      ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Mon Nov  3 20:14:08 2025
+Tue Jan 27 19:58:03 2026

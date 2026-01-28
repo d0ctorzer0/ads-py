@@ -33,6 +33,9 @@ label day6:
     if min([romance_points["Kris"], romance_points["Heath"], romance_points["Aspen"], romance_points["CC"], romance_points["Rob"]]) >= 10:
         $ achievement.grant("ach_biwta")
         $ achievement.sync()
+        $ persistent.ach_biwta = True
+        $ ach_name = "biwta"
+        show screen ach_popup with easeinbottom
 
     n "You wake up at 11:00 today. No need to wake up early."
     n "You get changed, and decide..."
@@ -84,6 +87,10 @@ label satoffice:
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
         achievement.sync()
+    if persistent.places_visited == 6:
+        $ persistent.ach_explore = True
+        $ ach_name = "explore"
+        show screen ach_popup with easeinbottom
     scene door3 no outoforder with fade
     $ audio_crossFade(1, "music/eleven.ogg") 
     n "You come up to the office door."
@@ -109,6 +116,10 @@ label satcafe:
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
         achievement.sync()
+    if persistent.places_visited == 6:
+        $ persistent.ach_explore = True
+        $ ach_name = "explore"
+        show screen ach_popup with easeinbottom
     scene cafe with fade
     n "You enter the cafeteria. You haven't actually been in here yet."
     n "Even though Miss Esther mentioned it to you on your first day, you've been surviving off old protein bars and granola..."
@@ -149,7 +160,11 @@ label biology:
             persistent.visited["biology"] = True
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
-        achievement.sync() 
+        achievement.sync()
+    if persistent.places_visited == 6:
+        $ persistent.ach_explore = True
+        $ ach_name = "explore"
+        show screen ach_popup with easeinbottom
     scene door3 cool with fade
     n "You come up to the door to Biology."
     n "It's right across the hallway from the greenhouse."
@@ -170,7 +185,11 @@ label wheatleycameo:
             persistent.visited["wheatley"] = True
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
-        achievement.sync() 
+        achievement.sync()
+    if persistent.places_visited == 6:
+        $ persistent.ach_explore = True
+        $ ach_name = "explore"
+        show screen ach_popup with easeinbottom
     scene door2 cool with fade
     n "You come up to the large door that reads \"AUTHORIZED PERSONNEL ONLY\"."
     n "From what you've heard, this is where they keep test subjects in stasis."
@@ -211,7 +230,11 @@ label manufacture:
             persistent.visited["manufacture"] = True
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
-        achievement.sync() 
+        achievement.sync()
+    if persistent.places_visited == 6:
+        $ persistent.ach_explore = True
+        $ ach_name = "explore"
+        show screen ach_popup with easeinbottom
     scene door2 with fade
     n "You come up to the door that you assume leads to your old workplace."
     n "You don't recognize this entrance, but your office in Manufacturing was on the west side."
@@ -230,7 +253,11 @@ label recovery:
             persistent.visited["recovery"] = True
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
-        achievement.sync() 
+        achievement.sync()
+    if persistent.places_visited == 6:
+        $ persistent.ach_explore = True
+        $ ach_name = "explore"
+        show screen ach_popup with easeinbottom
     scene door3 warm with fade
     n "You come up to the door that reads \"STASIS RECOVERY BAY\" on a small plaque next to it."
     n "Not wanting to disturb anything that might be happening inside, you peer through the window."
@@ -741,9 +768,13 @@ label satgreg_pos:
             if persistent.gc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.gc1 = True
-            if persistent.cutscenes_seen == cutscene_count:
+        if persistent.cutscenes_seen == cutscene_count:
+            python:
                 achievement.grant("ach_picture")
                 achievement.sync()
+                persistent.ach_picture = True
+                ach_name = "picture"
+            show screen ach_popup with easeinbottom
         n "{color=#fff}Gregory looks down and begins speaking softly."
         g "{color=#fff}No, I need to go closer!!"
         g "{color=#fff}Less left, more right! Come on!"
@@ -1114,9 +1145,13 @@ label satunknownpos:
             if persistent.uc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.uc1 = True
-            if persistent.cutscenes_seen == cutscene_count:
+        if persistent.cutscenes_seen == cutscene_count:
+            python:
                 achievement.grant("ach_picture")
                 achievement.sync()
+                persistent.ach_picture = True
+                ach_name = "picture"
+            show screen ach_popup with easeinbottom
         u "{color=#fff}Well... yeah. Back when I was... cleaner, and I... remembered my name..."
         u "{color=#fff}I didn't use it at all..."
         u "{color=#fff}I... miss those days sometimes."        
@@ -1155,6 +1190,9 @@ label satunknownpos:
         n "You pick it up and take it with you."
         $ achievement.grant("ach_closet")
         $ achievement.sync()
+        $ persistent.ach_closet = True
+        $ ach_name = "closet"
+        show screen ach_popup with easeinbottom
 
     jump wander
 

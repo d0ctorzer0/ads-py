@@ -85,9 +85,13 @@ label satend_kris:
         if persistent.kc2 == False:
             persistent.cutscenes_seen += 1
             persistent.kc2 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     if persistent.advcap == True:
         "{i}{color=#fff}The scene fades to Kris looking at you, lit by candlelight."
     k "{color=#fff}Mmm. Quite simple, Doctor."
@@ -199,9 +203,13 @@ label satend_heath:
         if persistent.hc2 == False:
             persistent.cutscenes_seen += 1
             persistent.hc2 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     show screen cuttextbox
     if persistent.advcap == True:
         "{i}{color=#fff}The scene fades to Heath on the stage, the view framed by dark blue curtains."
@@ -303,9 +311,13 @@ label satend_aspen:
         if persistent.ac2 == False:
             persistent.cutscenes_seen += 1
             persistent.ac2 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     if persistent.advcap == True:
         "{i}{color=#fff}The scene fades to Aspen looking down at the algae. Motes of colored light drift up into the air, illuminating them."
     acg "{color=#fff}I mean, I'm sure you've seen things glow before, but... this is different, yes?"
@@ -443,9 +455,13 @@ label satend_rob:
         if persistent.rc2 == False:
             persistent.cutscenes_seen += 1
             persistent.rc2 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     show screen cuttextbox
     if persistent.advcap == True:
         "{i}{color=#fff}The scene fades to a dark room lit by a TV screen. Rob turns back to look at you."
@@ -510,9 +526,14 @@ label satend_cc:
         if persistent.cc2 == False:
             persistent.cutscenes_seen += 1
             persistent.cc2 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
+    
     n "{color=#fff}CC greets you with a raised optic. In between his chassis and his handlebars is a bouquet of red roses."
     ccg "{color=#fff}I hope this isn't too... forward, Doctor."
     ccg "{color=#fff}Aspen assisted me in acquiring the flowers, so... it wasn't entirely my work."

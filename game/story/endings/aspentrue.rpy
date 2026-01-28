@@ -253,9 +253,13 @@ label END_aspentrue2:
         if persistent.ac6 == False:
             persistent.cutscenes_seen += 1
             persistent.ac6 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     n "{color=#fff}You set Aspen down in the daisy patch and lay down next to them."
     acg "{color=#fff}Oh wow... the sun's already starting to set..."
     acg "{color=#fff}It's so beautiful."
