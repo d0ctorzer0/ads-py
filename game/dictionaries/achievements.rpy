@@ -1,3 +1,16 @@
+init python:
+    def all_achievements_unlocked():
+        for i in [persistent.ach_seenitall,
+                  persistent.ach_picture,
+                  persistent.ach_heartless,
+                  persistent.ach_closet,
+                  persistent.ach_insurance,
+                  persistent.ach_biwta,
+                  persistent.ach_explore]:
+            if i == False:
+                return False
+        return True
+
 default ending_count = 18
 default cutscene_count = 44 # Massive W for drawing 44 cutscenes wtf (I've changed this text like 6 times)
 

@@ -294,6 +294,8 @@ label END_aspentrue2:
         persistent.endings_got["aspentrue"] = True
         if sum(persistent.endings_got.values()) == ending_count:
             achievement.grant("ach_seenitall")
+        if all_achievements_unlocked():
+            achievement.grant("ach_lore")
         if persistent.endings_got["kristrue"] and persistent.endings_got["heathtrue"] and persistent.endings_got["aspentrue"] and persistent.endings_got["cctrue"] and persistent.endings_got["robtrue"] and persistent.endings_got["gregtrue"] and persistent.endings_got["unknowntrue"]:
             achievement.grant("ach_ultrobo")
         achievement.grant("ach_aspentrue")
