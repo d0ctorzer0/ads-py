@@ -1,4 +1,4 @@
-default ending_count = 19
+default ending_count = 18
 default cutscene_count = 44 # Massive W for drawing 44 cutscenes wtf (I've changed this text like 6 times)
 
 default persistent.ach_biwta = False
@@ -57,6 +57,8 @@ default persistent.ach_seenitall = False # Get all 18 endings
 default persistent.ach_picture = False # Get Every Single Cutscene
 default persistent.cutscenes_seen = 0
 
+default persistent.ach_lore = False
+
 default persistent.endings_got = {
     "kristrue" : False,
     "krisgood" : False,
@@ -73,8 +75,7 @@ default persistent.endings_got = {
     "unknowntrue" : False,
     "unknowngood" : False,
     "die" : False,
-    "heartless" : False,
     "ace" : False,
     "unlikable" : False,
-    "False": False,
+    "true": False,
 }

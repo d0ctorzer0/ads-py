@@ -140,7 +140,7 @@ screen achievements():
             add "gui/achievements/biwta_locked.png"
         else:
             add "gui/achievements/biwta_unlocked.png"
-        if persistent.ach_closet == False: # this will be the lore achievement
+        if persistent.ach_lore == False: # this will be the lore achievement
             add "gui/achievements/closet_locked.png"
         else:
             add "gui/achievements/closet_locked.png"

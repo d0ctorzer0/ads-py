@@ -466,9 +466,6 @@ label END_heartless:
     e "{color=#fff}...drive you..."
     e "{color=#fff}...mad."
     python:
-        persistent.endings_got["heartless"] = True
-        if sum(persistent.endings_got.values()) == ending_count:
-            achievement.grant("ach_seenitall")
         achievement.grant("ach_heartless")
         achievement.sync()
     $ renpy.movie_cutscene("ENDCREDIT_esdeath.webm")
