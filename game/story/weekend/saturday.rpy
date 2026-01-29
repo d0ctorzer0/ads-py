@@ -1188,11 +1188,13 @@ label satunknownpos:
     if informed_about_canister == True:
         n "The CCTV is waiting for you here - you almost forgot about it."
         n "You pick it up and take it with you."
-        $ achievement.grant("ach_closet")
-        $ achievement.sync()
-        $ persistent.ach_closet = True
-        $ ach_name = "closet"
-        show screen ach_popup with easeinbottom
+        if persistent.ach_closet == False:
+            python:
+                achievement.grant("ach_closet")
+                achievement.sync()
+                persistent.ach_closet = True
+                ach_name = "closet"
+            show screen ach_popup with easeinbottom
 
     jump wander
 
