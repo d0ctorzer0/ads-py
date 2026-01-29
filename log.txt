@@ -1,14 +1,14 @@
-2026-01-29 08:17:56 UTC
+2026-01-29 08:22:08 UTC
 macOS-11.6-arm64-arm-64bit
 Ren'Py 8.3.7.25031702
 
 Early init took 0.05s
 Loading error handling took 0.04s
-Loading script took 0.27s
+Loading script took 0.29s
 Loading save slot metadata took 0.07s
 Loading persistent took 0.00s
 Running init code took 0.04s
-Loading analysis data took 0.02s
+Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.04s
 Index archives took 0.00s
@@ -16,7 +16,7 @@ Backing up script files to '/Users/ayanafridkin/Library/RenPy/backups/ads-py':
 Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.04s
+Initial gc took 0.03s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
@@ -27,9 +27,9 @@ Analyze screens took 0.01s
 Save screen analysis took 0.03s
 Prepare screens took 0.06s
 Save pyanalysis. took 0.02s
-Save bytecode. took 0.04s
+Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.37s
+Interface start took 0.40s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -43,3 +43,10 @@ Screen sizes: virtual=(1920, 1080) physical=(1440, 757) drawable=(2880, 1514)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1440, 757) drawable=(2880, 1514)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

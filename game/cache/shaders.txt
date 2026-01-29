@@ -1,23 +1,23 @@
-renpy.alpha renpy.geometry renpy.texture textshader.typewriter
-renpy.ftl
-=======
-renpy.alpha renpy.texture
-renpy.dissolve renpy.geometry
-renpy.solid
-renpy.geometry renpy.texture
-renpy.alpha renpy.geometry renpy.texture
-renpy.blur renpy.geometry
-renpy.alpha renpy.texture textshader.typewriter renpy.texture textshader.typewriter
-renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
->>>>>>> Stashed changes
-renpy.geometry renpy.texture textshader.noise textshader.typewriter
-renpy.alpha renpy.solid
-renpy.texture renpy.texture
-renpy.texture textshader.typewriter renpy.texture textshader.typewriter
 <<<<<<< Updated upstream
-renpy.geometry renpy.solid
-renpy.geometry renpy.texture textshader.typewriter
-renpy.alpha renpy.geometry renpy.solid
-renpy.dissolve renpy.dissolve
+renpy.alpha renpy.texture textshader.typewriter renpy.texture textshader.typewriter
+renpy.blur renpy.geometry
 renpy.texture textshader.typewriter textshader.noise renpy.texture textshader.typewriter textshader.noise
+renpy.solid
 renpy.texture
+renpy.geometry renpy.solid
+=======
+renpy.dissolve renpy.dissolve
+renpy.alpha renpy.geometry renpy.solid
+renpy.geometry renpy.texture
+renpy.texture textshader.typewriter renpy.texture textshader.typewriter
+>>>>>>> Stashed changes
+renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
+renpy.alpha renpy.geometry renpy.texture
+renpy.geometry renpy.texture textshader.noise textshader.typewriter
+renpy.geometry renpy.texture textshader.typewriter
+renpy.alpha renpy.solid
+renpy.alpha renpy.texture
+renpy.ftl
+renpy.alpha renpy.geometry renpy.texture textshader.typewriter
+renpy.dissolve renpy.geometry
+renpy.texture renpy.texture
