@@ -13,6 +13,13 @@ init python:
                 return False
         return True
 
+    def insurance_achievement():
+        achievement.grant("ach_insurance")
+        achievement.sync()
+        persistent.ach_insurance = True
+        ach_name = "insurance"
+        # show screen ach_popup with easeinbottom
+
 default ending_count = 18
 default cutscene_count = 44 # Massive W for drawing 44 cutscenes wtf (I've changed this text like 6 times)
 

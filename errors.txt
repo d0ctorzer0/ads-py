@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/battle.rpy", line 458: invalid syntax
-    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False and persistent.ach_picture = False:
-                                                                               ^
+File "game/dictionaries/achievements.rpy", line 21: invalid syntax
+        show screen ach_popup with easeinbottom
+              ^
 
-File "game/story/endings/battle.rpy", line 495: invalid syntax
-    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False and persistent.ach_picture = False:
-                                                                               ^
-
-Ren'Py Version: Ren'Py 8.3.6.25022803
-Wed Jan 28 19:55:47 2026
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Thu Jan 29 19:13:16 2026
