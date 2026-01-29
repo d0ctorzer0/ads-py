@@ -455,9 +455,13 @@ label END_heartless:
         if persistent.ec2 == False:
             persistent.cutscenes_seen += 1
             persistent.ec2 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     hide screen creditsfadeout with fade
     e "{color=#fff}Doctor... you will... regret this."
     e "{color=#fff}I don't think your {sc}{color=#fff}lover{/sc} will be very happy about this... development."
@@ -492,9 +496,13 @@ label continuegame:
         if persistent.ec1 == False:
             persistent.cutscenes_seen += 1
             persistent.ec1 = True
-        if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
+        python:
             achievement.grant("ach_picture")
             achievement.sync()
+            persistent.ach_picture = True
+            ach_name = "picture"
+        show screen ach_popup with easeinbottom
     hide screen creditsfadeout with fade
     # show screen pref_open # enables pause menu
     e "{color=#fff}Doctor? I'm..."

@@ -350,7 +350,7 @@ label END_esthertrue:
         if persistent.ec5 == False:
             persistent.cutscenes_seen += 1
             persistent.ec5 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()

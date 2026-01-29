@@ -247,7 +247,7 @@ label END_kristrue2:
         if persistent.kc6 == False:
             persistent.cutscenes_seen += 1
             persistent.kc6 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()

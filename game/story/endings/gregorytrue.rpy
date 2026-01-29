@@ -256,7 +256,7 @@ label END_gregtrue:
         if persistent.gc5 == False:
             persistent.cutscenes_seen += 1
             persistent.gc5 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()

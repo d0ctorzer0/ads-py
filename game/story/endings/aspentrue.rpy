@@ -253,7 +253,7 @@ label END_aspentrue2:
         if persistent.ac6 == False:
             persistent.cutscenes_seen += 1
             persistent.ac6 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()

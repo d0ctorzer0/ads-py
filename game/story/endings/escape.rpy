@@ -66,7 +66,7 @@ label escape_kris:
         if persistent.kc5 == False:
             persistent.cutscenes_seen += 1
             persistent.kc5 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -249,7 +249,7 @@ label escape_heath:
         if persistent.hc5 == False:
             persistent.cutscenes_seen += 1
             persistent.hc5 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -420,7 +420,7 @@ label escape_aspen:
         if persistent.ac5 == False:
             persistent.cutscenes_seen += 1
             persistent.ac5 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -662,7 +662,7 @@ label leave_unknown:
         if persistent.cc5 == False:
             persistent.cutscenes_seen += 1
             persistent.cc5 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -874,7 +874,7 @@ label leave_cc:
         if persistent.uc4 == False:
             persistent.cutscenes_seen += 1
             persistent.uc4 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -1042,7 +1042,7 @@ label escape_rob:
         if persistent.rc5 == False:
             persistent.cutscenes_seen += 1
             persistent.rc5 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -1271,7 +1271,7 @@ label escape_gregory:
         if persistent.gc4 == False:
             persistent.cutscenes_seen += 1
             persistent.gc4 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -1468,7 +1468,7 @@ label escape_esther:
         if persistent.ec4 == False:
             persistent.cutscenes_seen += 1
             persistent.ec4 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()

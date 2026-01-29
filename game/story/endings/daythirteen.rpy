@@ -117,7 +117,7 @@ label saveaspen:
         if persistent.ac4 == False:
             persistent.cutscenes_seen += 1
             persistent.ac4 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -208,7 +208,7 @@ label savegreg:
         if persistent.gc3 == False:
             persistent.cutscenes_seen += 1
             persistent.gc3 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -351,7 +351,7 @@ label saverob:
         if persistent.rc4 == False:
             persistent.cutscenes_seen += 1
             persistent.rc4 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -453,7 +453,7 @@ label saveccunknown:
             persistent.cutscenes_seen += 1
             persistent.cc4 = True
             persistent.uc3 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -605,7 +605,7 @@ label saveheath:
         if persistent.hc4 == False:
             persistent.cutscenes_seen += 1
             persistent.hc4 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -710,7 +710,7 @@ label savekris:
         if persistent.kc4 == False:
             persistent.cutscenes_seen += 1
             persistent.kc4 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -796,7 +796,7 @@ label saveesther:
         if persistent.ec3 == False:
             persistent.cutscenes_seen += 1
             persistent.ec3 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()

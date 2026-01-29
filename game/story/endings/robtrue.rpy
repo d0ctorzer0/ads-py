@@ -224,7 +224,7 @@ label END_robtrue:
         if persistent.rc6 == False:
             persistent.cutscenes_seen += 1
             persistent.rc6 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()

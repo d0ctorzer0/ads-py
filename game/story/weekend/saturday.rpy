@@ -87,7 +87,7 @@ label satoffice:
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
         achievement.sync()
-    if persistent.places_visited == 6:
+    if persistent.places_visited == 6 and persistent.ach_explore == False:
         $ persistent.ach_explore = True
         $ ach_name = "explore"
         show screen ach_popup with easeinbottom
@@ -116,7 +116,7 @@ label satcafe:
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
         achievement.sync()
-    if persistent.places_visited == 6:
+    if persistent.places_visited == 6 and persistent.ach_explore == False:
         $ persistent.ach_explore = True
         $ ach_name = "explore"
         show screen ach_popup with easeinbottom
@@ -161,7 +161,7 @@ label biology:
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
         achievement.sync()
-    if persistent.places_visited == 6:
+    if persistent.places_visited == 6 and persistent.ach_explore == False:
         $ persistent.ach_explore = True
         $ ach_name = "explore"
         show screen ach_popup with easeinbottom
@@ -186,7 +186,7 @@ label wheatleycameo:
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
         achievement.sync()
-    if persistent.places_visited == 6:
+    if persistent.places_visited == 6 and persistent.ach_explore == False:
         $ persistent.ach_explore = True
         $ ach_name = "explore"
         show screen ach_popup with easeinbottom
@@ -231,7 +231,7 @@ label manufacture:
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
         achievement.sync()
-    if persistent.places_visited == 6:
+    if persistent.places_visited == 6 and persistent.ach_explore == False:
         $ persistent.ach_explore = True
         $ ach_name = "explore"
         show screen ach_popup with easeinbottom
@@ -254,7 +254,7 @@ label recovery:
         if persistent.places_visited == 6:
             achievement.grant("ach_explore")
         achievement.sync()
-    if persistent.places_visited == 6:
+    if persistent.places_visited == 6 and persistent.ach_explore == False:
         $ persistent.ach_explore = True
         $ ach_name = "explore"
         show screen ach_popup with easeinbottom
@@ -768,7 +768,7 @@ label satgreg_pos:
             if persistent.gc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.gc1 = True
-        if persistent.cutscenes_seen == cutscene_count:
+        if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
             python:
                 achievement.grant("ach_picture")
                 achievement.sync()
@@ -1145,7 +1145,7 @@ label satunknownpos:
             if persistent.uc1 == False:
                 persistent.cutscenes_seen += 1
                 persistent.uc1 = True
-        if persistent.cutscenes_seen == cutscene_count:
+        if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
             python:
                 achievement.grant("ach_picture")
                 achievement.sync()

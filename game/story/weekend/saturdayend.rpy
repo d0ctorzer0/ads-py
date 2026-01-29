@@ -85,7 +85,7 @@ label satend_kris:
         if persistent.kc2 == False:
             persistent.cutscenes_seen += 1
             persistent.kc2 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -203,7 +203,7 @@ label satend_heath:
         if persistent.hc2 == False:
             persistent.cutscenes_seen += 1
             persistent.hc2 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -311,7 +311,7 @@ label satend_aspen:
         if persistent.ac2 == False:
             persistent.cutscenes_seen += 1
             persistent.ac2 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -455,7 +455,7 @@ label satend_rob:
         if persistent.rc2 == False:
             persistent.cutscenes_seen += 1
             persistent.rc2 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -526,7 +526,7 @@ label satend_cc:
         if persistent.cc2 == False:
             persistent.cutscenes_seen += 1
             persistent.cc2 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()

@@ -1,3 +1,5 @@
+
+
 init python:
     def all_achievements_unlocked():
         for i in [persistent.ach_seenitall,

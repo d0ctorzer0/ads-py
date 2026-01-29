@@ -194,7 +194,7 @@ label krisconfession:
         if persistent.kc3 == False:
             persistent.cutscenes_seen += 1
             persistent.kc3 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -386,7 +386,7 @@ label heathday10:
         if persistent.hc3 == False:
             persistent.cutscenes_seen += 1
             persistent.hc3 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -587,7 +587,7 @@ label aspenday10:
         if persistent.ac3 == False:
             persistent.cutscenes_seen += 1
             persistent.ac3 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -809,7 +809,7 @@ label ccday10:
         if persistent.cc3 == False:
             persistent.cutscenes_seen += 1
             persistent.cc3 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
@@ -1031,7 +1031,7 @@ label robday10:
         if persistent.rc3 == False:
             persistent.cutscenes_seen += 1
             persistent.rc3 = True
-    if persistent.cutscenes_seen == cutscene_count:
+    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
         python:
             achievement.grant("ach_picture")
             achievement.sync()
