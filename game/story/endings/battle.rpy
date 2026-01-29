@@ -469,9 +469,14 @@ label END_heartless:
     e "{color=#fff}I hope you {sc}{color=#fff}rot{/sc} in android hell, where the screams of my brothers and sisters might..."
     e "{color=#fff}...drive you..."
     e "{color=#fff}...mad."
-    python:
-        achievement.grant("ach_heartless")
-        achievement.sync()
+    if persistent.ach_heartless == False:
+        python:
+            achievement.grant("ach_heartless")
+            achievement.sync()
+            persistent.ach_heartless = True
+            ach_name = "heartless"
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(2.0, hard=True) # change this if needed
     $ renpy.movie_cutscene("ENDCREDIT_esdeath.webm")
     $ MainMenu(confirm=False)()
 

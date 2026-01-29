@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/dictionaries/achievements.rpy", line 21: invalid syntax
-        show screen ach_popup with easeinbottom
-              ^
+File "game/story/endings/battle.rpy", line 479: expected statement.
+    renpy.pause(4.0, hard=True);
+                               ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Thu Jan 29 19:13:16 2026
+Thu Jan 29 19:35:29 2026
