@@ -1,4 +1,5 @@
 default ach_name = "biwta"
+default showpopup = False
 
 screen achievements():
     modal True

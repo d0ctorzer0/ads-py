@@ -1,70 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/week one/secondday.rpy", line 186, in script
-    k "Why hello, and welcome back. I'm assuming your route went well yesterday if you're still here now."
-  File "game/screens.rpy", line 101, in execute
-    screen secretbendy(): # here's where the new ACH_INSURANCE achievement should be granted - when this button is clicked!
-  File "game/screens.rpy", line 101, in execute
-    screen secretbendy(): # here's where the new ACH_INSURANCE achievement should be granted - when this button is clicked!
-  File "game/screens.rpy", line 102, in execute
-    imagebutton idle "images/bendy.png" xpos 1080 ypos 520 action Play("sound", "sfx/notif.ogg"), Function(insurance_achievement), Show(ach_popup)
-  File "game/screens.rpy", line 102, in keywords
-    imagebutton idle "images/bendy.png" xpos 1080 ypos 520 action Play("sound", "sfx/notif.ogg"), Function(insurance_achievement), Show(ach_popup)
-  File "game/screens.rpy", line 102, in <module>
-    imagebutton idle "images/bendy.png" xpos 1080 ypos 520 action Play("sound", "sfx/notif.ogg"), Function(insurance_achievement), Show(ach_popup)
-NameError: name 'ach_popup' is not defined
+  File "game/story/endings/aspentrue.rpy", line 293, in script
+    python:
+  File "game/story/endings/aspentrue.rpy", line 318, in <module>
+    achivement.grant("ach_seenitall")
+NameError: name 'achivement' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/week one/secondday.rpy", line 186, in script
-    k "Why hello, and welcome back. I'm assuming your route went well yesterday if you're still here now."
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/ast.py", line 2586, in execute
-    Say.execute(self)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/ast.py", line 623, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/exports/sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/character.py", line 1471, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/character.py", line 1117, in do_display
-    display_say(who,
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/character.py", line 814, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/core.py", line 2218, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/core.py", line 2748, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/screen.py", line 480, in visit_all
-    callback(self)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/core.py", line 2748, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/screen.py", line 491, in per_interact
-    self.update()
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/display/screen.py", line 700, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 101, in execute
-    screen secretbendy(): # here's where the new ACH_INSURANCE achievement should be granted - when this button is clicked!
-  File "game/screens.rpy", line 101, in execute
-    screen secretbendy(): # here's where the new ACH_INSURANCE achievement should be granted - when this button is clicked!
-  File "game/screens.rpy", line 102, in execute
-    imagebutton idle "images/bendy.png" xpos 1080 ypos 520 action Play("sound", "sfx/notif.ogg"), Function(insurance_achievement), Show(ach_popup)
-  File "game/screens.rpy", line 102, in keywords
-    imagebutton idle "images/bendy.png" xpos 1080 ypos 520 action Play("sound", "sfx/notif.ogg"), Function(insurance_achievement), Show(ach_popup)
-  File "game/screens.rpy", line 102, in <module>
-    imagebutton idle "images/bendy.png" xpos 1080 ypos 520 action Play("sound", "sfx/notif.ogg"), Function(insurance_achievement), Show(ach_popup)
-NameError: name 'ach_popup' is not defined
+  File "game/story/endings/aspentrue.rpy", line 293, in script
+    python:
+  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/story/endings/aspentrue.rpy", line 318, in <module>
+    achivement.grant("ach_seenitall")
+NameError: name 'achivement' is not defined
 
 macOS-11.6-arm64-arm-64bit arm64
 Ren'Py 8.3.7.25031702
 Aperture Dating Simulator 1.1.0
-Thu Jan 29 19:15:50 2026
+Fri Jan 30 18:53:11 2026
