@@ -152,28 +152,24 @@ label escape_kris:
     mc "We'll make it work. It won't be easy, but..."
     mc "We'll make it work."
 
-    stop music fadeout 1.0
+    stop music fadeout 2.0
+    window hide
+    scene black with fade
 
-    if romance_points["Kris"] < 29: #tested it myself - it's 29 not 30!
-        window hide
-        show screen creditsfadeout
-        $ renpy.pause(2.0, hard=True)
-        hide screen creditsfadeout
+    if persistent.ach_krisgood == False:
         python:
             persistent.endings_got["krisgood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
+            ach_name = "krisgood"
+            showpopup = True
             achievement.grant("ach_krisgood")
-            achievement.sync()
+            persistent.ach_krisgood = True
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
+
+    if romance_points["Kris"] < 29:
         $ renpy.movie_cutscene("ENDCREDIT_kris.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Kris"] >= 29:
-        python:
-            persistent.endings_got["krisgood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
-            achievement.grant("ach_krisgood")
-            achievement.sync()
         jump END_kristrue
 
 label escape_heath:
@@ -335,28 +331,24 @@ label escape_heath:
 
     mc "Oh, don't worry. I know what I got myself into."
 
-    stop music fadeout 1.0
+    stop music fadeout 2.0
+    window hide
+    scene black with fade
 
-    if romance_points["Heath"] < 29:
-        window hide
-        show screen creditsfadeout
-        $ renpy.pause(2.0, hard=True)
-        hide screen creditsfadeout
+    if persistent.ach_heathgood == False:
         python:
             persistent.endings_got["heathgood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
+            ach_name = "heathgood"
+            showpopup = True
             achievement.grant("ach_heathgood")
-            achievement.sync()
+            persistent.ach_heathgood = True
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
+
+    if romance_points["Heath"] < 29:
         $ renpy.movie_cutscene("ENDCREDIT_heath.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Heath"] >= 29:
-        python:
-            persistent.endings_got["heathgood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
-            achievement.grant("ach_heathgood")
-            achievement.sync()
         jump END_heathtrue
 
 label escape_aspen:
@@ -659,13 +651,6 @@ label leave_unknown:
         if persistent.cc5 == False:
             persistent.cutscenes_seen += 1
             persistent.cc5 = True
-    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
-        python:
-            achievement.grant("ach_picture")
-            achievement.sync()
-            persistent.ach_picture = True
-            ach_name = "picture"
-        show screen ach_popup with easeinbottom
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     c "{color=#fff}This is... incredible. Everything's so vibrant and bright and..."
@@ -740,27 +725,24 @@ label leave_unknown:
     c "Thank you, Doctor. I..."
     c "I'm so lucky."
 
-    if romance_points["CC"] < 30:
-        stop music fadeout 1.0
-        window hide
-        show screen creditsfadeout
-        $ renpy.pause(2.0, hard=True)
-        hide screen creditsfadeout
+    stop music fadeout 2.0
+    window hide
+    scene black with fade
+
+    if persistent.ach_ccgood == False:
         python:
             persistent.endings_got["ccgood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
+            ach_name = "ccgood"
+            showpopup = True
             achievement.grant("ach_ccgood")
-            achievement.sync()
+            persistent.ach_ccgood = True
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
+
+    if romance_points["CC"] < 30:
         $ renpy.movie_cutscene("ENDCREDIT_cc.webm")
         $ MainMenu(confirm=False)()
     if romance_points["CC"] >= 30:
-        python:
-            persistent.endings_got["ccgood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
-            achievement.grant("ach_ccgood")
-            achievement.sync()
         jump END_cctrue
 
 label leave_cc:
@@ -871,13 +853,6 @@ label leave_cc:
         if persistent.uc4 == False:
             persistent.cutscenes_seen += 1
             persistent.uc4 = True
-    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
-        python:
-            achievement.grant("ach_picture")
-            achievement.sync()
-            persistent.ach_picture = True
-            ach_name = "picture"
-        show screen ach_popup with easeinbottom
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     ry "{color=#fff}What the..."
@@ -951,28 +926,25 @@ label leave_cc:
     ry "Good. I like it out here."
     ry "With you."
 
-    if romance_points["???"] < 15:
-        stop music fadeout 1.0
-        window hide
-        show screen creditsfadeout
-        $ renpy.pause(2.0, hard=True)
-        hide screen creditsfadeout
+    stop music fadeout 2.0
+    window hide
+    scene black with fade
+
+    if persistent.ach_unknowngood == False:
         python:
             persistent.endings_got["unknowngood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
+            ach_name = "unknowngood"
+            showpopup = True
             achievement.grant("ach_unknowngood")
-            achievement.sync()
+            persistent.ach_unknowngood = True
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
+
+    if romance_points["???"] < 15:
         $ renpy.movie_cutscene("ENDCREDIT_unknown.webm")
         $ MainMenu(confirm=False)()
     if romance_points["???"] >= 15:
-        python:
-            persistent.endings_got["unknowngood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
-            achievement.grant("ach_unknowngood")
-            achievement.sync()
-        jump END_unknowntrue    
+        jump END_unknowntrue
 
 label escape_rob:
     scene stairs with fade
@@ -1039,13 +1011,6 @@ label escape_rob:
         if persistent.rc5 == False:
             persistent.cutscenes_seen += 1
             persistent.rc5 = True
-    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
-        python:
-            achievement.grant("ach_picture")
-            achievement.sync()
-            persistent.ach_picture = True
-            ach_name = "picture"
-        show screen ach_popup with easeinbottom
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     
@@ -1138,28 +1103,25 @@ label escape_rob:
     r "I'm glad you're here."
     r "I'm glad we met."
 
-    if romance_points["Rob"] < 29:
-        stop music fadeout 1.0
-        window hide
-        show screen creditsfadeout
-        $ renpy.pause(2.0, hard=True)
-        hide screen creditsfadeout
+    stop music fadeout 2.0
+    window hide
+    scene black with fade
+
+    if persistent.ach_robgood == False:
         python:
             persistent.endings_got["robgood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
+            ach_name = "robgood"
+            showpopup = True
             achievement.grant("ach_robgood")
-            achievement.sync()
+            persistent.ach_robgood = True
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
+
+    if romance_points["Rob"] < 29:
         $ renpy.movie_cutscene("ENDCREDIT_rob.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Rob"] >= 29:
-        python:
-            persistent.endings_got["robgood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
-            achievement.grant("ach_robgood")
-            achievement.sync()
-        jump END_robtrue  
+        jump END_robtrue
 
 label escape_gregory:
     scene stairs with fade
@@ -1268,13 +1230,6 @@ label escape_gregory:
         if persistent.gc4 == False:
             persistent.cutscenes_seen += 1
             persistent.gc4 = True
-    if persistent.cutscenes_seen == cutscene_count and persistent.ach_picture == False:
-        python:
-            achievement.grant("ach_picture")
-            achievement.sync()
-            persistent.ach_picture = True
-            ach_name = "picture"
-        show screen ach_popup with easeinbottom
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
     g1cg "{color=#fff}Guys! Oh my god, look at how vibrant the sky is!"
@@ -1372,28 +1327,26 @@ label escape_gregory:
     g3 "And pretty."
 
     mc "Haha. Thank you, guys."
-    if romance_points["Greg"] < 21:
-        stop music fadeout 1.0
-        window hide
-        show screen creditsfadeout
-        $ renpy.pause(2.0, hard=True)
-        hide screen creditsfadeout
+    
+    stop music fadeout 2.0
+    window hide
+    scene black with fade
+
+    if persistent.ach_greggood == False:
         python:
             persistent.endings_got["greggood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
+            ach_name = "greggood"
+            showpopup = True
             achievement.grant("ach_greggood")
-            achievement.sync()
+            persistent.ach_greggood = True
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
+
+    if romance_points["Greg"] < 21:
         $ renpy.movie_cutscene("ENDCREDIT_greg.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Greg"] >= 21:
-        python:
-            persistent.endings_got["greggood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
-            achievement.grant("ach_greggood")
-            achievement.sync()
-        jump END_gregtrue 
+        jump END_gregtrue
 
 label escape_esther:
     scene stairs with fade

@@ -252,17 +252,47 @@ label END_robtrue:
     rcg "{color=#fff}This was everything I coulda hoped for..."
     rcg "{color=#fff}And more."
     stop music fadeout 2.0
-    window auto
-    show screen creditsfadeout with fade
-    $ renpy.pause(2.0, hard=True)
-    hide screen creditsfadeout
+    window hide
+    scene black with fade
     python:
-        persistent.endings_got["robtrue"] = True
+        showpopup = False
+
+        # These are arranged in order of priority. Lowest priority will be overwritten
+        # by higher priority, so if multiple achievements are gained, only the highest
+        # priority will show.
+
+        if persistent.ach_robtrue == False:
+            persistent.endings_got["robtrue"] = True
+            ach_name = "robtrue"
+            showpopup = True
+            achievement.grant("ach_robtrue")
+            persistent.ach_robtrue = True
+
+        if persistent.endings_got["kristrue"] and persistent.endings_got["heathtrue"] and persistent.endings_got["robtrue"] and persistent.endings_got["cctrue"] and persistent.endings_got["robtrue"] and persistent.endings_got["gregtrue"] and persistent.endings_got["unknowntrue"]:
+            if persistent.ach_ultrobo == False:
+                ach_name = "ultrobo"
+                showpopup = True
+                achievement.grant("ach_ultrobo")
+                persistent.ach_ultrobo = True
+        
         if sum(persistent.endings_got.values()) == ending_count:
-            achievement.grant("ach_seenitall")
-        if persistent.endings_got["kristrue"] and persistent.endings_got["heathtrue"] and persistent.endings_got["aspentrue"] and persistent.endings_got["cctrue"] and persistent.endings_got["robtrue"] and persistent.endings_got["gregtrue"] and persistent.endings_got["unknowntrue"]:
-            achievement.grant("ach_ultrobo")
-        achievement.grant("ach_robtrue")
+            if persistent.ach_seenitall == False:
+                ach_name = "seenitall"
+                showpopup = True
+                achievement.grant("ach_seenitall")
+                persistent.ach_seenitall = True
+        
+        if all_achievements_unlocked():
+            if persistent.ach_lore == False:
+                ach_name = "lore"
+                showpopup = True
+                achievement.grant("ach_lore")
+                persistent.ach_lore = True
+
         achievement.sync()
+
+    if showpopup:
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
     $ renpy.movie_cutscene("ENDCREDIT_rob.webm")
     $ MainMenu(confirm=False)()

@@ -388,22 +388,41 @@ label END_esthertrue:
     mccut "{color=#fff}It's okay, Miss Esther."
     e "{color=#fff}Please."
     eold "{color=#fff}Call me Esther."
-    window auto
-    hide screen cuttextbox
-    scene black with fade
-    $ cutscenetextbox = False
-    $ renpy.pause(2.0, hard=True)
-
     stop music fadeout 2.0
     window hide
-    show screen creditsfadeout with fade
-    $ renpy.pause(2.0, hard=True)
-    hide screen creditsfadeout
+    scene black with fade
     python:
-        persistent.endings_got["true"] = True
+        showpopup = False
+
+        # These are arranged in order of priority. Lowest priority will be overwritten
+        # by higher priority, so if multiple achievements are gained, only the highest
+        # priority will show.
+
+        if persistent.ach_true == False:
+            persistent.endings_got["true"] = True
+            ach_name = "true"
+            showpopup = True
+            achievement.grant("ach_true")
+            persistent.ach_true = True
+        
         if sum(persistent.endings_got.values()) == ending_count:
-            achievement.grant("ach_seenitall")
-        achievement.grant("ach_true")
+            if persistent.ach_seenitall == False:
+                ach_name = "seenitall"
+                showpopup = True
+                achievement.grant("ach_seenitall")
+                persistent.ach_seenitall = True
+        
+        if all_achievements_unlocked():
+            if persistent.ach_lore == False:
+                ach_name = "lore"
+                showpopup = True
+                achievement.grant("ach_lore")
+                persistent.ach_lore = True
+
         achievement.sync()
+
+    if showpopup:
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
     $ renpy.movie_cutscene("ENDCREDIT_esther.webm")
     $ MainMenu(confirm=False)()
