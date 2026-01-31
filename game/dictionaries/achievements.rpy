@@ -1,5 +1,3 @@
-
-
 init python:
     def all_achievements_unlocked():
         for i in [persistent.ach_seenitall,
@@ -19,6 +17,9 @@ init python:
         persistent.ach_insurance = True
         ach_name = "insurance"
         # show screen ach_popup with easeinbottom
+
+default persistent.achievement_count = 0
+default max_ach_count = 28 # NOT including lore
 
 default ending_count = 18
 default cutscene_count = 44 # Massive W for drawing 44 cutscenes wtf (I've changed this text like 6 times)

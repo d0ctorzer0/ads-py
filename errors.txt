@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story/endings/battle.rpy", line 479: expected statement.
-    renpy.pause(4.0, hard=True);
-                               ^
+File "game/dictionaries/achievements.rpy", line 22: expected expression
+    default max_ach_count = 
+                            ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Thu Jan 29 19:35:29 2026
+Sun Feb  1 10:55:24 2026

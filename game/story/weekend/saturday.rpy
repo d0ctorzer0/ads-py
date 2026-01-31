@@ -31,10 +31,19 @@ label day6:
 
     # BUT I WANT THEM ALL! ACHIEVEMENT
     if min([romance_points["Kris"], romance_points["Heath"], romance_points["Aspen"], romance_points["CC"], romance_points["Rob"]]) >= 10 and persistent.ach_biwta == False:
-        $ achievement.grant("ach_biwta")
-        $ achievement.sync()
-        $ persistent.ach_biwta = True
-        $ ach_name = "biwta"
+        python:
+            achievement.grant("ach_biwta")
+            achievement.sync()
+            persistent.ach_biwta = True
+            ach_name = "biwta"
+
+            if all_achievements_unlocked():
+                if persistent.ach_lore == False:
+                    ach_name = "lore"
+                    showpopup = True
+                    achievement.grant("ach_lore")
+                    persistent.ach_lore = True
+
         show screen ach_popup with easeinbottom
 
     n "You wake up at 11:00 today. No need to wake up early."
