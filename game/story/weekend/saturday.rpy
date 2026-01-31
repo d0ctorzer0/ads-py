@@ -1115,6 +1115,13 @@ label satunknownpos:
 
         mc "Thanks."
         n "You set the CCTV outside for now."
+        if persistent.ach_closet == False:
+            python:
+                achievement.grant("ach_closet")
+                achievement.sync()
+                persistent.ach_closet = True
+                ach_name = "closet"
+            show screen ach_popup with easeinbottom
     if informed_about_canister == False:
         n "You look around the room again. The shelf catches your eye."
     
@@ -1183,18 +1190,13 @@ label satunknownpos:
     show u look
     u "Ah, no, I understand. Have a... good day, Doc. Thanks again for stopping in. And talking to me."
 
+    scene hall with fade
+
     n "You leave his room and dust yourself off."
 
     if informed_about_canister == True:
         n "The CCTV is waiting for you here - you almost forgot about it."
         n "You pick it up and take it with you."
-        if persistent.ach_closet == False:
-            python:
-                achievement.grant("ach_closet")
-                achievement.sync()
-                persistent.ach_closet = True
-                ach_name = "closet"
-            show screen ach_popup with easeinbottom
 
     jump wander
 

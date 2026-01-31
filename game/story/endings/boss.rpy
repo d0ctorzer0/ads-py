@@ -286,11 +286,31 @@ label END_unlikable:
 
 label battleskip:
 
-    $ achievement.grant("ach_armor")
-    $ achievement.sync()
-    $ persistent.ach_armor = True
-    $ ach_name = "armor"
-    show screen ach_popup with easeinbottom
+    python:
+        showpopup = False
+
+        # These are arranged in order of priority. Lowest priority will be overwritten
+        # by higher priority, so if multiple achievements are gained, only the highest
+        # priority will show.
+
+        if persistent.ach_armor == False:
+            persistent.endings_got["armor"] = True
+            ach_name = "armor"
+            showpopup = True
+            achievement.grant("ach_armor")
+            persistent.ach_armor = True
+        
+        if all_achievements_unlocked():
+            if persistent.ach_lore == False:
+                ach_name = "lore"
+                showpopup = True
+                achievement.grant("ach_lore")
+                persistent.ach_lore = True
+
+        achievement.sync()
+
+    if showpopup:
+        show screen ach_popup with easeinbottom
 
     show e look
     e "I-I..."

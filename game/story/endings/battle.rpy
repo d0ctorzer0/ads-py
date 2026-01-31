@@ -413,13 +413,49 @@ label END_mcdeath:
     $ renpy.pause(4.0, hard=True)
     hide screen esther_win2 with easeouttop
     show screen creditsfadeout with fade
-    $ renpy.pause(3.0, hard=True)
+    scene black with fade
+    hide screen main
     python:
-        persistent.endings_got["die"] = True
+        showpopup = False
+
+        # These are arranged in order of priority. Lowest priority will be overwritten
+        # by higher priority, so if multiple achievements are gained, only the highest
+        # priority will show.
+
+        if persistent.ach_ohno == False:
+            persistent.endings_got["die"] = True
+            ach_name = "ohno"
+            showpopup = True
+            achievement.grant("ach_ohno")
+            persistent.ach_ohno = True
+        
         if sum(persistent.endings_got.values()) == ending_count:
-            achievement.grant("ach_seenitall")
-        achievement.grant("ach_ohno")
+            if persistent.ach_seenitall == False:
+                ach_name = "seenitall"
+                showpopup = True
+                achievement.grant("ach_seenitall")
+                persistent.ach_seenitall = True
+        
+        if all_achievements_unlocked():
+            if persistent.ach_lore == False:
+                ach_name = "lore"
+                showpopup = True
+                achievement.grant("ach_lore")
+                persistent.ach_lore = True
+
         achievement.sync()
+
+    if showpopup:
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
+    python:
+        preferences.afm_enable = False
+        renpy.set_style_preference("text", "basic")
+        config.allow_skipping = True
+        renpy.stop_skipping()
+        terminaltext = False
+        cutscenetextbox = True
+        config.rollback_enabled = True
     $ renpy.movie_cutscene("ENDCREDIT_mcdeath.webm")
     $ config.allow_skipping = True
     hide screen disable_Lmouse
@@ -469,16 +505,21 @@ label END_heartless:
     e "{color=#fff}I hope you {sc}{color=#fff}rot{/sc} in android hell, where the screams of my brothers and sisters might..."
     e "{color=#fff}...drive you..."
     e "{color=#fff}...mad."
+    hide screen cuttextbox
+    $ battle = False
+    window auto
+    scene black with fade
+    $ cutscenetextbox = False
     if persistent.ach_heartless == False:
         python:
+            persistent.endings_got["heartless"] = True
             achievement.grant("ach_heartless")
             achievement.sync()
             persistent.ach_heartless = True
             ach_name = "heartless"
         show screen ach_popup with easeinbottom
-        $ renpy.pause(2.0, hard=True) # change this if needed
-    $ renpy.movie_cutscene("ENDCREDIT_esdeath.webm")
-    $ MainMenu(confirm=False)()
+
+    jump day12end
 
 label continuegame:
     # this whole thing is just disabling battle, enabling cutscene
@@ -526,6 +567,12 @@ label continuegame:
     window auto
     scene black with fade
     $ cutscenetextbox = False
-    $ achievement.grant("ach_unionize")
-    $ achievement.sync()
+    if persistent.ach_unionize == False:
+        python:
+            persistent.endings_got["unionize"] = True
+            achievement.grant("ach_unionize")
+            achievement.sync()
+            persistent.ach_unionize = True
+            ach_name = "unionize"
+        show screen ach_popup with easeinbottom
     jump day12end

@@ -1,26 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story/endings/aspentrue.rpy", line 293, in script
-    python:
-  File "game/story/endings/aspentrue.rpy", line 318, in <module>
-    achivement.grant("ach_seenitall")
-NameError: name 'achivement' is not defined
+  File "game/story/weekend/saturday.rpy", line 1186, in script
+    scene hall with Fade
+Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x0000000003932dc0> () {'old_widget': <renpy.display.layout.Fixed object at 0x0000000009520ca0>, 'new_widget': <renpy.display.layout.Fixed object at 0x0000000009520670>}>
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/endings/aspentrue.rpy", line 293, in script
-    python:
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/ast.py", line 834, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/ayanafridkin/Downloads/renpy-8.3.7-sdk/renpy/python.py", line 1187, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/story/endings/aspentrue.rpy", line 318, in <module>
-    achivement.grant("ach_seenitall")
-NameError: name 'achivement' is not defined
+  File "game/story/weekend/saturday.rpy", line 1186, in script
+    scene hall with Fade
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1374, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\statementexports.py", line 257, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 1581, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2669, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2583, in instantiate_transition
+    raise Exception("Expected transition to return a displayable, not a {!r}".format(trans))
+Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x0000000003932dc0> () {'old_widget': <renpy.display.layout.Fixed object at 0x0000000009520ca0>, 'new_widget': <renpy.display.layout.Fixed object at 0x0000000009520670>}>
 
-macOS-11.6-arm64-arm-64bit arm64
-Ren'Py 8.3.7.25031702
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.6.25022803
 Aperture Dating Simulator 1.1.0
-Fri Jan 30 18:53:11 2026
+Sat Jan 31 00:05:40 2026

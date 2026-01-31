@@ -10,7 +10,7 @@ screen achievements():
     vpgrid:
 
         cols 2
-        rows 15
+        rows 16
         spacing 55
         xmargin 310
         bottom_margin 130
@@ -101,50 +101,57 @@ screen achievements():
         else:
             add "gui/achievements/amoh_unlocked.png"
 
-        if persistent.ach_ohno == False:
-            add "gui/achievements/ohno_locked.png"
+        if persistent.ach_unionize == False:
+            add "gui/achievements/unionize_locked.png"
         else:
-            add "gui/achievements/ohno_unlocked.png"
+            add "gui/achievements/unionize_unlocked.png"
         if persistent.ach_heartless == False:
             add "gui/achievements/heartless_locked.png"
         else:
             add "gui/achievements/heartless_unlocked.png"
 
+        if persistent.ach_ohno == False:
+            add "gui/achievements/ohno_locked.png"
+        else:
+            add "gui/achievements/ohno_unlocked.png"
         if persistent.ach_armor == False:
             add "gui/achievements/armor_locked.png"
         else:
             add "gui/achievements/armor_unlocked.png"
+
         if persistent.ach_seenitall == False:
             add "gui/achievements/seenitall_locked.png"
         else:
             add "gui/achievements/seenitall_unlocked.png"
-
         if persistent.ach_explore == False:
             add "gui/achievements/explore_locked.png"
         else:
             add "gui/achievements/explore_unlocked.png"
+        
         if persistent.ach_closet == False:
             add "gui/achievements/closet_locked.png"
         else:
             add "gui/achievements/closet_unlocked.png"
-
         if persistent.ach_insurance == False:
             add "gui/achievements/insurance_locked.png"
         else:
             add "gui/achievements/insurance_unlocked.png"
+        
         if persistent.ach_picture == False:
             add "gui/achievements/picture_locked.png"
         else:
             add "gui/achievements/picture_unlocked.png"
-
         if persistent.ach_biwta == False:
             add "gui/achievements/biwta_locked.png"
         else:
             add "gui/achievements/biwta_unlocked.png"
+        
         if persistent.ach_lore == False: # this will be the lore achievement
-            add "gui/achievements/closet_locked.png"
+            add "gui/achievements/lore_locked.png"
         else:
-            add "gui/achievements/closet_locked.png"
+            add "gui/achievements/lore_unlocked.png"
+        add "gui/achievements/empty.png"
+        
     
     add "gui/achievements/folder_overlay.png"
 
