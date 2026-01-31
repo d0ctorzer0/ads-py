@@ -511,27 +511,24 @@ label escape_aspen:
 
     mc "Don't worry, Aspen. I'm not going anywhere."
 
-    if romance_points["Aspen"] < 28:
-        stop music fadeout 1.0
-        window hide
-        show screen creditsfadeout
-        $ renpy.pause(2.0, hard=True)
-        hide screen creditsfadeout
+    stop music fadeout 2.0
+    window hide
+    scene black with fade
+
+    if persistent.ach_aspengood == False:
         python:
             persistent.endings_got["aspengood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
+            ach_name = "aspengood"
+            showpopup = True
             achievement.grant("ach_aspengood")
-            achievement.sync()
+            persistent.ach_aspengood = True
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
+
+    if romance_points["Aspen"] < 28:
         $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")
         $ MainMenu(confirm=False)()
     if romance_points["Aspen"] >= 28:
-        python:
-            persistent.endings_got["aspengood"] = True
-            if sum(persistent.endings_got.values()) == ending_count:
-                achievement.grant("ach_seenitall")
-            achievement.grant("ach_aspengood")
-            achievement.sync()
         jump END_aspentrue
 
 

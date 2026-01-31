@@ -287,9 +287,7 @@ label END_aspentrue2:
     acg "{color=#fff}This is perfect."
     stop music fadeout 2.0
     window hide
-    show screen creditsfadeout with fade
-    $ renpy.pause(2.0, hard=True)
-    hide screen creditsfadeout
+    scene black with fade
     python:
         showpopup = False
 
@@ -329,6 +327,6 @@ label END_aspentrue2:
 
     if showpopup:
         show screen ach_popup with easeinbottom
-        $ renpy.pause(2.0, hard=True)
+        $ renpy.pause(4.0, hard=True)
     $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")
     $ MainMenu(confirm=False)()
