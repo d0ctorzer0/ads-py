@@ -150,10 +150,14 @@ label estherend_begin:
     n "You'll definitely be back to visit."
 
     # give ace achievement even if they get this ending first
-    python:
-        persistent.endings_got["ace"] = True
-        achievement.grant("ach_amoh")
-        achievement.sync()
+    if persistent.ach_amoh == False:
+        python:
+            persistent.endings_got["ace"] = True
+            achievement.grant("ach_amoh")
+            achievement.sync()
+            persistent.ach_amoh = True
+            ach_name = "amoh"
+        show screen ach_popup with easeinbottom
 
     play music fourteen
     scene mcroom day with fade
@@ -192,17 +196,42 @@ label END_ace:
     window hide
     stop music fadeout 2.0
     stop music1 fadeout 2.0
-    show screen creditsfadeout with fade
-    $ renpy.pause(2.0, hard=True)
-    hide screen creditsfadeout
+    scene black with fade
     python:
-        persistent.endings_got["ace"] = True
+        showpopup = False
+
+        # These are arranged in order of priority. Lowest priority will be overwritten
+        # by higher priority, so if multiple achievements are gained, only the highest
+        # priority will show.
+
+        if persistent.ach_amoh == False:
+            persistent.endings_got["ace"] = True
+            ach_name = "amoh"
+            showpopup = True
+            achievement.grant("ach_amoh")
+            persistent.ach_amoh = True
+        
         if sum(persistent.endings_got.values()) == ending_count:
-            achievement.grant("ach_seenitall")
-        achievement.grant("ach_amoh")
+            if persistent.ach_seenitall == False:
+                ach_name = "seenitall"
+                showpopup = True
+                achievement.grant("ach_seenitall")
+                persistent.ach_seenitall = True
+        
+        if all_achievements_unlocked():
+            if persistent.ach_lore == False:
+                ach_name = "lore"
+                showpopup = True
+                achievement.grant("ach_lore")
+                persistent.ach_lore = True
+
         achievement.sync()
-        renpy.movie_cutscene("ENDCREDIT_ace.webm")
-        MainMenu(confirm=False)()
+
+    if showpopup:
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
+    $ renpy.movie_cutscene("ENDCREDIT_ace.webm")
+    $ MainMenu(confirm=False)()
 
 label END_unlikable:
     show e
@@ -215,20 +244,43 @@ label END_unlikable:
     n "Regardless, you can't wait to get back down to Manufacturing..."
     n "...where the cores don't talk back to you."
 
+    window hide
     stop music fadeout 2.0
     stop music1 fadeout 2.0
-    window hide
-    show screen creditsfadeout with fade
-    $ renpy.pause(2.0, hard=True)
-    hide screen creditsfadeout
-
+    scene black with fade
     python:
-        persistent.endings_got["unlikable"] = True
+        showpopup = False
+
+        # These are arranged in order of priority. Lowest priority will be overwritten
+        # by higher priority, so if multiple achievements are gained, only the highest
+        # priority will show.
+
+        if persistent.ach_unlikable == False:
+            persistent.endings_got["unlikable"] = True
+            ach_name = "unlikable"
+            showpopup = True
+            achievement.grant("ach_unlikable")
+            persistent.ach_unlikable = True
+        
         if sum(persistent.endings_got.values()) == ending_count:
-            achievement.grant("ach_seenitall")
-        achievement.grant("ach_unlikable")
-        achievement.sync() 
-    
+            if persistent.ach_seenitall == False:
+                ach_name = "seenitall"
+                showpopup = True
+                achievement.grant("ach_seenitall")
+                persistent.ach_seenitall = True
+        
+        if all_achievements_unlocked():
+            if persistent.ach_lore == False:
+                ach_name = "lore"
+                showpopup = True
+                achievement.grant("ach_lore")
+                persistent.ach_lore = True
+
+        achievement.sync()
+
+    if showpopup:
+        show screen ach_popup with easeinbottom
+        $ renpy.pause(4.0, hard=True)
     $ renpy.movie_cutscene("ENDCREDIT_unlikable.webm")
     $ MainMenu(confirm=False)()
 
