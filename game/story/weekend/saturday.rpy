@@ -95,12 +95,13 @@ label satoffice:
         if persistent.visited["office"] == False:
             persistent.places_visited += 1
             persistent.visited["office"] = True
-        if persistent.places_visited == 6:
-            achievement.grant("ach_explore")
-        achievement.sync()
     if persistent.places_visited == 6 and persistent.ach_explore == False:
-        $ persistent.ach_explore = True
-        $ ach_name = "explore"
+        python:
+            persistent.ach_explore = True
+            achievement.grant("ach_explore")
+            achievement.sync()
+            ach_name = "explore"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     scene door3 no outoforder with fade
     $ audio_crossFade(1, "music/eleven.ogg") 
@@ -124,12 +125,13 @@ label satcafe:
         if persistent.visited["cafe"] == False:
             persistent.places_visited += 1
             persistent.visited["cafe"] = True
-        if persistent.places_visited == 6:
-            achievement.grant("ach_explore")
-        achievement.sync()
     if persistent.places_visited == 6 and persistent.ach_explore == False:
-        $ persistent.ach_explore = True
-        $ ach_name = "explore"
+        python:
+            persistent.ach_explore = True
+            achievement.grant("ach_explore")
+            achievement.sync()
+            ach_name = "explore"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     scene cafe with fade
     n "You enter the cafeteria. You haven't actually been in here yet."
@@ -169,12 +171,13 @@ label biology:
         if persistent.visited["biology"] == False:
             persistent.places_visited += 1
             persistent.visited["biology"] = True
-        if persistent.places_visited == 6:
-            achievement.grant("ach_explore")
-        achievement.sync()
     if persistent.places_visited == 6 and persistent.ach_explore == False:
-        $ persistent.ach_explore = True
-        $ ach_name = "explore"
+        python:
+            persistent.ach_explore = True
+            achievement.grant("ach_explore")
+            achievement.sync()
+            ach_name = "explore"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     scene door3 cool with fade
     n "You come up to the door to Biology."
@@ -194,12 +197,13 @@ label wheatleycameo:
         if persistent.visited["wheatley"] == False:
             persistent.places_visited += 1
             persistent.visited["wheatley"] = True
-        if persistent.places_visited == 6:
-            achievement.grant("ach_explore")
-        achievement.sync()
     if persistent.places_visited == 6 and persistent.ach_explore == False:
-        $ persistent.ach_explore = True
-        $ ach_name = "explore"
+        python:
+            persistent.ach_explore = True
+            achievement.grant("ach_explore")
+            achievement.sync()
+            ach_name = "explore"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     scene door2 cool with fade
     n "You come up to the large door that reads \"AUTHORIZED PERSONNEL ONLY\"."
@@ -239,12 +243,13 @@ label manufacture:
         if persistent.visited["manufacture"] == False:
             persistent.places_visited += 1
             persistent.visited["manufacture"] = True
-        if persistent.places_visited == 6:
-            achievement.grant("ach_explore")
-        achievement.sync()
     if persistent.places_visited == 6 and persistent.ach_explore == False:
-        $ persistent.ach_explore = True
-        $ ach_name = "explore"
+        python:
+            persistent.ach_explore = True
+            achievement.grant("ach_explore")
+            achievement.sync()
+            ach_name = "explore"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     scene door2 with fade
     n "You come up to the door that you assume leads to your old workplace."
@@ -262,12 +267,13 @@ label recovery:
         if persistent.visited["recovery"] == False:
             persistent.places_visited += 1
             persistent.visited["recovery"] = True
-        if persistent.places_visited == 6:
-            achievement.grant("ach_explore")
-        achievement.sync()
     if persistent.places_visited == 6 and persistent.ach_explore == False:
-        $ persistent.ach_explore = True
-        $ ach_name = "explore"
+        python:
+            persistent.ach_explore = True
+            achievement.grant("ach_explore")
+            achievement.sync()
+            ach_name = "explore"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     scene door3 warm with fade
     n "You come up to the door that reads \"STASIS RECOVERY BAY\" on a small plaque next to it."
