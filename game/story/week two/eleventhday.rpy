@@ -70,6 +70,7 @@ label day11:
 
 label krisday11:
     scene krisroom with fade
+    show screen secretbendy
     $ audio_crossFade(2, "music/two.ogg")
     n "You enter Kris' room without Miss Esther behind you. It still feels a little strange."
 
@@ -128,6 +129,7 @@ label romancekrisday11:
 
     n "You finish checking Kris off your list and leave the room."
 
+    hide screen secretbendy
     jump heathday11
 
 label p_krisday11:
@@ -163,6 +165,7 @@ label p_krisday11:
 
     n "You finish checking Kris off your list and leave the room."
 
+    hide screen secretbendy
     jump heathday11
 
 label n_krisday11:
@@ -186,6 +189,7 @@ label n_krisday11:
 
     n "You finish checking Kris off your list and leave the room."
 
+    hide screen secretbendy
     jump heathday11
 
 label heathday11:

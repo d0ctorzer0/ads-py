@@ -301,6 +301,7 @@ label satkris:
         v_kris = True
         cores_visited += 1
     scene krisroom with fade
+    show screen secretbendy
     n "You enter into the conference room. Kris is reading something on his screen, and the usual stock market graph is gone."
 
     mc "How are you, Kris?"
@@ -380,6 +381,7 @@ label satkrispos_pos:
 
     n "You leave the conference room."
 
+    hide screen secretbendy
     jump wander
 
 label satkrispos_neg:
@@ -397,6 +399,7 @@ label satkrispos_neg:
 
     n "You leave the conference room."
 
+    hide screen secretbendy
     jump wander
 
 label satkrisneg:
@@ -418,6 +421,7 @@ label satkrisneg:
 
     n "You leave the conference room."
 
+    hide screen secretbendy
     jump wander
 
 # HEATH

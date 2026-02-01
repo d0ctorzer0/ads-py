@@ -56,6 +56,7 @@ label day8:
 label krisday8:
     $ audio_crossFade(2, "music/two.ogg")
     scene krisroom with fade
+    show screen secretbendy
     n "You enter into the conference room. It seems everything is back to normal."
     n "The screen is lit up once more, and Kris is back to watching it."
 
@@ -144,6 +145,7 @@ label p_krisday8neutral:
 
     n "You finish your checklist and leave the conference room."
 
+    hide screen secretbendy
     jump heathday8
 
 label p_krisday8positive:
@@ -176,6 +178,7 @@ label p_krisday8positive:
 
     n "You finish your checklist and leave the conference room."
 
+    hide screen secretbendy
     jump heathday8
 
 label n_krisday8:
@@ -220,6 +223,7 @@ label n_krisday8:
 
     n "You finish your checklist and leave the conference room."
 
+    hide screen secretbendy
     jump heathday8
 
 label heathday8:

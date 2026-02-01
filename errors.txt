@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/dictionaries/achievements.rpy", line 22: expected expression
-    default max_ach_count = 
-                            ^
+File "game/story/week one/thirddayemail.rpy", line 21: 'Function' is not a keyword argument or valid child of the textbutton statement.
+    textbutton "    from: [[ BLOCKED ]\n        [[ HIGH SCAM LIKELIHOOD ]                                                           " action Jump("emailscam")Function(insurance_achievement), SetVariable("ach_name", "insurance"), If(persistent.ach_insurance, false=Show("ach_popup", transition=easeinbottom)), If(persistent.ach_insurance, false=SetVariable("persistent.achievement_count", persistent.achievement_count+1))
+                                                                                                                                                                      ^
 
-Ren'Py Version: Ren'Py 8.3.7.25031702
-Sun Feb  1 10:55:24 2026
+Ren'Py Version: Ren'Py 8.3.6.25022803
+Sun Feb  1 13:12:33 2026

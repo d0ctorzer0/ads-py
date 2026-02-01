@@ -241,6 +241,7 @@ label emailreport2:
     call screen emailrep2
 
 label emailscam:
+    $ give_badidea = True
     scene blankemail
     call screen emailscamtext
 

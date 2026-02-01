@@ -228,6 +228,7 @@ label krisacceptance:
     $ cutscenechoice = False
     hide screen cuttextbox
     scene krisroom with fade
+    show screen secretbendy
     $ cutscenetextbox = False
     show k look with easeinright
     k "Well then. Ahem."
@@ -301,18 +302,21 @@ label krisacceptance:
             k "Ahem. Have a good night."
             mc "You too, Kris."
             n "You finish your checklist quickly and leave the conference room, and Kris, behind."
+            hide screen secretbendy
             jump day10end
         "(Say goodbye.)":
             mc "Goodbye, Kris. I'll see you tomorrow."
             show k
             k "Yes. I'll see you tomorrow, Doctor."
             n "You finish your checklist quickly and leave the conference room, and Kris, behind."
+            hide screen secretbendy
             jump day10end
 
 label krisrejection:
     $ cutscenechoice = False
     hide screen cuttextbox
     scene krisroom with fade
+    show screen secretbendy
     $ cutscenetextbox = False
     show k look with easeinright
     k "Well then. Ahem. I'm... sorry for assuming things, Doctor."
@@ -353,6 +357,8 @@ label krisrejection:
 
     mc "It's okay, Kris."
     n "You finish your checklist quickly and leave the conference room, and Kris, behind."
+
+    hide screen secretbendy
     jump day10end
 
 label heathday10:

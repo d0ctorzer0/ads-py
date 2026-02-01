@@ -132,8 +132,8 @@ label krisday3:
 
     e "Perfect. You should be on your way, then."
 
-    scene krisroom
-    with fade
+    scene krisroom with fade
+    show screen secretbendy
     $ audio_crossFade(2, "music/two.ogg")
 
     n "You enter the conference room to see Kris staring at the screen. You can't understand what's happening, but that's his job, not yours."
@@ -230,6 +230,7 @@ label krisday3good:
         k "{color=#fff}The company now... it's different. Mr. Johnson was fascinated with us. Miss Caroline is not."
         hide screen cuttextbox
         scene krisroom with fade
+        show screen secretbendy
         show k
         $ cutscenetextbox = False
         if persistent.advcap == True:
@@ -267,6 +268,7 @@ label krisday3goodpt2:
 
     n "You finish your checklist, and leave the conference room to head back to your office."
 
+    hide screen secretbendy
     jump day3end
 
 label krisday3bad:
@@ -283,6 +285,7 @@ label krisday3bad:
 
     n "You finish your checklist and leave the conference room without a word."
 
+    hide screen secretbendy
     jump day3end
 
 # HEATH

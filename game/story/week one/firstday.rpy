@@ -161,6 +161,7 @@ label introcont:
 label krisday1:
     scene krisroom
     with fade
+    show screen secretbendy
     $ audio_crossFade(2, "music/two.ogg")
 
     if persistent.advcap == True:
@@ -245,6 +246,7 @@ label offendkris:
 
     k "Hmmph. Regardless, check me off your list. I'm doing everything I need to here."
     
+    hide screen secretbendy
     jump krisday1cont
 
 label impresskris:
@@ -262,6 +264,7 @@ label impresskris:
     k "I apologise... for calling you... \"boring\"."
     k "Don't get me wrong, though. You could be doing a lot more."
 
+    hide screen secretbendy
     jump krisday1cont
 
 label krisday1cont:
@@ -291,6 +294,7 @@ label krisday1cont:
     
     n "Miss Esther guides you out of the business sect and towards recreation. On your clipboard, it lists \"HEATH\" as your next checkup..."
     
+    hide screen secretbendy
     jump heathday1
 
 label heathday1:

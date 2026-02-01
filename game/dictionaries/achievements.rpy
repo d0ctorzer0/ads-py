@@ -20,6 +20,7 @@ init python:
 
 default persistent.achievement_count = 0
 default max_ach_count = 28 # NOT including lore
+default give_badidea = False #setting up badidea granting
 
 default ending_count = 18
 default cutscene_count = 44 # Massive W for drawing 44 cutscenes wtf (I've changed this text like 6 times)
@@ -46,6 +47,7 @@ default persistent.ach_ohno = False # Die (Woo!)
 default persistent.ach_heartless = False # Kill Miss Esther (You MONSTER.)
 default persistent.ach_unlikable = False # Antisocial
 default persistent.ach_armor = False # MISS ESTHER SECRET DIALOGUE!!!
+default persistent.ach_badidea = False # wow... secret!!!
 
 # Endings
 

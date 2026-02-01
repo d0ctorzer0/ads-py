@@ -90,6 +90,7 @@ label day5:
 
 label krisday5:
     scene krisroom noscreen with fade
+    show screen secretbendy
     $ audio_crossFade(2, "music/two.ogg")
 
     n "You enter the conference room to find things much calmer than yesterday."
@@ -207,6 +208,7 @@ label krisday5cont:
 
     n "You check Kris off your list for the last time this week and head out the door."
 
+    hide screen secretbendy
     jump heathday5
 
 label heathday5:

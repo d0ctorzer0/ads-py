@@ -123,10 +123,10 @@ screen achievements():
             add "gui/achievements/seenitall_locked.png"
         else:
             add "gui/achievements/seenitall_unlocked.png"
-        if persistent.ach_explore == False:
-            add "gui/achievements/explore_locked.png"
+        if persistent.ach_picture == False:
+            add "gui/achievements/picture_locked.png"
         else:
-            add "gui/achievements/explore_unlocked.png"
+            add "gui/achievements/picture_unlocked.png"
         
         if persistent.ach_closet == False:
             add "gui/achievements/closet_locked.png"
@@ -137,25 +137,29 @@ screen achievements():
         else:
             add "gui/achievements/insurance_unlocked.png"
         
-        if persistent.ach_picture == False:
-            add "gui/achievements/picture_locked.png"
+        if persistent.ach_explore == False:
+            add "gui/achievements/explore_locked.png"
         else:
-            add "gui/achievements/picture_unlocked.png"
+            add "gui/achievements/explore_unlocked.png"
         if persistent.ach_biwta == False:
             add "gui/achievements/biwta_locked.png"
         else:
             add "gui/achievements/biwta_unlocked.png"
         
+        if persistent.ach_badidea == False:
+            add "gui/achievements/badidea_locked.png"
+        else:
+            add "gui/achievements/badidea_unlocked.png"
         if persistent.ach_lore == False: # this will be the lore achievement
             add "gui/achievements/lore_locked.png"
         else:
             add "gui/achievements/lore_unlocked.png"
-        add "gui/achievements/empty.png"
         
     
     add "gui/achievements/folder_overlay.png"
 
 screen ach_popup:
+    zorder 2000
     timer 4.0 action Hide("ach_popup", transition=easeoutbottom)
     add "gui/achievements/ach_underlay.png" xalign 1.0 yalign 1.0:
         at transform:

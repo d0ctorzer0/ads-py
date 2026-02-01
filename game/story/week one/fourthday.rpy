@@ -3,6 +3,33 @@ label day4:
     scene mcroom night
     with fade
 
+    python:
+        showpopup = False
+
+        # These are arranged in order of priority. Lowest priority will be overwritten
+        # by higher priority, so if multiple achievements are gained, only the highest
+        # priority will show.
+
+        if persistent.ach_badidea == False and give_badidea == True:
+            ach_name = "badidea"
+            showpopup = True
+            achievement.grant("ach_badidea")
+            persistent.ach_badidea = True
+            persistent.achievement_count += 1
+        
+        if all_achievements_unlocked():
+            if persistent.ach_lore == False:
+                ach_name = "lore"
+                showpopup = True
+                achievement.grant("ach_lore")
+                persistent.ach_lore = True
+                persistent.achievement_count += 1
+
+        achievement.sync()
+
+    if showpopup:
+        show screen ach_popup with easeinbottom
+
     n "You put in the code to your room and enter it, dropping your paperwork on the floor."
 
     if wkd3:
@@ -77,6 +104,7 @@ label day4:
 label krisday4:
 
     scene krisroom with fade
+    show screen secretbendy
     $ audio_crossFade(2, "music/two.ogg")
     n "You enter the conference room to see Kris whizzing across his management rail, back and forth, rapidly."
     n "The screen behind him has a lot more red on it than usual."
@@ -183,6 +211,7 @@ label krisday4cont:
 
     n "You head out the door and towards the break room."
 
+    hide screen secretbendy
     jump heathday4
 
 label heathday4:
