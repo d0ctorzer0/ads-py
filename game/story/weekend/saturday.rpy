@@ -36,6 +36,7 @@ label day6:
             achievement.sync()
             persistent.ach_biwta = True
             ach_name = "biwta"
+            persistent.achievement_count += 1
 
             if all_achievements_unlocked():
                 if persistent.ach_lore == False:
@@ -43,6 +44,7 @@ label day6:
                     showpopup = True
                     achievement.grant("ach_lore")
                     persistent.ach_lore = True
+                    persistent.achievement_count += 1
 
         show screen ach_popup with easeinbottom
 
@@ -783,6 +785,7 @@ label satgreg_pos:
                 achievement.sync()
                 persistent.ach_picture = True
                 ach_name = "picture"
+                persistent.achievement_count += 1
             show screen ach_popup with easeinbottom
         n "{color=#fff}Gregory looks down and begins speaking softly."
         g "{color=#fff}No, I need to go closer!!"
@@ -1130,6 +1133,7 @@ label satunknownpos:
                 achievement.sync()
                 persistent.ach_closet = True
                 ach_name = "closet"
+                persistent.achievement_count += 1
             show screen ach_popup with easeinbottom
     if informed_about_canister == False:
         n "You look around the room again. The shelf catches your eye."
@@ -1167,6 +1171,7 @@ label satunknownpos:
                 achievement.sync()
                 persistent.ach_picture = True
                 ach_name = "picture"
+                persistent.achievement_count += 1
             show screen ach_popup with easeinbottom
         u "{color=#fff}Well... yeah. Back when I was... cleaner, and I... remembered my name..."
         u "{color=#fff}I didn't use it at all..."

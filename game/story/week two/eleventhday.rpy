@@ -424,6 +424,7 @@ label gregday11:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     n "{color=#fff}Gregory moves his bottom handle slightly, unbuttoning his trench coat. It falls to the ground."
     n "{color=#fff}What stands before you is not a personality core - but three of them, just as you thought."
@@ -583,6 +584,7 @@ label unknownday11:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     u "{color=#fff}I really wanted to prove to ya that I'm more than what I look like."
     u "{color=#fff}Now, s'true, I've been on a downwards spiral for years now..."

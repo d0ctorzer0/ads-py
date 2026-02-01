@@ -200,6 +200,7 @@ label krisconfession:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     if persistent.advcap == True:
         "{color=#fff}{i}The scene fades to Kris looking down, offering you a silver watch in a blue box."
@@ -392,6 +393,7 @@ label heathday10:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     "{color=#fff}With a sudden explosion of sparkle and feathers, a dove emerges from Heath's chassis."
     "{color=#fff}In its beak, it's holding a perfectly-preserved letter."
@@ -593,6 +595,7 @@ label aspenday10:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     acg "{color=#fff}This cactus is for you."
     acg "{color=#fff}...You're probably tired of my botany facts, but..."
@@ -815,6 +818,7 @@ label ccday10:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     c "{color=#fff}I wore apathy like armor..."
     c "{color=#fff}...but cracked every time you looked at me, like I was worth being seen."
@@ -1037,6 +1041,7 @@ label robday10:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     r "{color=#fff}This is my most prized possession - it's an authentic 1988 Topps baseball card."
     r "{color=#fff}Jose Canseco. The guy on the card."

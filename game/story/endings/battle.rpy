@@ -428,6 +428,7 @@ label END_mcdeath:
             showpopup = True
             achievement.grant("ach_ohno")
             persistent.ach_ohno = True
+            persistent.achievement_count += 1
         
         if sum(persistent.endings_got.values()) == ending_count:
             if persistent.ach_seenitall == False:
@@ -435,6 +436,7 @@ label END_mcdeath:
                 showpopup = True
                 achievement.grant("ach_seenitall")
                 persistent.ach_seenitall = True
+                persistent.achievement_count += 1
         
         if all_achievements_unlocked():
             if persistent.ach_lore == False:
@@ -442,6 +444,7 @@ label END_mcdeath:
                 showpopup = True
                 achievement.grant("ach_lore")
                 persistent.ach_lore = True
+                persistent.achievement_count += 1
 
         achievement.sync()
 
@@ -497,6 +500,7 @@ label END_heartless:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     hide screen creditsfadeout with fade
     e "{color=#fff}Doctor... you will... regret this."
@@ -548,6 +552,7 @@ label continuegame:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     hide screen creditsfadeout with fade
     # show screen pref_open # enables pause menu
@@ -574,5 +579,6 @@ label continuegame:
             achievement.sync()
             persistent.ach_unionize = True
             ach_name = "unionize"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     jump day12end

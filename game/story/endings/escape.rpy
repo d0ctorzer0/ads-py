@@ -72,6 +72,7 @@ label escape_kris:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
@@ -163,6 +164,7 @@ label escape_kris:
             showpopup = True
             achievement.grant("ach_krisgood")
             persistent.ach_krisgood = True
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
 
@@ -251,6 +253,7 @@ label escape_heath:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
@@ -342,6 +345,7 @@ label escape_heath:
             showpopup = True
             achievement.grant("ach_heathgood")
             persistent.ach_heathgood = True
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
 
@@ -418,6 +422,7 @@ label escape_aspen:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."
     n "{color=#fff}It's only been about two weeks since you were last outside, but..."
@@ -514,6 +519,7 @@ label escape_aspen:
             showpopup = True
             achievement.grant("ach_aspengood")
             persistent.ach_aspengood = True
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
 
@@ -736,6 +742,7 @@ label leave_unknown:
             showpopup = True
             achievement.grant("ach_ccgood")
             persistent.ach_ccgood = True
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
 
@@ -937,6 +944,7 @@ label leave_cc:
             showpopup = True
             achievement.grant("ach_unknowngood")
             persistent.ach_unknowngood = True
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
 
@@ -1114,6 +1122,7 @@ label escape_rob:
             showpopup = True
             achievement.grant("ach_robgood")
             persistent.ach_robgood = True
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
 
@@ -1339,6 +1348,7 @@ label escape_gregory:
             showpopup = True
             achievement.grant("ach_greggood")
             persistent.ach_greggood = True
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
 
@@ -1424,6 +1434,7 @@ label escape_esther:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
 
     n "{color=#fff}Your vision is blinded by the bright light of the outside world."

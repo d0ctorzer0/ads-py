@@ -157,6 +157,7 @@ label estherend_begin:
             achievement.sync()
             persistent.ach_amoh = True
             ach_name = "amoh"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
 
     play music fourteen
@@ -210,6 +211,7 @@ label END_ace:
             showpopup = True
             achievement.grant("ach_amoh")
             persistent.ach_amoh = True
+            persistent.achievement_count += 1
         
         if sum(persistent.endings_got.values()) == ending_count:
             if persistent.ach_seenitall == False:
@@ -217,6 +219,7 @@ label END_ace:
                 showpopup = True
                 achievement.grant("ach_seenitall")
                 persistent.ach_seenitall = True
+                persistent.achievement_count += 1
         
         if all_achievements_unlocked():
             if persistent.ach_lore == False:
@@ -224,6 +227,7 @@ label END_ace:
                 showpopup = True
                 achievement.grant("ach_lore")
                 persistent.ach_lore = True
+                persistent.achievement_count += 1
 
         achievement.sync()
 
@@ -261,6 +265,7 @@ label END_unlikable:
             showpopup = True
             achievement.grant("ach_unlikable")
             persistent.ach_unlikable = True
+            persistent.achievement_count += 1
         
         if sum(persistent.endings_got.values()) == ending_count:
             if persistent.ach_seenitall == False:
@@ -268,6 +273,7 @@ label END_unlikable:
                 showpopup = True
                 achievement.grant("ach_seenitall")
                 persistent.ach_seenitall = True
+                persistent.achievement_count += 1
         
         if all_achievements_unlocked():
             if persistent.ach_lore == False:
@@ -275,6 +281,7 @@ label END_unlikable:
                 showpopup = True
                 achievement.grant("ach_lore")
                 persistent.ach_lore = True
+                persistent.achievement_count += 1
 
         achievement.sync()
 
@@ -299,6 +306,7 @@ label battleskip:
             showpopup = True
             achievement.grant("ach_armor")
             persistent.ach_armor = True
+            persistent.achievement_count += 1
         
         if all_achievements_unlocked():
             if persistent.ach_lore == False:
@@ -306,6 +314,7 @@ label battleskip:
                 showpopup = True
                 achievement.grant("ach_lore")
                 persistent.ach_lore = True
+                persistent.achievement_count += 1
 
         achievement.sync()
 
