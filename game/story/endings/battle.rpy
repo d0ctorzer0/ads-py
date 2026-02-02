@@ -521,6 +521,7 @@ label END_heartless:
             achievement.sync()
             persistent.ach_heartless = True
             ach_name = "heartless"
+            persistent.achievement_count += 1
         show screen ach_popup with easeinbottom
 
     jump day12end

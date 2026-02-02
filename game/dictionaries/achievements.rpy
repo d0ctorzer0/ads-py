@@ -19,10 +19,10 @@ init python:
         # show screen ach_popup with easeinbottom
 
 default persistent.achievement_count = 0
-default max_ach_count = 28 # NOT including lore
+default max_ach_count = 29 # NOT including lore
 default give_badidea = False #setting up badidea granting
 
-default ending_count = 18
+default ending_count = 21
 default cutscene_count = 44 # Massive W for drawing 44 cutscenes wtf (I've changed this text like 6 times)
 
 default persistent.ach_biwta = False
