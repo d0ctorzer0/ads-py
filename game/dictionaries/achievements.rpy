@@ -16,12 +16,12 @@ init python:
                 return False
         return True
 
-    # def insurance_achievement():
-    #     achievement.grant("ach_insurance")
-    #     achievement.sync()
-    #     persistent.ach_insurance = True
-    #     ach_name = "insurance"
-    #     # show screen ach_popup with easeinbottom
+    def insurance_achievement():
+        achievement.grant("ach_insurance")
+        achievement.sync()
+        persistent.ach_insurance = True
+        ach_name = "insurance"
+        # show screen ach_popup with easeinbottom
 
 default persistent.achievementcount = 0
 default max_ach_count = 29 # NOT including lore
