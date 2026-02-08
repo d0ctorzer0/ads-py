@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story/week one/thirddayemail.rpy", line 21: 'Function' is not a keyword argument or valid child of the textbutton statement.
-    textbutton "    from: [[ BLOCKED ]\n        [[ HIGH SCAM LIKELIHOOD ]                                                           " action Jump("emailscam")Function(insurance_achievement), SetVariable("ach_name", "insurance"), If(persistent.ach_insurance, false=Show("ach_popup", transition=easeinbottom)), If(persistent.ach_insurance, false=SetVariable("persistent.achievement_count", persistent.achievement_count+1))
-                                                                                                                                                                      ^
+File "game/menus/achieve.rpy", line 162: the bar_vertical keyword argument was not given a value.
+    bar_vertical = True
+                 ^
 
 Ren'Py Version: Ren'Py 8.3.6.25022803
-Sun Feb  1 13:12:33 2026
+Wed Feb  4 22:39:17 2026

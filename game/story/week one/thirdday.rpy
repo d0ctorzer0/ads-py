@@ -215,7 +215,7 @@ label krisday3good:
                 achievement.sync()
                 persistent.ach_picture = True
                 ach_name = "picture"
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
             show screen ach_popup with easeinbottom
         if persistent.advcap == True:
             "{color=#fff}{i}The scene fades to Kris looking down solemnly."
@@ -378,7 +378,7 @@ label heathday3good:
                 achievement.sync()
                 persistent.ach_picture = True
                 ach_name = "picture"
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
             show screen ach_popup with easeinbottom
         n "{color=#fff}You're stunned by what you see -"
         n "{color=#fff} - a hidden-away, wooden room, lined with fairy lights, shelves stocked with magic paraphenalia."
@@ -547,7 +547,7 @@ label aspenday3good:
                 achievement.sync()
                 persistent.ach_picture = True
                 ach_name = "picture"
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
             show screen ach_popup with easeinbottom
         if persistent.advcap == True:
             "{i}{color=#fff}The screen fades to a close-up shot of Aspen looking down at a fern. The scene is softly lit and is mostly dark."
@@ -691,7 +691,7 @@ label ccday3good:
                 achievement.sync()
                 persistent.ach_picture = True
                 ach_name = "picture"
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
             show screen ach_popup with easeinbottom
         if persistent.advcap == True:
             "{i}{color=#fff}The scene fades to CC looking down solemnly. He's back-lit by his window. In the foreground, you can see the computers that monitor his health."
@@ -845,7 +845,7 @@ label rday3good:
                 achievement.sync()
                 persistent.ach_picture = True
                 ach_name = "picture"
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
             show screen ach_popup with easeinbottom
         if persistent.advcap == True:
             "{i}{color=#fff}The scene fades to Rob looking down at you, \"HANG IN THERE!\" poster and TV screen behind him."

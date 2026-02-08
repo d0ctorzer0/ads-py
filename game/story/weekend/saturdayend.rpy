@@ -91,7 +91,7 @@ label satend_kris:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     if persistent.advcap == True:
         "{i}{color=#fff}The scene fades to Kris looking at you, lit by candlelight."
@@ -210,7 +210,7 @@ label satend_heath:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     show screen cuttextbox
     if persistent.advcap == True:
@@ -319,7 +319,7 @@ label satend_aspen:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     if persistent.advcap == True:
         "{i}{color=#fff}The scene fades to Aspen looking down at the algae. Motes of colored light drift up into the air, illuminating them."
@@ -464,7 +464,7 @@ label satend_rob:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     show screen cuttextbox
     if persistent.advcap == True:
@@ -536,7 +536,7 @@ label satend_cc:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     
     n "{color=#fff}CC greets you with a raised optic. In between his chassis and his handlebars is a bouquet of red roses."

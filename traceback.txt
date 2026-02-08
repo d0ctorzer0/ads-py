@@ -1,30 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/story/weekend/saturday.rpy", line 1186, in script
-    scene hall with Fade
-Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x0000000003932dc0> () {'old_widget': <renpy.display.layout.Fixed object at 0x0000000009520ca0>, 'new_widget': <renpy.display.layout.Fixed object at 0x0000000009520670>}>
+After initialization, but before game start.
+  File "game/menus/achieve.rpy", line 4, in prepare_screen
+    screen achievements():
+  File "game/menus/achieve.rpy", line 4, in prepare
+    screen achievements():
+  File "game/menus/achieve.rpy", line 161, in prepare
+    bar:
+  File "game/menus/achieve.rpy", line 161, in prepare
+    bar:
+SyntaxError: invalid syntax (game/menus/achieve.rpy, line 162)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story/weekend/saturday.rpy", line 1186, in script
-    scene hall with Fade
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\ast.py", line 1374, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\exports\statementexports.py", line 257, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 1581, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2218, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2669, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\core.py", line 2583, in instantiate_transition
-    raise Exception("Expected transition to return a displayable, not a {!r}".format(trans))
-Exception: Expected transition to return a displayable, not a <partial <function Fade at 0x0000000003932dc0> () {'old_widget': <renpy.display.layout.Fixed object at 0x0000000009520ca0>, 'new_widget': <renpy.display.layout.Fixed object at 0x0000000009520670>}>
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 652, in main
+    run(restart)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\display\screen.py", line 1027, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/menus/achieve.rpy", line 4, in prepare_screen
+    screen achievements():
+  File "game/menus/achieve.rpy", line 4, in prepare
+    screen achievements():
+  File "game/menus/achieve.rpy", line 161, in prepare
+    bar:
+  File "game/menus/achieve.rpy", line 161, in prepare
+    bar:
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\py3analysis.py", line 803, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\py3analysis.py", line 785, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1150, in py_compile
+    raise e
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1087, in py_compile
+    raise orig_e
+  File "C:\Users\seven\Downloads\renpy-8.3.6-sdk\renpy\python.py", line 1079, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/menus/achieve.rpy, line 162)
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.6.25022803
 Aperture Dating Simulator 1.1.0
-Sat Jan 31 00:05:40 2026
+Wed Feb  4 22:39:26 2026

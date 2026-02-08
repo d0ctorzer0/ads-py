@@ -230,7 +230,7 @@ label END_robtrue:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     rcg "{color=#fff}Ahh... that feels so nice."
     mc "{color=#fff}I'm surprised you can even feel the grass under your chassis."
@@ -268,7 +268,7 @@ label END_robtrue:
             showpopup = True
             achievement.grant("ach_robtrue")
             persistent.ach_robtrue = True
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
 
         if persistent.endings_got["kristrue"] and persistent.endings_got["heathtrue"] and persistent.endings_got["robtrue"] and persistent.endings_got["cctrue"] and persistent.endings_got["robtrue"] and persistent.endings_got["gregtrue"] and persistent.endings_got["unknowntrue"]:
             if persistent.ach_ultrobo == False:
@@ -276,7 +276,7 @@ label END_robtrue:
                 showpopup = True
                 achievement.grant("ach_ultrobo")
                 persistent.ach_ultrobo = True
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
         
         if sum(persistent.endings_got.values()) == ending_count:
             if persistent.ach_seenitall == False:
@@ -284,15 +284,8 @@ label END_robtrue:
                 showpopup = True
                 achievement.grant("ach_seenitall")
                 persistent.ach_seenitall = True
-                persistent.achievement_count += 1
-        
-        if all_achievements_unlocked():
-            if persistent.ach_lore == False:
-                ach_name = "lore"
-                showpopup = True
-                achievement.grant("ach_lore")
-                persistent.ach_lore = True
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
+
 
         achievement.sync()
 

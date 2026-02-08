@@ -356,7 +356,7 @@ label END_esthertrue:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     e "{color=#fff}Doctor... what {i}is{/i } this place?"
     mccut "{color=#fff}We're at Mount Arvon. Highest point in Michigan."
@@ -405,7 +405,7 @@ label END_esthertrue:
             showpopup = True
             achievement.grant("ach_true")
             persistent.ach_true = True
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         
         if sum(persistent.endings_got.values()) == ending_count:
             if persistent.ach_seenitall == False:
@@ -413,15 +413,8 @@ label END_esthertrue:
                 showpopup = True
                 achievement.grant("ach_seenitall")
                 persistent.ach_seenitall = True
-                persistent.achievement_count += 1
-        
-        if all_achievements_unlocked():
-            if persistent.ach_lore == False:
-                ach_name = "lore"
-                showpopup = True
-                achievement.grant("ach_lore")
-                persistent.ach_lore = True
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
+
 
         achievement.sync()
 

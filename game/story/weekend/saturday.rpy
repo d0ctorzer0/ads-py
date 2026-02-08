@@ -36,7 +36,7 @@ label day6:
             achievement.sync()
             persistent.ach_biwta = True
             ach_name = "biwta"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
 
             if all_achievements_unlocked():
                 if persistent.ach_lore == False:
@@ -44,7 +44,7 @@ label day6:
                     showpopup = True
                     achievement.grant("ach_lore")
                     persistent.ach_lore = True
-                    persistent.achievement_count += 1
+                    persistent.achievementcount += 1
 
         show screen ach_popup with easeinbottom
 
@@ -101,7 +101,7 @@ label satoffice:
             achievement.grant("ach_explore")
             achievement.sync()
             ach_name = "explore"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     scene door3 no outoforder with fade
     $ audio_crossFade(1, "music/eleven.ogg") 
@@ -131,7 +131,7 @@ label satcafe:
             achievement.grant("ach_explore")
             achievement.sync()
             ach_name = "explore"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     scene cafe with fade
     n "You enter the cafeteria. You haven't actually been in here yet."
@@ -177,7 +177,7 @@ label biology:
             achievement.grant("ach_explore")
             achievement.sync()
             ach_name = "explore"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     scene door3 cool with fade
     n "You come up to the door to Biology."
@@ -203,7 +203,7 @@ label wheatleycameo:
             achievement.grant("ach_explore")
             achievement.sync()
             ach_name = "explore"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     scene door2 cool with fade
     n "You come up to the large door that reads \"AUTHORIZED PERSONNEL ONLY\"."
@@ -249,7 +249,7 @@ label manufacture:
             achievement.grant("ach_explore")
             achievement.sync()
             ach_name = "explore"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     scene door2 with fade
     n "You come up to the door that you assume leads to your old workplace."
@@ -273,7 +273,7 @@ label recovery:
             achievement.grant("ach_explore")
             achievement.sync()
             ach_name = "explore"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     scene door3 warm with fade
     n "You come up to the door that reads \"STASIS RECOVERY BAY\" on a small plaque next to it."
@@ -795,7 +795,7 @@ label satgreg_pos:
                 achievement.sync()
                 persistent.ach_picture = True
                 ach_name = "picture"
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
             show screen ach_popup with easeinbottom
         n "{color=#fff}Gregory looks down and begins speaking softly."
         g "{color=#fff}No, I need to go closer!!"
@@ -1143,7 +1143,7 @@ label satunknownpos:
                 achievement.sync()
                 persistent.ach_closet = True
                 ach_name = "closet"
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
             show screen ach_popup with easeinbottom
     if informed_about_canister == False:
         n "You look around the room again. The shelf catches your eye."
@@ -1181,7 +1181,7 @@ label satunknownpos:
                 achievement.sync()
                 persistent.ach_picture = True
                 ach_name = "picture"
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
             show screen ach_popup with easeinbottom
         u "{color=#fff}Well... yeah. Back when I was... cleaner, and I... remembered my name..."
         u "{color=#fff}I didn't use it at all..."

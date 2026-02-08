@@ -99,7 +99,7 @@ style frame:
 
 ## secret bendy :3
 screen secretbendy(): # here's where the new ACH_INSURANCE achievement should be granted - when this button is clicked!
-    imagebutton idle "images/bendy.png" xpos 1080 ypos 520 action Play("sound", "sfx/notif.ogg"), Function(insurance_achievement), SetVariable("ach_name", "insurance"), If(persistent.ach_insurance, false=Show("ach_popup", transition=easeinbottom)), If(persistent.ach_insurance, false=SetVariable("persistent.achievement_count", persistent.achievement_count+1))
+    imagebutton idle "images/bendy.png" xpos 1080 ypos 520 action Play("sound", "sfx/notif.ogg"), Function(insurance_achievement), SetVariable("ach_name", "insurance"), If(persistent.ach_insurance, false=Show("ach_popup", transition=easeinbottom)), If(persistent.ach_insurance, false=SetVariable("persistent.achievementcount", persistent.achievementcount+1))
 
 style cutscene:
     ypos 100
@@ -494,7 +494,13 @@ screen main_menu():
         at transform:
             yoffset 300
             easein 0.5 yoffset 0
-
+    
+    if all_achievements_unlocked():
+        if persistent.ach_lore == False:
+            python:
+                achievement.grant("ach_lore")
+                persistent.ach_lore = True
+                persistent.achievementcount += 1
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox

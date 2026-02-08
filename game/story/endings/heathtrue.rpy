@@ -216,7 +216,7 @@ label END_heathtrue:
             achievement.sync()
             persistent.ach_picture = True
             ach_name = "picture"
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
         show screen ach_popup with easeinbottom
     n "{color=#fff}Heath closes her optic and slowly opens her shell -"
     n "{color=#fff}- Something you didn't know was possible, even with all your time in Manufacturing."
@@ -264,7 +264,7 @@ label END_heathtrue:
             showpopup = True
             achievement.grant("ach_heathtrue")
             persistent.ach_heathtrue = True
-            persistent.achievement_count += 1
+            persistent.achievementcount += 1
 
         if persistent.endings_got["kristrue"] and persistent.endings_got["heathtrue"] and persistent.endings_got["heathtrue"] and persistent.endings_got["cctrue"] and persistent.endings_got["robtrue"] and persistent.endings_got["gregtrue"] and persistent.endings_got["unknowntrue"]:
             if persistent.ach_ultrobo == False:
@@ -272,7 +272,7 @@ label END_heathtrue:
                 showpopup = True
                 achievement.grant("ach_ultrobo")
                 persistent.ach_ultrobo = True
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
         
         if sum(persistent.endings_got.values()) == ending_count:
             if persistent.ach_seenitall == False:
@@ -280,15 +280,8 @@ label END_heathtrue:
                 showpopup = True
                 achievement.grant("ach_seenitall")
                 persistent.ach_seenitall = True
-                persistent.achievement_count += 1
-        
-        if all_achievements_unlocked():
-            if persistent.ach_lore == False:
-                ach_name = "lore"
-                showpopup = True
-                achievement.grant("ach_lore")
-                persistent.ach_lore = True
-                persistent.achievement_count += 1
+                persistent.achievementcount += 1
+
 
         achievement.sync()
 

@@ -158,6 +158,15 @@ screen achievements():
     
     add "gui/achievements/folder_overlay.png"
 
+    bar:
+        value persistent.achievementcount
+        range 30
+        left_bar "gui/bar/achbar_left.png"
+        right_bar "gui/bar/achbar_right.png"
+        ypos 190
+        xpos 290
+        xmaximum 1335
+
 screen ach_popup:
     zorder 2000
     timer 4.0 action Hide("ach_popup", transition=easeoutbottom)

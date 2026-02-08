@@ -15,15 +15,8 @@ label day4:
             showpopup = True
             achievement.grant("ach_badidea")
             persistent.ach_badidea = True
-            persistent.achievement_count += 1
-        
-        if all_achievements_unlocked():
-            if persistent.ach_lore == False:
-                ach_name = "lore"
-                showpopup = True
-                achievement.grant("ach_lore")
-                persistent.ach_lore = True
-                persistent.achievement_count += 1
+            persistent.achievementcount += 1
+
 
         achievement.sync()
 

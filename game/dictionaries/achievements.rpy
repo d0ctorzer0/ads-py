@@ -6,23 +6,28 @@ init python:
                 persistent.ach_closet,
                 persistent.ach_insurance,
                 persistent.ach_biwta,
-                persistent.ach_explore]:
+                persistent.ach_explore,
+                persistent.ach_true,
+                persistent.ach_ohno,
+                persistent.ach_armor,
+                persistent.ach_unionize,
+                persistent.ach_badidea]:
             if i == False:
                 return False
         return True
 
-    def insurance_achievement():
-        achievement.grant("ach_insurance")
-        achievement.sync()
-        persistent.ach_insurance = True
-        ach_name = "insurance"
-        # show screen ach_popup with easeinbottom
+    # def insurance_achievement():
+    #     achievement.grant("ach_insurance")
+    #     achievement.sync()
+    #     persistent.ach_insurance = True
+    #     ach_name = "insurance"
+    #     # show screen ach_popup with easeinbottom
 
-default persistent.achievement_count = 0
+default persistent.achievementcount = 0
 default max_ach_count = 29 # NOT including lore
 default give_badidea = False #setting up badidea granting
 
-default ending_count = 21
+default ending_count = 18
 default cutscene_count = 44 # Massive W for drawing 44 cutscenes wtf (I've changed this text like 6 times)
 
 default persistent.ach_biwta = False
