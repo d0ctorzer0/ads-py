@@ -293,5 +293,8 @@ label END_cctrue:
     if showpopup:
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
-    $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")
+    if missestherdead == False:
+        $ renpy.movie_cutscene("ENDCREDIT_ccA.webm")
+    else:
+        $ renpy.movie_cutscene("ENDCREDIT_ccB.webm")
     $ MainMenu(confirm=False)()

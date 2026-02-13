@@ -54,6 +54,7 @@ default cctv = False
 default knowabtwaterfall = False
 default battle = False
 default aspenknowabtbertha = False
+default missestherdead = False
 
 #GOODBYES
 default krisgoodbye = False

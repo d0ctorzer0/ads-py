@@ -292,5 +292,8 @@ label END_robtrue:
     if showpopup:
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
-    $ renpy.movie_cutscene("ENDCREDIT_rob.webm")
+    if missestherdead == False:
+        $ renpy.movie_cutscene("ENDCREDIT_robA.webm")
+    else:
+        $ renpy.movie_cutscene("ENDCREDIT_robB.webm")
     $ MainMenu(confirm=False)()

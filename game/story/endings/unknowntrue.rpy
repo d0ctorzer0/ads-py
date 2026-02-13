@@ -311,5 +311,8 @@ label END_unknowntrue:
     if showpopup:
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
-    $ renpy.movie_cutscene("ENDCREDIT_unknown.webm")
+    if missestherdead == False:
+        $ renpy.movie_cutscene("ENDCREDIT_unknownA.webm")
+    else:
+        $ renpy.movie_cutscene("ENDCREDIT_unknownB.webm")
     $ MainMenu(confirm=False)()

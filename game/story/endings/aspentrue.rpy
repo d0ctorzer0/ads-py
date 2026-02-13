@@ -325,5 +325,8 @@ label END_aspentrue2:
     if showpopup:
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
-    $ renpy.movie_cutscene("ENDCREDIT_aspen.webm")
+    if missestherdead == False:
+        $ renpy.movie_cutscene("ENDCREDIT_aspenA.webm")
+    else:
+        $ renpy.movie_cutscene("ENDCREDIT_aspenB.webm")
     $ MainMenu(confirm=False)()

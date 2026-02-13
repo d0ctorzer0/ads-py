@@ -503,6 +503,7 @@ label END_heartless:
     e "{color=#fff}...mad."
     hide screen cuttextbox
     $ battle = False
+    $ missestherdead = True
     window auto
     scene black with fade
     $ cutscenetextbox = False

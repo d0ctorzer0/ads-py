@@ -310,5 +310,8 @@ label END_kristrue2:
     if showpopup:
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
-    $ renpy.movie_cutscene("ENDCREDIT_kris.webm")
+    if missestherdead == False:
+        $ renpy.movie_cutscene("ENDCREDIT_krisA.webm")
+    else:
+        $ renpy.movie_cutscene("ENDCREDIT_krisB.webm")
     $ MainMenu(confirm=False)()

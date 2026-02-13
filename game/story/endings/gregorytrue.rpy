@@ -346,5 +346,8 @@ label END_gregtrue:
     if showpopup:
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
-    $ renpy.movie_cutscene("ENDCREDIT_greg.webm")
+    if missestherdead == False:
+        $ renpy.movie_cutscene("ENDCREDIT_gregA.webm")
+    else:
+        $ renpy.movie_cutscene("ENDCREDIT_gregB.webm")
     $ MainMenu(confirm=False)()

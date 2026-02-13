@@ -288,5 +288,8 @@ label END_heathtrue:
     if showpopup:
         show screen ach_popup with easeinbottom
         $ renpy.pause(4.0, hard=True)
-    $ renpy.movie_cutscene("ENDCREDIT_heath.webm")
+    if missestherdead == False:
+        $ renpy.movie_cutscene("ENDCREDIT_heathA.webm")
+    else:
+        $ renpy.movie_cutscene("ENDCREDIT_heathB.webm")
     $ MainMenu(confirm=False)()
