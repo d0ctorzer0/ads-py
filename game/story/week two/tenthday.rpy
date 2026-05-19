@@ -717,7 +717,6 @@ label aspenacceptance:
 label aspenrejection:
     $ cutscenechoice = False
     hide screen cuttextbox
-    scene aspenroom with fade
     $ cutscenetextbox = False
     scene aspenroom with fade
     show a look with easeinright

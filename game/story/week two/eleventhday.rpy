@@ -657,7 +657,7 @@ label unknownrejection:
     scene hall with fade
     $ cutscenetextbox = False
     show u c look with easeinright
-    $ lock_unknown = True
+    $ lock_unknown = False
     u "Well... no worries. I get it."
     u "I'm a better man. I can take rejection."
 
