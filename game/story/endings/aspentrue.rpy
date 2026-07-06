@@ -157,7 +157,7 @@ label END_aspentrue:
     mc "Is something wrong?"
     a "N-No. Nothing. I just..."
     show a look offrail
-    a "I-I'm just so lucky to have you."
+    a "I-I'm just lucky to have you."
     a "Can you imagine if you had never taken that maintenance position?"
     a "I would've... I probably would've..."
     n "They take a deep breath."
